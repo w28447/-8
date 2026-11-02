@@ -8,8 +8,8 @@ CoD.hud_speedometer_widget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.soundSet = "none"
 	
 	local frameblur = LUI.UIImage.new( 0, 0, 0, 252, 0, 0, 0, 132 )
-	frameblur:setImage( RegisterImage( 0x9D3ABB870D7F2CD ) )
-	frameblur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	frameblur:setImage( RegisterImage( "uie_hud_common_core_speedometer_panel" ) )
+	frameblur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	frameblur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( frameblur )
 	self.frameblur = frameblur
@@ -27,7 +27,7 @@ CoD.hud_speedometer_widget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.redzone2 = redzone2
 	
 	local frame = LUI.UIImage.new( 0, 0, 0, 252, 0, 0, 0, 132 )
-	frame:setImage( RegisterImage( 0xFF7C4C17D5AB27E ) )
+	frame:setImage( RegisterImage( "uie_hud_common_core_speedometer_frame" ) )
 	frame:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( frame )
 	self.frame = frame
@@ -49,7 +49,7 @@ CoD.hud_speedometer_widget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.fill = fill
 	
 	local arrow = LUI.UIImage.new( 0.5, 0.5, -6, 6, 0, 0, 76, 197 )
-	arrow:setImage( RegisterImage( 0xBA297CB535037BE ) )
+	arrow:setImage( RegisterImage( "uie_hud_common_core_speedometer_arrow" ) )
 	arrow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	arrow:subscribeToGlobalModel( f1_arg1, "PerController", "vehicle.speed", function ( model )
 		local f3_local0 = model:get()
@@ -61,7 +61,7 @@ CoD.hud_speedometer_widget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.arrow = arrow
 	
 	local line = LUI.UIImage.new( 0.5, 0.5, -6, 6, 0, 0, 32.5, 249.5 )
-	line:setImage( RegisterImage( 0x3847D97169AAAAF ) )
+	line:setImage( RegisterImage( "uie_hud_common_core_speedometer_line" ) )
 	line:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	line:subscribeToGlobalModel( f1_arg1, "PerController", "vehicle.speed", function ( model )
 		local f4_local0 = model:get()

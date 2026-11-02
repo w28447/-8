@@ -89,7 +89,7 @@ CoD.UberAttachmentSlot.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 		}
 	} )
 	MutuallyExclusiveIcon:setRGB( 1, 0.41, 0 )
-	MutuallyExclusiveIcon.image:setImage( RegisterImage( 0x11D4E13C821CCE3 ) )
+	MutuallyExclusiveIcon.image:setImage( RegisterImage( "t7_hud_cac_warning_16" ) )
 	MutuallyExclusiveIcon:linkToElementModel( self, nil, false, function ( model )
 		MutuallyExclusiveIcon:setModel( model, f1_arg1 )
 	end )

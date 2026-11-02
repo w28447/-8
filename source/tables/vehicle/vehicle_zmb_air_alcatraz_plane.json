@@ -12,7 +12,7 @@
     "skidSpeedMin": 100,
     "skidSpeedMax": 600,
     "peelSpeedMax": 600,
-    "model": "#hash_1e99caf690b5897c",
+    "model": "#veh_t8_zmb_air_alcatraz_plane",
     "steerAxisName": "AXIS_LSTICK",
     "gasButtonName": "BUTTON_LTRIG",
     "reverseBrakeButtonName": "BUTTON_RTRIG",

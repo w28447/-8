@@ -34,7 +34,7 @@ CoD.vhud_HellstormReticleFocus.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local Glow = LUI.UIImage.new( 0, 0, 0, 220, 0, 0, 0, 110 )
 	Glow:setRGB( ColorSet.EnemyOrange_Bright.r, ColorSet.EnemyOrange_Bright.g, ColorSet.EnemyOrange_Bright.b )
 	Glow:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_ringreticle_glow" ) )
-	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	Glow:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( Glow )
 	self.Glow = Glow

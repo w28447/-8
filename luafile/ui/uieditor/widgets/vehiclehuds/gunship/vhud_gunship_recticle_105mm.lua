@@ -10,14 +10,14 @@ CoD.vhud_gunship_recticle_105mm.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local reticle105Center = LUI.UIImage.new( 0, 0, 281, 387, 0, 0, 221, 291 )
 	reticle105Center:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_reticle_105_core" ) )
-	reticle105Center:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	reticle105Center:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	reticle105Center:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( reticle105Center )
 	self.reticle105Center = reticle105Center
 	
 	local reticle105InnerR = LUI.UIImage.new( 0, 0, 386, 466, 0, 0, 251, 263 )
 	reticle105InnerR:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_reticle_105_inner" ) )
-	reticle105InnerR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	reticle105InnerR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	reticle105InnerR:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( reticle105InnerR )
 	self.reticle105InnerR = reticle105InnerR
@@ -25,14 +25,14 @@ CoD.vhud_gunship_recticle_105mm.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local reticle105InnerL = LUI.UIImage.new( 0, 0, 202.5, 282.5, 0, 0, 249, 261 )
 	reticle105InnerL:setZRot( 180 )
 	reticle105InnerL:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_reticle_105_inner" ) )
-	reticle105InnerL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	reticle105InnerL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	reticle105InnerL:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( reticle105InnerL )
 	self.reticle105InnerL = reticle105InnerL
 	
 	local reticle105InnerT = LUI.UIImage.new( 0, 0, 330.5, 338.5, 0, 0, 158, 222 )
 	reticle105InnerT:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_reticle_105_inner_ver" ) )
-	reticle105InnerT:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	reticle105InnerT:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	reticle105InnerT:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( reticle105InnerT )
 	self.reticle105InnerT = reticle105InnerT
@@ -40,7 +40,7 @@ CoD.vhud_gunship_recticle_105mm.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local reticle105InnerB = LUI.UIImage.new( 0, 0, 330, 338, 0, 0, 290, 354 )
 	reticle105InnerB:setZRot( 180 )
 	reticle105InnerB:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_reticle_105_inner_ver" ) )
-	reticle105InnerB:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	reticle105InnerB:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	reticle105InnerB:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( reticle105InnerB )
 	self.reticle105InnerB = reticle105InnerB
@@ -48,14 +48,14 @@ CoD.vhud_gunship_recticle_105mm.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local reticle105CornerTL = LUI.UIImage.new( 0, 0, 280, 304, 0, 0, 219.5, 243.5 )
 	reticle105CornerTL:setZRot( 90 )
 	reticle105CornerTL:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_reticle_105_inner_corner" ) )
-	reticle105CornerTL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	reticle105CornerTL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	reticle105CornerTL:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( reticle105CornerTL )
 	self.reticle105CornerTL = reticle105CornerTL
 	
 	local reticle105CornerTR = LUI.UIImage.new( 0, 0, 365, 389, 0, 0, 219.5, 243.5 )
 	reticle105CornerTR:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_reticle_105_inner_corner" ) )
-	reticle105CornerTR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	reticle105CornerTR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	reticle105CornerTR:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( reticle105CornerTR )
 	self.reticle105CornerTR = reticle105CornerTR
@@ -63,7 +63,7 @@ CoD.vhud_gunship_recticle_105mm.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local reticle105CornerBL = LUI.UIImage.new( 0, 0, 279.5, 303.5, 0, 0, 268, 292 )
 	reticle105CornerBL:setZRot( 180 )
 	reticle105CornerBL:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_reticle_105_inner_corner" ) )
-	reticle105CornerBL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	reticle105CornerBL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	reticle105CornerBL:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( reticle105CornerBL )
 	self.reticle105CornerBL = reticle105CornerBL
@@ -71,14 +71,14 @@ CoD.vhud_gunship_recticle_105mm.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local reticle105CornerBR = LUI.UIImage.new( 0, 0, 364.5, 388.5, 0, 0, 268.5, 292.5 )
 	reticle105CornerBR:setZRot( 270 )
 	reticle105CornerBR:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_reticle_105_inner_corner" ) )
-	reticle105CornerBR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	reticle105CornerBR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	reticle105CornerBR:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( reticle105CornerBR )
 	self.reticle105CornerBR = reticle105CornerBR
 	
 	local reticle105OuterTR = LUI.UIImage.new( 0, 0, 564, 668, 0, 0, 0, 104 )
 	reticle105OuterTR:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_reticle_105_outer" ) )
-	reticle105OuterTR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	reticle105OuterTR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	reticle105OuterTR:setShaderVector( 0, 1.2, 0, 0, 0 )
 	self:addElement( reticle105OuterTR )
 	self.reticle105OuterTR = reticle105OuterTR
@@ -86,7 +86,7 @@ CoD.vhud_gunship_recticle_105mm.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local reticle105OuterTL = LUI.UIImage.new( 0, 0, 0, 104, 0, 0, 0, 104 )
 	reticle105OuterTL:setZRot( 90 )
 	reticle105OuterTL:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_reticle_105_outer" ) )
-	reticle105OuterTL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	reticle105OuterTL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	reticle105OuterTL:setShaderVector( 0, 1.2, 0, 0, 0 )
 	self:addElement( reticle105OuterTL )
 	self.reticle105OuterTL = reticle105OuterTL
@@ -94,7 +94,7 @@ CoD.vhud_gunship_recticle_105mm.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local reticle105OuterBL = LUI.UIImage.new( 0, 0, 0, 104, 0, 0, 407.5, 511.5 )
 	reticle105OuterBL:setZRot( 180 )
 	reticle105OuterBL:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_reticle_105_outer" ) )
-	reticle105OuterBL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	reticle105OuterBL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	reticle105OuterBL:setShaderVector( 0, 1.2, 0, 0, 0 )
 	self:addElement( reticle105OuterBL )
 	self.reticle105OuterBL = reticle105OuterBL
@@ -102,7 +102,7 @@ CoD.vhud_gunship_recticle_105mm.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local reticle105OuterBR = LUI.UIImage.new( 0, 0, 564, 668, 0, 0, 407.5, 511.5 )
 	reticle105OuterBR:setZRot( 270 )
 	reticle105OuterBR:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_reticle_105_outer" ) )
-	reticle105OuterBR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	reticle105OuterBR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	reticle105OuterBR:setShaderVector( 0, 1.2, 0, 0, 0 )
 	self:addElement( reticle105OuterBR )
 	self.reticle105OuterBR = reticle105OuterBR

@@ -8,7 +8,7 @@ CoD.ThrustMeterChevronThin.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.soundSet = "default"
 	
 	local leftChevron1 = LUI.UIImage.new( 0, 1, 0, 0, 1, 1, -9, -3 )
-	leftChevron1:setImage( RegisterImage( 0xFCD786C55017617 ) )
+	leftChevron1:setImage( RegisterImage( "t7_hud_boost_meter_dots_arrow_thin" ) )
 	self:addElement( leftChevron1 )
 	self.leftChevron1 = leftChevron1
 	

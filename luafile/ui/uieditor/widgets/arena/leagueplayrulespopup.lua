@@ -21,7 +21,7 @@ CoD.LeaguePlayRulesPopup.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local BlackfadeBlurB = LUI.UIImage.new( 0, 1, -5, 5, 0, 1, -5, 5 )
 	BlackfadeBlurB:setAlpha( 0 )
-	BlackfadeBlurB:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	BlackfadeBlurB:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	BlackfadeBlurB:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BlackfadeBlurB )
 	self.BlackfadeBlurB = BlackfadeBlurB
@@ -34,14 +34,14 @@ CoD.LeaguePlayRulesPopup.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local FuiBox02Right = LUI.UIImage.new( 0.5, 0.5, 458, 492, 0.5, 0.5, -388, -422 )
 	FuiBox02Right:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_fui_box01" ) )
-	FuiBox02Right:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	FuiBox02Right:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	FuiBox02Right:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FuiBox02Right )
 	self.FuiBox02Right = FuiBox02Right
 	
 	local FuiBox02Left = LUI.UIImage.new( 0.5, 0.5, -458, -492, 0.5, 0.5, -388, -422 )
 	FuiBox02Left:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_fui_box01" ) )
-	FuiBox02Left:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	FuiBox02Left:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	FuiBox02Left:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FuiBox02Left )
 	self.FuiBox02Left = FuiBox02Left

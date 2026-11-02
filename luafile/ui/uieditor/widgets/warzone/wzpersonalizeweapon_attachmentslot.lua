@@ -25,7 +25,7 @@ CoD.WZPersonalizeWeapon_AttachmentSlot.new = function ( f1_arg0, f1_arg1, f1_arg
 	local backgroundBlurDisabled = LUI.UIImage.new( 0.21, 0.79, 0, 0, 0, 0, 28, 84 )
 	backgroundBlurDisabled:setRGB( 0, 0, 0 )
 	backgroundBlurDisabled:setAlpha( 0 )
-	backgroundBlurDisabled:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	backgroundBlurDisabled:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	backgroundBlurDisabled:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( backgroundBlurDisabled )
 	self.backgroundBlurDisabled = backgroundBlurDisabled
@@ -34,7 +34,7 @@ CoD.WZPersonalizeWeapon_AttachmentSlot.new = function ( f1_arg0, f1_arg1, f1_arg
 	backgroundBlur:setRGB( 0, 0, 0 )
 	backgroundBlur:setAlpha( 0 )
 	backgroundBlur:setZoom( 3 )
-	backgroundBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	backgroundBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	backgroundBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( backgroundBlur )
 	self.backgroundBlur = backgroundBlur

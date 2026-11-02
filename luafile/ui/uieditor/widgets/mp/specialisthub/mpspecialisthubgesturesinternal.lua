@@ -27,7 +27,7 @@ CoD.MPSpecialistHUBGesturesInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local emblemListBg = LUI.UIImage.new( 0, 0, 209, 1258, 0, 0, 74.5, 919.5 )
 	emblemListBg:setScale( 0.77, 0.77 )
 	emblemListBg:setImage( RegisterImage( "uie_ui_menu_emblem_empty_bg" ) )
-	emblemListBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	emblemListBg:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	emblemListBg:setShaderVector( 0, 0, 0, 0, 0 )
 	emblemListBg:setupNineSliceShader( 212, 212 )
 	self:addElement( emblemListBg )
@@ -189,7 +189,7 @@ CoD.MPSpecialistHUBGesturesInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	DotLineBottom = LUI.UIImage.new( 0, 0, 328, 1139, 0, 0, 852.5, 856.5 )
 	DotLineBottom:setAlpha( 0.4 )
 	DotLineBottom:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline" ) )
-	DotLineBottom:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	DotLineBottom:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	DotLineBottom:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( DotLineBottom )
 	self.DotLineBottom = DotLineBottom
@@ -197,7 +197,7 @@ CoD.MPSpecialistHUBGesturesInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local DotLineTop = LUI.UIImage.new( 0, 0, 328, 1139, 0, 0, 154.5, 158.5 )
 	DotLineTop:setAlpha( 0.4 )
 	DotLineTop:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline" ) )
-	DotLineTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	DotLineTop:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	DotLineTop:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( DotLineTop )
 	self.DotLineTop = DotLineTop

@@ -221,7 +221,7 @@ CoD.Support_Button.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	Bar2:setRGB( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
 	Bar2:setAlpha( 0 )
 	Bar2:setImage( RegisterImage( "uie_ui_hud_core_streak_widget_rule_thick" ) )
-	Bar2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	Bar2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	Bar2:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Bar2 )
 	self.Bar2 = Bar2
@@ -230,7 +230,7 @@ CoD.Support_Button.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	Bar3:setRGB( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
 	Bar3:setAlpha( 0 )
 	Bar3:setImage( RegisterImage( "uie_ui_hud_core_streak_widget_rule_thick" ) )
-	Bar3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	Bar3:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	Bar3:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Bar3 )
 	self.Bar3 = Bar3

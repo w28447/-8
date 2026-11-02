@@ -26,7 +26,7 @@ CoD.PurchaseableItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	self.sizeElement = sizeElement
 	
 	local Blur = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	Blur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	Blur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	Blur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( Blur )
 	self.Blur = Blur
@@ -108,7 +108,7 @@ CoD.PurchaseableItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local FocusGlow = LUI.UIImage.new( 0, 1, -112, 112, 0, 1, -70, 70 )
 	FocusGlow:setAlpha( 0 )
 	FocusGlow:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_large" ) )
-	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
+	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_multiplied_add" ) )
 	FocusGlow:setShaderVector( 0, 0, 0, 0.25, 0.25 )
 	FocusGlow:setShaderVector( 1, 1.2, 0, 0, 0 )
 	FocusGlow:setupNineSliceShader( 300, 300 )
@@ -159,7 +159,7 @@ CoD.PurchaseableItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local ItemName = LUI.UIText.new( 0.5, 0.5, -110, 110, 1, 1, -57, -35 )
 	ItemName:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	ItemName:setTTF( "ttmussels_demibold" )
-	ItemName:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	ItemName:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	ItemName:setShaderVector( 0, 1, 0, 0, 0 )
 	ItemName:setShaderVector( 1, 1, 0, 0, 0 )
 	ItemName:setShaderVector( 2, 0, 0, 0, 1 )
@@ -183,7 +183,7 @@ CoD.PurchaseableItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local PixelGridTiledBacking = LUI.UIImage.new( 0, 0, 2.5, 238.5, 0, 0, 9.5, 26.5 )
 	PixelGridTiledBacking:setAlpha( 0.05 )
 	PixelGridTiledBacking:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
-	PixelGridTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	PixelGridTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	PixelGridTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGridTiledBacking:setupNineSliceShader( 128, 128 )
 	self:addElement( PixelGridTiledBacking )

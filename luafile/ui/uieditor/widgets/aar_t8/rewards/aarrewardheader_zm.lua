@@ -36,7 +36,7 @@ CoD.AARRewardHeader_ZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local BgZmStar = LUI.UIImage.new( 0, 0, 150, 262, 0, 0, 91, 203 )
 	BgZmStar:setImage( RegisterImage( "uie_ui_hud_zm_arr_reward_star" ) )
-	BgZmStar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	BgZmStar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	BgZmStar:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( BgZmStar )
 	self.BgZmStar = BgZmStar
@@ -49,7 +49,7 @@ CoD.AARRewardHeader_ZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local BgZmStarZdepth = LUI.UIImage.new( 0, 0, 150, 262, 0, 0, 91, 203 )
 	BgZmStarZdepth:setImage( RegisterImage( "uie_ui_hud_zm_arr_reward_star" ) )
-	BgZmStarZdepth:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	BgZmStarZdepth:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	BgZmStarZdepth:setShaderVector( 0, 0.71, 0, 0, 0 )
 	self:addElement( BgZmStarZdepth )
 	self.BgZmStarZdepth = BgZmStarZdepth

@@ -15,7 +15,7 @@ CoD.LeaguePlayLeaderboard_InfoPaneWinStreak.new = function ( f1_arg0, f1_arg1, f
 	WinStreakTitle:setAlpha( 0.5 )
 	WinStreakTitle:setText( LocalizeToUpperString( 0x2FE120FB4927971 ) )
 	WinStreakTitle:setTTF( "ttmussels_regular" )
-	WinStreakTitle:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	WinStreakTitle:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	WinStreakTitle:setShaderVector( 0, 1, 0, 0, 0 )
 	WinStreakTitle:setShaderVector( 1, 0, 0, 0, 0 )
 	WinStreakTitle:setShaderVector( 2, 0, 0, 0, 0 )

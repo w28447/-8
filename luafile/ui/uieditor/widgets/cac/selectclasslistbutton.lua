@@ -13,7 +13,7 @@ CoD.SelectClassListButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local ImageGlow = LUI.UIImage.new( 0, 1, 0, 0, 1, 1, -34, 0 )
 	ImageGlow:setAlpha( 0 )
-	ImageGlow:setImage( RegisterImage( 0x7B23E8B1ACF3472 ) )
+	ImageGlow:setImage( RegisterImage( "uie_ui_menu_director_selection_glow01" ) )
 	self:addElement( ImageGlow )
 	self.ImageGlow = ImageGlow
 	

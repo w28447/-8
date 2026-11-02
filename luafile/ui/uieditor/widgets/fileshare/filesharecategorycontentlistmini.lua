@@ -17,7 +17,7 @@ CoD.FileshareCategoryContentListMini.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	MiddleText:setRGB( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
 	MiddleText:setText( LocalizeToUpperString( "menu/waiting_caps" ) )
 	MiddleText:setTTF( "ttmussels_regular" )
-	MiddleText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	MiddleText:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	MiddleText:setLetterSpacing( 3 )
 	MiddleText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	MiddleText:setAlignment( Enum.LUIAlignment[0x6ED4298C93DC5ED] )

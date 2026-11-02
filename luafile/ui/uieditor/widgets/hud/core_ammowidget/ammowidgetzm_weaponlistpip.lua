@@ -10,15 +10,15 @@ CoD.AmmoWidgetZM_WeaponListPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local FeaturedPipEmpty = LUI.UIImage.new( 0, 0, -12, 42, 0, 0, -6, 16 )
 	FeaturedPipEmpty:setAlpha( 0.8 )
-	FeaturedPipEmpty:setImage( RegisterImage( 0x4C042BC6C9D43A9 ) )
+	FeaturedPipEmpty:setImage( RegisterImage( "uie_ui_director_featured_pip_empty" ) )
 	self:addElement( FeaturedPipEmpty )
 	self.FeaturedPipEmpty = FeaturedPipEmpty
 	
 	local FeaturedPipCurrent = LUI.UIImage.new( 0, 0, -12, 42, 0, 0, -6, 16 )
 	FeaturedPipCurrent:setRGB( 0.93, 0.81, 0.03 )
 	FeaturedPipCurrent:setAlpha( 0 )
-	FeaturedPipCurrent:setImage( RegisterImage( 0x9D0184504FDF2CD ) )
-	FeaturedPipCurrent:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	FeaturedPipCurrent:setImage( RegisterImage( "uie_ui_director_featured_pip_current" ) )
+	FeaturedPipCurrent:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	FeaturedPipCurrent:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FeaturedPipCurrent )
 	self.FeaturedPipCurrent = FeaturedPipCurrent

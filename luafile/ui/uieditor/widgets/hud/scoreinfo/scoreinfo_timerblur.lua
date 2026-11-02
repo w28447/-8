@@ -8,7 +8,7 @@ CoD.ScoreInfo_TimerBlur.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	self.soundSet = "default"
 	
 	local Blur2 = LUI.UIImage.new( 0.5, 0.5, -98, 98, 0.5, 0.5, -16.5, 16.5 )
-	Blur2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	Blur2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	Blur2:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( Blur2 )
 	self.Blur2 = Blur2

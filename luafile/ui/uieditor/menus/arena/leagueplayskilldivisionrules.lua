@@ -44,7 +44,7 @@ LUI.createMenu.LeaguePlaySkillDivisionRules = function ( f1_arg0, f1_arg1 )
 	
 	local DisplayImage = LUI.UIImage.new( 0.5, 0.5, -468, 30, 0.5, 0.5, -284, 298 )
 	DisplayImage:setImage( RegisterImage( "ui_menu_ftue_wl_welcome" ) )
-	DisplayImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	DisplayImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	DisplayImage:setShaderVector( 0, 0.5, 0, 0, 0 )
 	DisplayImage:setShaderVector( 1, 1, 1, 0, 0 )
 	DisplayImage:setShaderVector( 2, 0, 0, 0, 0 )

@@ -16,7 +16,7 @@ CoD.VehicleSeatConfig_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	BoatBg:setRGB( 0.13, 0.13, 0.13 )
 	BoatBg:setAlpha( 0 )
 	BoatBg:setImage( RegisterImage( "uie_ui_icon_wz_hud_vehicle_boat" ) )
-	BoatBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	BoatBg:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	BoatBg:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( BoatBg )
 	self.BoatBg = BoatBg
@@ -30,7 +30,7 @@ CoD.VehicleSeatConfig_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local Boat = LUI.UIImage.new( 0, 0, 47, 103, 0, 0, 84, 196 )
 	Boat:setAlpha( 0 )
 	Boat:setImage( RegisterImage( "uie_ui_icon_wz_hud_vehicle_boat" ) )
-	Boat:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	Boat:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	Boat:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Boat )
 	self.Boat = Boat
@@ -39,7 +39,7 @@ CoD.VehicleSeatConfig_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	BoatPatrolBG:setRGB( 0.13, 0.13, 0.13 )
 	BoatPatrolBG:setAlpha( 0 )
 	BoatPatrolBG:setImage( RegisterImage( "uie_ui_icon_wz_hud_vehicle_patrol" ) )
-	BoatPatrolBG:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	BoatPatrolBG:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	BoatPatrolBG:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( BoatPatrolBG )
 	self.BoatPatrolBG = BoatPatrolBG
@@ -47,7 +47,7 @@ CoD.VehicleSeatConfig_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local BoatPatrol = LUI.UIImage.new( 0, 0, 47, 103, 0, 0, 84, 196 )
 	BoatPatrol:setAlpha( 0 )
 	BoatPatrol:setImage( RegisterImage( "uie_ui_icon_wz_hud_vehicle_patrol" ) )
-	BoatPatrol:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	BoatPatrol:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	BoatPatrol:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( BoatPatrol )
 	self.BoatPatrol = BoatPatrol
@@ -56,7 +56,7 @@ CoD.VehicleSeatConfig_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	BuggyBG:setRGB( 0.13, 0.13, 0.13 )
 	BuggyBG:setAlpha( 0 )
 	BuggyBG:setImage( RegisterImage( "uie_ui_icon_wz_hud_vehicle_buggy" ) )
-	BuggyBG:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	BuggyBG:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	BuggyBG:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( BuggyBG )
 	self.BuggyBG = BuggyBG
@@ -64,7 +64,7 @@ CoD.VehicleSeatConfig_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local Buggy = LUI.UIImage.new( 0, 0, 47, 103, 0, 0, 84, 196 )
 	Buggy:setAlpha( 0 )
 	Buggy:setImage( RegisterImage( "uie_ui_icon_wz_hud_vehicle_buggy" ) )
-	Buggy:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	Buggy:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	Buggy:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Buggy )
 	self.Buggy = Buggy
@@ -73,7 +73,7 @@ CoD.VehicleSeatConfig_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	CivilanSUVBG:setRGB( 0.13, 0.13, 0.13 )
 	CivilanSUVBG:setAlpha( 0 )
 	CivilanSUVBG:setImage( RegisterImage( "uie_ui_icon_wz_hud_vehicle_civiliansuv" ) )
-	CivilanSUVBG:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	CivilanSUVBG:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	CivilanSUVBG:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( CivilanSUVBG )
 	self.CivilanSUVBG = CivilanSUVBG
@@ -81,7 +81,7 @@ CoD.VehicleSeatConfig_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local CivilianSUV = LUI.UIImage.new( 0, 0, 47, 103, 0, 0, 84, 196 )
 	CivilianSUV:setAlpha( 0 )
 	CivilianSUV:setImage( RegisterImage( "uie_ui_icon_wz_hud_vehicle_civiliansuv" ) )
-	CivilianSUV:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	CivilianSUV:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	CivilianSUV:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( CivilianSUV )
 	self.CivilianSUV = CivilianSUV
@@ -90,7 +90,7 @@ CoD.VehicleSeatConfig_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	CivilanMusscleCarBG:setRGB( 0.13, 0.13, 0.13 )
 	CivilanMusscleCarBG:setAlpha( 0 )
 	CivilanMusscleCarBG:setImage( RegisterImage( "uie_ui_icon_wz_hud_vehicle_civilianmusclecar" ) )
-	CivilanMusscleCarBG:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	CivilanMusscleCarBG:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	CivilanMusscleCarBG:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( CivilanMusscleCarBG )
 	self.CivilanMusscleCarBG = CivilanMusscleCarBG
@@ -98,7 +98,7 @@ CoD.VehicleSeatConfig_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local CivilianMuscleCar = LUI.UIImage.new( 0, 0, 47, 103, 0, 0, 84, 196 )
 	CivilianMuscleCar:setAlpha( 0 )
 	CivilianMuscleCar:setImage( RegisterImage( "uie_ui_icon_wz_hud_vehicle_civilianmusclecar" ) )
-	CivilianMuscleCar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	CivilianMuscleCar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	CivilianMuscleCar:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( CivilianMuscleCar )
 	self.CivilianMuscleCar = CivilianMuscleCar
@@ -107,7 +107,7 @@ CoD.VehicleSeatConfig_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	HelicopterBg:setRGB( 0.13, 0.13, 0.13 )
 	HelicopterBg:setAlpha( 0 )
 	HelicopterBg:setImage( RegisterImage( "uie_ui_icon_wz_hud_vehicle_bird" ) )
-	HelicopterBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	HelicopterBg:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	HelicopterBg:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( HelicopterBg )
 	self.HelicopterBg = HelicopterBg
@@ -121,7 +121,7 @@ CoD.VehicleSeatConfig_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local Helicopter = LUI.UIImage.new( 0, 0, -3, 153, 0, 0, 44.5, 244.5 )
 	Helicopter:setAlpha( 0 )
 	Helicopter:setImage( RegisterImage( "uie_ui_icon_wz_hud_vehicle_bird" ) )
-	Helicopter:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	Helicopter:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	Helicopter:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Helicopter )
 	self.Helicopter = Helicopter
@@ -130,7 +130,7 @@ CoD.VehicleSeatConfig_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	HelicopterUH1Dbg:setRGB( 0.13, 0.13, 0.13 )
 	HelicopterUH1Dbg:setAlpha( 0 )
 	HelicopterUH1Dbg:setImage( RegisterImage( "uie_ui_icon_wz_hud_vehicle_uh1d" ) )
-	HelicopterUH1Dbg:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	HelicopterUH1Dbg:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	HelicopterUH1Dbg:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( HelicopterUH1Dbg )
 	self.HelicopterUH1Dbg = HelicopterUH1Dbg
@@ -138,7 +138,7 @@ CoD.VehicleSeatConfig_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local HelicopterUH1D = LUI.UIImage.new( 0, 0, -3, 153, 0, 0, 44.5, 244.5 )
 	HelicopterUH1D:setAlpha( 0 )
 	HelicopterUH1D:setImage( RegisterImage( "uie_ui_icon_wz_hud_vehicle_uh1d" ) )
-	HelicopterUH1D:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	HelicopterUH1D:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	HelicopterUH1D:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( HelicopterUH1D )
 	self.HelicopterUH1D = HelicopterUH1D
@@ -147,7 +147,7 @@ CoD.VehicleSeatConfig_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	CargoTruckBg:setRGB( 0.13, 0.13, 0.13 )
 	CargoTruckBg:setAlpha( 0 )
 	CargoTruckBg:setImage( RegisterImage( "uie_ui_icon_wz_hud_vehicle_truck" ) )
-	CargoTruckBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	CargoTruckBg:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	CargoTruckBg:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( CargoTruckBg )
 	self.CargoTruckBg = CargoTruckBg
@@ -161,7 +161,7 @@ CoD.VehicleSeatConfig_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local CargoTruck = LUI.UIImage.new( 0, 0, 49, 101, 0, 0, 76, 204 )
 	CargoTruck:setAlpha( 0 )
 	CargoTruck:setImage( RegisterImage( "uie_ui_icon_wz_hud_vehicle_truck" ) )
-	CargoTruck:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	CargoTruck:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	CargoTruck:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( CargoTruck )
 	self.CargoTruck = CargoTruck
@@ -170,7 +170,7 @@ CoD.VehicleSeatConfig_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	AtvBg:setRGB( 0.13, 0.13, 0.13 )
 	AtvBg:setAlpha( 0 )
 	AtvBg:setImage( RegisterImage( "uie_ui_icon_wz_hud_vehicle_atv" ) )
-	AtvBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	AtvBg:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	AtvBg:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( AtvBg )
 	self.AtvBg = AtvBg
@@ -184,7 +184,7 @@ CoD.VehicleSeatConfig_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local Atv = LUI.UIImage.new( 0, 0, 51, 99, 0, 0, 99, 191 )
 	Atv:setAlpha( 0 )
 	Atv:setImage( RegisterImage( "uie_ui_icon_wz_hud_vehicle_atv" ) )
-	Atv:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	Atv:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	Atv:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Atv )
 	self.Atv = Atv
@@ -193,7 +193,7 @@ CoD.VehicleSeatConfig_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	MotorCycleBg:setRGB( 0.13, 0.13, 0.13 )
 	MotorCycleBg:setAlpha( 0 )
 	MotorCycleBg:setImage( RegisterImage( "ui_icon_wz_hud_vehicle_motorcycle" ) )
-	MotorCycleBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	MotorCycleBg:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	MotorCycleBg:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( MotorCycleBg )
 	self.MotorCycleBg = MotorCycleBg
@@ -201,7 +201,7 @@ CoD.VehicleSeatConfig_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local MotorCycle = LUI.UIImage.new( 0, 0, 37, 109, 0, 0, 108, 188 )
 	MotorCycle:setAlpha( 0 )
 	MotorCycle:setImage( RegisterImage( "ui_icon_wz_hud_vehicle_motorcycle" ) )
-	MotorCycle:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	MotorCycle:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	MotorCycle:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( MotorCycle )
 	self.MotorCycle = MotorCycle
@@ -210,7 +210,7 @@ CoD.VehicleSeatConfig_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	TankBg:setRGB( 0.13, 0.13, 0.13 )
 	TankBg:setAlpha( 0 )
 	TankBg:setImage( RegisterImage( "ui_icon_wz_hud_vehicle_tank" ) )
-	TankBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	TankBg:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	TankBg:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( TankBg )
 	self.TankBg = TankBg
@@ -218,7 +218,7 @@ CoD.VehicleSeatConfig_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local Tank = LUI.UIImage.new( 0, 0, 43, 107, 0, 0, 52, 204 )
 	Tank:setAlpha( 0 )
 	Tank:setImage( RegisterImage( "ui_icon_wz_hud_vehicle_tank" ) )
-	Tank:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	Tank:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	Tank:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Tank )
 	self.Tank = Tank

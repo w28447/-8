@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_caricature_battery",
     "type": "#tag",
-    "material": "#hash_6474f2b7adadf32b",
+    "material": "#vd/mtl_loot_ui_icon_tags_caricature_battery",
     "bundle": {
         "type": "#tag",
         "title": "localized18#tags/caricature_battery",

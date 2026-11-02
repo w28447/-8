@@ -9,7 +9,7 @@ CoD.AARTierRewardContraband.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local ContrabandFull = LUI.UIImage.new( 0, 0, 0, 310, 0, 0, 0, 632 )
 	ContrabandFull:setImage( RegisterImage( "ui_menu_blackmarket_bundle_contraband_crate_reward" ) )
-	ContrabandFull:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	ContrabandFull:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	ContrabandFull:setShaderVector( 0, 0, 0, 0, 0 )
 	ContrabandFull:setShaderVector( 1, 1, 1, 0, 0 )
 	ContrabandFull:setShaderVector( 2, 0, 0, 0, 0 )

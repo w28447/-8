@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_caricature_crash",
+    "type": "#tag",
+    "material": "#vd/mtl_loot_ui_icon_tags_caricature_crash",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#tags/caricature_crash",
+        "icon": "image#loot_ui_icon_tags_caricature_crash",
+        "isdefault": 0
+    }
+}

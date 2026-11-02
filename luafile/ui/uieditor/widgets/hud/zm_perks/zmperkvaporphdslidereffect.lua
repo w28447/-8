@@ -10,7 +10,7 @@ CoD.ZMPerkVaporPhDSliderEffect.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local PhDSliderEffect = LUI.UIImage.new( 0, 0, 0, 50, 0, 0, 0, 50 )
 	PhDSliderEffect:setAlpha( 0 )
-	PhDSliderEffect:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	PhDSliderEffect:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	PhDSliderEffect:setShaderVector( 0, 3, 0, 0, 0 )
 	PhDSliderEffect:linkToElementModel( self, "itemIndex", true, function ( model )
 		local f2_local0 = model:get()

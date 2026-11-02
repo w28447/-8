@@ -10,13 +10,13 @@ CoD.WeaponLevelUpHeaderRight.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local HeaderSide = LUI.UIImage.new( 0, 0, 0, 70, 0, 0, 0, 8 )
 	HeaderSide:setRGB( 0, 0, 0 )
 	HeaderSide:setAlpha( 0.5 )
-	HeaderSide:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	HeaderSide:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	HeaderSide:setShaderVector( 0, 0, 1, 0, 0 )
 	self:addElement( HeaderSide )
 	self.HeaderSide = HeaderSide
 	
 	local HeaderArrow = LUI.UIImage.new( 0, 0, 31, 39, 0, 0, 0, 8 )
-	HeaderArrow:setImage( RegisterImage( 0xB402897EB8F521E ) )
+	HeaderArrow:setImage( RegisterImage( "uie_ui_hud_notifications_header_arrow" ) )
 	self:addElement( HeaderArrow )
 	self.HeaderArrow = HeaderArrow
 	

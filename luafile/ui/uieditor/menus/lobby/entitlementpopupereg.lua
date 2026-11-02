@@ -25,7 +25,7 @@ LUI.createMenu.EntitlementPopupEreg = function ( f1_arg0, f1_arg1 )
 	
 	local backing = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	backing:setRGB( 0, 0, 0 )
-	backing:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	backing:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	backing:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( backing )
 	self.backing = backing

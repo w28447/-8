@@ -50,7 +50,7 @@ CoD.RipperLockReticleTEMP.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	self.RipperLockArrowWidgetRight = RipperLockArrowWidgetRight
 	
 	local SpectreBladeCenterDot = LUI.UIImage.new( 0.5, 0.5, -4, 4, 0.5, 0.5, -4, 4 )
-	SpectreBladeCenterDot:setImage( RegisterImage( 0x638A7C387C3648C ) )
+	SpectreBladeCenterDot:setImage( RegisterImage( "uie_spectre_blade_centerdot_notadd" ) )
 	self:addElement( SpectreBladeCenterDot )
 	self.SpectreBladeCenterDot = SpectreBladeCenterDot
 	

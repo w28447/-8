@@ -12181,13 +12181,13 @@
         {
             "value": 2103,
             "next": 65535,
-            "name": "#hash_7ef4933c662dce01",
+            "name": "#vox_artifact_defend3_apot_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7ef4933c662dce01",
+                    "name": "#vox_artifact_defend3_apot_0",
                     "subtitle": "#hash_47d4c190c0740c27",
                     "assetId": "#hash_ac6fb98aa964bd9",
                     "assetFileNameSustain": "#zm_orange.en",
@@ -12233,13 +12233,13 @@
         {
             "value": 1168,
             "next": 254,
-            "name": "#hash_7ef4923c662dcc4e",
+            "name": "#vox_artifact_defend3_apot_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7ef4923c662dcc4e",
+                    "name": "#vox_artifact_defend3_apot_1",
                     "subtitle": "#hash_6ade77c97c78d9a6",
                     "assetId": "#hash_77c534f3947ab234",
                     "assetFileNameSustain": "#zm_orange.en",
@@ -18058,13 +18058,13 @@
         {
             "value": 1467,
             "next": 65535,
-            "name": "#hash_2388406b6c0759fc",
+            "name": "#vox_audio_reel_stem_1",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2388406b6c0759fc",
+                    "name": "#vox_audio_reel_stem_1",
                     "assetId": "#hash_11633b5c290aeb3a",
                     "assetFileNameSustain": "#zm_orange.en",
                     "assetIdRelease": "#zm_orange.en",
@@ -18109,13 +18109,13 @@
         {
             "value": 860,
             "next": 65535,
-            "name": "#hash_2388436b6c075f15",
+            "name": "#vox_audio_reel_stem_2",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2388436b6c075f15",
+                    "name": "#vox_audio_reel_stem_2",
                     "assetId": "#hash_f32ac32d29cac45",
                     "assetFileNameSustain": "#zm_orange.en",
                     "assetIdRelease": "#zm_orange.en",
@@ -18160,13 +18160,13 @@
         {
             "value": 2337,
             "next": 65535,
-            "name": "#hash_2388426b6c075d62",
+            "name": "#vox_audio_reel_stem_3",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2388426b6c075d62",
+                    "name": "#vox_audio_reel_stem_3",
                     "assetId": "#hash_5afcdd9b471984d0",
                     "assetFileNameSustain": "#zm_orange.en",
                     "assetIdRelease": "#zm_orange.en",
@@ -18211,13 +18211,13 @@
         {
             "value": 2068,
             "next": 65535,
-            "name": "#hash_23883d6b6c0754e3",
+            "name": "#vox_audio_reel_stem_4",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_23883d6b6c0754e3",
+                    "name": "#vox_audio_reel_stem_4",
                     "assetId": "#hash_4b8ce738e2f9e543",
                     "assetFileNameSustain": "#zm_orange.en",
                     "assetIdRelease": "#zm_orange.en",
@@ -18262,13 +18262,13 @@
         {
             "value": 2940,
             "next": 65535,
-            "name": "#hash_23883c6b6c075330",
+            "name": "#vox_audio_reel_stem_5",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_23883c6b6c075330",
+                    "name": "#vox_audio_reel_stem_5",
                     "assetId": "#hash_55f769d638d382c6",
                     "assetFileNameSustain": "#zm_orange.en",
                     "assetIdRelease": "#zm_orange.en",
@@ -18313,13 +18313,13 @@
         {
             "value": 196,
             "next": 65535,
-            "name": "#hash_23883f6b6c075849",
+            "name": "#vox_audio_reel_stem_6",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_23883f6b6c075849",
+                    "name": "#vox_audio_reel_stem_6",
                     "assetId": "#hash_53a448f979820c91",
                     "assetFileNameSustain": "#zm_orange.en",
                     "assetIdRelease": "#zm_orange.en",
@@ -524829,13 +524829,13 @@
         {
             "value": 3244,
             "next": 65535,
-            "name": "#hash_5f4b3985abc17212",
+            "name": "#vox_pablo_log_stem_1",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5f4b3985abc17212",
+                    "name": "#vox_pablo_log_stem_1",
                     "assetId": "#hash_6604bf984a648a1c",
                     "assetFileNameSustain": "#zm_orange.en",
                     "assetIdRelease": "#zm_orange.en",
@@ -524880,13 +524880,13 @@
         {
             "value": 2750,
             "next": 65535,
-            "name": "#hash_5f4b3885abc1705f",
+            "name": "#vox_pablo_log_stem_2",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5f4b3885abc1705f",
+                    "name": "#vox_pablo_log_stem_2",
                     "assetId": "#hash_3c25f977b8416133",
                     "assetFileNameSustain": "#zm_orange.en",
                     "assetIdRelease": "#zm_orange.en",
@@ -524931,13 +524931,13 @@
         {
             "value": 1217,
             "next": 2486,
-            "name": "#hash_5f4b3785abc16eac",
+            "name": "#vox_pablo_log_stem_3",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5f4b3785abc16eac",
+                    "name": "#vox_pablo_log_stem_3",
                     "assetId": "#hash_53e7dae091377eb6",
                     "assetFileNameSustain": "#zm_orange.en",
                     "assetIdRelease": "#zm_orange.en",
@@ -524982,13 +524982,13 @@
         {
             "value": 1635,
             "next": 65535,
-            "name": "#hash_5f4b3685abc16cf9",
+            "name": "#vox_pablo_log_stem_4",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5f4b3685abc16cf9",
+                    "name": "#vox_pablo_log_stem_4",
                     "assetId": "#hash_c98c064ca34a4f5",
                     "assetFileNameSustain": "#zm_orange.en",
                     "assetIdRelease": "#zm_orange.en",
@@ -525033,13 +525033,13 @@
         {
             "value": 3242,
             "next": 65535,
-            "name": "#hash_5f4b3585abc16b46",
+            "name": "#vox_pablo_log_stem_5",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5f4b3585abc16b46",
+                    "name": "#vox_pablo_log_stem_5",
                     "assetId": "#hash_79c3ea0dd209a780",
                     "assetFileNameSustain": "#zm_orange.en",
                     "assetIdRelease": "#zm_orange.en",

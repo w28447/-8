@@ -10,28 +10,28 @@ CoD.ReservesRevealDupeIcon.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local RerollIcon = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	RerollIcon:setRGB( 0.54, 0.87, 0.31 )
-	RerollIcon:setImage( RegisterImage( 0xB259D817A83EFDB ) )
+	RerollIcon:setImage( RegisterImage( "uie_ui_menu_item_shop_reroll_icon" ) )
 	self:addElement( RerollIcon )
 	self.RerollIcon = RerollIcon
 	
 	local RerollIconPulse = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	RerollIconPulse:setRGB( 0.54, 0.87, 0.31 )
 	RerollIconPulse:setAlpha( 0 )
-	RerollIconPulse:setImage( RegisterImage( 0xB259D817A83EFDB ) )
+	RerollIconPulse:setImage( RegisterImage( "uie_ui_menu_item_shop_reroll_icon" ) )
 	RerollIconPulse:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( RerollIconPulse )
 	self.RerollIconPulse = RerollIconPulse
 	
 	local DupeIcon = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	DupeIcon:setRGB( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
-	DupeIcon:setImage( RegisterImage( 0xF395928C19E9B99 ) )
+	DupeIcon:setImage( RegisterImage( "uie_ui_menu_item_shop_dupe_icon" ) )
 	self:addElement( DupeIcon )
 	self.DupeIcon = DupeIcon
 	
 	local DupeIconPulse = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	DupeIconPulse:setRGB( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
 	DupeIconPulse:setAlpha( 0 )
-	DupeIconPulse:setImage( RegisterImage( 0xF395928C19E9B99 ) )
+	DupeIconPulse:setImage( RegisterImage( "uie_ui_menu_item_shop_dupe_icon" ) )
 	DupeIconPulse:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DupeIconPulse )
 	self.DupeIconPulse = DupeIconPulse

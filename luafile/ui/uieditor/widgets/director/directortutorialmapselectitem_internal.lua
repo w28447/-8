@@ -15,7 +15,7 @@ CoD.DirectorTutorialMapSelectItem_Internal.new = function ( f1_arg0, f1_arg1, f1
 	
 	local SceneBlur = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	SceneBlur:setRGB( 0, 0, 0 )
-	SceneBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	SceneBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	SceneBlur:setShaderVector( 0, 0, 0.4, 0, 0 )
 	self:addElement( SceneBlur )
 	self.SceneBlur = SceneBlur
@@ -41,7 +41,7 @@ CoD.DirectorTutorialMapSelectItem_Internal.new = function ( f1_arg0, f1_arg1, f1
 	local Highlight = LUI.UIImage.new( 0, 1, -52, 52, 0, 1, -60, 60 )
 	Highlight:setAlpha( 0.03 )
 	Highlight:setImage( RegisterImage( "uie_ui_menu_common_focus_fill_small" ) )
-	Highlight:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
+	Highlight:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_multiplied_add" ) )
 	Highlight:setShaderVector( 0, 0, 0, 0, 0.25 )
 	Highlight:setShaderVector( 1, 1, 0, 0, 0 )
 	Highlight:setupNineSliceShader( 100, 100 )
@@ -50,7 +50,7 @@ CoD.DirectorTutorialMapSelectItem_Internal.new = function ( f1_arg0, f1_arg1, f1
 	
 	local MapImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	MapImage:setRGB( 0.6, 0.6, 0.6 )
-	MapImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	MapImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	MapImage:setShaderVector( 0, 0, 0, 0, 0 )
 	MapImage:setShaderVector( 1, 1, 1, 0, 0 )
 	MapImage:setShaderVector( 2, 0, 0, 0, 0 )

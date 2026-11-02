@@ -19,7 +19,7 @@ CoD.UpsellBanner_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	self.NoiseTiledBacking = NoiseTiledBacking
 	
 	local Image = LUI.UIImage.new( 0, 0, 0, 540, 0, 0, 0, 150 )
-	Image:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	Image:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	Image:setShaderVector( 0, 0, 0.2, 0, 0 )
 	Image:setShaderVector( 1, 1, 1, 0, 0 )
 	Image:setShaderVector( 2, 0, 0, 0, 0 )
@@ -46,7 +46,7 @@ CoD.UpsellBanner_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	Description:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	Description:setText( LocalizeToUpperString( "menu/purchase" ) )
 	Description:setTTF( "ttmussels_demibold" )
-	Description:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	Description:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	Description:setShaderVector( 0, 0, 0, 0, 0 )
 	Description:setShaderVector( 1, 0, 0, 0, 0 )
 	Description:setShaderVector( 2, 1, 1, 1, 0 )
@@ -58,7 +58,7 @@ CoD.UpsellBanner_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	Description:setBackingAlpha( 0.85 )
 	Description:setBackingXPadding( 6 )
 	Description:setBackingYPadding( 4 )
-	Description:setBackingImage( RegisterImage( 0xC229CEBABEEAB0E ) )
+	Description:setBackingImage( RegisterImage( "uie_ui_icon_corner_bar_noise" ) )
 	self:addElement( Description )
 	self.Description = Description
 	

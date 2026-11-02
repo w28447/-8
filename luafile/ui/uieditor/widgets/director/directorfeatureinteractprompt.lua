@@ -18,7 +18,7 @@ CoD.DirectorFeatureInteractPrompt.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	Description:setBackingAlpha( 0.7 )
 	Description:setBackingXPadding( 10 )
 	Description:setBackingYPadding( 4 )
-	Description:setBackingImage( RegisterImage( 0xC229CEBABEEAB0E ) )
+	Description:setBackingImage( RegisterImage( "uie_ui_icon_corner_bar_noise" ) )
 	Description:linkToElementModel( self, "descriptionText", true, function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then

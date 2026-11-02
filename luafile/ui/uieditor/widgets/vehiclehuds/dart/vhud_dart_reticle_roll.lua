@@ -18,7 +18,7 @@ CoD.vhud_dart_reticle_roll.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local HashBoxAdd = LUI.UIImage.new( 0.5, 0.5, -234, 234, 0.5, 0.5, -16, 16 )
 	HashBoxAdd:setImage( RegisterImage( "uie_ui_hud_vehicle_dart_reticle_horizontal_boxes" ) )
-	HashBoxAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	HashBoxAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	HashBoxAdd:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( HashBoxAdd )
 	self.HashBoxAdd = HashBoxAdd
@@ -26,7 +26,7 @@ CoD.vhud_dart_reticle_roll.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local CenterReticleLineRight = LUI.UIImage.new( 0.5, 0.5, 300, 352, 0.5, 0.5, -14, 14 )
 	CenterReticleLineRight:setAlpha( 0.6 )
 	CenterReticleLineRight:setImage( RegisterImage( "uie_ui_hud_vehicle_dart_horizontal_line_tip" ) )
-	CenterReticleLineRight:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	CenterReticleLineRight:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	CenterReticleLineRight:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( CenterReticleLineRight )
 	self.CenterReticleLineRight = CenterReticleLineRight
@@ -34,7 +34,7 @@ CoD.vhud_dart_reticle_roll.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local CenterReticleLineLeft = LUI.UIImage.new( 0.5, 0.5, -299.5, -351.5, 0.5, 0.5, -14, 14 )
 	CenterReticleLineLeft:setAlpha( 0.6 )
 	CenterReticleLineLeft:setImage( RegisterImage( "uie_ui_hud_vehicle_dart_horizontal_line_tip" ) )
-	CenterReticleLineLeft:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	CenterReticleLineLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	CenterReticleLineLeft:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( CenterReticleLineLeft )
 	self.CenterReticleLineLeft = CenterReticleLineLeft

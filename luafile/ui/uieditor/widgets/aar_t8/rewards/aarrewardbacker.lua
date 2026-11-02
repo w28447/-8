@@ -13,7 +13,7 @@ CoD.AARRewardBacker.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	local SceneBlur = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 20, 0 )
 	SceneBlur:setRGB( 0.02, 0.02, 0.02 )
 	SceneBlur:setAlpha( 0.9 )
-	SceneBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	SceneBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	SceneBlur:setShaderVector( 0, 0, 0.9, 0, 0 )
 	self:addElement( SceneBlur )
 	self.SceneBlur = SceneBlur

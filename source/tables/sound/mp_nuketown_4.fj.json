@@ -619,13 +619,13 @@
         {
             "value": 0,
             "next": 3,
-            "name": "#hash_7b6ea54d3ad37735",
+            "name": "#vox_rupa_pa_launch_count",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7b6ea54d3ad37735",
+                    "name": "#vox_rupa_pa_launch_count",
                     "assetId": "#hash_277e97296056944e",
                     "assetFileNameSustain": "#mp_nuketown_4.fj",
                     "assetIdRelease": "#mp_nuketown_4.fj",
@@ -665,7 +665,7 @@
                     "unk178": "#hash_18011f0808"
                 },
                 {
-                    "name": "#hash_7b6ea54d3ad37735",
+                    "name": "#vox_rupa_pa_launch_count",
                     "assetId": "#hash_1d0e2cdbc7cf256b",
                     "assetFileNameSustain": "#mp_nuketown_4.fj",
                     "assetIdRelease": "#mp_nuketown_4.fj",
@@ -705,7 +705,7 @@
                     "unk178": "#hash_18011f0808"
                 },
                 {
-                    "name": "#hash_7b6ea54d3ad37735",
+                    "name": "#vox_rupa_pa_launch_count",
                     "assetId": "#hash_198a39abfd60ca14",
                     "assetFileNameSustain": "#mp_nuketown_4.fj",
                     "assetIdRelease": "#mp_nuketown_4.fj",
@@ -745,7 +745,7 @@
                     "unk178": "#hash_18011f0808"
                 },
                 {
-                    "name": "#hash_7b6ea54d3ad37735",
+                    "name": "#vox_rupa_pa_launch_count",
                     "assetId": "#hash_7c80856a09a8c039",
                     "assetFileNameSustain": "#mp_nuketown_4.fj",
                     "assetIdRelease": "#mp_nuketown_4.fj",
@@ -785,7 +785,7 @@
                     "unk178": "#hash_18011f0808"
                 },
                 {
-                    "name": "#hash_7b6ea54d3ad37735",
+                    "name": "#vox_rupa_pa_launch_count",
                     "assetId": "#hash_4398a0445ce0e062",
                     "assetFileNameSustain": "#mp_nuketown_4.fj",
                     "assetIdRelease": "#mp_nuketown_4.fj",
@@ -825,7 +825,7 @@
                     "unk178": "#hash_18011f0808"
                 },
                 {
-                    "name": "#hash_7b6ea54d3ad37735",
+                    "name": "#vox_rupa_pa_launch_count",
                     "assetId": "#hash_331914477d115e1f",
                     "assetFileNameSustain": "#mp_nuketown_4.fj",
                     "assetIdRelease": "#mp_nuketown_4.fj",
@@ -865,7 +865,7 @@
                     "unk178": "#hash_18011f0808"
                 },
                 {
-                    "name": "#hash_7b6ea54d3ad37735",
+                    "name": "#vox_rupa_pa_launch_count",
                     "assetId": "#hash_57917eb989072e78",
                     "assetFileNameSustain": "#mp_nuketown_4.fj",
                     "assetIdRelease": "#mp_nuketown_4.fj",
@@ -905,7 +905,7 @@
                     "unk178": "#hash_18011f0808"
                 },
                 {
-                    "name": "#hash_7b6ea54d3ad37735",
+                    "name": "#vox_rupa_pa_launch_count",
                     "assetId": "#hash_2c1df0c312f3cfcd",
                     "assetFileNameSustain": "#mp_nuketown_4.fj",
                     "assetIdRelease": "#mp_nuketown_4.fj",
@@ -945,7 +945,7 @@
                     "unk178": "#hash_18011f0808"
                 },
                 {
-                    "name": "#hash_7b6ea54d3ad37735",
+                    "name": "#vox_rupa_pa_launch_count",
                     "assetId": "#hash_6bceeb75d48bf9e6",
                     "assetFileNameSustain": "#mp_nuketown_4.fj",
                     "assetIdRelease": "#mp_nuketown_4.fj",
@@ -985,7 +985,7 @@
                     "unk178": "#hash_18011f0808"
                 },
                 {
-                    "name": "#hash_7b6ea54d3ad37735",
+                    "name": "#vox_rupa_pa_launch_count",
                     "assetId": "#hash_46425a64177158e3",
                     "assetFileNameSustain": "#mp_nuketown_4.fj",
                     "assetIdRelease": "#mp_nuketown_4.fj",
@@ -1025,7 +1025,7 @@
                     "unk178": "#hash_18011f0808"
                 },
                 {
-                    "name": "#hash_7b6ea54d3ad37735",
+                    "name": "#vox_rupa_pa_launch_count",
                     "assetId": "#hash_64335bd86f501f9d",
                     "assetFileNameSustain": "#mp_nuketown_4.fj",
                     "assetIdRelease": "#mp_nuketown_4.fj",
@@ -1065,7 +1065,7 @@
                     "unk178": "#hash_18011f0808"
                 },
                 {
-                    "name": "#hash_7b6ea54d3ad37735",
+                    "name": "#vox_rupa_pa_launch_count",
                     "assetId": "#hash_3cb937b3545ff008",
                     "assetFileNameSustain": "#mp_nuketown_4.fj",
                     "assetIdRelease": "#mp_nuketown_4.fj",
@@ -1109,13 +1109,13 @@
         {
             "value": 2,
             "next": 65535,
-            "name": "#hash_619ecc716df4aaf6",
+            "name": "#vox_rupa_pa_launch_warn",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_619ecc716df4aaf6",
+                    "name": "#vox_rupa_pa_launch_warn",
                     "assetId": "#hash_1313b3b4f0c6df81",
                     "assetFileNameSustain": "#mp_nuketown_4.fj",
                     "assetIdRelease": "#mp_nuketown_4.fj",

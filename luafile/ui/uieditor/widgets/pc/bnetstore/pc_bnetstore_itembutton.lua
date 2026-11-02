@@ -79,7 +79,7 @@ CoD.PC_BnetStore_ItemButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local PurchasedImage = LUI.UIImage.new( 1, 1, -85, -9, 0.5, 0.5, -40, 40 )
 	PurchasedImage:setAlpha( 0 )
-	PurchasedImage:setImage( RegisterImage( 0xACBDC051D85F4A8 ) )
+	PurchasedImage:setImage( RegisterImage( "hud_mp_notification_war_gold" ) )
 	self:addElement( PurchasedImage )
 	self.PurchasedImage = PurchasedImage
 	

@@ -17,7 +17,7 @@ CoD.Hud_ZM_Trial_Global_Tracker.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.objBg = objBg
 	
 	local CheckBox2 = LUI.UIImage.new( 0, 0, 0, 45, 0, 0, 5, 50 )
-	CheckBox2:setImage( RegisterImage( 0x3A6C1FB3B354832 ) )
+	CheckBox2:setImage( RegisterImage( "uie_trial_strike_empty" ) )
 	self:addElement( CheckBox2 )
 	self.CheckBox2 = CheckBox2
 	
@@ -141,7 +141,7 @@ CoD.Hud_ZM_Trial_Global_Tracker.__resetProperties = function ( f9_arg0 )
 	f9_arg0.Counter:setTopBottom( 0, 0, 22, 49 )
 	f9_arg0.Counter:setAlpha( 1 )
 	f9_arg0.CheckBox2:setAlpha( 1 )
-	f9_arg0.CheckBox2:setImage( RegisterImage( 0x3A6C1FB3B354832 ) )
+	f9_arg0.CheckBox2:setImage( RegisterImage( "uie_trial_strike_empty" ) )
 	f9_arg0.objBg:setLeftRight( 0, 0, -1.5, 80.5 )
 	f9_arg0.objBg:setAlpha( 0 )
 	f9_arg0.white:setAlpha( 0 )
@@ -185,7 +185,7 @@ CoD.Hud_ZM_Trial_Global_Tracker.__clipsPerState = {
 			f12_arg0:__resetProperties()
 			f12_arg0:setupElementClipCounter( 3 )
 			f12_arg0.CheckBox2:completeAnimation()
-			f12_arg0.CheckBox2:setImage( RegisterImage( 0x3A6C1FB3B354832 ) )
+			f12_arg0.CheckBox2:setImage( RegisterImage( "uie_trial_strike_empty" ) )
 			f12_arg0.clipFinished( f12_arg0.CheckBox2 )
 			f12_arg0.white:completeAnimation()
 			f12_arg0.white:setAlpha( 1 )

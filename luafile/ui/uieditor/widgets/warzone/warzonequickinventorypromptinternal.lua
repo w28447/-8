@@ -13,7 +13,7 @@ CoD.WarzoneQuickInventoryPromptInternal.new = function ( f1_arg0, f1_arg1, f1_ar
 	local label = LUI.UIText.new( 0.5, 0.5, -103.5, 136.5, 0, 0, 9, 27 )
 	label:setRGB( 0.92, 0.92, 0.92 )
 	label:setTTF( "ttmussels_regular" )
-	label:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	label:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	label:setShaderVector( 0, 0.6, 0, 0, 0 )
 	label:setShaderVector( 1, 0.3, 0, 0, 0 )
 	label:setShaderVector( 2, 0, 0, 0, 1 )

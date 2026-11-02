@@ -38,7 +38,7 @@ CoD.Waypoint_TextBG.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	ContestedText:setAlpha( 0 )
 	ContestedText:setText( Engine[0xF9F1239CFD921FE]( "menu/waypoint_contested" ) )
 	ContestedText:setTTF( "ttmussels_regular" )
-	ContestedText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	ContestedText:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	ContestedText:setShaderVector( 0, 0.8, 0, 0, 0 )
 	ContestedText:setShaderVector( 1, 0, 0, 0, 0 )
 	ContestedText:setShaderVector( 2, 1, 0, 0, 0.4 )

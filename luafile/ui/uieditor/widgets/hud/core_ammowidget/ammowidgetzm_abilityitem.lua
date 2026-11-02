@@ -16,7 +16,7 @@ CoD.AmmoWidgetZM_AbilityItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local SecondaryWeaponBGBlur = LUI.UIImage.new( 0.5, 0.5, -38, 38, 0, 0, -7, 73 )
 	SecondaryWeaponBGBlur:setImage( RegisterImage( 0xFE9388BE79636F7 ) )
-	SecondaryWeaponBGBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	SecondaryWeaponBGBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	SecondaryWeaponBGBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( SecondaryWeaponBGBlur )
 	self.SecondaryWeaponBGBlur = SecondaryWeaponBGBlur
@@ -28,7 +28,7 @@ CoD.AmmoWidgetZM_AbilityItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local SecondaryWeaponMeterBGBlur = LUI.UIImage.new( 0.5, 0.5, -38, 38, 0, 0, -16, 12 )
 	SecondaryWeaponMeterBGBlur:setImage( RegisterImage( 0xBCE5D90EBC1F88 ) )
-	SecondaryWeaponMeterBGBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	SecondaryWeaponMeterBGBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	SecondaryWeaponMeterBGBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( SecondaryWeaponMeterBGBlur )
 	self.SecondaryWeaponMeterBGBlur = SecondaryWeaponMeterBGBlur

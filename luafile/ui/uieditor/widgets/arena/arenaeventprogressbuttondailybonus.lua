@@ -67,7 +67,7 @@ CoD.ArenaEventProgressButtonDailyBonus.new = function ( f1_arg0, f1_arg1, f1_arg
 	DailyBonusAdd:setRGB( ColorSet.SelectedGreen.r, ColorSet.SelectedGreen.g, ColorSet.SelectedGreen.b )
 	DailyBonusAdd:setAlpha( 0 )
 	DailyBonusAdd:setTTF( "0arame_mono_stencil" )
-	DailyBonusAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x336C1AE82B1520A ) )
+	DailyBonusAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield_add" ) )
 	DailyBonusAdd:setLetterSpacing( 2 )
 	DailyBonusAdd:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	DailyBonusAdd:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

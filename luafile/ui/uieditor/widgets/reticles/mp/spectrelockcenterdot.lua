@@ -9,22 +9,22 @@ CoD.SpectreLockCenterDot.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local SpectreBladeCenterDot = LUI.UIImage.new( 0.5, 0.5, -4, 4, 0.5, 0.5, -4, 4 )
 	SpectreBladeCenterDot:setRGB( 1, 0.01, 0 )
-	SpectreBladeCenterDot:setImage( RegisterImage( 0x638A7C387C3648C ) )
+	SpectreBladeCenterDot:setImage( RegisterImage( "uie_spectre_blade_centerdot_notadd" ) )
 	self:addElement( SpectreBladeCenterDot )
 	self.SpectreBladeCenterDot = SpectreBladeCenterDot
 	
 	local SpectreBladeCenterDotGlow01 = LUI.UIImage.new( 0.5, 0.5, -4, 4, 0.5, 0.5, -4, 4 )
 	SpectreBladeCenterDotGlow01:setRGB( 1, 0.01, 0 )
-	SpectreBladeCenterDotGlow01:setImage( RegisterImage( 0x638A7C387C3648C ) )
-	SpectreBladeCenterDotGlow01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	SpectreBladeCenterDotGlow01:setImage( RegisterImage( "uie_spectre_blade_centerdot_notadd" ) )
+	SpectreBladeCenterDotGlow01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	SpectreBladeCenterDotGlow01:setShaderVector( 0, 20, 0, 0, 0 )
 	self:addElement( SpectreBladeCenterDotGlow01 )
 	self.SpectreBladeCenterDotGlow01 = SpectreBladeCenterDotGlow01
 	
 	local SpectreBladeCenterDotGlow02 = LUI.UIImage.new( 0.5, 0.5, -4, 4, 0.5, 0.5, -4, 4 )
 	SpectreBladeCenterDotGlow02:setRGB( 1, 0.88, 0.77 )
-	SpectreBladeCenterDotGlow02:setImage( RegisterImage( 0x638A7C387C3648C ) )
-	SpectreBladeCenterDotGlow02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	SpectreBladeCenterDotGlow02:setImage( RegisterImage( "uie_spectre_blade_centerdot_notadd" ) )
+	SpectreBladeCenterDotGlow02:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	SpectreBladeCenterDotGlow02:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( SpectreBladeCenterDotGlow02 )
 	self.SpectreBladeCenterDotGlow02 = SpectreBladeCenterDotGlow02

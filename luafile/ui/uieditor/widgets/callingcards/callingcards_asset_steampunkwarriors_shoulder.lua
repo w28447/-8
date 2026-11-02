@@ -9,7 +9,7 @@ CoD.CallingCards_Asset_steampunkwarriors_shoulder.new = function ( f1_arg0, f1_a
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local shoulder = LUI.UIImage.new( 0, 0, 0, 200, 0, 0, 0, 120 )
-	shoulder:setImage( RegisterImage( 0x9E4EEFF9D420C85 ) )
+	shoulder:setImage( RegisterImage( "uie_ui_icon_callingcards_steampunkwarriors_shoulderpad" ) )
 	self:addElement( shoulder )
 	self.shoulder = shoulder
 	

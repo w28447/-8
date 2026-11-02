@@ -13,7 +13,7 @@ CoD.TierBoostAmbientGlow.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	Glow2:setAlpha( 0.15 )
 	Glow2:setScale( 2, 2 )
 	Glow2:setImage( RegisterImage( "uie_ui_hud_notifications_glow" ) )
-	Glow2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	Glow2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	Glow2:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( Glow2 )
 	self.Glow2 = Glow2
@@ -22,7 +22,7 @@ CoD.TierBoostAmbientGlow.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	Glow:setRGB( 0.8, 0.58, 0.12 )
 	Glow:setAlpha( 0 )
 	Glow:setImage( RegisterImage( "uie_ui_hud_notifications_glow" ) )
-	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	Glow:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( Glow )
 	self.Glow = Glow

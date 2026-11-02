@@ -15,7 +15,7 @@ CoD.CommonCenteredPopup.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local BlackfadeBlurB = LUI.UIImage.new( 0, 1, -5, 5, 0, 1, -5, 5 )
 	BlackfadeBlurB:setRGB( 0, 0, 0 )
-	BlackfadeBlurB:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	BlackfadeBlurB:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	BlackfadeBlurB:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BlackfadeBlurB )
 	self.BlackfadeBlurB = BlackfadeBlurB
@@ -115,7 +115,7 @@ CoD.CommonCenteredPopup.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	TitleLayoutElementL:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	TitleLayoutElementL:setZRot( 90 )
 	TitleLayoutElementL:setImage( RegisterImage( 0x34B575F15CDD376 ) )
-	TitleLayoutElementL:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	TitleLayoutElementL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	TitleLayoutElementL:setShaderVector( 0, 3, 0, 0, 0 )
 	self:addElement( TitleLayoutElementL )
 	self.TitleLayoutElementL = TitleLayoutElementL
@@ -123,7 +123,7 @@ CoD.CommonCenteredPopup.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local TitleLayoutElementR = LUI.UIImage.new( 0.5, 0.5, 313, 329, 0.5, 0.5, -464, -448 )
 	TitleLayoutElementR:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	TitleLayoutElementR:setImage( RegisterImage( 0x34B575F15CDD376 ) )
-	TitleLayoutElementR:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	TitleLayoutElementR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	TitleLayoutElementR:setShaderVector( 0, 3, 0, 0, 0 )
 	self:addElement( TitleLayoutElementR )
 	self.TitleLayoutElementR = TitleLayoutElementR
@@ -138,7 +138,7 @@ CoD.CommonCenteredPopup.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	HeaderTopBar:setAlpha( 0.09 )
 	HeaderTopBar:setZRot( 90 )
 	HeaderTopBar:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
-	HeaderTopBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	HeaderTopBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	HeaderTopBar:setShaderVector( 0, 0, 0, 0, 0 )
 	HeaderTopBar:setupNineSliceShader( 4, 8 )
 	self:addElement( HeaderTopBar )
@@ -148,7 +148,7 @@ CoD.CommonCenteredPopup.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	HeaderBottomBar:setAlpha( 0.09 )
 	HeaderBottomBar:setZRot( 90 )
 	HeaderBottomBar:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
-	HeaderBottomBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	HeaderBottomBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	HeaderBottomBar:setShaderVector( 0, 0, 0, 0, 0 )
 	HeaderBottomBar:setupNineSliceShader( 4, 8 )
 	self:addElement( HeaderBottomBar )

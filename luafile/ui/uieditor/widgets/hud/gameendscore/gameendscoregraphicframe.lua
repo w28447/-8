@@ -25,7 +25,7 @@ CoD.GameEndScoreGraphicFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local dotR6 = LUI.UIImage.new( 0.5, 0.5, 34, 38, 0.5, 0.5, -2, 2 )
 	dotR6:setAlpha( 0.5 )
-	dotR6:setImage( RegisterImage( 0xDA0056D17A8AC89 ) )
+	dotR6:setImage( RegisterImage( "uie_ui_hud_common_tiny_circle" ) )
 	self:addElement( dotR6 )
 	self.dotR6 = dotR6
 	

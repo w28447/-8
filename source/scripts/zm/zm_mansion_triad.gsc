@@ -1225,9 +1225,9 @@ function function_226e15cc()
     level.var_fbcb1d5b moveto( level.var_fbcb1d5b.origin + v_offset, 0.25 );
     level.var_c22f75e6 moveto( level.var_c22f75e6.origin + v_offset, 0.25 );
     array::wait_till( array( level.var_abe1b67c, level.var_fbcb1d5b, level.var_c22f75e6 ), "movedone", 1 );
-    level.var_abe1b67c.str_model = #"hash_2fd7d12881613ff1";
-    level.var_fbcb1d5b.str_model = #"hash_485dabee10eddd9a";
-    level.var_c22f75e6.str_model = #"hash_1e5559d9a4922ce7";
+    level.var_abe1b67c.str_model = #"p8_fxanim_zm_man_ka01_glow_mod";
+    level.var_fbcb1d5b.str_model = #"p8_fxanim_zm_man_ka02_glow_mod";
+    level.var_c22f75e6.str_model = #"p8_fxanim_zm_man_ka03_glow_mod";
     scene::add_scene_func( #"p8_fxanim_zm_man_kag03_bundle", &function_92227ee8, "rise" );
     level.var_abe1b67c thread scene::play( #"p8_fxanim_zm_man_kag03_bundle", "rise", level.var_abe1b67c );
     level.var_fbcb1d5b thread scene::play( #"p8_fxanim_zm_man_kag03_bundle", "rise", level.var_fbcb1d5b );
@@ -1594,13 +1594,13 @@ function function_90cc31c4( s_goal, var_ea62e3e9, str_flag )
     
     switch ( self.str_model )
     {
-        case #"hash_2fd7d12881613ff1":
+        case #"p8_fxanim_zm_man_ka01_glow_mod":
             self setmodel( #"p8_zm_man_statue_kisa_stone_01" );
             break;
-        case #"hash_485dabee10eddd9a":
+        case #"p8_fxanim_zm_man_ka02_glow_mod":
             self setmodel( #"p8_zm_man_statue_kisa_stone_02" );
             break;
-        case #"hash_1e5559d9a4922ce7":
+        case #"p8_fxanim_zm_man_ka03_glow_mod":
             self setmodel( #"p8_zm_man_statue_kisa_stone_03" );
             break;
     }

@@ -11,7 +11,7 @@ CoD.ScoreboardMapColumnHeadings.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local MapGridColumnHeading = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	MapGridColumnHeading:setRGB( 0, 0, 0 )
-	MapGridColumnHeading:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	MapGridColumnHeading:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	MapGridColumnHeading:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( MapGridColumnHeading )
 	self.MapGridColumnHeading = MapGridColumnHeading
@@ -19,7 +19,7 @@ CoD.ScoreboardMapColumnHeadings.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local MapGridColumnHeadingTint = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	MapGridColumnHeadingTint:setRGB( 0, 0, 0 )
 	MapGridColumnHeadingTint:setAlpha( 0.9 )
-	MapGridColumnHeadingTint:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	MapGridColumnHeadingTint:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	MapGridColumnHeadingTint:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( MapGridColumnHeadingTint )
 	self.MapGridColumnHeadingTint = MapGridColumnHeadingTint

@@ -18,7 +18,7 @@ LUI.createMenu.TimelineEditor = function ( f1_arg0, f1_arg1 )
 	f1_local1:addElementToPendingUpdateStateList( self )
 	
 	local BGBlur = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	BGBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	BGBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	BGBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BGBlur )
 	self.BGBlur = BGBlur

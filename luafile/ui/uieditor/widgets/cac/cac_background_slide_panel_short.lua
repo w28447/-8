@@ -8,7 +8,7 @@ CoD.cac_background_slide_panel_short.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	self.soundSet = "default"
 	
 	local BackgroundBlur = LUI.UIImage.new( -0.1, 1.1, 0, 0, 1, 1, -588, -118 )
-	BackgroundBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	BackgroundBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	BackgroundBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BackgroundBlur )
 	self.BackgroundBlur = BackgroundBlur
@@ -53,7 +53,7 @@ CoD.cac_background_slide_panel_short.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	TriangleBGPattern01:setAlpha( 0.04 )
 	TriangleBGPattern01:setZoom( 2 )
 	TriangleBGPattern01:setImage( RegisterImage( "uie_ui_menu_cac_grid_pattern_bg01" ) )
-	TriangleBGPattern01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	TriangleBGPattern01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	TriangleBGPattern01:setShaderVector( 0, 0, 0, 0, 0 )
 	TriangleBGPattern01:setupNineSliceShader( 256, 256 )
 	self:addElement( TriangleBGPattern01 )

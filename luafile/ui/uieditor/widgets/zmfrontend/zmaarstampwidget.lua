@@ -11,7 +11,7 @@ CoD.ZMAARStampWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local StampName = LUI.UIText.new( 0, 0, -33, 291, 0, 0, 26.5, 51.5 )
 	StampName:setText( CoD.AARUtility.GetAARStamp( f1_arg1, "RED GREEN BLUE PURPLE" ) )
 	StampName:setTTF( "skorzhen" )
-	StampName:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	StampName:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	StampName:setLetterSpacing( 2 )
 	StampName:setAlignment( Enum.LUIAlignment[0x830CFD395E6AA0A] )
 	StampName:setBackingType( 2 )
@@ -22,7 +22,7 @@ CoD.ZMAARStampWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	self.StampName = StampName
 	
 	local Stamp = LUI.UIImage.new( 0, 0, 290, 340, 0, 0, 15, 65 )
-	Stamp:setImage( RegisterImage( 0x51A5D15E57F49CE ) )
+	Stamp:setImage( RegisterImage( "uie_ui_menu_aar_zm_stamp" ) )
 	self:addElement( Stamp )
 	self.Stamp = Stamp
 	

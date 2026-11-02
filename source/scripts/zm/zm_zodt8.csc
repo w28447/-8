@@ -705,7 +705,7 @@ function sentinel_artifact_activated( localclientnum, oldval, newval, bnewent, b
         
         util::playfxontag( localclientnum, level._effect[ #"sentinel_activate" ], self, "tag_fx_x_pos" );
         
-        while ( isdefined( self ) && self.model !== #"hash_2c0078538e398b4f" )
+        while ( isdefined( self ) && self.model !== #"p8_zm_zod_artifact_combined_fire_all" )
         {
             waitframe( 1 );
         }

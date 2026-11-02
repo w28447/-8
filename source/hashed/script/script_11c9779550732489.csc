@@ -188,7 +188,7 @@ function totem_fall( localclientnum, oldval, newval, bnewent, binitialsnap, fiel
 {
     var_e9af628d = struct::get( "mdl_d_w_i_k_t" );
     s_destination = struct::get( var_e9af628d.target );
-    mdl_totem = util::spawn_model( localclientnum, #"hash_3964c81546296b78", var_e9af628d.origin, var_e9af628d.angles );
+    mdl_totem = util::spawn_model( localclientnum, #"p8_zm_esc_totem_cloth", var_e9af628d.origin, var_e9af628d.angles );
     mdl_totem moveto( s_destination.origin, 1 );
 }
 

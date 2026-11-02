@@ -18,7 +18,7 @@ CoD.ZMEquipmentItemCounter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	Quantity:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	Quantity:setText( CoD.BaseUtility.AlreadyLocalized( "X" ) )
 	Quantity:setTTF( "0arame_mono_stencil" )
-	Quantity:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	Quantity:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	Quantity:setShaderVector( 0, 0.8, 0, 0, 0 )
 	Quantity:setShaderVector( 1, 0, 0, 0, 0 )
 	Quantity:setShaderVector( 2, 1, 1, 1, 0.5 )

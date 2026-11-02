@@ -32,7 +32,7 @@ CoD.PC_Battlenet_AddFriend_Information.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local Border = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	Border:setAlpha( 0.5 )
-	Border:setImage( RegisterImage( 0x15BB65132BCEED9 ) )
+	Border:setImage( RegisterImage( "uie_ui_border_9s" ) )
 	Border:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	Border:setShaderVector( 0, 0, 0, 0, 0 )
 	Border:setupNineSliceShader( 10, 10 )

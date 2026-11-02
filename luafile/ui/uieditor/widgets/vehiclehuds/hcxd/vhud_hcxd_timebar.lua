@@ -38,13 +38,13 @@ CoD.vhud_hcxd_timebar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.DurationCornerTR = DurationCornerTR
 	
 	local Image = LUI.UIImage.new( 0, 0, 6, 38, 0, 0, 7, 15 )
-	Image:setImage( RegisterImage( 0xBE3C59102C8FA21 ) )
+	Image:setImage( RegisterImage( "uie_ui_hud_vehicle_hcxd_duration_text" ) )
 	self:addElement( Image )
 	self.Image = Image
 	
 	local Image2 = LUI.UIImage.new( 0, 0, 26, 34, 0, 0, 28, 36 )
 	Image2:setAlpha( 0.2 )
-	Image2:setImage( RegisterImage( 0xF6E71B8426B936D ) )
+	Image2:setImage( RegisterImage( "uie_ui_hud_vehicle_hcxd_accent_arrow" ) )
 	self:addElement( Image2 )
 	self.Image2 = Image2
 	

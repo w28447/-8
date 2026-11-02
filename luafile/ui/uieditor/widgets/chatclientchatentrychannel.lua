@@ -10,7 +10,7 @@ CoD.ChatClientChatEntryChannel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local entryChannelText = LUI.UIText.new( 0, 1, 0, 0, 0, 0, 0, 21 )
 	entryChannelText:setTTF( "notosans_light" )
-	entryChannelText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	entryChannelText:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	entryChannelText:setShaderVector( 0, 0.25, 0, 0, 0 )
 	entryChannelText:setShaderVector( 1, 0.05, 0, 0, 0 )
 	entryChannelText:setShaderVector( 2, 0, 0, 0, 0.67 )

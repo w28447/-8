@@ -120,7 +120,7 @@ CoD.CodCasterFakeMap.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	Title:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	Title:setText( LocalizeToUpperString( "codcaster/team_color_preview" ) )
 	Title:setTTF( "ttmussels_regular" )
-	Title:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
+	Title:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow" ) )
 	Title:setShaderVector( 0, 0.08, 0, 0, 0 )
 	Title:setShaderVector( 1, 0, 0, 0, 0 )
 	Title:setShaderVector( 2, 1, 0, 0, 0 )

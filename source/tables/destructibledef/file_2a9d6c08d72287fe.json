@@ -1,7 +1,7 @@
 {
     "name": "#hash_2a9d6c08d72287fe",
-    "model": "#hash_59d89872f85b08ee",
-    "unk20": "#hash_648cfe0d3ab3fe70",
+    "model": "#veh_t8_civ_truck_mini_dest_box_rugtruck_morocco",
+    "unk20": "#veh_t8_civ_truck_mini_box_dead_rugtruck_morocco",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
     "pieces": [

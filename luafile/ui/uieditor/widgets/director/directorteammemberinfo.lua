@@ -16,14 +16,14 @@ CoD.DirectorTeamMemberInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local SceneBlur = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	SceneBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	SceneBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	SceneBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( SceneBlur )
 	self.SceneBlur = SceneBlur
 	
 	local BackingBorder = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BackingBorder:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
-	BackingBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	BackingBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	BackingBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	BackingBorder:setupNineSliceShader( 196, 88 )
 	self:addElement( BackingBorder )
@@ -31,7 +31,7 @@ CoD.DirectorTeamMemberInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local BackingBorder2 = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BackingBorder2:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
-	BackingBorder2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	BackingBorder2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	BackingBorder2:setShaderVector( 0, 0, 0, 0, 0 )
 	BackingBorder2:setupNineSliceShader( 196, 88 )
 	self:addElement( BackingBorder2 )

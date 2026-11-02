@@ -18,7 +18,7 @@ CoD.PlayOfTheMatchWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local FluffGradientRight = LUI.UIImage.new( 0, 0, 1713, 1933, 0, 0, 728, 877 )
 	FluffGradientRight:setRGB( 0, 0, 0 )
 	FluffGradientRight:setAlpha( 0 )
-	FluffGradientRight:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	FluffGradientRight:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	FluffGradientRight:setShaderVector( 0, 0, 0.5, 0, 0 )
 	self:addElement( FluffGradientRight )
 	self.FluffGradientRight = FluffGradientRight
@@ -113,7 +113,7 @@ CoD.PlayOfTheMatchWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local whiteflare = LUI.UIImage.new( 0, 0, 1638, 1766, 0, 0, 801, 929 )
 	whiteflare:setAlpha( 0 )
-	whiteflare:setImage( RegisterImage( 0x3F0C857755BA4B7 ) )
+	whiteflare:setImage( RegisterImage( "uie_ui_hud_red_light_flare" ) )
 	whiteflare:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( whiteflare )
 	self.whiteflare = whiteflare
@@ -171,7 +171,7 @@ CoD.PlayOfTheMatchWidget.__resetProperties = function ( f6_arg0 )
 	f6_arg0.FluffGradientRight:setRGB( 0, 0, 0 )
 	f6_arg0.FluffGradientRight:setAlpha( 0 )
 	f6_arg0.FluffGradientRight:setYRot( 0 )
-	f6_arg0.FluffGradientRight:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	f6_arg0.FluffGradientRight:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	f6_arg0.FluffGradientRight:setShaderVector( 0, 0, 0.5, 0, 0 )
 	f6_arg0.TextGamertag:setTopBottom( 0, 0, 718, 824 )
 	f6_arg0.TextGamertag:setAlpha( 0 )

@@ -12,7 +12,7 @@ CoD.AARTierRewardItemHighlight.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	CommonOuterGlow:setRGB( 1, 0.33, 0 )
 	CommonOuterGlow:setAlpha( 0 )
 	CommonOuterGlow:setImage( RegisterImage( "uie_ui_menu_common_outer_glow01" ) )
-	CommonOuterGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
+	CommonOuterGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_multiplied_add" ) )
 	CommonOuterGlow:setShaderVector( 0, 0, 0, 0, 0 )
 	CommonOuterGlow:setShaderVector( 1, 1, 0, 0, 0 )
 	CommonOuterGlow:setupNineSliceShader( 32, 32 )

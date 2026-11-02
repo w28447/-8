@@ -10,7 +10,7 @@ CoD.MinimapHelper.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	
 	local HDRClamp = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	HDRClamp:setRGB( 0, 0, 0 )
-	HDRClamp:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7076F9EF46E6640 ) )
+	HDRClamp:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_HDRClamp_normal" ) )
 	self:addElement( HDRClamp )
 	self.HDRClamp = HDRClamp
 	

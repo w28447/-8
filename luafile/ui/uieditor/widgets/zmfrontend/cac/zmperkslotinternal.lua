@@ -28,7 +28,7 @@ CoD.ZMPerkSlotInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.ModifierName = ModifierName
 	
 	local Blur = LUI.UIImage.new( 0, 0, 0, 225, 0, 0, 1, 504 )
-	Blur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	Blur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	Blur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( Blur )
 	self.Blur = Blur
@@ -149,7 +149,7 @@ CoD.ZMPerkSlotInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local AltarName = LUI.UIText.new( 0.5, 0.5, -108, 108, 0, 0, 429, 447 )
 	AltarName:setRGB( 0.92, 0.92, 0.92 )
 	AltarName:setTTF( "ttmussels_demibold" )
-	AltarName:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	AltarName:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	AltarName:setLetterSpacing( 4 )
 	AltarName:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	AltarName:setAlignment( Enum.LUIAlignment[0x6ED4298C93DC5ED] )
@@ -165,7 +165,7 @@ CoD.ZMPerkSlotInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local PerkName = LUI.UIText.new( 0.5, 0.5, -115, 115, 0, 0, 467, 485 )
 	PerkName:setRGB( 0.92, 0.92, 0.92 )
 	PerkName:setTTF( "ttmussels_demibold" )
-	PerkName:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	PerkName:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	PerkName:setLetterSpacing( 4 )
 	PerkName:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	PerkName:setAlignment( Enum.LUIAlignment[0x6ED4298C93DC5ED] )

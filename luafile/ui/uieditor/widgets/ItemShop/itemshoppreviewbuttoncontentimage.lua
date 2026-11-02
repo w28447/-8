@@ -10,7 +10,7 @@ CoD.ItemShopPreviewButtonContentImage.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local Default = LUI.UIImage.new( 0, 0, 0, 224, 0, 0, 0, 307 )
 	Default:setAlpha( 0 )
-	Default:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	Default:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	Default:setShaderVector( 0, 0.5, 0, 0, 0 )
 	Default:setShaderVector( 1, 1, 1, 0, 0 )
 	Default:setShaderVector( 2, 0, 0, 0, 0 )
@@ -25,7 +25,7 @@ CoD.ItemShopPreviewButtonContentImage.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local OutfitBundle = LUI.UIImage.new( 0, 0, 0, 224, 0, 0, 0, 307 )
 	OutfitBundle:setAlpha( 0 )
-	OutfitBundle:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	OutfitBundle:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	OutfitBundle:setShaderVector( 0, 0.5, 0.3, 0, 0 )
 	OutfitBundle:setShaderVector( 1, 1, 1, 0, 0 )
 	OutfitBundle:setShaderVector( 2, 0, 0, 0, 0 )
@@ -40,7 +40,7 @@ CoD.ItemShopPreviewButtonContentImage.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local OutfitPalette = LUI.UIImage.new( 0, 0, 0, 224, 0, 0, 0, 307 )
 	OutfitPalette:setAlpha( 0 )
-	OutfitPalette:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	OutfitPalette:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	OutfitPalette:setShaderVector( 0, 0.5, 0, 0, 0 )
 	OutfitPalette:setShaderVector( 1, 1, 1, 0, 0 )
 	OutfitPalette:setShaderVector( 2, 0.05, 0, 0, 0 )

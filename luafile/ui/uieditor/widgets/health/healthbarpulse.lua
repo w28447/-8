@@ -10,7 +10,7 @@ CoD.HealthBarPulse.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	local PulseBar = LUI.UIImage.new( 0, 0, -2, 132, 0, 0, 2.5, 12.5 )
 	PulseBar:setImage( RegisterImage( 0xD5B703C3B0F386D ) )
-	PulseBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7EA4827662D4CD4 ) )
+	PulseBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_repeat_add" ) )
 	PulseBar:setShaderVector( 0, 4, 1, 0, 0 )
 	PulseBar:setShaderVector( 1, 0, 1, -0, 1 )
 	PulseBar.__Color = function ( f2_arg0 )

@@ -31,7 +31,7 @@ CoD.TabbedScoreboardLayoutSideElements.new = function ( f1_arg0, f1_arg1, f1_arg
 	self.MapLayoutDotLineAdd = MapLayoutDotLineAdd
 	
 	local MapLayoutSideBoxPattern = LUI.UIImage.new( 0, 0, 24, 68, 0, 0, 1, 13 )
-	MapLayoutSideBoxPattern:setImage( RegisterImage( 0x80F9AB2A72B6B3A ) )
+	MapLayoutSideBoxPattern:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_map_layout_element01" ) )
 	MapLayoutSideBoxPattern:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	MapLayoutSideBoxPattern:setShaderVector( 0, 0, 1, 0, 0 )
 	MapLayoutSideBoxPattern:setShaderVector( 1, 0, 0, 0, 0 )
@@ -42,7 +42,7 @@ CoD.TabbedScoreboardLayoutSideElements.new = function ( f1_arg0, f1_arg1, f1_arg
 	self.MapLayoutSideBoxPattern = MapLayoutSideBoxPattern
 	
 	local MapLayoutSideBoxPatternAdd = LUI.UIImage.new( 0, 0, 24, 68, 0, 0, 1, 13 )
-	MapLayoutSideBoxPatternAdd:setImage( RegisterImage( 0x80F9AB2A72B6B3A ) )
+	MapLayoutSideBoxPatternAdd:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_map_layout_element01" ) )
 	MapLayoutSideBoxPatternAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	MapLayoutSideBoxPatternAdd:setShaderVector( 0, 0, 1, 0, 0 )
 	MapLayoutSideBoxPatternAdd:setShaderVector( 1, 0, 0, 0, 0 )
@@ -53,13 +53,13 @@ CoD.TabbedScoreboardLayoutSideElements.new = function ( f1_arg0, f1_arg1, f1_arg
 	self.MapLayoutSideBoxPatternAdd = MapLayoutSideBoxPatternAdd
 	
 	local MapLayoutSideBoxEmpty = LUI.UIImage.new( 0, 0, 0, 24, 0, 0, 0, 14 )
-	MapLayoutSideBoxEmpty:setImage( RegisterImage( 0x80F99B2A72B6987 ) )
+	MapLayoutSideBoxEmpty:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_map_layout_element02" ) )
 	self:addElement( MapLayoutSideBoxEmpty )
 	self.MapLayoutSideBoxEmpty = MapLayoutSideBoxEmpty
 	
 	local MapLayoutSideBoxEmptyAdd = LUI.UIImage.new( 0, 0, 0, 24, 0, 0, 0, 14 )
-	MapLayoutSideBoxEmptyAdd:setImage( RegisterImage( 0x80F99B2A72B6987 ) )
-	MapLayoutSideBoxEmptyAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	MapLayoutSideBoxEmptyAdd:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_map_layout_element02" ) )
+	MapLayoutSideBoxEmptyAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	MapLayoutSideBoxEmptyAdd:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( MapLayoutSideBoxEmptyAdd )
 	self.MapLayoutSideBoxEmptyAdd = MapLayoutSideBoxEmptyAdd

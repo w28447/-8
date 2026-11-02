@@ -12,7 +12,7 @@ CoD.DirectorSelectButtonInternalSecondary.new = function ( f1_arg0, f1_arg1, f1_
 	
 	local SceneBlur = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 12, 0 )
 	SceneBlur:setAlpha( 0 )
-	SceneBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	SceneBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	SceneBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( SceneBlur )
 	self.SceneBlur = SceneBlur
@@ -99,7 +99,7 @@ CoD.DirectorSelectButtonInternalSecondary.new = function ( f1_arg0, f1_arg1, f1_
 	Header:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	Header:setText( LocalizeToUpperString( "menu/waiting_caps" ) )
 	Header:setTTF( "ttmussels_regular" )
-	Header:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	Header:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	Header:setLetterSpacing( 6 )
 	Header:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	Header:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

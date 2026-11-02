@@ -10,7 +10,7 @@ CoD.HUD_KeyPromptFrame_Ultimate.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local UltimateBlur = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	UltimateBlur:setImage( RegisterImage( "uie_keyprompt_ultimate_panel" ) )
-	UltimateBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	UltimateBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	UltimateBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( UltimateBlur )
 	self.UltimateBlur = UltimateBlur

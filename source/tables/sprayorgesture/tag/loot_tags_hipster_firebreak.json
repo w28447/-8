@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_hipster_firebreak",
     "type": "#tag",
-    "material": "#hash_589e4cc405b3b497",
+    "material": "#vd/mtl_loot_ui_icon_tags_hipster_firebreak",
     "bundle": {
         "type": "#tag",
         "title": "localized18#tags/hipster_firebreak",

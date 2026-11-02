@@ -20,7 +20,7 @@ CoD.MedalXpWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	XpValue:setRGB( 0.98, 0.77, 0.2 )
 	XpValue:setText( "" )
 	XpValue:setTTF( "ttmussels_demibold" )
-	XpValue:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	XpValue:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	XpValue:setShaderVector( 0, 0.71, 0, 0, 0 )
 	XpValue:setShaderVector( 1, 0, 0, 0, 0 )
 	XpValue:setShaderVector( 2, 1, 0.88, 0.01, 0.12 )

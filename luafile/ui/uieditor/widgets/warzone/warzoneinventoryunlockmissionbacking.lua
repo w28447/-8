@@ -8,7 +8,7 @@ CoD.WarzoneInventoryUnlockMissionBacking.new = function ( f1_arg0, f1_arg1, f1_a
 	self.soundSet = "default"
 	
 	local BackingBlur = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	BackingBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	BackingBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	BackingBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BackingBlur )
 	self.BackingBlur = BackingBlur

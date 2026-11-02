@@ -9,7 +9,7 @@ CoD.GameEndScoreCenterArrow.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local EndFui = LUI.UIImage.new( 0, 0, 0, 160, 0, 0, 1, 73 )
-	EndFui:setImage( RegisterImage( 0x3A4620C75ACB27C ) )
+	EndFui:setImage( RegisterImage( "uie_ui_menu_mp_endgame_fui" ) )
 	EndFui:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	EndFui:setShaderVector( 0, 0, 1, 0, 0 )
 	EndFui:setShaderVector( 1, 0, 0, 0, 0 )
@@ -20,8 +20,8 @@ CoD.GameEndScoreCenterArrow.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.EndFui = EndFui
 	
 	local EndFuiAdd = LUI.UIImage.new( 0, 0, 0, 160, 0, 0, 0, 72 )
-	EndFuiAdd:setImage( RegisterImage( 0x3A4620C75ACB27C ) )
-	EndFuiAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	EndFuiAdd:setImage( RegisterImage( "uie_ui_menu_mp_endgame_fui" ) )
+	EndFuiAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	EndFuiAdd:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( EndFuiAdd )
 	self.EndFuiAdd = EndFuiAdd

@@ -65,7 +65,7 @@ CoD.AmmoWidget_OneInTheChamber.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	self.Hacked = Hacked
 	
 	local WeaponImage = LUI.UIFixedAspectRatioImage.new( 0, 0, 221.5, 325.5, 0, 0, 15, 71 )
-	WeaponImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	WeaponImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	WeaponImage:setShaderVector( 0, 1, 0, 0, 0 )
 	WeaponImage:setStretchedDimension( 4 )
 	WeaponImage:linkToElementModel( self, "weapon", true, function ( model )
@@ -78,7 +78,7 @@ CoD.AmmoWidget_OneInTheChamber.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	self.WeaponImage = WeaponImage
 	
 	local oicLED = LUI.UIImage.new( 0, 0, 3, 363, 0, 0, 7, 95 )
-	oicLED:setImage( RegisterImage( 0xABF790B0DAA8AC7 ) )
+	oicLED:setImage( RegisterImage( "uie_ui_hud_oic_led_ammo_widget" ) )
 	oicLED:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_multiply" ) )
 	self:addElement( oicLED )
 	self.oicLED = oicLED
@@ -87,7 +87,7 @@ CoD.AmmoWidget_OneInTheChamber.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	Lives:setRGB( 0.73, 0.71, 0.64 )
 	Lives:setText( Engine[0xF9F1239CFD921FE]( "codcaster/lives" ) )
 	Lives:setTTF( "ttmussels_demibold" )
-	Lives:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	Lives:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	Lives:setLetterSpacing( 1 )
 	Lives:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	Lives:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

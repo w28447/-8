@@ -14,7 +14,7 @@ CoD.Warzone_EMP_Ammo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	self.EMPbacker = EMPbacker
 	
 	local EMPWeaponInfo = LUI.UIImage.new( 0, 0, 2.5, 462.5, 0, 0, 3, 103 )
-	EMPWeaponInfo:setImage( RegisterImage( 0x55DCC2AE249515A ) )
+	EMPWeaponInfo:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_emp_ammo_widget" ) )
 	EMPWeaponInfo:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_emp" ) )
 	EMPWeaponInfo:setShaderVector( 0, 35.93, 0, 0, 0 )
 	EMPWeaponInfo:setShaderVector( 1, 0.83, 0, 0, 0 )

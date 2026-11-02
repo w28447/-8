@@ -225,7 +225,7 @@ CoD.ZmNotifBGB_ContainerFactory.new = function ( f8_arg0, f8_arg1, f8_arg2, f8_a
 	SmokeStandard:setZRot( 50 )
 	SmokeStandard:setScale( 0.8, 0.8 )
 	SmokeStandard:setImage( RegisterImage( "uie_zm_hud_gameover_smokebackground" ) )
-	SmokeStandard:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	SmokeStandard:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	SmokeStandard:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( SmokeStandard )
 	self.SmokeStandard = SmokeStandard
@@ -234,7 +234,7 @@ CoD.ZmNotifBGB_ContainerFactory.new = function ( f8_arg0, f8_arg1, f8_arg2, f8_a
 	SmokeHorizontalSM:setRGB( 0.52, 0.14, 0.09 )
 	SmokeHorizontalSM:setAlpha( 0 )
 	SmokeHorizontalSM:setImage( RegisterImage( "uie_zm_hud_inventory_objectivesmoke" ) )
-	SmokeHorizontalSM:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	SmokeHorizontalSM:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	SmokeHorizontalSM:setShaderVector( 0, 2.5, 0, 0, 0 )
 	self:addElement( SmokeHorizontalSM )
 	self.SmokeHorizontalSM = SmokeHorizontalSM

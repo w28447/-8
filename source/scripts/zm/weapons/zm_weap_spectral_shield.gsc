@@ -543,7 +543,7 @@ function function_cb1c46b8( b_enabled )
             self clientfield::set( "" + #"afterlife_vision_play", 1 );
             self.snd_ent = spawn( "script_origin", self.origin );
             self.snd_ent linkto( self );
-            self.snd_ent playloopsound( #"hash_197dd6d18afad004" );
+            self.snd_ent playloopsound( #"zmb_shield_afterlife_loop" );
         }
         
         return;

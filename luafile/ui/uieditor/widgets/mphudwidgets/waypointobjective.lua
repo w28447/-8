@@ -65,7 +65,7 @@ CoD.WaypointObjective.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local progressMeter = LUI.UIImage.new( 0.5, 0.5, -63, 65, 0.5, 0.5, -65, 63 )
 	progressMeter:setAlpha( 0.9 )
-	progressMeter:setImage( RegisterImage( 0xE72D91F1F5D8EA4 ) )
+	progressMeter:setImage( RegisterImage( "ui_icon_waypoint_secondary_fill" ) )
 	progressMeter:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	progressMeter:setShaderVector( 1, 0.5, 0, 0, 0 )
 	progressMeter:setShaderVector( 2, 0.43, 0, 0, 0 )

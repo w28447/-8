@@ -35,7 +35,7 @@ function __init__()
 // Size: 0x16c
 function enable()
 {
-    self thread function_1ff1beff();
+    self thread special_weapon_watcher();
     w_previous = self.previousweapon;
     
     if ( w_previous.isprimary )
@@ -98,7 +98,7 @@ function validation()
 // Params 0
 // Checksum 0x7ab17eac, Offset: 0x420
 // Size: 0x1b0
-function function_1ff1beff()
+function special_weapon_watcher()
 {
     self endon( #"disconnect", #"player_downed", #"disable_stock_option" );
     w_current = self getcurrentweapon();

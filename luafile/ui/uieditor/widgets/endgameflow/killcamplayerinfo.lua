@@ -35,7 +35,7 @@ CoD.KillcamPlayerInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.CallingCardPanelLeft = CallingCardPanelLeft
 	
 	local CallingCardPanelRight = LUI.UIImage.new( 0, 0, 1358, 1913, 0, 0, 18.5, 191.5 )
-	CallingCardPanelRight:setImage( RegisterImage( 0x9EAB6A40169CA2F ) )
+	CallingCardPanelRight:setImage( RegisterImage( "uie_ui_hud_callingcard_panel2" ) )
 	self:addElement( CallingCardPanelRight )
 	self.CallingCardPanelRight = CallingCardPanelRight
 	
@@ -169,7 +169,7 @@ CoD.KillcamPlayerInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local MiddleDiamond = LUI.UIImage.new( 0, 0, 922, 997, 0, 0, 63, 138 )
 	MiddleDiamond:setRGB( 0.22, 0.22, 0.22 )
 	MiddleDiamond:setAlpha( 0.75 )
-	MiddleDiamond:setImage( RegisterImage( 0xC6712D6C0EC235A ) )
+	MiddleDiamond:setImage( RegisterImage( "uie_ui_hud_middle_pillar" ) )
 	self:addElement( MiddleDiamond )
 	self.MiddleDiamond = MiddleDiamond
 	

@@ -38,7 +38,7 @@ CoD.AmmoWidgetZM_ClipContainerPress.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local x = LUI.UIImage.new( 0, 0, 56, 168, 0, 0, -14, 98 )
 	x:setRGB( 1, 0, 0 )
 	x:setAlpha( 0 )
-	x:setImage( RegisterImage( 0x744350D705E85B4 ) )
+	x:setImage( RegisterImage( "uie_zm_hud_out_of_ammo" ) )
 	self:addElement( x )
 	self.x = x
 	

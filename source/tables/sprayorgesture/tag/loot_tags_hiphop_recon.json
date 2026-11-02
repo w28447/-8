@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_hiphop_recon",
     "type": "#tag",
-    "material": "#hash_22f167742d591ef6",
+    "material": "#vd/mtl_loot_ui_icon_tags_hiphop_recon",
     "bundle": {
         "type": "#tag",
         "title": "localized18#hash_429905ddb11c0c31",

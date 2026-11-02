@@ -14,7 +14,7 @@ CoD.CommonListButtonGenericInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local Blur = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	Blur:setRGB( 0.08, 0.08, 0.08 )
-	Blur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	Blur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	Blur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( Blur )
 	self.Blur = Blur
@@ -42,7 +42,7 @@ CoD.CommonListButtonGenericInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local FocusGlow = LUI.UIImage.new( 0, 1, -130, 130, 0, 1, -158, 158 )
 	FocusGlow:setAlpha( 0 )
 	FocusGlow:setImage( RegisterImage( "uie_ui_menu_common_tab_glow" ) )
-	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
+	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_multiplied_add" ) )
 	FocusGlow:setShaderVector( 0, 0, 0, 0.21, 0.09 )
 	FocusGlow:setShaderVector( 1, 1.36, 0, 0, 0 )
 	FocusGlow:setupNineSliceShader( 245, 185 )
@@ -52,7 +52,7 @@ CoD.CommonListButtonGenericInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local FocusHighlight = LUI.UIImage.new( 0, 1, -52, 52, 0, 1, -42, 42 )
 	FocusHighlight:setAlpha( 0 )
 	FocusHighlight:setImage( RegisterImage( "uie_ui_menu_common_tab_backing" ) )
-	FocusHighlight:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
+	FocusHighlight:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_multiplied_add" ) )
 	FocusHighlight:setShaderVector( 0, 0, 0, 0.27, 0.18 )
 	FocusHighlight:setShaderVector( 1, 0.9, 0, 0, 0 )
 	FocusHighlight:setupNineSliceShader( 135, 70 )

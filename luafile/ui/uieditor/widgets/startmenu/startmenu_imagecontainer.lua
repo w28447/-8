@@ -8,7 +8,7 @@ CoD.StartMenu_ImageContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	self.soundSet = "ChooseDecal"
 	
 	local ImageContainer = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	ImageContainer:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	ImageContainer:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	ImageContainer:setShaderVector( 0, 0, 0, 0, 0 )
 	ImageContainer:setShaderVector( 1, 1, 1, 0, 0 )
 	ImageContainer:setShaderVector( 2, 0, 0, 0, 0 )

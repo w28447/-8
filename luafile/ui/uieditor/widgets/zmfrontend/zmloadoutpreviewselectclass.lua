@@ -37,7 +37,7 @@ CoD.ZMLoadoutPreviewSelectClass.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	buttonPromptStringPC = LUI.UIText.new( 0.5, 0.5, -88, 212, 0.5, 0.5, -9, 8 )
 	buttonPromptStringPC:setText( Engine[0xF9F1239CFD921FE]( "menu/select_caps" ) )
 	buttonPromptStringPC:setTTF( "ttmussels_regular" )
-	buttonPromptStringPC:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
+	buttonPromptStringPC:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow" ) )
 	buttonPromptStringPC:setShaderVector( 0, 0, 0, 0, 0 )
 	buttonPromptStringPC:setShaderVector( 1, 0, 0, 0, 0 )
 	buttonPromptStringPC:setShaderVector( 2, 1, 0, 0, 0 )

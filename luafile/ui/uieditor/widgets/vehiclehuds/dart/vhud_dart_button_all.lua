@@ -34,42 +34,42 @@ CoD.vhud_dart_button_all.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local buttonFrame01 = LUI.UIImage.new( 0, 0, 216, 414, 0, 0, 235, 287 )
 	buttonFrame01:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_ctrl_button_container" ) )
-	buttonFrame01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	buttonFrame01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	buttonFrame01:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( buttonFrame01 )
 	self.buttonFrame01 = buttonFrame01
 	
 	local buttonFrame02 = LUI.UIImage.new( 0, 0, 645, 843, 0, 0, 235, 287 )
 	buttonFrame02:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_ctrl_button_container" ) )
-	buttonFrame02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	buttonFrame02:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	buttonFrame02:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( buttonFrame02 )
 	self.buttonFrame02 = buttonFrame02
 	
 	local buttonEmpty01 = LUI.UIImage.new( 0, 0, 429, 629, 0, 0, 235.5, 279.5 )
 	buttonEmpty01:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_ctrl_button_other" ) )
-	buttonEmpty01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	buttonEmpty01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	buttonEmpty01:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( buttonEmpty01 )
 	self.buttonEmpty01 = buttonEmpty01
 	
 	local buttonLinks = LUI.UIImage.new( 0, 0, 312, 746, 0, 0, 0, 220 )
 	buttonLinks:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_ctrl_button_link" ) )
-	buttonLinks:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	buttonLinks:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	buttonLinks:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( buttonLinks )
 	self.buttonLinks = buttonLinks
 	
 	local buttonFrame04 = LUI.UIImage.new( 0, 0, 1, 199, 0, 0, 184.5, 236.5 )
 	buttonFrame04:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_ctrl_button_container" ) )
-	buttonFrame04:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	buttonFrame04:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	buttonFrame04:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( buttonFrame04 )
 	self.buttonFrame04 = buttonFrame04
 	
 	local buttonFrame05 = LUI.UIImage.new( 0, 0, 858, 1056, 0, 0, 184.5, 236.5 )
 	buttonFrame05:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_ctrl_button_container" ) )
-	buttonFrame05:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	buttonFrame05:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	buttonFrame05:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( buttonFrame05 )
 	self.buttonFrame05 = buttonFrame05
@@ -116,7 +116,7 @@ CoD.vhud_dart_button_all.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	KBMCycleActionName:setAlpha( 0 )
 	KBMCycleActionName:setText( Engine[0xF9F1239CFD921FE]( "menu/hud_vehicle_detonate" ) )
 	KBMCycleActionName:setTTF( "ttmussels_regular" )
-	KBMCycleActionName:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
+	KBMCycleActionName:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow" ) )
 	KBMCycleActionName:setShaderVector( 0, 0, 0, 0, 0 )
 	KBMCycleActionName:setShaderVector( 1, 0, 0, 0, 0 )
 	KBMCycleActionName:setShaderVector( 2, 1, 0, 0, 0 )
@@ -142,7 +142,7 @@ CoD.vhud_dart_button_all.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	TextBox:setAlpha( 0 )
 	TextBox:setText( Engine[0xF9F1239CFD921FE]( "menu/hud_vehicle_speedboost" ) )
 	TextBox:setTTF( "ttmussels_regular" )
-	TextBox:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
+	TextBox:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow" ) )
 	TextBox:setShaderVector( 0, 0, 0, 0, 0 )
 	TextBox:setShaderVector( 1, 0, 0, 0, 0 )
 	TextBox:setShaderVector( 2, 1, 0, 0, 0 )
@@ -168,7 +168,7 @@ CoD.vhud_dart_button_all.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	TextBox2:setAlpha( 0 )
 	TextBox2:setText( Engine[0xF9F1239CFD921FE]( "menu/hud_vehicle_slow" ) )
 	TextBox2:setTTF( "ttmussels_regular" )
-	TextBox2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
+	TextBox2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow" ) )
 	TextBox2:setShaderVector( 0, 0, 0, 0, 0 )
 	TextBox2:setShaderVector( 1, 0, 0, 0, 0 )
 	TextBox2:setShaderVector( 2, 1, 0, 0, 0 )

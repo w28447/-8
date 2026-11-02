@@ -8,7 +8,7 @@ CoD.SpecialistOutfitRowBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	self.soundSet = "default"
 	
 	local SceneBlur = LUI.UIImage.new( 0, 1, 0, 0, -0, 1, 0, 0 )
-	SceneBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	SceneBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	SceneBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( SceneBlur )
 	self.SceneBlur = SceneBlur
@@ -25,7 +25,7 @@ CoD.SpecialistOutfitRowBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local TiledBackingAdd = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	TiledBackingAdd:setAlpha( 0 )
 	TiledBackingAdd:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
-	TiledBackingAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	TiledBackingAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	TiledBackingAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBackingAdd:setupNineSliceShader( 196, 88 )
 	self:addElement( TiledBackingAdd )

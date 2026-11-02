@@ -322,7 +322,7 @@ function a_skeet_fink_init_step_2( var_a276c861 )
             var_f2dc13a0 = struct::get( "a_skeet_fink_chunk_start", "targetname" );
             var_ae18fb21 = struct::get( "a_skeet_fink_chunk", "targetname" );
             var_5901d1c9 = struct::get( var_ae18fb21.target, "targetname" );
-            mdl_stake = util::spawn_model( #"hash_1a8e66a7966f8086", var_f2dc13a0.origin, var_f2dc13a0.angles );
+            mdl_stake = util::spawn_model( #"p8_zm_man_tree_branch", var_f2dc13a0.origin, var_f2dc13a0.angles );
             mdl_stake moveto( var_ae18fb21.origin, 3.6, 3.6 );
             mdl_stake rotateto( var_ae18fb21.angles, 3.6, 3.6 );
             wait 3.6 * 0.7;
@@ -485,7 +485,7 @@ function a_skeet_fink_init_step_3( var_a276c861 )
     if ( level flag::get( #"a_skeet_fink_chunk_picked_up" ) )
     {
         var_4b9c76d7 = struct::get( #"a_skeet_fink_charge", "targetname" );
-        var_4b9c76d7.mdl_stake = util::spawn_model( #"hash_1a8e66a7966f8086", var_4b9c76d7.origin, var_4b9c76d7.angles );
+        var_4b9c76d7.mdl_stake = util::spawn_model( #"p8_zm_man_tree_branch", var_4b9c76d7.origin, var_4b9c76d7.angles );
         var_4b9c76d7.mdl_stake notsolid();
         var_4b9c76d7.mdl_stake hide();
         var_fb11d383 = struct::get( var_4b9c76d7.target, "targetname" );

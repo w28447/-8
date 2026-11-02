@@ -64,7 +64,7 @@ LUI.createMenu.seeker_mine_prompt = function ( f1_arg0, f1_arg1 )
 	ThumbsUp:setRGB( ColorSet.T8__GREEN.r, ColorSet.T8__GREEN.g, ColorSet.T8__GREEN.b )
 	ThumbsUp:setAlpha( 0 )
 	ThumbsUp:setImage( RegisterImage( "uie_ui_hud_icon_seekermine_success" ) )
-	ThumbsUp:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	ThumbsUp:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	ThumbsUp:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( ThumbsUp )
 	self.ThumbsUp = ThumbsUp

@@ -9,7 +9,7 @@ CoD.ObituaryBlurBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local BlurBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BlurBacking:setRGB( 0, 0, 0 )
-	BlurBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	BlurBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	BlurBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BlurBacking )
 	self.BlurBacking = BlurBacking

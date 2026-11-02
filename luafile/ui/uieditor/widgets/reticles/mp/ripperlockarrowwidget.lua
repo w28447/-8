@@ -9,7 +9,7 @@ CoD.RipperLockArrowWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local Image1 = LUI.UIImage.new( 0, 0, 0, 8, 0, 0, 0, 8 )
 	Image1:setImage( RegisterImage( "uie_spectre_blade_arrow_notadd" ) )
-	Image1:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	Image1:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	Image1:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Image1 )
 	self.Image1 = Image1

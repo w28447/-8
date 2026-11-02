@@ -82,7 +82,7 @@ CoD.ItemWeaponLevel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	local Glow = LUI.UIImage.new( 0, 0, -3, 7, 0, 0, -36, 8 )
 	Glow:setRGB( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
 	Glow:setImage( RegisterImage( "uie_ui_menu_cac_attachment_meter_tick_glow" ) )
-	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	Glow:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Glow )
 	self.Glow = Glow

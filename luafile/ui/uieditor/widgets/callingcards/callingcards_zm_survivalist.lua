@@ -18,7 +18,7 @@ CoD.callingcards_zm_survivalist.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local backwebs = LUI.UIImage.new( 0, 0, 6.5, 182.5, 0, 0, 0, 176 )
 	backwebs:setImage( RegisterImage( "uie_ui_icon_callingcards_zm_survivalist_backwebbing" ) )
-	backwebs:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	backwebs:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	backwebs:setShaderVector( 0, 1.59, 0, 0, 0 )
 	self:addElement( backwebs )
 	self.backwebs = backwebs
@@ -85,7 +85,7 @@ CoD.callingcards_zm_survivalist.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local frontWebs = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	frontWebs:setImage( RegisterImage( "uie_ui_icon_callingcards_zm_survivalist_front_webs" ) )
-	frontWebs:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	frontWebs:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	frontWebs:setShaderVector( 0, 1.61, 0, 0, 0 )
 	self:addElement( frontWebs )
 	self.frontWebs = frontWebs

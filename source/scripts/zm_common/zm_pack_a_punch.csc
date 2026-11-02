@@ -71,7 +71,7 @@ function on_localplayer_spawned( localclientnum )
     
     if ( n_story == 2 )
     {
-        forcestreamxmodel( #"hash_4efdd19dfd268f23", 1, 0 );
+        forcestreamxmodel( #"p8_fxanim_zm_pap_stationary_mod", 1, 0 );
     }
 }
 
@@ -95,7 +95,7 @@ function pap_force_stream( localclientnum, oldval, newval, bnewent, binitialsnap
         }
         else if ( n_story == 2 )
         {
-            forcestreamxmodel( #"hash_4efdd19dfd268f23" );
+            forcestreamxmodel( #"p8_fxanim_zm_pap_stationary_mod" );
         }
         
         return;
@@ -115,7 +115,7 @@ function pap_force_stream( localclientnum, oldval, newval, bnewent, binitialsnap
     
     if ( n_story == 2 )
     {
-        stopforcestreamingxmodel( #"hash_4efdd19dfd268f23" );
+        stopforcestreamingxmodel( #"p8_fxanim_zm_pap_stationary_mod" );
     }
 }
 

@@ -10,7 +10,7 @@ CoD.vhud_gunship_message.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local messageWindowBg = LUI.UIImage.new( 0, 0, 0, 504, 0, 0, 0, 84 )
 	messageWindowBg:setAlpha( 0.8 )
 	messageWindowBg:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_message_bg" ) )
-	messageWindowBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	messageWindowBg:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	messageWindowBg:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( messageWindowBg )
 	self.messageWindowBg = messageWindowBg
@@ -22,14 +22,14 @@ CoD.vhud_gunship_message.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local messageLayout = LUI.UIImage.new( 0, 0, 140.5, 361.5, 0, 0, 14, 64 )
 	messageLayout:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_message_layout" ) )
-	messageLayout:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	messageLayout:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	messageLayout:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( messageLayout )
 	self.messageLayout = messageLayout
 	
 	local messageLayoutPipR = LUI.UIImage.new( 0, 0, 354.5, 376.5, 0, 0, 31, 39 )
 	messageLayoutPipR:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_message_layout_addon" ) )
-	messageLayoutPipR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	messageLayoutPipR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	messageLayoutPipR:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( messageLayoutPipR )
 	self.messageLayoutPipR = messageLayoutPipR
@@ -37,7 +37,7 @@ CoD.vhud_gunship_message.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local messageLayoutPipL = LUI.UIImage.new( 0, 0, 122.5, 144.5, 0, 0, 31, 39 )
 	messageLayoutPipL:setZRot( 180 )
 	messageLayoutPipL:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_message_layout_addon" ) )
-	messageLayoutPipL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	messageLayoutPipL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	messageLayoutPipL:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( messageLayoutPipL )
 	self.messageLayoutPipL = messageLayoutPipL
@@ -45,7 +45,7 @@ CoD.vhud_gunship_message.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local messageLayoutStripe = LUI.UIImage.new( 0, 0, 140.5, 360.5, 0, 0, 50.5, 70.5 )
 	messageLayoutStripe:setAlpha( 0.5 )
 	messageLayoutStripe:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_message_layout_stripe" ) )
-	messageLayoutStripe:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	messageLayoutStripe:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	messageLayoutStripe:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( messageLayoutStripe )
 	self.messageLayoutStripe = messageLayoutStripe

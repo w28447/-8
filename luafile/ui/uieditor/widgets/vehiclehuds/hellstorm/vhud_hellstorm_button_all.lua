@@ -34,42 +34,42 @@ CoD.vhud_hellstorm_button_all.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local buttonFrame01 = LUI.UIImage.new( 0.5, 0.5, -313, -115, 1, 1, -125, -73 )
 	buttonFrame01:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_ctrl_button_container" ) )
-	buttonFrame01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	buttonFrame01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	buttonFrame01:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( buttonFrame01 )
 	self.buttonFrame01 = buttonFrame01
 	
 	local buttonFrame02 = LUI.UIImage.new( 0.5, 0.5, 116, 314, 1, 1, -125, -73 )
 	buttonFrame02:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_ctrl_button_container" ) )
-	buttonFrame02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	buttonFrame02:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	buttonFrame02:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( buttonFrame02 )
 	self.buttonFrame02 = buttonFrame02
 	
 	local buttonFrame03 = LUI.UIImage.new( 0.5, 0.5, 330, 528, 1, 1, -175.5, -123.5 )
 	buttonFrame03:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_ctrl_button_container" ) )
-	buttonFrame03:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	buttonFrame03:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	buttonFrame03:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( buttonFrame03 )
 	self.buttonFrame03 = buttonFrame03
 	
 	local buttonFrame04 = LUI.UIImage.new( 0.5, 0.5, -528, -330, 1, 1, -175.5, -123.5 )
 	buttonFrame04:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_ctrl_button_container" ) )
-	buttonFrame04:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	buttonFrame04:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	buttonFrame04:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( buttonFrame04 )
 	self.buttonFrame04 = buttonFrame04
 	
 	local buttonLinks = LUI.UIImage.new( 0.5, 0.5, -217, 217, 1, 1, -360, -140 )
 	buttonLinks:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_ctrl_button_link" ) )
-	buttonLinks:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	buttonLinks:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	buttonLinks:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( buttonLinks )
 	self.buttonLinks = buttonLinks
 	
 	local buttonEmpty01 = LUI.UIImage.new( 0.5, 0.5, -100, 100, 1, 1, -123.5, -79.5 )
 	buttonEmpty01:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_ctrl_button_other" ) )
-	buttonEmpty01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	buttonEmpty01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	buttonEmpty01:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( buttonEmpty01 )
 	self.buttonEmpty01 = buttonEmpty01

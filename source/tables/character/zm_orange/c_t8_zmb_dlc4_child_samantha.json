@@ -1,0 +1,9 @@
+{
+    "name": "#c_t8_zmb_dlc4_child_samantha",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 0,
+    "bodyImpactType": 0,
+    "body": "#c_t8_zmb_dlc4_child_samantha_body",
+    "head": "#c_t8_zmb_dlc4_child_samantha_head"
+}

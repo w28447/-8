@@ -9,7 +9,7 @@ CoD.TabbedScoreboardLayoutCorner.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local CornerTL = LUI.UIImage.new( 0, 0, 1, 63, 0, 0, 1, 63 )
 	CornerTL:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_map_grid03" ) )
-	CornerTL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	CornerTL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	CornerTL:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( CornerTL )
 	self.CornerTL = CornerTL
@@ -17,7 +17,7 @@ CoD.TabbedScoreboardLayoutCorner.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	local CornerTR = LUI.UIImage.new( 0, 0, 923, 985, 0, 0, 0, 62 )
 	CornerTR:setZRot( 270 )
 	CornerTR:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_map_grid03" ) )
-	CornerTR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	CornerTR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	CornerTR:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( CornerTR )
 	self.CornerTR = CornerTR
@@ -25,7 +25,7 @@ CoD.TabbedScoreboardLayoutCorner.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	local CornerBL = LUI.UIImage.new( 0, 0, 0, 62, 0, 0, 409.5, 471.5 )
 	CornerBL:setZRot( 90 )
 	CornerBL:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_map_grid03" ) )
-	CornerBL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	CornerBL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	CornerBL:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( CornerBL )
 	self.CornerBL = CornerBL
@@ -33,7 +33,7 @@ CoD.TabbedScoreboardLayoutCorner.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	local CornerBR = LUI.UIImage.new( 0, 0, 922, 984, 0, 0, 409.5, 471.5 )
 	CornerBR:setZRot( 180 )
 	CornerBR:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_map_grid03" ) )
-	CornerBR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	CornerBR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	CornerBR:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( CornerBR )
 	self.CornerBR = CornerBR

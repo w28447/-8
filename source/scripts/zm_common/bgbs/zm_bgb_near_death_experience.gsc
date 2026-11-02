@@ -50,7 +50,7 @@ function enable()
         level.var_67998b2d = 0;
     }
     
-    self thread bgb::function_f51e3503( 240, &function_db295169, &function_cbaf1f69 );
+    self thread bgb::player_proximity_watcher( 240, &proximity_start, &proximity_end );
     self thread function_68acd38e();
     self thread revive_override();
 }
@@ -131,7 +131,7 @@ function function_fa0a1b19()
         self.var_8597ff2d = [];
     }
     
-    s_revive_override = self zm_laststand::register_revive_override( &function_d5c9a81 );
+    s_revive_override = self zm_laststand::register_revive_override( &is_reviving_override );
     
     if ( !isdefined( self.var_8597ff2d ) )
     {
@@ -149,7 +149,7 @@ function function_fa0a1b19()
 // Params 1
 // Checksum 0x5431db9f, Offset: 0x758
 // Size: 0x220, Type: bool
-function function_d5c9a81( e_revivee )
+function is_reviving_override( e_revivee )
 {
     if ( !isdefined( e_revivee.revivetrigger ) )
     {
@@ -223,7 +223,7 @@ function lost_perk_override( perk, var_a83ac70f = undefined, var_6c1b825d = unde
 // Params 1
 // Checksum 0x1d5f205a, Offset: 0x9f0
 // Size: 0x112
-function function_db295169( e_player )
+function proximity_start( e_player )
 {
     var_4cd31497 = "zm_bgb_near_death_experience_proximity_end_" + self getentitynumber();
     e_player endon( var_4cd31497, #"disconnect" );
@@ -255,18 +255,18 @@ function function_b7269898( e_player, str_notify )
         return;
     }
     
-    self function_51e0947e();
-    e_player function_51e0947e();
+    self increment_fx_count();
+    e_player increment_fx_count();
     self function_3895d86( e_player, str_notify );
     
     if ( isdefined( self ) )
     {
-        self function_68790c5a();
+        self decrement_fx_count();
     }
     
     if ( isdefined( e_player ) )
     {
-        e_player function_68790c5a();
+        e_player decrement_fx_count();
         e_player notify( "zm_bgb_near_death_experience_1p_fx_stop_" + self getentitynumber() );
         
         if ( !e_player laststand::player_is_in_laststand() )
@@ -285,7 +285,7 @@ function function_991be229( e_player, str_notify )
     e_player endon( str_notify, #"disconnect" );
     self endon( #"disconnect", #"zm_bgb_near_death_experience_complete" );
     
-    while ( !self function_d5c9a81( e_player ) && !e_player function_d5c9a81( self ) )
+    while ( !self is_reviving_override( e_player ) && !e_player is_reviving_override( self ) )
     {
         wait 0.1;
     }
@@ -302,7 +302,7 @@ function function_3895d86( e_player, str_notify )
     e_player endon( str_notify, #"disconnect" );
     self endon( #"disconnect", #"zm_bgb_near_death_experience_complete" );
     
-    while ( self function_d5c9a81( e_player ) || e_player function_d5c9a81( self ) )
+    while ( self is_reviving_override( e_player ) || e_player is_reviving_override( self ) )
     {
         wait 0.1;
     }
@@ -312,7 +312,7 @@ function function_3895d86( e_player, str_notify )
 // Params 1
 // Checksum 0x77e74644, Offset: 0xd78
 // Size: 0x3a
-function function_cbaf1f69( e_player )
+function proximity_end( e_player )
 {
     str_notify = "zm_bgb_near_death_experience_proximity_end_" + self getentitynumber();
     e_player notify( str_notify );
@@ -322,7 +322,7 @@ function function_cbaf1f69( e_player )
 // Params 0
 // Checksum 0x7281e85c, Offset: 0xdc0
 // Size: 0x64
-function function_51e0947e()
+function increment_fx_count()
 {
     if ( !isdefined( self.var_7a276c72 ) || self.var_7a276c72 == 0 )
     {
@@ -338,7 +338,7 @@ function function_51e0947e()
 // Params 0
 // Checksum 0x73d0bc81, Offset: 0xe30
 // Size: 0x3c
-function function_68790c5a()
+function decrement_fx_count()
 {
     self.var_7a276c72--;
     

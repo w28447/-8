@@ -12735,13 +12735,13 @@
         {
             "value": 2786,
             "next": 127,
-            "name": "#hash_48af8239068e44f2",
+            "name": "#vox_advance_blight_kill_narr_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_48af8239068e44f2",
+                    "name": "#vox_advance_blight_kill_narr_0",
                     "subtitle": "#hash_3b0cf45abde7e13e",
                     "assetId": "#hash_6c12d4d2a2652a83",
                     "assetFileNameSustain": "#zm_mansion.fj",
@@ -39029,13 +39029,13 @@
         {
             "value": 3422,
             "next": 936,
-            "name": "#hash_41c5ef88d30a0d04",
+            "name": "#vox_audio_log_5_0_alis_0",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_41c5ef88d30a0d04",
+                    "name": "#vox_audio_log_5_0_alis_0",
                     "assetId": "#hash_7930f24b0c2a32d5",
                     "assetFileNameSustain": "#zm_mansion.fj",
                     "assetIdRelease": "#zm_mansion.fj",
@@ -39080,13 +39080,13 @@
         {
             "value": 1483,
             "next": 65535,
-            "name": "#hash_77d26356e7772673",
+            "name": "#vox_audio_log_6_0_alis_0",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_77d26356e7772673",
+                    "name": "#vox_audio_log_6_0_alis_0",
                     "assetId": "#hash_4e37c92a373e7d9a",
                     "assetFileNameSustain": "#zm_mansion.fj",
                     "assetIdRelease": "#zm_mansion.fj",
@@ -39131,13 +39131,13 @@
         {
             "value": 587,
             "next": 399,
-            "name": "#hash_5f2672545b99ea1a",
+            "name": "#vox_audio_log_7_0_alis_0",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5f2672545b99ea1a",
+                    "name": "#vox_audio_log_7_0_alis_0",
                     "assetId": "#hash_7b22836098ba9187",
                     "assetFileNameSustain": "#zm_mansion.fj",
                     "assetIdRelease": "#zm_mansion.fj",
@@ -39182,13 +39182,13 @@
         {
             "value": 2312,
             "next": 65535,
-            "name": "#hash_47c8e68ac1a558b9",
+            "name": "#vox_audio_log_8_0_alis_0",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_47c8e68ac1a558b9",
+                    "name": "#vox_audio_log_8_0_alis_0",
                     "assetId": "#hash_6d9e29f58d56d304",
                     "assetFileNameSustain": "#zm_mansion.fj",
                     "assetIdRelease": "#zm_mansion.fj",
@@ -39233,13 +39233,13 @@
         {
             "value": 1294,
             "next": 65535,
-            "name": "#hash_b75c49e9dcc7900",
+            "name": "#vox_audio_log_9_0_alis_0",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_b75c49e9dcc7900",
+                    "name": "#vox_audio_log_9_0_alis_0",
                     "assetId": "#hash_69581051eb8b3d79",
                     "assetFileNameSustain": "#zm_mansion.fj",
                     "assetIdRelease": "#zm_mansion.fj",
@@ -39335,13 +39335,13 @@
         {
             "value": 4259,
             "next": 65535,
-            "name": "#hash_38da480a84b97bda",
+            "name": "#vox_audio_log_9_2_alis_0",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_38da480a84b97bda",
+                    "name": "#vox_audio_log_9_2_alis_0",
                     "assetId": "#hash_2489e3498c6fcf57",
                     "assetFileNameSustain": "#zm_mansion.fj",
                     "assetIdRelease": "#zm_mansion.fj",
@@ -39437,13 +39437,13 @@
         {
             "value": 4335,
             "next": 65535,
-            "name": "#hash_3a59c33cb06334",
+            "name": "#vox_audio_log_9_4_alis_0",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3a59c33cb06334",
+                    "name": "#vox_audio_log_9_4_alis_0",
                     "assetId": "#hash_482ec8d4ad22a86d",
                     "assetFileNameSustain": "#zm_mansion.fj",
                     "assetIdRelease": "#zm_mansion.fj",
@@ -39539,13 +39539,13 @@
         {
             "value": 2867,
             "next": 957,
-            "name": "#hash_1448f639d29f413e",
+            "name": "#vox_audio_log_9_6_alis_0",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1448f639d29f413e",
+                    "name": "#vox_audio_log_9_6_alis_0",
                     "assetId": "#hash_2c49f2c055fe395b",
                     "assetFileNameSustain": "#zm_mansion.fj",
                     "assetIdRelease": "#zm_mansion.fj",
@@ -310404,13 +310404,13 @@
         {
             "value": 2113,
             "next": 65535,
-            "name": "#hash_7629232832113319",
+            "name": "#vox_m_quest_cat_port_first_plr_1_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7629232832113319",
+                    "name": "#vox_m_quest_cat_port_first_plr_1_0",
                     "subtitle": "#hash_7103a2bb0df6bc13",
                     "assetId": "#hash_5b606d5b15564e7e",
                     "assetFileNameSustain": "#zm_mansion.fj",
@@ -310453,7 +310453,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_7629232832113319",
+                    "name": "#vox_m_quest_cat_port_first_plr_1_0",
                     "subtitle": "#hash_7103a2bb0df6bc13",
                     "assetId": "#hash_5b606d5b15564e7e",
                     "assetFileNameSustain": "#zm_mansion.fj",
@@ -310500,13 +310500,13 @@
         {
             "value": 1809,
             "next": 65535,
-            "name": "#hash_6fb40c282f08edc4",
+            "name": "#vox_m_quest_cat_port_first_plr_2_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6fb40c282f08edc4",
+                    "name": "#vox_m_quest_cat_port_first_plr_2_0",
                     "subtitle": "#hash_7103a3bb0df6bdc6",
                     "assetId": "#hash_e4c433a6d10419f",
                     "assetFileNameSustain": "#zm_mansion.fj",
@@ -310549,7 +310549,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_6fb40c282f08edc4",
+                    "name": "#vox_m_quest_cat_port_first_plr_2_0",
                     "subtitle": "#hash_7103a3bb0df6bdc6",
                     "assetId": "#hash_e4c433a6d10419f",
                     "assetFileNameSustain": "#zm_mansion.fj",
@@ -310596,13 +310596,13 @@
         {
             "value": 283,
             "next": 3102,
-            "name": "#hash_64ff552828647ecf",
+            "name": "#vox_m_quest_cat_port_first_plr_3_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_64ff552828647ecf",
+                    "name": "#vox_m_quest_cat_port_first_plr_3_0",
                     "subtitle": "#hash_7103a4bb0df6bf79",
                     "assetId": "#hash_2398ceea25b37000",
                     "assetFileNameSustain": "#zm_mansion.fj",
@@ -310645,7 +310645,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_64ff552828647ecf",
+                    "name": "#vox_m_quest_cat_port_first_plr_3_0",
                     "subtitle": "#hash_7103a4bb0df6bf79",
                     "assetId": "#hash_2398ceea25b37000",
                     "assetFileNameSustain": "#zm_mansion.fj",
@@ -310692,13 +310692,13 @@
         {
             "value": 3616,
             "next": 65535,
-            "name": "#hash_217f76284a9f2922",
+            "name": "#vox_m_quest_cat_port_first_plr_4_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_217f76284a9f2922",
+                    "name": "#vox_m_quest_cat_port_first_plr_4_0",
                     "subtitle": "#hash_7103a5bb0df6c12c",
                     "assetId": "#hash_329eb7457b330e31",
                     "assetFileNameSustain": "#zm_mansion.fj",
@@ -310741,7 +310741,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_217f76284a9f2922",
+                    "name": "#vox_m_quest_cat_port_first_plr_4_0",
                     "subtitle": "#hash_7103a5bb0df6c12c",
                     "assetId": "#hash_329eb7457b330e31",
                     "assetFileNameSustain": "#zm_mansion.fj",
@@ -323652,13 +323652,13 @@
         {
             "value": 2165,
             "next": 3258,
-            "name": "#hash_58ef23c40d82cb4e",
+            "name": "#vox_nosferatu_pic_interact_plr_12_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_58ef23c40d82cb4e",
+                    "name": "#vox_nosferatu_pic_interact_plr_12_0",
                     "subtitle": "#hash_78552683d1b34f6a",
                     "assetId": "#hash_234be83d579aba51",
                     "assetFileNameSustain": "#zm_mansion.fj",
@@ -323701,7 +323701,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_58ef23c40d82cb4e",
+                    "name": "#vox_nosferatu_pic_interact_plr_12_0",
                     "subtitle": "#hash_78552683d1b34f6a",
                     "assetId": "#hash_234be83d579aba51",
                     "assetFileNameSustain": "#zm_mansion.fj",
@@ -505338,13 +505338,13 @@
         {
             "value": 2337,
             "next": 65535,
-            "name": "#hash_1bc4b8d8a82f1e1d",
+            "name": "#vox_werewolf_invisible_time_00_plr_10_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1bc4b8d8a82f1e1d",
+                    "name": "#vox_werewolf_invisible_time_00_plr_10_0",
                     "subtitle": "#hash_7e61fe36d5807749",
                     "assetId": "#hash_1ff4468b7d03fc3e",
                     "assetFileNameSustain": "#zm_mansion.fj",
@@ -505387,7 +505387,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_1bc4b8d8a82f1e1d",
+                    "name": "#vox_werewolf_invisible_time_00_plr_10_0",
                     "subtitle": "#hash_7e61fe36d5807749",
                     "assetId": "#hash_1ff4468b7d03fc3e",
                     "assetFileNameSustain": "#zm_mansion.fj",
@@ -505434,13 +505434,13 @@
         {
             "value": 4268,
             "next": 65535,
-            "name": "#hash_26794fd8aed356b2",
+            "name": "#vox_werewolf_invisible_time_00_plr_11_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_26794fd8aed356b2",
+                    "name": "#vox_werewolf_invisible_time_00_plr_11_0",
                     "subtitle": "#hash_7e61fd36d5807596",
                     "assetId": "#hash_57087a8470d9f975",
                     "assetFileNameSustain": "#zm_mansion.fj",
@@ -505483,7 +505483,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_26794fd8aed356b2",
+                    "name": "#vox_werewolf_invisible_time_00_plr_11_0",
                     "subtitle": "#hash_7e61fd36d5807596",
                     "assetId": "#hash_57087a8470d9f975",
                     "assetFileNameSustain": "#zm_mansion.fj",
@@ -505530,13 +505530,13 @@
         {
             "value": 3992,
             "next": 65535,
-            "name": "#hash_c4d4ad89ff2ee73",
+            "name": "#vox_werewolf_invisible_time_00_plr_12_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_c4d4ad89ff2ee73",
+                    "name": "#vox_werewolf_invisible_time_00_plr_12_0",
                     "subtitle": "#hash_7e61fc36d58073e3",
                     "assetId": "#hash_6bd968f8e10bc27c",
                     "assetFileNameSustain": "#zm_mansion.fj",
@@ -505579,7 +505579,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_c4d4ad89ff2ee73",
+                    "name": "#vox_werewolf_invisible_time_00_plr_12_0",
                     "subtitle": "#hash_7e61fc36d58073e3",
                     "assetId": "#hash_6bd968f8e10bc27c",
                     "assetFileNameSustain": "#zm_mansion.fj",
@@ -505626,13 +505626,13 @@
         {
             "value": 1317,
             "next": 5076,
-            "name": "#hash_2a4767b3d78ab941",
+            "name": "#vox_werewolf_invisible_time_00_plr_9_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2a4767b3d78ab941",
+                    "name": "#vox_werewolf_invisible_time_00_plr_9_0",
                     "subtitle": "#hash_5d646b68e14cdabb",
                     "assetId": "#hash_1752166b82f6862e",
                     "assetFileNameSustain": "#zm_mansion.fj",
@@ -505675,7 +505675,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_2a4767b3d78ab941",
+                    "name": "#vox_werewolf_invisible_time_00_plr_9_0",
                     "subtitle": "#hash_5d646b68e14cdabb",
                     "assetId": "#hash_1752166b82f6862e",
                     "assetFileNameSustain": "#zm_mansion.fj",

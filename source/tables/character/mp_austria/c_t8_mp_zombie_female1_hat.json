@@ -7,7 +7,7 @@
     "destructibleDef": "#c_t8_mp_zombie_female_hat1_dst_def",
     "gibDef": "#c_t8_mp_zombie_male_gib_def",
     "body": "#c_t8_mp_zombie_female_body1",
-    "head": "#hash_5d8a59ad3b742000",
+    "head": "#c_t8_mp_zombie_female_head2_nohair",
     "hat": "#c_t8_mp_zombie_female_hat1",
     "damagedTorso_Clean": "#c_t8_mp_zombie_female_body1_g_upclean",
     "damagedTorso_RightArmGone": "#c_t8_mp_zombie_female_body1_g_rarmoff",

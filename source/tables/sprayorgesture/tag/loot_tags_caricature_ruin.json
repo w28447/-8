@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_caricature_ruin",
     "type": "#tag",
-    "material": "#hash_43f202a43acff2b4",
+    "material": "#vd/mtl_loot_ui_icon_tags_caricature_ruin",
     "bundle": {
         "type": "#tag",
         "title": "localized18#tags/caricature_ruin",

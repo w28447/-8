@@ -87,7 +87,7 @@ CoD.GameEndScoreRoundList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	Score:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	Score:setText( 4 )
 	Score:setTTF( "0arame_mono_stencil" )
-	Score:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	Score:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	Score:setLetterSpacing( 10 )
 	Score:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	Score:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

@@ -11,7 +11,7 @@ CoD.CommonBgLayoutLinkLine.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local LinkHline = LUI.UIImage.new( 0, 0, 0, 640, 0, 0, 3, 27 )
 	LinkHline:setAlpha( 0.8 )
 	LinkHline:setImage( RegisterImage( "uie_ui_menu_inspection_bg_linkline" ) )
-	LinkHline:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	LinkHline:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	LinkHline:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( LinkHline )
 	self.LinkHline = LinkHline
@@ -30,7 +30,7 @@ CoD.CommonBgLayoutLinkLine.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local LinkConnector02 = LUI.UIImage.new( 0, 0, 630.5, 658.5, 0, 0, 1, 28 )
 	LinkConnector02:setImage( RegisterImage( "uie_ui_menu_inspection_joint_box01" ) )
-	LinkConnector02:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	LinkConnector02:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	LinkConnector02:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( LinkConnector02 )
 	self.LinkConnector02 = LinkConnector02
@@ -38,7 +38,7 @@ CoD.CommonBgLayoutLinkLine.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local LinkConnector01 = LUI.UIImage.new( 0, 0, -1.5, 20.5, 0, 0, 3.5, 25.5 )
 	LinkConnector01:setScale( 0.2, 0.2 )
 	LinkConnector01:setImage( RegisterImage( "uie_ui_menu_inspection_joint_circle01" ) )
-	LinkConnector01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	LinkConnector01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	LinkConnector01:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( LinkConnector01 )
 	self.LinkConnector01 = LinkConnector01
@@ -57,7 +57,7 @@ CoD.CommonBgLayoutLinkLine.__resetProperties = function ( f2_arg0 )
 	f2_arg0.LinkHline:completeAnimation()
 	f2_arg0.LinkConnector01:setAlpha( 1 )
 	f2_arg0.LinkConnector01:setScale( 0.2, 0.2 )
-	f2_arg0.LinkConnector01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	f2_arg0.LinkConnector01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	f2_arg0.LinkConnector01:setShaderVector( 0, 1, 0, 0, 0 )
 	f2_arg0.LinkConnector02:setAlpha( 1 )
 	f2_arg0.LinkSolidLine:setAlpha( 0.5 )
@@ -68,7 +68,7 @@ CoD.CommonBgLayoutLinkLine.__resetProperties = function ( f2_arg0 )
 	f2_arg0.LinkSolidLine:setShaderVector( 3, 0, 0, 0, 0 )
 	f2_arg0.LinkSolidLine:setShaderVector( 4, 0, 0, 0, 0 )
 	f2_arg0.LinkHline:setAlpha( 0.8 )
-	f2_arg0.LinkHline:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	f2_arg0.LinkHline:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	f2_arg0.LinkHline:setShaderVector( 0, 1, 0, 0, 0 )
 end
 
@@ -196,7 +196,7 @@ CoD.CommonBgLayoutLinkLine.__clipsPerState = {
 													local f28_local0 = function ( f29_arg0 )
 														f29_arg0:beginAnimation( 1199 )
 														f29_arg0:setScale( 0.6, 0.6 )
-														f29_arg0:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+														f29_arg0:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 														f29_arg0:setShaderVector( 0, 1, 0, 0, 0 )
 														f29_arg0:registerEventHandler( "transition_complete_keyframe", f3_arg0.clipFinished )
 													end
@@ -256,7 +256,7 @@ CoD.CommonBgLayoutLinkLine.__clipsPerState = {
 			f3_arg0.LinkConnector01:completeAnimation()
 			f3_arg0.LinkConnector01:setAlpha( 0 )
 			f3_arg0.LinkConnector01:setScale( 0.6, 0.6 )
-			f3_arg0.LinkConnector01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f3_arg0.LinkConnector01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f3_arg0.LinkConnector01:setShaderVector( 0, 1, 0, 0, 0 )
 			f3_local3( f3_arg0.LinkConnector01 )
 			f3_arg0.nextClip = "DefaultClip"
@@ -290,7 +290,7 @@ CoD.CommonBgLayoutLinkLine.__clipsPerState = {
 			
 			f30_arg0.LinkHline:completeAnimation()
 			f30_arg0.LinkHline:setAlpha( 0 )
-			f30_arg0.LinkHline:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f30_arg0.LinkHline:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f30_arg0.LinkHline:setShaderVector( 0, 1, 0, 0, 0 )
 			f30_local0( f30_arg0.LinkHline )
 			local f30_local1 = function ( f35_arg0 )

@@ -764,7 +764,7 @@ function function_fa0a1b19()
         self.var_f9c533d9 = [];
     }
     
-    s_revive_override = self zm_laststand::register_revive_override( &function_d5c9a81 );
+    s_revive_override = self zm_laststand::register_revive_override( &is_reviving_override );
     
     if ( !isdefined( self.var_f9c533d9 ) )
     {
@@ -856,7 +856,7 @@ function function_569653b( s_params )
 // Params 1
 // Checksum 0x5553ecd0, Offset: 0x2d40
 // Size: 0x1a0, Type: bool
-function function_d5c9a81( e_revivee )
+function is_reviving_override( e_revivee )
 {
     if ( !isdefined( e_revivee.revivetrigger ) )
     {

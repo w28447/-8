@@ -67,7 +67,7 @@ CoD.IconRewardWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	CallingCardReward = LUI.UIImage.new( 0, 0, 0, 72, 0, 0, 0, 72 )
 	CallingCardReward:setAlpha( 0 )
-	CallingCardReward:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	CallingCardReward:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	CallingCardReward:setShaderVector( 0, 0.5, 0, 0, 0 )
 	CallingCardReward:setShaderVector( 1, 1, 1, 0, 0 )
 	CallingCardReward:setShaderVector( 2, 0, 0, 0, 0 )

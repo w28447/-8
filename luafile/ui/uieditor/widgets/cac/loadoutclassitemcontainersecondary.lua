@@ -13,7 +13,7 @@ CoD.LoadoutClassItemContainerSecondary.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local backgroundBlur = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 13, 295 )
 	backgroundBlur:setRGB( 0, 0, 0 )
-	backgroundBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	backgroundBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	backgroundBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( backgroundBlur )
 	self.backgroundBlur = backgroundBlur
@@ -21,7 +21,7 @@ CoD.LoadoutClassItemContainerSecondary.new = function ( f1_arg0, f1_arg1, f1_arg
 	local glow3 = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 293, 362 )
 	glow3:setAlpha( 0 )
 	glow3:setZRot( 180 )
-	glow3:setImage( RegisterImage( 0x7B23E8B1ACF3472 ) )
+	glow3:setImage( RegisterImage( "uie_ui_menu_director_selection_glow01" ) )
 	self:addElement( glow3 )
 	self.glow3 = glow3
 	
@@ -92,7 +92,7 @@ CoD.LoadoutClassItemContainerSecondary.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local glow2 = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, -61, 8 )
 	glow2:setAlpha( 0 )
-	glow2:setImage( RegisterImage( 0xC3B2316BAE91099 ) )
+	glow2:setImage( RegisterImage( "uie_ui_menu_director_selection_bar" ) )
 	self:addElement( glow2 )
 	self.glow2 = glow2
 	

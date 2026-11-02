@@ -11,7 +11,7 @@ CoD.TextBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	local Blur = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	Blur:setRGB( 0.09, 0.09, 0.09 )
 	Blur:setAlpha( 0.3 )
-	Blur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	Blur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	Blur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( Blur )
 	self.Blur = Blur

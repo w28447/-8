@@ -17536,13 +17536,13 @@
         {
             "value": 1573,
             "next": 174,
-            "name": "#hash_63c7d74fdb527d86",
+            "name": "#evt_trap_spinner_woosh_lp",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_63c7d74fdb527d86",
+                    "name": "#evt_trap_spinner_woosh_lp",
                     "assetId": "#hash_158c80686a97df8",
                     "assetFileNameSustain": "#zm_escape.all",
                     "assetIdRelease": "#zm_escape.all",
@@ -17585,13 +17585,13 @@
         {
             "value": 1000,
             "next": 156,
-            "name": "#hash_7aa08e759c470df2",
+            "name": "#evt_trap_spinner_woosh_start",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7aa08e759c470df2",
+                    "name": "#evt_trap_spinner_woosh_start",
                     "assetId": "#hash_44c9ab09686bde84",
                     "assetFileNameSustain": "#zm_escape.all",
                     "assetIdRelease": "#zm_escape.all",
@@ -256935,13 +256935,13 @@
         {
             "value": 1378,
             "next": 65535,
-            "name": "#hash_7acb3eb9512ca269",
+            "name": "#zmb_bloodbath_splashes_loop",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7acb3eb9512ca269",
+                    "name": "#zmb_bloodbath_splashes_loop",
                     "assetId": "#hash_358b854ce578d6f6",
                     "assetFileNameSustain": "#zm_escape.all",
                     "assetIdRelease": "#zm_escape.all",
@@ -278543,13 +278543,13 @@
         {
             "value": 1548,
             "next": 65535,
-            "name": "#hash_197dd6d18afad004",
+            "name": "#zmb_shield_afterlife_loop",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_197dd6d18afad004",
+                    "name": "#zmb_shield_afterlife_loop",
                     "assetId": "#hash_36cb6ab7c89d59ee",
                     "assetFileNameSustain": "#zm_escape.all",
                     "assetIdRelease": "#zm_escape.all",

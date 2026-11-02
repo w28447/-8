@@ -26115,13 +26115,13 @@
         {
             "value": 137,
             "next": 65535,
-            "name": "#hash_134bc3c2ce6ed759",
+            "name": "#evt_spk_hand_retract",
             "sequence": 0,
             "cullDistance": 704,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_134bc3c2ce6ed759",
+                    "name": "#evt_spk_hand_retract",
                     "assetId": "#hash_5e4ebbb5e227da31",
                     "assetFileNameSustain": "#wz_escape.all",
                     "assetIdRelease": "#wz_escape.all",

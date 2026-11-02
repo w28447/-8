@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_random_set_3_4_battery",
     "type": "#tag",
-    "material": "#hash_40278f296f676e1d",
+    "material": "#vd/mtl_loot_ui_icon_tags_random_set_3_4_battery",
     "bundle": {
         "type": "#tag",
         "title": "localized18#hash_1ce3389a9103ca7",

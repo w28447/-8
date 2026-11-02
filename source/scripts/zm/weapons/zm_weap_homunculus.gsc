@@ -177,7 +177,7 @@ function function_dcaa7a4a( e_grenade, var_bbab4f84, var_c4a5788c, var_2f916462 
     
     if ( e_grenade.weapon == getweapon( #"homunculus_leprechaun" ) )
     {
-        var_9ddf478 = #"hash_5e7f95fc402bc5f8";
+        var_9ddf478 = #"c_t8_bo_homunculus_patty_fb1_zm";
     }
     else
     {

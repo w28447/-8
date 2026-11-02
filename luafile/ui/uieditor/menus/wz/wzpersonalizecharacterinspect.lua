@@ -85,7 +85,7 @@ LUI.createMenu.WZPersonalizeCharacterInspect = function ( f1_arg0, f1_arg1 )
 	self.CommonIdentityWidgetStreamlinedSafeAreaContainer = CommonIdentityWidgetStreamlinedSafeAreaContainer
 	
 	local bgblur = LUI.UIImage.new( 0.5, 0.5, 260.5, 800.5, 0.5, 0.5, 321.5, 423.5 )
-	bgblur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	bgblur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	bgblur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( bgblur )
 	self.bgblur = bgblur
@@ -111,7 +111,7 @@ LUI.createMenu.WZPersonalizeCharacterInspect = function ( f1_arg0, f1_arg1 )
 	local FuiBox02Right = LUI.UIImage.new( 0.5, 0.5, 763.5, 797.5, 0.5, 0.5, 360, 326 )
 	FuiBox02Right:setAlpha( 0.1 )
 	FuiBox02Right:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_fui_box01" ) )
-	FuiBox02Right:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	FuiBox02Right:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	FuiBox02Right:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FuiBox02Right )
 	self.FuiBox02Right = FuiBox02Right

@@ -18,7 +18,7 @@ CoD.StartMenu_Options_CustomSettingsIndicator.new = function ( f1_arg0, f1_arg1,
 	local Base = LUI.UIImage.new( -0.83, 1.83, 0, 0, -0.04, 1.04, 0, 0 )
 	Base:setRGB( 0.84, 0.47, 0.17 )
 	Base:setImage( RegisterImage( "uie_ui_menu_customgame_indicator" ) )
-	Base:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	Base:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	Base:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( Base )
 	self.Base = Base
@@ -27,7 +27,7 @@ CoD.StartMenu_Options_CustomSettingsIndicator.new = function ( f1_arg0, f1_arg1,
 	Focus:setRGB( 0.84, 0.47, 0.17 )
 	Focus:setAlpha( 0 )
 	Focus:setImage( RegisterImage( "uie_ui_menu_customgame_indicator_focused" ) )
-	Focus:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	Focus:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	Focus:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( Focus )
 	self.Focus = Focus

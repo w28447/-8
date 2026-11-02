@@ -32,7 +32,7 @@ CoD.GameSettings_titlesecbox.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	Textbox:setRGB( 0.96, 0.93, 0.84 )
 	Textbox:setText( LocalizeIntoString( "", "Care Package" ) )
 	Textbox:setTTF( "ttmussels_regular" )
-	Textbox:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
+	Textbox:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow" ) )
 	Textbox:setShaderVector( 0, 0.06, 0, 0, 0 )
 	Textbox:setShaderVector( 1, 0.02, 0, 0, 0 )
 	Textbox:setShaderVector( 2, 1, 0, 0, 0 )

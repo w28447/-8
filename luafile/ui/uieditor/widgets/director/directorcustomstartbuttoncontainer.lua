@@ -81,7 +81,7 @@ CoD.DirectorCustomStartButtonContainer.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local glow2 = LUI.UIImage.new( 0, 0, 0, 456, 0, 0, -69, -3 )
 	glow2:setAlpha( 0 )
-	glow2:setImage( RegisterImage( 0xC3B2316BAE91099 ) )
+	glow2:setImage( RegisterImage( "uie_ui_menu_director_selection_bar" ) )
 	self:addElement( glow2 )
 	self.glow2 = glow2
 	

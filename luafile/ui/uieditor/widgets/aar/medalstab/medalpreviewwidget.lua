@@ -63,7 +63,7 @@ CoD.MedalPreviewWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local MedalCount = LUI.UIText.new( 0, 0, 17.5, 533.5, 0, 0, 395, 446 )
 	MedalCount:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	MedalCount:setTTF( "ttmussels_demibold" )
-	MedalCount:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	MedalCount:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	MedalCount:setShaderVector( 0, 1, 0, 0, 0 )
 	MedalCount:setShaderVector( 1, 0, 0, 0, 0 )
 	MedalCount:setShaderVector( 2, 1, 1, 0.6, 0.12 )

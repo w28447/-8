@@ -28,7 +28,7 @@ CoD.WaypointIcon.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	self.waypointCenterImage = waypointCenterImage
 	
 	local waypointCenterImage2 = LUI.UIImage.new( 0, 0, 0, 76, 0, 0, 0, 76 )
-	waypointCenterImage2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	waypointCenterImage2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	waypointCenterImage2:setShaderVector( 0, 1, 0, 0, 0 )
 	waypointCenterImage2:linkToElementModel( self, "color", true, function ( model )
 		local f4_local0 = model:get()
@@ -47,7 +47,7 @@ CoD.WaypointIcon.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	
 	local waypointCenterImage3 = LUI.UIImage.new( 0, 0, 0, 76, 0, 0, 0, 76 )
 	waypointCenterImage3:setAlpha( 0.5 )
-	waypointCenterImage3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	waypointCenterImage3:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	waypointCenterImage3:setShaderVector( 0, 1.2, 0, 0, 0 )
 	waypointCenterImage3:linkToElementModel( self, "color", true, function ( model )
 		local f6_local0 = model:get()

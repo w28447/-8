@@ -35,13 +35,13 @@
     "tunables1": "#zhield_zword_lh_tunables_zm",
     "sharedWeaponSounds": "#zhield_towers_shield",
     "viewmodel": [
-        "#hash_40af8d244cfc1cb"
+        "#wpn_t8_zm_tower_shield_bull_view"
     ],
     "worldModel": [
-        "#hash_647f60bbe59847e"
+        "#wpn_t8_zm_tower_shield_bull_world"
     ],
     "stowedmodel": [
-        "#hash_647f60bbe59847e"
+        "#wpn_t8_zm_tower_shield_bull_world"
     ],
     "reticleSide": "#reticle_side_round",
     "inventoryIconZm": "#hash_b8d988b1e53e3509",
@@ -49,10 +49,10 @@
     "fireRumble": "#defaultweapon_fire",
     "#hash_21329beb": [
         {
-            "model": "#hash_5b375642a63bcae"
+            "model": "#wpn_t8_zm_tower_shield_bull_d1_world"
         },
         {
-            "model": "#hash_9b13ef05a36478b"
+            "model": "#wpn_t8_zm_tower_shield_bull_d2_world"
         }
     ]
 }

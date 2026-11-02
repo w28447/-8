@@ -9,40 +9,40 @@ CoD.CompassAwarenessRingBacker.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local AwarenessBannerBlur = LUI.UIImage.new( 0.5, 0.5, -175, 175, 0.5, 0.5, -175, 175 )
-	AwarenessBannerBlur:setImage( RegisterImage( 0xBC3E9B04A60DE79 ) )
-	AwarenessBannerBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	AwarenessBannerBlur:setImage( RegisterImage( "uie_ui_hud_core_minimap_banners_awareness" ) )
+	AwarenessBannerBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	AwarenessBannerBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( AwarenessBannerBlur )
 	self.AwarenessBannerBlur = AwarenessBannerBlur
 	
 	local AwarenessBanner = LUI.UIImage.new( 0.5, 0.5, -175, 175, 0.5, 0.5, -175, 175 )
 	AwarenessBanner:setAlpha( 0.5 )
-	AwarenessBanner:setImage( RegisterImage( 0xBC3E9B04A60DE79 ) )
+	AwarenessBanner:setImage( RegisterImage( "uie_ui_hud_core_minimap_banners_awareness" ) )
 	self:addElement( AwarenessBanner )
 	self.AwarenessBanner = AwarenessBanner
 	
 	local AwarenessPanel = LUI.UIImage.new( 0.5, 0.5, -175, 175, 0.5, 0.5, -175, 175 )
 	AwarenessPanel:setRGB( 0.06, 0.06, 0.06 )
 	AwarenessPanel:setAlpha( 0.98 )
-	AwarenessPanel:setImage( RegisterImage( 0xD1522FFA5C848A3 ) )
+	AwarenessPanel:setImage( RegisterImage( "uie_ui_hud_core_minimap_panels" ) )
 	self:addElement( AwarenessPanel )
 	self.AwarenessPanel = AwarenessPanel
 	
 	local RingPanelBlur = LUI.UIImage.new( 0.5, 0.5, -175, 175, 0.5, 0.5, -175, 175 )
-	RingPanelBlur:setImage( RegisterImage( 0x8A1C50744198A2B ) )
-	RingPanelBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	RingPanelBlur:setImage( RegisterImage( "uie_ui_hud_core_minimap_banners" ) )
+	RingPanelBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	RingPanelBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( RingPanelBlur )
 	self.RingPanelBlur = RingPanelBlur
 	
 	local RingBanner = LUI.UIImage.new( 0.5, 0.5, -175, 175, 0.5, 0.5, -175, 175 )
 	RingBanner:setAlpha( 0.5 )
-	RingBanner:setImage( RegisterImage( 0x8A1C50744198A2B ) )
+	RingBanner:setImage( RegisterImage( "uie_ui_hud_core_minimap_banners" ) )
 	self:addElement( RingBanner )
 	self.RingBanner = RingBanner
 	
 	local RingPanel = LUI.UIImage.new( 0.5, 0.5, -175, 175, 0.5, 0.5, -175, 175 )
-	RingPanel:setImage( RegisterImage( 0x7D623AC5A21228E ) )
+	RingPanel:setImage( RegisterImage( "uie_ui_hud_core_minimap_gears_panels" ) )
 	self:addElement( RingPanel )
 	self.RingPanel = RingPanel
 	

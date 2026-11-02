@@ -28,7 +28,7 @@ CoD.LoadingScreenLoadbar_WZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local HeaderStripeAdd = LUI.UIImage.new( 0, 1, 0, 0, 0.5, 0.5, -4.5, 4.5 )
 	HeaderStripeAdd:setAlpha( 0 )
 	HeaderStripeAdd:setImage( RegisterImage( 0xC7A051F5EFC70E5 ) )
-	HeaderStripeAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	HeaderStripeAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	HeaderStripeAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	HeaderStripeAdd:setupNineSliceShader( 60, 10 )
 	self:addElement( HeaderStripeAdd )

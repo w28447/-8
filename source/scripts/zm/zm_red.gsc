@@ -1748,7 +1748,7 @@ function function_c02e63( var_2753f06a )
                 if ( str_host == "brun" )
                 {
                     level.host zm_vo::vo_say( #"hash_6d9e1d549cc1b3ba", undefined, undefined, undefined, undefined, 1 );
-                    level.host zm_vo::vo_say( #"hash_72533b3d4278425d", 0.5 );
+                    level.host zm_vo::vo_say( #"vox_solo_game_start_brun_1_plr_2_0", 0.5 );
                 }
                 else
                 {

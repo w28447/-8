@@ -10,7 +10,7 @@ CoD.HUD_KeyPromptFrame_Ability.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local AbilityBlur = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	AbilityBlur:setScale( 0.96, 0.96 )
-	AbilityBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	AbilityBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	AbilityBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( AbilityBlur )
 	self.AbilityBlur = AbilityBlur

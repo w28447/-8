@@ -25,7 +25,7 @@ CoD.AARTierSkipNotification.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	Header:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	Header:setText( LocalizeToUpperString( "aar/tier_skip" ) )
 	Header:setTTF( "ttmussels_regular" )
-	Header:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	Header:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	Header:setLetterSpacing( 4 )
 	Header:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	Header:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )
@@ -49,7 +49,7 @@ CoD.AARTierSkipNotification.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	Glow:setRGB( 0.8, 0.58, 0.12 )
 	Glow:setAlpha( 0 )
 	Glow:setImage( RegisterImage( "uie_ui_hud_notifications_glow" ) )
-	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	Glow:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( Glow )
 	self.Glow = Glow

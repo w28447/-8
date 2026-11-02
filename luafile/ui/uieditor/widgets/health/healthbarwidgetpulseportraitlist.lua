@@ -11,7 +11,7 @@ CoD.HealthBarWidgetPulsePortraitList.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	local PulseBar = LUI.UIImage.new( 0.32, 0.32, -49, 107, 0.63, 0.63, -101.5, 97.5 )
 	PulseBar:setRGB( 1, 0, 0 )
 	PulseBar:setImage( RegisterImage( 0xD5B703C3B0F386D ) )
-	PulseBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7EA4827662D4CD4 ) )
+	PulseBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_repeat_add" ) )
 	PulseBar:setShaderVector( 0, 4, 1, 0, 0 )
 	PulseBar:setShaderVector( 1, 0, 1, 0, 1 )
 	self:addElement( PulseBar )

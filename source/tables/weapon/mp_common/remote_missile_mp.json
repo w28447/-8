@@ -35,7 +35,7 @@
     "crateObjective": "#remote_missile_waypoint",
     "customsettings": "#remote_missile_settings",
     "#hash_2e4a8800": "#remote_missile_scoreevents",
-    "#hash_22082a57": "#hash_5d10f8f9ff090e5b",
+    "#hash_22082a57": "#veh_t8_drone_hellstorm_carrier_mp_light",
     "viewmodel": [
         "#wpn_t8_eqp_datapad_view"
     ],
@@ -43,7 +43,7 @@
         "#wpn_t8_eqp_datapad_world"
     ],
     "stowedmodel": [
-        "#hash_1e46d2b849120cd9"
+        "#veh_t8_drone_hellstorm_carrier_mp_dark"
     ],
     "gadgetIconAvailable": "#ui_icon_scorestreaks_remote_missile_light",
     "gadgetIconUnavailable": "#ui_icon_scorestreaks_remote_missile_dark",

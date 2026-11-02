@@ -37,7 +37,7 @@ model,#p7_mou_clock_wall
 model,#p7_mou_console_control_a_corner_dest
 model,#p7_book_office_binder_open
 model,#p7_mou_data_recorder_cover
-model,#hash_2d9dd4953e527140
+model,#p7_mou_antenna_receiver_02_larger_ncs
 model,#p7_sweep_broom_push_green
 model,#veh_mphd_mou_snowcat_destructible
 model,#p7_mou_antenna_square_mount_full
@@ -114,7 +114,7 @@ model,#veh_mphd_mou_snowcat_track01
 model,#p7_slu_panel_electrical_02_base_pipe
 model,#p8_mp_flag_base_boots_1
 model,#p8_wz_supply_stash_ammo
-model,#hash_798c31a4e03f1be8
+model,#p7_mou_antenna_radar_snow_ncs
 model,#p7_mou_antenna_receiver_01_ncs
 model,#p7_mou_gondola_full
 model,#p7_fxanim_mp_spire_wire08_mod

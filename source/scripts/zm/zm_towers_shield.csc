@@ -447,19 +447,19 @@ function function_103be84b( localclientnum, str_piece, s_start )
     switch ( str_piece )
     {
         case #"lower":
-            str_model = #"hash_534a8889633c5f83";
+            str_model = #"p8_zm_gla_shield_part_nose_upgrade";
             var_6b518b80 = #"hash_4752663d0689d2c2";
             var_458142a9 = #"hash_4d84827b8da5223d";
             n_drop_time = 1;
             break;
         case #"katar":
-            str_model = #"hash_55f4b4dc9ecc95a5";
+            str_model = #"p8_zm_gla_shield_part_katar_upgrade";
             var_6b518b80 = #"hash_3c5ef4492a237f89";
             var_458142a9 = #"hash_748199dab24b7972";
             n_drop_time = 0;
             break;
         case #"upper":
-            str_model = #"hash_a3555c0c041bd06";
+            str_model = #"p8_zm_gla_shield_part_eyes_upgrade";
             var_6b518b80 = #"hash_5be88bdaaf36eedf";
             var_458142a9 = #"hash_586e5d98fff291f8";
             n_drop_time = 0.5;

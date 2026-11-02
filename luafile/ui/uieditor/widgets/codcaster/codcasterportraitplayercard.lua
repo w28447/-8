@@ -15,7 +15,7 @@ CoD.CodCasterPortraitPlayerCard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local bg = LUI.UIImage.new( 0, 0, 5, 314, 0, 0, 3, 95 )
 	bg:setRGB( 0, 0, 0 )
-	bg:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	bg:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	bg:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( bg )
 	self.bg = bg
@@ -98,7 +98,7 @@ CoD.CodCasterPortraitPlayerCard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local FlareVerticalSlide = LUI.UIImage.new( 0, 0, -83.5, 93.5, 0, 0, -49, 123 )
 	FlareVerticalSlide:setScale( 1.6, 1.2 )
 	FlareVerticalSlide:setImage( RegisterImage( 0x3BEA16D33C8F870 ) )
-	FlareVerticalSlide:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	FlareVerticalSlide:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	FlareVerticalSlide:setShaderVector( 0, 3, 0, 0, 0 )
 	FlareVerticalSlide:subscribeToGlobalModel( f1_arg1, "DeadSpectate", "playerIndex", function ( model )
 		local f6_local0 = model:get()

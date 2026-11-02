@@ -14,7 +14,7 @@ CoD.Social_PartySettingsButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local SceneBlur = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	SceneBlur:setRGB( 0, 0, 0 )
-	SceneBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	SceneBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	SceneBlur:setShaderVector( 0, 0, 0.4, 0, 0 )
 	self:addElement( SceneBlur )
 	self.SceneBlur = SceneBlur
@@ -52,7 +52,7 @@ CoD.Social_PartySettingsButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg
 	local FocusGlow = LUI.UIImage.new( 0, 1, -130, 130, 0, 1, -158, 158 )
 	FocusGlow:setAlpha( 0 )
 	FocusGlow:setImage( RegisterImage( "uie_ui_menu_common_tab_glow" ) )
-	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
+	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_multiplied_add" ) )
 	FocusGlow:setShaderVector( 0, 0, 0, 0.21, 0.09 )
 	FocusGlow:setShaderVector( 1, 1.36, 0, 0, 0 )
 	FocusGlow:setupNineSliceShader( 245, 185 )
@@ -62,7 +62,7 @@ CoD.Social_PartySettingsButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg
 	local FocusHighlight = LUI.UIImage.new( 0, 1, -52, 52, 0, 1, -42, 42 )
 	FocusHighlight:setAlpha( 0 )
 	FocusHighlight:setImage( RegisterImage( "uie_ui_menu_common_tab_backing" ) )
-	FocusHighlight:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
+	FocusHighlight:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_multiplied_add" ) )
 	FocusHighlight:setShaderVector( 0, 0, 0, 0.27, 0.18 )
 	FocusHighlight:setShaderVector( 1, 0.9, 0, 0, 0 )
 	FocusHighlight:setupNineSliceShader( 135, 70 )
@@ -95,7 +95,7 @@ CoD.Social_PartySettingsButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	PartyPrivacyLabel.__String_Reference()
 	PartyPrivacyLabel:setTTF( "ttmussels_regular" )
-	PartyPrivacyLabel:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	PartyPrivacyLabel:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	PartyPrivacyLabel:setLetterSpacing( 3 )
 	PartyPrivacyLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	PartyPrivacyLabel:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -111,7 +111,7 @@ CoD.Social_PartySettingsButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	PartyPrivacyLabelFocus.__String_Reference()
 	PartyPrivacyLabelFocus:setTTF( "ttmussels_regular" )
-	PartyPrivacyLabelFocus:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
+	PartyPrivacyLabelFocus:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow" ) )
 	PartyPrivacyLabelFocus:setShaderVector( 0, 0.13, 0, 0, 0 )
 	PartyPrivacyLabelFocus:setShaderVector( 1, 0.34, 0, 0, 0 )
 	PartyPrivacyLabelFocus:setShaderVector( 2, 1, 0, 0, 0 )
@@ -129,7 +129,7 @@ CoD.Social_PartySettingsButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	PlayerLimitLabel.__String_Reference()
 	PlayerLimitLabel:setTTF( "ttmussels_regular" )
-	PlayerLimitLabel:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	PlayerLimitLabel:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	PlayerLimitLabel:setLetterSpacing( 3 )
 	PlayerLimitLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	PlayerLimitLabel:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -145,7 +145,7 @@ CoD.Social_PartySettingsButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	PlayerLimitLabelFocus.__String_Reference()
 	PlayerLimitLabelFocus:setTTF( "ttmussels_regular" )
-	PlayerLimitLabelFocus:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
+	PlayerLimitLabelFocus:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow" ) )
 	PlayerLimitLabelFocus:setShaderVector( 0, 0.13, 0, 0, 0 )
 	PlayerLimitLabelFocus:setShaderVector( 1, 0.34, 0, 0, 0 )
 	PlayerLimitLabelFocus:setShaderVector( 2, 1, 0, 0, 0 )
@@ -163,7 +163,7 @@ CoD.Social_PartySettingsButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	VoiceChatLabel.__String_Reference()
 	VoiceChatLabel:setTTF( "ttmussels_regular" )
-	VoiceChatLabel:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	VoiceChatLabel:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	VoiceChatLabel:setLetterSpacing( 3 )
 	VoiceChatLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	VoiceChatLabel:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -179,7 +179,7 @@ CoD.Social_PartySettingsButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	VoiceChatLabelFocus.__String_Reference()
 	VoiceChatLabelFocus:setTTF( "ttmussels_regular" )
-	VoiceChatLabelFocus:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
+	VoiceChatLabelFocus:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow" ) )
 	VoiceChatLabelFocus:setShaderVector( 0, 0.13, 0, 0, 0 )
 	VoiceChatLabelFocus:setShaderVector( 1, 0.34, 0, 0, 0 )
 	VoiceChatLabelFocus:setShaderVector( 2, 1, 0, 0, 0 )

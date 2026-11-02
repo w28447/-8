@@ -18,7 +18,7 @@ CoD.Rush_Gameover.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	
 	local Blur = LUI.UIImage.new( -0.5, 0.5, 960, 960, 0.5, 1.5, -540, -540 )
 	Blur:setAlpha( 0 )
-	Blur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	Blur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	Blur:setShaderVector( 0, 0, 0, 0, 0 )
 	Blur:registerEventHandler( "menu_loaded", function ( element, event )
 		local f2_local0 = nil
@@ -71,7 +71,7 @@ CoD.Rush_Gameover.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	local CroppedZmBacking2 = LUI.UIImage.new( 0, 1, -8, 8, 0, 1, -18, 18 )
 	CroppedZmBacking2:setAlpha( 0.5 )
 	CroppedZmBacking2:setImage( RegisterImage( "uie_ui_hud_zm_aar_reward_bg" ) )
-	CroppedZmBacking2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	CroppedZmBacking2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	CroppedZmBacking2:setShaderVector( 0, 0, 0, 0, 0 )
 	CroppedZmBacking2:setShaderVector( 1, 1, 1, 0, 0 )
 	CroppedZmBacking2:setShaderVector( 2, 0, 0, 0, 0 )

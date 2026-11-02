@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_caricature_torque",
     "type": "#tag",
-    "material": "#hash_660601e58d5fd628",
+    "material": "#vd/mtl_loot_ui_icon_tags_caricature_torque",
     "bundle": {
         "type": "#tag",
         "title": "localized18#tags/caricature_torque",

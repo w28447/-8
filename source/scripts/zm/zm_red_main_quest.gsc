@@ -3290,7 +3290,7 @@ function function_11d400f9()
     v_end = s_end.origin;
     mdl_fx moveto( v_end, 0.5 );
     mdl_fx waittilltimeout( 0.5, #"movedone" );
-    mdl_fx playsound( #"hash_772b6a593788929f" );
+    mdl_fx playsound( #"zmb_mq_light_crystal_break" );
     mdl_fx clientfield::set( "" + #"hash_6d76e4b7a31537af", 0 );
     level clientfield::increment( "" + #"hash_4d77ba61cd7f3eb7" );
     s_light = level.var_5299790a;
@@ -5901,7 +5901,7 @@ function function_14727b8f()
         
         if ( n_act < 3 )
         {
-            playsoundatposition( #"hash_83542f629d907c8", ( 0, 0, 0 ) );
+            playsoundatposition( #"zmb_mq_play_crowd_cheer", ( 0, 0, 0 ) );
             level thread function_759871d0();
             wait 10;
             continue;

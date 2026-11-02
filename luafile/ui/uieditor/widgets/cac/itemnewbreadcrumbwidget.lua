@@ -19,7 +19,7 @@ CoD.ItemNewBreadcrumbWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	itemName:setRGB( 0, 0, 0 )
 	itemName:setText( LocalizeToUpperString( "menu/new" ) )
 	itemName:setTTF( "ttmussels_demibold" )
-	itemName:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	itemName:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	itemName:setLetterSpacing( 1.5 )
 	itemName:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	self:addElement( itemName )

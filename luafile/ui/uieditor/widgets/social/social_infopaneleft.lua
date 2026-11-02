@@ -107,7 +107,7 @@ CoD.Social_InfoPaneLeft.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local primaryPresence = LUI.UIText.new( 0.5, 0.5, -230, 230, 0, 0, -40, -22 )
 	primaryPresence:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	primaryPresence:setTTF( "dinnext_regular" )
-	primaryPresence:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	primaryPresence:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	primaryPresence:setLetterSpacing( 1 )
 	primaryPresence:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	primaryPresence:linkToElementModel( self, "primaryPresence", true, function ( model )

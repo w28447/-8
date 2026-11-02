@@ -32,7 +32,7 @@ CoD.PurchaseableItemContentImageDaily.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local DailyImageCallingCard = LUI.UIImage.new( 0, 0, 5, 243, 0, 0, 55.5, 164.5 )
 	DailyImageCallingCard:setAlpha( 0 )
-	DailyImageCallingCard:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	DailyImageCallingCard:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	DailyImageCallingCard:setShaderVector( 0, 0, 0, 0, 0 )
 	DailyImageCallingCard:setShaderVector( 1, 1, 1, 0, 0 )
 	DailyImageCallingCard:setShaderVector( 2, 0, 0, 0, 0 )

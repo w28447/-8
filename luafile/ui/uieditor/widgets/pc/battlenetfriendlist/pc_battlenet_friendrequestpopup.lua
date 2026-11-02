@@ -26,7 +26,7 @@ CoD.PC_Battlenet_FriendRequestPopup.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local FriendIcon = LUI.UIImage.new( 0.02, 0.02, 0, 17, 0.5, 0.5, -8.5, 8.5 )
 	FriendIcon:setAlpha( 0 )
-	FriendIcon:setImage( RegisterImage( 0xA16F29EFD38E823 ) )
+	FriendIcon:setImage( RegisterImage( "uie_social_friend_icon" ) )
 	self:addElement( FriendIcon )
 	self.FriendIcon = FriendIcon
 	

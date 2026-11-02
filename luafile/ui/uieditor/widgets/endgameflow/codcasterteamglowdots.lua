@@ -11,7 +11,7 @@ CoD.CODCasterTeamGlowDots.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local GlowDotsCODCaster = LUI.UIImage.new( 0, 0, 0, 10, 0, 0, 0, 146 )
 	GlowDotsCODCaster:setAlpha( 0 )
 	GlowDotsCODCaster:setImage( RegisterImage( 0xED10A9493081AC0 ) )
-	GlowDotsCODCaster:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	GlowDotsCODCaster:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	GlowDotsCODCaster:setShaderVector( 0, 1.5, 0, 0, 0 )
 	GlowDotsCODCaster:subscribeToGlobalModel( f1_arg1, "DeadSpectate", "playerIndex", function ( model )
 		local f2_local0 = model:get()
@@ -26,7 +26,7 @@ CoD.CODCasterTeamGlowDots.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	GlowDotsDefault:setRGB( 1, 0.68, 0 )
 	GlowDotsDefault:setAlpha( 0 )
 	GlowDotsDefault:setImage( RegisterImage( 0xED10A9493081AC0 ) )
-	GlowDotsDefault:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	GlowDotsDefault:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	GlowDotsDefault:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( GlowDotsDefault )
 	self.GlowDotsDefault = GlowDotsDefault

@@ -24,7 +24,7 @@ CoD.MPSpecialistHUBTags_TagFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	local emblemListBg = LUI.UIImage.new( 0, 0, 204.5, 1253.5, 0, 0, 81, 926 )
 	emblemListBg:setScale( 0.77, 0.77 )
 	emblemListBg:setImage( RegisterImage( "uie_ui_menu_emblem_empty_bg" ) )
-	emblemListBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	emblemListBg:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	emblemListBg:setShaderVector( 0, 0, 0, 0, 0 )
 	emblemListBg:setupNineSliceShader( 212, 212 )
 	self:addElement( emblemListBg )
@@ -86,7 +86,7 @@ CoD.MPSpecialistHUBTags_TagFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	local DotLineTop = LUI.UIImage.new( 0.5, 0.5, -636.5, 174.5, 0, 0, 161, 165 )
 	DotLineTop:setAlpha( 0.4 )
 	DotLineTop:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline" ) )
-	DotLineTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	DotLineTop:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	DotLineTop:setShaderVector( 0, 1.2, 0, 0, 0 )
 	self:addElement( DotLineTop )
 	self.DotLineTop = DotLineTop
@@ -94,7 +94,7 @@ CoD.MPSpecialistHUBTags_TagFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	local DotLineBottom = LUI.UIImage.new( 0.5, 0.5, -636.5, 174.5, 0, 0, 859, 863 )
 	DotLineBottom:setAlpha( 0.4 )
 	DotLineBottom:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline" ) )
-	DotLineBottom:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	DotLineBottom:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	DotLineBottom:setShaderVector( 0, 1.2, 0, 0, 0 )
 	self:addElement( DotLineBottom )
 	self.DotLineBottom = DotLineBottom

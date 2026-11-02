@@ -10,7 +10,7 @@ CoD.BountyHunterPlayerMoney.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local Blur = LUI.UIImage.new( 0.5, 0.5, -98, 98, 0.5, 0.5, -16, 17 )
-	Blur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	Blur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	Blur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( Blur )
 	self.Blur = Blur
@@ -43,7 +43,7 @@ CoD.BountyHunterPlayerMoney.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	Sign:setRGB( 0.12, 0.8, 0.14 )
 	Sign:setText( CoD.BaseUtility.AlreadyLocalized( "$" ) )
 	Sign:setTTF( "ttmussels_regular" )
-	Sign:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	Sign:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	Sign:setShaderVector( 0, 0.68, 0, 0, 0 )
 	Sign:setShaderVector( 1, 0, 0, 0, 0 )
 	Sign:setShaderVector( 2, 0.34, 0.74, 0.46, 0.4 )
@@ -55,7 +55,7 @@ CoD.BountyHunterPlayerMoney.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local Money = LUI.UIText.new( 0.5, 0.5, -24, 84, 0.5, 0.5, -11.5, 13.5 )
 	Money:setRGB( 0.12, 0.8, 0.14 )
 	Money:setTTF( "ttmussels_regular" )
-	Money:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	Money:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	Money:setShaderVector( 0, 0.68, 0, 0, 0 )
 	Money:setShaderVector( 1, 0, 0, 0, 0 )
 	Money:setShaderVector( 2, 0.34, 0.74, 0.46, 0.4 )

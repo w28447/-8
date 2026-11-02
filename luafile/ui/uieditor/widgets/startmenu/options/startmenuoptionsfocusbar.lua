@@ -9,7 +9,7 @@ CoD.StartMenuOptionsFocusBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local Glow2 = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	Glow2:setImage( RegisterImage( 0xC3B2316BAE91099 ) )
+	Glow2:setImage( RegisterImage( "uie_ui_menu_director_selection_bar" ) )
 	self:addElement( Glow2 )
 	self.Glow2 = Glow2
 	

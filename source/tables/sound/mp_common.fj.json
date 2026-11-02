@@ -468878,13 +468878,13 @@
         {
             "value": 2915,
             "next": 1412,
-            "name": "#hash_7c4f190828e20064",
+            "name": "#vox_bsn1_ult_overwatch_dmg",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7c4f190828e20064",
+                    "name": "#vox_bsn1_ult_overwatch_dmg",
                     "subtitle": "#hash_481cd1db0f775315",
                     "assetId": "#hash_32b4052c451a17f9",
                     "assetFileNameSustain": "#mp_common.fj",
@@ -468925,7 +468925,7 @@
                     "unk178": "#hash_3011f0808"
                 },
                 {
-                    "name": "#hash_7c4f190828e20064",
+                    "name": "#vox_bsn1_ult_overwatch_dmg",
                     "subtitle": "#hash_35e69babc92e40f8",
                     "assetId": "#hash_5befb7344b204ad4",
                     "assetFileNameSustain": "#mp_common.fj",
@@ -468966,7 +468966,7 @@
                     "unk178": "#hash_3011f0808"
                 },
                 {
-                    "name": "#hash_7c4f190828e20064",
+                    "name": "#vox_bsn1_ult_overwatch_dmg",
                     "subtitle": "#hash_1ee8d17db6d789b3",
                     "assetId": "#hash_2a124515169fb72b",
                     "assetFileNameSustain": "#mp_common.fj",
@@ -469007,7 +469007,7 @@
                     "unk178": "#hash_3011f0808"
                 },
                 {
-                    "name": "#hash_7c4f190828e20064",
+                    "name": "#vox_bsn1_ult_overwatch_dmg",
                     "subtitle": "#hash_742a7aa4f412614e",
                     "assetId": "#hash_631a41640333a40e",
                     "assetFileNameSustain": "#mp_common.fj",
@@ -470578,13 +470578,13 @@
         {
             "value": 1612,
             "next": 1459,
-            "name": "#hash_54f52376896551bd",
+            "name": "#vox_bsn2_ult_overwatch_dmg",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_54f52376896551bd",
+                    "name": "#vox_bsn2_ult_overwatch_dmg",
                     "subtitle": "#hash_481ccedb0f774dfc",
                     "assetId": "#hash_77063b0257d9e9bb",
                     "assetFileNameSustain": "#mp_common.fj",
@@ -470625,7 +470625,7 @@
                     "unk178": "#hash_3011f0808"
                 },
                 {
-                    "name": "#hash_54f52376896551bd",
+                    "name": "#vox_bsn2_ult_overwatch_dmg",
                     "subtitle": "#hash_35e69eabc92e4611",
                     "assetId": "#hash_ad4c34eab4f005e",
                     "assetFileNameSustain": "#mp_common.fj",
@@ -470666,7 +470666,7 @@
                     "unk178": "#hash_3011f0808"
                 },
                 {
-                    "name": "#hash_54f52376896551bd",
+                    "name": "#vox_bsn2_ult_overwatch_dmg",
                     "subtitle": "#hash_1ee8d27db6d78b66",
                     "assetId": "#hash_69db686a7462dc89",
                     "assetFileNameSustain": "#mp_common.fj",
@@ -470707,7 +470707,7 @@
                     "unk178": "#hash_3011f0808"
                 },
                 {
-                    "name": "#hash_54f52376896551bd",
+                    "name": "#vox_bsn2_ult_overwatch_dmg",
                     "subtitle": "#hash_742a79a4f4125f9b",
                     "assetId": "#hash_4d3072985bb2ede4",
                     "assetFileNameSustain": "#mp_common.fj",
@@ -827542,13 +827542,13 @@
         {
             "value": 2956,
             "next": 65535,
-            "name": "#hash_418e28697a5ba1b3",
+            "name": "#vox_msn1_ult_overwatch_dmg",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_418e28697a5ba1b3",
+                    "name": "#vox_msn1_ult_overwatch_dmg",
                     "subtitle": "#hash_3777c9813a7a5b66",
                     "assetId": "#hash_521a92fe2a91bb3f",
                     "assetFileNameSustain": "#mp_common.fj",
@@ -827589,7 +827589,7 @@
                     "unk178": "#hash_3011f0808"
                 },
                 {
-                    "name": "#hash_418e28697a5ba1b3",
+                    "name": "#vox_msn1_ult_overwatch_dmg",
                     "subtitle": "#hash_1c52c3e6ba22dc4b",
                     "assetId": "#hash_19d198218bab6602",
                     "assetFileNameSustain": "#mp_common.fj",
@@ -827630,7 +827630,7 @@
                     "unk178": "#hash_3011f0808"
                 },
                 {
-                    "name": "#hash_418e28697a5ba1b3",
+                    "name": "#vox_msn1_ult_overwatch_dmg",
                     "subtitle": "#hash_fde09ca9fc49a70",
                     "assetId": "#hash_63b7b0300fdec5ed",
                     "assetFileNameSustain": "#mp_common.fj",
@@ -827671,7 +827671,7 @@
                     "unk178": "#hash_3011f0808"
                 },
                 {
-                    "name": "#hash_418e28697a5ba1b3",
+                    "name": "#vox_msn1_ult_overwatch_dmg",
                     "subtitle": "#hash_44b2827b3cb26ced",
                     "assetId": "#hash_7eaec3a15259d818",
                     "assetFileNameSustain": "#mp_common.fj",
@@ -829242,13 +829242,13 @@
         {
             "value": 1044,
             "next": 2613,
-            "name": "#hash_77a8c6ba1229f0d6",
+            "name": "#vox_msn2_ult_overwatch_dmg",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_77a8c6ba1229f0d6",
+                    "name": "#vox_msn2_ult_overwatch_dmg",
                     "subtitle": "#hash_3777c8813a7a59b3",
                     "assetId": "#hash_46760de09c7316a1",
                     "assetFileNameSustain": "#mp_common.fj",
@@ -829289,7 +829289,7 @@
                     "unk178": "#hash_3011f0808"
                 },
                 {
-                    "name": "#hash_77a8c6ba1229f0d6",
+                    "name": "#vox_msn2_ult_overwatch_dmg",
                     "subtitle": "#hash_1c52c4e6ba22ddfe",
                     "assetId": "#hash_1cc4008e950c23bc",
                     "assetFileNameSustain": "#mp_common.fj",
@@ -829330,7 +829330,7 @@
                     "unk178": "#hash_3011f0808"
                 },
                 {
-                    "name": "#hash_77a8c6ba1229f0d6",
+                    "name": "#vox_msn2_ult_overwatch_dmg",
                     "subtitle": "#hash_fde0cca9fc49f89",
                     "assetId": "#hash_4210a998db5913d3",
                     "assetFileNameSustain": "#mp_common.fj",
@@ -829371,7 +829371,7 @@
                     "unk178": "#hash_3011f0808"
                 },
                 {
-                    "name": "#hash_77a8c6ba1229f0d6",
+                    "name": "#vox_msn2_ult_overwatch_dmg",
                     "subtitle": "#hash_44b27f7b3cb267d4",
                     "assetId": "#hash_17fa813e77e13f56",
                     "assetFileNameSustain": "#mp_common.fj",

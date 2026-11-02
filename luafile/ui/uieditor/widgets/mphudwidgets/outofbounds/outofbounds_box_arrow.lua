@@ -18,7 +18,7 @@ CoD.outofbounds_box_arrow.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local ArrowSmallAdd03 = LUI.UIImage.new( 0, 0, 80.5, 126.5, 0, 0, 0, 64 )
 	ArrowSmallAdd03:setAlpha( 0 )
 	ArrowSmallAdd03:setImage( RegisterImage( "uie_ui_hud_out_of_bounds_side_arrows" ) )
-	ArrowSmallAdd03:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	ArrowSmallAdd03:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	ArrowSmallAdd03:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ArrowSmallAdd03 )
 	self.ArrowSmallAdd03 = ArrowSmallAdd03
@@ -33,7 +33,7 @@ CoD.outofbounds_box_arrow.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local ArrowSmallAdd02 = LUI.UIImage.new( 0, 0, 40.5, 86.5, 0, 0, 0, 64 )
 	ArrowSmallAdd02:setAlpha( 0 )
 	ArrowSmallAdd02:setImage( RegisterImage( "uie_ui_hud_out_of_bounds_side_arrows" ) )
-	ArrowSmallAdd02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	ArrowSmallAdd02:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	ArrowSmallAdd02:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ArrowSmallAdd02 )
 	self.ArrowSmallAdd02 = ArrowSmallAdd02
@@ -48,7 +48,7 @@ CoD.outofbounds_box_arrow.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local ArrowSmallAdd01 = LUI.UIImage.new( 0, 0, 0, 46, 0, 0, 0, 64 )
 	ArrowSmallAdd01:setAlpha( 0 )
 	ArrowSmallAdd01:setImage( RegisterImage( "uie_ui_hud_out_of_bounds_side_arrows" ) )
-	ArrowSmallAdd01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	ArrowSmallAdd01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	ArrowSmallAdd01:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ArrowSmallAdd01 )
 	self.ArrowSmallAdd01 = ArrowSmallAdd01
@@ -72,7 +72,7 @@ CoD.outofbounds_box_arrow.__resetProperties = function ( f2_arg0 )
 	f2_arg0.ArrowSmallAdd03:setAlpha( 0 )
 	f2_arg0.ArrowSmall03:setAlpha( 0.4 )
 	f2_arg0.ArrowSmallAdd01:setAlpha( 0 )
-	f2_arg0.ArrowSmallAdd01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	f2_arg0.ArrowSmallAdd01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	f2_arg0.ArrowSmallAdd01:setShaderVector( 0, 1, 0, 0, 0 )
 	f2_arg0.ArrowSmallAdd02:setAlpha( 0 )
 end
@@ -163,7 +163,7 @@ CoD.outofbounds_box_arrow.__clipsPerState = {
 			
 			f3_arg0.ArrowSmallAdd01:completeAnimation()
 			f3_arg0.ArrowSmallAdd01:setAlpha( 0 )
-			f3_arg0.ArrowSmallAdd01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f3_arg0.ArrowSmallAdd01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f3_arg0.ArrowSmallAdd01:setShaderVector( 0, 1, 0, 0, 0 )
 			f3_local2( f3_arg0.ArrowSmallAdd01 )
 			f3_arg0.nextClip = "DefaultClip"

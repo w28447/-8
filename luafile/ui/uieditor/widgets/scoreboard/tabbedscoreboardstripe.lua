@@ -9,7 +9,7 @@ CoD.TabbedScoreboardStripe.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local MapLayoutStripe = LUI.UIImage.new( 0, 0, 0, 602, 0, 0, 0, 24 )
-	MapLayoutStripe:setImage( RegisterImage( 0xC9D613B4A6711AA ) )
+	MapLayoutStripe:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_map_layout_stripe" ) )
 	self:addElement( MapLayoutStripe )
 	self.MapLayoutStripe = MapLayoutStripe
 	
@@ -23,7 +23,7 @@ CoD.TabbedScoreboardStripe.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local MapLayoutStripeAdd = LUI.UIImage.new( 0, 0, 0, 602, 0, 0, 0, 24 )
 	MapLayoutStripeAdd:setAlpha( 0.5 )
-	MapLayoutStripeAdd:setImage( RegisterImage( 0xC9D613B4A6711AA ) )
+	MapLayoutStripeAdd:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_map_layout_stripe" ) )
 	MapLayoutStripeAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	MapLayoutStripeAdd:setShaderVector( 0, 0, 1, 0, 0 )
 	MapLayoutStripeAdd:setShaderVector( 1, 0, 0, 0, 0 )

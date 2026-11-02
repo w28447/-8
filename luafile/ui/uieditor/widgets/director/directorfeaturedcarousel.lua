@@ -46,7 +46,7 @@ CoD.DirectorFeaturedCarousel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local TiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 1, 1, -31, 0 )
 	TiledBacking:setRGB( 0.67, 0.67, 0.67 )
 	TiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
-	TiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	TiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	TiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBacking:setupNineSliceShader( 196, 88 )
 	self:addElement( TiledBacking )
@@ -59,7 +59,7 @@ CoD.DirectorFeaturedCarousel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local IdentityBracketBot = LUI.UIImage.new( 0, 1.01, -3, -3, 0, 0, -2, 10 )
 	IdentityBracketBot:setAlpha( 0.15 )
 	IdentityBracketBot:setImage( RegisterImage( "uie_ui_menu_social_info_bracket" ) )
-	IdentityBracketBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	IdentityBracketBot:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	IdentityBracketBot:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( IdentityBracketBot )
 	self.IdentityBracketBot = IdentityBracketBot
@@ -68,7 +68,7 @@ CoD.DirectorFeaturedCarousel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	IdentityBracketBot2:setAlpha( 0.15 )
 	IdentityBracketBot2:setZRot( 180 )
 	IdentityBracketBot2:setImage( RegisterImage( "uie_ui_menu_social_info_bracket" ) )
-	IdentityBracketBot2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	IdentityBracketBot2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	IdentityBracketBot2:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( IdentityBracketBot2 )
 	self.IdentityBracketBot2 = IdentityBracketBot2

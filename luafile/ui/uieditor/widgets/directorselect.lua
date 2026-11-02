@@ -27,7 +27,7 @@ CoD.directorSelect.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	local backing = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	backing:setRGB( 0, 0, 0 )
-	backing:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	backing:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	backing:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( backing )
 	self.backing = backing
@@ -46,7 +46,7 @@ CoD.directorSelect.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local DotLineBottom = LUI.UIImage.new( 0.5, 0.5, -474.5, 474.5, 0, 0, 777, 781 )
 	DotLineBottom:setAlpha( 0.4 )
 	DotLineBottom:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline" ) )
-	DotLineBottom:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	DotLineBottom:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	DotLineBottom:setShaderVector( 0, 1.2, 0, 0, 0 )
 	self:addElement( DotLineBottom )
 	self.DotLineBottom = DotLineBottom
@@ -54,7 +54,7 @@ CoD.directorSelect.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local DotLineTop = LUI.UIImage.new( 0.5, 0.5, -474.5, 474.5, 0, 0, 238, 242 )
 	DotLineTop:setAlpha( 0.4 )
 	DotLineTop:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline" ) )
-	DotLineTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	DotLineTop:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	DotLineTop:setShaderVector( 0, 1.2, 0, 0, 0 )
 	self:addElement( DotLineTop )
 	self.DotLineTop = DotLineTop

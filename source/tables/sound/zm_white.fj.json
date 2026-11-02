@@ -55236,13 +55236,13 @@
         {
             "value": 4707,
             "next": 65535,
-            "name": "#hash_3781c28ea8f0ce86",
+            "name": "#vox_audio_log_stem_1",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3781c28ea8f0ce86",
+                    "name": "#vox_audio_log_stem_1",
                     "assetId": "#hash_465f48d26404c446",
                     "assetFileNameSustain": "#zm_white.fj",
                     "assetIdRelease": "#zm_white.fj",
@@ -55287,13 +55287,13 @@
         {
             "value": 4171,
             "next": 65535,
-            "name": "#hash_3781c18ea8f0ccd3",
+            "name": "#vox_audio_log_stem_2",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3781c18ea8f0ccd3",
+                    "name": "#vox_audio_log_stem_2",
                     "assetId": "#hash_440c27f5a4b34e11",
                     "assetFileNameSustain": "#zm_white.fj",
                     "assetIdRelease": "#zm_white.fj",
@@ -55338,13 +55338,13 @@
         {
             "value": 4157,
             "next": 65535,
-            "name": "#hash_3781c08ea8f0cb20",
+            "name": "#vox_audio_log_stem_3",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3781c08ea8f0cb20",
+                    "name": "#vox_audio_log_stem_3",
                     "assetId": "#hash_2dde05b3ebe23d6c",
                     "assetFileNameSustain": "#zm_white.fj",
                     "assetIdRelease": "#zm_white.fj",
@@ -55389,13 +55389,13 @@
         {
             "value": 4257,
             "next": 65535,
-            "name": "#hash_2388406b6c0759fc",
+            "name": "#vox_audio_reel_stem_1",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2388406b6c0759fc",
+                    "name": "#vox_audio_reel_stem_1",
                     "assetId": "#hash_7522e27d756c6754",
                     "assetFileNameSustain": "#zm_white.fj",
                     "assetIdRelease": "#zm_white.fj",
@@ -55440,13 +55440,13 @@
         {
             "value": 3718,
             "next": 65535,
-            "name": "#hash_2388436b6c075f15",
+            "name": "#vox_audio_reel_stem_2",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2388436b6c075f15",
+                    "name": "#vox_audio_reel_stem_2",
                     "assetId": "#hash_4345705e40ebd3ab",
                     "assetFileNameSustain": "#zm_white.fj",
                     "assetIdRelease": "#zm_white.fj",
@@ -55491,13 +55491,13 @@
         {
             "value": 2958,
             "next": 65535,
-            "name": "#hash_2388426b6c075d62",
+            "name": "#vox_audio_reel_stem_3",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2388426b6c075d62",
+                    "name": "#vox_audio_reel_stem_3",
                     "assetId": "#hash_7c4d6cad2d7fc08e",
                     "assetFileNameSustain": "#zm_white.fj",
                     "assetIdRelease": "#zm_white.fj",
@@ -55542,13 +55542,13 @@
         {
             "value": 728,
             "next": 576,
-            "name": "#hash_23883d6b6c0754e3",
+            "name": "#vox_audio_reel_stem_4",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_23883d6b6c0754e3",
+                    "name": "#vox_audio_reel_stem_4",
                     "assetId": "#hash_11e8cebc6a777d0d",
                     "assetFileNameSustain": "#zm_white.fj",
                     "assetIdRelease": "#zm_white.fj",
@@ -55593,13 +55593,13 @@
         {
             "value": 1413,
             "next": 65535,
-            "name": "#hash_23883c6b6c075330",
+            "name": "#vox_audio_reel_stem_5",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_23883c6b6c075330",
+                    "name": "#vox_audio_reel_stem_5",
                     "assetId": "#hash_2fc7543d591536b8",
                     "assetFileNameSustain": "#zm_white.fj",
                     "assetIdRelease": "#zm_white.fj",
@@ -356076,13 +356076,13 @@
         {
             "value": 4236,
             "next": 65535,
-            "name": "#hash_7e42277765ce254",
+            "name": "#vox_boss_cannister_fail_ncom_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7e42277765ce254",
+                    "name": "#vox_boss_cannister_fail_ncom_0",
                     "subtitle": "#hash_46e7928c932476e5",
                     "assetId": "#hash_b6805d85a292ace",
                     "assetFileNameSustain": "#zm_white.fj",
@@ -894635,13 +894635,13 @@
         {
             "value": 2686,
             "next": 65535,
-            "name": "#hash_ef67a616ce1cb99",
+            "name": "#vox_ww_num_correct_rush_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_ef67a616ce1cb99",
+                    "name": "#vox_ww_num_correct_rush_0",
                     "subtitle": "#hash_151f48d6639956c2",
                     "assetId": "#hash_8b2b9e1e5e770b7",
                     "assetFileNameSustain": "#zm_white.fj",
@@ -902207,13 +902207,13 @@
         {
             "value": 2660,
             "next": 65535,
-            "name": "#hash_61ea1c56d8b85109",
+            "name": "#vox_ww_y_orb_find_rush_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_61ea1c56d8b85109",
+                    "name": "#vox_ww_y_orb_find_rush_0",
                     "subtitle": "#hash_bc89604707c7c88",
                     "assetId": "#hash_622a08ac5d00da1d",
                     "assetFileNameSustain": "#zm_white.fj",
@@ -902311,13 +902311,13 @@
         {
             "value": 2216,
             "next": 5404,
-            "name": "#hash_7f3dfdce325747fd",
+            "name": "#vox_ww_y_orb_shoot_rush_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7f3dfdce325747fd",
+                    "name": "#vox_ww_y_orb_shoot_rush_0",
                     "subtitle": "#hash_7074f87bab693832",
                     "assetId": "#hash_41353646a56b0773",
                     "assetFileNameSustain": "#zm_white.fj",
@@ -902363,13 +902363,13 @@
         {
             "value": 4038,
             "next": 65535,
-            "name": "#hash_6942fd3186464801",
+            "name": "#vox_ww_y_orb_success_rush_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6942fd3186464801",
+                    "name": "#vox_ww_y_orb_success_rush_0",
                     "subtitle": "#hash_51c91e9afe756d82",
                     "assetId": "#hash_15af794b73bf4d23",
                     "assetFileNameSustain": "#zm_white.fj",
@@ -903235,13 +903235,13 @@
         {
             "value": 2809,
             "next": 5416,
-            "name": "#hash_de2af40c6f28517",
+            "name": "#vox_ww_z_chimney_first_rush_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_de2af40c6f28517",
+                    "name": "#vox_ww_z_chimney_first_rush_0",
                     "subtitle": "#hash_4938164a0b9107bc",
                     "assetId": "#hash_285d4c253c433af9",
                     "assetFileNameSustain": "#zm_white.fj",
@@ -903287,13 +903287,13 @@
         {
             "value": 1906,
             "next": 5396,
-            "name": "#hash_571c990866faa511",
+            "name": "#vox_ww_z_chimney_start_rush_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_571c990866faa511",
+                    "name": "#vox_ww_z_chimney_start_rush_0",
                     "subtitle": "#hash_5001241f6607db9e",
                     "assetId": "#hash_4fde7b22e3da0673",
                     "assetFileNameSustain": "#zm_white.fj",

@@ -8,7 +8,7 @@ CoD.CommonHeaderBG.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	self.soundSet = "default"
 	
 	local BGSceneBlur = LUI.UIImage.new( -0.1, 1.1, 230.5, 230.5, 0, 0, 0, 73 )
-	BGSceneBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	BGSceneBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	BGSceneBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BGSceneBlur )
 	self.BGSceneBlur = BGSceneBlur
@@ -44,7 +44,7 @@ CoD.CommonHeaderBG.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local TopBar2 = LUI.UIImage.new( 0.5, 0.5, -1152, 1152, 0, 0, 65, 68 )
 	TopBar2:setRGB( 0.27, 0.27, 0.3 )
 	TopBar2:setImage( RegisterImage( "uie_ui_menu_cac_primary_button_top_bar" ) )
-	TopBar2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	TopBar2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	TopBar2:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( TopBar2 )
 	self.TopBar2 = TopBar2

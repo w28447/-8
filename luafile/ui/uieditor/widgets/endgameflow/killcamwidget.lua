@@ -18,7 +18,7 @@ CoD.KillcamWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	
 	local blackplateblur = LUI.UIImage.new( -0.1, 1.1, 0, 0, 1, 1, -161, 5 )
 	blackplateblur:setRGB( 0, 0, 0 )
-	blackplateblur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	blackplateblur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	blackplateblur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( blackplateblur )
 	self.blackplateblur = blackplateblur
@@ -31,7 +31,7 @@ CoD.KillcamWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	
 	local topbarblackblur = LUI.UIImage.new( -0.1, 1.1, 0, 0, 0, 0, -13, 95 )
 	topbarblackblur:setRGB( 0, 0, 0 )
-	topbarblackblur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	topbarblackblur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	topbarblackblur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( topbarblackblur )
 	self.topbarblackblur = topbarblackblur

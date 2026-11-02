@@ -521,29 +521,29 @@ function function_48f6761d( elephant, waittime = 0 )
     wait waittime;
     elephant detach( self.ai.armor, "tag_origin" );
     
-    if ( elephant isattached( #"hash_4f282285ef50e3ee", "tag_origin" ) )
+    if ( elephant isattached( #"c_t8_zmb_dlc0_elephant_broken_chain1", "tag_origin" ) )
     {
-        elephant detach( #"hash_4f282285ef50e3ee", "tag_origin" );
+        elephant detach( #"c_t8_zmb_dlc0_elephant_broken_chain1", "tag_origin" );
     }
     
-    if ( elephant isattached( #"hash_4f282185ef50e23b", "tag_origin" ) )
+    if ( elephant isattached( #"c_t8_zmb_dlc0_elephant_broken_chain2", "tag_origin" ) )
     {
-        elephant detach( #"hash_4f282185ef50e23b", "tag_origin" );
+        elephant detach( #"c_t8_zmb_dlc0_elephant_broken_chain2", "tag_origin" );
     }
     
-    if ( elephant isattached( #"hash_4f282085ef50e088", "tag_origin" ) )
+    if ( elephant isattached( #"c_t8_zmb_dlc0_elephant_broken_chain3", "tag_origin" ) )
     {
-        elephant detach( #"hash_4f282085ef50e088", "tag_origin" );
+        elephant detach( #"c_t8_zmb_dlc0_elephant_broken_chain3", "tag_origin" );
     }
     
-    if ( elephant isattached( #"hash_4f282785ef50ec6d", "tag_origin" ) )
+    if ( elephant isattached( #"c_t8_zmb_dlc0_elephant_broken_chain4", "tag_origin" ) )
     {
-        elephant detach( #"hash_4f282785ef50ec6d", "tag_origin" );
+        elephant detach( #"c_t8_zmb_dlc0_elephant_broken_chain4", "tag_origin" );
     }
     
-    if ( elephant isattached( #"hash_4f282585ef50e907", "tag_origin" ) )
+    if ( elephant isattached( #"c_t8_zmb_dlc0_elephant_broken_chain6", "tag_origin" ) )
     {
-        elephant detach( #"hash_4f282585ef50e907", "tag_origin" );
+        elephant detach( #"c_t8_zmb_dlc0_elephant_broken_chain6", "tag_origin" );
     }
     
     if ( elephant isattached( #"c_t8_zmb_dlc0_elephant_chain1", "tag_origin" ) )
@@ -576,29 +576,29 @@ function function_48f6761d( elephant, waittime = 0 )
         elephant detach( #"c_t8_zmb_dlc0_elephant_chain6", "tag_origin" );
     }
     
-    if ( elephant isattached( #"hash_78fee920883d70c9", "tag_origin" ) )
+    if ( elephant isattached( #"c_t8_zmb_dlc0_elephant_broken_chain1_evil", "tag_origin" ) )
     {
-        elephant detach( #"hash_78fee920883d70c9", "tag_origin" );
+        elephant detach( #"c_t8_zmb_dlc0_elephant_broken_chain1_evil", "tag_origin" );
     }
     
-    if ( elephant isattached( #"hash_2de139921fda52d2", "tag_origin" ) )
+    if ( elephant isattached( #"c_t8_zmb_dlc0_elephant_broken_chain2_evil", "tag_origin" ) )
     {
-        elephant detach( #"hash_2de139921fda52d2", "tag_origin" );
+        elephant detach( #"c_t8_zmb_dlc0_elephant_broken_chain2_evil", "tag_origin" );
     }
     
-    if ( elephant isattached( #"hash_53571fb496a1baf7", "tag_origin" ) )
+    if ( elephant isattached( #"c_t8_zmb_dlc0_elephant_broken_chain3_evil", "tag_origin" ) )
     {
-        elephant detach( #"hash_53571fb496a1baf7", "tag_origin" );
+        elephant detach( #"c_t8_zmb_dlc0_elephant_broken_chain3_evil", "tag_origin" );
     }
     
-    if ( elephant isattached( #"hash_85f1a2ad4a8a800", "tag_origin" ) )
+    if ( elephant isattached( #"c_t8_zmb_dlc0_elephant_broken_chain4_evil", "tag_origin" ) )
     {
-        elephant detach( #"hash_85f1a2ad4a8a800", "tag_origin" );
+        elephant detach( #"c_t8_zmb_dlc0_elephant_broken_chain4_evil", "tag_origin" );
     }
     
-    if ( elephant isattached( #"hash_6594ef853a532da6", "tag_origin" ) )
+    if ( elephant isattached( #"c_t8_zmb_dlc0_elephant_broken_chain6_evil", "tag_origin" ) )
     {
-        elephant detach( #"hash_6594ef853a532da6", "tag_origin" );
+        elephant detach( #"c_t8_zmb_dlc0_elephant_broken_chain6_evil", "tag_origin" );
     }
     
     if ( elephant isattached( #"c_t8_zmb_dlc0_elephant_chain1_evil", "tag_origin" ) )
@@ -647,7 +647,7 @@ function private function_423390f2()
     
     if ( self.ai.phase == #"hash_266f56fb994e6639" )
     {
-        self.ai.armor = #"hash_53ac5aa39c680a35";
+        self.ai.armor = #"c_t8_zmb_dlc0_elephant_armor1_evil";
     }
     else
     {
@@ -1300,13 +1300,13 @@ function function_74fba881( elephant )
         if ( elephant isattached( #"c_t8_zmb_dlc0_elephant_chain6", "tag_origin" ) )
         {
             elephant detach( #"c_t8_zmb_dlc0_elephant_chain6", "tag_origin" );
-            elephant attach( #"hash_4f282585ef50e907", "tag_origin" );
+            elephant attach( #"c_t8_zmb_dlc0_elephant_broken_chain6", "tag_origin" );
             elephant playsound( #"exp_chain_break_final" );
         }
         else if ( elephant isattached( #"c_t8_zmb_dlc0_elephant_chain6_evil", "tag_origin" ) )
         {
             elephant detach( #"c_t8_zmb_dlc0_elephant_chain6_evil", "tag_origin" );
-            elephant attach( #"hash_6594ef853a532da6", "tag_origin" );
+            elephant attach( #"c_t8_zmb_dlc0_elephant_broken_chain6_evil", "tag_origin" );
             elephant playsound( #"exp_chain_break_final" );
         }
         
@@ -1319,14 +1319,14 @@ function function_74fba881( elephant )
         {
             elephant detach( #"c_t8_zmb_dlc0_elephant_chain4", "tag_origin" );
             elephant detach( #"c_t8_zmb_dlc0_elephant_chain5", "tag_origin" );
-            elephant attach( #"hash_4f282785ef50ec6d", "tag_origin" );
+            elephant attach( #"c_t8_zmb_dlc0_elephant_broken_chain4", "tag_origin" );
             elephant playsound( #"exp_chain_hit" );
         }
         else if ( elephant isattached( #"c_t8_zmb_dlc0_elephant_chain4_evil", "tag_origin" ) )
         {
             elephant detach( #"c_t8_zmb_dlc0_elephant_chain4_evil", "tag_origin" );
             elephant detach( #"c_t8_zmb_dlc0_elephant_chain5_evil", "tag_origin" );
-            elephant attach( #"hash_85f1a2ad4a8a800", "tag_origin" );
+            elephant attach( #"c_t8_zmb_dlc0_elephant_broken_chain4_evil", "tag_origin" );
             elephant playsound( #"exp_chain_hit" );
         }
         
@@ -1338,13 +1338,13 @@ function function_74fba881( elephant )
         if ( elephant isattached( #"c_t8_zmb_dlc0_elephant_chain3", "tag_origin" ) )
         {
             elephant detach( #"c_t8_zmb_dlc0_elephant_chain3", "tag_origin" );
-            elephant attach( #"hash_4f282085ef50e088", "tag_origin" );
+            elephant attach( #"c_t8_zmb_dlc0_elephant_broken_chain3", "tag_origin" );
             elephant playsound( #"exp_chain_hit" );
         }
         else if ( elephant isattached( #"c_t8_zmb_dlc0_elephant_chain3_evil", "tag_origin" ) )
         {
             elephant detach( #"c_t8_zmb_dlc0_elephant_chain3_evil", "tag_origin" );
-            elephant attach( #"hash_53571fb496a1baf7", "tag_origin" );
+            elephant attach( #"c_t8_zmb_dlc0_elephant_broken_chain3_evil", "tag_origin" );
             elephant playsound( #"exp_chain_hit" );
         }
         
@@ -1356,13 +1356,13 @@ function function_74fba881( elephant )
         if ( elephant isattached( #"c_t8_zmb_dlc0_elephant_chain2", "tag_origin" ) )
         {
             elephant detach( #"c_t8_zmb_dlc0_elephant_chain2", "tag_origin" );
-            elephant attach( #"hash_4f282185ef50e23b", "tag_origin" );
+            elephant attach( #"c_t8_zmb_dlc0_elephant_broken_chain2", "tag_origin" );
             elephant playsound( #"exp_chain_hit" );
         }
         else if ( elephant isattached( #"c_t8_zmb_dlc0_elephant_chain2_evil", "tag_origin" ) )
         {
             elephant detach( #"c_t8_zmb_dlc0_elephant_chain2_evil", "tag_origin" );
-            elephant attach( #"hash_2de139921fda52d2", "tag_origin" );
+            elephant attach( #"c_t8_zmb_dlc0_elephant_broken_chain2_evil", "tag_origin" );
             elephant playsound( #"exp_chain_hit" );
         }
         
@@ -1374,7 +1374,7 @@ function function_74fba881( elephant )
         if ( elephant isattached( #"c_t8_zmb_dlc0_elephant_chain1", "tag_origin" ) )
         {
             elephant detach( #"c_t8_zmb_dlc0_elephant_chain1", "tag_origin" );
-            elephant attach( #"hash_4f282285ef50e3ee", "tag_origin" );
+            elephant attach( #"c_t8_zmb_dlc0_elephant_broken_chain1", "tag_origin" );
             elephant playsound( #"exp_chain_hit" );
             return;
         }
@@ -1382,7 +1382,7 @@ function function_74fba881( elephant )
         if ( elephant isattached( #"c_t8_zmb_dlc0_elephant_chain1_evil", "tag_origin" ) )
         {
             elephant detach( #"c_t8_zmb_dlc0_elephant_chain1_evil", "tag_origin" );
-            elephant attach( #"hash_78fee920883d70c9", "tag_origin" );
+            elephant attach( #"c_t8_zmb_dlc0_elephant_broken_chain1_evil", "tag_origin" );
             elephant playsound( #"exp_chain_hit" );
         }
     }

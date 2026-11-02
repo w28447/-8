@@ -1,0 +1,9 @@
+{
+    "name": "#c_t8_mp_safeguard_robot1",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 6,
+    "bodyImpactType": 6,
+    "body": "#c_t8_mp_safeguard_robot_body1",
+    "head": "#c_t8_mp_safeguard_robot_head1"
+}

@@ -45,7 +45,7 @@ CoD.callingcards_operations_killjoys.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	local gloweyes = LUI.UIImage.new( 0, 0, 641, 753, 0, 0, 2, 42 )
 	gloweyes:setImage( RegisterImage( "uie_ui_icon_callingcards_operations_killjoys_greeneyes" ) )
-	gloweyes:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	gloweyes:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	gloweyes:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( gloweyes )
 	self.gloweyes = gloweyes

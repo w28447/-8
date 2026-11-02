@@ -33,7 +33,7 @@ CoD.vhud_tank_robot_health.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local vehicleCornerRT = LUI.UIImage.new( 0, 0, 280, 304, 0, 0, 0, 24 )
 	vehicleCornerRT:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_hp_layout_corner" ) )
-	vehicleCornerRT:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	vehicleCornerRT:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	vehicleCornerRT:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( vehicleCornerRT )
 	self.vehicleCornerRT = vehicleCornerRT
@@ -41,7 +41,7 @@ CoD.vhud_tank_robot_health.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local vehicleCornerLT = LUI.UIImage.new( 0, 0, 0, 24, 0, 0, 0, 24 )
 	vehicleCornerLT:setZRot( 90 )
 	vehicleCornerLT:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_hp_layout_corner" ) )
-	vehicleCornerLT:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	vehicleCornerLT:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	vehicleCornerLT:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( vehicleCornerLT )
 	self.vehicleCornerLT = vehicleCornerLT
@@ -49,7 +49,7 @@ CoD.vhud_tank_robot_health.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local vehicleCornerLB = LUI.UIImage.new( 0, 0, 0, 24, 0, 0, 156, 180 )
 	vehicleCornerLB:setZRot( 180 )
 	vehicleCornerLB:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_hp_layout_corner" ) )
-	vehicleCornerLB:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	vehicleCornerLB:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	vehicleCornerLB:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( vehicleCornerLB )
 	self.vehicleCornerLB = vehicleCornerLB
@@ -57,7 +57,7 @@ CoD.vhud_tank_robot_health.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local vehicleCornerRT4 = LUI.UIImage.new( 0, 0, 280.5, 304.5, 0, 0, 156, 180 )
 	vehicleCornerRT4:setZRot( 270 )
 	vehicleCornerRT4:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_hp_layout_corner" ) )
-	vehicleCornerRT4:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	vehicleCornerRT4:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	vehicleCornerRT4:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( vehicleCornerRT4 )
 	self.vehicleCornerRT4 = vehicleCornerRT4

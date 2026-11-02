@@ -131,7 +131,7 @@ CoD.AmmoWidget_ClipContainerPress.__clipsPerState = {
 			f4_arg0.clipFinished( f4_arg0.Glow )
 			f4_arg0.LED:completeAnimation()
 			f4_arg0.LED:setAlpha( 1 )
-			f4_arg0.LED:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+			f4_arg0.LED:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 			f4_arg0.clipFinished( f4_arg0.LED )
 			f4_arg0.nextClip = "DefaultClip"
 		end

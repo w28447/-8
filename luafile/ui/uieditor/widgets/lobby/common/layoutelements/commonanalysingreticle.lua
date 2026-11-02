@@ -22,7 +22,7 @@ CoD.CommonAnalysingReticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local InspecReticleDetail = LUI.UIImage.new( 0, 0, 0, 276, 0, 0, 0, 276 )
 	InspecReticleDetail:setImage( RegisterImage( "uie_ui_menu_inspection_reticle_detail" ) )
-	InspecReticleDetail:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	InspecReticleDetail:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	InspecReticleDetail:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( InspecReticleDetail )
 	self.InspecReticleDetail = InspecReticleDetail

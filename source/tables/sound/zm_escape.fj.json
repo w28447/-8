@@ -451910,13 +451910,13 @@
         {
             "value": 1655,
             "next": 65535,
-            "name": "#hash_597baffe7a7dc14f",
+            "name": "#vox_m_quest_ghost_spot_cell_plr_5_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_597baffe7a7dc14f",
+                    "name": "#vox_m_quest_ghost_spot_cell_plr_5_0",
                     "subtitle": "#hash_cd5e373da9445f5",
                     "assetId": "#hash_5bb6dff49bf41a98",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -451959,7 +451959,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_597baffe7a7dc14f",
+                    "name": "#vox_m_quest_ghost_spot_cell_plr_5_0",
                     "subtitle": "#hash_cd5e373da9445f5",
                     "assetId": "#hash_5bb6dff49bf41a98",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -452006,13 +452006,13 @@
         {
             "value": 412,
             "next": 2007,
-            "name": "#hash_755ab4fe8acfbe0e",
+            "name": "#vox_m_quest_ghost_spot_cell_plr_6_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_755ab4fe8acfbe0e",
+                    "name": "#vox_m_quest_ghost_spot_cell_plr_6_0",
                     "subtitle": "#hash_cd5e073da9440dc",
                     "assetId": "#hash_5587aa222734624f",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -452055,7 +452055,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_755ab4fe8acfbe0e",
+                    "name": "#vox_m_quest_ghost_spot_cell_plr_6_0",
                     "subtitle": "#hash_cd5e073da9440dc",
                     "assetId": "#hash_5587aa222734624f",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -452102,13 +452102,13 @@
         {
             "value": 1906,
             "next": 65535,
-            "name": "#hash_6aa57dfe842a7599",
+            "name": "#vox_m_quest_ghost_spot_cell_plr_7_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6aa57dfe842a7599",
+                    "name": "#vox_m_quest_ghost_spot_cell_plr_7_0",
                     "subtitle": "#hash_cd5e173da94428f",
                     "assetId": "#hash_6a720612c50914c6",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -452151,7 +452151,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_6aa57dfe842a7599",
+                    "name": "#vox_m_quest_ghost_spot_cell_plr_7_0",
                     "subtitle": "#hash_cd5e173da94428f",
                     "assetId": "#hash_6a720612c50914c6",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -452198,13 +452198,13 @@
         {
             "value": 288,
             "next": 2010,
-            "name": "#hash_3f4faafe6b9d5910",
+            "name": "#vox_m_quest_ghost_spot_cell_plr_8_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3f4faafe6b9d5910",
+                    "name": "#vox_m_quest_ghost_spot_cell_plr_8_0",
                     "subtitle": "#hash_cd5e673da944b0e",
                     "assetId": "#hash_3bff8a5b3527e04d",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -452247,7 +452247,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_3f4faafe6b9d5910",
+                    "name": "#vox_m_quest_ghost_spot_cell_plr_8_0",
                     "subtitle": "#hash_cd5e673da944b0e",
                     "assetId": "#hash_3bff8a5b3527e04d",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -452294,13 +452294,13 @@
         {
             "value": 2177,
             "next": 65535,
-            "name": "#hash_c16c03fa2908a23",
+            "name": "#vox_m_quest_ghost_spot_first_plr_5_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_c16c03fa2908a23",
+                    "name": "#vox_m_quest_ghost_spot_first_plr_5_0",
                     "subtitle": "#hash_1148f9793b48a0ad",
                     "assetId": "#hash_2a1fa5f3fc28f680",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -452343,7 +452343,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_c16c03fa2908a23",
+                    "name": "#vox_m_quest_ghost_spot_first_plr_5_0",
                     "subtitle": "#hash_1148f9793b48a0ad",
                     "assetId": "#hash_2a1fa5f3fc28f680",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -452390,13 +452390,13 @@
         {
             "value": 596,
             "next": 2008,
-            "name": "#hash_2569453fb0b82822",
+            "name": "#vox_m_quest_ghost_spot_first_plr_6_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2569453fb0b82822",
+                    "name": "#vox_m_quest_ghost_spot_first_plr_6_0",
                     "subtitle": "#hash_1148f6793b489b94",
                     "assetId": "#hash_56c81487fccf38dd",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -452439,7 +452439,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_2569453fb0b82822",
+                    "name": "#vox_m_quest_ghost_spot_first_plr_6_0",
                     "subtitle": "#hash_1148f6793b489b94",
                     "assetId": "#hash_56c81487fccf38dd",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -452486,13 +452486,13 @@
         {
             "value": 1493,
             "next": 2011,
-            "name": "#hash_1ef42e3fadafe2cd",
+            "name": "#vox_m_quest_ghost_spot_first_plr_7_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1ef42e3fadafe2cd",
+                    "name": "#vox_m_quest_ghost_spot_first_plr_7_0",
                     "subtitle": "#hash_1148f7793b489d47",
                     "assetId": "#hash_44988442b138c92",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -452535,7 +452535,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_1ef42e3fadafe2cd",
+                    "name": "#vox_m_quest_ghost_spot_first_plr_7_0",
                     "subtitle": "#hash_1148f7793b489d47",
                     "assetId": "#hash_44988442b138c92",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -452582,13 +452582,13 @@
         {
             "value": 24,
             "next": 65535,
-            "name": "#hash_2e1b833f6db38e7c",
+            "name": "#vox_m_quest_ghost_spot_first_plr_8_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2e1b833f6db38e7c",
+                    "name": "#vox_m_quest_ghost_spot_first_plr_8_0",
                     "subtitle": "#hash_1148ec793b488a96",
                     "assetId": "#hash_5046a22f969d7b47",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -452631,7 +452631,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_2e1b833f6db38e7c",
+                    "name": "#vox_m_quest_ghost_spot_first_plr_8_0",
                     "subtitle": "#hash_1148ec793b488a96",
                     "assetId": "#hash_5046a22f969d7b47",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -459642,13 +459642,13 @@
         {
             "value": 962,
             "next": 65535,
-            "name": "#hash_7a09fcd3369d5af",
+            "name": "#vox_m_quest_lock_solo_rich_0_stuh_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7a09fcd3369d5af",
+                    "name": "#vox_m_quest_lock_solo_rich_0_stuh_0",
                     "subtitle": "#hash_2778e62b79b706c3",
                     "assetId": "#hash_b1f39e1cdd8ab58",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -459689,7 +459689,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_7a09fcd3369d5af",
+                    "name": "#vox_m_quest_lock_solo_rich_0_stuh_0",
                     "subtitle": "#hash_2778e62b79b706c3",
                     "assetId": "#hash_b1f39e1cdd8ab58",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -459736,13 +459736,13 @@
         {
             "value": 1164,
             "next": 2071,
-            "name": "#hash_335a3527d0ac18e0",
+            "name": "#vox_m_quest_lock_solo_rich_1_plr_5_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_335a3527d0ac18e0",
+                    "name": "#vox_m_quest_lock_solo_rich_1_plr_5_0",
                     "subtitle": "#hash_5ff80ed2be9c50c6",
                     "assetId": "#hash_d20db71a318a519",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -459785,7 +459785,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_335a3527d0ac18e0",
+                    "name": "#vox_m_quest_lock_solo_rich_1_plr_5_0",
                     "subtitle": "#hash_5ff80ed2be9c50c6",
                     "assetId": "#hash_d20db71a318a519",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -459832,13 +459832,13 @@
         {
             "value": 118,
             "next": 2083,
-            "name": "#hash_560988b67c3da339",
+            "name": "#vox_m_quest_lock_solo_rich_2_stuh_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_560988b67c3da339",
+                    "name": "#vox_m_quest_lock_solo_rich_2_stuh_0",
                     "subtitle": "#hash_5f2321c8be27fc39",
                     "assetId": "#hash_762c32ff7bc7bb3e",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -459880,7 +459880,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_560988b67c3da339",
+                    "name": "#vox_m_quest_lock_solo_rich_2_stuh_0",
                     "subtitle": "#hash_5f2321c8be27fc39",
                     "assetId": "#hash_762c32ff7bc7bb3e",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -459924,7 +459924,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_560988b67c3da339",
+                    "name": "#vox_m_quest_lock_solo_rich_2_stuh_0",
                     "subtitle": "#hash_ae95913e2018b13",
                     "assetId": "#hash_4d5401f42d5e505c",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -459966,7 +459966,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_560988b67c3da339",
+                    "name": "#vox_m_quest_lock_solo_rich_2_stuh_0",
                     "subtitle": "#hash_ae95913e2018b13",
                     "assetId": "#hash_4d5401f42d5e505c",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -460014,13 +460014,13 @@
         {
             "value": 3181,
             "next": 65535,
-            "name": "#hash_132fbaa47477d70a",
+            "name": "#vox_m_quest_lock_solo_rich_3_plr_5_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_132fbaa47477d70a",
+                    "name": "#vox_m_quest_lock_solo_rich_3_plr_5_0",
                     "subtitle": "#hash_1a3894ffeb2a606c",
                     "assetId": "#hash_49b5519a880ac8f7",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -460063,7 +460063,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_132fbaa47477d70a",
+                    "name": "#vox_m_quest_lock_solo_rich_3_plr_5_0",
                     "subtitle": "#hash_1a3894ffeb2a606c",
                     "assetId": "#hash_49b5519a880ac8f7",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -471901,13 +471901,13 @@
         {
             "value": 2665,
             "next": 65535,
-            "name": "#hash_6c78ac46b4cd2bb6",
+            "name": "#vox_m_quest_ward_taken_1_stuh_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6c78ac46b4cd2bb6",
+                    "name": "#vox_m_quest_ward_taken_1_stuh_0",
                     "subtitle": "#hash_7eaefa0f6835fb0e",
                     "assetId": "#hash_6cb1e63ae10e9a21",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -471948,7 +471948,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_6c78ac46b4cd2bb6",
+                    "name": "#vox_m_quest_ward_taken_1_stuh_0",
                     "subtitle": "#hash_7eaefa0f6835fb0e",
                     "assetId": "#hash_6cb1e63ae10e9a21",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -472505,13 +472505,13 @@
         {
             "value": 317,
             "next": 65535,
-            "name": "#hash_243ad34fa49f53fd",
+            "name": "#vox_m_quest_ward_trap_0_ward_0",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_243ad34fa49f53fd",
+                    "name": "#vox_m_quest_ward_trap_0_ward_0",
                     "subtitle": "#hash_73c4780be0877bb5",
                     "assetId": "#hash_60d81703025afe26",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -472556,13 +472556,13 @@
         {
             "value": 2170,
             "next": 65535,
-            "name": "#hash_6d966547f5e682ae",
+            "name": "#vox_m_quest_ward_trap_1_plr_5_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6d966547f5e682ae",
+                    "name": "#vox_m_quest_ward_trap_1_plr_5_0",
                     "subtitle": "#hash_49d7b6340eff3100",
                     "assetId": "#hash_3d3c0019e8c06653",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -472605,7 +472605,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_6d966547f5e682ae",
+                    "name": "#vox_m_quest_ward_trap_1_plr_5_0",
                     "subtitle": "#hash_49d7b6340eff3100",
                     "assetId": "#hash_3d3c0019e8c06653",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -472652,13 +472652,13 @@
         {
             "value": 1733,
             "next": 65535,
-            "name": "#hash_536a6047e7061a6f",
+            "name": "#vox_m_quest_ward_trap_1_plr_6_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_536a6047e7061a6f",
+                    "name": "#vox_m_quest_ward_trap_1_plr_6_0",
                     "subtitle": "#hash_49d7b9340eff3619",
                     "assetId": "#hash_214665122b49c98c",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -472702,7 +472702,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_536a6047e7061a6f",
+                    "name": "#vox_m_quest_ward_trap_1_plr_6_0",
                     "subtitle": "#hash_49d7b9340eff3619",
                     "assetId": "#hash_214665122b49c98c",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -472746,7 +472746,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_536a6047e7061a6f",
+                    "name": "#vox_m_quest_ward_trap_1_plr_6_0",
                     "subtitle": "#hash_619f63a1208b0333",
                     "assetId": "#hash_75db042db50c4972",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -472790,7 +472790,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_536a6047e7061a6f",
+                    "name": "#vox_m_quest_ward_trap_1_plr_6_0",
                     "subtitle": "#hash_619f63a1208b0333",
                     "assetId": "#hash_75db042db50c4972",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -472838,13 +472838,13 @@
         {
             "value": 2959,
             "next": 2208,
-            "name": "#hash_5e1f1747edaa8964",
+            "name": "#vox_m_quest_ward_trap_1_plr_7_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5e1f1747edaa8964",
+                    "name": "#vox_m_quest_ward_trap_1_plr_7_0",
                     "subtitle": "#hash_49d7b8340eff3466",
                     "assetId": "#hash_9163df0b52ffaf5",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -472887,7 +472887,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_5e1f1747edaa8964",
+                    "name": "#vox_m_quest_ward_trap_1_plr_7_0",
                     "subtitle": "#hash_49d7b8340eff3466",
                     "assetId": "#hash_9163df0b52ffaf5",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -472934,13 +472934,13 @@
         {
             "value": 1408,
             "next": 2217,
-            "name": "#hash_42401247dd588ca5",
+            "name": "#vox_m_quest_ward_trap_1_plr_8_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_42401247dd588ca5",
+                    "name": "#vox_m_quest_ward_trap_1_plr_8_0",
                     "subtitle": "#hash_49d7c3340eff4717",
                     "assetId": "#hash_1a69520e5f1884e",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -472983,7 +472983,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_42401247dd588ca5",
+                    "name": "#vox_m_quest_ward_trap_1_plr_8_0",
                     "subtitle": "#hash_49d7c3340eff4717",
                     "assetId": "#hash_1a69520e5f1884e",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -473030,13 +473030,13 @@
         {
             "value": 537,
             "next": 2207,
-            "name": "#hash_b95a5dba1c61ea3",
+            "name": "#vox_m_quest_ward_trap_2_stuh_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_b95a5dba1c61ea3",
+                    "name": "#vox_m_quest_ward_trap_2_stuh_0",
                     "subtitle": "#hash_3ad054b216a5e657",
                     "assetId": "#hash_41b7463faefb18b4",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -473077,7 +473077,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_b95a5dba1c61ea3",
+                    "name": "#vox_m_quest_ward_trap_2_stuh_0",
                     "subtitle": "#hash_3ad054b216a5e657",
                     "assetId": "#hash_41b7463faefb18b4",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -473124,13 +473124,13 @@
         {
             "value": 1385,
             "next": 2220,
-            "name": "#hash_3982a744de84867a",
+            "name": "#vox_m_quest_ward_trap_3_ward_0",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3982a744de84867a",
+                    "name": "#vox_m_quest_ward_trap_3_ward_0",
                     "subtitle": "#hash_36ed19c3b12ff24e",
                     "assetId": "#hash_344ef6b2a74ea0cd",
                     "assetFileNameSustain": "#zm_escape.fj",
@@ -473175,13 +473175,13 @@
         {
             "value": 1607,
             "next": 2211,
-            "name": "#hash_2cce418f38bd14d9",
+            "name": "#vox_m_quest_ward_trap_4_ward_0",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2cce418f38bd14d9",
+                    "name": "#vox_m_quest_ward_trap_4_ward_0",
                     "subtitle": "#hash_140b1335d4d39721",
                     "assetId": "#hash_3b14dd98c9356a02",
                     "assetFileNameSustain": "#zm_escape.fj",

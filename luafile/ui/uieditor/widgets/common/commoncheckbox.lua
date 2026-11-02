@@ -13,7 +13,7 @@ CoD.CommonCheckbox.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local NineSliceShaderImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NineSliceShaderImage:setRGB( 0.65, 0.65, 0.65 )
 	NineSliceShaderImage:setAlpha( 0 )
-	NineSliceShaderImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE7BDCB879A5176D ) )
+	NineSliceShaderImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_rectangle_normal" ) )
 	NineSliceShaderImage:setShaderVector( 0, 0, 0, 0, 0 )
 	NineSliceShaderImage:setShaderVector( 1, 0, 0, 0, 1 )
 	NineSliceShaderImage:setupNineSliceShader( 1, 1 )

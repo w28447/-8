@@ -12,7 +12,7 @@ CoD.AmmoWidget_CurrentClipPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	GlowLeak:setRGB( 0.76, 0.76, 0.73 )
 	GlowLeak:setAlpha( 0.2 )
 	GlowLeak:setImage( RegisterImage( "uie_ui_hud_core_ammo_widget_glow_ammo" ) )
-	GlowLeak:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	GlowLeak:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	GlowLeak:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( GlowLeak )
 	self.GlowLeak = GlowLeak

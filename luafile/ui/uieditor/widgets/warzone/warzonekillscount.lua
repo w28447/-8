@@ -26,7 +26,7 @@ CoD.WarzoneKillsCount.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local PlayerKills = LUI.UIText.new( 1, 1, -42.5, -0.5, 0, 0, 5, 27 )
 	PlayerKills:setTTF( "0arame_mono_stencil" )
-	PlayerKills:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	PlayerKills:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	PlayerKills:setShaderVector( 0, 0.8, 0, 0, 0 )
 	PlayerKills:setShaderVector( 1, 0, 0, 0, 0 )
 	PlayerKills:setShaderVector( 2, 1, 1, 1, 0.35 )
@@ -44,7 +44,7 @@ CoD.WarzoneKillsCount.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	PlayerKillsAdd:setRGB( 0.98, 0.18, 0.1 )
 	PlayerKillsAdd:setAlpha( 0 )
 	PlayerKillsAdd:setTTF( "0arame_mono_stencil" )
-	PlayerKillsAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	PlayerKillsAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	PlayerKillsAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	PlayerKillsAdd:setShaderVector( 1, 0, 0, 0, 0 )
 	PlayerKillsAdd:setShaderVector( 2, 1, 1, 1, 0 )

@@ -14,86 +14,86 @@ CoD.TabletLocationSelector_Frame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local FrameCornerTL = LUI.UIImage.new( 0, 0, 58, 98, 0, 0, 0, 40 )
 	FrameCornerTL:setAlpha( 0.2 )
-	FrameCornerTL:setImage( RegisterImage( 0x102824AD846AAD9 ) )
+	FrameCornerTL:setImage( RegisterImage( "uie_ui_hud_vehicle_lightstrike_frame_corner" ) )
 	self:addElement( FrameCornerTL )
 	self.FrameCornerTL = FrameCornerTL
 	
 	local FrameCornerBR = LUI.UIImage.new( 1, 1, -140, -100, 1, 1, -45, -5 )
 	FrameCornerBR:setAlpha( 0.2 )
 	FrameCornerBR:setZRot( 180 )
-	FrameCornerBR:setImage( RegisterImage( 0x102824AD846AAD9 ) )
+	FrameCornerBR:setImage( RegisterImage( "uie_ui_hud_vehicle_lightstrike_frame_corner" ) )
 	self:addElement( FrameCornerBR )
 	self.FrameCornerBR = FrameCornerBR
 	
 	local FrameCornerTR = LUI.UIImage.new( 1, 1, -140, -100, 0, 0, 0, 40 )
 	FrameCornerTR:setAlpha( 0.2 )
 	FrameCornerTR:setYRot( 180 )
-	FrameCornerTR:setImage( RegisterImage( 0x102824AD846AAD9 ) )
+	FrameCornerTR:setImage( RegisterImage( "uie_ui_hud_vehicle_lightstrike_frame_corner" ) )
 	self:addElement( FrameCornerTR )
 	self.FrameCornerTR = FrameCornerTR
 	
 	local FrameCornerBL = LUI.UIImage.new( 0, 0, 58, 98, 1, 1, -45, -5 )
 	FrameCornerBL:setAlpha( 0.2 )
 	FrameCornerBL:setXRot( 180 )
-	FrameCornerBL:setImage( RegisterImage( 0x102824AD846AAD9 ) )
+	FrameCornerBL:setImage( RegisterImage( "uie_ui_hud_vehicle_lightstrike_frame_corner" ) )
 	self:addElement( FrameCornerBL )
 	self.FrameCornerBL = FrameCornerBL
 	
 	local FrameTopL = LUI.UIImage.new( 0, 1, 98, -806, 0, 0, 0, 40 )
 	FrameTopL:setAlpha( 0.2 )
-	FrameTopL:setImage( RegisterImage( 0x201515318295B75 ) )
+	FrameTopL:setImage( RegisterImage( "uie_ui_hud_vehicle_lightstrike_frame_corner_top" ) )
 	self:addElement( FrameTopL )
 	self.FrameTopL = FrameTopL
 	
 	local FrameTopR = LUI.UIImage.new( 0.82, 1, -140, -140, 0, 0, 0, 40 )
 	FrameTopR:setAlpha( 0.2 )
-	FrameTopR:setImage( RegisterImage( 0x201515318295B75 ) )
+	FrameTopR:setImage( RegisterImage( "uie_ui_hud_vehicle_lightstrike_frame_corner_top" ) )
 	self:addElement( FrameTopR )
 	self.FrameTopR = FrameTopR
 	
 	local FrameSideL = LUI.UIImage.new( 0, 0, 58, 98, 0, 1, 42, -42 )
 	FrameSideL:setAlpha( 0.02 )
-	FrameSideL:setImage( RegisterImage( 0xFA302084C18FAA1 ) )
+	FrameSideL:setImage( RegisterImage( "uie_ui_hud_vehicle_lightstrike_frame_corner_side" ) )
 	self:addElement( FrameSideL )
 	self.FrameSideL = FrameSideL
 	
 	local FrameSideR = LUI.UIImage.new( 1, 1, -140, -100, 0, 1, 42, -42 )
 	FrameSideR:setAlpha( 0.02 )
 	FrameSideR:setYRot( 180 )
-	FrameSideR:setImage( RegisterImage( 0xFA302084C18FAA1 ) )
+	FrameSideR:setImage( RegisterImage( "uie_ui_hud_vehicle_lightstrike_frame_corner_side" ) )
 	self:addElement( FrameSideR )
 	self.FrameSideR = FrameSideR
 	
 	local FrameBotL = LUI.UIImage.new( 0, 0.31, 98, 98, 1, 1, -45, -5 )
 	FrameBotL:setAlpha( 0.2 )
 	FrameBotL:setZRot( 180 )
-	FrameBotL:setImage( RegisterImage( 0x201515318295B75 ) )
+	FrameBotL:setImage( RegisterImage( "uie_ui_hud_vehicle_lightstrike_frame_corner_top" ) )
 	self:addElement( FrameBotL )
 	self.FrameBotL = FrameBotL
 	
 	local FrameBotR = LUI.UIImage.new( 0.73, 1, -140, -140, 1, 1, -45, -5 )
 	FrameBotR:setAlpha( 0.2 )
 	FrameBotR:setZRot( 180 )
-	FrameBotR:setImage( RegisterImage( 0x201515318295B75 ) )
+	FrameBotR:setImage( RegisterImage( "uie_ui_hud_vehicle_lightstrike_frame_corner_top" ) )
 	self:addElement( FrameBotR )
 	self.FrameBotR = FrameBotR
 	
 	local Meter = LUI.UIImage.new( 0.5, 0.5, -73, 43, 0, 0, 20, 50 )
 	Meter:setAlpha( 0.05 )
-	Meter:setImage( RegisterImage( 0x3908E8325A56C68 ) )
+	Meter:setImage( RegisterImage( "uie_ui_hud_vehicle_lightstrike_ambient_meter" ) )
 	self:addElement( Meter )
 	self.Meter = Meter
 	
 	local DiagonalFrameR = LUI.UIImage.new( 1, 1, -314, -151, 1, 1, -189, -90 )
 	DiagonalFrameR:setAlpha( 0.05 )
-	DiagonalFrameR:setImage( RegisterImage( 0x78EC0C14D6CB24B ) )
+	DiagonalFrameR:setImage( RegisterImage( "uie_ui_hud_vehicle_lightstrike_frame_diagonal" ) )
 	self:addElement( DiagonalFrameR )
 	self.DiagonalFrameR = DiagonalFrameR
 	
 	local DiagonalFrameL = LUI.UIImage.new( 0, 0, 111, 274, 1, 1, -189, -90 )
 	DiagonalFrameL:setAlpha( 0.05 )
 	DiagonalFrameL:setYRot( 180 )
-	DiagonalFrameL:setImage( RegisterImage( 0x78EC0C14D6CB24B ) )
+	DiagonalFrameL:setImage( RegisterImage( "uie_ui_hud_vehicle_lightstrike_frame_diagonal" ) )
 	self:addElement( DiagonalFrameL )
 	self.DiagonalFrameL = DiagonalFrameL
 	

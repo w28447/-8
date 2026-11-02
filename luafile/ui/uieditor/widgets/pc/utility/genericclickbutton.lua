@@ -71,7 +71,7 @@ CoD.GenericClickButton.new = function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3, f5_a
 	label:setRGB( 0, 0, 0 )
 	label:setText( Engine[0xF9F1239CFD921FE]( "menu/yes_caps" ) )
 	label:setTTF( "ttmussels_demibold" )
-	label:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
+	label:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow" ) )
 	label:setShaderVector( 0, 0, 0, 0, 0 )
 	label:setShaderVector( 1, 0, 0, 0, 0 )
 	label:setShaderVector( 2, 1, 0, 0, 0 )

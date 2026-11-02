@@ -19,7 +19,7 @@ CoD.SelectedFilmInformation.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.TitleBG = TitleBG
 	
 	local MapImage = LUI.UIImage.new( 0.5, 0.5, -262, 262, 0, 0, 0, 386 )
-	MapImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	MapImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	MapImage:setShaderVector( 0, 0, 0, 0, 0 )
 	MapImage:setShaderVector( 1, 1, 1, 0, 0 )
 	MapImage:setShaderVector( 2, 0, 0, 0, 0 )
@@ -45,7 +45,7 @@ CoD.SelectedFilmInformation.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local AuthorName = LUI.UIText.new( 0, 1, 16, -16, 1, 1, -410, -374 )
 	AuthorName:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	AuthorName:setTTF( "ttmussels_regular" )
-	AuthorName:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
+	AuthorName:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow" ) )
 	AuthorName:setShaderVector( 0, 0.04, 0, 0, 0 )
 	AuthorName:setShaderVector( 1, 0.02, 0, 0, 0 )
 	AuthorName:setShaderVector( 2, 1, 0, 0, 0 )

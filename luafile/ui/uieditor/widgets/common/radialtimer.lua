@@ -54,7 +54,7 @@ CoD.RadialTimer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	fui:setAlpha( 0.4 )
 	fui:setScale( 0.84, 0.84 )
 	fui:setImage( RegisterImage( "uie_ui_hud_common_draft_timer_fui" ) )
-	fui:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	fui:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	fui:setShaderVector( 0, 3, 0, 0, 0 )
 	self:addElement( fui )
 	self.fui = fui

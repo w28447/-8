@@ -233,7 +233,7 @@ CoD.LaboratoryMixAgain.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	BgZmStar:setRGB( ColorSet.T8__OFF__GRAY.r, ColorSet.T8__OFF__GRAY.g, ColorSet.T8__OFF__GRAY.b )
 	BgZmStar:setAlpha( 0.4 )
 	BgZmStar:setImage( RegisterImage( "uie_ui_hud_zm_arr_reward_star" ) )
-	BgZmStar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	BgZmStar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	BgZmStar:setShaderVector( 0, 4, 0, 0, 0 )
 	self:addElement( BgZmStar )
 	self.BgZmStar = BgZmStar

@@ -51,7 +51,7 @@ CoD.WarScoreInfo_Escort_ProgressBar.new = function ( f3_arg0, f3_arg1, f3_arg2, 
 	
 	local DistanceLabel = LUI.UIText.new( 0, 0, 344, 400, 0, 0, -4, 20 )
 	DistanceLabel:setTTF( "ttmussels_demibold" )
-	DistanceLabel:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6250C6FCAC36BD4 ) )
+	DistanceLabel:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_outline" ) )
 	DistanceLabel:setShaderVector( 0, 0, 0, 0, 0 )
 	DistanceLabel:setShaderVector( 1, 0, 0, 0, 1 )
 	DistanceLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

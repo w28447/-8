@@ -75,7 +75,7 @@ CoD.AARLevelUpOverlay_LevelUpBg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local boxRight = LUI.UIImage.new( 0, 0, 1589, 1649, 0, 0, 384, 412 )
 	boxRight:setAlpha( 0.1 )
 	boxRight:setImage( RegisterImage( "uie_ui_menu_aar_common_box" ) )
-	boxRight:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	boxRight:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	boxRight:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( boxRight )
 	self.boxRight = boxRight
@@ -83,7 +83,7 @@ CoD.AARLevelUpOverlay_LevelUpBg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local boxLeft = LUI.UIImage.new( 0, 0, 84, 24, 0, 0, 384, 412 )
 	boxLeft:setAlpha( 0.1 )
 	boxLeft:setImage( RegisterImage( "uie_ui_menu_aar_common_box" ) )
-	boxLeft:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	boxLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	boxLeft:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( boxLeft )
 	self.boxLeft = boxLeft

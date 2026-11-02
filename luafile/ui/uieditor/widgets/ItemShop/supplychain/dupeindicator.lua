@@ -10,13 +10,13 @@ CoD.DupeIndicator.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	
 	local DupeIcon = LUI.UIImage.new( 0, 0, 0, 20, 0, 0, 0, 20 )
 	DupeIcon:setRGB( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
-	DupeIcon:setImage( RegisterImage( 0xF395928C19E9B99 ) )
+	DupeIcon:setImage( RegisterImage( "uie_ui_menu_item_shop_dupe_icon" ) )
 	self:addElement( DupeIcon )
 	self.DupeIcon = DupeIcon
 	
 	local RerollIcon = LUI.UIImage.new( 0, 0, 0, 20, 0, 0, 0, 20 )
 	RerollIcon:setRGB( 0.54, 0.87, 0.31 )
-	RerollIcon:setImage( RegisterImage( 0xB259D817A83EFDB ) )
+	RerollIcon:setImage( RegisterImage( "uie_ui_menu_item_shop_reroll_icon" ) )
 	self:addElement( RerollIcon )
 	self.RerollIcon = RerollIcon
 	

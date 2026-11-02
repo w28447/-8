@@ -670,8 +670,8 @@ function function_809767d( str_hand )
             s_quest.var_29f1fc2d = #"vox_hemera_hand_complete_orac_0";
             s_quest.var_bcd22670 = #"hash_e785e77e310b16d";
             s_quest.var_647f1375 = #"vox_hemera_arena_enter_1_orac_0";
-            s_quest.var_78b18870 = #"hash_3eaf25c84b92c2e1";
-            s_quest.var_f72f5053 = #"hash_4dc10c417b2d65ce";
+            s_quest.var_78b18870 = #"vox_hemera_arena_nag_orac_0";
+            s_quest.var_f72f5053 = #"vox_hemera_hand_battle_0_orac_0";
             s_quest.var_723cad8 = #"hash_137b801137c6840";
             mdl_uncharged_hand = getent( "mdl_ww_uncharged_hand_light", "targetname" );
             w_uncharged_hand = getweapon( #"ww_hand_h_uncharged" );
@@ -713,8 +713,8 @@ function function_809767d( str_hand )
             s_quest.var_29f1fc2d = #"vox_charon_hand_complete_orac_0";
             s_quest.var_bcd22670 = #"hash_3aed70e1337a02ac";
             s_quest.var_647f1375 = #"vox_charon_arena_enter_1_orac_0";
-            s_quest.var_78b18870 = #"hash_75fdbd0fb47043a6";
-            s_quest.var_f72f5053 = #"hash_4978eae5057be225";
+            s_quest.var_78b18870 = #"vox_charon_arena_nag_orac_0";
+            s_quest.var_f72f5053 = #"vox_charon_hand_battle_0_orac_0";
             s_quest.var_723cad8 = #"hash_1591f1fedee3d78d";
             mdl_uncharged_hand = getent( "mdl_ww_uncharged_hand_death", "targetname" );
             var_f172b16e = "" + #"charon_teleport_postfx";
@@ -758,8 +758,8 @@ function function_809767d( str_hand )
             s_quest.var_29f1fc2d = #"vox_ouranos_hand_complete_orac_0";
             s_quest.var_bcd22670 = #"hash_57285bb33ab50600";
             s_quest.var_647f1375 = #"vox_ouranos_arena_enter_1_orac_0";
-            s_quest.var_78b18870 = #"hash_7bf2313c99f89a62";
-            s_quest.var_f72f5053 = #"hash_3195703b0c9c24b9";
+            s_quest.var_78b18870 = #"vox_ouranos_arena_nag_orac_0";
+            s_quest.var_f72f5053 = #"vox_ouranos_hand_battle_0_orac_0";
             s_quest.var_723cad8 = #"hash_4446b28dae6b9f51";
             mdl_uncharged_hand = getent( "mdl_ww_uncharged_hand_air", "targetname" );
             var_f172b16e = "" + #"ouranos_teleport_postfx";
@@ -798,8 +798,8 @@ function function_809767d( str_hand )
             s_quest.var_29f1fc2d = #"vox_gaia_hand_complete_orac_0";
             s_quest.var_bcd22670 = #"hash_7bc9bdaf4d490e57";
             s_quest.var_647f1375 = #"vox_gaia_arena_enter_1_orac_0";
-            s_quest.var_78b18870 = #"hash_75fdbd0fb47043a6";
-            s_quest.var_f72f5053 = #"hash_207a52f6165120c8";
+            s_quest.var_78b18870 = #"vox_charon_arena_nag_orac_0";
+            s_quest.var_f72f5053 = #"vox_gaia_hand_battle_0_orac_0";
             s_quest.var_723cad8 = #"hash_5fa27320c347d3fa";
             mdl_uncharged_hand = getent( "mdl_ww_uncharged_hand_earth", "targetname" );
             var_f172b16e = "" + #"gaia_teleport_postfx";
@@ -2813,7 +2813,7 @@ function function_2a290bb7( var_542837e6, v_position, e_player )
         if ( isdefined( e_player ) && !( isdefined( e_player.var_5ea2c230 ) && e_player.var_5ea2c230 ) )
         {
             e_player.var_5ea2c230 = 1;
-            e_player thread zm_vo::vo_say( #"hash_49c0129bd571abb9", 0, 1, 9999, 1, 1 );
+            e_player thread zm_vo::vo_say( #"vox_light_brazier_first_orac_0", 0, 1, 9999, 1, 1 );
         }
         else if ( isdefined( e_player ) && !( isdefined( var_542837e6.var_a7a96a2 ) && var_542837e6.var_a7a96a2 ) )
         {
@@ -4008,7 +4008,7 @@ function function_1c5aedd8( e_player )
         
         if ( s_quest.var_8baa00ae >= 3 )
         {
-            e_player thread zm_vo::vo_say( #"hash_825b37a44371712", 0.5, 1, 9999, 1, 1 );
+            e_player thread zm_vo::vo_say( #"vox_sapling_plant_orac_0", 0.5, 1, 9999, 1, 1 );
             s_quest thread function_4e2445e0();
             level.var_1e60b889 = 0;
         }

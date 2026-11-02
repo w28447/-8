@@ -155,7 +155,7 @@ CoD.WaypointCombatTrainingTarget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 		} )
 	end )
 	WaypointText:setRGB( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
-	WaypointText.WaypointTextWithBG.text:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	WaypointText.WaypointTextWithBG.text:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	WaypointText:linkToElementModel( self, nil, false, function ( model )
 		WaypointText:setModel( model, f1_arg1 )
 	end )

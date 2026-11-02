@@ -23,14 +23,14 @@ CoD.PC_ProgressCircleBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local Arrow = LUI.UIImage.new( 0.5, 0.5, -30, 30, 0.5, 0.5, -28, 32 )
 	Arrow:setScale( 0.6, 0.6 )
-	Arrow:setImage( RegisterImage( 0x8EBD33D94FD1BCF ) )
+	Arrow:setImage( RegisterImage( "uie_scrollbar_arrow_image" ) )
 	self:addElement( Arrow )
 	self.Arrow = Arrow
 	
 	local Arrow2 = LUI.UIImage.new( 0.5, 0.5, -30, 30, 0.5, 0.5, -28, 32 )
 	Arrow2:setAlpha( 0 )
 	Arrow2:setScale( 0.6, 0.6 )
-	Arrow2:setImage( RegisterImage( 0x8EBD33D94FD1BCF ) )
+	Arrow2:setImage( RegisterImage( "uie_scrollbar_arrow_image" ) )
 	self:addElement( Arrow2 )
 	self.Arrow2 = Arrow2
 	

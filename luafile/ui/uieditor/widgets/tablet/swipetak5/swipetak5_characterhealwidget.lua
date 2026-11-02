@@ -115,7 +115,7 @@ CoD.SwipeTak5_CharacterHealWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local Linker = LUI.UIImage.new( 0, 0, 73, 77, 0, 0, 156.5, 224.5 )
 	Linker:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
-	Linker:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	Linker:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	Linker:setShaderVector( 0, 0, 0, 0, 0 )
 	Linker:setupNineSliceShader( 4, 8 )
 	self:addElement( Linker )
@@ -149,7 +149,7 @@ CoD.SwipeTak5_CharacterHealWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local ConnectorBot = LUI.UIImage.new( 0, 0, 67, 83, 0, 0, 216, 232 )
 	ConnectorBot:setScale( 0.5, 0.5 )
 	ConnectorBot:setImage( RegisterImage( "uie_ui_hud_tak5_link_con02" ) )
-	ConnectorBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	ConnectorBot:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	ConnectorBot:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ConnectorBot )
 	self.ConnectorBot = ConnectorBot
@@ -159,7 +159,7 @@ CoD.SwipeTak5_CharacterHealWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	ConnectorBotColor:setAlpha( 0 )
 	ConnectorBotColor:setScale( 0.5, 0.5 )
 	ConnectorBotColor:setImage( RegisterImage( "uie_ui_hud_tak5_link_con02" ) )
-	ConnectorBotColor:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	ConnectorBotColor:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	ConnectorBotColor:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ConnectorBotColor )
 	self.ConnectorBotColor = ConnectorBotColor
@@ -169,7 +169,7 @@ CoD.SwipeTak5_CharacterHealWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	ConnectorBotAdd:setAlpha( 0.8 )
 	ConnectorBotAdd:setScale( 0.5, 0.5 )
 	ConnectorBotAdd:setImage( RegisterImage( "uie_ui_hud_tak5_link_con02" ) )
-	ConnectorBotAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	ConnectorBotAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	ConnectorBotAdd:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ConnectorBotAdd )
 	self.ConnectorBotAdd = ConnectorBotAdd
@@ -177,7 +177,7 @@ CoD.SwipeTak5_CharacterHealWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local ConnectorMid = LUI.UIImage.new( 0, 0, 67, 83, 0, 0, 182.5, 198.5 )
 	ConnectorMid:setScale( 0.8, 0.8 )
 	ConnectorMid:setImage( RegisterImage( "uie_ui_hud_tak5_link_con01" ) )
-	ConnectorMid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	ConnectorMid:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	ConnectorMid:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ConnectorMid )
 	self.ConnectorMid = ConnectorMid
@@ -187,7 +187,7 @@ CoD.SwipeTak5_CharacterHealWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	ConnectorMidColor:setAlpha( 0 )
 	ConnectorMidColor:setScale( 0.8, 0.8 )
 	ConnectorMidColor:setImage( RegisterImage( "uie_ui_hud_tak5_link_con01" ) )
-	ConnectorMidColor:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	ConnectorMidColor:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	ConnectorMidColor:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ConnectorMidColor )
 	self.ConnectorMidColor = ConnectorMidColor
@@ -197,7 +197,7 @@ CoD.SwipeTak5_CharacterHealWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	ConnectorMidAdd:setAlpha( 0.8 )
 	ConnectorMidAdd:setScale( 0.8, 0.8 )
 	ConnectorMidAdd:setImage( RegisterImage( "uie_ui_hud_tak5_link_con01" ) )
-	ConnectorMidAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	ConnectorMidAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	ConnectorMidAdd:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ConnectorMidAdd )
 	self.ConnectorMidAdd = ConnectorMidAdd
@@ -241,7 +241,7 @@ CoD.SwipeTak5_CharacterHealWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local TintAdd = LUI.UIImage.new( 0, 0, 24, 126, 0, 0, 12.5, 159.5 )
 	TintAdd:setRGB( 1, 0.8, 0 )
 	TintAdd:setAlpha( 0 )
-	TintAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	TintAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	TintAdd:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( TintAdd )
 	self.TintAdd = TintAdd

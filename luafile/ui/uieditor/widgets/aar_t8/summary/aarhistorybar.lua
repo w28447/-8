@@ -37,14 +37,14 @@ CoD.AARHistoryBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	
 	local LatestIndicator = LUI.UIImage.new( 0, 0, 4.5, 96.5, 0, 0, 9, 31 )
 	LatestIndicator:setImage( RegisterImage( "uie_ui_menu_aar_stat_latest_indicator" ) )
-	LatestIndicator:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	LatestIndicator:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	LatestIndicator:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( LatestIndicator )
 	self.LatestIndicator = LatestIndicator
 	
 	local LatestIndicatorAdd = LUI.UIImage.new( 0, 0, 4.5, 96.5, 0, 0, 10, 32 )
 	LatestIndicatorAdd:setImage( RegisterImage( "uie_ui_menu_aar_stat_latest_indicator" ) )
-	LatestIndicatorAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	LatestIndicatorAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	LatestIndicatorAdd:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( LatestIndicatorAdd )
 	self.LatestIndicatorAdd = LatestIndicatorAdd
@@ -79,7 +79,7 @@ CoD.AARHistoryBar.__resetProperties = function ( f3_arg0 )
 	f3_arg0.Number:setAlpha( 0.9 )
 	f3_arg0.LatestIndicator:setAlpha( 1 )
 	f3_arg0.LatestIndicatorAdd:setAlpha( 1 )
-	f3_arg0.LatestIndicatorAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	f3_arg0.LatestIndicatorAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	f3_arg0.LatestIndicatorAdd:setShaderVector( 0, 1, 0, 0, 0 )
 	f3_arg0.barGrad:setAlpha( 1 )
 end
@@ -206,7 +206,7 @@ CoD.AARHistoryBar.__clipsPerState = {
 			
 			f6_arg0.LatestIndicatorAdd:completeAnimation()
 			f6_arg0.LatestIndicatorAdd:setAlpha( 0.9 )
-			f6_arg0.LatestIndicatorAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f6_arg0.LatestIndicatorAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f6_arg0.LatestIndicatorAdd:setShaderVector( 0, 1, 0, 0, 0 )
 			f6_local3( f6_arg0.LatestIndicatorAdd )
 			f6_arg0.barGrad:completeAnimation()

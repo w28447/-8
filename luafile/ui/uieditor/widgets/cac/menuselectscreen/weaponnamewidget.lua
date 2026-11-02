@@ -11,7 +11,7 @@ CoD.WeaponNameWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local weaponNameLabel = LUI.UIText.new( 0, 1, 0, 0, 0.5, 0.5, -22, 23 )
 	weaponNameLabel:setRGB( 0.92, 0.92, 0.92 )
 	weaponNameLabel:setTTF( "ttmussels_demibold" )
-	weaponNameLabel:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	weaponNameLabel:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	weaponNameLabel:setLetterSpacing( 5.6 )
 	weaponNameLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	weaponNameLabel:linkToElementModel( self, "name", true, function ( model )

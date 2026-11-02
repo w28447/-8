@@ -13,7 +13,7 @@ CoD.GameEndScore_WeaponIdentity.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local BackingBlur = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BackingBlur:setRGB( 0, 0, 0 )
 	BackingBlur:setAlpha( 0 )
-	BackingBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	BackingBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	BackingBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BackingBlur )
 	self.BackingBlur = BackingBlur
@@ -63,7 +63,7 @@ CoD.GameEndScore_WeaponIdentity.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	HeaderTextBoxShadow:setAlpha( 0 )
 	HeaderTextBoxShadow:setText( LocalizeToUpperString( "ui/with" ) )
 	HeaderTextBoxShadow:setTTF( "ttmussels_demibold" )
-	HeaderTextBoxShadow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
+	HeaderTextBoxShadow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow" ) )
 	HeaderTextBoxShadow:setShaderVector( 0, 0.6, 0, 0, 0 )
 	HeaderTextBoxShadow:setShaderVector( 1, 0, 0, 0, 0 )
 	HeaderTextBoxShadow:setShaderVector( 2, 1, 0, 0, 0 )

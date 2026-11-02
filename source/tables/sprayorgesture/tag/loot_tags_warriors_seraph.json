@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_warriors_seraph",
     "type": "#tag",
-    "material": "#hash_4c414a45f5779d93",
+    "material": "#vd/mtl_loot_ui_icon_tags_warriors_seraph",
     "bundle": {
         "type": "#tag",
         "title": "localized18#hash_172576cea7f1af3",

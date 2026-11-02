@@ -92,7 +92,7 @@ CoD.SwipeTak5_LayoutElements.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	upArrowL:setZRot( -45 )
 	upArrowL:setScale( 0.6, 0.6 )
 	upArrowL:setImage( RegisterImage( "uie_ui_hud_tak5_score_linker" ) )
-	upArrowL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	upArrowL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	upArrowL:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( upArrowL )
 	self.upArrowL = upArrowL
@@ -102,7 +102,7 @@ CoD.SwipeTak5_LayoutElements.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	upArrowR:setZRot( -45 )
 	upArrowR:setScale( 0.6, 0.6 )
 	upArrowR:setImage( RegisterImage( "uie_ui_hud_tak5_score_linker" ) )
-	upArrowR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	upArrowR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	upArrowR:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( upArrowR )
 	self.upArrowR = upArrowR
@@ -110,7 +110,7 @@ CoD.SwipeTak5_LayoutElements.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local Tak5VersionInfo = LUI.UIImage.new( 0, 0, 319, 435, 0, 0, 421.5, 445.5 )
 	Tak5VersionInfo:setAlpha( 0.58 )
 	Tak5VersionInfo:setImage( RegisterImage( "uie_ui_hud_tak5_version_info" ) )
-	Tak5VersionInfo:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	Tak5VersionInfo:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	Tak5VersionInfo:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( Tak5VersionInfo )
 	self.Tak5VersionInfo = Tak5VersionInfo
@@ -124,7 +124,7 @@ CoD.SwipeTak5_LayoutElements.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local ConnectedAdd = LUI.UIImage.new( 0, 0, 658, 734, 0, 0, 1, 17 )
 	ConnectedAdd:setAlpha( 0.1 )
 	ConnectedAdd:setImage( RegisterImage( "uie_ui_menu_window_loading_finished" ) )
-	ConnectedAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	ConnectedAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	ConnectedAdd:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ConnectedAdd )
 	self.ConnectedAdd = ConnectedAdd
@@ -138,7 +138,7 @@ CoD.SwipeTak5_LayoutElements.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local SectionAGAdd = LUI.UIImage.new( 0, 0, 10, 78, 0, 0, 0, 16 )
 	SectionAGAdd:setAlpha( 0.1 )
 	SectionAGAdd:setImage( RegisterImage( "uie_ui_hud_tak5_layout_common_element01" ) )
-	SectionAGAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	SectionAGAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	SectionAGAdd:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( SectionAGAdd )
 	self.SectionAGAdd = SectionAGAdd

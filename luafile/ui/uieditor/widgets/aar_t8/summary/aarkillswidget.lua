@@ -30,7 +30,7 @@ CoD.AARKillsWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	KillsGlow:setRGB( ColorSet.PlayerYellow.r, ColorSet.PlayerYellow.g, ColorSet.PlayerYellow.b )
 	KillsGlow:setAlpha( 0.4 )
 	KillsGlow:setTTF( "ttmussels_regular" )
-	KillsGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	KillsGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	KillsGlow:setShaderVector( 0, 0.3, 0, 0, 0 )
 	KillsGlow:setShaderVector( 1, 0, 0, 0, 0 )
 	KillsGlow:setShaderVector( 2, 1, 0, 0, 0.8 )

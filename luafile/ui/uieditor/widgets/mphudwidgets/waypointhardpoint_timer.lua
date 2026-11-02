@@ -10,7 +10,7 @@ CoD.WaypointHardpoint_Timer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local TimerText = LUI.UIText.new( 0, 0, 0, 114, 0, 0, 0, 26 )
 	TimerText:setTTF( "0arame_mono_stencil" )
-	TimerText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	TimerText:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	TimerText:setShaderVector( 0, 0, 0, 0, 0 )
 	TimerText:setShaderVector( 1, 0, 0, 0, 0 )
 	TimerText:setShaderVector( 2, 1, 1, 1, 0 )

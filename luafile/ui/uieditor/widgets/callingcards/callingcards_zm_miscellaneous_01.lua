@@ -15,7 +15,7 @@ CoD.callingcards_zm_miscellaneous_01.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	local Burst = LUI.UIImage.new( 0, 0, 369, 627, 0, 0, -9, 249 )
 	Burst:setImage( RegisterImage( "uie_ui_icon_callingcards_zm_miscellaneous_01_lightburst" ) )
-	Burst:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	Burst:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	Burst:setShaderVector( 0, 2.58, 0, 0, 0 )
 	self:addElement( Burst )
 	self.Burst = Burst

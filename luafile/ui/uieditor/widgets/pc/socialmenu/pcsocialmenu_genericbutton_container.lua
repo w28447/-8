@@ -40,7 +40,7 @@ CoD.PCSocialMenu_GenericButton_Container.new = function ( f1_arg0, f1_arg1, f1_a
 	
 	local Glow = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, -55, 7 )
 	Glow:setAlpha( 0 )
-	Glow:setImage( RegisterImage( 0xC3B2316BAE91099 ) )
+	Glow:setImage( RegisterImage( "uie_ui_menu_director_selection_bar" ) )
 	self:addElement( Glow )
 	self.Glow = Glow
 	

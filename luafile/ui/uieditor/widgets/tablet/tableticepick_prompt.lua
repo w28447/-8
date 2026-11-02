@@ -25,7 +25,7 @@ CoD.TabletIcePick_Prompt.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local Glow = LUI.UIImage.new( 0, 1, -55, 55, 0, 1, -2, 2 )
 	Glow:setAlpha( 0 )
 	Glow:setImage( RegisterImage( "blue_square_glow" ) )
-	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	Glow:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Glow )
 	self.Glow = Glow
@@ -83,7 +83,7 @@ CoD.TabletIcePick_Prompt.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local GlowLarge = LUI.UIImage.new( 0, 1, -115, 115, 0, 1, -35, 35 )
 	GlowLarge:setImage( RegisterImage( 0xC1B5BC57AE822F0 ) )
-	GlowLarge:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	GlowLarge:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	GlowLarge:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( GlowLarge )
 	self.GlowLarge = GlowLarge

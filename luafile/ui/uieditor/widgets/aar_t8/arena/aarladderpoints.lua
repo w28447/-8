@@ -18,7 +18,7 @@ CoD.AARLadderPoints.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	local Flare = LUI.UIImage.new( 0.5, 0.5, -326, 374, 0.5, 0.5, -115, 65 )
 	Flare:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	Flare:setImage( RegisterImage( "uie_ui_menu_aar_levelup_flare" ) )
-	Flare:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	Flare:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	Flare:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Flare )
 	self.Flare = Flare
@@ -55,7 +55,7 @@ CoD.AARLadderPoints.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	PointsAdd:setRGB( 0.4, 0.55, 0.22 )
 	PointsAdd:setText( "" )
 	PointsAdd:setTTF( "0arame_mono_stencil" )
-	PointsAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x336C1AE82B1520A ) )
+	PointsAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield_add" ) )
 	PointsAdd:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	PointsAdd:setAlignment( Enum.LUIAlignment[0x70510683C22104B] )
 	self:addElement( PointsAdd )

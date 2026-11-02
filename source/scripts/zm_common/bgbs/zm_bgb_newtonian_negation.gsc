@@ -49,15 +49,15 @@ function validation()
 // Size: 0x34
 function enable()
 {
-    function_8622e664( 1 );
-    self thread function_4712db36();
+    invert_gravity( 1 );
+    self thread disable_on_disconnect();
 }
 
 // Namespace zm_bgb_newtonian_negation/zm_bgb_newtonian_negation
 // Params 0
 // Checksum 0xddcafd10, Offset: 0x238
 // Size: 0x3c
-function function_4712db36()
+function disable_on_disconnect()
 {
     self endon( #"newtonian_negation_disable" );
     self waittill( #"disconnect" );
@@ -83,14 +83,14 @@ function disable()
         }
     }
     
-    function_8622e664( 0 );
+    invert_gravity( 0 );
 }
 
 // Namespace zm_bgb_newtonian_negation/zm_bgb_newtonian_negation
 // Params 1
 // Checksum 0xfe8293a8, Offset: 0x358
 // Size: 0x2c
-function function_8622e664( var_b4666218 )
+function invert_gravity( var_b4666218 )
 {
     level clientfield::set( "newtonian_negation", var_b4666218 );
 }

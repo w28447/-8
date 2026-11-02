@@ -796,7 +796,7 @@ function step_2( var_a276c861 )
     level thread scr_safehouse_testrageservice();
     var_de399497 = struct::get( "k_fx_pos" );
     e_activator = var_de399497 zm_unitrigger::function_fac87205( "", 64 );
-    level.var_bbc27d0e = util::spawn_model( #"hash_4c06bc763e373f0f", var_de399497.origin, var_de399497.angles );
+    level.var_bbc27d0e = util::spawn_model( #"p8_fxanim_zm_esc_book_zombie_timeline_mod", var_de399497.origin, var_de399497.angles );
     level.var_bbc27d0e playsound( #"hash_5109ee79a5d045f0" );
     level thread pause_zombies( 1 );
     function_9465204c( e_activator );
@@ -867,7 +867,7 @@ function step_2_cleanup( var_a276c861, var_19e802fa )
     if ( !isdefined( level.var_bbc27d0e ) )
     {
         var_de399497 = struct::get( "k_fx_pos" );
-        level.var_bbc27d0e = util::spawn_model( #"hash_4c06bc763e373f0f", var_de399497.origin, var_de399497.angles );
+        level.var_bbc27d0e = util::spawn_model( #"p8_fxanim_zm_esc_book_zombie_timeline_mod", var_de399497.origin, var_de399497.angles );
     }
 }
 
@@ -4156,7 +4156,7 @@ function function_bdaf22e8( a_ents )
     }
     
     a_ents[ #"brutus" ] waittill( #"b_at_l" );
-    wait soundgetplaybacktime( #"hash_243ad34fa49f53fd" ) * 0.001;
+    wait soundgetplaybacktime( #"vox_m_quest_ward_trap_0_ward_0" ) * 0.001;
     e_player = array::random( util::get_players() );
     
     if ( e_player zm_characters::is_character( array( #"prt_zm_richtofen", #"prt_zm_richtofen_ofc", #"prt_zm_richtofen_whi_novials" ) ) && isdefined( e_player.var_59dde2f6 ) && e_player.var_59dde2f6 )
@@ -4165,7 +4165,7 @@ function function_bdaf22e8( a_ents )
         
         if ( n_chances == 0 )
         {
-            e_player zm_vo::vo_say( #"hash_b95a5dba1c61ea3", 0, 1, 9999, 1, 1, 1 );
+            e_player zm_vo::vo_say( #"vox_m_quest_ward_trap_2_stuh_0", 0, 1, 9999, 1, 1, 1 );
         }
         else
         {
@@ -4226,7 +4226,7 @@ function private function_ac2fa9a4()
         }
         
         e_richtofen zm_vo::vo_stop();
-        b_say = e_richtofen zm_vo::vo_say( #"hash_7a09fcd3369d5af", 0, 1, 9999, 1, 1, 1 );
+        b_say = e_richtofen zm_vo::vo_say( #"vox_m_quest_lock_solo_rich_0_stuh_0", 0, 1, 9999, 1, 1, 1 );
         
         if ( isalive( e_richtofen ) )
         {
@@ -4235,7 +4235,7 @@ function private function_ac2fa9a4()
             if ( b_say && isalive( e_richtofen ) )
             {
                 e_richtofen zm_vo::vo_stop();
-                b_say = e_richtofen zm_vo::vo_say( #"hash_560988b67c3da339", 0, 1, 9999, 1, 1, 1 );
+                b_say = e_richtofen zm_vo::vo_say( #"vox_m_quest_lock_solo_rich_2_stuh_0", 0, 1, 9999, 1, 1, 1 );
                 
                 if ( isalive( e_richtofen ) )
                 {
@@ -5583,7 +5583,7 @@ function function_77cf4d4a()
     
     if ( !isdefined( level.var_7e34e7db ) )
     {
-        level.var_7e34e7db = util::spawn_model( #"hash_58eb21ddb61deff4" );
+        level.var_7e34e7db = util::spawn_model( #"p8_fxanim_zm_esc_cin_pod_frozen_mod" );
     }
     
     level.var_7e34e7db.script_animname = "cryo_pod";

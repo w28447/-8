@@ -24,7 +24,7 @@ CoD.TabletIcePickGadget_ItemBlock.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local Progress = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	Progress:setRGB( 0.22, 0.77, 1 )
 	Progress:setAlpha( 0.6 )
-	Progress:setImage( RegisterImage( 0x83C3A03D42E5F7A ) )
+	Progress:setImage( RegisterImage( "uie_ui_hud_icepick_item_progress" ) )
 	Progress:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	Progress:setShaderVector( 1, 0, 0, 0, 0 )
 	Progress:setShaderVector( 2, 0, 1, 0, 0 )
@@ -67,20 +67,20 @@ CoD.TabletIcePickGadget_ItemBlock.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local BadManners = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BadManners:setAlpha( 0 )
-	BadManners:setImage( RegisterImage( 0xBFBBD66A247B98 ) )
+	BadManners:setImage( RegisterImage( "uie_ui_menu_chooseface_nohair" ) )
 	BadManners:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BadManners )
 	self.BadManners = BadManners
 	
 	local BadMannersAdd = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BadMannersAdd:setAlpha( 0 )
-	BadMannersAdd:setImage( RegisterImage( 0xBFBBD66A247B98 ) )
+	BadMannersAdd:setImage( RegisterImage( "uie_ui_menu_chooseface_nohair" ) )
 	BadMannersAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BadMannersAdd )
 	self.BadMannersAdd = BadMannersAdd
 	
 	local Frame = LUI.UIImage.new( 0, 1, -2, 2, 0, 1, -2, 2 )
-	Frame:setImage( RegisterImage( 0xC34D24BE5D33502 ) )
+	Frame:setImage( RegisterImage( "uie_ui_hud_icepick_item_frame" ) )
 	Frame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	Frame:setShaderVector( 0, 0, 0, 0, 0 )
 	Frame:setupNineSliceShader( 64, 38 )
@@ -89,7 +89,7 @@ CoD.TabletIcePickGadget_ItemBlock.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local FrameAdd = LUI.UIImage.new( 0, 1, -2, 2, 0, 1, -2, 2 )
 	FrameAdd:setAlpha( 0 )
-	FrameAdd:setImage( RegisterImage( 0xC34D24BE5D33502 ) )
+	FrameAdd:setImage( RegisterImage( "uie_ui_hud_icepick_item_frame" ) )
 	FrameAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrameAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	FrameAdd:setupNineSliceShader( 64, 38 )
@@ -103,13 +103,13 @@ CoD.TabletIcePickGadget_ItemBlock.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local Skull01 = LUI.UIImage.new( 0.5, 0.5, -48, 48, 0.5, 0.5, -40, 40 )
 	Skull01:setAlpha( 0 )
-	Skull01:setImage( RegisterImage( 0x9F13B2D5831F182 ) )
+	Skull01:setImage( RegisterImage( "uie_ui_hud_icepick_hack_skull02" ) )
 	self:addElement( Skull01 )
 	self.Skull01 = Skull01
 	
 	local Skull01Scanline = LUI.UIImage.new( 0.5, 0.5, -48, 48, 0.5, 0.5, -40, 40 )
 	Skull01Scanline:setAlpha( 0 )
-	Skull01Scanline:setImage( RegisterImage( 0x9F13B2D5831F182 ) )
+	Skull01Scanline:setImage( RegisterImage( "uie_ui_hud_icepick_hack_skull02" ) )
 	Skull01Scanline:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scanlines" ) )
 	Skull01Scanline:setShaderVector( 0, 2, 0, 0, 0 )
 	Skull01Scanline:setShaderVector( 1, 1, 0, 0, 0 )
@@ -119,13 +119,13 @@ CoD.TabletIcePickGadget_ItemBlock.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local Skull02 = LUI.UIImage.new( 0.5, 0.5, -48, 48, 0.5, 0.5, -40, 40 )
 	Skull02:setAlpha( 0 )
-	Skull02:setImage( RegisterImage( 0x9F13A2D5831EFCF ) )
+	Skull02:setImage( RegisterImage( "uie_ui_hud_icepick_hack_skull01" ) )
 	self:addElement( Skull02 )
 	self.Skull02 = Skull02
 	
 	local Skull02Scanline = LUI.UIImage.new( 0.5, 0.5, -48, 48, 0.5, 0.5, -40, 40 )
 	Skull02Scanline:setAlpha( 0 )
-	Skull02Scanline:setImage( RegisterImage( 0x9F13A2D5831EFCF ) )
+	Skull02Scanline:setImage( RegisterImage( "uie_ui_hud_icepick_hack_skull01" ) )
 	Skull02Scanline:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scanlines" ) )
 	Skull02Scanline:setShaderVector( 0, 2, 0, 0, 0 )
 	Skull02Scanline:setShaderVector( 1, 2, 0, 0, 0 )

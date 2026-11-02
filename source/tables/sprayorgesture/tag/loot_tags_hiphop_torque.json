@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_hiphop_torque",
     "type": "#tag",
-    "material": "#hash_77e53e30e4d48f59",
+    "material": "#vd/mtl_loot_ui_icon_tags_hiphop_torque",
     "bundle": {
         "type": "#tag",
         "title": "localized18#hash_598eef1f157d99ac",

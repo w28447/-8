@@ -37,7 +37,7 @@ CoD.GameEndScoreCenterWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	self.CircleBaseSmall = CircleBaseSmall
 	
 	local Ring = LUI.UIImage.new( 0.5, 0.5, -49.5, 50.5, 0.5, 0.5, -49.5, 50.5 )
-	Ring:setImage( RegisterImage( 0xF6B907EC3E8812F ) )
+	Ring:setImage( RegisterImage( "uie_hud_gameendscore_circle" ) )
 	Ring:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Ring )
 	self.Ring = Ring
@@ -46,7 +46,7 @@ CoD.GameEndScoreCenterWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	RingPC = LUI.UIImage.new( 0.5, 0.5, -70, 70, 0.5, 0.5, -70, 70 )
 	RingPC:setAlpha( 0 )
-	RingPC:setImage( RegisterImage( 0xF6B907EC3E8812F ) )
+	RingPC:setImage( RegisterImage( "uie_hud_gameendscore_circle" ) )
 	RingPC:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( RingPC )
 	self.RingPC = RingPC

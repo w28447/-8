@@ -59,7 +59,7 @@ CoD.StickerSetDecal_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local equippedIcon = LUI.UIImage.new( 1, 1, -27, -6, 0, 0, 6, 27 )
 	equippedIcon:setRGB( 0.56, 0.68, 0.27 )
 	equippedIcon:setAlpha( 0 )
-	equippedIcon:setImage( RegisterImage( 0xB0337CBFC61A7A2 ) )
+	equippedIcon:setImage( RegisterImage( "t7_hud_cac_equipped_16" ) )
 	self:addElement( equippedIcon )
 	self.equippedIcon = equippedIcon
 	

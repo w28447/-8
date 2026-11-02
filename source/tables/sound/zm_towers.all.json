@@ -328867,14 +328867,14 @@
         {
             "value": 1831,
             "next": 65535,
-            "name": "#hash_6662c407371ddaff",
+            "name": "#wpn_viperdragon_first_raise_cmn_npc",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6662c407371ddaff",
-                    "secondaryname": "#hash_57114f2e8a5b2699",
+                    "name": "#wpn_viperdragon_first_raise_cmn_npc",
+                    "secondaryname": "#wpn_viperdragon_first_raise_cmn_npc_lfe",
                     "assetId": "#hash_185a63be23aed7d8",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -328917,13 +328917,13 @@
         {
             "value": 1854,
             "next": 65535,
-            "name": "#hash_57114f2e8a5b2699",
+            "name": "#wpn_viperdragon_first_raise_cmn_npc_lfe",
             "sequence": 0,
             "cullDistance": 574,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_57114f2e8a5b2699",
+                    "name": "#wpn_viperdragon_first_raise_cmn_npc_lfe",
                     "secondaryname": "#wpn_raise_global_npc",
                     "assetId": "#hash_5b8f641d30643fce",
                     "assetFileNameSustain": "#zm_towers.all",
@@ -328969,14 +328969,14 @@
         {
             "value": 1934,
             "next": 65535,
-            "name": "#hash_502c50791bae7fa",
+            "name": "#wpn_viperdragon_first_raise_cmn_plr",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_502c50791bae7fa",
-                    "secondaryname": "#hash_bc551f958b18108",
+                    "name": "#wpn_viperdragon_first_raise_cmn_plr",
+                    "secondaryname": "#wpn_viperdragon_first_raise_cmn_plr_lfe",
                     "assetId": "#hash_1b932ba12e7e9764",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -329019,13 +329019,13 @@
         {
             "value": 1202,
             "next": 1520,
-            "name": "#hash_bc551f958b18108",
+            "name": "#wpn_viperdragon_first_raise_cmn_plr_lfe",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_bc551f958b18108",
+                    "name": "#wpn_viperdragon_first_raise_cmn_plr_lfe",
                     "secondaryname": "#wpn_raise_global_plr",
                     "assetId": "#hash_5b8f641d30643fce",
                     "assetFileNameSustain": "#zm_towers.all",
@@ -329071,14 +329071,14 @@
         {
             "value": 1117,
             "next": 1524,
-            "name": "#hash_7c6b06941557e340",
+            "name": "#wpn_viperdragon_first_raise_lvl3_npc",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7c6b06941557e340",
-                    "secondaryname": "#hash_6662c407371ddaff",
+                    "name": "#wpn_viperdragon_first_raise_lvl3_npc",
+                    "secondaryname": "#wpn_viperdragon_first_raise_cmn_npc",
                     "assetId": "#hash_7ae0935efc323f40",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -329121,14 +329121,14 @@
         {
             "value": 1657,
             "next": 1528,
-            "name": "#hash_3d7ba193a917b881",
+            "name": "#wpn_viperdragon_first_raise_lvl3_plr",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3d7ba193a917b881",
-                    "secondaryname": "#hash_502c50791bae7fa",
+                    "name": "#wpn_viperdragon_first_raise_lvl3_plr",
+                    "secondaryname": "#wpn_viperdragon_first_raise_cmn_plr",
                     "assetId": "#hash_5ff9684d8c958468",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -329171,13 +329171,13 @@
         {
             "value": 1862,
             "next": 65535,
-            "name": "#hash_51de8795c89de25a",
+            "name": "#wpn_viperdragon_raise_cmn_npc",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_51de8795c89de25a",
+                    "name": "#wpn_viperdragon_raise_cmn_npc",
                     "secondaryname": "#wpn_raise_global_npc",
                     "assetId": "#hash_107bc08b5413249c",
                     "assetFileNameSustain": "#zm_towers.all",
@@ -329221,13 +329221,13 @@
         {
             "value": 138,
             "next": 65535,
-            "name": "#hash_10cdee9634de107f",
+            "name": "#wpn_viperdragon_raise_cmn_plr",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_10cdee9634de107f",
+                    "name": "#wpn_viperdragon_raise_cmn_plr",
                     "secondaryname": "#wpn_raise_global_plr",
                     "assetId": "#hash_74c0df5519427758",
                     "assetFileNameSustain": "#zm_towers.all",
@@ -339324,13 +339324,13 @@
         {
             "value": 1803,
             "next": 65535,
-            "name": "#hash_27c1e5d7dbff24c1",
+            "name": "#zmb_altar_zeus_elec_pop",
             "sequence": 0,
             "cullDistance": 600,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_27c1e5d7dbff24c1",
+                    "name": "#zmb_altar_zeus_elec_pop",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_00.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -339369,7 +339369,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_27c1e5d7dbff24c1",
+                    "name": "#zmb_altar_zeus_elec_pop",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_01.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -339408,7 +339408,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_27c1e5d7dbff24c1",
+                    "name": "#zmb_altar_zeus_elec_pop",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_02.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -339447,7 +339447,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_27c1e5d7dbff24c1",
+                    "name": "#zmb_altar_zeus_elec_pop",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_03.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -339486,7 +339486,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_27c1e5d7dbff24c1",
+                    "name": "#zmb_altar_zeus_elec_pop",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_04.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -339525,7 +339525,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_27c1e5d7dbff24c1",
+                    "name": "#zmb_altar_zeus_elec_pop",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_05.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -339564,7 +339564,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_27c1e5d7dbff24c1",
+                    "name": "#zmb_altar_zeus_elec_pop",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_06.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -339603,7 +339603,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_27c1e5d7dbff24c1",
+                    "name": "#zmb_altar_zeus_elec_pop",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_07.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -339642,7 +339642,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_27c1e5d7dbff24c1",
+                    "name": "#zmb_altar_zeus_elec_pop",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_08.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -349884,13 +349884,13 @@
         {
             "value": 998,
             "next": 65535,
-            "name": "#hash_668d62d874527e1c",
+            "name": "#zmb_funtime_danu_blister_explo_final",
             "sequence": 0,
             "cullDistance": 950,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_668d62d874527e1c",
+                    "name": "#zmb_funtime_danu_blister_explo_final",
                     "assetId": "#hash_798cde2a6924e84",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -349929,7 +349929,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_668d62d874527e1c",
+                    "name": "#zmb_funtime_danu_blister_explo_final",
                     "assetId": "#hash_16e6954fb1429369",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -349968,7 +349968,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_668d62d874527e1c",
+                    "name": "#zmb_funtime_danu_blister_explo_final",
                     "assetId": "#hash_5749078f1a4445be",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -350007,7 +350007,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_668d62d874527e1c",
+                    "name": "#zmb_funtime_danu_blister_explo_final",
                     "assetId": "#hash_d06939af2ed975b",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -350357,13 +350357,13 @@
         {
             "value": 917,
             "next": 65535,
-            "name": "#hash_4061dc3dc7f197ba",
+            "name": "#zmb_funtime_danu_dust_pickup",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4061dc3dc7f197ba",
+                    "name": "#zmb_funtime_danu_dust_pickup",
                     "assetId": "#hash_ec6219c1444cb9b",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -350404,7 +350404,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_4061dc3dc7f197ba",
+                    "name": "#zmb_funtime_danu_dust_pickup",
                     "assetId": "#hash_1200dc0b76af5c3c",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -351814,13 +351814,13 @@
         {
             "value": 500,
             "next": 65535,
-            "name": "#hash_784c6d9757964494",
+            "name": "#zmb_funtime_electro_ai_death",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_784c6d9757964494",
+                    "name": "#zmb_funtime_electro_ai_death",
                     "assetId": "#hash_5a677cccf66f90e6",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -351859,7 +351859,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_784c6d9757964494",
+                    "name": "#zmb_funtime_electro_ai_death",
                     "assetId": "#hash_1ee9ef61c136a503",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -351898,7 +351898,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_784c6d9757964494",
+                    "name": "#zmb_funtime_electro_ai_death",
                     "assetId": "#hash_7e7b15bb8c5ea16c",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -351937,7 +351937,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_784c6d9757964494",
+                    "name": "#zmb_funtime_electro_ai_death",
                     "assetId": "#hash_3903cfba33feb4b1",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -351976,7 +351976,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_784c6d9757964494",
+                    "name": "#zmb_funtime_electro_ai_death",
                     "assetId": "#hash_5c38e581a24d2302",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -352015,7 +352015,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_784c6d9757964494",
+                    "name": "#zmb_funtime_electro_ai_death",
                     "assetId": "#hash_5d5e4d207f26aff",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -352054,7 +352054,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_784c6d9757964494",
+                    "name": "#zmb_funtime_electro_ai_death",
                     "assetId": "#hash_36a533a665cf3638",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -352093,7 +352093,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_784c6d9757964494",
+                    "name": "#zmb_funtime_electro_ai_death",
                     "assetId": "#hash_5982cc02edbd8f0d",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -352132,7 +352132,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_784c6d9757964494",
+                    "name": "#zmb_funtime_electro_ai_death",
                     "assetId": "#hash_50169674cbca69fe",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -352171,7 +352171,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_784c6d9757964494",
+                    "name": "#zmb_funtime_electro_ai_death",
                     "assetId": "#hash_56f1f803550b0b9b",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -352210,7 +352210,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_784c6d9757964494",
+                    "name": "#zmb_funtime_electro_ai_death",
                     "assetId": "#hash_28eb672f7d25015",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -352253,13 +352253,13 @@
         {
             "value": 172,
             "next": 1724,
-            "name": "#hash_5653bacd3880f5e6",
+            "name": "#zmb_funtime_electro_ball_activate",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5653bacd3880f5e6",
+                    "name": "#zmb_funtime_electro_ball_activate",
                     "assetId": "#hash_2b26f4dfbbffac69",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -352302,13 +352302,13 @@
         {
             "value": 98,
             "next": 1726,
-            "name": "#hash_3dc40c9d94d68a08",
+            "name": "#zmb_funtime_electro_ball_end",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3dc40c9d94d68a08",
+                    "name": "#zmb_funtime_electro_ball_end",
                     "assetId": "#hash_c9ccf93243201ee",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -352351,13 +352351,13 @@
         {
             "value": 993,
             "next": 65535,
-            "name": "#hash_1158ca937d0645df",
+            "name": "#zmb_funtime_electro_ball_lp",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1158ca937d0645df",
+                    "name": "#zmb_funtime_electro_ball_lp",
                     "assetId": "#hash_423f244055f6adab",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -352654,13 +352654,13 @@
         {
             "value": 1888,
             "next": 65535,
-            "name": "#hash_35d56c3cf35df021",
+            "name": "#zmb_funtime_electro_paddle_retract",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_35d56c3cf35df021",
+                    "name": "#zmb_funtime_electro_paddle_retract",
                     "assetId": "#hash_5c4ed30cadbf79f9",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -352703,13 +352703,13 @@
         {
             "value": 1709,
             "next": 65535,
-            "name": "#hash_6f34e8badf2c9a9",
+            "name": "#zmb_funtime_electro_paddle_rise",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6f34e8badf2c9a9",
+                    "name": "#zmb_funtime_electro_paddle_rise",
                     "assetId": "#hash_5788f0387994ddf1",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -352752,13 +352752,13 @@
         {
             "value": 193,
             "next": 65535,
-            "name": "#hash_5f80ae9db16e36f5",
+            "name": "#zmb_funtime_electro_paddle_spin_lp",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5f80ae9db16e36f5",
+                    "name": "#zmb_funtime_electro_paddle_spin_lp",
                     "assetId": "#hash_bd9a0cf2d207b42",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -353289,13 +353289,13 @@
         {
             "value": 333,
             "next": 65535,
-            "name": "#hash_44163603295b2408",
+            "name": "#zmb_funtime_electro_ped_activate",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_44163603295b2408",
+                    "name": "#zmb_funtime_electro_ped_activate",
                     "assetId": "#hash_2dc122e66bd70823",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -353338,13 +353338,13 @@
         {
             "value": 608,
             "next": 65535,
-            "name": "#hash_62bd783a0737ec6a",
+            "name": "#zmb_funtime_electro_pedestal_lp",
             "sequence": 0,
             "cullDistance": 600,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_62bd783a0737ec6a",
+                    "name": "#zmb_funtime_electro_pedestal_lp",
                     "assetId": "#hash_2929d6f56339a038",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -353808,13 +353808,13 @@
         {
             "value": 198,
             "next": 65535,
-            "name": "#hash_68123d3c746fe40c",
+            "name": "#zmb_funtime_electro_spike_charge",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_68123d3c746fe40c",
+                    "name": "#zmb_funtime_electro_spike_charge",
                     "assetId": "#wpn/zmb/hammer/electrocute/impact/impact_00.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -353853,7 +353853,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_68123d3c746fe40c",
+                    "name": "#zmb_funtime_electro_spike_charge",
                     "assetId": "#wpn/zmb/hammer/electrocute/impact/impact_01.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -353892,7 +353892,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_68123d3c746fe40c",
+                    "name": "#zmb_funtime_electro_spike_charge",
                     "assetId": "#wpn/zmb/hammer/electrocute/impact/impact_02.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -353931,7 +353931,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_68123d3c746fe40c",
+                    "name": "#zmb_funtime_electro_spike_charge",
                     "assetId": "#wpn/zmb/hammer/electrocute/impact/impact_03.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -353970,7 +353970,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_68123d3c746fe40c",
+                    "name": "#zmb_funtime_electro_spike_charge",
                     "assetId": "#wpn/zmb/hammer/electrocute/impact/impact_04.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -354009,7 +354009,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_68123d3c746fe40c",
+                    "name": "#zmb_funtime_electro_spike_charge",
                     "assetId": "#wpn/zmb/hammer/electrocute/impact/impact_05.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -354052,13 +354052,13 @@
         {
             "value": 1281,
             "next": 65535,
-            "name": "#hash_57b0d65c6bc36311",
+            "name": "#zmb_funtime_electro_storm_change",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_57b0d65c6bc36311",
+                    "name": "#zmb_funtime_electro_storm_change",
                     "assetId": "#hash_11cfee56ac58097",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -354097,7 +354097,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_57b0d65c6bc36311",
+                    "name": "#zmb_funtime_electro_storm_change",
                     "assetId": "#hash_2406145777fb47ba",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -354136,7 +354136,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_57b0d65c6bc36311",
+                    "name": "#zmb_funtime_electro_storm_change",
                     "assetId": "#hash_6446f55865392e65",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -354179,13 +354179,13 @@
         {
             "value": 1157,
             "next": 1752,
-            "name": "#hash_2a8bc9fc5e6a2b6",
+            "name": "#zmb_funtime_electro_storm_end",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2a8bc9fc5e6a2b6",
+                    "name": "#zmb_funtime_electro_storm_end",
                     "assetId": "#hash_178a8b572d1b5453",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -354228,13 +354228,13 @@
         {
             "value": 749,
             "next": 65535,
-            "name": "#hash_15a98fa81782b075",
+            "name": "#zmb_funtime_electro_storm_lp",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_15a98fa81782b075",
+                    "name": "#zmb_funtime_electro_storm_lp",
                     "assetId": "#hash_4405bc6c8e8bca98",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -354277,13 +354277,13 @@
         {
             "value": 324,
             "next": 1742,
-            "name": "#hash_5949809a2b6867a3",
+            "name": "#zmb_funtime_electro_storm_start",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5949809a2b6867a3",
+                    "name": "#zmb_funtime_electro_storm_start",
                     "assetId": "#hash_cd6d94c79ca51a4",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -354326,13 +354326,13 @@
         {
             "value": 775,
             "next": 65535,
-            "name": "#hash_5ff6ce0b3a2db603",
+            "name": "#zmb_funtime_electro_storm_warp",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5ff6ce0b3a2db603",
+                    "name": "#zmb_funtime_electro_storm_warp",
                     "assetId": "#hash_62f3677c5288e41c",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -354376,13 +354376,13 @@
         {
             "value": 52,
             "next": 65535,
-            "name": "#hash_5add6839874d997a",
+            "name": "#zmb_funtime_electro_warp_out",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5add6839874d997a",
+                    "name": "#zmb_funtime_electro_warp_out",
                     "assetId": "#hash_62f3677c5288e41c",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -358609,14 +358609,14 @@
         {
             "value": 944,
             "next": 65535,
-            "name": "#hash_4f5ccce6dcf7da95",
+            "name": "#zmb_papquest_gong_impact",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4f5ccce6dcf7da95",
-                    "secondaryname": "#hash_234629299dd9e17c",
+                    "name": "#zmb_papquest_gong_impact",
+                    "secondaryname": "#zmb_papquest_gong_impact_swt",
                     "assetId": "#hash_9d77e98b537290d",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -358659,13 +358659,13 @@
         {
             "value": 884,
             "next": 65535,
-            "name": "#hash_234629299dd9e17c",
+            "name": "#zmb_papquest_gong_impact_swt",
             "sequence": 0,
             "cullDistance": 3000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_234629299dd9e17c",
+                    "name": "#zmb_papquest_gong_impact_swt",
                     "assetId": "#hash_38853c8d96e733f7",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -358708,13 +358708,13 @@
         {
             "value": 362,
             "next": 1812,
-            "name": "#hash_3d7066af9c9bf849",
+            "name": "#zmb_papquest_head_place",
             "sequence": 0,
             "cullDistance": 900,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3d7066af9c9bf849",
+                    "name": "#zmb_papquest_head_place",
                     "assetId": "#hash_2886bec7becc6659",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -358753,7 +358753,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_3d7066af9c9bf849",
+                    "name": "#zmb_papquest_head_place",
                     "assetId": "#hash_4ff8b6a829d545f4",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -358792,7 +358792,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_3d7066af9c9bf849",
+                    "name": "#zmb_papquest_head_place",
                     "assetId": "#hash_39daee1a8300d10b",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -358831,7 +358831,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_3d7066af9c9bf849",
+                    "name": "#zmb_papquest_head_place",
                     "assetId": "#hash_3f39f9c646ffad2e",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",
@@ -359440,13 +359440,13 @@
         {
             "value": 271,
             "next": 1821,
-            "name": "#hash_67f7a2a4b4073b81",
+            "name": "#zmb_papquest_spike_retract",
             "sequence": 0,
             "cullDistance": 650,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_67f7a2a4b4073b81",
+                    "name": "#zmb_papquest_spike_retract",
                     "assetId": "#hash_4deef47fd78ae764",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",

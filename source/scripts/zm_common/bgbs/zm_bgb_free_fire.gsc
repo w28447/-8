@@ -34,7 +34,7 @@ function __init__()
 // Size: 0x54
 function enable()
 {
-    self thread function_1ff1beff();
+    self thread special_weapon_watcher();
     w_current = self getcurrentweapon();
     self function_9d347621( w_current );
 }
@@ -75,7 +75,7 @@ function validation()
 // Params 0
 // Checksum 0x8ed67f99, Offset: 0x2d8
 // Size: 0x1c8
-function function_1ff1beff()
+function special_weapon_watcher()
 {
     self endon( #"disconnect", #"player_downed", #"disable_free_fire" );
     w_current = self getcurrentweapon();

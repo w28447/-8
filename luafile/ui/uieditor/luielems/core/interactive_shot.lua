@@ -12,7 +12,7 @@ LUI.createMenu.interactive_shot = function ( f1_arg0, f1_arg1 )
 	
 	local TextBox = LUI.UIText.new( 0.5, 0.5, -960, 960, 0, 0, 681, 741 )
 	TextBox:setTTF( "default" )
-	TextBox:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	TextBox:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	TextBox:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	TextBox:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
 	TextBox:linkToElementModel( self, "text", true, function ( model )

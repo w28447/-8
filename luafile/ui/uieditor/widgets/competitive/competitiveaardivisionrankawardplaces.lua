@@ -14,7 +14,7 @@ CoD.CompetitiveAARDivisionRankAwardPlaces.new = function ( f1_arg0, f1_arg1, f1_
 	Position:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	Position:setText( Engine[0xF9F1239CFD921FE]( "aar/place" ) )
 	Position:setTTF( "ttmussels_regular" )
-	Position:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	Position:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	Position:setLetterSpacing( 1 )
 	Position:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	Position:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

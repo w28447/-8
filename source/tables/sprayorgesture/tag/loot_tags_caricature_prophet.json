@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_caricature_prophet",
     "type": "#tag",
-    "material": "#hash_55db660eb875e70",
+    "material": "#vd/mtl_loot_ui_icon_tags_caricature_prophet",
     "bundle": {
         "type": "#tag",
         "title": "localized18#tags/caricature_prophet",

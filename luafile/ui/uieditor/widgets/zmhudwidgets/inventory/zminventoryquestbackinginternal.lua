@@ -11,7 +11,7 @@ CoD.ZMInventoryQuestBackingInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local SceneBlur = LUI.UIImage.new( -0.11, 1, 0, 0, 0, 1, 0, 0 )
 	SceneBlur:setRGB( 0, 0, 0 )
-	SceneBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0x81EEB1F96D4BE0A ) )
+	SceneBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_feather_normal" ) )
 	SceneBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( SceneBlur )
 	self.SceneBlur = SceneBlur
@@ -34,7 +34,7 @@ CoD.ZMInventoryQuestBackingInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local BGMid = LUI.UIImage.new( -0.11, 1, 0, 0, 0.5, 0.5, -40, 40 )
 	BGMid:setAlpha( 0.8 )
 	BGMid:setImage( RegisterImage( "uie_zm_hud_inventory_backing_mid" ) )
-	BGMid:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	BGMid:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	BGMid:setShaderVector( 0, 0, 0, 0, 0 )
 	BGMid:setShaderVector( 1, 1, 0, 0, 0 )
 	BGMid:setShaderVector( 2, 0, 0, 0, 0 )

@@ -15,7 +15,7 @@ CoD.ContractSupplyChainDetails_InfoPanel.new = function ( f1_arg0, f1_arg1, f1_a
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local SceneBlur = LUI.UIImage.new( 0, 0, 6, 552, 0, 0, 6.5, 231.5 )
-	SceneBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	SceneBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	SceneBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( SceneBlur )
 	self.SceneBlur = SceneBlur
@@ -134,7 +134,7 @@ CoD.ContractSupplyChainDetails_InfoPanel.new = function ( f1_arg0, f1_arg1, f1_a
 	local PixelGridTiledBacking = LUI.UIImage.new( 0, 0, 5.5, 551.5, 0, 0, 16, 40 )
 	PixelGridTiledBacking:setAlpha( 0.05 )
 	PixelGridTiledBacking:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
-	PixelGridTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	PixelGridTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	PixelGridTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGridTiledBacking:setupNineSliceShader( 128, 128 )
 	self:addElement( PixelGridTiledBacking )

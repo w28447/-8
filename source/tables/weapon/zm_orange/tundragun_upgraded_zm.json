@@ -52,7 +52,7 @@
     "sound800": "#hash_54f28bb508a46096",
     "sound810": "#hash_54f28bb508a46096",
     "tunables1": "#tundragun_upgraded_tunables_zm",
-    "projectilemodel": "#hash_759496fb448eceba",
+    "projectilemodel": "#wpn_t8_snowball_spike_world",
     "viewmodel": [
         "#wpn_t8_zm_tundra_gun_view"
     ],

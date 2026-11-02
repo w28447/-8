@@ -43,7 +43,7 @@ CoD.ArenaEventProgressButtonInternalLeaguePlay.new = function ( f1_arg0, f1_arg1
 	NoDivisionIndicatorAdd:setAlpha( 0 )
 	NoDivisionIndicatorAdd:setText( Engine[0xF9F1239CFD921FE]( 0xB5B44160430E38B ) )
 	NoDivisionIndicatorAdd:setTTF( "ttmussels_demibold" )
-	NoDivisionIndicatorAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x336C1AE82B1520A ) )
+	NoDivisionIndicatorAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield_add" ) )
 	NoDivisionIndicatorAdd:setLetterSpacing( 5 )
 	NoDivisionIndicatorAdd:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	NoDivisionIndicatorAdd:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

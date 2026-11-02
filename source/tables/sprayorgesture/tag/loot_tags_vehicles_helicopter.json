@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_vehicles_helicopter",
     "type": "#tag",
-    "material": "#hash_4e306c16aa16cd4d",
+    "material": "#vd/mtl_loot_ui_icon_tags_vehicles_helicopter",
     "bundle": {
         "type": "#tag",
         "title": "localized18#hash_6984f0646de487eb",

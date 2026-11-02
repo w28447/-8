@@ -12,14 +12,14 @@ CoD.PC_ScrollUp.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	Glow:setRGB( 0.77, 0.77, 0.77 )
 	Glow:setAlpha( 0 )
 	Glow:setZRot( 180 )
-	Glow:setImage( RegisterImage( 0x8097835ABD36837 ) )
+	Glow:setImage( RegisterImage( "uie_scrollbar_arrow_glow" ) )
 	self:addElement( Glow )
 	self.Glow = Glow
 	
 	local topArrow = LUI.UIImage.new( 0.5, 0.5, -14, 14, 0.5, 0.5, -14, 14 )
 	topArrow:setRGB( 0.62, 0.62, 0.61 )
 	topArrow:setXRot( 180 )
-	topArrow:setImage( RegisterImage( 0x8EBD33D94FD1BCF ) )
+	topArrow:setImage( RegisterImage( "uie_scrollbar_arrow_image" ) )
 	self:addElement( topArrow )
 	self.topArrow = topArrow
 	

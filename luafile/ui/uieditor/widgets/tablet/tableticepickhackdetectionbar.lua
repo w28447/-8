@@ -20,8 +20,8 @@ CoD.TabletIcePickHackDetectionBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.BG = BG
 	
 	local Glow = LUI.UIImage.new( 0, 0, -114.5, 225.5, 0, 0, -60, 80 )
-	Glow:setImage( RegisterImage( 0xF3052FD0F0098FB ) )
-	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	Glow:setImage( RegisterImage( "uie_ui_hud_icepick_warning_glow" ) )
+	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	Glow:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Glow )
 	self.Glow = Glow
@@ -38,7 +38,7 @@ CoD.TabletIcePickHackDetectionBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local FillFrame = LUI.UIImage.new( 0, 0, -50.5, 165.5, 0, 0, -12, 32 )
 	FillFrame:setRGB( 0.02, 0.59, 0.99 )
-	FillFrame:setImage( RegisterImage( 0x2AABF859E4BD498 ) )
+	FillFrame:setImage( RegisterImage( "uie_ui_hud_icepick_breach_box" ) )
 	FillFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FillFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	FillFrame:setupNineSliceShader( 216, 44 )
@@ -48,7 +48,7 @@ CoD.TabletIcePickHackDetectionBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local FillFrame2 = LUI.UIImage.new( 0, 0, -50.5, 165.5, 0, 0, -12, 32 )
 	FillFrame2:setRGB( 0.02, 0.59, 0.99 )
 	FillFrame2:setAlpha( 0 )
-	FillFrame2:setImage( RegisterImage( 0x2AABF859E4BD498 ) )
+	FillFrame2:setImage( RegisterImage( "uie_ui_hud_icepick_breach_box" ) )
 	FillFrame2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FillFrame2:setShaderVector( 0, 0, 0, 0, 0 )
 	FillFrame2:setupNineSliceShader( 216, 44 )
@@ -56,7 +56,7 @@ CoD.TabletIcePickHackDetectionBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.FillFrame2 = FillFrame2
 	
 	local Stripe = LUI.UIImage.new( 0, 0, -38.5, 153.5, 0, 0, -1.5, 22.5 )
-	Stripe:setImage( RegisterImage( 0xA7E361974EC3A2E ) )
+	Stripe:setImage( RegisterImage( "uie_ui_hud_icepick_breach_stripe" ) )
 	Stripe:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll_animated" ) )
 	Stripe:setShaderVector( 0, 0, 0, 0, 0 )
 	Stripe:setShaderVector( 1, 1, 1, 0, 0 )
@@ -68,14 +68,14 @@ CoD.TabletIcePickHackDetectionBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local EdgeRight = LUI.UIImage.new( 0, 0, -48.5, -40.5, 0, 0, -1.5, 22.5 )
 	EdgeRight:setImage( RegisterImage( "uie_ui_hud_icepick_breach_box_edge" ) )
-	EdgeRight:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	EdgeRight:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	EdgeRight:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( EdgeRight )
 	self.EdgeRight = EdgeRight
 	
 	local EdgeLeft = LUI.UIImage.new( 0, 0, 163.5, 155.5, 0, 0, -1.5, 22.5 )
 	EdgeLeft:setImage( RegisterImage( "uie_ui_hud_icepick_breach_box_edge" ) )
-	EdgeLeft:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	EdgeLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	EdgeLeft:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( EdgeLeft )
 	self.EdgeLeft = EdgeLeft
@@ -100,7 +100,7 @@ CoD.TabletIcePickHackDetectionBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local Fill2 = LUI.UIImage.new( 0.5, 0.5, -95, 95, 0, 0, 0, 20 )
 	Fill2:setRGB( 0.22, 0.77, 1 )
 	Fill2:setAlpha( 0.6 )
-	Fill2:setImage( RegisterImage( 0x83C3A03D42E5F7A ) )
+	Fill2:setImage( RegisterImage( "uie_ui_hud_icepick_item_progress" ) )
 	Fill2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	Fill2:setShaderVector( 1, 0, 0, 0, 0 )
 	Fill2:setShaderVector( 2, 0, 1, 0, 0 )
@@ -133,7 +133,7 @@ CoD.TabletIcePickHackDetectionBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	warning:setAlpha( 0 )
 	warning:setText( Engine[0xF9F1239CFD921FE]( "mpui/out_of_bounds_warning" ) )
 	warning:setTTF( "0arame_mono_stencil" )
-	warning:setMaterial( LUI.UIImage.GetCachedMaterial( 0x336C1AE82B1520A ) )
+	warning:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield_add" ) )
 	warning:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	warning:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
 	self:addElement( warning )

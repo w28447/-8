@@ -75,13 +75,13 @@
         "#hash_e0e8c9de7086f843"
     ],
     "viewmodel": [
-        "#hash_443004f8a11546cc"
+        "#wpn_t8_zm_tower_shield_katar_lvl2_view"
     ],
     "worldModel": [
-        "#hash_543e4844936c1007"
+        "#wpn_t8_zm_tower_shield_katar_lvl2_world"
     ],
     "stowedmodel": [
-        "#hash_543e4844936c1007"
+        "#wpn_t8_zm_tower_shield_katar_lvl2_world"
     ],
     "gadgetIconAvailable": "#hash_b8d988b1e53e3509",
     "gadgetIconUnavailable": "#hash_b8d988b1e53e3509",

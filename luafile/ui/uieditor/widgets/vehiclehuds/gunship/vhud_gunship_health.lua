@@ -12,7 +12,7 @@ CoD.vhud_gunship_health.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local VehicleHpBg = LUI.UIImage.new( 1, 1, -351, -49, 1, 1, -179, -1 )
 	VehicleHpBg:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_hp_bg" ) )
-	VehicleHpBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	VehicleHpBg:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	VehicleHpBg:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( VehicleHpBg )
 	self.VehicleHpBg = VehicleHpBg

@@ -221,13 +221,13 @@ function function_cfa8ca16( localclientnum, oldval, newval, bnewent, binitialsna
     switch ( newval )
     {
         case 1:
-            self.mdl_base = #"hash_678aaf8e37498e9a";
+            self.mdl_base = #"p8_fxanim_zm_zod_boss_eye_01_mod";
             break;
         case 2:
-            self.mdl_base = #"hash_32a51dafb1c7344f";
+            self.mdl_base = #"p8_fxanim_zm_zod_boss_eye_02_mod";
             break;
         case 3:
-            self.mdl_base = #"hash_597bdc83a7c9e8c";
+            self.mdl_base = #"p8_fxanim_zm_zod_boss_eye_03_mod";
             break;
     }
 }
@@ -259,11 +259,11 @@ function function_2944b5ce( localclientnum, oldval, newval, bnewent, binitialsna
         {
             self.var_9c3d3ec2 = util::playfxontag( localclientnum, level._effect[ #"hash_4ae2fe21468d6415" ], self, "tag_origin" );
         }
-        else if ( self.mdl_base === #"hash_32a51dafb1c7344f" )
+        else if ( self.mdl_base === #"p8_fxanim_zm_zod_boss_eye_02_mod" )
         {
             self.var_9c3d3ec2 = util::playfxontag( localclientnum, level._effect[ #"hash_3a7e3d711927a976" ], self, "tag_origin" );
         }
-        else if ( self.mdl_base === #"hash_597bdc83a7c9e8c" )
+        else if ( self.mdl_base === #"p8_fxanim_zm_zod_boss_eye_03_mod" )
         {
             self.var_9c3d3ec2 = util::playfxontag( localclientnum, level._effect[ #"hash_3a7e3e711927ab29" ], self, "tag_origin" );
         }
@@ -277,11 +277,11 @@ function function_2944b5ce( localclientnum, oldval, newval, bnewent, binitialsna
             self.var_ad1388ef = 1;
             self playrenderoverridebundle( #"hash_131484bd233d42ed" );
             
-            if ( self.mdl_base == #"hash_32a51dafb1c7344f" )
+            if ( self.mdl_base == #"p8_fxanim_zm_zod_boss_eye_02_mod" )
             {
                 self.var_7a88b8b5 = util::playfxontag( localclientnum, level._effect[ #"hash_18e0755b35d6862f" ], self, "tag_origin" );
             }
-            else if ( self.mdl_base == #"hash_597bdc83a7c9e8c" )
+            else if ( self.mdl_base == #"p8_fxanim_zm_zod_boss_eye_03_mod" )
             {
                 self.var_7a88b8b5 = util::playfxontag( localclientnum, level._effect[ #"hash_18e0745b35d6847c" ], self, "tag_origin" );
             }
@@ -312,11 +312,11 @@ function function_9732f718( localclientnum, oldval, newval, bnewent, binitialsna
     
     if ( newval == 1 )
     {
-        if ( self.mdl_base == #"hash_32a51dafb1c7344f" )
+        if ( self.mdl_base == #"p8_fxanim_zm_zod_boss_eye_02_mod" )
         {
             self.var_aafc7e9d = util::playfxontag( localclientnum, level._effect[ #"hash_5da2f8ba463838a7" ], self, "tag_origin" );
         }
-        else if ( self.mdl_base == #"hash_597bdc83a7c9e8c" )
+        else if ( self.mdl_base == #"p8_fxanim_zm_zod_boss_eye_03_mod" )
         {
             self.var_aafc7e9d = util::playfxontag( localclientnum, level._effect[ #"hash_5d9fc9ba4635b2f3" ], self, "tag_origin" );
         }
@@ -327,11 +327,11 @@ function function_9732f718( localclientnum, oldval, newval, bnewent, binitialsna
     }
     else if ( newval == 2 )
     {
-        if ( self.mdl_base == #"hash_32a51dafb1c7344f" )
+        if ( self.mdl_base == #"p8_fxanim_zm_zod_boss_eye_02_mod" )
         {
             self.var_aafc7e9d = util::playfxontag( localclientnum, level._effect[ #"hash_5c6beca89bab7a09" ], self, "tag_origin" );
         }
-        else if ( self.mdl_base == #"hash_597bdc83a7c9e8c" )
+        else if ( self.mdl_base == #"p8_fxanim_zm_zod_boss_eye_03_mod" )
         {
             self.var_aafc7e9d = util::playfxontag( localclientnum, level._effect[ #"hash_579039a371888d48" ], self, "tag_origin" );
         }
@@ -342,11 +342,11 @@ function function_9732f718( localclientnum, oldval, newval, bnewent, binitialsna
     }
     else if ( newval == 3 )
     {
-        if ( self.mdl_base == #"hash_32a51dafb1c7344f" )
+        if ( self.mdl_base == #"p8_fxanim_zm_zod_boss_eye_02_mod" )
         {
             self.var_aafc7e9d = util::playfxontag( localclientnum, level._effect[ #"hash_5c6beca89bab7a09" ], self, "tag_origin" );
         }
-        else if ( self.mdl_base == #"hash_597bdc83a7c9e8c" )
+        else if ( self.mdl_base == #"p8_fxanim_zm_zod_boss_eye_03_mod" )
         {
             self.var_aafc7e9d = util::playfxontag( localclientnum, level._effect[ #"hash_5c68c9a89ba908b9" ], self, "tag_origin" );
         }
@@ -381,11 +381,11 @@ function function_3feb7449( localclientnum, oldval, newval, bnewent, binitialsna
         {
             self.var_8107b86f = playfx( localclientnum, level._effect[ #"hash_43b082a97f3b9f23" ], self.origin, anglestoforward( self.angles ) );
         }
-        else if ( self.mdl_base == #"hash_32a51dafb1c7344f" )
+        else if ( self.mdl_base == #"p8_fxanim_zm_zod_boss_eye_02_mod" )
         {
             self.var_8107b86f = playfx( localclientnum, level._effect[ #"hash_761d24bd90a968" ], self.origin, anglestoforward( self.angles ) );
         }
-        else if ( self.mdl_base == #"hash_597bdc83a7c9e8c" )
+        else if ( self.mdl_base == #"p8_fxanim_zm_zod_boss_eye_03_mod" )
         {
             self.var_8107b86f = playfx( localclientnum, level._effect[ #"hash_761e24bd90ab1b" ], self.origin, anglestoforward( self.angles ) );
         }
@@ -409,13 +409,13 @@ function function_3feb7449( localclientnum, oldval, newval, bnewent, binitialsna
         return;
     }
     
-    if ( self.mdl_base === #"hash_32a51dafb1c7344f" )
+    if ( self.mdl_base === #"p8_fxanim_zm_zod_boss_eye_02_mod" )
     {
         self.var_797217c7 = playfx( localclientnum, level._effect[ #"hash_4d839750cbef629d" ], self.origin, anglestoforward( self.angles ) );
         return;
     }
     
-    if ( self.mdl_base === #"hash_597bdc83a7c9e8c" )
+    if ( self.mdl_base === #"p8_fxanim_zm_zod_boss_eye_03_mod" )
     {
         self.var_797217c7 = playfx( localclientnum, level._effect[ #"hash_4d839650cbef60ea" ], self.origin, anglestoforward( self.angles ) );
         return;
@@ -441,29 +441,29 @@ function function_52672d29( localclientnum, oldval, newval, bnewent, binitialsna
 {
     if ( newval == 1 )
     {
-        if ( self.model == #"hash_678aaf8e37498e9a" )
+        if ( self.model == #"p8_fxanim_zm_zod_boss_eye_01_mod" )
         {
-            forcestreamxmodel( #"hash_472c07eec6e91873" );
+            forcestreamxmodel( #"p8_fxanim_zm_zod_boss_eye_01_crack_mod" );
         }
-        else if ( self.model == #"hash_472c07eec6e91873" )
+        else if ( self.model == #"p8_fxanim_zm_zod_boss_eye_01_crack_mod" )
         {
-            forcestreamxmodel( #"hash_6171eeb75fd1389a" );
+            forcestreamxmodel( #"p8_fxanim_zm_zod_boss_eye_01_break_mod" );
         }
-        else if ( self.model == #"hash_32a51dafb1c7344f" )
+        else if ( self.model == #"p8_fxanim_zm_zod_boss_eye_02_mod" )
         {
-            forcestreamxmodel( #"hash_46aa8073bbd2e3d2" );
+            forcestreamxmodel( #"p8_fxanim_zm_zod_boss_eye_02_crack_mod" );
         }
-        else if ( self.model == #"hash_46aa8073bbd2e3d2" )
+        else if ( self.model == #"p8_fxanim_zm_zod_boss_eye_02_crack_mod" )
         {
-            forcestreamxmodel( #"hash_5af2bec2a3aa53af" );
+            forcestreamxmodel( #"p8_fxanim_zm_zod_boss_eye_02_break_mod" );
         }
-        else if ( self.model == #"hash_597bdc83a7c9e8c" )
+        else if ( self.model == #"p8_fxanim_zm_zod_boss_eye_03_mod" )
         {
-            forcestreamxmodel( #"hash_4458b3c865174731" );
+            forcestreamxmodel( #"p8_fxanim_zm_zod_boss_eye_03_crack_mod" );
         }
-        else if ( self.model == #"hash_4458b3c865174731" )
+        else if ( self.model == #"p8_fxanim_zm_zod_boss_eye_03_crack_mod" )
         {
-            forcestreamxmodel( #"hash_5d304a67420d3dcc" );
+            forcestreamxmodel( #"p8_fxanim_zm_zod_boss_eye_03_break_mod" );
         }
         
         return;
@@ -471,73 +471,73 @@ function function_52672d29( localclientnum, oldval, newval, bnewent, binitialsna
     
     if ( newval == 2 )
     {
-        if ( self.model == #"hash_678aaf8e37498e9a" )
+        if ( self.model == #"p8_fxanim_zm_zod_boss_eye_01_mod" )
         {
-            forcestreamxmodel( #"hash_678aaf8e37498e9a" );
+            forcestreamxmodel( #"p8_fxanim_zm_zod_boss_eye_01_mod" );
         }
-        else if ( self.model == #"hash_32a51dafb1c7344f" )
+        else if ( self.model == #"p8_fxanim_zm_zod_boss_eye_02_mod" )
         {
-            forcestreamxmodel( #"hash_32a51dafb1c7344f" );
+            forcestreamxmodel( #"p8_fxanim_zm_zod_boss_eye_02_mod" );
         }
-        else if ( self.model == #"hash_597bdc83a7c9e8c" )
+        else if ( self.model == #"p8_fxanim_zm_zod_boss_eye_03_mod" )
         {
-            forcestreamxmodel( #"hash_597bdc83a7c9e8c" );
+            forcestreamxmodel( #"p8_fxanim_zm_zod_boss_eye_03_mod" );
         }
         
         return;
     }
     
-    if ( self.model == #"hash_678aaf8e37498e9a" )
+    if ( self.model == #"p8_fxanim_zm_zod_boss_eye_01_mod" )
     {
-        stopforcestreamingxmodel( #"hash_678aaf8e37498e9a" );
+        stopforcestreamingxmodel( #"p8_fxanim_zm_zod_boss_eye_01_mod" );
         return;
     }
     
-    if ( self.model == #"hash_32a51dafb1c7344f" )
+    if ( self.model == #"p8_fxanim_zm_zod_boss_eye_02_mod" )
     {
-        stopforcestreamingxmodel( #"hash_32a51dafb1c7344f" );
+        stopforcestreamingxmodel( #"p8_fxanim_zm_zod_boss_eye_02_mod" );
         return;
     }
     
-    if ( self.model == #"hash_597bdc83a7c9e8c" )
+    if ( self.model == #"p8_fxanim_zm_zod_boss_eye_03_mod" )
     {
-        stopforcestreamingxmodel( #"hash_597bdc83a7c9e8c" );
+        stopforcestreamingxmodel( #"p8_fxanim_zm_zod_boss_eye_03_mod" );
         return;
     }
     
-    if ( self.model == #"hash_472c07eec6e91873" )
+    if ( self.model == #"p8_fxanim_zm_zod_boss_eye_01_crack_mod" )
     {
-        stopforcestreamingxmodel( #"hash_472c07eec6e91873" );
+        stopforcestreamingxmodel( #"p8_fxanim_zm_zod_boss_eye_01_crack_mod" );
         return;
     }
     
-    if ( self.model == #"hash_6171eeb75fd1389a" )
+    if ( self.model == #"p8_fxanim_zm_zod_boss_eye_01_break_mod" )
     {
-        stopforcestreamingxmodel( #"hash_6171eeb75fd1389a" );
+        stopforcestreamingxmodel( #"p8_fxanim_zm_zod_boss_eye_01_break_mod" );
         return;
     }
     
-    if ( self.model == #"hash_46aa8073bbd2e3d2" )
+    if ( self.model == #"p8_fxanim_zm_zod_boss_eye_02_crack_mod" )
     {
-        stopforcestreamingxmodel( #"hash_46aa8073bbd2e3d2" );
+        stopforcestreamingxmodel( #"p8_fxanim_zm_zod_boss_eye_02_crack_mod" );
         return;
     }
     
-    if ( self.model == #"hash_5af2bec2a3aa53af" )
+    if ( self.model == #"p8_fxanim_zm_zod_boss_eye_02_break_mod" )
     {
-        stopforcestreamingxmodel( #"hash_5af2bec2a3aa53af" );
+        stopforcestreamingxmodel( #"p8_fxanim_zm_zod_boss_eye_02_break_mod" );
         return;
     }
     
-    if ( self.model == #"hash_4458b3c865174731" )
+    if ( self.model == #"p8_fxanim_zm_zod_boss_eye_03_crack_mod" )
     {
-        stopforcestreamingxmodel( #"hash_4458b3c865174731" );
+        stopforcestreamingxmodel( #"p8_fxanim_zm_zod_boss_eye_03_crack_mod" );
         return;
     }
     
-    if ( self.model == #"hash_5d304a67420d3dcc" )
+    if ( self.model == #"p8_fxanim_zm_zod_boss_eye_03_break_mod" )
     {
-        stopforcestreamingxmodel( #"hash_5d304a67420d3dcc" );
+        stopforcestreamingxmodel( #"p8_fxanim_zm_zod_boss_eye_03_break_mod" );
     }
 }
 
@@ -553,11 +553,11 @@ function function_f0b8ee2e( localclientnum, oldval, newval, bnewent, binitialsna
         {
             self.var_526f3513 = util::playfxontag( localclientnum, level._effect[ #"hash_5c21a90a3a13ab3a" ], self, "tag_origin" );
         }
-        else if ( self.mdl_base === #"hash_32a51dafb1c7344f" )
+        else if ( self.mdl_base === #"p8_fxanim_zm_zod_boss_eye_02_mod" )
         {
             self.var_526f3513 = util::playfxontag( localclientnum, level._effect[ #"hash_2568e522a63ee793" ], self, "tag_origin" );
         }
-        else if ( self.mdl_base === #"hash_597bdc83a7c9e8c" )
+        else if ( self.mdl_base === #"p8_fxanim_zm_zod_boss_eye_03_mod" )
         {
             self.var_526f3513 = util::playfxontag( localclientnum, level._effect[ #"hash_2568e422a63ee5e0" ], self, "tag_origin" );
         }

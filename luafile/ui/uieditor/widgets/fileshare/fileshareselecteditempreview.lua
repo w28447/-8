@@ -37,7 +37,7 @@ CoD.FileshareSelectedItemPreview.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	local AuthorName = LUI.UIText.new( 0.02, 0.99, 16, -16, 1, 1, -78, -42 )
 	AuthorName:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	AuthorName:setTTF( "ttmussels_regular" )
-	AuthorName:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
+	AuthorName:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow" ) )
 	AuthorName:setShaderVector( 0, 0.04, 0, 0, 0 )
 	AuthorName:setShaderVector( 1, 0.02, 0, 0, 0 )
 	AuthorName:setShaderVector( 2, 1, 0, 0, 0 )

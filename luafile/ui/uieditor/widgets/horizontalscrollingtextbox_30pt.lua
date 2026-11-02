@@ -10,7 +10,7 @@ CoD.horizontalScrollingTextBox_30pt.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local textBox = LUI.UIText.new( 0, 0, 0, 900, 1, 1, -45, 0 )
 	textBox:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	textBox:setTTF( "default" )
-	textBox:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	textBox:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	textBox:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	textBox:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
 	self:addElement( textBox )

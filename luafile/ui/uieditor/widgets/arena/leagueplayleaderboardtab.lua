@@ -37,7 +37,7 @@ CoD.LeaguePlayLeaderboardTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local FuiBox02Right = LUI.UIImage.new( 0, 0, 1638, 1672, 0, 0, 159, 125 )
 	FuiBox02Right:setAlpha( 0.2 )
 	FuiBox02Right:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_fui_box01" ) )
-	FuiBox02Right:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	FuiBox02Right:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	FuiBox02Right:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FuiBox02Right )
 	self.FuiBox02Right = FuiBox02Right
@@ -53,7 +53,7 @@ CoD.LeaguePlayLeaderboardTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local BGDotPatternLarge2 = LUI.UIImage.new( 0, 0, 240, 1677, 0, 0, 214, 218 )
 	BGDotPatternLarge2:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline_tiled" ) )
-	BGDotPatternLarge2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	BGDotPatternLarge2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	BGDotPatternLarge2:setShaderVector( 0, 0, 0, 0, 0 )
 	BGDotPatternLarge2:setupNineSliceShader( 32, 4 )
 	self:addElement( BGDotPatternLarge2 )
@@ -62,7 +62,7 @@ CoD.LeaguePlayLeaderboardTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local Line = LUI.UIImage.new( 0, 0, 1235.5, 1239.5, 0, 0, 299.5, 907.5 )
 	Line:setAlpha( 0.05 )
 	Line:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
-	Line:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	Line:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	Line:setShaderVector( 0, 0, 0, 0, 0 )
 	Line:setupNineSliceShader( 4, 8 )
 	self:addElement( Line )

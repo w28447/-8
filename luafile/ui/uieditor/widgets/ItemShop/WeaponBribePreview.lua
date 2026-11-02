@@ -15,7 +15,7 @@ CoD.WeaponBribePreview.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	TitlePC:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	TitlePC:setText( Engine[0xF9F1239CFD921FE]( 0xBAB331BCEF6175C ) )
 	TitlePC:setTTF( "ttmussels_regular" )
-	TitlePC:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	TitlePC:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	TitlePC:setLetterSpacing( 1 )
 	TitlePC:setAlignment( Enum.LUIAlignment[0x830CFD395E6AA0A] )
 	TitlePC:setBackingType( 2 )
@@ -23,7 +23,7 @@ CoD.WeaponBribePreview.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	TitlePC:setBackingAlpha( 0.8 )
 	TitlePC:setBackingXPadding( 6 )
 	TitlePC:setBackingYPadding( 2 )
-	TitlePC:setBackingMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	TitlePC:setBackingMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	TitlePC:setBackingShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( TitlePC )
 	self.TitlePC = TitlePC

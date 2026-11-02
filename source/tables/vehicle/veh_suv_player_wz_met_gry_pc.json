@@ -50,7 +50,7 @@
     "skidSpeedMin": 250,
     "skidSpeedMax": 600,
     "peelSpeedMax": 176,
-    "model": "#hash_66bedeec4d199848",
+    "model": "#veh_t8_civ_suv_large_warzone_met_gry",
     "deathModel": "#veh_t8_civ_suv_large_dead_met_gry",
     "soundDef": "#veh_suv_wz",
     "compassIconMaterial": "#compass_vehicle_suv",

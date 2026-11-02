@@ -46,7 +46,7 @@ CoD.DirectorLaboratoryButtonElixerOffer.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	ElixerOffer.__String_Reference()
 	ElixerOffer:setTTF( "ttmussels_regular" )
-	ElixerOffer:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	ElixerOffer:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	ElixerOffer:setLetterSpacing( 2 )
 	ElixerOffer:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	ElixerOffer:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )

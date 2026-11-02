@@ -25,7 +25,7 @@ CoD.TabletTak5_HealthBonus.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local BoostBackingGlow = LUI.UIImage.new( 0, 0, -1, 107, 0, 0, -9.5, 38.5 )
 	BoostBackingGlow:setImage( RegisterImage( "uie_ui_hud_tak5_score_stripe_glow" ) )
-	BoostBackingGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	BoostBackingGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	BoostBackingGlow:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( BoostBackingGlow )
 	self.BoostBackingGlow = BoostBackingGlow
@@ -56,7 +56,7 @@ CoD.TabletTak5_HealthBonus.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local ScorePip = LUI.UIImage.new( 0, 0, 0, 10, 0, 0, -9.5, 0.5 )
 	ScorePip:setImage( RegisterImage( "uie_ui_hud_tak5_score_linker" ) )
-	ScorePip:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	ScorePip:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	ScorePip:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( ScorePip )
 	self.ScorePip = ScorePip
@@ -90,7 +90,7 @@ CoD.TabletTak5_HealthBonus.__resetProperties = function ( f3_arg0 )
 	f3_arg0.BonusText:setAlpha( 1 )
 	f3_arg0.BoostBackingGlow:setAlpha( 1 )
 	f3_arg0.ScorePip:setAlpha( 1 )
-	f3_arg0.ScorePip:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	f3_arg0.ScorePip:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	f3_arg0.ScorePip:setShaderVector( 0, 2, 0, 0, 0 )
 	f3_arg0.BoostBacking2:setAlpha( 0.5 )
 	f3_arg0.BoostBacking2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scanlines" ) )
@@ -143,7 +143,7 @@ CoD.TabletTak5_HealthBonus.__clipsPerState = {
 			
 			f4_arg0.ScorePip:completeAnimation()
 			f4_arg0.ScorePip:setAlpha( 1 )
-			f4_arg0.ScorePip:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f4_arg0.ScorePip:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f4_arg0.ScorePip:setShaderVector( 0, 2, 0, 0, 0 )
 			f4_local0( f4_arg0.ScorePip )
 			f4_arg0.nextClip = "DefaultClip"
@@ -344,7 +344,7 @@ CoD.TabletTak5_HealthBonus.__clipsPerState = {
 			
 			f18_arg0.ScorePip:completeAnimation()
 			f18_arg0.ScorePip:setAlpha( 1 )
-			f18_arg0.ScorePip:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f18_arg0.ScorePip:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f18_arg0.ScorePip:setShaderVector( 0, 3, 0, 0, 0 )
 			f18_local3( f18_arg0.ScorePip )
 		end

@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_random_set_1_5_crash",
     "type": "#tag",
-    "material": "#hash_1555ed746284fd8e",
+    "material": "#vd/mtl_loot_ui_icon_tags_random_set_1_5_crash",
     "bundle": {
         "type": "#tag",
         "title": "localized18#hash_1ce3489a9103e5a",

@@ -25,7 +25,7 @@ function __init__()
         return;
     }
     
-    clientfield::register( "world", "newtonian_negation", 1, 1, "int", &function_8622e664, 0, 0 );
+    clientfield::register( "world", "newtonian_negation", 1, 1, "int", &invert_gravity, 0, 0 );
     bgb::register( #"zm_bgb_newtonian_negation", "time" );
 }
 
@@ -33,7 +33,7 @@ function __init__()
 // Params 7
 // Checksum 0xdfafc148, Offset: 0x1a8
 // Size: 0xbc
-function function_8622e664( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function invert_gravity( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     if ( newval )
     {

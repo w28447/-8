@@ -5830,13 +5830,13 @@
         {
             "value": 237,
             "next": 92,
-            "name": "#hash_3d7dba6b571552d9",
+            "name": "#fly_emote_cardboardbox_intro_f",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3d7dba6b571552d9",
+                    "name": "#fly_emote_cardboardbox_intro_f",
                     "assetId": "#fly/emotes/cardboard_intro_f.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -5879,13 +5879,13 @@
         {
             "value": 493,
             "next": 129,
-            "name": "#hash_3d7dbf6b57155b58",
+            "name": "#fly_emote_cardboardbox_intro_m",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3d7dbf6b57155b58",
+                    "name": "#fly_emote_cardboardbox_intro_m",
                     "assetId": "#fly/emotes/cardboard_intro_m.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -6222,13 +6222,13 @@
         {
             "value": 130,
             "next": 65535,
-            "name": "#hash_68ae62590e98960b",
+            "name": "#fly_emote_coco_music_lp",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_68ae62590e98960b",
+                    "name": "#fly_emote_coco_music_lp",
                     "assetId": "#hash_5326737181d22a71",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -23215,13 +23215,13 @@
         {
             "value": 180,
             "next": 404,
-            "name": "#hash_70959d519e89198d",
+            "name": "#fly_emote_super_float_lp",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_70959d519e89198d",
+                    "name": "#fly_emote_super_float_lp",
                     "assetId": "#hash_5f3dac4c70be04f8",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",

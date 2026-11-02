@@ -113,7 +113,7 @@ CoD.vhud_tank_robot_framesquare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	DotlineH:setAlpha( 0.05 )
 	DotlineH:setZRot( 90 )
 	DotlineH:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
-	DotlineH:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	DotlineH:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	DotlineH:setShaderVector( 0, 0, 0, 0, 0 )
 	DotlineH:setupNineSliceShader( 4, 8 )
 	self:addElement( DotlineH )
@@ -122,7 +122,7 @@ CoD.vhud_tank_robot_framesquare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local DotLineV = LUI.UIImage.new( 0.5, 0.5, -2, 2, 0, 0, -4, 650 )
 	DotLineV:setAlpha( 0.05 )
 	DotLineV:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
-	DotLineV:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	DotLineV:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	DotLineV:setShaderVector( 0, 0, 0, 0, 0 )
 	DotLineV:setupNineSliceShader( 4, 8 )
 	self:addElement( DotLineV )
@@ -146,7 +146,7 @@ CoD.vhud_tank_robot_framesquare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	FuiBox01Left:setAlpha( 0.2 )
 	FuiBox01Left:setYRot( 180 )
 	FuiBox01Left:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_fui_box01" ) )
-	FuiBox01Left:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	FuiBox01Left:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	FuiBox01Left:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FuiBox01Left )
 	self.FuiBox01Left = FuiBox01Left
@@ -154,7 +154,7 @@ CoD.vhud_tank_robot_framesquare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local FuiBox01Right = LUI.UIImage.new( 0.5, 0.5, 290, 324, 1, 1, -525, -559 )
 	FuiBox01Right:setAlpha( 0.2 )
 	FuiBox01Right:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_fui_box01" ) )
-	FuiBox01Right:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	FuiBox01Right:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	FuiBox01Right:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FuiBox01Right )
 	self.FuiBox01Right = FuiBox01Right
@@ -176,7 +176,7 @@ CoD.vhud_tank_robot_framesquare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	ringTR:setAlpha( 0.2 )
 	ringTR:setScale( 1.2, 1.2 )
 	ringTR:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_ring" ) )
-	ringTR:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	ringTR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	ringTR:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ringTR )
 	self.ringTR = ringTR
@@ -186,7 +186,7 @@ CoD.vhud_tank_robot_framesquare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	ringBL:setAlpha( 0.2 )
 	ringBL:setScale( 1.2, 1.2 )
 	ringBL:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_ring" ) )
-	ringBL:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	ringBL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	ringBL:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ringBL )
 	self.ringBL = ringBL
@@ -196,7 +196,7 @@ CoD.vhud_tank_robot_framesquare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	ringBR:setAlpha( 0.2 )
 	ringBR:setScale( 1.2, 1.2 )
 	ringBR:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_ring" ) )
-	ringBR:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	ringBR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	ringBR:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ringBR )
 	self.ringBR = ringBR
@@ -206,7 +206,7 @@ CoD.vhud_tank_robot_framesquare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	ringTL:setAlpha( 0.2 )
 	ringTL:setScale( 1.2, 1.2 )
 	ringTL:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_ring" ) )
-	ringTL:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	ringTL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	ringTL:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ringTL )
 	self.ringTL = ringTL

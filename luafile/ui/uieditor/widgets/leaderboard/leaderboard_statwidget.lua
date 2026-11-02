@@ -23,7 +23,7 @@ CoD.Leaderboard_StatWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	btnDisplayTextStroke:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	btnDisplayTextStroke:setText( "" )
 	btnDisplayTextStroke:setTTF( "ttmussels_regular" )
-	btnDisplayTextStroke:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
+	btnDisplayTextStroke:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow" ) )
 	btnDisplayTextStroke:setShaderVector( 0, 0.06, 0, 0, 0 )
 	btnDisplayTextStroke:setShaderVector( 1, 0.02, 0, 0, 0 )
 	btnDisplayTextStroke:setShaderVector( 2, 1, 0, 0, 0 )

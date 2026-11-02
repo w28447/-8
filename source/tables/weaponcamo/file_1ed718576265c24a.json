@@ -341,7 +341,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_3feffb4941ceb158",
+                            "camoMaterial": "#mc/mtl_t8_camo_misc_red",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -367,7 +367,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_1501bef80dbd31e9",
+                            "camoMaterial": "#mc/mtl_t8_camo_misc_blue",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -393,7 +393,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_20c35bfd7f36a7a8",
+                            "camoMaterial": "#mc/mtl_t8_camo_misc_green",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -419,7 +419,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_6cecc98aaed2ca75",
+                            "camoMaterial": "#mc/mtl_t8_camo_misc_yellow",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -445,7 +445,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_42424d3e5375e5ff",
+                            "camoMaterial": "#mc/mtl_t8_camo_misc_orange",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -471,7 +471,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_5b65600bf2b948ab",
+                            "camoMaterial": "#mc/mtl_t8_camo_misc_purple",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,

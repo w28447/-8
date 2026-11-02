@@ -42,7 +42,7 @@ CoD.CommonToolTipBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	ArrowAdd:setAlpha( 0 )
 	ArrowAdd:setZRot( -90 )
 	ArrowAdd:setImage( RegisterImage( "uie_ui_menu_social_common_arrow" ) )
-	ArrowAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	ArrowAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	ArrowAdd:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ArrowAdd )
 	self.ArrowAdd = ArrowAdd

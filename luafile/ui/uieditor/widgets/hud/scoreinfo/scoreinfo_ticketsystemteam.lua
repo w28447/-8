@@ -36,7 +36,7 @@ CoD.ScoreInfo_TicketSystemTeam.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local TeamLivesIcon = LUI.UIImage.new( 0, 0, 2, 36, 0, 0, -23.5, 10.5 )
 	TeamLivesIcon:setImage( RegisterImage( "uie_ui_hud_core_objective_widget_person" ) )
-	TeamLivesIcon:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	TeamLivesIcon:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	TeamLivesIcon:setShaderVector( 0, 1.4, 0, 0, 0 )
 	self:addElement( TeamLivesIcon )
 	self.TeamLivesIcon = TeamLivesIcon
@@ -53,7 +53,7 @@ CoD.ScoreInfo_TicketSystemTeam.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	TeamLivesCount2:setAlpha( 0.18 )
 	TeamLivesCount2:setText( 88 )
 	TeamLivesCount2:setTTF( "0arame_mono_stencil" )
-	TeamLivesCount2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	TeamLivesCount2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	TeamLivesCount2:setShaderVector( 0, 1, 0, 0, 0 )
 	TeamLivesCount2:setShaderVector( 1, 0, 0, 0, 0 )
 	TeamLivesCount2:setShaderVector( 2, 1, 1, 1, 1 )
@@ -66,7 +66,7 @@ CoD.ScoreInfo_TicketSystemTeam.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local TeamLivesCount = LUI.UIText.new( 0, 0, 39, 78, 0, 0, -19, 7 )
 	TeamLivesCount:setText( 88 )
 	TeamLivesCount:setTTF( "0arame_mono_stencil" )
-	TeamLivesCount:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	TeamLivesCount:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	TeamLivesCount:setShaderVector( 0, 0.68, 0, 0, 0 )
 	TeamLivesCount:setShaderVector( 1, 0, 0, 0, 0 )
 	TeamLivesCount:setShaderVector( 2, 1, 1, 1, 0.4 )

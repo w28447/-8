@@ -40,7 +40,7 @@ CoD.SupplyChainContentImage.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local OutfitPalette = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	OutfitPalette:setAlpha( 0 )
-	OutfitPalette:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	OutfitPalette:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	OutfitPalette:setShaderVector( 0, 0.5, 0, 0, 0 )
 	OutfitPalette:setShaderVector( 1, 1, 1, 0, 0 )
 	OutfitPalette:setShaderVector( 2, 0, 0, 0, 0 )
@@ -55,7 +55,7 @@ CoD.SupplyChainContentImage.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local Character = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	Character:setAlpha( 0 )
-	Character:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	Character:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	Character:setShaderVector( 0, 0.5, 1, 0, 0 )
 	Character:setShaderVector( 1, 1, 1, 0, 0 )
 	Character:setShaderVector( 2, 0, 0, 0, 0 )
@@ -70,7 +70,7 @@ CoD.SupplyChainContentImage.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local SignatureWeapon = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	SignatureWeapon:setAlpha( 0 )
-	SignatureWeapon:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	SignatureWeapon:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	SignatureWeapon:setShaderVector( 0, 0.5, 0.5, 0, 0 )
 	SignatureWeapon:setShaderVector( 1, 1, 1, 0, 0 )
 	SignatureWeapon:setShaderVector( 2, 0, 0, 0, 0 )

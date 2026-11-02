@@ -10,7 +10,7 @@ CoD.vhud_gunship_recticle_40mm.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local reticle40InnerBox = LUI.UIImage.new( 0, 0, 172, 266, 0, 0, 170, 264 )
 	reticle40InnerBox:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_reticle_40_inner_box" ) )
-	reticle40InnerBox:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	reticle40InnerBox:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	reticle40InnerBox:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( reticle40InnerBox )
 	self.reticle40InnerBox = reticle40InnerBox
@@ -21,14 +21,14 @@ CoD.vhud_gunship_recticle_40mm.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	reticle40InnerBox2:setZRot( 45 )
 	reticle40InnerBox2:setScale( 0.4, 0.4 )
 	reticle40InnerBox2:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_reticle_40_inner_box" ) )
-	reticle40InnerBox2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	reticle40InnerBox2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	reticle40InnerBox2:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( reticle40InnerBox2 )
 	self.reticle40InnerBox2 = reticle40InnerBox2
 	
 	local reticle40InnerDots = LUI.UIImage.new( 0, 0, 191, 247, 0, 0, 189, 245 )
 	reticle40InnerDots:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_reticle_40_inner_dots" ) )
-	reticle40InnerDots:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	reticle40InnerDots:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	reticle40InnerDots:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( reticle40InnerDots )
 	self.reticle40InnerDots = reticle40InnerDots

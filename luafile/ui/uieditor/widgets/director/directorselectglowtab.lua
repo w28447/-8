@@ -11,7 +11,7 @@ CoD.DirectorSelectGlowTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local TabBackingGlow = LUI.UIImage.new( 0, 1, -117, 117, 0, 1, -111, 111 )
 	TabBackingGlow:setAlpha( 0 )
 	TabBackingGlow:setImage( RegisterImage( "uie_ui_menu_common_tab_glow" ) )
-	TabBackingGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	TabBackingGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	TabBackingGlow:setShaderVector( 0, 1.36, 0, 0, 0 )
 	self:addElement( TabBackingGlow )
 	self.TabBackingGlow = TabBackingGlow
@@ -19,7 +19,7 @@ CoD.DirectorSelectGlowTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local TabBacking = LUI.UIImage.new( 0, 1, -66, 66, 0, 1, -30, 30 )
 	TabBacking:setAlpha( 0 )
 	TabBacking:setImage( RegisterImage( "uie_ui_menu_common_tab_backing" ) )
-	TabBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	TabBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	TabBacking:setShaderVector( 0, 0.9, 0, 0, 0 )
 	self:addElement( TabBacking )
 	self.TabBacking = TabBacking
@@ -58,7 +58,7 @@ CoD.DirectorSelectGlowTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	TextFocus:setBackingXPadding( 50 )
 	TextFocus:setBackingYPadding( 7 )
 	TextFocus:setBackingImage( RegisterImage( "uie_circularglow" ) )
-	TextFocus:setBackingMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	TextFocus:setBackingMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	TextFocus:setBackingShaderVector( 0, 1, 0, 0, 0 )
 	TextFocus:linkToElementModel( self, "tabName", true, function ( model )
 		local f3_local0 = model:get()
@@ -85,7 +85,7 @@ CoD.DirectorSelectGlowTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	cover:setRGB( 0, 0, 0 )
 	cover:setAlpha( 0 )
 	cover:setImage( RegisterImage( "uie_ui_director_tab_bar" ) )
-	cover:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	cover:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	cover:setShaderVector( 0, 3, 0, 0, 0 )
 	self:addElement( cover )
 	self.cover = cover

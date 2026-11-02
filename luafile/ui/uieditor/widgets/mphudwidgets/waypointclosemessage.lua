@@ -16,7 +16,7 @@ CoD.WaypointCloseMessage.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local text = LUI.UIText.new( 0.5, 0.5, -192, 192, 0.5, 0.5, -10.5, 10.5 )
 	text:setText( "" )
 	text:setTTF( "ttmussels_demibold" )
-	text:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
+	text:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow" ) )
 	text:setShaderVector( 0, 0.06, 0, 0, 0 )
 	text:setShaderVector( 1, 0.02, 0, 0, 0 )
 	text:setShaderVector( 2, 1, 0, 0, 0 )

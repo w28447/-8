@@ -11,7 +11,7 @@ CoD.ZMPlaylistSelected.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local equippedIcon = LUI.UIImage.new( 0.5, 0.5, -8.5, 8.5, 0.5, 0.5, -8, 8 )
 	equippedIcon:setRGB( 0.56, 0.68, 0.27 )
 	equippedIcon:setAlpha( 0 )
-	equippedIcon:setImage( RegisterImage( 0xB0337CBFC61A7A2 ) )
+	equippedIcon:setImage( RegisterImage( "t7_hud_cac_equipped_16" ) )
 	self:addElement( equippedIcon )
 	self.equippedIcon = equippedIcon
 	

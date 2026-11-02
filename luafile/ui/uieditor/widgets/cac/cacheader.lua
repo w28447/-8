@@ -14,7 +14,7 @@ CoD.CACHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local BGSceneBlur = LUI.UIImage.new( -0.1, 1.1, 0, 0, 0, 0, -15, 52 )
-	BGSceneBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	BGSceneBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	BGSceneBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	BGSceneBlur:registerEventHandler( "menu_loaded", function ( element, event )
 		local f2_local0 = nil
@@ -86,7 +86,7 @@ CoD.CACHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	TopBar2:setRGB( 0.46, 0.46, 0.51 )
 	TopBar2:setAlpha( 0.8 )
 	TopBar2:setImage( RegisterImage( "uie_ui_menu_cac_primary_button_top_bar" ) )
-	TopBar2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	TopBar2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	TopBar2:setShaderVector( 0, 2, 0, 0, 0 )
 	TopBar2:registerEventHandler( "menu_loaded", function ( element, event )
 		local f6_local0 = nil
@@ -200,7 +200,7 @@ CoD.CACHeader.__resetProperties = function ( f18_arg0 )
 	f18_arg0.allocation:setAlpha( 1 )
 	f18_arg0.TopBar2:setRGB( 0.46, 0.46, 0.51 )
 	f18_arg0.TopBar2:setAlpha( 0.8 )
-	f18_arg0.TopBar2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	f18_arg0.TopBar2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	f18_arg0.TopBar2:setShaderVector( 0, 2, 0, 0, 0 )
 end
 
@@ -227,7 +227,7 @@ CoD.CACHeader.__clipsPerState = {
 			f21_arg0.TopBar2:completeAnimation()
 			f21_arg0.TopBar2:setRGB( 0.83, 0.11, 0.01 )
 			f21_arg0.TopBar2:setAlpha( 1 )
-			f21_arg0.TopBar2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+			f21_arg0.TopBar2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 			f21_arg0.TopBar2:setShaderVector( 0, 2, 0, 0, 0 )
 			f21_arg0.clipFinished( f21_arg0.TopBar2 )
 		end
@@ -272,7 +272,7 @@ CoD.CACHeader.__clipsPerState = {
 			f27_arg0.TopBar2:completeAnimation()
 			f27_arg0.TopBar2:setRGB( 0.83, 0.11, 0.01 )
 			f27_arg0.TopBar2:setAlpha( 1 )
-			f27_arg0.TopBar2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+			f27_arg0.TopBar2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 			f27_arg0.TopBar2:setShaderVector( 0, 2, 0, 0, 0 )
 			f27_arg0.clipFinished( f27_arg0.TopBar2 )
 		end

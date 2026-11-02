@@ -309,7 +309,7 @@ function function_69a31ba8( localclientnum, oldval, newval, bnewent, binitialsna
     if ( !isdefined( level.var_7d33d419[ localclientnum ] ) )
     {
         var_5980d6d5 = struct::get( "s_cr_sp_pi" );
-        level.var_7d33d419[ localclientnum ] = util::spawn_model( localclientnum, #"hash_66161656c8ef4b2d", var_5980d6d5.origin, var_5980d6d5.angles );
+        level.var_7d33d419[ localclientnum ] = util::spawn_model( localclientnum, #"p8_fxanim_zm_esc_crane_skeleton_arm_mod", var_5980d6d5.origin, var_5980d6d5.angles );
     }
     
     level.var_7d33d419[ localclientnum ] endon( #"death" );

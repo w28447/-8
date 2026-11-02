@@ -11,7 +11,7 @@ CoD.TabletIcePickGadget_BgElementBinary.new = function ( f1_arg0, f1_arg1, f1_ar
 	local binary05 = LUI.UIImage.new( 0, 0, 30, 342, 0, 0, 14, 134 )
 	binary05:setAlpha( 0 )
 	binary05:setImage( RegisterImage( 0xD5F0B06802219AA ) )
-	binary05:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	binary05:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	binary05:setShaderVector( 0, 5, 0, 0, 0 )
 	self:addElement( binary05 )
 	self.binary05 = binary05
@@ -19,7 +19,7 @@ CoD.TabletIcePickGadget_BgElementBinary.new = function ( f1_arg0, f1_arg1, f1_ar
 	local binary04 = LUI.UIImage.new( 0, 0, 0, 632, 0, 0, 15, 135 )
 	binary04:setAlpha( 0 )
 	binary04:setImage( RegisterImage( 0xD5F0C0680221B5D ) )
-	binary04:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	binary04:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	binary04:setShaderVector( 0, 5, 0, 0, 0 )
 	self:addElement( binary04 )
 	self.binary04 = binary04
@@ -27,7 +27,7 @@ CoD.TabletIcePickGadget_BgElementBinary.new = function ( f1_arg0, f1_arg1, f1_ar
 	local binary03 = LUI.UIImage.new( 0, 0, 0, 336, 0, 0, -14, 106 )
 	binary03:setAlpha( 0 )
 	binary03:setImage( RegisterImage( 0xD5F050680220F78 ) )
-	binary03:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	binary03:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	binary03:setShaderVector( 0, 5, 0, 0, 0 )
 	self:addElement( binary03 )
 	self.binary03 = binary03
@@ -35,14 +35,14 @@ CoD.TabletIcePickGadget_BgElementBinary.new = function ( f1_arg0, f1_arg1, f1_ar
 	local binary02 = LUI.UIImage.new( 0, 0, 0, 656, 0, 0, 0, 120 )
 	binary02:setAlpha( 0 )
 	binary02:setImage( RegisterImage( 0xD5F06068022112B ) )
-	binary02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	binary02:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	binary02:setShaderVector( 0, 5, 0, 0, 0 )
 	self:addElement( binary02 )
 	self.binary02 = binary02
 	
 	local binary01 = LUI.UIImage.new( 0, 0, 0, 304, 0, 0, 0, 120 )
 	binary01:setImage( RegisterImage( 0xD5F080680221491 ) )
-	binary01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	binary01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	binary01:setShaderVector( 0, 5, 0, 0, 0 )
 	self:addElement( binary01 )
 	self.binary01 = binary01

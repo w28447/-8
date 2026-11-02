@@ -9,12 +9,12 @@ CoD.Warzone_EMP_Team.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local Backer = LUI.UIImage.new( 0, 0, 0, 316, 0, 0, 0, 88 )
-	Backer:setImage( RegisterImage( 0x568C48C6CDD9F9C ) )
+	Backer:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_emp_team_widget_backer" ) )
 	self:addElement( Backer )
 	self.Backer = Backer
 	
 	local EMP = LUI.UIImage.new( 0, 0, -3, 313, 0, 0, -3, 85 )
-	EMP:setImage( RegisterImage( 0xE9FA540601032BB ) )
+	EMP:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_emp_team_widget" ) )
 	EMP:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_emp" ) )
 	EMP:setShaderVector( 0, 35.93, 0, 0, 0 )
 	EMP:setShaderVector( 1, 0.83, 0, 0, 0 )

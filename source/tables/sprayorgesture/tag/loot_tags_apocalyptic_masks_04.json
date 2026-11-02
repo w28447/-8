@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_apocalyptic_masks_04",
     "type": "#tag",
-    "material": "#hash_2b1b54c4281db3de",
+    "material": "#vd/mtl_loot_ui_icon_tags_apocalyptic_masks_04",
     "bundle": {
         "type": "#tag",
         "title": "localized18#hash_65989f36da04cba7",

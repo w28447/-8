@@ -858,7 +858,7 @@ function private function_78a9fd5f( point )
     {
         if ( isdefined( point.itementry.weapon ) && point.itementry.weapon.name == #"waterballoon" )
         {
-            var_af7d7388 = array( #"wpn_t8_wz_water_balloon_red_world", #"wpn_t8_wz_water_balloon_blue_world", #"wpn_t8_wz_water_balloon_green_world", #"hash_6eb8f7ceb4627d9f", #"wpn_t8_wz_water_balloon_orange_world", #"wpn_t8_wz_water_balloon_purple_world" );
+            var_af7d7388 = array( #"wpn_t8_wz_water_balloon_red_world", #"wpn_t8_wz_water_balloon_blue_world", #"wpn_t8_wz_water_balloon_green_world", #"wpn_t8_wz_water_balloon_yellow_world", #"wpn_t8_wz_water_balloon_orange_world", #"wpn_t8_wz_water_balloon_purple_world" );
             return var_af7d7388[ randomintrange( 0, var_af7d7388.size ) ];
         }
         

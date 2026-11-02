@@ -18,7 +18,7 @@ CoD.DirectorLobbyMemberInternalCard.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local BackingBlur = LUI.UIImage.new( 0, 0, 0, 326, 0, 0, 0, 68 )
-	BackingBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	BackingBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	BackingBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BackingBlur )
 	self.BackingBlur = BackingBlur
@@ -31,7 +31,7 @@ CoD.DirectorLobbyMemberInternalCard.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local FocusGlow = LUI.UIImage.new( -0, 0.83, -50, 50, 0, 1, -34, 34 )
 	FocusGlow:setAlpha( 0 )
 	FocusGlow:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_small" ) )
-	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
+	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_multiplied_add" ) )
 	FocusGlow:setShaderVector( 0, 0, 0, 0.24, 0.25 )
 	FocusGlow:setShaderVector( 1, 1, 0, 0, 0 )
 	FocusGlow:setupNineSliceShader( 100, 100 )
@@ -48,7 +48,7 @@ CoD.DirectorLobbyMemberInternalCard.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local BackingBorder2 = LUI.UIImage.new( 0, 0, 0, 326, 0, 0, 0, 68 )
 	BackingBorder2:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
-	BackingBorder2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	BackingBorder2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	BackingBorder2:setShaderVector( 0, 0, 0, 0, 0 )
 	BackingBorder2:setupNineSliceShader( 196, 88 )
 	self:addElement( BackingBorder2 )
@@ -172,7 +172,7 @@ CoD.DirectorLobbyMemberInternalCard.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local FocusGlowSquare = LUI.UIImage.new( -0, 0.53, -34, 66, 0.26, 0.74, -50, 50 )
 	FocusGlowSquare:setAlpha( 0 )
 	FocusGlowSquare:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_small" ) )
-	FocusGlowSquare:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
+	FocusGlowSquare:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_multiplied_add" ) )
 	FocusGlowSquare:setShaderVector( 0, 0, 0, 0.24, 0.25 )
 	FocusGlowSquare:setShaderVector( 1, 1, 0, 0, 0 )
 	FocusGlowSquare:setupNineSliceShader( 100, 100 )

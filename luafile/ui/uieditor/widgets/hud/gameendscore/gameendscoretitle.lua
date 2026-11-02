@@ -20,7 +20,7 @@ CoD.GameEndScoreTitle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local Stripe = LUI.UIImage.new( 0, 0, 160.5, 796.5, 0, 0, 85, 109 )
 	Stripe:setAlpha( 0 )
-	Stripe:setImage( RegisterImage( 0xCB3E0A1AFAFFB92 ) )
+	Stripe:setImage( RegisterImage( "uie_ui_menu_mp_endgame_win_stripe" ) )
 	Stripe:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Stripe )
 	self.Stripe = Stripe
@@ -39,7 +39,7 @@ CoD.GameEndScoreTitle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	GlowBot:setAlpha( 0 )
 	GlowBot:setZRot( 180 )
 	GlowBot:setImage( RegisterImage( 0x1ADC9BCAB2CE792 ) )
-	GlowBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	GlowBot:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	GlowBot:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( GlowBot )
 	self.GlowBot = GlowBot
@@ -47,7 +47,7 @@ CoD.GameEndScoreTitle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local GlowTop = LUI.UIImage.new( 0, 0, 128, 828, 0, 0, -2, 50 )
 	GlowTop:setAlpha( 0 )
 	GlowTop:setImage( RegisterImage( 0x1ADC9BCAB2CE792 ) )
-	GlowTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	GlowTop:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	GlowTop:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( GlowTop )
 	self.GlowTop = GlowTop

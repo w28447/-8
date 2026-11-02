@@ -9,7 +9,7 @@ CoD.GameEndScore_MatchEndTimer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local blur = LUI.UIImage.new( 0, 0, 2, 374, 0, 0, 2, 67 )
-	blur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	blur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	blur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( blur )
 	self.blur = blur
@@ -71,7 +71,7 @@ CoD.GameEndScore_MatchEndTimer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local Timer = LUI.UIText.new( 0.5, 0.5, -180, 180, 0.5, 0.5, -14, 14 )
 	Timer:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	Timer:setTTF( "default" )
-	Timer:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	Timer:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	Timer:setShaderVector( 0, 0.6, 0, 0, 0 )
 	Timer:setShaderVector( 1, 0, 0, 0, 0 )
 	Timer:setShaderVector( 2, 0.8, 0.6, 0.4, 0.35 )

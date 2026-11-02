@@ -964,7 +964,7 @@ function function_e03ea502()
                         
                         if ( self.var_7e008e0c > 0 && !( isdefined( self.var_5288b14b ) && self.var_5288b14b ) )
                         {
-                            self playsoundtoplayer( #"hash_d71dba92ab8897c", self );
+                            self playsoundtoplayer( #"zmb_rush_lose_multi_big", self );
                             self thread function_a097cde6();
                         }
                     }

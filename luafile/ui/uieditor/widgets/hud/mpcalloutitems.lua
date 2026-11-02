@@ -24,7 +24,7 @@ CoD.MPCalloutItems.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	local CenterCircle = LUI.UIImage.new( 0.5, 0.5, -78, 78, 0.5, 0.5, -78, 78 )
 	CenterCircle:setImage( RegisterImage( "uie_ui_hud_radial_menu_center_circle" ) )
-	CenterCircle:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	CenterCircle:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	CenterCircle:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( CenterCircle )
 	self.CenterCircle = CenterCircle

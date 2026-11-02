@@ -2704,14 +2704,14 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 	if f134_arg1 == "contraband" then
 		f134_local0 = 0x25FC26BF505BC71
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0x954DFFAE6AF5CD5 )
-		f134_local4 = 0x16542A61FD09C0
+		f134_local4 = "uie_t7_blackmarket_promo_bundles"
 		f134_local22 = true
 		f134_local30 = true
 		f134_local29 = LuaEnum.LOOT_CAMERA_TYPE.CRATE
 	elseif f134_arg1 == "case" then
 		f134_local0 = 0xD004F2913090A
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0x5BF036E550C7E0B )
-		f134_local4 = 0x16542A61FD09C0
+		f134_local4 = "uie_t7_blackmarket_promo_bundles"
 		f134_local6 = "ui_icon_blackmarket_reserves_case_large"
 		f134_local22 = true
 		f134_local30 = true
@@ -2803,38 +2803,38 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 	elseif f134_arg1 == "promo_no_dupe_crate_1" then
 		f134_local0 = 0x717FF140F30014C
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0x49349434018253B, 1 )
-		f134_local6 = 0xB3DD6A07BF2BF1E
-		f134_local4 = 0xAD7059EF84C6745
+		f134_local6 = "ui_icon_blackmarket_reserves_no_duplicate_x01_large_preview"
+		f134_local4 = "ui_icon_blackmarket_reserves_no_duplicate_x01"
 		f134_local30 = true
 	elseif f134_arg1 == "promo_no_dupe_crate_2" then
 		f134_local0 = 0x717FF140F30014C
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0x49349434018253B, 2 )
-		f134_local6 = 0x94C56B4BDDDCA57
-		f134_local4 = 0xAD7029EF84C622C
+		f134_local6 = "ui_icon_blackmarket_reserves_no_duplicate_x02_large_preview"
+		f134_local4 = "ui_icon_blackmarket_reserves_no_duplicate_x02"
 		f134_local30 = true
 	elseif f134_arg1 == "promo_no_dupe_crate_3" then
 		f134_local0 = 0x717FF140F30014C
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0x49349434018253B, 3 )
-		f134_local6 = 0x8D7D55C5793D94
-		f134_local4 = 0xAD7039EF84C63DF
+		f134_local6 = "ui_icon_blackmarket_reserves_no_duplicate_x03_large_preview"
+		f134_local4 = "ui_icon_blackmarket_reserves_no_duplicate_x03"
 		f134_local30 = true
 	elseif f134_arg1 == "promo_no_dupe_crate_4" then
 		f134_local0 = 0x717FF140F30014C
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0x49349434018253B, 4 )
-		f134_local6 = 0x68D795994207A5D
-		f134_local4 = 0xAD7009EF84C5EC6
+		f134_local6 = "ui_icon_blackmarket_reserves_no_duplicate_x04_large_preview"
+		f134_local4 = "ui_icon_blackmarket_reserves_no_duplicate_x04"
 		f134_local30 = true
 	elseif f134_arg1 == "promo_no_dupe_crate_5" then
 		f134_local0 = 0x717FF140F30014C
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0x49349434018253B, 5 )
 		f134_local6 = "ui_icon_blackmarket_reserves_no_duplicate_x05_large_preview"
-		f134_local4 = 0xAD7019EF84C6079
+		f134_local4 = "ui_icon_blackmarket_reserves_no_duplicate_x05"
 		f134_local30 = true
 	elseif f134_arg1 == "promo_no_dupe_crate_6" then
 		f134_local0 = 0x717FF140F30014C
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0x49349434018253B, 6 )
-		f134_local6 = 0xA270193C87FA3B3
-		f134_local4 = 0xAD6FE9EF84C5B60
+		f134_local6 = "ui_icon_blackmarket_reserves_no_duplicate_x06_large_preview"
+		f134_local4 = "ui_icon_blackmarket_reserves_no_duplicate_x06"
 		f134_local30 = true
 	elseif f134_arg1 == "promo_no_dupe_crate_7" then
 		f134_local0 = 0x717FF140F30014C
@@ -2845,8 +2845,8 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 	elseif f134_arg1 == "promo_no_dupe_crate_10" then
 		f134_local0 = 0x717FF140F30014C
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0x49349434018253B, 10 )
-		f134_local6 = 0xAA980299AAEAD68
-		f134_local4 = 0xADA8A9EF84F7F1B
+		f134_local6 = "ui_icon_blackmarket_reserves_no_duplicate_x10_large_preview"
+		f134_local4 = "ui_icon_blackmarket_reserves_no_duplicate_x10"
 		f134_local30 = true
 	elseif f134_arg2 == "bribe" then
 		local f134_local34 = CoD.BlackMarketUtility.GetBribeAsset( f134_arg0, f134_arg1 )
@@ -8433,7 +8433,7 @@ CoD.BlackMarketUtility.CrateBundles = {
 		dvar = 0x3422D2E8F226B22,
 		name = Engine[0xF9F1239CFD921FE]( 0x91C3D56DC3A34AC, 10 ),
 		desc = Engine[0xF9F1239CFD921FE]( 0xB3B24D245052AFB, 10 ),
-		primaryImage = 0xB5F4CE08C5B0187,
+		primaryImage = "ui_icon_blackmarket_promos_no_duplicate_bundle",
 		popupImage = "ui_icon_blackmarket_reserves_bundle_crates_10_confirm",
 		isCrateItem = false,
 		isReservesLootPurchaseCrateBundle = true,

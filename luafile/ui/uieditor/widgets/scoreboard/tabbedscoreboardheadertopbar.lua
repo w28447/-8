@@ -10,13 +10,13 @@ CoD.TabbedScoreboardHeaderTopbar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local TopBar = LUI.UIImage.new( 0.5, 0.5, -344, 344, 0, 0, 0, 10 )
 	TopBar:setRGB( 0.95, 0.95, 0.95 )
-	TopBar:setImage( RegisterImage( 0x59D632AC9663362 ) )
+	TopBar:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_grey_bar" ) )
 	self:addElement( TopBar )
 	self.TopBar = TopBar
 	
 	local TopBarWipe = LUI.UIImage.new( 0.5, 0.5, -344, 344, 0, 0, 0, 10 )
 	TopBarWipe:setRGB( 0.95, 0.95, 0.95 )
-	TopBarWipe:setImage( RegisterImage( 0x59D632AC9663362 ) )
+	TopBarWipe:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_grey_bar" ) )
 	TopBarWipe:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	TopBarWipe:setShaderVector( 0, 0, 1, 0, 0 )
 	TopBarWipe:setShaderVector( 1, 0, 0, 0, 0 )

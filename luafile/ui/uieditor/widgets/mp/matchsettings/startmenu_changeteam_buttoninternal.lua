@@ -17,7 +17,7 @@ CoD.StartMenu_ChangeTeam_ButtonInternal.new = function ( f1_arg0, f1_arg1, f1_ar
 	local Backing = LUI.UIImage.new( 0, 1, 0, 0, 0.06, 1, 0, 0 )
 	Backing:setRGB( 0.13, 0.12, 0.12 )
 	Backing:setAlpha( 0.9 )
-	Backing:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	Backing:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	Backing:setShaderVector( 0, 0, 1, 0, 0 )
 	self:addElement( Backing )
 	self.Backing = Backing

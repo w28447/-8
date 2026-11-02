@@ -30,7 +30,7 @@ CoD.EmpRebootElectromagneticWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local TextBoxWarningText2 = LUI.UIText.new( 0.5, 0.5, -351, 352, 0.5, 0.5, -15, 18 )
 	TextBoxWarningText2:setText( Engine[0xF9F1239CFD921FE]( "mp/hud_emp" ) )
 	TextBoxWarningText2:setTTF( "ttmussels_regular" )
-	TextBoxWarningText2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
+	TextBoxWarningText2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow" ) )
 	TextBoxWarningText2:setShaderVector( 0, 0.1, 0, 0, 0 )
 	TextBoxWarningText2:setShaderVector( 1, 0, 0, 0, 0 )
 	TextBoxWarningText2:setShaderVector( 2, 1, 0, 0, 0 )

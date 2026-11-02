@@ -12,7 +12,7 @@ CoD.WZObituarySquadKilled.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local SquadEliminatedBlur = LUI.UIImage.new( 0, 0, 0, 503, 0, 0, 0, 48 )
 	SquadEliminatedBlur:setAlpha( 0.5 )
 	SquadEliminatedBlur:setImage( RegisterImage( "uie_ui_hud_wz_hud_squad_eliminated_backing" ) )
-	SquadEliminatedBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	SquadEliminatedBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	SquadEliminatedBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( SquadEliminatedBlur )
 	self.SquadEliminatedBlur = SquadEliminatedBlur

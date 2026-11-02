@@ -17,7 +17,7 @@ CoD.DirectorBlackMarketButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local BlurBg = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	BlurBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	BlurBg:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	BlurBg:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BlurBg )
 	self.BlurBg = BlurBg
@@ -55,7 +55,7 @@ CoD.DirectorBlackMarketButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2
 	end
 	
 	SpecialEventBanner.__Image()
-	SpecialEventBanner:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	SpecialEventBanner:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	SpecialEventBanner:setShaderVector( 0, 0.5, 0.5, 0, 0 )
 	SpecialEventBanner:setShaderVector( 1, 1, 1, 0, 0 )
 	SpecialEventBanner:setShaderVector( 2, 0, 0, 0, 0 )
@@ -73,7 +73,7 @@ CoD.DirectorBlackMarketButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local tierProgressBackground = LUI.UIImage.new( 0.4, 0.4, -125, 125, 1, 1, -21, -9 )
 	tierProgressBackground:setRGB( 0.09, 0.09, 0.09 )
-	tierProgressBackground:setImage( RegisterImage( 0x2F80AF66C054F97 ) )
+	tierProgressBackground:setImage( RegisterImage( "uie_ui_menu_item_shop_tier_bar_empty" ) )
 	self:addElement( tierProgressBackground )
 	self.tierProgressBackground = tierProgressBackground
 	
@@ -87,7 +87,7 @@ CoD.DirectorBlackMarketButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local tierProgress = LUI.UIImage.new( 0.4, 0.4, -125, 125, 1, 1, -21, -9 )
 	tierProgress:setRGB( 0.5, 0.85, 1 )
-	tierProgress:setImage( RegisterImage( 0xE51FDFB95E8F82B ) )
+	tierProgress:setImage( RegisterImage( "uie_ui_menu_item_shop_tier_bar_full" ) )
 	tierProgress:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	tierProgress:setShaderVector( 1, 0, 0, 0, 0 )
 	tierProgress:setShaderVector( 2, 1, 0, 0, 0 )
@@ -104,7 +104,7 @@ CoD.DirectorBlackMarketButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local tierProgressAdd = LUI.UIImage.new( 0.4, 0.4, -125, 125, 1, 1, -21, -9 )
 	tierProgressAdd:setRGB( 0.5, 0.85, 1 )
-	tierProgressAdd:setImage( RegisterImage( 0xE51FDFB95E8F82B ) )
+	tierProgressAdd:setImage( RegisterImage( "uie_ui_menu_item_shop_tier_bar_full" ) )
 	tierProgressAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	tierProgressAdd:setShaderVector( 1, 0, 0, 0, 0 )
 	tierProgressAdd:setShaderVector( 2, 0, 1, 0, 0 )
@@ -122,7 +122,7 @@ CoD.DirectorBlackMarketButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2
 	local TierText = LUI.UIText.new( 0.4, 0.4, -137.5, 137.5, 1, 1, -42, -25 )
 	TierText:setRGB( 0.92, 0.92, 0.92 )
 	TierText:setTTF( "ttmussels_demibold" )
-	TierText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	TierText:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	TierText:setLetterSpacing( 4 )
 	TierText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	TierText:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )
@@ -144,7 +144,7 @@ CoD.DirectorBlackMarketButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	StreamName.__String_Reference()
 	StreamName:setTTF( "ttmussels_regular" )
-	StreamName:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	StreamName:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	StreamName:setLetterSpacing( 6 )
 	StreamName:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	self:addElement( StreamName )
@@ -154,7 +154,7 @@ CoD.DirectorBlackMarketButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2
 	BlackMarketNameGlow:setRGB( 0, 0, 0 )
 	BlackMarketNameGlow:setText( LocalizeToUpperString( "menu/black_market" ) )
 	BlackMarketNameGlow:setTTF( "ttmussels_demibold" )
-	BlackMarketNameGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
+	BlackMarketNameGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow" ) )
 	BlackMarketNameGlow:setShaderVector( 0, 0.81, 0, 0, 0 )
 	BlackMarketNameGlow:setShaderVector( 1, 0, 0, 0, 0 )
 	BlackMarketNameGlow:setShaderVector( 2, 0, 0, 0, 0 )
@@ -168,7 +168,7 @@ CoD.DirectorBlackMarketButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2
 	BlackMarketName:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	BlackMarketName:setText( LocalizeToUpperString( "menu/black_market" ) )
 	BlackMarketName:setTTF( "ttmussels_demibold" )
-	BlackMarketName:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	BlackMarketName:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	BlackMarketName:setLetterSpacing( 3 )
 	BlackMarketName:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	BlackMarketName:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

@@ -80,7 +80,7 @@ CoD.PC_AchievementNotification.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local TabBacking = LUI.UIImage.new( 0.23, 0, -125, 7, -0.4, 1.4, -30, 30 )
 	TabBacking:setAlpha( 0 )
 	TabBacking:setImage( RegisterImage( "uie_ui_menu_common_tab_backing" ) )
-	TabBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	TabBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	TabBacking:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( TabBacking )
 	self.TabBacking = TabBacking

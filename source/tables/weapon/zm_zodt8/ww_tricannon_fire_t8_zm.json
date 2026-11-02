@@ -47,7 +47,7 @@
         "#wpn_t8_zm_broadside_cannon_world"
     ],
     "clipmodel": [
-        "#hash_6481931322775754"
+        "#wpn_t8_zm_broadside_cannon_chain_mag_world"
     ],
     "reticleCenter": "#i_reticle_discgun",
     "inventoryIconZm": "#ui_icon_weapons_zm_tricannon_red",

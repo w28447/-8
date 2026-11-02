@@ -828,7 +828,7 @@ function function_704f6133()
     var_7b8000e5 = ( 0, 18, -32 );
     mdl_artifact moveto( mdl_artifact.origin + var_7b8000e5, 5, 1, 3 );
     mdl_artifact waittill( #"movedone" );
-    mdl_artifact setmodel( #"hash_2c0078538e398b4f" );
+    mdl_artifact setmodel( #"p8_zm_zod_artifact_combined_fire_all" );
     wait 2.5;
     mdl_artifact clientfield::set( "activate_sentinel_artifact", 0 );
     

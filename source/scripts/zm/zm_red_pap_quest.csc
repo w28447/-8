@@ -117,10 +117,10 @@ function function_6c40f793( localclientnum, oldval, newval, bnewent, binitialsna
 {
     if ( newval == 1 )
     {
-        forcestreamxmodel( #"hash_d8483cb5cc65489" );
+        forcestreamxmodel( #"c_t8_zmb_dlc2_pegasus_bridle_prop" );
         return;
     }
     
-    stopforcestreamingxmodel( #"hash_d8483cb5cc65489" );
+    stopforcestreamingxmodel( #"c_t8_zmb_dlc2_pegasus_bridle_prop" );
 }
 

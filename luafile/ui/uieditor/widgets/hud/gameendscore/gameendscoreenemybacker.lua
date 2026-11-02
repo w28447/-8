@@ -10,22 +10,22 @@ CoD.GameEndScoreEnemyBacker.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local BgBlur = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 168 )
 	BgBlur:setZRot( 180 )
-	BgBlur:setImage( RegisterImage( 0x136CAB682831EF3 ) )
-	BgBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	BgBlur:setImage( RegisterImage( "uie_ui_menu_mp_endgame_frame_backing" ) )
+	BgBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	BgBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BgBlur )
 	self.BgBlur = BgBlur
 	
 	local BgTint = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 168 )
 	BgTint:setZRot( 180 )
-	BgTint:setImage( RegisterImage( 0x136CAB682831EF3 ) )
+	BgTint:setImage( RegisterImage( "uie_ui_menu_mp_endgame_frame_backing" ) )
 	self:addElement( BgTint )
 	self.BgTint = BgTint
 	
 	local PixelGridTiledBacking = LUI.UIImage.new( 0.02, 0.02, -16, 940, 0.31, 0.31, -44.5, 107.5 )
 	PixelGridTiledBacking:setAlpha( 0.05 )
 	PixelGridTiledBacking:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
-	PixelGridTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	PixelGridTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	PixelGridTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGridTiledBacking:setupNineSliceShader( 128, 128 )
 	self:addElement( PixelGridTiledBacking )
@@ -41,7 +41,7 @@ CoD.GameEndScoreEnemyBacker.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	Base:setAlpha( 0.6 )
 	Base:setYRot( 180 )
 	Base:setImage( RegisterImage( "uie_ui_menu_mp_endgame_shoutcaster_bg" ) )
-	Base:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	Base:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	Base:setShaderVector( 0, 1, 0, 0, 0 )
 	Base:subscribeToGlobalModel( f1_arg1, "Factions", "axisFactionColor", function ( model )
 		local f2_local0 = model:get()
@@ -69,7 +69,7 @@ CoD.GameEndScoreEnemyBacker.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local StripGlow = LUI.UIImage.new( 0, 0, 265, 725, 0, 0, 122, 130 )
 	StripGlow:setYRot( 180 )
 	StripGlow:setImage( RegisterImage( "uie_ui_menu_mp_endgame_shoutcaster_botbar" ) )
-	StripGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	StripGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	StripGlow:setShaderVector( 0, 1, 0, 0, 0 )
 	StripGlow:subscribeToGlobalModel( f1_arg1, "Factions", "axisFactionColor", function ( model )
 		local f4_local0 = model:get()
@@ -90,24 +90,24 @@ CoD.GameEndScoreEnemyBacker.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local FrameInnerTop = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 84 )
 	FrameInnerTop:setYRot( 180 )
-	FrameInnerTop:setImage( RegisterImage( 0xE4D07998F51061E ) )
+	FrameInnerTop:setImage( RegisterImage( "uie_ui_menu_mp_endgame_frame_inner" ) )
 	self:addElement( FrameInnerTop )
 	self.FrameInnerTop = FrameInnerTop
 	
 	local FrameInnerBot = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 84, 168 )
 	FrameInnerBot:setZRot( 180 )
-	FrameInnerBot:setImage( RegisterImage( 0xE4D07998F51061E ) )
+	FrameInnerBot:setImage( RegisterImage( "uie_ui_menu_mp_endgame_frame_inner" ) )
 	self:addElement( FrameInnerBot )
 	self.FrameInnerBot = FrameInnerBot
 	
 	local FrameOuterBot = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 157, 173 )
 	FrameOuterBot:setYRot( 180 )
-	FrameOuterBot:setImage( RegisterImage( 0x9A6CE40ADA52B7F ) )
+	FrameOuterBot:setImage( RegisterImage( "uie_ui_menu_mp_endgame_frame_outer_bot" ) )
 	self:addElement( FrameOuterBot )
 	self.FrameOuterBot = FrameOuterBot
 	
 	local FrameOuterTop = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, -3, 13 )
-	FrameOuterTop:setImage( RegisterImage( 0x15E16C12DDE7014 ) )
+	FrameOuterTop:setImage( RegisterImage( "uie_ui_menu_mp_endgame_frame_outer_tr" ) )
 	self:addElement( FrameOuterTop )
 	self.FrameOuterTop = FrameOuterTop
 	
@@ -189,8 +189,8 @@ CoD.GameEndScoreEnemyBacker.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local FrameLight = LUI.UIImage.new( 0, 0, 948, 956, 0, 0, 74, 94 )
 	FrameLight:setYRot( 180 )
-	FrameLight:setImage( RegisterImage( 0xC25F7556E987B80 ) )
-	FrameLight:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	FrameLight:setImage( RegisterImage( "uie_ui_menu_mp_endgame_shoutcaster_frame_light" ) )
+	FrameLight:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	FrameLight:setShaderVector( 0, 1, 0, 0, 0 )
 	FrameLight:subscribeToGlobalModel( f1_arg1, "Factions", "axisFactionColor", function ( model )
 		local f5_local0 = model:get()

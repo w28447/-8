@@ -32,7 +32,7 @@ CoD.WarzoneInventoryAmmoItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local Name = LUI.UIText.new( 0, 0, 6, 86, 0, 0, 4.5, 22.5 )
 	Name:setRGB( 0.75, 0.75, 0.75 )
 	Name:setTTF( "ttmussels_regular" )
-	Name:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	Name:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	Name:setShaderVector( 0, 1, 0, 0, 0 )
 	Name:setShaderVector( 1, 0, 0, 0, 0 )
 	Name:setShaderVector( 2, 0, 0, 0, 0.7 )

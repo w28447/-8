@@ -5520,7 +5520,7 @@ function mannequin_defend( n_difficulty )
     foreach ( e_blocker in a_e_blockers )
     {
         e_blocker solid();
-        e_blocker playsound( #"hash_3faa335fd02a531" );
+        e_blocker playsound( #"evt_mann_forcefield_doors" );
     }
     
     level.musicsystemoverride = 1;

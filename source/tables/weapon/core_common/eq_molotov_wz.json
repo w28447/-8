@@ -49,7 +49,7 @@
         "#wpn_t8_eqp_molotov_world"
     ],
     "models_cd0": [
-        "#hash_2577e93af00b6194"
+        "#wpn_t8_eqp_molotov_lighter_dw_world"
     ],
     "gadgetIconAvailable": "#ui_icon_inventory_eq_molotov",
     "reticleCenter": "#reticle_incendiary_cross",

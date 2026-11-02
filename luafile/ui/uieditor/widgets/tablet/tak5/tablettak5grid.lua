@@ -9,42 +9,42 @@ CoD.TabletTak5Grid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	local GridPlus = LUI.UIImage.new( 0, 0, 198.5, 208.5, 0, 0, 100, 110 )
 	GridPlus:setImage( RegisterImage( "uie_ui_hud_tak5_grid_plus" ) )
-	GridPlus:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	GridPlus:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	GridPlus:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( GridPlus )
 	self.GridPlus = GridPlus
 	
 	local GridPlus2 = LUI.UIImage.new( 0, 0, 99, 109, 0, 0, 100, 110 )
 	GridPlus2:setImage( RegisterImage( "uie_ui_hud_tak5_grid_plus" ) )
-	GridPlus2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	GridPlus2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	GridPlus2:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( GridPlus2 )
 	self.GridPlus2 = GridPlus2
 	
 	local GridPlus3 = LUI.UIImage.new( 0, 0, 198.5, 208.5, 0, 0, 0, 10 )
 	GridPlus3:setImage( RegisterImage( "uie_ui_hud_tak5_grid_plus" ) )
-	GridPlus3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	GridPlus3:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	GridPlus3:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( GridPlus3 )
 	self.GridPlus3 = GridPlus3
 	
 	local GridPlus4 = LUI.UIImage.new( 0, 0, 99, 109, 0, 0, 0, 10 )
 	GridPlus4:setImage( RegisterImage( "uie_ui_hud_tak5_grid_plus" ) )
-	GridPlus4:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	GridPlus4:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	GridPlus4:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( GridPlus4 )
 	self.GridPlus4 = GridPlus4
 	
 	local GridPlus5 = LUI.UIImage.new( 0, 0, 0, 10, 0, 0, 100, 110 )
 	GridPlus5:setImage( RegisterImage( "uie_ui_hud_tak5_grid_plus" ) )
-	GridPlus5:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	GridPlus5:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	GridPlus5:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( GridPlus5 )
 	self.GridPlus5 = GridPlus5
 	
 	local GridPlus6 = LUI.UIImage.new( 0, 0, 0, 10, 0, 0, 0, 10 )
 	GridPlus6:setImage( RegisterImage( "uie_ui_hud_tak5_grid_plus" ) )
-	GridPlus6:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	GridPlus6:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	GridPlus6:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( GridPlus6 )
 	self.GridPlus6 = GridPlus6

@@ -5,14 +5,14 @@
     "headImpactType": 2,
     "bodyImpactType": 2,
     "gibDef": "#c_t8_zmb_ofc_zombie_male1_gib_def",
-    "body": "#hash_3e543e75c577d2cb",
+    "body": "#c_t8_mp_dlc5_zombie_museum_male_body1_skin3",
     "headAlias": "#hash_4d1e705cbd990766",
-    "damagedTorso_Clean": "#hash_6e6b9de454d688a0",
-    "damagedTorso_RightArmGone": "#hash_76236e981899a8a3",
-    "damagedTorso_LeftArmGone": "#hash_41f40189bae12c1d",
-    "damagedTorso_HeadGone": "#hash_4601a6b2d3e11b27",
-    "damagedLegs_Clean": "#hash_f55b81fd29e08b",
-    "damagedLegs_RightLegGone": "#hash_38c62fbce6618841",
-    "damagedLegs_LeftLegGone": "#hash_4524b81ea36b18ab",
-    "damagedLegs_NoLegs": "#hash_7efca0a68e01810"
+    "damagedTorso_Clean": "#c_t8_mp_dlc5_zombie_museum_male_body1_g_upclean_skin3",
+    "damagedTorso_RightArmGone": "#c_t8_mp_dlc5_zombie_museum_male_body1_g_rarmoff_skin3",
+    "damagedTorso_LeftArmGone": "#c_t8_mp_dlc5_zombie_museum_male_body1_g_larmoff_skin3",
+    "damagedTorso_HeadGone": "#c_t8_mp_dlc5_zombie_museum_male_body1_g_beheaded",
+    "damagedLegs_Clean": "#c_t8_mp_dlc5_zombie_museum_male_body1_g_lowclean_skin3",
+    "damagedLegs_RightLegGone": "#c_t8_mp_dlc5_zombie_museum_male_body1_g_rlegoff_skin3",
+    "damagedLegs_LeftLegGone": "#c_t8_mp_dlc5_zombie_museum_male_body1_g_llegoff_skin3",
+    "damagedLegs_NoLegs": "#c_t8_mp_dlc5_zombie_museum_male_body1_g_blegsoff_skin3"
 }

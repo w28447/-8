@@ -10,7 +10,7 @@ CoD.PlayerListRowHealthValue.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local HealthValue = LUI.UIText.new( 0, 0, 0, 47, 0.5, 0.5, -7.5, 7.5 )
 	HealthValue:setTTF( "0arame_mono_stencil" )
-	HealthValue:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	HealthValue:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	HealthValue:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	HealthValue:linkToElementModel( self, "health.healthValue", true, function ( model )
 		local f2_local0 = model:get()

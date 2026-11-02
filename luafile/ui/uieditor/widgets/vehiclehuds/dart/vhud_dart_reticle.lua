@@ -91,7 +91,7 @@ CoD.vhud_dart_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local CenterDot = LUI.UIImage.new( 0.5, 0.5, -17.5, 17.5, 0.5, 0.5, -27, 19 )
 	CenterDot:setImage( RegisterImage( "uie_ui_hud_vehicle_dart_center_reticle" ) )
-	CenterDot:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	CenterDot:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	CenterDot:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( CenterDot )
 	self.CenterDot = CenterDot
@@ -126,7 +126,7 @@ CoD.vhud_dart_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local BlkCircleBot = LUI.UIImage.new( 0.5, 0.5, -172, 172, 0, 0, 719, 795 )
 	BlkCircleBot:setAlpha( 0.9 )
 	BlkCircleBot:setImage( RegisterImage( "uie_ui_hud_vehicle_dart_layout_guide_circle_black" ) )
-	BlkCircleBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	BlkCircleBot:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	BlkCircleBot:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( BlkCircleBot )
 	self.BlkCircleBot = BlkCircleBot
@@ -134,21 +134,21 @@ CoD.vhud_dart_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local BlkCircleTop = LUI.UIImage.new( 0.5, 0.5, -172, 172, 0, 0, 364, 288 )
 	BlkCircleTop:setAlpha( 0.9 )
 	BlkCircleTop:setImage( RegisterImage( "uie_ui_hud_vehicle_dart_layout_guide_circle_black" ) )
-	BlkCircleTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	BlkCircleTop:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	BlkCircleTop:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( BlkCircleTop )
 	self.BlkCircleTop = BlkCircleTop
 	
 	local CircleFrameBot = LUI.UIImage.new( 0.5, 0.5, -192, 192, 0, 0, 730, 806 )
 	CircleFrameBot:setImage( RegisterImage( "uie_ui_hud_vehicle_dart_guide_circle" ) )
-	CircleFrameBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	CircleFrameBot:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	CircleFrameBot:setShaderVector( 0, 1.7, 0, 0, 0 )
 	self:addElement( CircleFrameBot )
 	self.CircleFrameBot = CircleFrameBot
 	
 	local CircleFrameTop = LUI.UIImage.new( 0.5, 0.5, -192, 192, 0, 0, 353, 277 )
 	CircleFrameTop:setImage( RegisterImage( "uie_ui_hud_vehicle_dart_guide_circle" ) )
-	CircleFrameTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	CircleFrameTop:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	CircleFrameTop:setShaderVector( 0, 1.7, 0, 0, 0 )
 	self:addElement( CircleFrameTop )
 	self.CircleFrameTop = CircleFrameTop
@@ -168,7 +168,7 @@ CoD.vhud_dart_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local FuiLinkBR = LUI.UIImage.new( 0, 0, 1532, 1412, 0, 0, 723, 1083 )
 	FuiLinkBR:setAlpha( 0.9 )
 	FuiLinkBR:setImage( RegisterImage( "uie_ui_hud_vehicle_dart_layout_element" ) )
-	FuiLinkBR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	FuiLinkBR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	FuiLinkBR:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FuiLinkBR )
 	self.FuiLinkBR = FuiLinkBR
@@ -176,7 +176,7 @@ CoD.vhud_dart_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local FuiLinkBL = LUI.UIImage.new( 0, 0, 398.5, 518.5, 0, 0, 723, 1083 )
 	FuiLinkBL:setAlpha( 0.9 )
 	FuiLinkBL:setImage( RegisterImage( "uie_ui_hud_vehicle_dart_layout_element" ) )
-	FuiLinkBL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	FuiLinkBL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	FuiLinkBL:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FuiLinkBL )
 	self.FuiLinkBL = FuiLinkBL
@@ -184,7 +184,7 @@ CoD.vhud_dart_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local FuiLinkTL = LUI.UIImage.new( 0, 0, 398.5, 518.5, 0, 0, 360, 0 )
 	FuiLinkTL:setAlpha( 0.9 )
 	FuiLinkTL:setImage( RegisterImage( "uie_ui_hud_vehicle_dart_layout_element" ) )
-	FuiLinkTL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	FuiLinkTL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	FuiLinkTL:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FuiLinkTL )
 	self.FuiLinkTL = FuiLinkTL
@@ -192,7 +192,7 @@ CoD.vhud_dart_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local FuiLinkTR = LUI.UIImage.new( 0, 0, 1532, 1412, 0, 0, 360, 0 )
 	FuiLinkTR:setAlpha( 0.9 )
 	FuiLinkTR:setImage( RegisterImage( "uie_ui_hud_vehicle_dart_layout_element" ) )
-	FuiLinkTR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	FuiLinkTR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	FuiLinkTR:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FuiLinkTR )
 	self.FuiLinkTR = FuiLinkTR

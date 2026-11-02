@@ -11,7 +11,7 @@ CoD.WZAAR_MeritBreakdownLine.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local Value = LUI.UIText.new( 1, 1, -112, 0, -0, 1, 0, 0 )
 	Value:setRGB( 0.97, 0.8, 0.11 )
 	Value:setTTF( "ttmussels_demibold" )
-	Value:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	Value:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	Value:setShaderVector( 0, 0.4, 0, 0, 0 )
 	Value:setShaderVector( 1, 0, 0, 0, 0 )
 	Value:setShaderVector( 2, 1, 0.2, 0, 0.5 )

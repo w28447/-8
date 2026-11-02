@@ -10,7 +10,7 @@ CoD.ScoreboardMapRowHeadings.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	self.soundSet = "default"
 	
 	local MapGridRowHeading = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	MapGridRowHeading:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	MapGridRowHeading:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	MapGridRowHeading:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( MapGridRowHeading )
 	self.MapGridRowHeading = MapGridRowHeading
@@ -18,7 +18,7 @@ CoD.ScoreboardMapRowHeadings.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local MapGridRowHeadingTint = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	MapGridRowHeadingTint:setRGB( 0, 0, 0 )
 	MapGridRowHeadingTint:setAlpha( 0.9 )
-	MapGridRowHeadingTint:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	MapGridRowHeadingTint:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	MapGridRowHeadingTint:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( MapGridRowHeadingTint )
 	self.MapGridRowHeadingTint = MapGridRowHeadingTint

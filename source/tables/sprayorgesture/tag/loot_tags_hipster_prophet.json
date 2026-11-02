@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_hipster_prophet",
     "type": "#tag",
-    "material": "#hash_477e2799975269ae",
+    "material": "#vd/mtl_loot_ui_icon_tags_hipster_prophet",
     "bundle": {
         "type": "#tag",
         "title": "localized18#tags/hipster_prophet",

@@ -160,12 +160,12 @@ function is_valid_target( e_player )
         return 0;
     }
     
-    if ( isdefined( level.registerquest_key_pickup_explode ) )
+    if ( isdefined( level.var_b5c27895 ) )
     {
-        return [[ level.registerquest_key_pickup_explode ]]( e_player );
+        return [[ level.var_b5c27895 ]]( e_player );
     }
     
-    if ( e_player != self && e_player laststand::player_is_in_laststand() && !( isdefined( e_player.var_16735873 ) && e_player.var_16735873 ) && !e_player zm_utility::duf47() )
+    if ( e_player != self && e_player laststand::player_is_in_laststand() && !( isdefined( e_player.var_16735873 ) && e_player.var_16735873 ) && !e_player zm_utility::function_ab9a9770() )
     {
         return 1;
     }
@@ -461,7 +461,7 @@ function function_22e77bc1( var_36bf7c2c, var_8afe96c9, e_player )
 // Params 1
 // Checksum 0x6cb933e3, Offset: 0x17e8
 // Size: 0x76
-function function_8bec47d6( b_enable = 1 )
+function enable_nowhere_but_there( b_enable = 1 )
 {
     if ( b_enable )
     {
@@ -471,14 +471,14 @@ function function_8bec47d6( b_enable = 1 )
     }
     
     level.var_fcfbf8c6 = level.var_eeb98313;
-    level.var_eeb98313 = &function_f6d8b425;
+    level.var_eeb98313 = &nowhere_but_there_disabled;
 }
 
 // Namespace zm_bgb_nowhere_but_there/zm_bgb_nowhere_but_there
 // Params 1
 // Checksum 0xf5461c02, Offset: 0x1868
 // Size: 0xe
-function function_f6d8b425( var_6a069cf8 )
+function nowhere_but_there_disabled( var_6a069cf8 )
 {
     return [];
 }

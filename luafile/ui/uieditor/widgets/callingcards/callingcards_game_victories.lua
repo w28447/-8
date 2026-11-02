@@ -42,7 +42,7 @@ CoD.callingcards_game_victories.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	kraken:setAlpha( 0.5 )
 	kraken:setScale( 1.02, 1.02 )
 	kraken:setImage( RegisterImage( "uie_callingcards_game_victories_kraken" ) )
-	kraken:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	kraken:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	kraken:setShaderVector( 0, 1.27, 0, 0, 0 )
 	self:addElement( kraken )
 	self.kraken = kraken
@@ -66,7 +66,7 @@ CoD.callingcards_game_victories.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local diverLeft = LUI.UIImage.new( 0, 0, 7.5, 399.5, 0, 0, 74, 242 )
 	diverLeft:setAlpha( 0.5 )
 	diverLeft:setImage( RegisterImage( "uie_callingcards_game_victories_diver_left" ) )
-	diverLeft:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	diverLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	diverLeft:setShaderVector( 0, 1.23, 0, 0, 0 )
 	self:addElement( diverLeft )
 	self.diverLeft = diverLeft
@@ -74,7 +74,7 @@ CoD.callingcards_game_victories.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local diverRight = LUI.UIImage.new( 0, 0, 741.5, 957.5, 0, 0, 68, 228 )
 	diverRight:setAlpha( 0.5 )
 	diverRight:setImage( RegisterImage( "uie_callingcards_game_victories_diver_right" ) )
-	diverRight:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	diverRight:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	diverRight:setShaderVector( 0, 1.3, 0, 0, 0 )
 	self:addElement( diverRight )
 	self.diverRight = diverRight

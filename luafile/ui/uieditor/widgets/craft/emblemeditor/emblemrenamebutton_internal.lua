@@ -13,7 +13,7 @@ CoD.EmblemRenameButton_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local Blur = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	Blur:setRGB( 0.08, 0.08, 0.08 )
-	Blur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	Blur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	Blur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( Blur )
 	self.Blur = Blur
@@ -30,7 +30,7 @@ CoD.EmblemRenameButton_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local FocusGlow = LUI.UIImage.new( 0, 1, -146, 146, 0, 1, -18, 18 )
 	FocusGlow:setAlpha( 0 )
 	FocusGlow:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_large" ) )
-	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
+	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_multiplied_add" ) )
 	FocusGlow:setShaderVector( 0, 0, 0, 0.25, 0.25 )
 	FocusGlow:setShaderVector( 1, 1.2, 0, 0, 0 )
 	FocusGlow:setupNineSliceShader( 300, 300 )

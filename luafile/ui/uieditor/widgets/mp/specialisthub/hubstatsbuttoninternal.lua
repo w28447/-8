@@ -18,7 +18,7 @@ CoD.HubStatsButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local FocusGlow = LUI.UIImage.new( 0, 1, -50, 50, 0, 1, -50, 50 )
 	FocusGlow:setAlpha( 0 )
 	FocusGlow:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_small" ) )
-	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
+	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_multiplied_add" ) )
 	FocusGlow:setShaderVector( 0, 0, 0, 0.25, 0.25 )
 	FocusGlow:setShaderVector( 1, 1.2, 0, 0, 0 )
 	FocusGlow:setupNineSliceShader( 100, 100 )
@@ -26,7 +26,7 @@ CoD.HubStatsButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.FocusGlow = FocusGlow
 	
 	local SceneBlur = LUI.UIImage.new( 0, 1, 0, 0, -0.07, 1, 12, 0 )
-	SceneBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	SceneBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	SceneBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( SceneBlur )
 	self.SceneBlur = SceneBlur
@@ -49,7 +49,7 @@ CoD.HubStatsButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local TiledBackingAdd = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	TiledBackingAdd:setAlpha( 0 )
 	TiledBackingAdd:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
-	TiledBackingAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	TiledBackingAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	TiledBackingAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBackingAdd:setupNineSliceShader( 196, 88 )
 	self:addElement( TiledBackingAdd )

@@ -16,7 +16,7 @@ CoD.MPHintTextContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	MPHintText:setBackingType( 2 )
 	MPHintText:setBackingColor( 0, 0, 0 )
 	MPHintText:setBackingXPadding( 3 )
-	MPHintText:setBackingMaterial( LUI.UIImage.GetCachedMaterial( 0x81EEB1F96D4BE0A ) )
+	MPHintText:setBackingMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_feather_normal" ) )
 	MPHintText:setBackingShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( MPHintText )
 	self.MPHintText = MPHintText

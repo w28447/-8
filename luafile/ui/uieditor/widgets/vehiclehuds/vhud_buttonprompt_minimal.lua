@@ -13,7 +13,7 @@ CoD.vhud_ButtonPrompt_Minimal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local prompt = LUI.UIText.new( 0, 0, 58, 358, 0, 0, 16.5, 33.5 )
 	prompt:setTTF( "ttmussels_regular" )
-	prompt:setMaterial( LUI.UIImage.GetCachedMaterial( 0xB0AEA8900F97CFB ) )
+	prompt:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_add" ) )
 	prompt:setShaderVector( 0, 0, 0, 0, 0 )
 	prompt:setShaderVector( 1, 0, 0, 0, 0 )
 	prompt:setShaderVector( 2, 0.6, 0, 0, 0 )

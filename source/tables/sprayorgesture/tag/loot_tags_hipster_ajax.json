@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_hipster_ajax",
     "type": "#tag",
-    "material": "#hash_6cdd4ba410e2cc06",
+    "material": "#vd/mtl_loot_ui_icon_tags_hipster_ajax",
     "bundle": {
         "type": "#tag",
         "title": "localized18#tags/hipster_ajax",

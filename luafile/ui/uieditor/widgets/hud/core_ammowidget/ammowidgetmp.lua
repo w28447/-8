@@ -16,7 +16,7 @@ CoD.AmmoWidgetMP.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local Blur = LUI.UIImage.new( 0, 0, 280, 591, 0, 0, 37, 103 )
-	Blur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	Blur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	Blur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( Blur )
 	self.Blur = Blur
@@ -139,7 +139,7 @@ CoD.AmmoWidgetMP.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	GlowImage:setRGB( 1, 0.97, 0.69 )
 	GlowImage:setAlpha( 0 )
 	GlowImage:setImage( RegisterImage( "uie_ui_hud_core_ammo_widget_glow_ammo" ) )
-	GlowImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	GlowImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	GlowImage:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( GlowImage )
 	self.GlowImage = GlowImage
@@ -148,7 +148,7 @@ CoD.AmmoWidgetMP.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	GlowImage2:setRGB( 0.96, 0.62, 0.05 )
 	GlowImage2:setAlpha( 0 )
 	GlowImage2:setImage( RegisterImage( "uie_ui_hud_core_ammo_widget_glow_ammo" ) )
-	GlowImage2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	GlowImage2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	GlowImage2:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( GlowImage2 )
 	self.GlowImage2 = GlowImage2
@@ -165,7 +165,7 @@ CoD.AmmoWidgetMP.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	GlowBtm:setAlpha( 0 )
 	GlowBtm:setScale( 0.5, 0.5 )
 	GlowBtm:setImage( RegisterImage( 0xB0B47D37604C9FA ) )
-	GlowBtm:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	GlowBtm:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	GlowBtm:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( GlowBtm )
 	self.GlowBtm = GlowBtm

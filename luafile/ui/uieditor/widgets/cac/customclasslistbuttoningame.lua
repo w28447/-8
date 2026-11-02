@@ -14,7 +14,7 @@ CoD.CustomClassListButtonInGame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local backgroundBlur = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	backgroundBlur:setRGB( 0, 0, 0 )
 	backgroundBlur:setScale( 0.8, 0.8 )
-	backgroundBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	backgroundBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	backgroundBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( backgroundBlur )
 	self.backgroundBlur = backgroundBlur
@@ -50,7 +50,7 @@ CoD.CustomClassListButtonInGame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local classNumber = LUI.UIText.new( 0, 1, 0, 0, 0.5, 0.5, -19.5, 17.5 )
 	classNumber:setRGB( 0.63, 0.62, 0.61 )
 	classNumber:setTTF( "ttmussels_demibold" )
-	classNumber:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	classNumber:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	classNumber:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	classNumber:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
 	classNumber:linkToElementModel( self, "classNumber", true, function ( model )

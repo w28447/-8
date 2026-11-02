@@ -25,7 +25,7 @@ CoD.ScoreboardRowInformationList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	self.ClanAndGamerName = ClanAndGamerName
 	
 	local Divider01 = LUI.UIImage.new( 0, 0, 257, 261, 0, 0, 6, 54 )
-	Divider01:setImage( RegisterImage( 0x84CF831D4ADD5C3 ) )
+	Divider01:setImage( RegisterImage( "uie_ui_hud_zm_aar_stat_divider" ) )
 	Divider01:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Divider01 )
 	self.Divider01 = Divider01
@@ -46,7 +46,7 @@ CoD.ScoreboardRowInformationList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	self.StatBox1 = StatBox1
 	
 	local Divider02 = LUI.UIImage.new( 0, 0, 435, 439, 0, 0, 6, 54 )
-	Divider02:setImage( RegisterImage( 0x84CF831D4ADD5C3 ) )
+	Divider02:setImage( RegisterImage( "uie_ui_hud_zm_aar_stat_divider" ) )
 	Divider02:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Divider02 )
 	self.Divider02 = Divider02
@@ -67,7 +67,7 @@ CoD.ScoreboardRowInformationList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	self.StatBox2 = StatBox2
 	
 	local Divider03 = LUI.UIImage.new( 0, 0, 533, 537, 0, 0, 6, 54 )
-	Divider03:setImage( RegisterImage( 0x84CF831D4ADD5C3 ) )
+	Divider03:setImage( RegisterImage( "uie_ui_hud_zm_aar_stat_divider" ) )
 	Divider03:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Divider03 )
 	self.Divider03 = Divider03
@@ -88,7 +88,7 @@ CoD.ScoreboardRowInformationList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	self.StatBox3 = StatBox3
 	
 	local Divider04 = LUI.UIImage.new( 0, 0, 631, 635, 0, 0, 6, 54 )
-	Divider04:setImage( RegisterImage( 0x84CF831D4ADD5C3 ) )
+	Divider04:setImage( RegisterImage( "uie_ui_hud_zm_aar_stat_divider" ) )
 	Divider04:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Divider04 )
 	self.Divider04 = Divider04
@@ -109,7 +109,7 @@ CoD.ScoreboardRowInformationList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	self.StatBox4 = StatBox4
 	
 	local Divider05 = LUI.UIImage.new( 0, 0, 729, 733, 0, 0, 6, 54 )
-	Divider05:setImage( RegisterImage( 0x84CF831D4ADD5C3 ) )
+	Divider05:setImage( RegisterImage( "uie_ui_hud_zm_aar_stat_divider" ) )
 	Divider05:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Divider05 )
 	self.Divider05 = Divider05

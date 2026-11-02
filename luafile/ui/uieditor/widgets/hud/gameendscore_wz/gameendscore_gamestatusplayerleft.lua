@@ -21,7 +21,7 @@ CoD.GameEndScore_GameStatusPlayerLeft.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local PlayerCount = LUI.UIText.new( 1, 1, -90, -10, 0, 0, 7.5, 42.5 )
 	PlayerCount:setTTF( "0arame_mono_stencil" )
-	PlayerCount:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	PlayerCount:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	PlayerCount:setShaderVector( 0, 0.8, 0, 0, 0 )
 	PlayerCount:setShaderVector( 1, 0, 0, 0, 0 )
 	PlayerCount:setShaderVector( 2, 1, 1, 1, 0.35 )

@@ -13,7 +13,7 @@ CoD.CurrentTier.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	PurchaseText:setAlpha( 0 )
 	PurchaseText:setText( LocalizeToUpperString( "menu/current_tier" ) )
 	PurchaseText:setTTF( "ttmussels_demibold" )
-	PurchaseText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	PurchaseText:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	PurchaseText:setShaderVector( 0, 1, 0, 0, 0 )
 	PurchaseText:setShaderVector( 1, 0, 0, 0, 0 )
 	PurchaseText:setShaderVector( 2, 0, 0, 0, 1 )

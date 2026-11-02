@@ -26,7 +26,7 @@ CoD.ArenaEventProgressButtonRank.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	local leagueOrdinalRank = LUI.UIText.new( 0, 0, 164, 192, 0, 0, -7, 18 )
 	leagueOrdinalRank:setRGB( 0.87, 0.65, 0.01 )
 	leagueOrdinalRank:setTTF( "0arame_mono_stencil" )
-	leagueOrdinalRank:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	leagueOrdinalRank:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	leagueOrdinalRank:setLetterSpacing( 2 )
 	leagueOrdinalRank:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	leagueOrdinalRank:subscribeToGlobalModel( f1_arg1, "LeaguePlayLadder", "entityLadderRank", function ( model )

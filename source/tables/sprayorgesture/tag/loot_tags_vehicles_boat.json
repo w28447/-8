@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_vehicles_boat",
     "type": "#tag",
-    "material": "#hash_7b3887980c3914ea",
+    "material": "#vd/mtl_loot_ui_icon_tags_vehicles_boat",
     "bundle": {
         "type": "#tag",
         "title": "localized18#hash_5fbd02d7f893079c",

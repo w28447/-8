@@ -11,7 +11,7 @@ CoD.ReservesContentImage.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local Image = LUI.UIFixedAspectRatioImage.new( 0.5, 0.5, -146, 146, 0, 0, 0, 378 )
-	Image:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	Image:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	Image:setShaderVector( 0, 0, 0, 0, 0 )
 	Image:setShaderVector( 1, 1, 1, 0, 0 )
 	Image:setShaderVector( 2, 0, 0, 0, 0 )
@@ -27,7 +27,7 @@ CoD.ReservesContentImage.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local Camo = LUI.UIImage.new( 0, 0, 0, 292, 0, 0, 81.5, 296.5 )
 	Camo:setAlpha( 0 )
-	Camo:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	Camo:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	Camo:setShaderVector( 0, 0.65, 0, 0, 0 )
 	Camo:setShaderVector( 1, 1, 1, 0, 0 )
 	Camo:setShaderVector( 2, 0, 0, 0, 0 )

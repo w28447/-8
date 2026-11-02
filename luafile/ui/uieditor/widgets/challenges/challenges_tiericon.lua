@@ -65,7 +65,7 @@ CoD.Challenges_TierIcon.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local TierText = LUI.UIText.new( 0, 0, 5, 35, 0, 0, 12, 42 )
 	TierText:setTTF( "ttmussels_regular" )
-	TierText:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
+	TierText:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow" ) )
 	TierText:setShaderVector( 0, 0.02, 0, 0, 0 )
 	TierText:setShaderVector( 1, 0.06, 0, 0, 0 )
 	TierText:setShaderVector( 2, 1, 0, 0, 0 )

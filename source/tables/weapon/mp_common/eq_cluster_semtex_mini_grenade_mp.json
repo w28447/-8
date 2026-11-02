@@ -54,7 +54,7 @@
         }
     ],
     "#hash_2e4a8800": "#eq_cluster_semtex_scoreevents",
-    "projectilemodel": "#hash_7ccbeda8d7b8477c",
+    "projectilemodel": "#wpn_t8_eqp_semtex_cluster_bomblet_projectile",
     "viewmodel": [
         "#wpn_t8_eqp_semtex_cluster_view"
     ],

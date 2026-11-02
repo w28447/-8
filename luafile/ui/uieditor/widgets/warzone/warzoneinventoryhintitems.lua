@@ -197,7 +197,7 @@ CoD.WarzoneInventoryHintItems.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	EMP = LUI.UIImage.new( 0, 0, 6, 94, 0, 0, 7, 91 )
 	EMP:setAlpha( 0 )
-	EMP:setImage( RegisterImage( 0xB3436B57B647EA3 ) )
+	EMP:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_emp_dpad_widget" ) )
 	EMP:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_emp" ) )
 	EMP:setShaderVector( 0, 35.93, 0, 0, 0 )
 	EMP:setShaderVector( 1, 0.83, 0, 0, 0 )

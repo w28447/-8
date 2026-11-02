@@ -10,7 +10,7 @@ CoD.AARTierRewardItemImage.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local CroppedImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	CroppedImage:setAlpha( 0 )
-	CroppedImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	CroppedImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	CroppedImage:setShaderVector( 0, 0.5, 0.5, 0, 0 )
 	CroppedImage:setShaderVector( 1, 1, 1, 0, 0 )
 	CroppedImage:setShaderVector( 2, 0, 0, 0, 0 )
@@ -25,7 +25,7 @@ CoD.AARTierRewardItemImage.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local CroppedImageOutfit = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	CroppedImageOutfit:setAlpha( 0 )
-	CroppedImageOutfit:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	CroppedImageOutfit:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	CroppedImageOutfit:setShaderVector( 0, 0.5, 0, 0, 0 )
 	CroppedImageOutfit:setShaderVector( 1, 1, 1, 0, 0 )
 	CroppedImageOutfit:setShaderVector( 2, 0, 0, 0, 0 )
@@ -39,7 +39,7 @@ CoD.AARTierRewardItemImage.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.CroppedImageOutfit = CroppedImageOutfit
 	
 	local ImageCropped = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	ImageCropped:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	ImageCropped:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	ImageCropped:setShaderVector( 0, 0.5, 0.5, 0, 0 )
 	ImageCropped:setShaderVector( 1, 1, 1, 0, 0 )
 	ImageCropped:setShaderVector( 2, 0, 0, 0, 0 )

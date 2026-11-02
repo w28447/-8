@@ -33,7 +33,7 @@ CoD.ItemShopRarityBackgroundStream_Rare.new = function ( f1_arg0, f1_arg1, f1_ar
 	local RadialGlow = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	RadialGlow:setAlpha( 0.12 )
 	RadialGlow:setImage( RegisterImage( "uie_ui_menu_common_radial_glow01" ) )
-	RadialGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	RadialGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	RadialGlow:setShaderVector( 0, 0.5, 0, 0, 0 )
 	RadialGlow:setShaderVector( 1, 1, 2, 0, 0 )
 	RadialGlow:setShaderVector( 2, 0, 0, 0, 0 )
@@ -70,7 +70,7 @@ CoD.ItemShopRarityBackgroundStream_Rare.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local BGPatternThin = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BGPatternThin:setAlpha( 0.5 )
-	BGPatternThin:setImage( RegisterImage( 0x785018A3DD922D8 ) )
+	BGPatternThin:setImage( RegisterImage( "uie_ui_menu_common_mtx_bg_dots" ) )
 	BGPatternThin:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_add" ) )
 	BGPatternThin:setShaderVector( 0, 0, 0, 0, 0 )
 	BGPatternThin:setShaderVector( 1, 1, 1, 0, 0 )

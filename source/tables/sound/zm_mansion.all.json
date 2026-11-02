@@ -222187,14 +222187,14 @@
         {
             "value": 1565,
             "next": 65535,
-            "name": "#hash_6662c407371ddaff",
+            "name": "#wpn_viperdragon_first_raise_cmn_npc",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6662c407371ddaff",
-                    "secondaryname": "#hash_57114f2e8a5b2699",
+                    "name": "#wpn_viperdragon_first_raise_cmn_npc",
+                    "secondaryname": "#wpn_viperdragon_first_raise_cmn_npc_lfe",
                     "assetId": "#hash_185a63be23aed7d8",
                     "assetFileNameSustain": "#zm_mansion.all",
                     "assetIdRelease": "#zm_mansion.all",
@@ -222237,13 +222237,13 @@
         {
             "value": 195,
             "next": 1037,
-            "name": "#hash_57114f2e8a5b2699",
+            "name": "#wpn_viperdragon_first_raise_cmn_npc_lfe",
             "sequence": 0,
             "cullDistance": 574,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_57114f2e8a5b2699",
+                    "name": "#wpn_viperdragon_first_raise_cmn_npc_lfe",
                     "secondaryname": "#wpn_raise_global_npc",
                     "assetId": "#hash_5b8f641d30643fce",
                     "assetFileNameSustain": "#zm_mansion.all",
@@ -222289,14 +222289,14 @@
         {
             "value": 682,
             "next": 65535,
-            "name": "#hash_502c50791bae7fa",
+            "name": "#wpn_viperdragon_first_raise_cmn_plr",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_502c50791bae7fa",
-                    "secondaryname": "#hash_bc551f958b18108",
+                    "name": "#wpn_viperdragon_first_raise_cmn_plr",
+                    "secondaryname": "#wpn_viperdragon_first_raise_cmn_plr_lfe",
                     "assetId": "#hash_1b932ba12e7e9764",
                     "assetFileNameSustain": "#zm_mansion.all",
                     "assetIdRelease": "#zm_mansion.all",
@@ -222339,13 +222339,13 @@
         {
             "value": 1562,
             "next": 65535,
-            "name": "#hash_bc551f958b18108",
+            "name": "#wpn_viperdragon_first_raise_cmn_plr_lfe",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_bc551f958b18108",
+                    "name": "#wpn_viperdragon_first_raise_cmn_plr_lfe",
                     "secondaryname": "#wpn_raise_global_plr",
                     "assetId": "#hash_5b8f641d30643fce",
                     "assetFileNameSustain": "#zm_mansion.all",
@@ -222391,14 +222391,14 @@
         {
             "value": 522,
             "next": 1040,
-            "name": "#hash_7c6b06941557e340",
+            "name": "#wpn_viperdragon_first_raise_lvl3_npc",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7c6b06941557e340",
-                    "secondaryname": "#hash_6662c407371ddaff",
+                    "name": "#wpn_viperdragon_first_raise_lvl3_npc",
+                    "secondaryname": "#wpn_viperdragon_first_raise_cmn_npc",
                     "assetId": "#hash_7ae0935efc323f40",
                     "assetFileNameSustain": "#zm_mansion.all",
                     "assetIdRelease": "#zm_mansion.all",
@@ -222441,14 +222441,14 @@
         {
             "value": 1344,
             "next": 65535,
-            "name": "#hash_3d7ba193a917b881",
+            "name": "#wpn_viperdragon_first_raise_lvl3_plr",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3d7ba193a917b881",
-                    "secondaryname": "#hash_502c50791bae7fa",
+                    "name": "#wpn_viperdragon_first_raise_lvl3_plr",
+                    "secondaryname": "#wpn_viperdragon_first_raise_cmn_plr",
                     "assetId": "#hash_5ff9684d8c958468",
                     "assetFileNameSustain": "#zm_mansion.all",
                     "assetIdRelease": "#zm_mansion.all",
@@ -222491,13 +222491,13 @@
         {
             "value": 831,
             "next": 65535,
-            "name": "#hash_51de8795c89de25a",
+            "name": "#wpn_viperdragon_raise_cmn_npc",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_51de8795c89de25a",
+                    "name": "#wpn_viperdragon_raise_cmn_npc",
                     "secondaryname": "#wpn_raise_global_npc",
                     "assetId": "#hash_107bc08b5413249c",
                     "assetFileNameSustain": "#zm_mansion.all",
@@ -222541,13 +222541,13 @@
         {
             "value": 973,
             "next": 65535,
-            "name": "#hash_10cdee9634de107f",
+            "name": "#wpn_viperdragon_raise_cmn_plr",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_10cdee9634de107f",
+                    "name": "#wpn_viperdragon_raise_cmn_plr",
                     "secondaryname": "#wpn_raise_global_plr",
                     "assetId": "#hash_74c0df5519427758",
                     "assetFileNameSustain": "#zm_mansion.all",
@@ -222740,13 +222740,13 @@
         {
             "value": 99,
             "next": 1045,
-            "name": "#hash_a0c04af51540f93",
+            "name": "#wpn_wkud_charge_hold_lp_plr",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_a0c04af51540f93",
+                    "name": "#wpn_wkud_charge_hold_lp_plr",
                     "assetId": "#hash_d95feb30ebadf06",
                     "assetFileNameSustain": "#zm_mansion.all",
                     "assetIdRelease": "#zm_mansion.all",
@@ -222791,13 +222791,13 @@
         {
             "value": 39,
             "next": 1043,
-            "name": "#hash_3aa4a8ccf51765e8",
+            "name": "#wpn_wkud_charge_rise_plr",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3aa4a8ccf51765e8",
+                    "name": "#wpn_wkud_charge_rise_plr",
                     "assetId": "#hash_2e9a5940824f7a30",
                     "assetFileNameSustain": "#zm_mansion.all",
                     "assetIdRelease": "#zm_mansion.all",
@@ -224817,7 +224817,7 @@
                 {
                     "name": "#wpn_wkud_lvl2_fire_plr",
                     "secondaryname": "#wpn_wkud_lvl2_fire_lfe_plr",
-                    "stopAliasName": "#hash_3aa4a8ccf51765e8",
+                    "stopAliasName": "#wpn_wkud_charge_rise_plr",
                     "assetId": "#hash_23da4d415ae36637",
                     "assetFileNameSustain": "#zm_mansion.all",
                     "assetIdRelease": "#zm_mansion.all",
@@ -224860,7 +224860,7 @@
                 {
                     "name": "#wpn_wkud_lvl2_fire_plr",
                     "secondaryname": "#wpn_wkud_lvl2_fire_lfe_plr",
-                    "stopAliasName": "#hash_3aa4a8ccf51765e8",
+                    "stopAliasName": "#wpn_wkud_charge_rise_plr",
                     "assetId": "#hash_442b2bf35858f1da",
                     "assetFileNameSustain": "#zm_mansion.all",
                     "assetIdRelease": "#zm_mansion.all",
@@ -224903,7 +224903,7 @@
                 {
                     "name": "#wpn_wkud_lvl2_fire_plr",
                     "secondaryname": "#wpn_wkud_lvl2_fire_lfe_plr",
-                    "stopAliasName": "#hash_3aa4a8ccf51765e8",
+                    "stopAliasName": "#wpn_wkud_charge_rise_plr",
                     "assetId": "#hash_3ec4fab7f9241485",
                     "assetFileNameSustain": "#zm_mansion.all",
                     "assetIdRelease": "#zm_mansion.all",
@@ -224946,7 +224946,7 @@
                 {
                     "name": "#wpn_wkud_lvl2_fire_plr",
                     "secondaryname": "#wpn_wkud_lvl2_fire_lfe_plr",
-                    "stopAliasName": "#hash_3aa4a8ccf51765e8",
+                    "stopAliasName": "#wpn_wkud_charge_rise_plr",
                     "assetId": "#hash_52da8d35c2b2f650",
                     "assetFileNameSustain": "#zm_mansion.all",
                     "assetIdRelease": "#zm_mansion.all",
@@ -225281,7 +225281,7 @@
                 {
                     "name": "#wpn_wkud_lvl3_fire_plr",
                     "secondaryname": "#wpn_wkud_lvl3_fire_lfe_plr",
-                    "stopAliasName": "#hash_3aa4a8ccf51765e8",
+                    "stopAliasName": "#wpn_wkud_charge_rise_plr",
                     "assetId": "#hash_424e364493429a87",
                     "assetFileNameSustain": "#zm_mansion.all",
                     "assetIdRelease": "#zm_mansion.all",
@@ -225324,7 +225324,7 @@
                 {
                     "name": "#wpn_wkud_lvl3_fire_plr",
                     "secondaryname": "#wpn_wkud_lvl3_fire_lfe_plr",
-                    "stopAliasName": "#hash_3aa4a8ccf51765e8",
+                    "stopAliasName": "#wpn_wkud_charge_rise_plr",
                     "assetId": "#hash_4eff71c1278c006a",
                     "assetFileNameSustain": "#zm_mansion.all",
                     "assetIdRelease": "#zm_mansion.all",
@@ -225367,7 +225367,7 @@
                 {
                     "name": "#wpn_wkud_lvl3_fire_plr",
                     "secondaryname": "#wpn_wkud_lvl3_fire_lfe_plr",
-                    "stopAliasName": "#hash_3aa4a8ccf51765e8",
+                    "stopAliasName": "#wpn_wkud_charge_rise_plr",
                     "assetId": "#hash_667ddf97dd754d95",
                     "assetFileNameSustain": "#zm_mansion.all",
                     "assetIdRelease": "#zm_mansion.all",
@@ -225410,7 +225410,7 @@
                 {
                     "name": "#wpn_wkud_lvl3_fire_plr",
                     "secondaryname": "#wpn_wkud_lvl3_fire_lfe_plr",
-                    "stopAliasName": "#hash_3aa4a8ccf51765e8",
+                    "stopAliasName": "#wpn_wkud_charge_rise_plr",
                     "assetId": "#hash_86ba5f553ee3be0",
                     "assetFileNameSustain": "#zm_mansion.all",
                     "assetIdRelease": "#zm_mansion.all",
@@ -226609,13 +226609,13 @@
         {
             "value": 318,
             "next": 1086,
-            "name": "#hash_27c1e5d7dbff24c1",
+            "name": "#zmb_altar_zeus_elec_pop",
             "sequence": 0,
             "cullDistance": 600,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_27c1e5d7dbff24c1",
+                    "name": "#zmb_altar_zeus_elec_pop",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_00.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_mansion.all",
                     "assetIdRelease": "#zm_mansion.all",
@@ -226654,7 +226654,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_27c1e5d7dbff24c1",
+                    "name": "#zmb_altar_zeus_elec_pop",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_01.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_mansion.all",
                     "assetIdRelease": "#zm_mansion.all",
@@ -226693,7 +226693,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_27c1e5d7dbff24c1",
+                    "name": "#zmb_altar_zeus_elec_pop",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_02.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_mansion.all",
                     "assetIdRelease": "#zm_mansion.all",
@@ -226732,7 +226732,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_27c1e5d7dbff24c1",
+                    "name": "#zmb_altar_zeus_elec_pop",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_03.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_mansion.all",
                     "assetIdRelease": "#zm_mansion.all",
@@ -226771,7 +226771,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_27c1e5d7dbff24c1",
+                    "name": "#zmb_altar_zeus_elec_pop",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_04.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_mansion.all",
                     "assetIdRelease": "#zm_mansion.all",
@@ -226810,7 +226810,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_27c1e5d7dbff24c1",
+                    "name": "#zmb_altar_zeus_elec_pop",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_05.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_mansion.all",
                     "assetIdRelease": "#zm_mansion.all",
@@ -226849,7 +226849,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_27c1e5d7dbff24c1",
+                    "name": "#zmb_altar_zeus_elec_pop",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_06.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_mansion.all",
                     "assetIdRelease": "#zm_mansion.all",
@@ -226888,7 +226888,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_27c1e5d7dbff24c1",
+                    "name": "#zmb_altar_zeus_elec_pop",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_07.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_mansion.all",
                     "assetIdRelease": "#zm_mansion.all",
@@ -226927,7 +226927,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_27c1e5d7dbff24c1",
+                    "name": "#zmb_altar_zeus_elec_pop",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_08.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_mansion.all",
                     "assetIdRelease": "#zm_mansion.all",
@@ -260879,13 +260879,13 @@
         {
             "value": 13,
             "next": 1434,
-            "name": "#hash_fe9819f9d2ed9b7",
+            "name": "#zmb_monolith_water_effect_end",
             "sequence": 0,
             "cullDistance": 850,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_fe9819f9d2ed9b7",
+                    "name": "#zmb_monolith_water_effect_end",
                     "assetId": "#zmb/bgb/nowyouseeme/stop.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_mansion.all",
                     "assetIdRelease": "#zm_mansion.all",
@@ -296803,13 +296803,13 @@
         {
             "value": 709,
             "next": 1638,
-            "name": "#hash_29644dffd64c4554",
+            "name": "#zmb_ww_parts_glow",
             "sequence": 0,
             "cullDistance": 250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_29644dffd64c4554",
+                    "name": "#zmb_ww_parts_glow",
                     "assetId": "#hash_41e7fdf4a80cd84f",
                     "assetFileNameSustain": "#zm_mansion.all",
                     "assetIdRelease": "#zm_mansion.all",

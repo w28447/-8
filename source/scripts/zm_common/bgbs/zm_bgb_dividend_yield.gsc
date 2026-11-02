@@ -39,7 +39,7 @@ function __init__()
 function enable()
 {
     self endon( #"disconnect", #"bled_out", #"bgb_update" );
-    self thread bgb::function_f51e3503( 720, &function_db295169, &function_cbaf1f69 );
+    self thread bgb::player_proximity_watcher( 720, &proximity_start, &proximity_end );
     self thread function_5cf91552();
 }
 
@@ -123,21 +123,21 @@ function add_to_player_score_override( n_points, str_awarded_by, zm_scr_spawner_
 // Params 1
 // Checksum 0xeffbab32, Offset: 0x618
 // Size: 0xdc
-function function_db295169( e_player )
+function proximity_start( e_player )
 {
-    self function_51e0947e();
-    e_player function_51e0947e();
+    self increment_fx_count();
+    e_player increment_fx_count();
     str_notify = "dividend_yield_fx_stop_" + self getentitynumber();
     level util::waittill_any_ents( e_player, "disconnect", e_player, str_notify, self, "disconnect", self, "dividend_yield_complete" );
     
     if ( isdefined( self ) )
     {
-        self function_68790c5a();
+        self decrement_fx_count();
     }
     
     if ( isdefined( e_player ) )
     {
-        e_player function_68790c5a();
+        e_player decrement_fx_count();
     }
 }
 
@@ -145,7 +145,7 @@ function function_db295169( e_player )
 // Params 1
 // Checksum 0x960e4deb, Offset: 0x700
 // Size: 0x3a
-function function_cbaf1f69( e_player )
+function proximity_end( e_player )
 {
     str_notify = "dividend_yield_fx_stop_" + self getentitynumber();
     e_player notify( str_notify );
@@ -155,7 +155,7 @@ function function_cbaf1f69( e_player )
 // Params 0
 // Checksum 0x244b3d99, Offset: 0x748
 // Size: 0x6c
-function function_51e0947e()
+function increment_fx_count()
 {
     if ( !isdefined( self.var_836ebde0 ) || self.var_836ebde0 == 0 )
     {
@@ -171,7 +171,7 @@ function function_51e0947e()
 // Params 0
 // Checksum 0xf9786af0, Offset: 0x7c0
 // Size: 0x4c
-function function_68790c5a()
+function decrement_fx_count()
 {
     self.var_836ebde0--;
     

@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_hiphop_crash",
     "type": "#tag",
-    "material": "#hash_15236afd64e13d56",
+    "material": "#vd/mtl_loot_ui_icon_tags_hiphop_crash",
     "bundle": {
         "type": "#tag",
         "title": "localized18#hash_d87b9e21dbfba71",

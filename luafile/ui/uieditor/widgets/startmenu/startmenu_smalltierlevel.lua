@@ -52,7 +52,7 @@ CoD.StartMenu_SmallTierLevel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local NextText = LUI.UIText.new( 0, 0, 266, 345, 0, 0, 53.5, 70.5 )
 	NextText:setRGB( 0.88, 0.96, 1 )
 	NextText:setTTF( "ttmussels_regular" )
-	NextText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	NextText:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	NextText:setShaderVector( 0, 0, 0, 0, 0 )
 	NextText:setShaderVector( 1, 0, 0, 0, 0 )
 	NextText:setShaderVector( 2, 0, 0.7, 1, 0.2 )
@@ -71,7 +71,7 @@ CoD.StartMenu_SmallTierLevel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local TierText = LUI.UIText.new( 0, 0, 12.5, 129.5, 0, 0, 25.5, 53.5 )
 	TierText:setRGB( 0.88, 0.96, 1 )
 	TierText:setTTF( "ttmussels_demibold" )
-	TierText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	TierText:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	TierText:setShaderVector( 0, 1, 0, 0, 0 )
 	TierText:setShaderVector( 1, 0, 0, 0, 0 )
 	TierText:setShaderVector( 2, 0, 0.7, 1, 0.2 )
@@ -97,7 +97,7 @@ CoD.StartMenu_SmallTierLevel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local tierProgressBackground = LUI.UIImage.new( 0.04, 0.76, -3, -3, 0, 0, 55, 67 )
 	tierProgressBackground:setRGB( 0.09, 0.09, 0.09 )
-	tierProgressBackground:setImage( RegisterImage( 0x2F80AF66C054F97 ) )
+	tierProgressBackground:setImage( RegisterImage( "uie_ui_menu_item_shop_tier_bar_empty" ) )
 	self:addElement( tierProgressBackground )
 	self.tierProgressBackground = tierProgressBackground
 	
@@ -115,7 +115,7 @@ CoD.StartMenu_SmallTierLevel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local tierProgress = LUI.UIImage.new( 0, 0, 11, 263, 0, 0, 55, 67 )
 	tierProgress:setRGB( 0.5, 0.85, 1 )
-	tierProgress:setImage( RegisterImage( 0xE51FDFB95E8F82B ) )
+	tierProgress:setImage( RegisterImage( "uie_ui_menu_item_shop_tier_bar_full" ) )
 	tierProgress:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	tierProgress:setShaderVector( 1, 0, 0, 0, 0 )
 	tierProgress:setShaderVector( 2, 1, 0, 0, 0 )

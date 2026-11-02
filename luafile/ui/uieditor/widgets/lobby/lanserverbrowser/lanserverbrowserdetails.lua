@@ -43,7 +43,7 @@ CoD.LANServerBrowserDetails.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	TiledPlusGrid:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	TiledPlusGrid:setAlpha( 0.1 )
 	TiledPlusGrid:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_repeat_plusgrid" ) )
-	TiledPlusGrid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	TiledPlusGrid:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	TiledPlusGrid:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledPlusGrid:setupNineSliceShader( 220, 220 )
 	self:addElement( TiledPlusGrid )
@@ -58,7 +58,7 @@ CoD.LANServerBrowserDetails.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.PlayerListTitle = PlayerListTitle
 	
 	local MapImage = LUI.UIImage.new( 0, 0, 0, 515, 0, 0, 0, 292 )
-	MapImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	MapImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	MapImage:setShaderVector( 0, 0, 0, 0, 0 )
 	MapImage:setShaderVector( 1, 1, 1, 0, 0 )
 	MapImage:setShaderVector( 2, 0, 0, 0, 0 )

@@ -10,7 +10,7 @@ CoD.TabbedScoreboardMapInfoboxLeft.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local InfoLeftBarBot = LUI.UIImage.new( 0, 0, -1, 141, 0, 0, 141, 149 )
 	InfoLeftBarBot:setRGB( 0.95, 0.95, 0.95 )
-	InfoLeftBarBot:setImage( RegisterImage( 0xB4D6116B68B53D0 ) )
+	InfoLeftBarBot:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_info_greybar" ) )
 	self:addElement( InfoLeftBarBot )
 	self.InfoLeftBarBot = InfoLeftBarBot
 	
@@ -27,21 +27,21 @@ CoD.TabbedScoreboardMapInfoboxLeft.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	self.InfoLeftBG = InfoLeftBG
 	
 	local InfoLeftBarRed = LUI.UIImage.new( 0, 0, -7, 155, 0, 0, 121, 147 )
-	InfoLeftBarRed:setImage( RegisterImage( 0x5F904AB9EE1698C ) )
+	InfoLeftBarRed:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_info_redbar" ) )
 	self:addElement( InfoLeftBarRed )
 	self.InfoLeftBarRed = InfoLeftBarRed
 	
 	local InfoLeftBarRedAdd = LUI.UIImage.new( 0, 0, -7, 155, 0, 0, 121, 147 )
 	InfoLeftBarRedAdd:setAlpha( 0 )
-	InfoLeftBarRedAdd:setImage( RegisterImage( 0x5F904AB9EE1698C ) )
-	InfoLeftBarRedAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	InfoLeftBarRedAdd:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_info_redbar" ) )
+	InfoLeftBarRedAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	InfoLeftBarRedAdd:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( InfoLeftBarRedAdd )
 	self.InfoLeftBarRedAdd = InfoLeftBarRedAdd
 	
 	local InfoLeftBarTop = LUI.UIImage.new( 0, 0, -1, 141, 0, 0, 119, 127 )
 	InfoLeftBarTop:setRGB( 0.95, 0.95, 0.95 )
-	InfoLeftBarTop:setImage( RegisterImage( 0xB4D6116B68B53D0 ) )
+	InfoLeftBarTop:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_info_greybar" ) )
 	self:addElement( InfoLeftBarTop )
 	self.InfoLeftBarTop = InfoLeftBarTop
 	
@@ -52,24 +52,24 @@ CoD.TabbedScoreboardMapInfoboxLeft.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local VisibilityTextBlur = LUI.UIImage.new( 0, 0, 11, 131, 0, 0, 130, 140 )
 	VisibilityTextBlur:setAlpha( 0.1 )
-	VisibilityTextBlur:setImage( RegisterImage( 0x2B45159FDA9D9AA ) )
+	VisibilityTextBlur:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_info_text_vis" ) )
 	VisibilityTextBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( VisibilityTextBlur )
 	self.VisibilityTextBlur = VisibilityTextBlur
 	
 	local VisibilityText = LUI.UIImage.new( 0, 0, 10, 130, 0, 0, 129, 139 )
-	VisibilityText:setImage( RegisterImage( 0x2B45159FDA9D9AA ) )
+	VisibilityText:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_info_text_vis" ) )
 	VisibilityText:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( VisibilityText )
 	self.VisibilityText = VisibilityText
 	
 	local FuiElements = LUI.UIImage.new( 0, 0, -3, 143, 0, 0, 6, 124 )
-	FuiElements:setImage( RegisterImage( 0x14E6AA075E443C8 ) )
+	FuiElements:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_info_text01" ) )
 	self:addElement( FuiElements )
 	self.FuiElements = FuiElements
 	
 	local infoLeftText = LUI.UIImage.new( 0, 0, 3, 145, 0, 0, 151, 169 )
-	infoLeftText:setImage( RegisterImage( 0x14E6DA075E448E1 ) )
+	infoLeftText:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_info_text02" ) )
 	self:addElement( infoLeftText )
 	self.infoLeftText = infoLeftText
 	

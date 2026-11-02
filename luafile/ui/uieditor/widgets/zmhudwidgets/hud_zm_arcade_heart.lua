@@ -18,7 +18,7 @@ CoD.HUD_ZM_Arcade_Heart.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	self.flare = flare
 	
 	local HeartWidget = LUI.UIImage.new( 0, 0, 0, 42, 0, 0, 0, 42 )
-	HeartWidget:setImage( RegisterImage( 0xDE5D2D6F4375CE6 ) )
+	HeartWidget:setImage( RegisterImage( "uie_zm_rush_heart_full" ) )
 	self:addElement( HeartWidget )
 	self.HeartWidget = HeartWidget
 	

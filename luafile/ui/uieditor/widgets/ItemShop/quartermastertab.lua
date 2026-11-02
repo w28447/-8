@@ -14,7 +14,7 @@ CoD.QuarterMasterTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local ZMTabBackingGlowRed = LUI.UIImage.new( 0, 1, -111, 111, 0, 1, -111, 111 )
 	ZMTabBackingGlowRed:setAlpha( 0 )
 	ZMTabBackingGlowRed:setImage( RegisterImage( "uie_ui_menu_common_tab_glowred" ) )
-	ZMTabBackingGlowRed:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	ZMTabBackingGlowRed:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	ZMTabBackingGlowRed:setShaderVector( 0, 1.36, 0, 0, 0 )
 	self:addElement( ZMTabBackingGlowRed )
 	self.ZMTabBackingGlowRed = ZMTabBackingGlowRed
@@ -22,7 +22,7 @@ CoD.QuarterMasterTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local ZMTabBackingRed = LUI.UIImage.new( 0, 1, -67, 67, 0, 1, -32, 32 )
 	ZMTabBackingRed:setAlpha( 0 )
 	ZMTabBackingRed:setImage( RegisterImage( "uie_ui_menu_common_tab_backing_red" ) )
-	ZMTabBackingRed:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	ZMTabBackingRed:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	ZMTabBackingRed:setShaderVector( 0, 0.9, 0, 0, 0 )
 	self:addElement( ZMTabBackingRed )
 	self.ZMTabBackingRed = ZMTabBackingRed
@@ -80,7 +80,7 @@ CoD.QuarterMasterTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local TabBackingGlow = LUI.UIImage.new( 0, 1, -117, 117, 0, 1, -111, 111 )
 	TabBackingGlow:setAlpha( 0 )
 	TabBackingGlow:setImage( RegisterImage( "uie_ui_menu_common_tab_glow" ) )
-	TabBackingGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	TabBackingGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	TabBackingGlow:setShaderVector( 0, 1.36, 0, 0, 0 )
 	self:addElement( TabBackingGlow )
 	self.TabBackingGlow = TabBackingGlow
@@ -88,7 +88,7 @@ CoD.QuarterMasterTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local TabBacking = LUI.UIImage.new( 0, 1, -66, 66, 0, 1, -30, 30 )
 	TabBacking:setAlpha( 0 )
 	TabBacking:setImage( RegisterImage( "uie_ui_menu_common_tab_backing" ) )
-	TabBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	TabBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	TabBacking:setShaderVector( 0, 0.9, 0, 0, 0 )
 	self:addElement( TabBacking )
 	self.TabBacking = TabBacking
@@ -113,7 +113,7 @@ CoD.QuarterMasterTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	TabTitleFocus:setRGB( 0, 0, 0 )
 	TabTitleFocus:setAlpha( 0 )
 	TabTitleFocus:setTTF( "ttmussels_demibold" )
-	TabTitleFocus:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	TabTitleFocus:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	TabTitleFocus:setLetterSpacing( 3 )
 	TabTitleFocus:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	TabTitleFocus:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )
@@ -123,7 +123,7 @@ CoD.QuarterMasterTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	TabTitleFocus:setBackingXPadding( 50 )
 	TabTitleFocus:setBackingYPadding( 7 )
 	TabTitleFocus:setBackingImage( RegisterImage( "uie_circularglow" ) )
-	TabTitleFocus:setBackingMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	TabTitleFocus:setBackingMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	TabTitleFocus:setBackingShaderVector( 0, 1.5, 0, 0, 0 )
 	TabTitleFocus:linkToElementModel( self, "name", true, function ( model )
 		local f5_local0 = model:get()

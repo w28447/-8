@@ -45,7 +45,7 @@ CoD.AmmoWidget_WeaponImage.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local WeaponImage3 = LUI.UIFixedAspectRatioImage.new( 0, 0, -122, -18, 0, 0, -15, 41 )
 	WeaponImage3:setAlpha( 0 )
-	WeaponImage3:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	WeaponImage3:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	WeaponImage3:setShaderVector( 0, 1, 0, 0, 0 )
 	WeaponImage3:linkToElementModel( self, "weapon", true, function ( model )
 		local f4_local0 = model:get()
@@ -70,7 +70,7 @@ CoD.AmmoWidget_WeaponImage.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.WeaponImage2 = WeaponImage2
 	
 	local WeaponImage = LUI.UIFixedAspectRatioImage.new( 0, 0, -122, -18, 0, 0, -15, 41 )
-	WeaponImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	WeaponImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	WeaponImage:setShaderVector( 0, 1, 0, 0, 0 )
 	WeaponImage:setStretchedDimension( 4 )
 	WeaponImage:linkToElementModel( self, "weapon", true, function ( model )

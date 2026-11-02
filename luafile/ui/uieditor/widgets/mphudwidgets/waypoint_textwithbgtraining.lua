@@ -13,7 +13,7 @@ CoD.Waypoint_TextWithBGTraining.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local text = LUI.UIText.new( 0.5, 0.5, -192, 192, 0.5, 0.5, -15, 15 )
 	text:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	text:setTTF( "ttmussels_regular" )
-	text:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	text:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	text:setShaderVector( 0, 0.8, 0, 0, 0 )
 	text:setShaderVector( 1, 0, 0, 0, 0 )
 	text:setShaderVector( 2, 1, 1, 1, 0 )

@@ -43,7 +43,7 @@ CoD.zm_hud_gameover_smokebackground.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	SmokeStandard2:setZRot( 50 )
 	SmokeStandard2:setScale( 0.8, 0.8 )
 	SmokeStandard2:setImage( RegisterImage( "uie_zm_hud_gameover_smokebackground" ) )
-	SmokeStandard2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	SmokeStandard2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	SmokeStandard2:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( SmokeStandard2 )
 	self.SmokeStandard2 = SmokeStandard2
@@ -54,7 +54,7 @@ CoD.zm_hud_gameover_smokebackground.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	SmokeHorizontalLG:setZRot( 191 )
 	SmokeHorizontalLG:setScale( 0.8, 0.6 )
 	SmokeHorizontalLG:setImage( RegisterImage( "uie_zm_hud_inventory_objectivesmoke" ) )
-	SmokeHorizontalLG:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	SmokeHorizontalLG:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	SmokeHorizontalLG:setShaderVector( 0, 2.5, 0, 0, 0 )
 	self:addElement( SmokeHorizontalLG )
 	self.SmokeHorizontalLG = SmokeHorizontalLG
@@ -63,7 +63,7 @@ CoD.zm_hud_gameover_smokebackground.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	SmokeHorizontalSM:setRGB( 0, 0.48, 1 )
 	SmokeHorizontalSM:setAlpha( 0.4 )
 	SmokeHorizontalSM:setImage( RegisterImage( "uie_zm_hud_inventory_objectivesmoke" ) )
-	SmokeHorizontalSM:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	SmokeHorizontalSM:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	SmokeHorizontalSM:setShaderVector( 0, 2.5, 0, 0, 0 )
 	self:addElement( SmokeHorizontalSM )
 	self.SmokeHorizontalSM = SmokeHorizontalSM

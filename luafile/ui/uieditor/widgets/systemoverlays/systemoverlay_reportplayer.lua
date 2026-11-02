@@ -22,7 +22,7 @@ CoD.systemOverlay_reportPlayer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local blur = LUI.UIImage.new( 0, 0, 0, 1920, 0, 0, 0, 525 )
 	blur:setAlpha( 0 )
-	blur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	blur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	blur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( blur )
 	self.blur = blur
@@ -237,7 +237,7 @@ CoD.systemOverlay_reportPlayer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local optionTextBracketR = LUI.UIImage.new( 0.5, 0.5, -388, -376, 0, 0, 211, 223 )
 	optionTextBracketR:setAlpha( 0.5 )
 	optionTextBracketR:setImage( RegisterImage( 0x34B555F15CDD010 ) )
-	optionTextBracketR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	optionTextBracketR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	optionTextBracketR:setShaderVector( 0, 3, 0, 0, 0 )
 	self:addElement( optionTextBracketR )
 	self.optionTextBracketR = optionTextBracketR
@@ -246,7 +246,7 @@ CoD.systemOverlay_reportPlayer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	optionTextBracketL:setAlpha( 0.5 )
 	optionTextBracketL:setZRot( 180 )
 	optionTextBracketL:setImage( RegisterImage( 0x34B555F15CDD010 ) )
-	optionTextBracketL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	optionTextBracketL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	optionTextBracketL:setShaderVector( 0, 3, 0, 0, 0 )
 	self:addElement( optionTextBracketL )
 	self.optionTextBracketL = optionTextBracketL

@@ -48,7 +48,7 @@ CoD.DemoContextPanel.new = function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3, f6_arg
 	f6_arg0:addElementToPendingUpdateStateList( self )
 	
 	local BGBlur = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	BGBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0x81EEB1F96D4BE0A ) )
+	BGBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_feather_normal" ) )
 	BGBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BGBlur )
 	self.BGBlur = BGBlur
@@ -56,7 +56,7 @@ CoD.DemoContextPanel.new = function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3, f6_arg
 	local BGTintButton = LUI.UIImage.new( 0, 1, 0, 0, 1, 1, -30, 0 )
 	BGTintButton:setRGB( 0, 0, 0 )
 	BGTintButton:setAlpha( 0.6 )
-	BGTintButton:setMaterial( LUI.UIImage.GetCachedMaterial( 0x81EEB1F96D4BE0A ) )
+	BGTintButton:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_feather_normal" ) )
 	BGTintButton:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BGTintButton )
 	self.BGTintButton = BGTintButton
@@ -64,7 +64,7 @@ CoD.DemoContextPanel.new = function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3, f6_arg
 	local BGTintFull = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BGTintFull:setRGB( 0, 0, 0 )
 	BGTintFull:setAlpha( 0.6 )
-	BGTintFull:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	BGTintFull:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	BGTintFull:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( BGTintFull )
 	self.BGTintFull = BGTintFull
@@ -72,7 +72,7 @@ CoD.DemoContextPanel.new = function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3, f6_arg
 	local PixelGridTiledBacking = LUI.UIImage.new( 0.5, 0.5, -150, 150, 1, 1, -30, 0 )
 	PixelGridTiledBacking:setAlpha( 0.1 )
 	PixelGridTiledBacking:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
-	PixelGridTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	PixelGridTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	PixelGridTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGridTiledBacking:setupNineSliceShader( 128, 128 )
 	self:addElement( PixelGridTiledBacking )
@@ -86,7 +86,7 @@ CoD.DemoContextPanel.new = function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3, f6_arg
 	ModeName:setRGB( ColorSet.Orange.r, ColorSet.Orange.g, ColorSet.Orange.b )
 	ModeName:setText( Engine[0xF9F1239CFD921FE]( "demo/basic_mode" ) )
 	ModeName:setTTF( "ttmussels_regular" )
-	ModeName:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
+	ModeName:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow" ) )
 	ModeName:setShaderVector( 0, 0.02, 0, 0, 0 )
 	ModeName:setShaderVector( 1, 0.03, 0, 0, 0 )
 	ModeName:setShaderVector( 2, 1, 0, 0, 0 )

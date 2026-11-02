@@ -50,7 +50,7 @@ function activation( var_fad9ed02 = 1 )
     self.var_ffe2c4d7 = 1;
     zm_ai_utility::function_594bb7bd( self );
     
-    if ( self zm_utility::duf47() )
+    if ( self zm_utility::function_ab9a9770() )
     {
         self.var_b520496e = 1;
     }

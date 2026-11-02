@@ -32,7 +32,7 @@ image,#$white_reveal
 material,#ei/gfx8_smk_cigar_whisp_blur_em|dup
 material,#ei/gfx_dust_fall_lg_anim_em|dup
 techset,#hash_216bd2eb7ba0de5c
-material,#hash_cafe7dd79cee015
+material,#ei/gfx8_spark_shower_core_sparse_hdr|dup
 material,#ei/gfx_gas_blur_thin_em|dup
 techset,#hash_37b9a0783ad98393
 material,#ei/gfx_smk_whisp_anim_02_lit|dup
@@ -1146,7 +1146,7 @@ material,#mc/hud_outline_model_orange
 material,#mcp/rope
 material,#mc/hud_outline_model_scriptint
 material,#output_sdr_mask
-material,#hash_2964656460149f96
+material,#pbrfog_2draymarch_sun_lights_add
 material,#mcp/hud_outline_model_z_white_alpha
 material,#mcp/hud_outline_model_white_calpha
 material,#hash_2b48c10e259c812f
@@ -1173,7 +1173,7 @@ material,#bloom_downsample_convolution
 material,#mc/hud_outline_model_red_alpha
 material,#output_hdr_sdr
 material,#skin_vblur_ps
-material,#hash_3073f35d01a9285e
+material,#pbrfog_2draymarch_sun_lights
 material,#bloom_apply_lut_lens_distortion_by
 material,#bloom_apply_lut_lens_distortion_rc
 material,#postfx_electrified

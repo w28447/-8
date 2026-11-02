@@ -16,7 +16,7 @@ CoD.CustomClassTabs.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local TabBackingBlur = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 52, 89 )
-	TabBackingBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	TabBackingBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	TabBackingBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( TabBackingBlur )
 	self.TabBackingBlur = TabBackingBlur

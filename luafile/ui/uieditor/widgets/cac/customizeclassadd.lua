@@ -9,7 +9,7 @@ CoD.CustomizeClassAdd.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local ButtonEmptyBGMain = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	ButtonEmptyBGMain:setImage( RegisterImage( 0xA299C03E7F6C932 ) )
+	ButtonEmptyBGMain:setImage( RegisterImage( "uie_ui_menu_cac_attachment_button_empty_bg_main" ) )
 	ButtonEmptyBGMain:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	ButtonEmptyBGMain:setShaderVector( 0, 0, 0, 0, 0 )
 	ButtonEmptyBGMain:setupNineSliceShader( 74, 74 )
@@ -38,7 +38,7 @@ CoD.CustomizeClassAdd.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.BGGraySm = BGGraySm
 	
 	local ButtonEmptyBGFrame = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	ButtonEmptyBGFrame:setImage( RegisterImage( 0x8858670A83752E8 ) )
+	ButtonEmptyBGFrame:setImage( RegisterImage( "uie_ui_menu_cac_attachment_button_empty_bg_frame" ) )
 	ButtonEmptyBGFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	ButtonEmptyBGFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	ButtonEmptyBGFrame:setupNineSliceShader( 74, 56 )

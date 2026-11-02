@@ -467,8 +467,8 @@ function function_8916aa62( str_line )
         case #"urn_talos":
             str_vo_line = #"hash_3a5e26183d8b51c1";
             break;
-        case #"hash_e2cf00499808431":
-            str_vo_line = #"hash_499d5f58bb808122";
+        case #"interact_apollo_arrow":
+            str_vo_line = #"vox_interact_apollo_arrow_orac_0";
             break;
         case #"interact_automaton":
             str_vo_line = #"vox_interact_automaton_orac_0";

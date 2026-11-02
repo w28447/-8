@@ -1,0 +1,8 @@
+{
+    "name": "#c_t8_zmb_dlc0_zombie_male2_igc",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "body": "#c_t8_zmb_dlc0_zombie_male_fb2_igc"
+}

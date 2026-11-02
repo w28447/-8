@@ -6,7 +6,7 @@
                     "stages": [
                         {
                             "numneeded": 1,
-                            "stageimage": "image#hash_520db7764f24e6bb"
+                            "stageimage": "image#ui_icon_inventory_zm_white_teleporter_part_a"
                         }
                     ],
                     "hash_1d91eeba": 1,
@@ -17,7 +17,7 @@
                     "stages": [
                         {
                             "numneeded": 1,
-                            "stageimage": "image#hash_520db8764f24e86e"
+                            "stageimage": "image#ui_icon_inventory_zm_white_teleporter_part_b"
                         }
                     ],
                     "hash_1d91eeba": 1,
@@ -28,7 +28,7 @@
                     "stages": [
                         {
                             "numneeded": 1,
-                            "stageimage": "image#hash_520db9764f24ea21"
+                            "stageimage": "image#ui_icon_inventory_zm_white_teleporter_part_c"
                         }
                     ],
                     "hash_1d91eeba": 1,
@@ -212,39 +212,39 @@
     "objprogitems": [
         {
             "description": "localized17#hash_5b10d2fec0a94bdb",
-            "image": "image#hash_77ad201e915cc72c"
+            "image": "image#ui_icon_inventory_zm_white_quest_tracker_01"
         },
         {
             "description": "localized17#hash_5b10d1fec0a94a28",
-            "image": "image#hash_77ad231e915ccc45"
+            "image": "image#ui_icon_inventory_zm_white_quest_tracker_02"
         },
         {
             "description": "localized17#hash_6bc92368a78b9454",
-            "image": "image#hash_77ad221e915cca92"
+            "image": "image#ui_icon_inventory_zm_white_quest_tracker_03"
         },
         {
             "description": "localized17#hash_6bc92668a78b996d",
-            "image": "image#hash_77ad1d1e915cc213"
+            "image": "image#ui_icon_inventory_zm_white_quest_tracker_04"
         },
         {
             "description": "localized17#hash_6bc92068a78b8f3b",
-            "image": "image#hash_77ad1c1e915cc060"
+            "image": "image#ui_icon_inventory_zm_white_quest_tracker_05"
         },
         {
             "description": "localized17#hash_6bc92568a78b97ba",
-            "image": "image#hash_77ad1f1e915cc579"
+            "image": "image#ui_icon_inventory_zm_white_quest_tracker_06"
         },
         {
             "description": "localized17#hash_6bc91f68a78b8d88",
-            "image": "image#hash_77ad1e1e915cc3c6"
+            "image": "image#ui_icon_inventory_zm_white_quest_tracker_07"
         },
         {
             "description": "localized17#hash_5b10d7fec0a9545a",
-            "image": "image#hash_77ad291e915cd677"
+            "image": "image#ui_icon_inventory_zm_white_quest_tracker_08"
         },
         {
             "description": "localized17#hash_5b10cafec0a93e43",
-            "image": "image#hash_77ad281e915cd4c4"
+            "image": "image#ui_icon_inventory_zm_white_quest_tracker_09"
         }
     ],
     "packapunchitems": [
@@ -279,7 +279,7 @@
             "clientfield": "#hash_133f5735959cb9bb"
         }
     ],
-    "objectivebackground": "image#hash_71aaa3fae51b94e2",
+    "objectivebackground": "image#ui_icon_inventory_zm_white_quest_tracker",
     "configstringfiletype": "scriptbundle",
     "hash_aa76b7dd": 9,
     "hash_3e38620e": 0,
@@ -294,5 +294,5 @@
     "zm_white_breakfast_trial": "#zm_white_breakfast_trial",
     "hash_f3d39d90": 0,
     "isobjprogressnonlinear": 0,
-    "hash_1ebd66c5e00ca2ef:hash_16fb993f": "image#hash_1ebd66c5e00ca2ef"
+    "ui_icon_inventory_zm_white_quest_tracker_light_empty:hash_16fb993f": "image#ui_icon_inventory_zm_white_quest_tracker_light_empty"
 }

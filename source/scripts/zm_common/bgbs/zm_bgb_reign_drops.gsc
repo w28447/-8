@@ -133,8 +133,8 @@ function function_dfc73f65( n_position )
 {
     v_powerup = self bgb::get_player_dropped_powerup_origin();
     v_up = ( 0, 0, 5 );
-    var_85660237 = v_powerup + anglestoforward( self.angles ) * 60 + v_up;
-    var_97efa74a = var_85660237 + anglestoforward( self.angles ) * 60 + v_up;
+    v_powerup_2 = v_powerup + anglestoforward( self.angles ) * 60 + v_up;
+    v_powerup_3 = v_powerup_2 + anglestoforward( self.angles ) * 60 + v_up;
     
     switch ( n_position )
     {
@@ -148,22 +148,22 @@ function function_dfc73f65( n_position )
             v_origin = v_powerup + anglestoright( self.angles ) * 60 + v_up;
             break;
         case 4:
-            v_origin = var_85660237 + anglestoright( self.angles ) * -60 + v_up;
+            v_origin = v_powerup_2 + anglestoright( self.angles ) * -60 + v_up;
             break;
         case 5:
-            v_origin = var_85660237;
+            v_origin = v_powerup_2;
             break;
         case 6:
-            v_origin = var_85660237 + anglestoright( self.angles ) * 60 + v_up;
+            v_origin = v_powerup_2 + anglestoright( self.angles ) * 60 + v_up;
             break;
         case 7:
-            v_origin = var_97efa74a + anglestoright( self.angles ) * -60 + v_up;
+            v_origin = v_powerup_3 + anglestoright( self.angles ) * -60 + v_up;
             break;
         case 8:
-            v_origin = var_97efa74a;
+            v_origin = v_powerup_3;
             break;
         case 9:
-            v_origin = var_97efa74a + anglestoright( self.angles ) * 60 + v_up;
+            v_origin = v_powerup_3 + anglestoright( self.angles ) * 60 + v_up;
             break;
         default:
             v_origin = v_powerup;

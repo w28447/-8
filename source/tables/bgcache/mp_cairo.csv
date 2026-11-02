@@ -79,9 +79,9 @@ model,#p8_mp_bomb_crate_open
 model,#p8_mp_bomb_crate_single
 model,#p8_flower_pot_02
 model,#p7_debris_trash_bottle_water_02
-model,#hash_241567614711fc65
-model,#hash_241931a1c7f739d8
-model,#hash_241934a1c7f73ef1
+model,#veh_t8_vintage_civ_car_midsize_cuba_police_light_dynent
+model,#p8_cai_debri_propanga_leaflet_english_01
+model,#p8_cai_debri_propanga_leaflet_english_02
 model,#p8_sta_desk_clutter_paper_pile_bulging_folder
 model,#p7_coffee_maker_digital_dmg
 model,#p8_box_cardboard_d_closed_damaged
@@ -127,7 +127,7 @@ model,#p8_bottles_broken_ashore_01
 model,#veh_t8_vintage_mil_truck_gaz63_cuba_flatbed_cover
 model,#p8_fxanim_gp_cuckoo_clock_mod
 model,#p8_fxanim_gp_pigeon_01_mod
-model,#hash_3a1232b536ca1f12
+model,#p8_cai_tv_old_tan
 model,#p8_cos_dest_electrical_boxes_base_01_lid
 model,#p8_spa_picture_frame_wood_square_02_e
 model,#p8_spa_picture_frame_wood_square_02_d
@@ -204,7 +204,7 @@ model,#p8_wz_supply_stash_health
 model,#p8_sun_hat_03
 model,#p8_cas_alcohol_shot_glass_pint_full
 model,#wpn_t8_eqp_briefcase_bomb_stow
-model,#hash_5462f431b2da9974
+model,#p8_cai_hotel_cash_register_old
 model,#p8_flower_pot_02_soil
 model,#p7_paint_metal_can_01
 model,#p7_paint_metal_can_03
@@ -212,7 +212,7 @@ model,#p7_paint_metal_can_02
 model,#p8_mp_bomb_crate_brace
 model,#p7_cai_vase_ceramic_01_f_dmg
 model,#p8_afr_painting_morocco_02_horizontal
-model,#hash_5816ec8ee850a313
+model,#p8_cai_hotel_cash_register_old_dmg
 model,#p8_flower_pot_01_flower
 model,#veh_t8_destructible_glass_02_red
 model,#p8_planter_hanging_02_soil_lrg
@@ -253,8 +253,8 @@ model,#p8_food_fruit_orange_cap_crate
 model,#p8_food_fruit_papaya_cap_crate_dmg
 model,#p8_cas_alcohol_shot_glass_pint_liquid_full
 model,#veh_t8_vintage_mil_truck_gaz63_canvas_attach
-model,#hash_663694494262ec88
-model,#hash_663697494262f1a1
+model,#p8_cai_debri_propanga_leaflet_spanish_01
+model,#p8_cai_debri_propanga_leaflet_spanish_02
 model,#p7_food_jar_jam_lrg_02
 model,#p7_food_jar_jam_lrg_01
 model,#p8_cai_hat_stand_set_green

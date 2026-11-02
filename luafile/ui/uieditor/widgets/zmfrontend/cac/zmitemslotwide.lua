@@ -13,7 +13,7 @@ CoD.ZMItemSlotWide.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local backgroundBlurDisabled = LUI.UIImage.new( 0.07, 0.94, 0, 0, 0, 0, 11, 103 )
 	backgroundBlurDisabled:setRGB( 0, 0, 0 )
 	backgroundBlurDisabled:setAlpha( 0 )
-	backgroundBlurDisabled:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	backgroundBlurDisabled:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	backgroundBlurDisabled:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( backgroundBlurDisabled )
 	self.backgroundBlurDisabled = backgroundBlurDisabled
@@ -28,7 +28,7 @@ CoD.ZMItemSlotWide.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	backgroundBlur:setRGB( 0, 0, 0 )
 	backgroundBlur:setAlpha( 0 )
 	backgroundBlur:setZoom( 3 )
-	backgroundBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	backgroundBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	backgroundBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( backgroundBlur )
 	self.backgroundBlur = backgroundBlur
@@ -37,7 +37,7 @@ CoD.ZMItemSlotWide.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	FocusGlow:setRGB( 0.89, 0.12, 0.12 )
 	FocusGlow:setAlpha( 0 )
 	FocusGlow:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_small" ) )
-	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
+	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_multiplied_add" ) )
 	FocusGlow:setShaderVector( 0, 0, 0, 0, 0 )
 	FocusGlow:setShaderVector( 1, 1.2, 0, 0, 0 )
 	FocusGlow:setupNineSliceShader( 120, 120 )

@@ -158,7 +158,7 @@ CoD.StartMenu_Personalization_MP.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	SpecialistCornerTR:setZRot( -90 )
 	SpecialistCornerTR:setScale( 0.5, 0.5 )
 	SpecialistCornerTR:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_corner" ) )
-	SpecialistCornerTR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	SpecialistCornerTR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	SpecialistCornerTR:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( SpecialistCornerTR )
 	self.SpecialistCornerTR = SpecialistCornerTR
@@ -167,7 +167,7 @@ CoD.StartMenu_Personalization_MP.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	SpecialistCornerTL:setAlpha( 0.2 )
 	SpecialistCornerTL:setScale( 0.5, 0.5 )
 	SpecialistCornerTL:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_corner" ) )
-	SpecialistCornerTL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	SpecialistCornerTL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	SpecialistCornerTL:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( SpecialistCornerTL )
 	self.SpecialistCornerTL = SpecialistCornerTL
@@ -177,7 +177,7 @@ CoD.StartMenu_Personalization_MP.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	SpecialistCornerBR:setZRot( 180 )
 	SpecialistCornerBR:setScale( 0.5, 0.5 )
 	SpecialistCornerBR:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_corner" ) )
-	SpecialistCornerBR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	SpecialistCornerBR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	SpecialistCornerBR:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( SpecialistCornerBR )
 	self.SpecialistCornerBR = SpecialistCornerBR
@@ -252,7 +252,7 @@ CoD.StartMenu_Personalization_MP.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	SpecialistCornerBL:setZRot( 90 )
 	SpecialistCornerBL:setScale( 0.5, 0.5 )
 	SpecialistCornerBL:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_corner" ) )
-	SpecialistCornerBL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	SpecialistCornerBL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	SpecialistCornerBL:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( SpecialistCornerBL )
 	self.SpecialistCornerBL = SpecialistCornerBL

@@ -87,7 +87,7 @@ CoD.OverheadName_WZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	WaypointPattern:setRGB( 0.13, 0.87, 0.94 )
 	WaypointPattern:setAlpha( 0.75 )
 	WaypointPattern:setImage( RegisterImage( "uie_ui_hud_core_waypoint_led" ) )
-	WaypointPattern:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	WaypointPattern:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	WaypointPattern:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( WaypointPattern )
 	self.WaypointPattern = WaypointPattern
@@ -95,7 +95,7 @@ CoD.OverheadName_WZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	local YouText2 = LUI.UIText.new( 0.5, 0.5, -29, 29, 0, 0, -68.5, -47.5 )
 	YouText2:setText( LocalizeToUpperString( "wz/you" ) )
 	YouText2:setTTF( "ttmussels_demibold" )
-	YouText2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	YouText2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	YouText2:setShaderVector( 0, 0.5, 0, 0, 0 )
 	YouText2:setShaderVector( 1, 0, 0, 0, 0 )
 	YouText2:setShaderVector( 2, 0, 0, 0, 0.5 )
@@ -135,7 +135,7 @@ CoD.OverheadName_WZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local PandemicPlatoonChevron = LUI.UIImage.new( 0, 0, 81, 119, 0, 0, -8, 30 )
 	PandemicPlatoonChevron:setAlpha( 0 )
-	PandemicPlatoonChevron:setImage( RegisterImage( 0x860B7285A075F9F ) )
+	PandemicPlatoonChevron:setImage( RegisterImage( "uie_ui_hud_wz_hud_pandemic_platoon_chevron" ) )
 	PandemicPlatoonChevron:linkToElementModel( self, "platoonIndicatorScale", true, function ( model )
 		local f10_local0 = model:get()
 		if f10_local0 ~= nil then

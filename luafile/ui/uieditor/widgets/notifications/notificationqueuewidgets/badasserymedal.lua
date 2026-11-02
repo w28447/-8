@@ -43,7 +43,7 @@ CoD.BadasseryMedal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local Title = LUI.UIText.new( 0, 0, -204, 396, 0, 0, 189, 213 )
 	Title:setRGB( 1, 0.95, 0.71 )
 	Title:setTTF( "ttmussels_demibold" )
-	Title:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	Title:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	Title:setShaderVector( 0, 0.48, 0, 0, 0 )
 	Title:setShaderVector( 1, 0.01, 0, 0, 0 )
 	Title:setShaderVector( 2, 0.96, 0.29, 0.08, 0.89 )

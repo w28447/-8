@@ -42,10 +42,10 @@
     "projectilemodel": "#wpn_t8_zm_melee_staff_ra_lvl1_world",
     "#hash_4bcd08b0": "#tag_origin",
     "viewmodel": [
-        "#hash_5f5b3fd22b7a3cab"
+        "#wpn_t8_zm_eqp_lightning_rod_view"
     ],
     "worldModel": [
-        "#hash_30b0badbca0a10de"
+        "#wpn_t8_zm_eqp_lightning_rod_world"
     ],
     "gadgetIconAvailable": "#ui_icon_inventory_zm_red_eqp_lightning_rod",
     "gadgetIconUnavailable": "#ui_icon_inventory_zm_red_eqp_lightning_rod",

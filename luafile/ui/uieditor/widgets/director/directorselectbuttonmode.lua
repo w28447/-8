@@ -38,7 +38,7 @@ CoD.DirectorSelectButtonMode.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	GameModeText:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	GameModeText:setText( ToUpper( CoD.BaseUtility.LocalizeIfXHash( "menu/waiting_caps" ) ) )
 	GameModeText:setTTF( "ttmussels_demibold" )
-	GameModeText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	GameModeText:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	GameModeText:setLetterSpacing( 3 )
 	GameModeText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	GameModeText:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )

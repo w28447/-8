@@ -1,7 +1,7 @@
 {
     "name": "#hash_6a29af868e8be33c",
-    "model": "#hash_7776710ad19d68a2",
-    "unk20": "#hash_5dbcd4ea7b97e8f8",
+    "model": "#veh_t8_civ_truck_mini_dest_trash_full_dirty_wht_morocco",
+    "unk20": "#veh_t8_civ_truck_mini_trash_dead_full_wht",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
     "pieces": [

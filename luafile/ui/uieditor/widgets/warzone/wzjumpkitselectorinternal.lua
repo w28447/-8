@@ -88,7 +88,7 @@ CoD.WZJumpKitSelectorInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local DotLineBottom = LUI.UIImage.new( 0.5, 0.5, -663, -185, 0, 0, 901.5, 905.5 )
 	DotLineBottom:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline" ) )
-	DotLineBottom:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	DotLineBottom:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	DotLineBottom:setShaderVector( 0, 0, 0, 0, 0 )
 	DotLineBottom:setShaderVector( 1, 1, 1, 0, 0 )
 	DotLineBottom:setShaderVector( 2, 0, 0, 0, 0 )
@@ -97,7 +97,7 @@ CoD.WZJumpKitSelectorInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local DotLineBottom2 = LUI.UIImage.new( 0.5, 0.5, -663, -185, 0, 0, 197, 201 )
 	DotLineBottom2:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline" ) )
-	DotLineBottom2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	DotLineBottom2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	DotLineBottom2:setShaderVector( 0, 0, 0, 0, 0 )
 	DotLineBottom2:setShaderVector( 1, 1, 1, 0, 0 )
 	DotLineBottom2:setShaderVector( 2, 0, 0, 0, 0 )
@@ -107,7 +107,7 @@ CoD.WZJumpKitSelectorInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local emblemListBg = LUI.UIImage.new( 0.5, 0.5, -737, -103, 0, 0, 117, 962 )
 	emblemListBg:setScale( 0.77, 0.77 )
 	emblemListBg:setImage( RegisterImage( "uie_ui_menu_emblem_empty_bg" ) )
-	emblemListBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	emblemListBg:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	emblemListBg:setShaderVector( 0, 0, 0, 0, 0 )
 	emblemListBg:setupNineSliceShader( 212, 212 )
 	self:addElement( emblemListBg )

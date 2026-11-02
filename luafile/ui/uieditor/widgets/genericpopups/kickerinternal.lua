@@ -9,7 +9,7 @@ CoD.kickerinternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	self.soundSet = "default"
 	
 	local ContentIcon = LUI.UIImage.new( 0, 0, 0, 40, 0, 0, 0, 40 )
-	ContentIcon:setImage( RegisterImage( 0x373AE7CA3DB4B97 ) )
+	ContentIcon:setImage( RegisterImage( "uie_ui_menu_popups_toastnotification_icon_fail" ) )
 	self:addElement( ContentIcon )
 	self.ContentIcon = ContentIcon
 	

@@ -10,7 +10,7 @@ CoD.MPPropControlsInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local ControlsBackingBlur = LUI.UIImage.new( 0, 0, 2, 129, 0, 0, 1, 529 )
 	ControlsBackingBlur:setImage( RegisterImage( "uie_ui_hud_prophunt_controls_backing" ) )
-	ControlsBackingBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	ControlsBackingBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	ControlsBackingBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( ControlsBackingBlur )
 	self.ControlsBackingBlur = ControlsBackingBlur

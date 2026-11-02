@@ -23,7 +23,7 @@ CoD.ScytheReticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	
 	local HipReticle = LUI.UIImage.new( 0.5, 0.5, -50, 50, 0.5, 0.5, -50, 50 )
 	HipReticle:setAlpha( 0 )
-	HipReticle:setImage( RegisterImage( 0x3624B2A192E1340 ) )
+	HipReticle:setImage( RegisterImage( "ui_hud_reticles_reaper_scythe_hip_01" ) )
 	self:addElement( HipReticle )
 	self.HipReticle = HipReticle
 	

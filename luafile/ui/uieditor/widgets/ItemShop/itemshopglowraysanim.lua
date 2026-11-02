@@ -11,7 +11,7 @@ CoD.ItemShopGlowRaysAnim.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local GlowRaysAnim1 = LUI.UIImage.new( 0.5, 0.5, -368, 368, 0.5, 0.5, -500, 500 )
 	GlowRaysAnim1:setRGB( 1, 0.35, 0 )
 	GlowRaysAnim1:setImage( RegisterImage( 0x11109A79AAD3403 ) )
-	GlowRaysAnim1:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	GlowRaysAnim1:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	GlowRaysAnim1:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( GlowRaysAnim1 )
 	self.GlowRaysAnim1 = GlowRaysAnim1
@@ -19,7 +19,7 @@ CoD.ItemShopGlowRaysAnim.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local GlowRaysAnim2 = LUI.UIImage.new( 0.5, 0.5, -368, 368, 0.5, 0.5, -500, 500 )
 	GlowRaysAnim2:setRGB( 1, 0.35, 0 )
 	GlowRaysAnim2:setImage( RegisterImage( 0x1110AA79AAD35B6 ) )
-	GlowRaysAnim2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	GlowRaysAnim2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	GlowRaysAnim2:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( GlowRaysAnim2 )
 	self.GlowRaysAnim2 = GlowRaysAnim2
@@ -27,7 +27,7 @@ CoD.ItemShopGlowRaysAnim.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local GlowRaysAnim3 = LUI.UIImage.new( 0.5, 0.5, -368, 368, 0.5, 0.5, -500, 500 )
 	GlowRaysAnim3:setRGB( 1, 0.35, 0 )
 	GlowRaysAnim3:setImage( RegisterImage( 0x1110BA79AAD3769 ) )
-	GlowRaysAnim3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	GlowRaysAnim3:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	GlowRaysAnim3:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( GlowRaysAnim3 )
 	self.GlowRaysAnim3 = GlowRaysAnim3
@@ -36,7 +36,7 @@ CoD.ItemShopGlowRaysAnim.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	GlowRaysAnim4:setRGB( 1, 0.35, 0 )
 	GlowRaysAnim4:setZRot( 180 )
 	GlowRaysAnim4:setImage( RegisterImage( 0x11109A79AAD3403 ) )
-	GlowRaysAnim4:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	GlowRaysAnim4:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	GlowRaysAnim4:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( GlowRaysAnim4 )
 	self.GlowRaysAnim4 = GlowRaysAnim4

@@ -80,7 +80,7 @@ CoD.WZAAR_MeritProgressBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	BGDotPatternLarge:setRGB( 1, 0.73, 0 )
 	BGDotPatternLarge:setAlpha( 0.2 )
 	BGDotPatternLarge:setImage( RegisterImage( "uie_ui_menu_common_button_bg_pattern_large" ) )
-	BGDotPatternLarge:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	BGDotPatternLarge:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	BGDotPatternLarge:setShaderVector( 0, 0, 0, 0, 0 )
 	BGDotPatternLarge:setupNineSliceShader( 4, 4 )
 	self:addElement( BGDotPatternLarge )

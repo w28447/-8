@@ -5267,13 +5267,13 @@
         {
             "value": 196,
             "next": 65535,
-            "name": "#hash_3e4a0a678172ad2f",
+            "name": "#evt_cauldron_pour_fx",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3e4a0a678172ad2f",
+                    "name": "#evt_cauldron_pour_fx",
                     "assetId": "#hash_2569246981ccee6b",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -5316,13 +5316,13 @@
         {
             "value": 228,
             "next": 65535,
-            "name": "#hash_26d386f2fd510f6c",
+            "name": "#evt_cauldron_tip_creak",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_26d386f2fd510f6c",
+                    "name": "#evt_cauldron_tip_creak",
                     "assetId": "#hash_7d8441c78ddce20b",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -5463,13 +5463,13 @@
         {
             "value": 258,
             "next": 72,
-            "name": "#hash_1dd78a1e80e22be",
+            "name": "#evt_cauldron_tip_creak_sputter",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1dd78a1e80e22be",
+                    "name": "#evt_cauldron_tip_creak_sputter",
                     "assetId": "#hash_da5ff4387b0f64",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",

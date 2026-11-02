@@ -45,7 +45,7 @@ CoD.ChatClientInputTextBox.new = function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3, 
 	
 	local channelText = LUI.UIText.new( 0.22, 0.22, -117, 117, 0.52, 0.52, -11.5, 9.5 )
 	channelText:setTTF( "notosans_regular" )
-	channelText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	channelText:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	channelText:setLetterSpacing( 1 )
 	channelText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	channelText:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

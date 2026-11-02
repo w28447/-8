@@ -11,7 +11,7 @@ CoD.Hud_ZM_Trial_RoundInfoText.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local RoundTitleText = LUI.UIText.new( 0, 0, 0, 600, 0, 0, 0, 33 )
 	RoundTitleText:setRGB( 0.96, 0.66, 0 )
 	RoundTitleText:setTTF( "skorzhen" )
-	RoundTitleText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	RoundTitleText:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	RoundTitleText:setShaderVector( 0, 0.02, 0, 0, 0 )
 	RoundTitleText:setShaderVector( 1, 0.04, 0, 0, 0 )
 	RoundTitleText:setShaderVector( 2, 0, 0, 0, 1 )

@@ -10,13 +10,13 @@ CoD.TabbedScoreboardHeaderTopbar02.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local EnemyTeamBar = LUI.UIImage.new( 0.5, 0.5, -344, 344, 0, 0, 0, 10 )
 	EnemyTeamBar:setRGB( 0.95, 0.95, 0.95 )
-	EnemyTeamBar:setImage( RegisterImage( 0x59D632AC9663362 ) )
+	EnemyTeamBar:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_grey_bar" ) )
 	self:addElement( EnemyTeamBar )
 	self.EnemyTeamBar = EnemyTeamBar
 	
 	local EnemyTeamBarWipe = LUI.UIImage.new( 0.5, 0.5, -344, 344, 0, 0, 0, 10 )
 	EnemyTeamBarWipe:setRGB( 0.95, 0.95, 0.95 )
-	EnemyTeamBarWipe:setImage( RegisterImage( 0x59D632AC9663362 ) )
+	EnemyTeamBarWipe:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_grey_bar" ) )
 	EnemyTeamBarWipe:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	EnemyTeamBarWipe:setShaderVector( 0, 0, 1, 0, 0 )
 	EnemyTeamBarWipe:setShaderVector( 1, 0, 0, 0, 0 )

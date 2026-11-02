@@ -12,7 +12,7 @@ CoD.MapVoteItemZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	
 	local MapImage = LUI.UIImage.new( 0, 1, 6, -6, 0, 1.04, 28, -14 )
 	MapImage:setImage( RegisterImage( "img_t8_menu_mp_preview_mp_gridlock" ) )
-	MapImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	MapImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	MapImage:setShaderVector( 0, 0, 0, 0, 0 )
 	MapImage:setShaderVector( 1, 1, 0.57, 0, 0 )
 	MapImage:setShaderVector( 2, 4, 0, 0, 0 )
@@ -65,7 +65,7 @@ CoD.MapVoteItemZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	VoteType:setAlpha( 0.95 )
 	VoteType:setText( "" )
 	VoteType:setTTF( "ttmussels_regular" )
-	VoteType:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	VoteType:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	VoteType:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	self:addElement( VoteType )
 	self.VoteType = VoteType
@@ -74,7 +74,7 @@ CoD.MapVoteItemZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	voteCount:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	voteCount:setText( "" )
 	voteCount:setTTF( "ttmussels_demibold" )
-	voteCount:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	voteCount:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	voteCount:setAlignment( Enum.LUIAlignment[0x830CFD395E6AA0A] )
 	voteCount:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
 	self:addElement( voteCount )

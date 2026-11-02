@@ -21,7 +21,7 @@ CoD.AARLevelUpReward.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local ZMCroppedBacking = LUI.UIImage.new( 0, 0, -1.5, 801.5, 0, 0, -4.5, 281.5 )
 	ZMCroppedBacking:setImage( RegisterImage( "uie_ui_hud_zm_aar_reward_bg" ) )
-	ZMCroppedBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	ZMCroppedBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	ZMCroppedBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	ZMCroppedBacking:setShaderVector( 1, 1, 1, 0, 0 )
 	ZMCroppedBacking:setShaderVector( 2, 0, 0, 0, 0 )
@@ -124,7 +124,7 @@ CoD.AARLevelUpReward.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	Flare:setAlpha( 0 )
 	Flare:setScale( 0, 0 )
 	Flare:setImage( RegisterImage( "uie_ui_menu_aar_levelup_flare" ) )
-	Flare:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	Flare:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	Flare:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Flare )
 	self.Flare = Flare

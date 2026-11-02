@@ -2028,8 +2028,8 @@
 #loot_ui_icon_stickers_synth_3_large,287063443,#contraband,u3?0,1,0,#sticker,#hash_2e65d17bc1ad9779
 #loot_ui_icon_stickers_synth_4_large,227040330,#contraband,u3?0,1,0,#sticker,#hash_2e65d17bc1ad9779
 #loot_ui_icon_stickers_synth_5_large,203942365,#contraband,u3?0,1,0,#sticker,#hash_2e65d17bc1ad9779
-#hash_3eceabafea1dc02,253677666,#contraband,u3?0,1,0,#tag,#hash_6cedeeff3767f35f
-#hash_3ece9bafea1da4f,215072528,#contraband,u3?0,1,0,#tag,#hash_6cedeeff3767f35f
+#loot_tags_deadlyanimals_01,253677666,#contraband,u3?0,1,0,#tag,#hash_6cedeeff3767f35f
+#loot_tags_deadlyanimals_02,215072528,#contraband,u3?0,1,0,#tag,#hash_6cedeeff3767f35f
 #loot_tags_deadlyanimals_03,272475058,#contraband,u3?0,1,0,#tag,#hash_6cedeeff3767f35f
 #loot_tags_deadlyanimals_04,248509621,#contraband,u3?0,1,0,#tag,#hash_6cedeeff3767f35f
 #loot_tags_deadlyanimals_05,248748715,#contraband,u3?0,1,0,#tag,#hash_6cedeeff3767f35f
@@ -2118,7 +2118,7 @@
 #outfit_dotd_com1_bundle_nomad,158425029,#season,u3?0,0,1,#outfit_bundle,#
 #ui_icon_callingcards_loot_cowboysandmonsters_card4,150420978,#season,u3?0,0,1,#calling_card,#hash_7c399278ea424b7a
 #outfit_dotd_com1_bundle_ajax,196719836,#season,u3?0,0,1,#outfit_bundle,#
-#hash_51cdab695737f799,187338529,#season,u3?0,0,1,#tag,#
+#loot_tags_caricature_crash,187338529,#season,u3?0,0,1,#tag,#
 #outfit_warrior_com1_bundle_ajax,145428310,#season,u3?0,0,1,#outfit_bundle,#
 #loot_emote_exotic_shared_hula_hoop,196184177,#season,u3?0,0,1,#gesture,#
 #loot_tags_caricature_battery,168875073,#season,u3?0,0,1,#tag,#

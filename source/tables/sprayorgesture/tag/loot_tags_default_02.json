@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_default_02",
     "type": "#tag",
-    "material": "#hash_3aa7427ee81531",
+    "material": "#vd/mtl_default_ui_icon_tags_default_02",
     "bundle": {
         "type": "#tag",
         "title": "localized18#tags/default_02",

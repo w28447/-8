@@ -14,7 +14,7 @@ CoD.ZMScr_PlusPoints.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	Label2:setZoom( -8 )
 	Label2:setText( "" )
 	Label2:setTTF( "skorzhen" )
-	Label2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
+	Label2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow" ) )
 	Label2:setShaderVector( 0, 0.21, 0, 0, 0 )
 	Label2:setShaderVector( 1, 0, 0, 0, 0 )
 	Label2:setShaderVector( 2, 1, 0, 0, 0 )

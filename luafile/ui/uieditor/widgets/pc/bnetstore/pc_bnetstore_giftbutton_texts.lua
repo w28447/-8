@@ -22,7 +22,7 @@ CoD.PC_BnetStore_GiftButton_Texts.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	GiftSalePrice:setRGB( 0.6, 0.76, 0.23 )
 	GiftSalePrice:setText( "" )
 	GiftSalePrice:setTTF( "ttmussels_regular" )
-	GiftSalePrice:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	GiftSalePrice:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	GiftSalePrice:setShaderVector( 0, 25, 0, 0, 0 )
 	GiftSalePrice:setShaderVector( 1, 0, 0, 0, 0 )
 	GiftSalePrice:setShaderVector( 2, 0.16, 0.6, 0.07, 0.4 )

@@ -37,7 +37,7 @@ CoD.LeaguePlaySkillDivisionRankBacking.new = function ( f1_arg0, f1_arg1, f1_arg
 	local DotLine = LUI.UIImage.new( 0, 0, 95, 97, 0, 0, 0, 94 )
 	DotLine:setAlpha( 0.2 )
 	DotLine:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline_tiled" ) )
-	DotLine:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	DotLine:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	DotLine:setShaderVector( 0, 0, 0, 0, 0 )
 	DotLine:setupNineSliceShader( 8, 3 )
 	self:addElement( DotLine )

@@ -37,7 +37,7 @@ LUI.createMenu.VehicleTurretDurability = function ( f1_arg0, f1_arg1 )
 	TextBox:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
 	TextBox:setBackingType( 2 )
 	TextBox:setBackingColor( 0, 0, 0 )
-	TextBox:setBackingMaterial( LUI.UIImage.GetCachedMaterial( 0x81EEB1F96D4BE0A ) )
+	TextBox:setBackingMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_feather_normal" ) )
 	TextBox:setBackingShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( TextBox )
 	self.TextBox = TextBox

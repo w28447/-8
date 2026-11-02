@@ -20,7 +20,7 @@ CoD.TabbedScoreboardFuiBox.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local TopFuiBoxAdd = LUI.UIImage.new( 0, 0, 0, 10, 0, 0, 1, 15 )
 	TopFuiBoxAdd:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_map_topbox" ) )
-	TopFuiBoxAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	TopFuiBoxAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	TopFuiBoxAdd:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( TopFuiBoxAdd )
 	self.TopFuiBoxAdd = TopFuiBoxAdd

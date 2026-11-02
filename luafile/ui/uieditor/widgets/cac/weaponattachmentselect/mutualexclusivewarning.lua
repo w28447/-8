@@ -11,7 +11,7 @@ CoD.MutualExclusiveWarning.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local Icon = LUI.UIImage.new( 0, 0, 0, 18, 0.5, 0.5, -9, 9 )
 	Icon:setRGB( 1, 0.41, 0 )
-	Icon:setImage( RegisterImage( 0x11D4E13C821CCE3 ) )
+	Icon:setImage( RegisterImage( "t7_hud_cac_warning_16" ) )
 	self:addElement( Icon )
 	self.Icon = Icon
 	

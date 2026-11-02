@@ -11,7 +11,7 @@ CoD.PrematchCountdown_NumbersInternal.new = function ( f1_arg0, f1_arg1, f1_arg2
 	local Numbers = LUI.UIText.new( 0.5, 0.5, -120, 120, 0, 0, -6, 123 )
 	Numbers:setText( "" )
 	Numbers:setTTF( "ttmussels_demibold" )
-	Numbers:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6250C6FCAC36BD4 ) )
+	Numbers:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_outline" ) )
 	Numbers:setShaderVector( 0, 0.14, 0, 0, 0 )
 	Numbers:setShaderVector( 1, 0, 0, 0, 0.3 )
 	Numbers:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

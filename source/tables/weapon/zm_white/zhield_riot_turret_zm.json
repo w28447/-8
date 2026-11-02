@@ -51,10 +51,10 @@
         "#pistol_enemy"
     ],
     "viewmodel": [
-        "#hash_10c4ac12157186cc"
+        "#wpn_t8_zm_classified_shield_turret_view"
     ],
     "worldModel": [
-        "#hash_511638854c2cd007"
+        "#wpn_t8_zm_classified_shield_turret_world"
     ],
     "gadgetIconAvailable": "#ui_icon_weapons_zm_shield_buckler",
     "gadgetIconUnavailable": "#ui_icon_weapons_zm_shield_buckler",
@@ -78,10 +78,10 @@
     "exitImpactSounds": "#bullet_exit",
     "#hash_21329beb": [
         {
-            "model": "#hash_511638854c2cd007"
+            "model": "#wpn_t8_zm_classified_shield_turret_world"
         },
         {
-            "model": "#hash_511638854c2cd007"
+            "model": "#wpn_t8_zm_classified_shield_turret_world"
         }
     ]
 }

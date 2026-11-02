@@ -8,7 +8,7 @@ model,#p7_zm_asc_loudspeaker_bracket
 model,#veh_t8_mil_helicopter_attack_rockets_attach_wz
 model,#p7_fxp_debris_dirt_clod_03_brown
 model,#p_rus_radar_dish
-model,#hash_bcb1041182fc5ed
+model,#veh_mphd_chinook_main_rotor_attach
 model,#p7_fxp_debris_metal_scrap_01
 model,#p7_fxp_debris_metal_scrap_02
 model,#veh_mphd_uaz_dest_attach
@@ -30,7 +30,7 @@ model,#veh_mphd_uaz_base_dead
 model,#p7_slu_panel_electrical_02_lid_01
 model,#veh_t8_mil_helicopter_light_interior_attach
 model,#veh_mphd_tiara_green_dead
-model,#hash_2f68a72ab6112020
+model,#veh_mphd_chinook_tail_rotor_attach
 model,#p7_mou_snow_chunk_01
 model,#p7_mou_snow_chunk_04
 model,#veh_t8_mil_helicopter_light_decals_attach
@@ -46,14 +46,14 @@ model,#p7_gib_chunk_flesh_03
 model,#p7_gib_chunk_flesh_02
 model,#veh_mphd_chinook_static
 model,#p7_zm_nac_barrel_explosive_red
-model,#hash_3d920e7ddbaee55d
+model,#veh_t8_mil_helicopter_attack_interior_rear_attach_wz
 model,#c_t7_mp_technomancer_mpc_fb1_skin1
 model,#p7_cup_coffee_paper
 model,#p7_gib_chunk_bone_01
 model,#p7_gib_chunk_bone_03
 model,#p7_gib_chunk_bone_02
 model,#p7_fir_targetdummy_rail_01_paper
-model,#hash_42514d623b2a1669
+model,#p8_fxanim_mp_fir_chinook_dummy_mod
 model,#c_t7_mp_warrior_mpc_fb1_skin1
 model,#veh_mphd_tiara_destructible_green
 model,#p8_mp_bomb_crate_whole_destroyed
@@ -129,7 +129,7 @@ model,#veh_t8_mil_helicopter_attack_decals_attach
 model,#fx_rifle_shell_blur
 model,#veh_t8_destructible_glass_03_red
 model,#veh_t8_mil_helicopter_attack_wz_dark
-model,#hash_7feac4a13cf658f9
+model,#veh_mphd_chinook_low_rotors_animated
 xcam,#ui_cam_draft_common
 xcam,#ui_cam_draft_common_zoom
 xcam,#ui_cam_endgame_mp_sector

@@ -17,7 +17,7 @@ CoD.DirectorPreGameSetUpMatchContainer.new = function ( f1_arg0, f1_arg1, f1_arg
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local MapImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	MapImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	MapImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	MapImage:setShaderVector( 0, 0, 0, 0, 0 )
 	MapImage:setShaderVector( 1, 1, 1, 0, 0 )
 	MapImage:setShaderVector( 2, 0, 0, 0, 0 )
@@ -223,7 +223,7 @@ CoD.DirectorPreGameSetUpMatchContainer.__resetProperties = function ( f18_arg0 )
 	f18_arg0.DirectorMapAndGameTypeInternalTitles:setAlpha( 1 )
 	f18_arg0.DirectorMapAndGameTypeInternalTitles:setZoom( 0 )
 	f18_arg0.MapImage:setAlpha( 1 )
-	f18_arg0.MapImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	f18_arg0.MapImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	f18_arg0.LockImage:setAlpha( 0 )
 end
 
@@ -287,7 +287,7 @@ CoD.DirectorPreGameSetUpMatchContainer.__clipsPerState = {
 			f24_arg0:setupElementClipCounter( 3 )
 			f24_arg0.MapImage:completeAnimation()
 			f24_arg0.MapImage:setAlpha( 0.5 )
-			f24_arg0.MapImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+			f24_arg0.MapImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 			f24_arg0.clipFinished( f24_arg0.MapImage )
 			f24_arg0.DirectorMapAndGameTypeInternalTitles:completeAnimation()
 			f24_arg0.DirectorMapAndGameTypeInternalTitles:setAlpha( 0.1 )

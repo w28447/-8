@@ -8,22 +8,22 @@ CoD.vhud_lightningstrike_ambientgadget_circle.new = function ( f1_arg0, f1_arg1,
 	self.soundSet = "default"
 	
 	local AmbientBracket = LUI.UIImage.new( 0.5, 0.5, -57, 57, 1, 1, -30, 0 )
-	AmbientBracket:setImage( RegisterImage( 0x1F58148C2B569CD ) )
+	AmbientBracket:setImage( RegisterImage( "uie_ui_hud_vehicle_lightstrike_ambient_bracket" ) )
 	self:addElement( AmbientBracket )
 	self.AmbientBracket = AmbientBracket
 	
 	local Circle3 = LUI.UIImage.new( 0, 0, 74, 98, 0.4, 0.4, -20, 20 )
-	Circle3:setImage( RegisterImage( 0x255468D158A8D39 ) )
+	Circle3:setImage( RegisterImage( "uie_ui_hud_vehicle_lightstrike_ambient_meter_circle" ) )
 	self:addElement( Circle3 )
 	self.Circle3 = Circle3
 	
 	local Circle2 = LUI.UIImage.new( 0.5, 0.5, -12, 12, 0.4, 0.4, -20, 20 )
-	Circle2:setImage( RegisterImage( 0x255468D158A8D39 ) )
+	Circle2:setImage( RegisterImage( "uie_ui_hud_vehicle_lightstrike_ambient_meter_circle" ) )
 	self:addElement( Circle2 )
 	self.Circle2 = Circle2
 	
 	local Circle1 = LUI.UIImage.new( 0, 0, 16, 40, 0.4, 0.4, -20, 20 )
-	Circle1:setImage( RegisterImage( 0x255468D158A8D39 ) )
+	Circle1:setImage( RegisterImage( "uie_ui_hud_vehicle_lightstrike_ambient_meter_circle" ) )
 	self:addElement( Circle1 )
 	self.Circle1 = Circle1
 	

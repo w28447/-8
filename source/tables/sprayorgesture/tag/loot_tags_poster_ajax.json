@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_poster_ajax",
     "type": "#tag",
-    "material": "#hash_1f359ebf80c31fa2",
+    "material": "#vd/mtl_loot_ui_icon_tags_poster_ajax",
     "bundle": {
         "type": "#tag",
         "title": "localized18#hash_74d2b108cb7ed804",

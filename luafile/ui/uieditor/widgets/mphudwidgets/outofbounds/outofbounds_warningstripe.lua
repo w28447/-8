@@ -10,7 +10,7 @@ CoD.outofbounds_warningstripe.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local LargeStripe = LUI.UIImage.new( 0, 0, -1528, 392, 0, 0, -14, 126 )
 	LargeStripe:setImage( RegisterImage( "uie_ui_hud_out_of_bounds_stripe" ) )
-	LargeStripe:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	LargeStripe:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	LargeStripe:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( LargeStripe )
 	self.LargeStripe = LargeStripe

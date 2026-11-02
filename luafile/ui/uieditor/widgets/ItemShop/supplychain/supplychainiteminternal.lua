@@ -23,7 +23,7 @@ CoD.SupplyChainItemInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local Blur = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	Blur:setAlpha( 0 )
-	Blur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	Blur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	Blur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( Blur )
 	self.Blur = Blur
@@ -174,7 +174,7 @@ CoD.SupplyChainItemInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local NineSliceShaderImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NineSliceShaderImage:setRGB( 0.25, 0.36, 0.4 )
-	NineSliceShaderImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE7BDCB879A5176D ) )
+	NineSliceShaderImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_rectangle_normal" ) )
 	NineSliceShaderImage:setShaderVector( 0, 0, 0, 0, 0 )
 	NineSliceShaderImage:setShaderVector( 1, 0, 0, 0, 0 )
 	NineSliceShaderImage:setupNineSliceShader( 1, 1 )
@@ -232,7 +232,7 @@ CoD.SupplyChainItemInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local FocusGlow = LUI.UIImage.new( 0, 1, -65, 65, 0, 1, -45, 45 )
 	FocusGlow:setAlpha( 0 )
 	FocusGlow:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_large" ) )
-	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
+	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_multiplied_add" ) )
 	FocusGlow:setShaderVector( 0, 0, 0, 0.25, 0.25 )
 	FocusGlow:setShaderVector( 1, 1.2, 0, 0, 0 )
 	FocusGlow:setupNineSliceShader( 300, 300 )
@@ -242,7 +242,7 @@ CoD.SupplyChainItemInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local FocusGlow2 = LUI.UIImage.new( 0, 1, -65, 65, 0, 1, -45, 45 )
 	FocusGlow2:setAlpha( 0 )
 	FocusGlow2:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_large" ) )
-	FocusGlow2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
+	FocusGlow2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_multiplied_add" ) )
 	FocusGlow2:setShaderVector( 0, 0, 0, 0.25, 0.25 )
 	FocusGlow2:setShaderVector( 1, 1.2, 0, 0, 0 )
 	FocusGlow2:setupNineSliceShader( 300, 300 )

@@ -32,7 +32,7 @@
     "peelSpeedMax": 600,
     "model": "#vehicle_t8_drone_swarm_sub_mp_light",
     "viewModel": "#vehicle_t8_drone_swarm_sub_mp_light",
-    "deathModel": "#hash_17eccbba0c8ea93e",
+    "deathModel": "#veh_t8_drone_swarm_sub_dead_body",
     "enemyModel": "#vehicle_t8_drone_swarm_sub_mp_dark",
     "soundDef": "#hash_7436337b9ee0ffac",
     "lightCollisionRumble": "#veh_collision_light",

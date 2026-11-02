@@ -18,7 +18,7 @@ CoD.StoreCommonTextBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local TiledShaderImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	TiledShaderImage:setImage( RegisterImage( "uie_ui_menu_store_repeat_dot_pattern" ) )
-	TiledShaderImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	TiledShaderImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	TiledShaderImage:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledShaderImage:setupNineSliceShader( 24, 24 )
 	self:addElement( TiledShaderImage )

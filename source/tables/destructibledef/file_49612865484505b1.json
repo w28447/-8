@@ -1,7 +1,7 @@
 {
     "name": "#hash_49612865484505b1",
-    "model": "#hash_6af36bbb60d87d07",
-    "unk20": "#hash_4bcd7d13d006b7e6",
+    "model": "#veh_t8_civ_truck_mini_dest_box_full_dirty_wht_nepal",
+    "unk20": "#veh_t8_civ_truck_mini_box_dead_full_wht_nepal",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
     "pieces": [

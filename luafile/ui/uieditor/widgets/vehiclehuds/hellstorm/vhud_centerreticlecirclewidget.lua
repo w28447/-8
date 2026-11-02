@@ -11,7 +11,7 @@ CoD.vhud_CenterReticleCircleWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local CenterReticle = LUI.UIImage.new( 0.5, 0.5, -50, 50, 0.5, 0.5, -50, 50 )
 	CenterReticle:setRGB( 1, 0, 0 )
 	CenterReticle:setImage( RegisterImage( "uie_ui_hud_tak5_reticle_pointer" ) )
-	CenterReticle:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	CenterReticle:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	CenterReticle:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( CenterReticle )
 	self.CenterReticle = CenterReticle

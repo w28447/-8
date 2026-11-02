@@ -10,7 +10,7 @@ CoD.DirectorDraftSelectLoadoutInternal.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local Backing = LUI.UIImage.new( 0, 0, 0, 75, 0, 0, 0, 75 )
 	Backing:setRGB( 0.17, 0.17, 0.17 )
-	Backing:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	Backing:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	Backing:setShaderVector( 0, 0, 0.7, 0, 0 )
 	self:addElement( Backing )
 	self.Backing = Backing

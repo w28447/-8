@@ -27,8 +27,8 @@ type,name
 #gesture,#loot_emote_exotic_shared_hula_hoop
 #gesture,#loot_emote_exotic_shared_heres_to_you
 #gesture,#loot_emote_exotic_shared_dracula
-#tag,#hash_3eceabafea1dc02
-#tag,#hash_3ece9bafea1da4f
+#tag,#loot_tags_deadlyanimals_01
+#tag,#loot_tags_deadlyanimals_02
 #tag,#loot_tags_deadlyanimals_03
 #tag,#loot_tags_deadlyanimals_04
 #tag,#loot_tags_deadlyanimals_05
@@ -65,7 +65,7 @@ type,name
 #tag,#loot_tags_graffitiskulls_06
 #tag,#loot_tags_caricature_ajax
 #tag,#loot_tags_caricature_battery
-#tag,#hash_51cdab695737f799
+#tag,#loot_tags_caricature_crash
 #tag,#loot_tags_caricature_firebreak
 #tag,#loot_tags_caricature_nomad
 #tag,#loot_tags_caricature_prophet

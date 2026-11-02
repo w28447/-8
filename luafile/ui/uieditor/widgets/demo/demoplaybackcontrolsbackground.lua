@@ -9,7 +9,7 @@ CoD.DemoPlaybackControlsBackground.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local BGBlur = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BGBlur:setImage( RegisterImage( "uie_ui_hud_theater_playbackcontrol_backing" ) )
-	BGBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	BGBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	BGBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BGBlur )
 	self.BGBlur = BGBlur
@@ -18,7 +18,7 @@ CoD.DemoPlaybackControlsBackground.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	BGTint:setRGB( 0, 0, 0 )
 	BGTint:setAlpha( 0.7 )
 	BGTint:setImage( RegisterImage( "uie_ui_hud_theater_playbackcontrol_backing" ) )
-	BGTint:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	BGTint:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	BGTint:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( BGTint )
 	self.BGTint = BGTint
@@ -26,7 +26,7 @@ CoD.DemoPlaybackControlsBackground.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local PixelGridTiledBacking = LUI.UIImage.new( 0.5, 0.5, -470, 470, 0.5, 0.5, -69, 69 )
 	PixelGridTiledBacking:setAlpha( 0.15 )
 	PixelGridTiledBacking:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
-	PixelGridTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	PixelGridTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	PixelGridTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGridTiledBacking:setupNineSliceShader( 128, 128 )
 	self:addElement( PixelGridTiledBacking )

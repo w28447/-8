@@ -17,7 +17,7 @@ CoD.DiscountTiersNumber.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local Desc = LUI.UIText.new( 0, 0, 13, 213, 0, 0, 17, 44 )
 	Desc:setText( LocalizeToUpperString( 0xDEF8E006178A1AD ) )
 	Desc:setTTF( "ttmussels_demibold" )
-	Desc:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	Desc:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	Desc:setShaderVector( 0, 0.5, 0, 0, 0 )
 	Desc:setShaderVector( 1, 0, 0, 0, 0 )
 	Desc:setShaderVector( 2, 0, 0, 0, 1 )

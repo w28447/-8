@@ -23,7 +23,7 @@ CoD.DirectorLeaderActivitySelect.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	LeaderActivityText:setBackingType( 2 )
 	LeaderActivityText:setBackingColor( 0, 0, 0 )
 	LeaderActivityText:setBackingXPadding( 8 )
-	LeaderActivityText:setBackingMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	LeaderActivityText:setBackingMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	LeaderActivityText:setBackingShaderVector( 0, 0, 0.8, 0, 0 )
 	LeaderActivityText:subscribeToGlobalModel( f1_arg1, "LobbyRoot", "leaderActivity", function ( model )
 		local f2_local0 = model:get()

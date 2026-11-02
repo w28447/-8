@@ -17,7 +17,7 @@ CoD.RipperLockLineWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local LineGlow01UR = LUI.UIImage.new( 0.5, 0.5, -12, 12, 0.5, 0.5, -12, 12 )
 	LineGlow01UR:setRGB( 1, 0.02, 0 )
 	LineGlow01UR:setImage( RegisterImage( "uie_spectre_blade_cornerline_glow" ) )
-	LineGlow01UR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	LineGlow01UR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	LineGlow01UR:setShaderVector( 0, 10, 0, 0, 0 )
 	self:addElement( LineGlow01UR )
 	self.LineGlow01UR = LineGlow01UR
@@ -25,7 +25,7 @@ CoD.RipperLockLineWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local LineGlow02UR = LUI.UIImage.new( 0.5, 0.5, -12, 12, 0.5, 0.5, -12, 12 )
 	LineGlow02UR:setRGB( 1, 0.88, 0.77 )
 	LineGlow02UR:setImage( RegisterImage( "uie_spectre_blade_cornerline_glow02" ) )
-	LineGlow02UR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	LineGlow02UR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	LineGlow02UR:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( LineGlow02UR )
 	self.LineGlow02UR = LineGlow02UR

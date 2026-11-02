@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_warriors_ruin",
     "type": "#tag",
-    "material": "#hash_496f6ae70bbb02b4",
+    "material": "#vd/mtl_loot_ui_icon_tags_warriors_ruin",
     "bundle": {
         "type": "#tag",
         "title": "localized18#hash_18b4f7dcc2bce414",

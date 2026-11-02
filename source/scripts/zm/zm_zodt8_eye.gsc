@@ -483,7 +483,7 @@ function function_51e51897( var_5ea5c94d )
         level notify( #"hash_fbdf766a8b47229" );
     #/
     
-    level.e_boss function_500cb0be( #"hash_678aaf8e37498e9a", #"p8_fxanim_zm_zod_eye_01_bundle" );
+    level.e_boss function_500cb0be( #"p8_fxanim_zm_zod_boss_eye_01_mod", #"p8_fxanim_zm_zod_eye_01_bundle" );
     level thread zm_zodt8::change_water_height_aft( 1 );
     
     if ( !var_5ea5c94d )
@@ -698,15 +698,15 @@ function function_500cb0be( str_mdl, str_scene )
     self setmodel( str_mdl );
     self.mdl_base = str_mdl;
     
-    if ( str_mdl == #"hash_678aaf8e37498e9a" )
+    if ( str_mdl == #"p8_fxanim_zm_zod_boss_eye_01_mod" )
     {
         self clientfield::set( "bs_bdy_base_cf", 1 );
     }
-    else if ( str_mdl == #"hash_32a51dafb1c7344f" )
+    else if ( str_mdl == #"p8_fxanim_zm_zod_boss_eye_02_mod" )
     {
         self clientfield::set( "bs_bdy_base_cf", 2 );
     }
-    else if ( str_mdl == #"hash_597bdc83a7c9e8c" )
+    else if ( str_mdl == #"p8_fxanim_zm_zod_boss_eye_03_mod" )
     {
         self clientfield::set( "bs_bdy_base_cf", 3 );
     }
@@ -1128,7 +1128,7 @@ function function_8f3497ee( n_stage, str_loc )
             break;
         case 4:
             function_d21f5b58( 1 );
-            self function_500cb0be( #"hash_32a51dafb1c7344f", #"p8_fxanim_zm_zod_eye_02_bundle" );
+            self function_500cb0be( #"p8_fxanim_zm_zod_boss_eye_02_mod", #"p8_fxanim_zm_zod_eye_02_bundle" );
             wait 3;
             self function_1122d832( "event_impact", "pro", 4 );
             self playsound( "zmb_eyeball_vox_intro_s4" );
@@ -1151,7 +1151,7 @@ function function_8f3497ee( n_stage, str_loc )
             break;
         case 5:
             function_d21f5b58( 1 );
-            self function_500cb0be( #"hash_597bdc83a7c9e8c", #"p8_fxanim_zm_zod_eye_03_bundle" );
+            self function_500cb0be( #"p8_fxanim_zm_zod_boss_eye_03_mod", #"p8_fxanim_zm_zod_eye_03_bundle" );
             wait 2;
             self function_1122d832( "event_high_impact", "pd", 5 );
             self playsound( "zmb_eyeball_vox_intro_s5" );
@@ -1772,7 +1772,7 @@ function function_c85b83f3()
         self.var_914750d = 0;
     }
     
-    if ( self.mdl_base == #"hash_32a51dafb1c7344f" )
+    if ( self.mdl_base == #"p8_fxanim_zm_zod_boss_eye_02_mod" )
     {
         if ( self.var_914750d == 2 )
         {
@@ -1786,7 +1786,7 @@ function function_c85b83f3()
         return;
     }
     
-    if ( self.mdl_base == #"hash_678aaf8e37498e9a" )
+    if ( self.mdl_base == #"p8_fxanim_zm_zod_boss_eye_01_mod" )
     {
         if ( self.var_914750d == 1 )
         {
@@ -4037,13 +4037,13 @@ function function_98198f98( str_archetype )
                 level.e_boss thread function_c31e58d9();
                 return 1;
             case #"hash_42e3fa83d357e8e0":
-                level.e_boss function_500cb0be( #"hash_678aaf8e37498e9a", #"p8_fxanim_zm_zod_eye_01_bundle" );
+                level.e_boss function_500cb0be( #"p8_fxanim_zm_zod_boss_eye_01_mod", #"p8_fxanim_zm_zod_eye_01_bundle" );
                 return 1;
             case #"hash_42e3fd83d357edf9":
-                level.e_boss function_500cb0be( #"hash_32a51dafb1c7344f", #"p8_fxanim_zm_zod_eye_02_bundle" );
+                level.e_boss function_500cb0be( #"p8_fxanim_zm_zod_boss_eye_02_mod", #"p8_fxanim_zm_zod_eye_02_bundle" );
                 return 1;
             case #"hash_42e3fc83d357ec46":
-                level.e_boss function_500cb0be( #"hash_597bdc83a7c9e8c", #"p8_fxanim_zm_zod_eye_03_bundle" );
+                level.e_boss function_500cb0be( #"p8_fxanim_zm_zod_boss_eye_03_mod", #"p8_fxanim_zm_zod_eye_03_bundle" );
                 return 1;
             case #"hash_5dad3801740fa24a":
                 level notify( #"boss_fight_stage_complete" );
@@ -4218,7 +4218,7 @@ function function_98198f98( str_archetype )
         
         if ( !isdefined( self.str_scene ) )
         {
-            self function_500cb0be( #"hash_678aaf8e37498e9a", #"p8_fxanim_zm_zod_eye_01_bundle" );
+            self function_500cb0be( #"p8_fxanim_zm_zod_boss_eye_01_mod", #"p8_fxanim_zm_zod_eye_01_bundle" );
         }
         
         level clientfield::set( "<dev string:x682>", 1 );

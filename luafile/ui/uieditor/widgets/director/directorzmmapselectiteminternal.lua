@@ -29,7 +29,7 @@ CoD.DirectorZMMapSelectItemInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	self.NoiseTiledBacking = NoiseTiledBacking
 	
 	local MapImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	MapImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	MapImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	MapImage:setShaderVector( 0, 0, 0, 0, 0 )
 	MapImage:setShaderVector( 1, 1, 1, 0, 0 )
 	MapImage:setShaderVector( 2, 0, 0, 0, 0 )
@@ -45,7 +45,7 @@ CoD.DirectorZMMapSelectItemInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local equippedIcon = LUI.UIImage.new( 0.5, 0.5, 108.5, 125.5, 0.5, 0.5, -69, -53 )
 	equippedIcon:setRGB( 0.56, 0.68, 0.27 )
 	equippedIcon:setAlpha( 0 )
-	equippedIcon:setImage( RegisterImage( 0xB0337CBFC61A7A2 ) )
+	equippedIcon:setImage( RegisterImage( "t7_hud_cac_equipped_16" ) )
 	self:addElement( equippedIcon )
 	self.equippedIcon = equippedIcon
 	
@@ -66,7 +66,7 @@ CoD.DirectorZMMapSelectItemInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local MapName = LUI.UIText.new( 0, 0, 9, 245, 1, 1, -23, -5 )
 	MapName:setRGB( 0.58, 0.58, 0.58 )
 	MapName:setTTF( "skorzhen" )
-	MapName:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	MapName:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	MapName:setShaderVector( 0, 1, 0, 0, 0 )
 	MapName:setShaderVector( 1, 0, 0, 0, 0 )
 	MapName:setShaderVector( 2, 0, 0, 0, 0.9 )
@@ -99,7 +99,7 @@ CoD.DirectorZMMapSelectItemInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	TrialsMapName:setRGB( 0.58, 0.58, 0.58 )
 	TrialsMapName:setAlpha( 0 )
 	TrialsMapName:setTTF( "skorzhen" )
-	TrialsMapName:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	TrialsMapName:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	TrialsMapName:setShaderVector( 0, 1, 0, 0, 0 )
 	TrialsMapName:setShaderVector( 1, 0, 0, 0, 0 )
 	TrialsMapName:setShaderVector( 2, 0, 0, 0, 0.9 )
@@ -145,7 +145,7 @@ CoD.DirectorZMMapSelectItemInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	FeaturedTag:setAlpha( 0 )
 	FeaturedTag:setText( LocalizeToUpperString( "menu/public_tab" ) )
 	FeaturedTag:setTTF( "ttmussels_regular" )
-	FeaturedTag:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	FeaturedTag:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	FeaturedTag:setShaderVector( 0, 1, 0, 0, 0 )
 	FeaturedTag:setShaderVector( 1, 0, 0, 0, 0 )
 	FeaturedTag:setShaderVector( 2, 0, 0, 0, 0.9 )
@@ -166,7 +166,7 @@ CoD.DirectorZMMapSelectItemInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	FocusGlow:setRGB( 0.89, 0.12, 0.12 )
 	FocusGlow:setAlpha( 0 )
 	FocusGlow:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_small" ) )
-	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
+	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_multiplied_add" ) )
 	FocusGlow:setShaderVector( 0, 0, 0, 0.25, 0.25 )
 	FocusGlow:setShaderVector( 1, 1.2, 0, 0, 0 )
 	FocusGlow:setupNineSliceShader( 100, 100 )

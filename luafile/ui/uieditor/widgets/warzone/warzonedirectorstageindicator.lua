@@ -13,7 +13,7 @@ CoD.WarzoneDirectorStageIndicator.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local blur = LUI.UIImage.new( 0, 0, 2, 527, 0, 0, 1, 59 )
-	blur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	blur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	blur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( blur )
 	self.blur = blur
@@ -79,7 +79,7 @@ CoD.WarzoneDirectorStageIndicator.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	StageTitle:setRGB( 0.86, 0.74, 0.25 )
 	StageTitle:setText( LocalizeToUpperString( "ui/redeploying" ) )
 	StageTitle:setTTF( "ttmussels_regular" )
-	StageTitle:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	StageTitle:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	StageTitle:setShaderVector( 0, 1.11, 0, 0, 0 )
 	StageTitle:setShaderVector( 1, -0.06, 0, 0, 0 )
 	StageTitle:setShaderVector( 2, 0.86, 0.74, 0.25, 0.24 )
@@ -93,7 +93,7 @@ CoD.WarzoneDirectorStageIndicator.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	subtitle:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	subtitle:setText( LocalizeToUpperString( 0x585FA7FA77BD040 ) )
 	subtitle:setTTF( "ttmussels_regular" )
-	subtitle:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	subtitle:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	subtitle:setShaderVector( 0, 0.56, 0, 0, 0 )
 	subtitle:setShaderVector( 1, 0, 0, 0, 0 )
 	subtitle:setShaderVector( 2, 1, 1, 1, 0.23 )

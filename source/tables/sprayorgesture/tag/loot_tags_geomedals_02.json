@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_geomedals_02",
     "type": "#tag",
-    "material": "#hash_6b04520b02dfc0a4",
+    "material": "#vd/mtl_loot02_ui_icon_tags_geomedals_02",
     "bundle": {
         "type": "#tag",
         "title": "localized18#hash_47766086f6ac33d7",

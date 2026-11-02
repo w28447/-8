@@ -11,7 +11,7 @@ CoD.GameEndScoreRoundText.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local RoundScore = LUI.UIText.new( 0, 0, 0, 200, 0, 0, 19.5, 109.5 )
 	RoundScore:setText( 3 )
 	RoundScore:setTTF( "0arame_mono_stencil" )
-	RoundScore:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	RoundScore:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	RoundScore:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	RoundScore:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
 	self:addElement( RoundScore )

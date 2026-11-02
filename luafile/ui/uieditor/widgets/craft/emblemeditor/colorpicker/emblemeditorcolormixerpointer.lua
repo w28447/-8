@@ -13,7 +13,7 @@ CoD.EmblemEditorColorMixerPointer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local Linker = LUI.UIImage.new( 0, 0, -1, 3, 0, 0, -10, 20 )
 	Linker:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
-	Linker:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	Linker:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	Linker:setShaderVector( 0, 0, 0, 0, 0 )
 	Linker:setupNineSliceShader( 4, 8 )
 	self:addElement( Linker )
@@ -29,7 +29,7 @@ CoD.EmblemEditorColorMixerPointer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local Arrow = LUI.UIImage.new( 0, 0, -5, 7, 0, 0, -18.5, -6.5 )
 	Arrow:setZRot( -45 )
 	Arrow:setImage( RegisterImage( "uie_ui_menu_social_emblem_corner" ) )
-	Arrow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	Arrow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	Arrow:setShaderVector( 0, 3.2, 0, 0, 0 )
 	self:addElement( Arrow )
 	self.Arrow = Arrow

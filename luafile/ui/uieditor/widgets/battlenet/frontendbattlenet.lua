@@ -257,8 +257,8 @@ CoD.FrontendBattlenet.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local border = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	border:setAlpha( 0.05 )
-	border:setImage( RegisterImage( 0x15BB65132BCEED9 ) )
-	border:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE7BDCB879A5176D ) )
+	border:setImage( RegisterImage( "uie_ui_border_9s" ) )
+	border:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_rectangle_normal" ) )
 	border:setShaderVector( 0, 0, 0, 0, 0 )
 	border:setShaderVector( 1, 0.14, 0.14, 0.14, 0.3 )
 	border:setupNineSliceShader( 1, 1 )

@@ -4,7 +4,7 @@ model,#p8_fxanim_mp_jungle2_alt_boat_zodiac_mod
 model,#p8_mp_bomb_crate_palette
 model,#p8_fxanim_mp_jungle2_alt_boat_canoe_mod
 model,#p7_fxp_debris_dirt_clod_03_brown
-model,#hash_bcb1041182fc5ed
+model,#veh_mphd_chinook_main_rotor_attach
 model,#p7_fxp_debris_metal_scrap_01
 model,#p7_fxp_debris_metal_scrap_02
 model,#veh_mphd_jet_f4
@@ -20,7 +20,7 @@ model,#veh_mphd_uaz_base_dest
 model,#veh_mphd_uaz_base_dead
 model,#p7_zm_shi_boat_canoe_wood
 model,#p8_fxanim_gp_raven_01_mod
-model,#hash_2f68a72ab6112020
+model,#veh_mphd_chinook_tail_rotor_attach
 model,#p7_mou_snow_chunk_01
 model,#p7_mou_snow_chunk_04
 model,#p8_mp_flag_base_light_fixture_1
@@ -66,7 +66,7 @@ model,#p7_fxp_debris_dirt_clod_02_brown
 model,#veh_t8_destructible_glass_01
 model,#veh_t8_destructible_glass_02
 model,#veh_t8_destructible_glass_03
-model,#hash_64e4f262fa992ca4
+model,#p8_fxanim_gp_raven_circle_attach_01_mod
 model,#p8_zm_vapor_altar_danu_leaf_single_02
 model,#p7_jun_bowl_bucket
 model,#veh_t8_mil_boat_tactical_raft_decal_attach

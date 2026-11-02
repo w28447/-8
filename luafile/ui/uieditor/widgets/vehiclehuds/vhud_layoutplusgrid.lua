@@ -9,28 +9,28 @@ CoD.vhud_layoutPlusGrid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local gridPlus01 = LUI.UIImage.new( 0, 0, 0, 18, 0, 0, 0, 18 )
 	gridPlus01:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_layout_grid_plus" ) )
-	gridPlus01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	gridPlus01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	gridPlus01:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( gridPlus01 )
 	self.gridPlus01 = gridPlus01
 	
 	local gridPlus02 = LUI.UIImage.new( 0, 0, 216, 234, 0, 0, 0, 18 )
 	gridPlus02:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_layout_grid_plus" ) )
-	gridPlus02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	gridPlus02:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	gridPlus02:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( gridPlus02 )
 	self.gridPlus02 = gridPlus02
 	
 	local gridPlus03 = LUI.UIImage.new( 0, 0, 1, 19, 0, 0, 216.5, 234.5 )
 	gridPlus03:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_layout_grid_plus" ) )
-	gridPlus03:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	gridPlus03:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	gridPlus03:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( gridPlus03 )
 	self.gridPlus03 = gridPlus03
 	
 	local gridPlus04 = LUI.UIImage.new( 0, 0, 216, 234, 0, 0, 216.5, 234.5 )
 	gridPlus04:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_layout_grid_plus" ) )
-	gridPlus04:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	gridPlus04:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	gridPlus04:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( gridPlus04 )
 	self.gridPlus04 = gridPlus04

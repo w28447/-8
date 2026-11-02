@@ -30,7 +30,7 @@ LUI.createMenu.CodCasterQuickSettingsSideBar = function ( f2_arg0, f2_arg1 )
 	
 	local texture = LUI.UIImage.new( 0, 0, 0, 820, 0, 0, 0, 1080 )
 	texture:setAlpha( 0.75 )
-	texture:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	texture:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	texture:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( texture )
 	self.texture = texture
@@ -96,7 +96,7 @@ LUI.createMenu.CodCasterQuickSettingsSideBar = function ( f2_arg0, f2_arg1 )
 	TopBar2:setRGB( 0.46, 0.46, 0.51 )
 	TopBar2:setAlpha( 0.8 )
 	TopBar2:setImage( RegisterImage( "uie_ui_menu_cac_primary_button_top_bar" ) )
-	TopBar2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	TopBar2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	TopBar2:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( TopBar2 )
 	self.TopBar2 = TopBar2

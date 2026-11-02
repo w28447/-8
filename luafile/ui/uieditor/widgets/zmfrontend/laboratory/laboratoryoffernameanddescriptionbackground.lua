@@ -10,7 +10,7 @@ CoD.LaboratoryOfferNameAndDescriptionBackground.new = function ( f1_arg0, f1_arg
 	local SceneBlur = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	SceneBlur:setRGB( 0, 0, 0 )
 	SceneBlur:setAlpha( 0 )
-	SceneBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0x81EEB1F96D4BE0A ) )
+	SceneBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_feather_normal" ) )
 	SceneBlur:setShaderVector( 0, 0, 0.4, 0, 0 )
 	self:addElement( SceneBlur )
 	self.SceneBlur = SceneBlur
@@ -51,7 +51,7 @@ CoD.LaboratoryOfferNameAndDescriptionBackground.new = function ( f1_arg0, f1_arg
 	RedSmoke:setRGB( ColorSet.ZombiePlayerDown.r, ColorSet.ZombiePlayerDown.g, ColorSet.ZombiePlayerDown.b )
 	RedSmoke:setAlpha( 0.1 )
 	RedSmoke:setImage( RegisterImage( "uie_zm_hud_inventory_objectivesmoke" ) )
-	RedSmoke:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	RedSmoke:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	RedSmoke:setShaderVector( 0, 0, 0.52, 0, 0 )
 	RedSmoke:setShaderVector( 1, 1.16, 1.32, 0, 0 )
 	RedSmoke:setShaderVector( 2, 0, 0, 0, 0 )

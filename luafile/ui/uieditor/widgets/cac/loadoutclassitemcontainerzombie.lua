@@ -45,21 +45,21 @@ CoD.LoadoutClassItemContainerZombie.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local BracketsTop = LUI.UIImage.new( 0, 0, -7, 309, 0, 0, -6, 207 )
 	BracketsTop:setRGB( ColorSet.T8__BEIGE__HEADER.r, ColorSet.T8__BEIGE__HEADER.g, ColorSet.T8__BEIGE__HEADER.b )
 	BracketsTop:setAlpha( 0.5 )
-	BracketsTop:setImage( RegisterImage( 0xBB497F7936F10E4 ) )
+	BracketsTop:setImage( RegisterImage( "uie_ui_menu_zombies_cac_special_weapon_brackets_top" ) )
 	self:addElement( BracketsTop )
 	self.BracketsTop = BracketsTop
 	
 	local DotsBottom = LUI.UIImage.new( 0, 0, -7, 309, 1, 1, -216, -3 )
 	DotsBottom:setRGB( 0.61, 0, 0 )
 	DotsBottom:setAlpha( 0.3 )
-	DotsBottom:setImage( RegisterImage( 0x8BA3F3B135CB71 ) )
+	DotsBottom:setImage( RegisterImage( "uie_ui_menu_zombies_cac_special_weapon_dots_bottom" ) )
 	self:addElement( DotsBottom )
 	self.DotsBottom = DotsBottom
 	
 	local DotsTop = LUI.UIImage.new( 0, 0, -7, 309, 0, 0, -6, 207 )
 	DotsTop:setRGB( 0.61, 0, 0 )
 	DotsTop:setAlpha( 0.3 )
-	DotsTop:setImage( RegisterImage( 0x6A5B4F2DD473905 ) )
+	DotsTop:setImage( RegisterImage( "uie_ui_menu_zombies_cac_special_weapon_dots_top" ) )
 	self:addElement( DotsTop )
 	self.DotsTop = DotsTop
 	

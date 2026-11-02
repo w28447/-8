@@ -70,7 +70,7 @@ CoD.codcaster_player_portraittop_team2.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local blur = LUI.UIImage.new( 0, 0, 4.5, 127.5, 0, 0, 3.5, 55.5 )
 	blur:setRGB( 0, 0, 0 )
-	blur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	blur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	blur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( blur )
 	self.blur = blur
@@ -160,7 +160,7 @@ CoD.codcaster_player_portraittop_team2.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local ledplayer = LUI.UIImage.new( 0, 0, 6, 66, 0, 0, 6, 54 )
 	ledplayer:setAlpha( 0 )
-	ledplayer:setImage( RegisterImage( 0x75B3EFBC7542A9D ) )
+	ledplayer:setImage( RegisterImage( "uie_codcaster_playercard_led" ) )
 	ledplayer:subscribeToGlobalModel( f1_arg1, "FactionsGlobal", "axisFactionColor", function ( model )
 		local f17_local0 = model:get()
 		if f17_local0 ~= nil then

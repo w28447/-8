@@ -188,7 +188,7 @@ function event_handler[level_init] main( eventstruct )
         level flag::set( #"hash_2a1fc2e349c48462" );
     }
     
-    level.registerquest_key_pickup_explode = &registerquest_key_pickup_explode;
+    level.var_b5c27895 = &var_b5c27895;
     level.var_eeb98313 = &function_eeb98313;
     level.valid_poi_max_radius = 200;
 }
@@ -723,7 +723,7 @@ function function_335eca01()
 // Params 1
 // Checksum 0xf1f22a1e, Offset: 0x3340
 // Size: 0x7a, Type: bool
-function registerquest_key_pickup_explode( e_player )
+function var_b5c27895( e_player )
 {
     if ( e_player != self && e_player laststand::player_is_in_laststand() && !( isdefined( e_player.var_16735873 ) && e_player.var_16735873 ) && !zm_office_floors::function_ee59e344( e_player ) )
     {

@@ -11,7 +11,7 @@ CoD.AARCommonBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	self.anyChildUsesUpdateState = true
 	
 	local Blur = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	Blur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	Blur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	Blur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( Blur )
 	self.Blur = Blur
@@ -40,7 +40,7 @@ CoD.AARCommonBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	FuiBox02Right:setAlpha( 0.05 )
 	FuiBox02Right:setZRot( -90 )
 	FuiBox02Right:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_fui_box01" ) )
-	FuiBox02Right:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	FuiBox02Right:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	FuiBox02Right:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FuiBox02Right )
 	self.FuiBox02Right = FuiBox02Right

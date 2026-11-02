@@ -12,13 +12,13 @@ CoD.CodCasterLoadoutSecondaryWeapon.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local BG = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 4, 67 )
 	BG:setRGB( 0, 0, 0 )
-	BG:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	BG:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	BG:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BG )
 	self.BG = BG
 	
 	local WeaponBackground = LUI.UIImage.new( 0, 0, 0, 112, 0, 0, 0, 76 )
-	WeaponBackground:setImage( RegisterImage( 0x585023D9CCFF746 ) )
+	WeaponBackground:setImage( RegisterImage( "uie_codcaster_loadout_gun_background" ) )
 	self:addElement( WeaponBackground )
 	self.WeaponBackground = WeaponBackground
 	

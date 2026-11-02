@@ -17,7 +17,7 @@ CoD.DemoControlsSpectatingBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local PlayerName = LUI.UIText.new( 0, 1, 34, -34, 0.5, 0.5, -10, 10 )
 	PlayerName:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	PlayerName:setTTF( "notosans_bold" )
-	PlayerName:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	PlayerName:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	PlayerName:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	PlayerName:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )
 	PlayerName:subscribeToGlobalModel( f1_arg1, "Demo", "clientNum", function ( model )

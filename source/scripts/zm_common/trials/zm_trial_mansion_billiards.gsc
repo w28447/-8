@@ -89,7 +89,7 @@ function private disable_newtonian_negation()
     }
     
     level.var_6bbb45f9 = 1;
-    zm_bgb_newtonian_negation::function_8622e664( 0 );
+    zm_bgb_newtonian_negation::invert_gravity( 0 );
 }
 
 // Namespace zm_trial_mansion_billiards/zm_trial_mansion_billiards
@@ -102,7 +102,7 @@ function private enable_newtonian_negation()
     {
         if ( isdefined( player.var_30ee603f ) && player.var_30ee603f )
         {
-            zm_bgb_newtonian_negation::function_8622e664( 1 );
+            zm_bgb_newtonian_negation::invert_gravity( 1 );
             player.var_30ee603f = undefined;
             player.var_4b0fb2fb = undefined;
         }

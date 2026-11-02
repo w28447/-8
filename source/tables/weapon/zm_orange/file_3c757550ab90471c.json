@@ -54,12 +54,12 @@
             "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
         }
     ],
-    "projectilemodel": "#hash_1ada02cfb50d76ad",
+    "projectilemodel": "#wpn_t8_zm_nesting_doll4_world",
     "viewmodel": [
-        "#hash_1ada02cfb50d76ad"
+        "#wpn_t8_zm_nesting_doll4_world"
     ],
     "worldModel": [
-        "#hash_1ada02cfb50d76ad"
+        "#wpn_t8_zm_nesting_doll4_world"
     ],
     "gadgetIconAvailable": "#ui_icon_equipment_zm_nesting_doll",
     "gadgetIconUnavailable": "#ui_icon_equipment_zm_nesting_doll_dark",

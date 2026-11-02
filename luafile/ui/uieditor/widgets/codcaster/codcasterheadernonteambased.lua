@@ -20,7 +20,7 @@ CoD.CodCasterHeaderNonTeamBased.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.blur = blur
 	
 	local blur2 = LUI.UIImage.new( 0.5, 0.5, -177.5, 177.5, -0.4, -0.4, 64, 95 )
-	blur2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	blur2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	blur2:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( blur2 )
 	self.blur2 = blur2
@@ -32,7 +32,7 @@ CoD.CodCasterHeaderNonTeamBased.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.bg = bg
 	
 	local blur3 = LUI.UIImage.new( 0.5, 0.5, -224.5, 224.5, 0.35, 0.35, 68.5, 90.5 )
-	blur3:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	blur3:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	blur3:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( blur3 )
 	self.blur3 = blur3
@@ -537,7 +537,7 @@ CoD.CodCasterHeaderNonTeamBased.__clipsPerState = {
 			f15_arg0.blur:completeAnimation()
 			f15_arg0.blur:setLeftRight( 0.5, 0.5, -232.5, 232.5 )
 			f15_arg0.blur:setTopBottom( 0, 0, 43.5, 116.5 )
-			f15_arg0.blur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+			f15_arg0.blur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 			f15_arg0.clipFinished( f15_arg0.blur )
 			f15_arg0.bg:completeAnimation()
 			f15_arg0.bg:setRGB( 0, 0, 0 )
@@ -620,7 +620,7 @@ CoD.CodCasterHeaderNonTeamBased.__clipsPerState = {
 			f16_arg0.blur:completeAnimation()
 			f16_arg0.blur:setLeftRight( 0.5, 0.5, -231.5, 231.5 )
 			f16_arg0.blur:setTopBottom( 0, 0, 43, 116 )
-			f16_arg0.blur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+			f16_arg0.blur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 			f16_arg0.clipFinished( f16_arg0.blur )
 			f16_arg0.blur2:completeAnimation()
 			f16_arg0.blur2:setLeftRight( 0.5, 0.5, -177.5, 177.5 )

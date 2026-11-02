@@ -38,7 +38,7 @@ CoD.CompetitiveOverviewRankBanner.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local rank = LUI.UIText.new( 0.5, 0.5, -84, 84, 0, 0, 291, 316 )
 	rank:setTTF( "ttmussels_demibold" )
-	rank:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	rank:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	rank:setLetterSpacing( 2 )
 	rank:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	rank:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )

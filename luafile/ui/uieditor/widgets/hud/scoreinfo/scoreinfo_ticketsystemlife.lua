@@ -11,14 +11,14 @@ CoD.ScoreInfo_TicketSystemLife.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local DeathIcon = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	DeathIcon:setAlpha( 0 )
 	DeathIcon:setImage( RegisterImage( "uie_ui_hud_core_objective_widget_person" ) )
-	DeathIcon:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	DeathIcon:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	DeathIcon:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( DeathIcon )
 	self.DeathIcon = DeathIcon
 	
 	local LifeIcon = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	LifeIcon:setImage( RegisterImage( "uie_ui_hud_core_objective_widget_person" ) )
-	LifeIcon:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	LifeIcon:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	LifeIcon:setShaderVector( 0, 1, 0, 0, 0 )
 	LifeIcon:linkToElementModel( self, "teamColor", true, function ( model )
 		local f2_local0 = model:get()
@@ -86,7 +86,7 @@ CoD.ScoreInfo_TicketSystemLife.__clipsPerState = {
 			f7_arg0:setupElementClipCounter( 1 )
 			f7_arg0.LifeIcon:completeAnimation()
 			f7_arg0.LifeIcon:setZRot( 0 )
-			f7_arg0.LifeIcon:setImage( RegisterImage( 0x60D34BEB4B4E1F2 ) )
+			f7_arg0.LifeIcon:setImage( RegisterImage( "ui_hud_core_objective_widget_downed" ) )
 			f7_arg0.clipFinished( f7_arg0.LifeIcon )
 		end
 	}

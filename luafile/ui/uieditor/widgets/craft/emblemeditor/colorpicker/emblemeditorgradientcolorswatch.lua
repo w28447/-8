@@ -16,7 +16,7 @@ CoD.EmblemEditorGradientColorSwatch.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local ColorPickerBkgd0 = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	ColorPickerBkgd0:setAlpha( 0.5 )
-	ColorPickerBkgd0:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	ColorPickerBkgd0:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	ColorPickerBkgd0:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( ColorPickerBkgd0 )
 	self.ColorPickerBkgd0 = ColorPickerBkgd0
@@ -54,7 +54,7 @@ CoD.EmblemEditorGradientColorSwatch.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local FooterStripe1 = LUI.UIImage.new( 0, 1, 0, 0, 1, 1, -38, 0 )
 	FooterStripe1:setAlpha( 0.1 )
 	FooterStripe1:setImage( RegisterImage( 0xC7A051F5EFC70E5 ) )
-	FooterStripe1:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	FooterStripe1:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	FooterStripe1:setShaderVector( 0, 0, 0, 0, 0 )
 	FooterStripe1:setupNineSliceShader( 245, 40 )
 	self:addElement( FooterStripe1 )
@@ -181,7 +181,7 @@ CoD.EmblemEditorGradientColorSwatch.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	dividerV = LUI.UIImage.new( 0.5, 0.5, -379.5, -375.5, 0, 0, 0, 202 )
 	dividerV:setAlpha( 0.2 )
 	dividerV:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
-	dividerV:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	dividerV:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	dividerV:setShaderVector( 0, 0, 0, 0, 0 )
 	dividerV:setupNineSliceShader( 4, 8 )
 	self:addElement( dividerV )

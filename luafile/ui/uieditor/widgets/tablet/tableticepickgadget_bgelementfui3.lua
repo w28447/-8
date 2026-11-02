@@ -10,28 +10,28 @@ CoD.TabletIcePickGadget_BgElementFui3.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local DotCircle = LUI.UIImage.new( 0, 0, 78, 470, 0, 0, 0, 392 )
 	DotCircle:setImage( RegisterImage( 0xF6EAFC2D6FB4E44 ) )
-	DotCircle:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	DotCircle:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	DotCircle:setShaderVector( 0, 5, 0, 0, 0 )
 	self:addElement( DotCircle )
 	self.DotCircle = DotCircle
 	
 	local BlurCircle = LUI.UIImage.new( 0, 0, 146, 402, 0, 0, 68, 324 )
 	BlurCircle:setImage( RegisterImage( 0x118898E0A734562 ) )
-	BlurCircle:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	BlurCircle:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	BlurCircle:setShaderVector( 0, 5, 0, 0, 0 )
 	self:addElement( BlurCircle )
 	self.BlurCircle = BlurCircle
 	
 	local OuterCircle = LUI.UIImage.new( 0, 0, 138, 410, 0, 0, 60, 332 )
 	OuterCircle:setImage( RegisterImage( 0x7586ED46FEA0A30 ) )
-	OuterCircle:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	OuterCircle:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	OuterCircle:setShaderVector( 0, 5, 0, 0, 0 )
 	self:addElement( OuterCircle )
 	self.OuterCircle = OuterCircle
 	
 	local InnerCircle = LUI.UIImage.new( 0, 0, 186, 362, 0, 0, 108, 284 )
 	InnerCircle:setImage( RegisterImage( 0xAEEC8298E5C8959 ) )
-	InnerCircle:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	InnerCircle:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	InnerCircle:setShaderVector( 0, 5, 0, 0, 0 )
 	self:addElement( InnerCircle )
 	self.InnerCircle = InnerCircle
@@ -39,7 +39,7 @@ CoD.TabletIcePickGadget_BgElementFui3.new = function ( f1_arg0, f1_arg1, f1_arg2
 	local CenterFractal01 = LUI.UIImage.new( 0, 0, 98, 450, 0, 0, 20, 372 )
 	CenterFractal01:setAlpha( 0 )
 	CenterFractal01:setImage( RegisterImage( 0x86F45135B8369F ) )
-	CenterFractal01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	CenterFractal01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	CenterFractal01:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( CenterFractal01 )
 	self.CenterFractal01 = CenterFractal01
@@ -47,7 +47,7 @@ CoD.TabletIcePickGadget_BgElementFui3.new = function ( f1_arg0, f1_arg1, f1_arg2
 	local CenterFractal02 = LUI.UIImage.new( 0, 0, 4, 544, 0, 0, 66, 326 )
 	CenterFractal02:setAlpha( 0 )
 	CenterFractal02:setImage( RegisterImage( 0x86F55135B83852 ) )
-	CenterFractal02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	CenterFractal02:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	CenterFractal02:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( CenterFractal02 )
 	self.CenterFractal02 = CenterFractal02
@@ -55,7 +55,7 @@ CoD.TabletIcePickGadget_BgElementFui3.new = function ( f1_arg0, f1_arg1, f1_arg2
 	local CenterFractal03 = LUI.UIImage.new( 0, 0, 0, 548, 0, 0, 62.5, 322.5 )
 	CenterFractal03:setAlpha( 0 )
 	CenterFractal03:setImage( RegisterImage( 0x86F65135B83A05 ) )
-	CenterFractal03:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	CenterFractal03:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	CenterFractal03:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( CenterFractal03 )
 	self.CenterFractal03 = CenterFractal03
@@ -63,7 +63,7 @@ CoD.TabletIcePickGadget_BgElementFui3.new = function ( f1_arg0, f1_arg1, f1_arg2
 	local CenterFractal04 = LUI.UIImage.new( 0, 0, 92, 456, 0, 0, 14, 378 )
 	CenterFractal04:setAlpha( 0 )
 	CenterFractal04:setImage( RegisterImage( 0x86EF5135B82E20 ) )
-	CenterFractal04:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	CenterFractal04:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	CenterFractal04:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( CenterFractal04 )
 	self.CenterFractal04 = CenterFractal04
@@ -71,7 +71,7 @@ CoD.TabletIcePickGadget_BgElementFui3.new = function ( f1_arg0, f1_arg1, f1_arg2
 	local CenterFractal05 = LUI.UIImage.new( 0, 0, 18, 530, 0, 0, 66, 326 )
 	CenterFractal05:setAlpha( 0 )
 	CenterFractal05:setImage( RegisterImage( 0x86F05135B82FD3 ) )
-	CenterFractal05:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	CenterFractal05:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	CenterFractal05:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( CenterFractal05 )
 	self.CenterFractal05 = CenterFractal05
@@ -79,7 +79,7 @@ CoD.TabletIcePickGadget_BgElementFui3.new = function ( f1_arg0, f1_arg1, f1_arg2
 	local CenterFractal06 = LUI.UIImage.new( 0, 0, 118, 430, 0, 0, 40, 352 )
 	CenterFractal06:setAlpha( 0 )
 	CenterFractal06:setImage( RegisterImage( 0x86F15135B83186 ) )
-	CenterFractal06:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	CenterFractal06:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	CenterFractal06:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( CenterFractal06 )
 	self.CenterFractal06 = CenterFractal06

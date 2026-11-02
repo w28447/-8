@@ -52,7 +52,7 @@
     ],
     "gadgetIconAvailable": "#ui_icon_equpiment_zm_rastaff_lv2",
     "gadgetIconUnavailable": "#ui_icon_equpiment_zm_rastaff_lv2_dark",
-    "reticleCenter": "#hash_9113a4bd1b38c65",
+    "reticleCenter": "#i_reticle_grapple_center",
     "inventoryIconZm": "#ui_icon_equpiment_zm_rastaff_lv2",
     "hudIcon": "#ui_icon_equpiment_zm_rastaff_lv2",
     "image_e90": "#ui_icon_equpiment_zm_rastaff_lv2",

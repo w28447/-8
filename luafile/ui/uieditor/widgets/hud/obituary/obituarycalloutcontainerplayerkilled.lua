@@ -12,7 +12,7 @@ CoD.ObituaryCalloutContainerPlayerKilled.new = function ( f1_arg0, f1_arg1, f1_a
 	
 	local PlayerName = LUI.UIText.new( 0, 0, 33.5, 179.5, 0, 0, -2, 28 )
 	PlayerName:setTTF( "notosans_bold" )
-	PlayerName:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	PlayerName:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	PlayerName:setShaderVector( 0, 1, 0, 0, 0 )
 	PlayerName:setShaderVector( 1, 0, 0, 0, 0 )
 	PlayerName:setShaderVector( 2, 0, 0, 0, 0.35 )
@@ -43,7 +43,7 @@ CoD.ObituaryCalloutContainerPlayerKilled.new = function ( f1_arg0, f1_arg1, f1_a
 	ContribText2:setAlpha( 0.8 )
 	ContribText2:setText( LocalizeToUpperString( 0x585C6033C252ED7 ) )
 	ContribText2:setTTF( "ttmussels_regular" )
-	ContribText2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	ContribText2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	ContribText2:setShaderVector( 0, 1, 0, 0, 0 )
 	ContribText2:setShaderVector( 1, 0, 0, 0, 0 )
 	ContribText2:setShaderVector( 2, 0, 0, 0, 0.35 )

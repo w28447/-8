@@ -45,7 +45,7 @@ CoD.MatchstartRadialTimer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	fui:setRGB( ColorSet.T8__RED.r, ColorSet.T8__RED.g, ColorSet.T8__RED.b )
 	fui:setAlpha( 0.26 )
 	fui:setImage( RegisterImage( "uie_ui_hud_common_draft_timer_fui" ) )
-	fui:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	fui:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	fui:setShaderVector( 0, 3, 0, 0, 0 )
 	self:addElement( fui )
 	self.fui = fui

@@ -13,7 +13,7 @@ CoD.CaptureCrate.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local ProgressBarBGBlur = LUI.UIImage.new( 0.5, 0.5, -218.5, 218.5, 0.5, 0.5, 10, 30 )
-	ProgressBarBGBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	ProgressBarBGBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	ProgressBarBGBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( ProgressBarBGBlur )
 	self.ProgressBarBGBlur = ProgressBarBGBlur

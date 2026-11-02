@@ -69,7 +69,7 @@ CoD.TabletTak5_PlayerHealthInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local playeroutlineAdd = LUI.UIImage.new( 0.5, 0.5, -45, 45, 0.5, 0.5, -90, 90 )
 	playeroutlineAdd:setAlpha( 0.4 )
 	playeroutlineAdd:setImage( RegisterImage( "uie_ui_hud_tak5_humanbody_outline" ) )
-	playeroutlineAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	playeroutlineAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	playeroutlineAdd:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( playeroutlineAdd )
 	self.playeroutlineAdd = playeroutlineAdd

@@ -15,28 +15,28 @@ CoD.vhud_HellstormBGFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local frameBL = LUI.UIImage.new( 1, 1, -1923, -1569, 0, 0, 1083, 881 )
 	frameBL:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_corner_line" ) )
-	frameBL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	frameBL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	frameBL:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( frameBL )
 	self.frameBL = frameBL
 	
 	local frameTL = LUI.UIImage.new( 0, 0, -5, 349, 0, 0, -4, 198 )
 	frameTL:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_corner_line" ) )
-	frameTL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	frameTL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	frameTL:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( frameTL )
 	self.frameTL = frameTL
 	
 	local frameTR = LUI.UIImage.new( 1, 1, 5, -349, 0, 0, -3, 199 )
 	frameTR:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_corner_line" ) )
-	frameTR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	frameTR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	frameTR:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( frameTR )
 	self.frameTR = frameTR
 	
 	local frameBR = LUI.UIImage.new( 1, 1, 5, -349, 0, 0, 1083, 881 )
 	frameBR:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_corner_line" ) )
-	frameBR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	frameBR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	frameBR:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( frameBR )
 	self.frameBR = frameBR
@@ -94,7 +94,7 @@ CoD.vhud_HellstormBGFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	FuiBox01Left:setAlpha( 0.5 )
 	FuiBox01Left:setYRot( 180 )
 	FuiBox01Left:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_fui_box01" ) )
-	FuiBox01Left:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	FuiBox01Left:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	FuiBox01Left:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FuiBox01Left )
 	self.FuiBox01Left = FuiBox01Left
@@ -102,7 +102,7 @@ CoD.vhud_HellstormBGFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local FuiBox01Right = LUI.UIImage.new( 0, 0, 1258, 1292, 0, 0, 838.5, 872.5 )
 	FuiBox01Right:setAlpha( 0.5 )
 	FuiBox01Right:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_fui_box01" ) )
-	FuiBox01Right:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	FuiBox01Right:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	FuiBox01Right:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FuiBox01Right )
 	self.FuiBox01Right = FuiBox01Right
@@ -110,7 +110,7 @@ CoD.vhud_HellstormBGFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local FuiBox02Right = LUI.UIImage.new( 0, 0, 1390.5, 1424.5, 0, 0, 324, 290 )
 	FuiBox02Right:setAlpha( 0.5 )
 	FuiBox02Right:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_fui_box01" ) )
-	FuiBox02Right:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	FuiBox02Right:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	FuiBox02Right:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FuiBox02Right )
 	self.FuiBox02Right = FuiBox02Right
@@ -118,21 +118,21 @@ CoD.vhud_HellstormBGFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local FuiBox02Left = LUI.UIImage.new( 0, 0, 527.5, 493.5, 0, 0, 324, 290 )
 	FuiBox02Left:setAlpha( 0.5 )
 	FuiBox02Left:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_fui_box01" ) )
-	FuiBox02Left:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	FuiBox02Left:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	FuiBox02Left:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FuiBox02Left )
 	self.FuiBox02Left = FuiBox02Left
 	
 	local LayoutTL = LUI.UIImage.new( 0, 0, 493.5, 653.5, 0, 0, 52, 80 )
-	LayoutTL:setImage( RegisterImage( 0x4284ACB13767426 ) )
-	LayoutTL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	LayoutTL:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_layout_top" ) )
+	LayoutTL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	LayoutTL:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( LayoutTL )
 	self.LayoutTL = LayoutTL
 	
 	local LayoutTR = LUI.UIImage.new( 0, 0, 1424.5, 1264.5, 0, 0, 52, 80 )
-	LayoutTR:setImage( RegisterImage( 0x4284ACB13767426 ) )
-	LayoutTR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	LayoutTR:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_layout_top" ) )
+	LayoutTR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	LayoutTR:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( LayoutTR )
 	self.LayoutTR = LayoutTR

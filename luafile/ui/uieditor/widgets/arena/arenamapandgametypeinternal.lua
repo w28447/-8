@@ -21,7 +21,7 @@ CoD.ArenaMapAndGameTypeInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local BackingBlur = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	BackingBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	BackingBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	BackingBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BackingBlur )
 	self.BackingBlur = BackingBlur
@@ -29,7 +29,7 @@ CoD.ArenaMapAndGameTypeInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local FocusGlow = LUI.UIImage.new( 0, 1, -80, 80, -0, 1, -50, 50 )
 	FocusGlow:setAlpha( 0 )
 	FocusGlow:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_small" ) )
-	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
+	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_multiplied_add" ) )
 	FocusGlow:setShaderVector( 0, 0, 0, 0.24, 0.24 )
 	FocusGlow:setShaderVector( 1, 1.2, 0, 0, 0 )
 	FocusGlow:setupNineSliceShader( 160, 100 )
@@ -94,7 +94,7 @@ CoD.ArenaMapAndGameTypeInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	MapImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	MapImage:setImage( RegisterImage( "img_t7_menu_mp_preview_sector" ) )
-	MapImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	MapImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	MapImage:setShaderVector( 0, 0.5, 0.2, 0, 0 )
 	MapImage:setShaderVector( 1, 1, 1, 0, 0 )
 	MapImage:setShaderVector( 2, 0, 0, 0, 0 )

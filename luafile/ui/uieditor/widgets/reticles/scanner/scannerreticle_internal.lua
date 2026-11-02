@@ -42,7 +42,7 @@ CoD.ScannerReticle_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local DirectlyOverEnemy = LUI.UIImage.new( 0.5, 0.5, -64, 64, 0.5, 0.5, -64, 64 )
 	DirectlyOverEnemy:setAlpha( 0.8 )
 	DirectlyOverEnemy:setImage( RegisterImage( "uie_ui_hud_reticle_scanner_circle" ) )
-	DirectlyOverEnemy:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	DirectlyOverEnemy:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	DirectlyOverEnemy:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( DirectlyOverEnemy )
 	self.DirectlyOverEnemy = DirectlyOverEnemy

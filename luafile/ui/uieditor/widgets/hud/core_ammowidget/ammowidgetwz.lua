@@ -15,7 +15,7 @@ CoD.AmmoWidgetWZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local Blur = LUI.UIImage.new( 0, 0, 160, 588, 0, 0, 23, 89 )
-	Blur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	Blur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	Blur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( Blur )
 	self.Blur = Blur
@@ -54,14 +54,14 @@ CoD.AmmoWidgetWZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	self.StorageSlot = StorageSlot
 	
 	local Frame = LUI.UIImage.new( 0, 0, 146, 602, 0, 0, 14, 98 )
-	Frame:setImage( RegisterImage( 0x192903FBEA50B36 ) )
+	Frame:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_ammo_widget_frames" ) )
 	self:addElement( Frame )
 	self.Frame = Frame
 	
 	local LEDgraph = LUI.UIImage.new( 0, 0, 358.5, 586.5, 0, 0, 23, 87 )
 	LEDgraph:setRGB( 0, 0, 0 )
 	LEDgraph:setAlpha( 0.2 )
-	LEDgraph:setImage( RegisterImage( 0xC841C84F3674732 ) )
+	LEDgraph:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_ammo_widget_led_weapon" ) )
 	self:addElement( LEDgraph )
 	self.LEDgraph = LEDgraph
 	
@@ -95,14 +95,14 @@ CoD.AmmoWidgetWZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	local LEDarmor = LUI.UIImage.new( 0, 0, 295.5, 359.5, 0, 0, 21, 85 )
 	LEDarmor:setRGB( 0, 0, 0 )
 	LEDarmor:setAlpha( 0.2 )
-	LEDarmor:setImage( RegisterImage( 0xE543F2886150754 ) )
+	LEDarmor:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_ammo_widget_led_ammo" ) )
 	self:addElement( LEDarmor )
 	self.LEDarmor = LEDarmor
 	
 	local LED = LUI.UIImage.new( 0, 0, 161.5, 229.5, 0, 0, 20, 88 )
 	LED:setRGB( 0, 0, 0 )
 	LED:setAlpha( 0.2 )
-	LED:setImage( RegisterImage( 0xD9A4F6492B1AE8B ) )
+	LED:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_player_widget_led_backpack" ) )
 	self:addElement( LED )
 	self.LED = LED
 	

@@ -37,7 +37,7 @@ CoD.AmmoWidgetZM_WeaponImage.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local WeaponImage = LUI.UIFixedAspectRatioImage.new( 0, 0, -236, -25, 0.5, 0.5, -34, 31 )
 	WeaponImage:setScale( 0.8, 0.8 )
-	WeaponImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	WeaponImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	WeaponImage:setShaderVector( 0, 1, 0, 0, 0 )
 	WeaponImage.__Image = function ( f4_arg0 )
 		local f4_local0 = f4_arg0:get()

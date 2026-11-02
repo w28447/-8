@@ -22,7 +22,7 @@ CoD.WarzoneInventoryNag.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local InventoryNag = LUI.UIText.new( 0, 0, 31, 217, 0, 0, 17, 35 )
 	InventoryNag:setText( LocalizeToUpperString( "warzone/inventory" ) )
 	InventoryNag:setTTF( "ttmussels_regular" )
-	InventoryNag:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	InventoryNag:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	InventoryNag:setShaderVector( 0, 0.6, 0, 0, 0 )
 	InventoryNag:setShaderVector( 1, 0.3, 0, 0, 0 )
 	InventoryNag:setShaderVector( 2, 0, 0, 0, 1 )

@@ -198,7 +198,7 @@ function function_bbbc20bf( var_a7bc1cee = 0 )
         
         if ( var_a7bc1cee )
         {
-            mdl_head playsound( #"hash_3d7066af9c9bf849" );
+            mdl_head playsound( #"zmb_papquest_head_place" );
             mdl_head thread zm_towers_pap_quest::function_61cf4d04();
         }
     }
@@ -507,7 +507,7 @@ function function_edd5bb1a()
 {
     if ( zm_utility::function_e37823df() )
     {
-        zm_utility::function_6df718d( #"hash_6db3dde314ca084", 0 );
+        zm_utility::function_6df718d( #"wpn_t8_zm_esc_shield_key_world", 0 );
     }
 }
 

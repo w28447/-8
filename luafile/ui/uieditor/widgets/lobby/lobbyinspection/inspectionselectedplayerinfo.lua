@@ -55,7 +55,7 @@ CoD.InspectionSelectedPlayerInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	EmblemCornerBlurBL:setAlpha( 0 )
 	EmblemCornerBlurBL:setZRot( 90 )
 	EmblemCornerBlurBL:setImage( RegisterImage( "uie_ui_menu_inspection_window_corner" ) )
-	EmblemCornerBlurBL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	EmblemCornerBlurBL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	EmblemCornerBlurBL:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( EmblemCornerBlurBL )
 	self.EmblemCornerBlurBL = EmblemCornerBlurBL
@@ -64,7 +64,7 @@ CoD.InspectionSelectedPlayerInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	EmblemCornerBL:setAlpha( 0 )
 	EmblemCornerBL:setZRot( -90 )
 	EmblemCornerBL:setImage( RegisterImage( "uie_ui_menu_social_emblem_corner" ) )
-	EmblemCornerBL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	EmblemCornerBL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	EmblemCornerBL:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( EmblemCornerBL )
 	self.EmblemCornerBL = EmblemCornerBL
@@ -72,7 +72,7 @@ CoD.InspectionSelectedPlayerInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	local EmblemCornerBlurTL = LUI.UIImage.new( 0, 0, -1.5, 18.5, 0, 0, -3, 17 )
 	EmblemCornerBlurTL:setAlpha( 0 )
 	EmblemCornerBlurTL:setImage( RegisterImage( "uie_ui_menu_inspection_window_corner" ) )
-	EmblemCornerBlurTL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	EmblemCornerBlurTL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	EmblemCornerBlurTL:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( EmblemCornerBlurTL )
 	self.EmblemCornerBlurTL = EmblemCornerBlurTL
@@ -81,7 +81,7 @@ CoD.InspectionSelectedPlayerInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	EmblemCornerTL:setAlpha( 0 )
 	EmblemCornerTL:setZRot( 180 )
 	EmblemCornerTL:setImage( RegisterImage( "uie_ui_menu_social_emblem_corner" ) )
-	EmblemCornerTL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	EmblemCornerTL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	EmblemCornerTL:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( EmblemCornerTL )
 	self.EmblemCornerTL = EmblemCornerTL
@@ -90,7 +90,7 @@ CoD.InspectionSelectedPlayerInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	EmblemCornerBlurBR:setAlpha( 0 )
 	EmblemCornerBlurBR:setZRot( 180 )
 	EmblemCornerBlurBR:setImage( RegisterImage( "uie_ui_menu_inspection_window_corner" ) )
-	EmblemCornerBlurBR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	EmblemCornerBlurBR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	EmblemCornerBlurBR:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( EmblemCornerBlurBR )
 	self.EmblemCornerBlurBR = EmblemCornerBlurBR
@@ -98,7 +98,7 @@ CoD.InspectionSelectedPlayerInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	local EmblemCornerBR = LUI.UIImage.new( 0, 0, 337, 349, 0, 0, 337, 349 )
 	EmblemCornerBR:setAlpha( 0 )
 	EmblemCornerBR:setImage( RegisterImage( "uie_ui_menu_social_emblem_corner" ) )
-	EmblemCornerBR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	EmblemCornerBR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	EmblemCornerBR:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( EmblemCornerBR )
 	self.EmblemCornerBR = EmblemCornerBR
@@ -107,7 +107,7 @@ CoD.InspectionSelectedPlayerInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	EmblemCornerBlurTR:setAlpha( 0 )
 	EmblemCornerBlurTR:setYRot( 180 )
 	EmblemCornerBlurTR:setImage( RegisterImage( "uie_ui_menu_inspection_window_corner" ) )
-	EmblemCornerBlurTR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	EmblemCornerBlurTR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	EmblemCornerBlurTR:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( EmblemCornerBlurTR )
 	self.EmblemCornerBlurTR = EmblemCornerBlurTR
@@ -116,7 +116,7 @@ CoD.InspectionSelectedPlayerInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	EmblemCornerTR:setAlpha( 0 )
 	EmblemCornerTR:setZRot( 90 )
 	EmblemCornerTR:setImage( RegisterImage( "uie_ui_menu_social_emblem_corner" ) )
-	EmblemCornerTR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	EmblemCornerTR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	EmblemCornerTR:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( EmblemCornerTR )
 	self.EmblemCornerTR = EmblemCornerTR

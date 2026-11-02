@@ -16,7 +16,7 @@ CoD.ReservesPromoInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	FocusGlow:setAlpha( 0 )
 	FocusGlow:setScale( 1.01, 1 )
 	FocusGlow:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_small" ) )
-	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
+	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_multiplied_add" ) )
 	FocusGlow:setShaderVector( 0, 0, 0, 0.24, 0.24 )
 	FocusGlow:setShaderVector( 1, 1.2, 0, 0, 0 )
 	FocusGlow:setupNineSliceShader( 160, 160 )

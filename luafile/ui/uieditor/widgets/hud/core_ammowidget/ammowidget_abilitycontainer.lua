@@ -10,7 +10,7 @@ CoD.AmmoWidget_AbilityContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local BlurPanel = LUI.UIImage.new( 0, 0, -6, 114, 0, 0, -3, 45 )
 	BlurPanel:setImage( RegisterImage( "uie_hud_common_core_ammo_panelcenter" ) )
-	BlurPanel:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	BlurPanel:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	BlurPanel:setShaderVector( 0, 0, 0.07, 0, 0 )
 	self:addElement( BlurPanel )
 	self.BlurPanel = BlurPanel
@@ -25,7 +25,7 @@ CoD.AmmoWidget_AbilityContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local EquipmentEmpty = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 0, 44 )
 	EquipmentEmpty:setRGB( 0, 0, 0 )
 	EquipmentEmpty:setAlpha( 0 )
-	EquipmentEmpty:setImage( RegisterImage( 0xE06EE06576BABAB ) )
+	EquipmentEmpty:setImage( RegisterImage( "uie_hud_common_core_equip_empty" ) )
 	EquipmentEmpty:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	EquipmentEmpty:setShaderVector( 0, 0, 0, 0, 0 )
 	EquipmentEmpty:setupNineSliceShader( 46, 22 )

@@ -48,7 +48,7 @@ CoD.AARTierRewardLootCaseMeter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	CaseCount:setRGB( 0.91, 0.89, 0.89 )
 	CaseCount:setText( 888 )
 	CaseCount:setTTF( "ttmussels_demibold" )
-	CaseCount:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6250C6FCAC36BD4 ) )
+	CaseCount:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_outline" ) )
 	CaseCount:setShaderVector( 0, 0.1, 0, 0, 0 )
 	CaseCount:setShaderVector( 1, 0, 0, 0, 0 )
 	CaseCount:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

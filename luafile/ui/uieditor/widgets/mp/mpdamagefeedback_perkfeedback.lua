@@ -154,7 +154,7 @@ CoD.MPDamageFeedback_PerkFeedback.__clipsPerState = {
 			f18_arg0:setupElementClipCounter( 1 )
 			f18_arg0.PerkFeedbackImage:completeAnimation()
 			f18_arg0.PerkFeedbackImage:setAlpha( 1 )
-			f18_arg0.PerkFeedbackImage:setImage( RegisterImage( 0x1C282F95B011231 ) )
+			f18_arg0.PerkFeedbackImage:setImage( RegisterImage( "ui_icon_hud_resistance_feedback" ) )
 			f18_arg0.clipFinished( f18_arg0.PerkFeedbackImage )
 		end,
 		DefaultState = function ( f19_arg0, f19_arg1 )
@@ -169,7 +169,7 @@ CoD.MPDamageFeedback_PerkFeedback.__clipsPerState = {
 			
 			f19_arg0.PerkFeedbackImage:completeAnimation()
 			f19_arg0.PerkFeedbackImage:setAlpha( 1 )
-			f19_arg0.PerkFeedbackImage:setImage( RegisterImage( 0x1C282F95B011231 ) )
+			f19_arg0.PerkFeedbackImage:setImage( RegisterImage( "ui_icon_hud_resistance_feedback" ) )
 			f19_local0( f19_arg0.PerkFeedbackImage )
 		end
 	}

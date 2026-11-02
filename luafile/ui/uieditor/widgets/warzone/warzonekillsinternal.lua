@@ -11,13 +11,13 @@ CoD.WarzoneKillsInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local Blur = LUI.UIImage.new( 0, 0, 6.5, 149.5, 0, 0, 5, 39 )
-	Blur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	Blur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	Blur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( Blur )
 	self.Blur = Blur
 	
 	local Blur2 = LUI.UIImage.new( 0, 0, 77.5, 149.5, 0, 0, 5, 39 )
-	Blur2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	Blur2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	Blur2:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( Blur2 )
 	self.Blur2 = Blur2
@@ -52,7 +52,7 @@ CoD.WarzoneKillsInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local spectators = LUI.UIText.new( 1, 1, -52, -10, 0, 0, 11, 33 )
 	spectators:setTTF( "0arame_mono_stencil" )
-	spectators:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	spectators:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	spectators:setShaderVector( 0, 0.8, 0, 0, 0 )
 	spectators:setShaderVector( 1, 0, 0, 0, 0 )
 	spectators:setShaderVector( 2, 1, 1, 1, 0.35 )
@@ -78,7 +78,7 @@ CoD.WarzoneKillsInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local PlayerCount = LUI.UIText.new( 1, 1, -126, -81, 0, 0, 11, 33 )
 	PlayerCount:setTTF( "0arame_mono_stencil" )
-	PlayerCount:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	PlayerCount:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	PlayerCount:setShaderVector( 0, 0.8, 0, 0, 0 )
 	PlayerCount:setShaderVector( 1, 0, 0, 0, 0 )
 	PlayerCount:setShaderVector( 2, 1, 1, 1, 0.35 )
@@ -104,7 +104,7 @@ CoD.WarzoneKillsInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	LED2:setRGB( 0, 0, 0 )
 	LED2:setAlpha( 0.2 )
 	LED2:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_lives_counter_led" ) )
-	LED2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	LED2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	LED2:setShaderVector( 0, 0, 0, 0, 0 )
 	LED2:setShaderVector( 1, 1, 1, 0, 0 )
 	LED2:setShaderVector( 2, 0, 0, 0, 0 )

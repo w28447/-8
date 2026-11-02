@@ -10,7 +10,7 @@ CoD.CodCasterLoadoutSelectionSpec.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local Center = LUI.UIImage.new( 0.5, 0.5, -58.5, 58.5, 0.5, 0.5, -58.5, 58.5 )
 	Center:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	Center:setAlpha( 0.8 )
-	Center:setImage( RegisterImage( 0xBE763D1EB16049A ) )
+	Center:setImage( RegisterImage( "uie_codcaster_loadout_selector_spec" ) )
 	self:addElement( Center )
 	self.Center = Center
 	

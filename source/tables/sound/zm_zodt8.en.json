@@ -6039,13 +6039,13 @@
         {
             "value": 2588,
             "next": 65535,
-            "name": "#hash_48af8239068e44f2",
+            "name": "#vox_advance_blight_kill_narr_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_48af8239068e44f2",
+                    "name": "#vox_advance_blight_kill_narr_0",
                     "subtitle": "#hash_3b0cf45abde7e13e",
                     "assetId": "#hash_630d603b3d002416",
                     "assetFileNameSustain": "#zm_zodt8.en",
@@ -455545,13 +455545,13 @@
         {
             "value": 115,
             "next": 2102,
-            "name": "#hash_7629232832113319",
+            "name": "#vox_m_quest_cat_port_first_plr_1_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7629232832113319",
+                    "name": "#vox_m_quest_cat_port_first_plr_1_0",
                     "subtitle": "#hash_7103a2bb0df6bc13",
                     "assetId": "#hash_3834d767976f6beb",
                     "assetFileNameSustain": "#zm_zodt8.en",
@@ -455594,7 +455594,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_7629232832113319",
+                    "name": "#vox_m_quest_cat_port_first_plr_1_0",
                     "subtitle": "#hash_7103a2bb0df6bc13",
                     "assetId": "#hash_3834d767976f6beb",
                     "assetFileNameSustain": "#zm_zodt8.en",
@@ -455641,13 +455641,13 @@
         {
             "value": 2484,
             "next": 65535,
-            "name": "#hash_6fb40c282f08edc4",
+            "name": "#vox_m_quest_cat_port_first_plr_2_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6fb40c282f08edc4",
+                    "name": "#vox_m_quest_cat_port_first_plr_2_0",
                     "subtitle": "#hash_7103a3bb0df6bdc6",
                     "assetId": "#hash_2b77f5ce945c390a",
                     "assetFileNameSustain": "#zm_zodt8.en",
@@ -455690,7 +455690,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_6fb40c282f08edc4",
+                    "name": "#vox_m_quest_cat_port_first_plr_2_0",
                     "subtitle": "#hash_7103a3bb0df6bdc6",
                     "assetId": "#hash_2b77f5ce945c390a",
                     "assetFileNameSustain": "#zm_zodt8.en",
@@ -455737,13 +455737,13 @@
         {
             "value": 1952,
             "next": 65535,
-            "name": "#hash_64ff552828647ecf",
+            "name": "#vox_m_quest_cat_port_first_plr_3_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_64ff552828647ecf",
+                    "name": "#vox_m_quest_cat_port_first_plr_3_0",
                     "subtitle": "#hash_7103a4bb0df6bf79",
                     "assetId": "#hash_4159f06950ab0ac9",
                     "assetFileNameSustain": "#zm_zodt8.en",
@@ -455786,7 +455786,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_64ff552828647ecf",
+                    "name": "#vox_m_quest_cat_port_first_plr_3_0",
                     "subtitle": "#hash_7103a4bb0df6bf79",
                     "assetId": "#hash_4159f06950ab0ac9",
                     "assetFileNameSustain": "#zm_zodt8.en",
@@ -455833,13 +455833,13 @@
         {
             "value": 1078,
             "next": 65535,
-            "name": "#hash_217f76284a9f2922",
+            "name": "#vox_m_quest_cat_port_first_plr_4_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_217f76284a9f2922",
+                    "name": "#vox_m_quest_cat_port_first_plr_4_0",
                     "subtitle": "#hash_7103a5bb0df6c12c",
                     "assetId": "#hash_72544b5a6802a8b8",
                     "assetFileNameSustain": "#zm_zodt8.en",
@@ -455882,7 +455882,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_217f76284a9f2922",
+                    "name": "#vox_m_quest_cat_port_first_plr_4_0",
                     "subtitle": "#hash_7103a5bb0df6c12c",
                     "assetId": "#hash_72544b5a6802a8b8",
                     "assetFileNameSustain": "#zm_zodt8.en",

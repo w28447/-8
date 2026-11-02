@@ -10,7 +10,7 @@ CoD.GameEndScoreTitleFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local BgBlurL = LUI.UIImage.new( 0.5, 0.5, -320, 0, 0, 0, 4, 152 )
 	BgBlurL:setAlpha( 0.8 )
 	BgBlurL:setImage( RegisterImage( 0x1D63D8122A1F6E1 ) )
-	BgBlurL:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	BgBlurL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	BgBlurL:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BgBlurL )
 	self.BgBlurL = BgBlurL
@@ -19,7 +19,7 @@ CoD.GameEndScoreTitleFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	BgBlurR:setAlpha( 0.8 )
 	BgBlurR:setYRot( 180 )
 	BgBlurR:setImage( RegisterImage( 0x1D63D8122A1F6E1 ) )
-	BgBlurR:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	BgBlurR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	BgBlurR:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BgBlurR )
 	self.BgBlurR = BgBlurR
@@ -63,22 +63,22 @@ CoD.GameEndScoreTitleFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.PixelGridTiledBacking2 = PixelGridTiledBacking2
 	
 	local InnerFrameL = LUI.UIImage.new( 0.5, 0.5, -320, 0, 0, 0, 4, 152 )
-	InnerFrameL:setImage( RegisterImage( 0xCE823BC468EF7DC ) )
+	InnerFrameL:setImage( RegisterImage( "uie_ui_menu_mp_endgame_result_frame_inner" ) )
 	self:addElement( InnerFrameL )
 	self.InnerFrameL = InnerFrameL
 	
 	local InnerFrameR = LUI.UIImage.new( 0.5, 0.5, 319, -1, 0, 0, 4, 152 )
-	InnerFrameR:setImage( RegisterImage( 0xCE823BC468EF7DC ) )
+	InnerFrameR:setImage( RegisterImage( "uie_ui_menu_mp_endgame_result_frame_inner" ) )
 	self:addElement( InnerFrameR )
 	self.InnerFrameR = InnerFrameR
 	
 	local OuterFrameR = LUI.UIImage.new( 0.5, 0.5, 323, -1, 0, 0, 0, 156 )
-	OuterFrameR:setImage( RegisterImage( 0x2287A6449CD8CB7 ) )
+	OuterFrameR:setImage( RegisterImage( "uie_ui_menu_mp_endgame_result_frame_outer" ) )
 	self:addElement( OuterFrameR )
 	self.OuterFrameR = OuterFrameR
 	
 	local OuterFrameL = LUI.UIImage.new( 0.5, 0.5, -324, 0, 0, 0, 0, 156 )
-	OuterFrameL:setImage( RegisterImage( 0x2287A6449CD8CB7 ) )
+	OuterFrameL:setImage( RegisterImage( "uie_ui_menu_mp_endgame_result_frame_outer" ) )
 	self:addElement( OuterFrameL )
 	self.OuterFrameL = OuterFrameL
 	

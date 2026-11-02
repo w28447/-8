@@ -9638,7 +9638,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_1ee0c9758ab627e0",
+                    "value": "#p8_spa_hacienda_tablet_car_off",
                     "unk1a": true
                 },
                 {
@@ -9756,7 +9756,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_49a59aa21bfa965e",
+                    "value": "#p8_spa_hacienda_tablet_car_on",
                     "unk1a": true
                 },
                 {
@@ -10133,7 +10133,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_7296b6d0a36aa9a2",
+                    "value": "#p8_spa_hacienda_tablet_door_off",
                     "unk1a": true
                 },
                 {
@@ -10257,7 +10257,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_323285de58a6d848",
+                    "value": "#p8_spa_hacienda_tablet_door_on",
                     "unk1a": true
                 },
                 {
@@ -10381,7 +10381,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_7296b6d0a36aa9a2",
+                    "value": "#p8_spa_hacienda_tablet_door_off",
                     "unk1a": true
                 },
                 {
@@ -10505,7 +10505,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_323285de58a6d848",
+                    "value": "#p8_spa_hacienda_tablet_door_on",
                     "unk1a": true
                 },
                 {
@@ -10629,7 +10629,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_7296b6d0a36aa9a2",
+                    "value": "#p8_spa_hacienda_tablet_door_off",
                     "unk1a": true
                 },
                 {
@@ -10753,7 +10753,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_323285de58a6d848",
+                    "value": "#p8_spa_hacienda_tablet_door_on",
                     "unk1a": true
                 },
                 {
@@ -10865,7 +10865,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_182c6f87225b3d95",
+                    "value": "#p8_spa_hacienda_tablet_water_off",
                     "unk1a": true
                 },
                 {
@@ -10977,7 +10977,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_32291555a4dc4259",
+                    "value": "#p8_spa_hacienda_tablet_water_on",
                     "unk1a": true
                 },
                 {
@@ -11089,7 +11089,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_182c6f87225b3d95",
+                    "value": "#p8_spa_hacienda_tablet_water_off",
                     "unk1a": true
                 },
                 {
@@ -11201,7 +11201,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_32291555a4dc4259",
+                    "value": "#p8_spa_hacienda_tablet_water_on",
                     "unk1a": true
                 },
                 {

@@ -17,7 +17,7 @@ CoD.TabbedScoreboardHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local BlurBG = LUI.UIImage.new( 0, 0, 0, 1450, 0, 0, 0, 187 )
-	BlurBG:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	BlurBG:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	BlurBG:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BlurBG )
 	self.BlurBG = BlurBG
@@ -82,7 +82,7 @@ CoD.TabbedScoreboardHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local GameTimer00 = LUI.UIText.new( 0.5, 0.5, 644, 729, 0, 0, 45, 70 )
 	GameTimer00:setRGB( 0.7, 0.7, 0.7 )
 	GameTimer00:setTTF( "ttmussels_regular" )
-	GameTimer00:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	GameTimer00:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	GameTimer00:setLetterSpacing( 2 )
 	GameTimer00:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	GameTimer00:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

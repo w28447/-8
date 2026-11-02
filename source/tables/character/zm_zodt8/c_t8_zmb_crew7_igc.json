@@ -1,0 +1,9 @@
+{
+    "name": "#c_t8_zmb_crew7_igc",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "body": "#c_t8_zmb_crew_body7_igc",
+    "head": "#c_t8_zmb_crew_head7_igc"
+}

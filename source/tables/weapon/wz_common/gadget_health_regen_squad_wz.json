@@ -36,10 +36,10 @@
     "sound660": "#uin_unavailable_charging",
     "tunables1": "#gadget_health_regen_squad_tunables_wz",
     "viewmodel": [
-        "#hash_1b28922a794cfdcb"
+        "#wpn_t8_sig_medic_cleanse_single_view"
     ],
     "worldModel": [
-        "#hash_4acf86ecef26787e"
+        "#wpn_t8_sig_medic_cleanse_single_world"
     ],
     "gadgetIconAvailable": "#ui_icon_gadget_cleanse_mp",
     "gadgetIconUnavailable": "#ui_icon_gadget_cleanse_mp",

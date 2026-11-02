@@ -923,7 +923,7 @@ function function_3e16dec3( params )
 // Params 1
 // Checksum 0x985b7abd, Offset: 0x26a0
 // Size: 0xc0, Type: bool
-function duf47( target )
+function function_ab9a9770( target )
 {
     results = groundtrace( target.origin + ( 0, 0, 70 ), target.origin + ( 0, 0, -100 ), 0, target );
     
@@ -982,7 +982,7 @@ function function_9ba314a1( target )
             }
         }
         
-        if ( duf47( target ) )
+        if ( function_ab9a9770( target ) )
         {
             return true;
         }

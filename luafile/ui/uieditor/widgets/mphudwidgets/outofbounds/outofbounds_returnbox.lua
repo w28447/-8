@@ -18,7 +18,7 @@ CoD.outofbounds_returnbox.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	ReturnText:setAlpha( 0.95 )
 	ReturnText:setText( Engine[0xF9F1239CFD921FE]( "mpui/out_of_bounds_return_to_combat_zone" ) )
 	ReturnText:setTTF( "0arame_mono_stencil" )
-	ReturnText:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
+	ReturnText:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow" ) )
 	ReturnText:setShaderVector( 0, 0.05, 0, 0, 0 )
 	ReturnText:setShaderVector( 1, 0.01, 0, 0, 0 )
 	ReturnText:setShaderVector( 2, 1, 0, 0, 0 )

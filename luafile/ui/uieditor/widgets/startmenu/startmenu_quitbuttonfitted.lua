@@ -71,7 +71,7 @@ CoD.StartMenu_QuitButtonFitted.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	TextBox:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	TextBox:setText( LocalizeToUpperString( "menu/quit_game" ) )
 	TextBox:setTTF( "ttmussels_demibold" )
-	TextBox:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
+	TextBox:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow" ) )
 	TextBox:setShaderVector( 0, 0, 0, 0, 0 )
 	TextBox:setShaderVector( 1, 0, 0, 0, 0 )
 	TextBox:setShaderVector( 2, 1, 0, 0, 0 )

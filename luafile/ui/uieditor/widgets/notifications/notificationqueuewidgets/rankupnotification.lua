@@ -25,7 +25,7 @@ CoD.RankUpNotification.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local TitleText = LUI.UIText.new( 0, 0, 108, 505, 0, 0, 207, 243 )
 	TitleText:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	TitleText:setTTF( "ttmussels_demibold" )
-	TitleText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	TitleText:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	TitleText:setShaderVector( 0, 0.81, 0, 0, 0 )
 	TitleText:setShaderVector( 1, 0.1, 0, 0, 0 )
 	TitleText:setShaderVector( 2, 1, 1, 1, 0.37 )
@@ -49,7 +49,7 @@ CoD.RankUpNotification.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	SubtitleText:setBackingAlpha( 0.75 )
 	SubtitleText:setBackingXPadding( 2 )
 	SubtitleText:setBackingYPadding( -2 )
-	SubtitleText:setBackingMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	SubtitleText:setBackingMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	SubtitleText:setBackingShaderVector( 0, 0, 1, 0, 0 )
 	self:addElement( SubtitleText )
 	self.SubtitleText = SubtitleText
@@ -76,7 +76,7 @@ CoD.RankUpNotification.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	highlight:setAlpha( 0.05 )
 	highlight:setZRot( 360 )
 	highlight:setImage( RegisterImage( "uie_ui_hud_notifications_glow" ) )
-	highlight:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	highlight:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	highlight:setShaderVector( 0, 3, 0, 0, 0 )
 	self:addElement( highlight )
 	self.highlight = highlight
@@ -88,7 +88,7 @@ CoD.RankUpNotification.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local highlight2 = LUI.UIImage.new( 0.5, 0.5, -153, 153, 0, 0, -46.5, 238.5 )
 	highlight2:setAlpha( 0 )
 	highlight2:setImage( RegisterImage( "uie_ui_hud_notifications_glow" ) )
-	highlight2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	highlight2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	highlight2:setShaderVector( 0, 3, 0, 0, 0 )
 	self:addElement( highlight2 )
 	self.highlight2 = highlight2

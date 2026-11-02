@@ -1,7 +1,7 @@
 {
     "name": "#hash_4a47f0d87e877067",
     "model": "#veh_t8_civ_truck_mini_dest_bed_full_dirty_wht_morocco",
-    "unk20": "#hash_5b2274ff28939f85",
+    "unk20": "#veh_t8_civ_truck_mini_bed_dead_full_wht",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
     "pieces": [

@@ -15,7 +15,7 @@ CoD.FooterButton_Persistent.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local BackingTint = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BackingTint:setRGB( 0.26, 0.09, 0.01 )
 	BackingTint:setAlpha( 0 )
-	BackingTint:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	BackingTint:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	BackingTint:setShaderVector( 0, 1.3, 0, 0, 0 )
 	self:addElement( BackingTint )
 	self.BackingTint = BackingTint
@@ -58,7 +58,7 @@ CoD.FooterButton_Persistent.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local GlowAdd = LUI.UIImage.new( -0.1, 1.1, 0, 0, 1, 1, -61, -1 )
 	GlowAdd:setAlpha( 0 )
 	GlowAdd:setImage( RegisterImage( "uie_circularglow" ) )
-	GlowAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	GlowAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	GlowAdd:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( GlowAdd )
 	self.GlowAdd = GlowAdd
@@ -66,7 +66,7 @@ CoD.FooterButton_Persistent.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local BigBarGlow = LUI.UIImage.new( -0.5, 1.5, 0, 0, 1, 1, -20, 15 )
 	BigBarGlow:setAlpha( 0 )
 	BigBarGlow:setImage( RegisterImage( "uie_ui_menu_common_tab_glow" ) )
-	BigBarGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	BigBarGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	BigBarGlow:setShaderVector( 0, 1.36, 0, 0, 0 )
 	self:addElement( BigBarGlow )
 	self.BigBarGlow = BigBarGlow
@@ -74,7 +74,7 @@ CoD.FooterButton_Persistent.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local BigBarBacking = LUI.UIImage.new( -0.25, 1.25, 0, 0, 1, 1, -9, 4 )
 	BigBarBacking:setAlpha( 0 )
 	BigBarBacking:setImage( RegisterImage( "uie_ui_menu_common_tab_backing" ) )
-	BigBarBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	BigBarBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	BigBarBacking:setShaderVector( 0, 0.9, 0, 0, 0 )
 	self:addElement( BigBarBacking )
 	self.BigBarBacking = BigBarBacking
@@ -82,7 +82,7 @@ CoD.FooterButton_Persistent.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local SmallBarGlow = LUI.UIImage.new( -0.5, 1.5, 0, 0, 1, 1, -17, 1 )
 	SmallBarGlow:setAlpha( 0 )
 	SmallBarGlow:setImage( RegisterImage( "uie_ui_menu_common_tab_glow" ) )
-	SmallBarGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	SmallBarGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	SmallBarGlow:setShaderVector( 0, 1.36, 0, 0, 0 )
 	self:addElement( SmallBarGlow )
 	self.SmallBarGlow = SmallBarGlow
@@ -90,7 +90,7 @@ CoD.FooterButton_Persistent.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local SmallBarBacking = LUI.UIImage.new( -0.25, 1.25, 0, 0, 1, 1, -11, -5 )
 	SmallBarBacking:setAlpha( 0 )
 	SmallBarBacking:setImage( RegisterImage( "uie_ui_menu_common_tab_backing" ) )
-	SmallBarBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	SmallBarBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	SmallBarBacking:setShaderVector( 0, 0.9, 0, 0, 0 )
 	self:addElement( SmallBarBacking )
 	self.SmallBarBacking = SmallBarBacking

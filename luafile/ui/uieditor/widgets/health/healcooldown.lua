@@ -64,7 +64,7 @@ CoD.HealCooldown.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	local ReadyPulse = LUI.UIImage.new( 0, 0, 9, 61, 0, 0, -18.5, 63.5 )
 	ReadyPulse:setRGB( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
 	ReadyPulse:setImage( RegisterImage( 0x349F3334F5ECEF5 ) )
-	ReadyPulse:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	ReadyPulse:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	ReadyPulse:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( ReadyPulse )
 	self.ReadyPulse = ReadyPulse
@@ -142,7 +142,7 @@ CoD.HealCooldown.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	
 	local Box = LUI.UIImage.new( 0, 0, 11, 61, 0, 0, -5.5, 44.5 )
 	Box:setAlpha( 0.5 )
-	Box:setImage( RegisterImage( 0x1361B633E108517 ) )
+	Box:setImage( RegisterImage( "uie_ui_hud_core_player_widget_heal_box" ) )
 	Box:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Box )
 	self.Box = Box

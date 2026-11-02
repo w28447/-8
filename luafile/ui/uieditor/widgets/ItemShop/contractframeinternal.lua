@@ -111,25 +111,25 @@ CoD.ContractFrameInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	self.TransactionDeepLinkButton = TransactionDeepLinkButton
 	
 	Blur4 = LUI.UIImage.new( 0, 0, 480, 898, 0, 0, 377, 565 )
-	Blur4:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	Blur4:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	Blur4:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( Blur4 )
 	self.Blur4 = Blur4
 	
 	Blur3 = LUI.UIImage.new( 0, 0, 5, 423, 0, 0, 377, 565 )
-	Blur3:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	Blur3:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	Blur3:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( Blur3 )
 	self.Blur3 = Blur3
 	
 	local Blur2 = LUI.UIImage.new( 0, 0, 480, 898, 0, 0, 81, 269 )
-	Blur2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	Blur2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	Blur2:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( Blur2 )
 	self.Blur2 = Blur2
 	
 	local Blur1 = LUI.UIImage.new( 0, 0, 5, 423, 0, 0, 81, 269 )
-	Blur1:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	Blur1:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	Blur1:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( Blur1 )
 	self.Blur1 = Blur1

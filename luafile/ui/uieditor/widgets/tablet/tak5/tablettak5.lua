@@ -26,7 +26,7 @@ CoD.TabletTak5.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	
 	local GridBackground = LUI.UIImage.new( 0, 0, -30, 530, 0, 0, 108, 392 )
 	GridBackground:setImage( RegisterImage( "uie_ui_hud_tak5_bg_grid" ) )
-	GridBackground:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	GridBackground:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	GridBackground:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( GridBackground )
 	self.GridBackground = GridBackground
@@ -291,7 +291,7 @@ CoD.TabletTak5.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	local Tak5Version = LUI.UIImage.new( 0, 0, 246, 350, 0, 0, 242, 264 )
 	Tak5Version:setAlpha( 0.25 )
 	Tak5Version:setImage( RegisterImage( "uie_ui_hud_tak5_module_version" ) )
-	Tak5Version:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	Tak5Version:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	Tak5Version:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( Tak5Version )
 	self.Tak5Version = Tak5Version
@@ -315,7 +315,7 @@ CoD.TabletTak5.__resetProperties = function ( f20_arg0 )
 	f20_arg0.GridBackground:completeAnimation()
 	f20_arg0.BorderTop:setAlpha( 1 )
 	f20_arg0.BorderBottom:setAlpha( 1 )
-	f20_arg0.GridBackground:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	f20_arg0.GridBackground:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	f20_arg0.GridBackground:setShaderVector( 0, 2, 0, 0, 0 )
 end
 
@@ -325,7 +325,7 @@ CoD.TabletTak5.__clipsPerState = {
 			f21_arg0:__resetProperties()
 			f21_arg0:setupElementClipCounter( 3 )
 			f21_arg0.GridBackground:completeAnimation()
-			f21_arg0.GridBackground:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f21_arg0.GridBackground:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f21_arg0.GridBackground:setShaderVector( 0, 2.2, 0, 0, 0 )
 			f21_arg0.clipFinished( f21_arg0.GridBackground )
 			f21_arg0.BorderTop:completeAnimation()

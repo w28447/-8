@@ -116,7 +116,7 @@ function function_3a0ab08b( localclientnum, oldval, newval, bnewent, binitialsna
 {
     str_tag = "tag_origin";
     
-    if ( self.model === #"hash_32baa51d012e13b9" )
+    if ( self.model === #"p8_fxanim_zm_orange_pablo_lift" )
     {
         str_tag = "tag_item_5";
     }

@@ -12,7 +12,7 @@ CoD.WarzoneDBNOText.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	DeathCamLabel2:setRGB( 1, 0.9, 0.9 )
 	DeathCamLabel2:setText( LocalizeToUpperString( "wz/downbutnotout" ) )
 	DeathCamLabel2:setTTF( "ttmussels_demibold" )
-	DeathCamLabel2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	DeathCamLabel2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	DeathCamLabel2:setShaderVector( 0, 1, 0, 0, 0 )
 	DeathCamLabel2:setShaderVector( 1, 0, 0, 0, 0 )
 	DeathCamLabel2:setShaderVector( 2, 1, 0, 0, 0.2 )

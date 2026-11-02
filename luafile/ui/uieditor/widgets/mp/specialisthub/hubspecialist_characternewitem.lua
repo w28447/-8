@@ -40,7 +40,7 @@ CoD.HubSpecialist_characterNewItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local NewItemIndicatorGlow = LUI.UIImage.new( 0, 0, 0, 164, 0, 0, 0, 24 )
 	NewItemIndicatorGlow:setAlpha( 0.5 )
 	NewItemIndicatorGlow:setImage( RegisterImage( "uie_ui_menu_specialist_hub_item_indicator_glow" ) )
-	NewItemIndicatorGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	NewItemIndicatorGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	NewItemIndicatorGlow:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( NewItemIndicatorGlow )
 	self.NewItemIndicatorGlow = NewItemIndicatorGlow

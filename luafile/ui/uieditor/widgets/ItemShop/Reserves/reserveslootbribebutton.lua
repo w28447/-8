@@ -12,8 +12,8 @@ CoD.ReservesLootBribeButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local BackingPattern = LUI.UIImage.new( 0, 0, 0, 160, 0, 0, 5, 139 )
-	BackingPattern:setImage( RegisterImage( 0xCE66051AE2B8DC3 ) )
-	BackingPattern:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	BackingPattern:setImage( RegisterImage( "uie_ui_menu_blackmarket_blackjack_button_bg" ) )
+	BackingPattern:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	BackingPattern:setShaderVector( 0, 0.5, 0.5, 0, 0 )
 	BackingPattern:setShaderVector( 1, 1, 1, 0, 0 )
 	BackingPattern:setShaderVector( 2, 0, 0, 0, 0 )
@@ -23,7 +23,7 @@ CoD.ReservesLootBribeButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local FocusGlow = LUI.UIImage.new( 0, 1, -78, 78, 0, 1, -70, 70 )
 	FocusGlow:setAlpha( 0 )
 	FocusGlow:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_small" ) )
-	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
+	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_multiplied_add" ) )
 	FocusGlow:setShaderVector( 0, 0, 0, 0.24, 0.24 )
 	FocusGlow:setShaderVector( 1, 1.2, 0, 0, 0 )
 	FocusGlow:setupNineSliceShader( 160, 160 )
@@ -64,14 +64,14 @@ CoD.ReservesLootBribeButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.FocusBorder = FocusBorder
 	
 	local BribeIcon = LUI.UIImage.new( 0.5, 0.5, -142, 142, 0.5, 0.5, -64, 88 )
-	BribeIcon:setImage( RegisterImage( 0x528E1773F2922D1 ) )
+	BribeIcon:setImage( RegisterImage( "uie_ui_menu_blackmarket_blackjack_bribe_icon" ) )
 	self:addElement( BribeIcon )
 	self.BribeIcon = BribeIcon
 	
 	local BribeCount = LUI.UIText.new( 0.5, 0.5, -48.5, 48.5, 0.5, 0.5, -7, 27 )
 	BribeCount:setRGB( 0.91, 0.89, 0.89 )
 	BribeCount:setTTF( "ttmussels_demibold" )
-	BribeCount:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6250C6FCAC36BD4 ) )
+	BribeCount:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_outline" ) )
 	BribeCount:setShaderVector( 0, 0.1, 0, 0, 0 )
 	BribeCount:setShaderVector( 1, 0, 0, 0, 0 )
 	BribeCount:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

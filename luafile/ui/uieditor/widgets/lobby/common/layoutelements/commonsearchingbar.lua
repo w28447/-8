@@ -21,7 +21,7 @@ CoD.CommonSearchingBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local ProgressBar = LUI.UIImage.new( 0, 0, 16, 122, 0, 0, 11, 13 )
 	ProgressBar:setImage( RegisterImage( "uie_ui_menu_window_loading_bar" ) )
-	ProgressBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	ProgressBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	ProgressBar:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ProgressBar )
 	self.ProgressBar = ProgressBar
@@ -29,7 +29,7 @@ CoD.CommonSearchingBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local ConnectedText = LUI.UIImage.new( 0, 0, 46, 122, 0, 0, 0, 16 )
 	ConnectedText:setAlpha( 0 )
 	ConnectedText:setImage( RegisterImage( "uie_ui_menu_window_loading_finished" ) )
-	ConnectedText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	ConnectedText:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	ConnectedText:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ConnectedText )
 	self.ConnectedText = ConnectedText
@@ -51,7 +51,7 @@ CoD.CommonSearchingBar.__resetProperties = function ( f2_arg0 )
 	f2_arg0.SearchingText:setAlpha( 1 )
 	f2_arg0.LoadingBgElement:setAlpha( 1 )
 	f2_arg0.ConnectedText:setAlpha( 0 )
-	f2_arg0.ConnectedText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	f2_arg0.ConnectedText:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	f2_arg0.ConnectedText:setShaderVector( 0, 1, 0, 0, 0 )
 end
 
@@ -98,7 +98,7 @@ CoD.CommonSearchingBar.__clipsPerState = {
 			
 			f3_arg0.ConnectedText:completeAnimation()
 			f3_arg0.ConnectedText:setAlpha( 0.5 )
-			f3_arg0.ConnectedText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f3_arg0.ConnectedText:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f3_arg0.ConnectedText:setShaderVector( 0, 1, 0, 0, 0 )
 			f3_local0( f3_arg0.ConnectedText )
 			f3_arg0.nextClip = "DefaultClip"
@@ -234,7 +234,7 @@ CoD.CommonSearchingBar.__clipsPerState = {
 			
 			f8_arg0.ConnectedText:completeAnimation()
 			f8_arg0.ConnectedText:setAlpha( 0 )
-			f8_arg0.ConnectedText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f8_arg0.ConnectedText:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f8_arg0.ConnectedText:setShaderVector( 0, 1, 0, 0, 0 )
 			f8_local3( f8_arg0.ConnectedText )
 		end

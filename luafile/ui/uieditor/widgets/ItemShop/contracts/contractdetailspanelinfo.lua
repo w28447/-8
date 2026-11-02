@@ -69,7 +69,7 @@ CoD.ContractDetailsPanelInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local Linker = LUI.UIImage.new( 0, 0, 758, 762, 0, 0, 5, 399 )
 	Linker:setAlpha( 0.08 )
 	Linker:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
-	Linker:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	Linker:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	Linker:setShaderVector( 0, 0, 0, 0, 0 )
 	Linker:setupNineSliceShader( 4, 8 )
 	self:addElement( Linker )
@@ -83,7 +83,7 @@ CoD.ContractDetailsPanelInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local FuiBox02Right = LUI.UIImage.new( 0, 0, 727.5, 761.5, 0, 0, 34, 0 )
 	FuiBox02Right:setScale( 0.3, 0.3 )
 	FuiBox02Right:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_fui_box01" ) )
-	FuiBox02Right:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	FuiBox02Right:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	FuiBox02Right:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FuiBox02Right )
 	self.FuiBox02Right = FuiBox02Right

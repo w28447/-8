@@ -12,7 +12,7 @@ CoD.AmmoWidget_WeaponName.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	HeroAbilityUseString:setRGB( 0.73, 0.71, 0.64 )
 	HeroAbilityUseString:setText( "" )
 	HeroAbilityUseString:setTTF( "ttmussels_demibold" )
-	HeroAbilityUseString:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	HeroAbilityUseString:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	HeroAbilityUseString:setLetterSpacing( 1 )
 	HeroAbilityUseString:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	HeroAbilityUseString:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )

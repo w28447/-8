@@ -707,7 +707,7 @@ CoD.FTUEUtility.FTUESequences.BlackMarketSunsetIntroduction = {
 					models = {
 						displayTitle = "",
 						displayText = 0x692701BEA54FDC4,
-						image = 0x8E8508A8B137347
+						image = "ui_menu_ftue_sunset_itemshop"
 					}
 				}
 			}

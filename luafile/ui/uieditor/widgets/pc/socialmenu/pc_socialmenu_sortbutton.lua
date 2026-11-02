@@ -26,7 +26,7 @@ CoD.PC_SocialMenu_SortButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local TextureButtonSortAdd = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	TextureButtonSortAdd:setAlpha( 0 )
 	TextureButtonSortAdd:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
-	TextureButtonSortAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	TextureButtonSortAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	TextureButtonSortAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	TextureButtonSortAdd:setupNineSliceShader( 100, 50 )
 	self:addElement( TextureButtonSortAdd )

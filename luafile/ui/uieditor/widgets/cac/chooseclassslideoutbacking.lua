@@ -11,7 +11,7 @@ CoD.ChooseClassSlideOutBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	PCCyclingBacking = LUI.UIImage.new( 0, 1, 0, 0, 0.5, 0.5, -347, -300 )
 	PCCyclingBacking:setRGB( 0, 0, 0 )
-	PCCyclingBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	PCCyclingBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	PCCyclingBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( PCCyclingBacking )
 	self.PCCyclingBacking = PCCyclingBacking
@@ -26,7 +26,7 @@ CoD.ChooseClassSlideOutBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local FullBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	FullBacking:setRGB( ColorSet.HealthBarBackgroundEnemy.r, ColorSet.HealthBarBackgroundEnemy.g, ColorSet.HealthBarBackgroundEnemy.b )
-	FullBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	FullBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	FullBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( FullBacking )
 	self.FullBacking = FullBacking

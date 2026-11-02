@@ -260,7 +260,7 @@ function private function_9d66ea6f( e_item, e_player )
         
         if ( !zm_white_main_quest::function_6cebbce1() )
         {
-            level.var_74170866.e_player zm_white_util::function_491673da( #"hash_571c990866faa511" );
+            level.var_74170866.e_player zm_white_util::function_491673da( #"vox_ww_z_chimney_start_rush_0" );
         }
     }
 }

@@ -9,12 +9,12 @@ CoD.CallingCards_replacer_cars2.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local cars2 = LUI.UIImage.new( 0, 0, 0, 5792, 0, 0, -50, 334 )
-	cars2:setImage( RegisterImage( 0x1E02ABD169647AA ) )
+	cars2:setImage( RegisterImage( "uie_ui_icon_callingcards_replacer_cars2" ) )
 	self:addElement( cars2 )
 	self.cars2 = cars2
 	
 	local Image2 = LUI.UIImage.new( 0, 0, 5792, 11584, 0, 0, -50, 334 )
-	Image2:setImage( RegisterImage( 0x1E02ABD169647AA ) )
+	Image2:setImage( RegisterImage( "uie_ui_icon_callingcards_replacer_cars2" ) )
 	self:addElement( Image2 )
 	self.Image2 = Image2
 	

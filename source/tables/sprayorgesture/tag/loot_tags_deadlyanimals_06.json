@@ -1,10 +1,10 @@
 {
     "name": "#loot_tags_deadlyanimals_06",
     "type": "#tag",
-    "material": "#hash_b7381decc900f7",
+    "material": "#vd/mtl_loot_ui_icon_tags_deadlyanimals_06",
     "bundle": {
         "type": "#tag",
-        "title": "localized18#hash_1a9fad870dbd3089",
+        "title": "localized18#tags/deadly_animals_06",
         "icon": "image#loot_ui_icon_tags_deadlyanimals_06",
         "isdefault": 0
     }

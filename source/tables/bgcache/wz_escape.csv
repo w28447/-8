@@ -23,7 +23,7 @@ model,#wpn_t8_loot_pistol_auto_sig_02_view
 model,#wpn_t8_sniper_sniver_scope_sig_01_world
 model,#wpn_t8_sniper_sniver_sig_02_view
 model,#wpn_t8_loot_smg_fastburst_sig_02_view
-model,#hash_eb2f8fcc553dcd
+model,#attach_t8_sniper_koshka_speedcenter_world
 model,#wpn_t8_tac_rifle_swordfish_mag_view
 model,#wpn_t8_loot_smg_fastburst_view
 model,#p8_wz_fence_gate_wall_debris_mesh_large
@@ -38,7 +38,7 @@ model,#wpn_t8_zm_crossbow_impaler_mag_world
 model,#veh_t8_mil_helicopter_transport_wz_infiltration
 model,#wpn_t8_zm_raygun_mk2_view_orange
 model,#wpn_t8_zm_raygun_mk2_world
-model,#hash_326cc6a2a2ef6e4
+model,#wpn_t8_eqp_flare_gun_projectile
 model,#wpn_t8_pistol_standard_sig_02_world
 model,#wpn_t8_smg_handling_mag_view
 model,#veh_t8_mil_helicopter_light_debris_rotor_blade
@@ -76,7 +76,7 @@ model,#wpn_t8_pistol_revolver_mk2_view
 model,#p7_fxp_debris_dirt_clod_03_brown
 model,#wpn_t8_smg_accurate_mag_sig_02_view
 model,#wpn_t8_sniper_vanguard_mag_sig_02_world
-model,#hash_8198de4f58b00a0
+model,#wpn_t8_loot_shotgun_prec_mag_base_view
 model,#fx_char_gib_chunk_meat01
 model,#wpn_t8_pistol_standard_view
 model,#wpn_t8_loot_sniper_locus_view
@@ -125,7 +125,7 @@ model,#wpn_t8_tac_rifle_swordfish_scope_sig_02_world
 model,#wpn_t8_lmg_titan_world
 model,#wpn_t8_smg_fastfire_mag_world
 model,#p7_bucket_plastic_5_gal_closed_green
-model,#hash_edda1db9f151043
+model,#veh_t8_mil_helicopter_transport_wz_infiltration_dark
 model,#wpn_t8_pistol_burst_mag_world
 model,#veh_t8_drone_recon_wz
 model,#wpn_t8_hero_war_machine_world
@@ -160,7 +160,7 @@ model,#wpn_t8_eqp_drone_hawk_view
 model,#wpn_t8_launcher_standard_stow
 model,#wpn_t8_zm_blundergat_world
 model,#attach_t8_ar_stealth_bayonet_sig_01_world
-model,#hash_13961b9f189661cf
+model,#attach_t8_smg_accurate_lower_receiver_world
 model,#wpn_t8_loot_smg_fastburst_mag_view
 model,#wpn_t8_loot_smg_folding_mag_mk2_view
 model,#wpn_t8_tac_rifle_surgeon_world
@@ -184,7 +184,7 @@ model,#wpn_t8_smg_accurate_mag_sig_03_world
 model,#wpn_t8_pistol_burst_sig_01_world
 model,#wpn_t8_eqp_grenade_frag_world
 model,#veh_t8_drone_rcxd_decals_attach
-model,#hash_16a4ff3fe4cb9636
+model,#p8_fxanim_zm_esc_crane_skeleton_hand_spork_mod
 model,#wpn_t8_tac_rifle_mid_burst_mag_world
 model,#p7_book_vintage_open_01_burn
 model,#wpn_t8_eqp_smartcover_cover_spawn_panel_left_top_dmg01
@@ -195,7 +195,7 @@ model,#wpn_t8_ar_k57_mag_sig_03_world
 model,#wpn_t8_loot_ar_peacekeeper_mag_view
 model,#wpn_t8_loot_ar_standard_mk2_view
 model,#p8_col_rock_large_04
-model,#hash_181a627b8dcf4e2b
+model,#attach_t8_tac_rifle_mid_burst_uber_attach_sig_02_view
 model,#wpn_t8_lmg_plr_view_mk2
 model,#wpn_t8_shotgun_semi_mag_sig_02_view
 model,#wpn_t8_ar_stealth_mag_sig_02_view
@@ -221,7 +221,7 @@ model,#wpn_t8_lmg_plr_sig_01_world
 model,#wpn_t8_wz_water_balloon_world
 model,#p7_zm_ctl_tool_fireplace_poker
 model,#wpn_t8_ar_fastfire_mag_sig_02_view
-model,#hash_1b28922a794cfdcb
+model,#wpn_t8_sig_medic_cleanse_single_view
 model,#wpn_t8_loot_lmg_mk48_world
 model,#p8_crate_wood_short_02
 model,#c_t8_zmb_mob_zombie_head2_cage
@@ -236,7 +236,7 @@ model,#wpn_t8_loot_smg_fastburst_mk2_world
 model,#wpn_t8_smg_handling_view
 model,#wpn_t8_tac_rifle_surgeon_scope_view
 model,#p8_wz_perk_pickups_outlander
-model,#hash_1db994b5fa2794bb
+model,#veh_t8_mil_drone_dart_closed_mp_light
 model,#hash_1dc37b90c5f88a46
 model,#wpn_t8_loot_tac_rifle_flechette_sig_01_view
 model,#p8_fxanim_wz_supply_stash_magic_box_mod
@@ -246,7 +246,7 @@ model,#wpn_t8_tac_rifle_mid_burst_mag_mk2_view
 model,#wpn_t8_ar_accurate_mag_world
 model,#wpn_t8_ar_heavy_mag_view
 model,#wpn_t8_lmg_titan_mag_world
-model,#hash_1e99caf690b5897c
+model,#veh_t8_zmb_air_alcatraz_plane
 model,#wpn_t8_ar_accurate_sig_01_world
 model,#fx_char_gib_chunk_flesh02
 model,#fx_char_gib_chunk_flesh03
@@ -277,7 +277,7 @@ model,#wpn_t8_tac_rifle_mid_burst_scope_view
 model,#wpn_t8_eqp_datapad_world
 model,#wpn_t8_loot_ar_standard_mag_mk2_view
 model,#wpn_t8_loot_sniper_mini14_mag_mk2_view
-model,#hash_22e8d1ae72884594
+model,#wpn_t8_eqp_tripwire_ied_projectile
 model,#veh_t8_drone_rcxd_a_arm_spawn_model
 model,#wpn_t8_tac_rifle_swordfish_scope_ads
 model,#wpn_t8_smg_handling_world
@@ -293,11 +293,11 @@ model,#p7_fir_plywood_plank_4x8_04
 model,#wpn_t8_hero_war_machine_projectile
 model,#wpn_t8_smg_mp9_mag_view
 model,#wpn_t8_sniper_vanguard_sig_01_view
-model,#hash_25059d5ba846312d
+model,#p6_hijacked_table_nobase
 model,#wpn_t8_loot_ar_standard_mag_mk2_world
 model,#attach_t8_optic_holo_world
 model,#c_t8_zmb_mob_zombie_body2_g_lowclean
-model,#hash_2577e93af00b6194
+model,#wpn_t8_eqp_molotov_lighter_dw_world
 model,#wpn_t8_sig_annihilator_world
 model,#p8_wz_armor_scrap
 model,#wpn_t8_pistol_revolver_mk2_world
@@ -324,13 +324,13 @@ model,#wpn_t8_ar_fastfire_mag_world
 model,#wpn_t8_zm_raygun_mk2_world_purple
 model,#wpn_t8_lmg_plr_mag_sig_01_world
 model,#wpn_t8_sniper_sniver_scope_sig_01_view
-model,#hash_2a16aa22e8874d06
+model,#p8_wz_bucket_water_balloon
 model,#wpn_t8_pistol_burst_mag_sig_02_world
 model,#wpn_t8_smg_capacity_view
 model,#wpn_t8_smg_fastfire_mag_sig_02_view
 model,#p8_zm_esc_nixie_tubes
 model,#wpn_t8_lmg_plr_world_mk2
-model,#hash_2a5f03ab9f498e4f
+model,#wpn_t8_eqp_grenade_smoke_wz_view
 model,#wpn_t8_loot_lmg_mk48_clip_world
 model,#wpn_t8_pistol_standard_sig_02_view
 model,#wpn_t8_wz_ar_heavy_view
@@ -341,7 +341,7 @@ model,#p8_wz_perk_pickups_brawler
 model,#wpn_t8_zm_homunculus_world
 model,#wpn_t8_loot_sniper_mini14_mag_view
 model,#wpn_t8_eqp_smartcover_cover_spawn_panel_left_dmg01
-model,#hash_2b297e9be5113fd3
+model,#p8_wz_cu_target_dummy
 model,#c_t8_zmb_mob_zombie_body2_g_larmoff
 model,#attach_t8_wz_pickup_ext_barrel
 model,#p7_debris_rockychunks_small_01
@@ -381,7 +381,7 @@ model,#wpn_t8_loot_sniper_locus_world
 model,#wpn_t8_lmg_plr_world
 model,#wpn_t8_smg_capacity_mag_sig_02_world
 model,#p8_box_cardboard_c_closed
-model,#hash_3021ed625cacf7b1
+model,#veh_t8_drone_rcxd_decals_wz_attach
 model,#attach_t8_wz_pickup_foregrip
 model,#wpn_t8_pistol_burst_world
 model,#wpn_t8_zm_crossbow_impaler_projectile
@@ -390,7 +390,7 @@ model,#wpn_t8_eqp_turret_mini_mount_fx
 model,#veh_t8_drone_rcxd_wheel_left_attach
 model,#c_t8_zmb_mob_zombie_body2_g_upclean
 model,#wpn_t8_tac_rifle_mid_burst_sig_01_view
-model,#hash_31771af97bf3d0d5
+model,#wpn_t8_wz_eqp_turret_mini
 model,#wpn_t8_wpn_lmg_hades_world
 model,#p7_mou_snow_chunk_01
 model,#p7_mou_snow_chunk_04
@@ -429,7 +429,7 @@ model,#wpn_t8_eqp_semtex_cluster_world
 model,#veh_t8_drone_rcxd_wheel_attach
 model,#veh_t8_mil_helicopter_light_bench_black_attach
 model,#wpn_t8_loot_ar_double_barrel_mag_view
-model,#hash_363cce898063083f
+model,#p8_wz_door_garage_button_frack
 model,#wpn_t8_ar_stealth_mag_mk2_view
 model,#veh_t8_mil_boat_tactical_raft_dead_odg
 model,#wpn_t8_smg_fastfire_mk2_view
@@ -477,7 +477,7 @@ model,#wpn_t8_loot_pistol_auto_view
 model,#wpn_t8_eqp_grenade_emp_world
 model,#wpn_t8_smg_fastfire_mag_sig_01_world
 model,#wpn_t8_lmg_plr_sig_02_world
-model,#hash_3bea45124bec7d5b
+model,#wpn_t8_loot_shotgun_prec_mag_base_world
 model,#veh_t8_mil_helicopter_light_debris_fuselage
 model,#wpn_t8_sniper_power_semi_mag_view
 model,#p8_fxanim_wz_target_dummy_01_mod
@@ -492,7 +492,7 @@ model,#c_t8_zmb_mob_zombie_body2_s_rleg
 model,#p7_toolbox_handheld_small_red
 model,#wpn_t8_sniper_vanguard_sig_01_world
 model,#wpn_t8_ar_accurate_sig_01_view
-model,#hash_3d920e7ddbaee55d
+model,#veh_t8_mil_helicopter_attack_interior_rear_attach_wz
 model,#wpn_t8_lmg_titan_mag_view
 model,#wpn_t8_loot_melee_slay_bell_view
 model,#wpn_t8_ar_galil_mag_view
@@ -505,7 +505,7 @@ model,#wpn_t8_ar_k57_sig_02_view
 model,#wpn_t8_zm_lmg_mg08_world
 model,#wpn_t8_pistol_burst_mag_sig_01_view
 model,#wpn_t8_zm_mp40_world
-model,#hash_3ecd8791fe2c8363
+model,#p8_fxanim_wz_esc_cell_door_open_mod
 model,#wpn_t8_smg_fastfire_mag_mk2_world
 model,#p8_zm_zod_magazine
 model,#wpn_t8_loot_shotgun_fullauto_sig_view
@@ -528,7 +528,7 @@ model,#p7_gib_chunk_bone_03
 model,#p7_gib_chunk_bone_02
 model,#wpn_t8_launcher_standard_projectile_view
 model,#wpn_t8_loot_smg_fastburst_mag_sig_02_world
-model,#hash_418c075f73d35766
+model,#p8_wz_cu_cap_sunglasses
 model,#wpn_t8_ar_k57_view
 model,#attach_t8_ar_stealth_bayonet_sig_02_world
 model,#wpn_t8_equip_smartcover_world
@@ -577,7 +577,7 @@ model,#wpn_t8_loot_smg_vmp_mag_world
 model,#wpn_t8_ar_stealth_mk2_world
 model,#c_t8_zmb_mob_brutus_boss_baton
 model,#attach_t8_wz_pickup_suppressor
-model,#hash_4856656fba9d331e
+model,#wpn_t8_eqp_flare_gun_veh_view
 model,#wpn_t8_loot_shotgun_fullauto_mk2_view
 model,#wpn_t8_pistol_burst_mag_view
 model,#veh_t8_mil_helicopter_light_transport_warzone_dest
@@ -596,7 +596,7 @@ model,#wpn_t8_loot_tac_rifle_flechette_sig_01_world
 model,#p8_wz_supply_stash_health_lvl3
 model,#p8_wz_supply_stash_health_lvl2
 model,#wpn_t8_loot_shotgun_fullauto_mag_sig_world
-model,#hash_4acf86ecef26787e
+model,#wpn_t8_sig_medic_cleanse_single_world
 model,#p8_fxanim_wz_rollup_door_medium_mod
 model,#wpn_t8_loot_melee_stop_sign_world
 model,#collision_clip_wall_256x256x10
@@ -642,7 +642,7 @@ model,#wpn_t8_smg_accurate_mag_sig_03_view
 model,#wpn_t8_shotgun_pump_view
 model,#wpn_t8_pistol_revolver_view
 model,#c_t8_c_zom_avagadro_fb
-model,#hash_4fe041e08384c49f
+model,#wpn_t8_shotgun_pump_clip_shell_red
 model,#wpn_t8_ar_accurate_mag_sig_03_world
 model,#wpn_t8_sniper_koshka_mag_mk2_view
 model,#p8_wz_door_01_farm
@@ -717,7 +717,7 @@ model,#wpn_t8_zm_raygun_mk2_view
 model,#wpn_t8_sniper_power_semi_mag_sig_01_view
 model,#wpn_t8_lmg_plr_mag_world_mk2
 model,#p7_book_vintage_03_burn
-model,#hash_58286cd1d8b65b63
+model,#p8_wz_cu_ritual_bowl
 model,#wpn_t8_loot_pirate_cutlass_view
 model,#wpn_t8_tac_rifle_mid_burst_sig_02_view
 model,#wpn_t8_ar_k57_sig_03_view
@@ -778,7 +778,7 @@ model,#wpn_t8_loot_ar_an94_mag_view
 model,#wpn_t8_ar_galil_mag_world
 model,#wpn_t8_sniper_koshka_mag_mk2_world
 model,#wpn_t8_tac_rifle_swordfish_mk2_world
-model,#hash_614592ab57592df6
+model,#wpn_t8_eqp_sensor_dart_gun_projectile_animate
 model,#p8_wz_door_01_assylum
 model,#p7_fxp_debris_car_glass_shatter_02
 model,#p7_fxp_debris_car_glass_shatter_03
@@ -791,7 +791,7 @@ model,#p7_fxp_debris_wood_splinter_01
 model,#fx_pistol_shell
 model,#wpn_t8_loot_smg_folding_mk2_view
 model,#wpn_t8_zm_spork_world
-model,#hash_61d19335b4846949
+model,#p8_wz_cu_pulp_magazine
 model,#wpn_t8_zm_raygun_mk2_view_purple
 model,#wpn_t8_tac_rifle_mid_burst_scope_sig_02_world
 model,#attach_t8_optic_ironsights_sniper_front_view
@@ -821,7 +821,7 @@ model,#wpn_t8_smg_handling_mag_world
 model,#wpn_t8_smg_fastfire_mag_sig_02_world
 model,#wpn_t8_zm_eqp_wraith_fire_view
 model,#p8_fxp_fluid_clump_water
-model,#hash_64f979abfe77e44d
+model,#p8_fxanim_wz_cu_gun_case_mod
 model,#tag_flash
 model,#wpn_t8_loot_smg_folding_world
 model,#wpn_t8_zm_raygun_mk2_view_blue
@@ -879,7 +879,7 @@ model,#wpn_t8_ar_accurate_mag_sig_03_view
 model,#veh_t8_mil_helicopter_light_cockpit_attach
 model,#tag_origin
 model,#wpn_t8_tac_rifle_mid_burst_mag_sig_01_view
-model,#hash_6dfb688111729541
+model,#wpn_t8_eqp_flare_gun_veh_world
 model,#veh_t8_mil_boat_tactical_raft_dead_gry
 model,#wpn_t8_tac_rifle_mid_burst_scope_world
 model,#wpn_t8_lmg_plr_sig_01_view
@@ -903,7 +903,7 @@ model,#wpn_t8_smg_capacity_mag_sig_01_world
 model,#wpn_t8_pistol_burst_sig_02_view
 model,#wpn_t8_loot_lmg_mk48_clip_view
 model,#wpn_t8_ar_stealth_mag_sig_02_world
-model,#hash_702802e42e14d89a
+model,#attach_t8_sniper_koshka_speedcenter_view
 model,#wpn_t8_tac_rifle_surgeon_scope_sig_02_world
 model,#wpn_t8_smg_accurate_mag_sig_01_view
 model,#wpn_t8_tac_rifle_surgeon_mag_world
@@ -925,7 +925,7 @@ model,#wpn_t8_loot_shotgun_fullauto_view
 model,#wpn_t8_eqp_turret_mini_gun_fx
 model,#c_t8_zmb_mob_zombie_body1_g_behead
 model,#wpn_t8_tac_rifle_swordfish_mag_mk2_view
-model,#hash_728a20ade096cd5e
+model,#attach_t8_tac_rifle_mid_burst_uber_attach_sig_02_world
 model,#wpn_t8_tac_rifle_swordfish_scope_mk2_ads
 model,#wpn_t8_loot_ar_standard_sig_02_view
 model,#wpn_t8_shotgun_pump_sig_02_view
@@ -944,7 +944,7 @@ model,#wpn_t8_smg_accurate_sig_01_world
 model,#p8_zm_wall_buy_symbol_01_middle
 model,#wpn_t8_pistol_revolver_sig_01_view
 model,#wpn_t8_ar_k57_mk2_view
-model,#hash_7474cf83dfcc308f
+model,#veh_t8_drone_rcxd_wires_wz_attach
 model,#wpn_t8_sig_grapple_gun_world
 model,#wpn_t8_ar_fastfire_mag_sig_02_world
 model,#wpn_t8_loot_ar_standard_mag_sig_02_world
@@ -969,7 +969,7 @@ model,#wpn_t8_eqp_heal_aid_view
 model,#wpn_t8_loot_shotgun_fullauto_world
 model,#hash_77a8c49b43311746
 model,#wpn_t8_shotgun_semi_mag_sig_01_view
-model,#hash_7810807da4371cd4
+model,#attach_t8_smg_accurate_lower_receiver_view
 model,#p8_fxanim_zm_esc_power_panel_bldg64_01_mod
 model,#wpn_t8_knife_bowie_bloody_view
 model,#p8_office_papers_stack_sml
@@ -7702,7 +7702,7 @@ soundalias,#amb_outdoor_quad_thunder
 soundalias,#evt_nixie_clock_scroll
 soundalias,#fly_dart_put_away_plr
 soundalias,#evt_supply_drop_wind_light
-soundalias,#hash_134bc3c2ce6ed759
+soundalias,#evt_spk_hand_retract
 soundalias,#dst_glass_radar_pane_hit
 soundalias,#veh_dart_ground_imp
 soundalias,#amb_clock_tick

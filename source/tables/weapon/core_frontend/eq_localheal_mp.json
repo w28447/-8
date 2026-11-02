@@ -53,13 +53,13 @@
     "customsettings": "#localheal_custom_settings",
     "#hash_2e4a8800": "#localheal_scoreevents",
     "viewmodel": [
-        "#hash_1b28922a794cfdcb"
+        "#wpn_t8_sig_medic_cleanse_single_view"
     ],
     "frontendmodel": [
-        "#hash_1b28922a794cfdcb"
+        "#wpn_t8_sig_medic_cleanse_single_view"
     ],
     "worldModel": [
-        "#hash_4acf86ecef26787e"
+        "#wpn_t8_sig_medic_cleanse_single_world"
     ],
     "gadgetIconAvailable": "#ui_icon_ability_recharge",
     "gadgetIconUnavailable": "#ui_icon_ability_recharge_dark",

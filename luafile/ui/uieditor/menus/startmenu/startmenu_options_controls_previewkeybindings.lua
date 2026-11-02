@@ -17,7 +17,7 @@ LUI.createMenu.StartMenu_Options_Controls_PreviewKeybindings = function ( f1_arg
 	
 	local Blur = LUI.UIImage.new( -0.1, 1.1, 0, 0, -0.1, 1.1, 0, 0 )
 	Blur:setRGB( 0.08, 0.08, 0.08 )
-	Blur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	Blur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	Blur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( Blur )
 	self.Blur = Blur

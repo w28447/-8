@@ -47,7 +47,7 @@ CoD.AmmoWidgetWZ_AbilityItem_Heal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local Box = LUI.UIImage.new( 0, 0, -1, 69, 0, 0, -5, 65 )
 	Box:setImage( RegisterImage( "uie_ui_hud_core_abeg_widget_box" ) )
-	Box:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	Box:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	Box:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( Box )
 	self.Box = Box

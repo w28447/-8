@@ -1,7 +1,7 @@
 {
     "name": "#hash_5a60266e0a41d276",
     "model": "#veh_t8_mil_truck_technical_mp_militia_covered_dest",
-    "unk20": "#hash_181c44615c6245d8",
+    "unk20": "#veh_t8_mil_truck_technical_dead_covered_mp_militia",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
     "pieces": [

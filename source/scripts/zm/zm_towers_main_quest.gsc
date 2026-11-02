@@ -786,7 +786,7 @@ function function_9774bbc6()
             {
                 mdl_grinder hidepart( "skull_jnt" );
                 e_player = mdl_grinder zm_unitrigger::function_fac87205( "", 96, 1 );
-                e_player playsound( #"hash_4061dc3dc7f197ba" );
+                e_player playsound( #"zmb_funtime_danu_dust_pickup" );
                 e_player thread zm_vo::function_a2bd5a0c( #"hash_dedd8b6d4d6c33e", 0, 0, 9999, 1 );
                 mdl_grinder hidepart( "tag_link_bone_dust" );
                 break;
@@ -2752,7 +2752,7 @@ function function_5e35bafd( b_skipped )
     level flag::set( #"pause_round_timeout" );
     pause_zombies( 1, 0 );
     wait 2;
-    playsoundatposition( #"hash_5add6839874d997a", ( 0, 0, 0 ) );
+    playsoundatposition( #"zmb_funtime_electro_warp_out", ( 0, 0, 0 ) );
     wait 0.5;
     function_41c15ae9( array( "connect_danu_basement_to_danu_ra_tunnel", "connect_ra_basement_to_danu_ra_tunnel", "connect_odin_basement_to_odin_zeus_tunnel", "connect_zeus_basement_to_odin_zeus_tunnel", "pap_room_danu_ra_entrance", "pap_room_odin_zeus_entrance", "pap_room_body_pit_entrance", "pap_room_flooded_crypt_entrance" ) );
     var_e762fa26 = getentarray( "t_maelstrom_sponge", "targetname" );
@@ -2826,7 +2826,7 @@ function function_315666fb()
     var_af417f12 = getent( "mdl_maelstrom_initiate_on", "targetname" );
     var_af417f12.origin += ( 0, 0, 2048 );
     waitframe( 1 );
-    var_af417f12 playloopsound( #"hash_62bd783a0737ec6a" );
+    var_af417f12 playloopsound( #"zmb_funtime_electro_pedestal_lp" );
     var_1a698d0f delete();
 }
 
@@ -2955,7 +2955,7 @@ function function_99da1b77( n_damage )
     n_percent = n_damage / 8500;
     var_a9a7f568 = 32 * n_percent;
     var_49c750a8 = getent( self.target, "targetname" );
-    var_49c750a8 playsound( #"hash_6f34e8badf2c9a9" );
+    var_49c750a8 playsound( #"zmb_funtime_electro_paddle_rise" );
     self.origin += ( 0, 0, var_a9a7f568 );
     var_49c750a8.origin += ( 0, 0, var_a9a7f568 );
 }
@@ -3011,7 +3011,7 @@ function function_ab51f858()
     var_49c750a8 = getent( self.target, "targetname" );
     var_49c750a8 flag::wait_till_clear( #"hash_2fcd8f57a30258bd" );
     wait 1;
-    var_49c750a8 playsound( #"hash_35d56c3cf35df021" );
+    var_49c750a8 playsound( #"zmb_funtime_electro_paddle_retract" );
     var_49c750a8 movez( 160, 4 );
     var_49c750a8 waittill( #"movedone" );
     var_49c750a8 delete();
@@ -3034,7 +3034,7 @@ function function_b0ada3cc()
         {
             self flag::set( #"hash_2fcd8f57a30258bd" );
             self playsound( #"hash_56d7ef0008ae3f23" );
-            self playloopsound( #"hash_5f80ae9db16e36f5" );
+            self playloopsound( #"zmb_funtime_electro_paddle_spin_lp" );
             
             while ( self.var_5c54264.size > 0 )
             {
@@ -3655,7 +3655,7 @@ function function_40f8980d()
     wait 1;
     enable_challenges();
     level zm_utility::function_9ad5aeb1( 1 );
-    playsoundatposition( #"hash_5ff6ce0b3a2db603", ( 0, 0, 0 ) );
+    playsoundatposition( #"zmb_funtime_electro_storm_warp", ( 0, 0, 0 ) );
     level thread function_af73010c();
     wait 1;
     util::set_lighting_state( 1 );

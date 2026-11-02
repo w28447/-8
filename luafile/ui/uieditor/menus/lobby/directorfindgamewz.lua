@@ -21,7 +21,7 @@ LUI.createMenu.DirectorFindGameWZ = function ( f1_arg0, f1_arg1 )
 	
 	local TEMPBlackBGOverlay = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	TEMPBlackBGOverlay:setRGB( 0, 0, 0 )
-	TEMPBlackBGOverlay:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	TEMPBlackBGOverlay:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	TEMPBlackBGOverlay:setShaderVector( 0, 0.01, 0.5, 0, 0 )
 	self:addElement( TEMPBlackBGOverlay )
 	self.TEMPBlackBGOverlay = TEMPBlackBGOverlay

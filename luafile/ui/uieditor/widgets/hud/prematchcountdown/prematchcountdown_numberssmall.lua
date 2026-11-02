@@ -9,7 +9,7 @@ CoD.PrematchCountdown_NumbersSmall.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local blur = LUI.UIImage.new( 0, 0, 6, 297, 0, 0, 4, 56 )
-	blur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	blur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	blur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( blur )
 	self.blur = blur
@@ -48,7 +48,7 @@ CoD.PrematchCountdown_NumbersSmall.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	Message:setRGB( 0, 0.56, 1 )
 	Message:setText( Engine[0xF9F1239CFD921FE]( "mp/match_starting_in" ) )
 	Message:setTTF( "ttmussels_regular" )
-	Message:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	Message:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	Message:setShaderVector( 0, 1.02, 0, 0, 0 )
 	Message:setShaderVector( 1, -0.23, 0, 0, 0 )
 	Message:setShaderVector( 2, 0, 0, 1, 1 )

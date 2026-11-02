@@ -120,7 +120,7 @@ CoD.AmmoWidgetMP_Ultimate_Progress_Fill.new = function ( f1_arg0, f1_arg1, f1_ar
 	local Burst = LUI.UIImage.new( 0, 0, 0, 110, 0, 0, 0, 112 )
 	Burst:setAlpha( 0 )
 	Burst:setImage( RegisterImage( "uie_ui_hud_core_hero_widget_glow_hero" ) )
-	Burst:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	Burst:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	Burst:setShaderVector( 0, 3, 0, 0, 0 )
 	self:addElement( Burst )
 	self.Burst = Burst
@@ -255,7 +255,7 @@ CoD.AmmoWidgetMP_Ultimate_Progress_Fill.__resetProperties = function ( f22_arg0 
 	f22_arg0.Burst:setRGB( 1, 1, 1 )
 	f22_arg0.Burst:setAlpha( 0 )
 	f22_arg0.Burst:setScale( 1, 1 )
-	f22_arg0.Burst:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	f22_arg0.Burst:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	f22_arg0.Burst:setShaderVector( 0, 3, 0, 0, 0 )
 	f22_arg0.Flare:setTopBottom( 0, 0, -89, 39 )
 	f22_arg0.Flare:setAlpha( 0 )
@@ -526,7 +526,7 @@ CoD.AmmoWidgetMP_Ultimate_Progress_Fill.__clipsPerState = {
 			f49_arg0.Burst:setRGB( 1, 0.87, 0 )
 			f49_arg0.Burst:setAlpha( 1 )
 			f49_arg0.Burst:setScale( 0, 0 )
-			f49_arg0.Burst:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f49_arg0.Burst:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f49_arg0.Burst:setShaderVector( 0, 3, 0, 0, 0 )
 			f49_local1( f49_arg0.Burst )
 		end,

@@ -21,7 +21,7 @@ LUI.createMenu.Store = function ( f1_arg0, f1_arg1 )
 	f1_local1:addElementToPendingUpdateStateList( self )
 	
 	local Background = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	Background:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	Background:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	Background:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( Background )
 	self.Background = Background

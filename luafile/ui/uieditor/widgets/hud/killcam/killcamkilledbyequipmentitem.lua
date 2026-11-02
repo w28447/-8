@@ -9,7 +9,7 @@ CoD.KillcamKilledByEquipmentItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local ItemName = LUI.UIText.new( 0, 0, 0, 120, 0, 0, 69, 87 )
 	ItemName:setTTF( "ttmussels_demibold" )
-	ItemName:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6250C6FCAC36BD4 ) )
+	ItemName:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_outline" ) )
 	ItemName:setShaderVector( 0, 0.2, 0, 0, 0 )
 	ItemName:setShaderVector( 1, 0, 0, 0, 1 )
 	ItemName:setLetterSpacing( 1 )

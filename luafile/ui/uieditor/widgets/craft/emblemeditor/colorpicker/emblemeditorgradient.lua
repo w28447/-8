@@ -16,7 +16,7 @@ CoD.EmblemEditorGradient.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local ColorPickerBkgd0 = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	ColorPickerBkgd0:setAlpha( 0.5 )
-	ColorPickerBkgd0:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	ColorPickerBkgd0:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	ColorPickerBkgd0:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( ColorPickerBkgd0 )
 	self.ColorPickerBkgd0 = ColorPickerBkgd0

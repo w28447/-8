@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_warriors_ajax",
     "type": "#tag",
-    "material": "#hash_69ade482789e4210",
+    "material": "#vd/mtl_loot_ui_icon_tags_warriors_ajax",
     "bundle": {
         "type": "#tag",
         "title": "localized18#hash_626f717d17a08170",

@@ -11,7 +11,7 @@ CoD.CommonBgLayoutElement02.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local BlurBgBoxes02 = LUI.UIImage.new( 0, 0, 0, 304, 0, 0, 0, 76 )
 	BlurBgBoxes02:setAlpha( 0.5 )
 	BlurBgBoxes02:setImage( RegisterImage( "uie_ui_menu_inspection_bg_element_boxes01" ) )
-	BlurBgBoxes02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7EA4827662D4CD4 ) )
+	BlurBgBoxes02:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_repeat_add" ) )
 	BlurBgBoxes02:setShaderVector( 0, 4, 1, 0, 0 )
 	BlurBgBoxes02:setShaderVector( 1, 0, 1, 0, 1 )
 	self:addElement( BlurBgBoxes02 )
@@ -20,7 +20,7 @@ CoD.CommonBgLayoutElement02.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local BoxHighlighted2 = LUI.UIImage.new( 0, 0, 40, 76, 0, 0, 1, 37 )
 	BoxHighlighted2:setAlpha( 0.2 )
 	BoxHighlighted2:setImage( RegisterImage( "uie_ui_menu_inspection_bg_element_box_selected" ) )
-	BoxHighlighted2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	BoxHighlighted2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	BoxHighlighted2:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( BoxHighlighted2 )
 	self.BoxHighlighted2 = BoxHighlighted2
@@ -28,7 +28,7 @@ CoD.CommonBgLayoutElement02.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local BoxHighlighted01 = LUI.UIImage.new( 0, 0, 40, 76, 0, 0, 1, 37 )
 	BoxHighlighted01:setAlpha( 0.2 )
 	BoxHighlighted01:setImage( RegisterImage( "uie_ui_menu_inspection_bg_element_box_selected" ) )
-	BoxHighlighted01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	BoxHighlighted01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	BoxHighlighted01:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( BoxHighlighted01 )
 	self.BoxHighlighted01 = BoxHighlighted01

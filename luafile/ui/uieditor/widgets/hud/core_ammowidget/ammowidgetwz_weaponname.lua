@@ -12,7 +12,7 @@ CoD.AmmoWidgetWZ_WeaponName.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	HeroAbilityUseString:setRGB( 0.73, 0.71, 0.64 )
 	HeroAbilityUseString:setText( "" )
 	HeroAbilityUseString:setTTF( "ttmussels_regular" )
-	HeroAbilityUseString:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	HeroAbilityUseString:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	HeroAbilityUseString:setShaderVector( 0, 1, 0, 0, 0 )
 	HeroAbilityUseString:setShaderVector( 1, 0, 0, 0, 0 )
 	HeroAbilityUseString:setShaderVector( 2, 0.8, 0.8, 0.8, 0.2 )

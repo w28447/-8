@@ -12,7 +12,7 @@ CoD.ZMInventoryListBackingInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local SceneBlur = LUI.UIImage.new( -0.03, 1.03, 0, 0, 0, 1, 0, 0 )
 	SceneBlur:setRGB( 0, 0, 0 )
-	SceneBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0x81EEB1F96D4BE0A ) )
+	SceneBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_feather_normal" ) )
 	SceneBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( SceneBlur )
 	self.SceneBlur = SceneBlur
@@ -46,7 +46,7 @@ CoD.ZMInventoryListBackingInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local TextureMid = LUI.UIImage.new( 0, 1, 0, 0, 0.5, 0.5, -40, 40 )
 	TextureMid:setAlpha( 0.8 )
 	TextureMid:setImage( RegisterImage( "uie_zm_hud_inventory_backing_mid" ) )
-	TextureMid:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	TextureMid:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	TextureMid:setShaderVector( 0, 1, 0, 0, 0 )
 	TextureMid:setShaderVector( 1, 1, 0, 0, 0 )
 	TextureMid:setShaderVector( 2, 0, 0, 0, 0 )

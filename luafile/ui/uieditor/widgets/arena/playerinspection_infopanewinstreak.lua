@@ -19,7 +19,7 @@ CoD.PlayerInspection_InfoPaneWinStreak.new = function ( f1_arg0, f1_arg1, f1_arg
 	WinStreakTitle:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	WinStreakTitle:setText( LocalizeToUpperString( 0x106B091E85DC369 ) )
 	WinStreakTitle:setTTF( "ttmussels_regular" )
-	WinStreakTitle:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	WinStreakTitle:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	WinStreakTitle:setShaderVector( 0, 1, 0, 0, 0 )
 	WinStreakTitle:setShaderVector( 1, 0, 0, 0, 0 )
 	WinStreakTitle:setShaderVector( 2, 0, 0, 0, 0 )

@@ -25,7 +25,7 @@ CoD.AmmoWidget_StockAmmo_EmptyPulse.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	Empty:setRGB( 1, 0, 0 )
 	Empty:setText( Engine[0xF9F1239CFD921FE]( 0x4D7BD9466B67FE1 ) )
 	Empty:setTTF( "ttmussels_regular" )
-	Empty:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6250C6FCAC36BD4 ) )
+	Empty:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_outline" ) )
 	Empty:setShaderVector( 0, 0.5, 0, 0, 0 )
 	Empty:setShaderVector( 1, 0, 0, 0, 1 )
 	Empty:setLetterSpacing( 2 )

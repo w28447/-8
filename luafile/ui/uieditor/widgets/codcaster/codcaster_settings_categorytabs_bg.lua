@@ -10,7 +10,7 @@ CoD.CodCaster_Settings_CategoryTabs_BG.new = function ( f1_arg0, f1_arg1, f1_arg
 	local NoiseTiledBacking = LUI.UIImage.new( 0.5, 0.5, -525, 525, 0.5, 0.5, -18.5, 18.5 )
 	NoiseTiledBacking:setAlpha( 0.5 )
 	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
-	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
 	self:addElement( NoiseTiledBacking )

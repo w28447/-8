@@ -13,7 +13,7 @@ LUI.createMenu.zm_arcade_keys = function ( f1_arg0, f1_arg1 )
 	f1_local1:addElementToPendingUpdateStateList( self )
 	
 	local KeyEmptyBg = LUI.UIImage.new( 0, 0, 14.5, 230.5, 0, 0, 69, 151 )
-	KeyEmptyBg:setImage( RegisterImage( 0xC326F68BED7EC04 ) )
+	KeyEmptyBg:setImage( RegisterImage( "uie_zm_key_empty" ) )
 	self:addElement( KeyEmptyBg )
 	self.KeyEmptyBg = KeyEmptyBg
 	

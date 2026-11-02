@@ -47,7 +47,7 @@ CoD.ArenaInfoWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local BGDotPatternLarge2 = LUI.UIImage.new( 0, 0, 2.5, 350.5, 0, 0, 467, 471 )
 	BGDotPatternLarge2:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline_tiled" ) )
-	BGDotPatternLarge2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	BGDotPatternLarge2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	BGDotPatternLarge2:setShaderVector( 0, 0, 0, 0, 0 )
 	BGDotPatternLarge2:setupNineSliceShader( 32, 4 )
 	self:addElement( BGDotPatternLarge2 )
@@ -103,7 +103,7 @@ CoD.ArenaInfoWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	RankTitle:setAlpha( 0.5 )
 	RankTitle:setText( LocalizeToUpperString( "arena/rank" ) )
 	RankTitle:setTTF( "ttmussels_regular" )
-	RankTitle:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	RankTitle:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	RankTitle:setShaderVector( 0, 1, 0, 0, 0 )
 	RankTitle:setShaderVector( 1, 0, 0, 0, 0 )
 	RankTitle:setShaderVector( 2, 0, 0, 0, 0.5 )
@@ -122,7 +122,7 @@ CoD.ArenaInfoWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	Rank.__String_Reference()
 	Rank:setTTF( "0arame_mono_stencil" )
-	Rank:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	Rank:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	Rank:setShaderVector( 0, 1, 0, 0, 0 )
 	Rank:setShaderVector( 1, 0, 0, 0, 0 )
 	Rank:setShaderVector( 2, 0.3, 0.3, 0.3, 0.3 )

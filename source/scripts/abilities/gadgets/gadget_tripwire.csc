@@ -375,11 +375,11 @@ function function_3e8d9b27( local_client_num, previs_weapon, validlocation )
 {
     if ( validlocation )
     {
-        level.tripwire.localclients[ local_client_num ].model setmodel( #"hash_2edbbbe63af8213d" );
+        level.tripwire.localclients[ local_client_num ].model setmodel( #"wpn_t8_eqp_tripwire_ied_projectile_yellow" );
     }
     else
     {
-        level.tripwire.localclients[ local_client_num ].model setmodel( #"hash_6c54a3e97ce636f0" );
+        level.tripwire.localclients[ local_client_num ].model setmodel( #"wpn_t8_eqp_tripwire_ied_projectile_red" );
     }
     
     level.tripwire.localclients[ local_client_num ].model notsolid();

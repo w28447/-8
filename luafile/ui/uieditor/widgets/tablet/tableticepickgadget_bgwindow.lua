@@ -10,7 +10,7 @@ CoD.TabletIcePickGadget_BgWindow.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	local PixelGrid = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	PixelGrid:setAlpha( 0.1 )
 	PixelGrid:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
-	PixelGrid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	PixelGrid:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	PixelGrid:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGrid:setupNineSliceShader( 256, 256 )
 	self:addElement( PixelGrid )
@@ -24,7 +24,7 @@ CoD.TabletIcePickGadget_BgWindow.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local Frame = LUI.UIImage.new( 0, 1, -5, 5, 0, 1, -5, 5 )
 	Frame:setAlpha( 0.5 )
-	Frame:setImage( RegisterImage( 0x10AC7DF3E5F3B8B ) )
+	Frame:setImage( RegisterImage( "uie_ui_hud_icepick_window" ) )
 	Frame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	Frame:setShaderVector( 0, 0, 0, 0.38, 0.21 )
 	Frame:setupNineSliceShader( 64, 46 )
@@ -33,7 +33,7 @@ CoD.TabletIcePickGadget_BgWindow.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local BlurFrame = LUI.UIImage.new( 0, 1, -5, 5, 0, 1, -5, 5 )
 	BlurFrame:setAlpha( 0.5 )
-	BlurFrame:setImage( RegisterImage( 0x517E94C3B16A2CB ) )
+	BlurFrame:setImage( RegisterImage( "uie_ui_hud_icepick_blur_window" ) )
 	BlurFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	BlurFrame:setShaderVector( 0, 0, 0, 0.38, 0.21 )
 	BlurFrame:setupNineSliceShader( 64, 64 )

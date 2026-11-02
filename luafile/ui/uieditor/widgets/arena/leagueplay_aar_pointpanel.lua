@@ -15,7 +15,7 @@ CoD.LeaguePlay_AAR_PointPanel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local blurBg = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	blurBg:setAlpha( 0 )
-	blurBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	blurBg:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	blurBg:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( blurBg )
 	self.blurBg = blurBg

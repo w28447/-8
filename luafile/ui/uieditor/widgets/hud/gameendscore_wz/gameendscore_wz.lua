@@ -36,7 +36,7 @@ CoD.GameEndScore_WZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local Blur = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	Blur:setAlpha( 0 )
-	Blur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	Blur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	Blur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( Blur )
 	self.Blur = Blur
@@ -94,7 +94,7 @@ CoD.GameEndScore_WZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	DownNotOut:setRGB( 0.92, 0.92, 0.92 )
 	DownNotOut:setAlpha( 0 )
 	DownNotOut:setTTF( "default" )
-	DownNotOut:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	DownNotOut:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	DownNotOut:setShaderVector( 0, 0.2, 0, 0, 0 )
 	DownNotOut:setShaderVector( 1, 0.2, 0, 0, 0 )
 	DownNotOut:setShaderVector( 2, 0, 0, 0, 1 )
@@ -408,7 +408,7 @@ CoD.GameEndScore_WZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	ChallengeCoinFlare2:setRGB( ColorSet.ParagonRank.r, ColorSet.ParagonRank.g, ColorSet.ParagonRank.b )
 	ChallengeCoinFlare2:setAlpha( 0 )
 	ChallengeCoinFlare2:setImage( RegisterImage( "uie_ui_menu_aar_levelup_flare" ) )
-	ChallengeCoinFlare2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	ChallengeCoinFlare2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	ChallengeCoinFlare2:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ChallengeCoinFlare2 )
 	self.ChallengeCoinFlare2 = ChallengeCoinFlare2
@@ -417,7 +417,7 @@ CoD.GameEndScore_WZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	ChallengeCoinFlare3:setRGB( 0.96, 0.31, 0.06 )
 	ChallengeCoinFlare3:setAlpha( 0 )
 	ChallengeCoinFlare3:setImage( RegisterImage( "uie_ui_menu_aar_levelup_flare" ) )
-	ChallengeCoinFlare3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	ChallengeCoinFlare3:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	ChallengeCoinFlare3:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ChallengeCoinFlare3 )
 	self.ChallengeCoinFlare3 = ChallengeCoinFlare3

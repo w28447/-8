@@ -11,7 +11,7 @@ CoD.WeaponLevelWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local LevelLabel = LUI.UIText.new( 0, 0, 4.5, 204.5, 0, 0, 21.5, 42.5 )
 	LevelLabel:setRGB( ColorSet.GroupName.r, ColorSet.GroupName.g, ColorSet.GroupName.b )
 	LevelLabel:setTTF( "0arame_mono_stencil" )
-	LevelLabel:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	LevelLabel:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	LevelLabel:setShaderVector( 0, 0.7, 0, 0, 0 )
 	LevelLabel:setShaderVector( 1, 0, 0, 0, 0 )
 	LevelLabel:setShaderVector( 2, 0, 0, 0, 0.5 )

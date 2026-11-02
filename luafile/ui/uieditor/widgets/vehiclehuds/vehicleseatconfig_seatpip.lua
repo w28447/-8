@@ -26,14 +26,14 @@ CoD.VehicleSeatConfig_SeatPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.NoiseTiledBacking = NoiseTiledBacking
 	
 	local OccupiedPip = LUI.UIImage.new( 0, 1, 2, -2, 0, 1, 2, -2 )
-	OccupiedPip:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	OccupiedPip:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	OccupiedPip:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( OccupiedPip )
 	self.OccupiedPip = OccupiedPip
 	
 	local OccupiedPipPulse = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	OccupiedPipPulse:setImage( RegisterImage( "uie_ui_hud_common_box_glow" ) )
-	OccupiedPipPulse:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	OccupiedPipPulse:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	OccupiedPipPulse:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( OccupiedPipPulse )
 	self.OccupiedPipPulse = OccupiedPipPulse
@@ -41,7 +41,7 @@ CoD.VehicleSeatConfig_SeatPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local LedPattern = LUI.UIImage.new( 0, 0, 1, 23, 0, 0, 1, 23 )
 	LedPattern:setAlpha( 0.4 )
 	LedPattern:setImage( RegisterImage( "uie_ui_menu_store_repeat_dot_pattern" ) )
-	LedPattern:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	LedPattern:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	LedPattern:setShaderVector( 0, 0, 0, 0, 0 )
 	LedPattern:setupNineSliceShader( 24, 24 )
 	self:addElement( LedPattern )
@@ -50,7 +50,7 @@ CoD.VehicleSeatConfig_SeatPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local LedPatternAdd = LUI.UIImage.new( 0, 0, 1, 23, 0, 0, 1, 23 )
 	LedPatternAdd:setAlpha( 0.5 )
 	LedPatternAdd:setImage( RegisterImage( "uie_ui_menu_store_repeat_dot_pattern" ) )
-	LedPatternAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	LedPatternAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	LedPatternAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	LedPatternAdd:setupNineSliceShader( 24, 24 )
 	self:addElement( LedPatternAdd )
@@ -79,7 +79,7 @@ CoD.VehicleSeatConfig_SeatPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local IDNumber2 = LUI.UIText.new( 0.5, 0.5, -11.5, 11.5, 0, 0, 0.5, 23.5 )
 	IDNumber2:setText( 1 )
 	IDNumber2:setTTF( "ttmussels_demibold" )
-	IDNumber2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x336C1AE82B1520A ) )
+	IDNumber2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield_add" ) )
 	IDNumber2:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	IDNumber2:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
 	self:addElement( IDNumber2 )

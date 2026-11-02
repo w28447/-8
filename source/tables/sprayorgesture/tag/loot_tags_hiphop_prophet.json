@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_hiphop_prophet",
     "type": "#tag",
-    "material": "#hash_320ab07cfe6348ab",
+    "material": "#vd/mtl_loot_ui_icon_tags_hiphop_prophet",
     "bundle": {
         "type": "#tag",
         "title": "localized18#hash_20fd8dc857d0bbf4",

@@ -21,21 +21,21 @@ CoD.WarzoneDeathCamLabel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local BarBtm = LUI.UIImage.new( 0.5, 0.5, -92, 92, 0.5, 0.5, 13, 25 )
 	BarBtm:setImage( RegisterImage( "uie_ui_hud_wz_deathcam_red_bar_sm" ) )
-	BarBtm:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	BarBtm:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	BarBtm:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( BarBtm )
 	self.BarBtm = BarBtm
 	
 	local BarTop = LUI.UIImage.new( 0.5, 0.5, -92, 92, 0.5, 0.5, -25, -13 )
 	BarTop:setImage( RegisterImage( "uie_ui_hud_wz_deathcam_red_bar_sm" ) )
-	BarTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	BarTop:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	BarTop:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( BarTop )
 	self.BarTop = BarTop
 	
 	local RecordDot = LUI.UIImage.new( 0, 0, 0, 32, 0.5, 0.5, -16, 16 )
 	RecordDot:setImage( RegisterImage( "uie_ui_hud_wz_deathcam_record_dot" ) )
-	RecordDot:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	RecordDot:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	RecordDot:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( RecordDot )
 	self.RecordDot = RecordDot
@@ -44,7 +44,7 @@ CoD.WarzoneDeathCamLabel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	DeathCamLabel:setRGB( 1, 0.9, 0.9 )
 	DeathCamLabel:setText( LocalizeToUpperString( "wz/deathcam" ) )
 	DeathCamLabel:setTTF( "ttmussels_demibold" )
-	DeathCamLabel:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	DeathCamLabel:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	DeathCamLabel:setShaderVector( 0, 0.55, 0, 0, 0 )
 	DeathCamLabel:setShaderVector( 1, 0, 0, 0, 0 )
 	DeathCamLabel:setShaderVector( 2, 1, 0, 0, 0.2 )

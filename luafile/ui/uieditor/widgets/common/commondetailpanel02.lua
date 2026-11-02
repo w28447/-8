@@ -8,7 +8,7 @@ CoD.CommonDetailPanel02.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	self.soundSet = "default"
 	
 	local BackingBlur = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	BackingBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	BackingBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	BackingBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BackingBlur )
 	self.BackingBlur = BackingBlur
@@ -30,7 +30,7 @@ CoD.CommonDetailPanel02.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local HeaderStripe1 = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, -17, -1 )
 	HeaderStripe1:setImage( RegisterImage( 0xC7A051F5EFC70E5 ) )
-	HeaderStripe1:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	HeaderStripe1:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	HeaderStripe1:setShaderVector( 0, 0, 0, 0, 0 )
 	HeaderStripe1:setupNineSliceShader( 88, 16 )
 	self:addElement( HeaderStripe1 )
@@ -38,7 +38,7 @@ CoD.CommonDetailPanel02.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local FooterStripe1 = LUI.UIImage.new( 0, 1, 0, 0, 1, 1, 1, 17 )
 	FooterStripe1:setImage( RegisterImage( 0xC7A051F5EFC70E5 ) )
-	FooterStripe1:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	FooterStripe1:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	FooterStripe1:setShaderVector( 0, 0, 0, 0, 0 )
 	FooterStripe1:setupNineSliceShader( 88, 16 )
 	self:addElement( FooterStripe1 )

@@ -11,7 +11,7 @@ CoD.FE_ListHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	Label:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	Label:setText( "" )
 	Label:setTTF( "ttmussels_regular" )
-	Label:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
+	Label:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow" ) )
 	Label:setShaderVector( 0, 0.06, 0, 0, 0 )
 	Label:setShaderVector( 1, 0.02, 0, 0, 0 )
 	Label:setShaderVector( 2, 1, 0, 0, 0 )

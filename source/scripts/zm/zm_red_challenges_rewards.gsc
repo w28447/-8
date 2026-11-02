@@ -734,7 +734,7 @@ function give_tribute( var_ecffa2a8, var_41f9c5ff = undefined, var_893baaf = und
             var_41f9c5ff = self function_73fda38e( var_41f9c5ff );
             self set_tribute( self.n_tribute + var_41f9c5ff );
             self.var_6b3806e8 += var_41f9c5ff / level.var_8b7ab859;
-            self playsoundtoplayer( #"hash_51923ec42cdda138", self );
+            self playsoundtoplayer( #"zmb_tribute_ticker_flash", self );
         }
     }
     else if ( isdefined( var_ecffa2a8 ) )
@@ -749,7 +749,7 @@ function give_tribute( var_ecffa2a8, var_41f9c5ff = undefined, var_893baaf = und
         {
             set_tribute( self.n_tribute + n_amount );
             self.var_6b3806e8 += n_amount / level.var_8b7ab859;
-            self playsoundtoplayer( #"hash_51923ec42cdda138", self );
+            self playsoundtoplayer( #"zmb_tribute_ticker_flash", self );
         }
     }
     

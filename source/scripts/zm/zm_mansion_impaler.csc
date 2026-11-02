@@ -202,7 +202,7 @@ function function_3f039efc( localclientnum, oldval, newval, bnewent, binitialsna
         self stoprenderoverridebundle( #"hash_3b7b44b7a440e5f" );
         self playrenderoverridebundle( #"hash_3d9f08ef1b60239e" );
         
-        if ( self.model == #"hash_2b87b734e194ea79" )
+        if ( self.model == #"p8_zm_man_mausoleum_symbols_base" )
         {
             level notify( #"hash_5a1a7e205b6f5b88" );
         }

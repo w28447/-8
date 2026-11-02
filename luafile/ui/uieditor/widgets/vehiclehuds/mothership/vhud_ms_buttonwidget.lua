@@ -24,7 +24,7 @@ CoD.vhud_ms_ButtonWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local prompt = LUI.UIText.new( 0.5, 0.5, -150, 150, 0.5, 0.5, 40, 64 )
 	prompt:setTTF( "dinnext_regular" )
-	prompt:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
+	prompt:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow" ) )
 	prompt:setShaderVector( 0, 0, 0, 0, 0 )
 	prompt:setShaderVector( 1, 0, 0, 0, 0 )
 	prompt:setShaderVector( 2, 1, 0, 0, 0 )

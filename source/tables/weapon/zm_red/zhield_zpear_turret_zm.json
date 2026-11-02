@@ -50,10 +50,10 @@
     "sharedWeaponSounds": "#zhield_towers_shield",
     "projectilemodel": "#wpn_t8_zm_red_spear_view",
     "viewmodel": [
-        "#hash_2c489f5df61e7807"
+        "#wpn_t8_zm_red_shield_combined_view"
     ],
     "worldModel": [
-        "#hash_7be12c154074257a"
+        "#wpn_t8_zm_red_shield_combined_world"
     ],
     "gadgetIconAvailable": "#ui_icon_weapons_zm_shield_buckler",
     "gadgetIconUnavailable": "#ui_icon_weapons_zm_shield_buckler",
@@ -72,10 +72,10 @@
     "exitImpactSounds": "#bullet_exit",
     "#hash_21329beb": [
         {
-            "model": "#hash_71c46d843c8b6162"
+            "model": "#wpn_t8_zm_red_shield_combined_d1_world"
         },
         {
-            "model": "#hash_17c9f540216720af"
+            "model": "#wpn_t8_zm_red_shield_combined_d2_world"
         }
     ]
 }

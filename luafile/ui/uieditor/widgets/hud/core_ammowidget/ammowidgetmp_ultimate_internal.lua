@@ -19,19 +19,19 @@ CoD.AmmoWidgetMP_Ultimate_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local Blur = LUI.UIImage.new( 0, 0, 79.5, 183.5, 0, 0, 10.5, 120.5 )
 	Blur:setImage( RegisterImage( "uie_ui_hud_core_player_widget_panel_hex" ) )
-	Blur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	Blur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	Blur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( Blur )
 	self.Blur = Blur
 	
 	local BlurRight = LUI.UIImage.new( 0, 0, 181.5, 248.5, 0, 0, 31.5, 98.5 )
-	BlurRight:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	BlurRight:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	BlurRight:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BlurRight )
 	self.BlurRight = BlurRight
 	
 	local BlurLeft = LUI.UIImage.new( 0, 0, 16.5, 85.5, 0, 0, 32, 96 )
-	BlurLeft:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	BlurLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	BlurLeft:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BlurLeft )
 	self.BlurLeft = BlurLeft
@@ -229,7 +229,7 @@ CoD.AmmoWidgetMP_Ultimate_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	GlowHero = LUI.UIImage.new( 0, 0, 78.5, 188.5, 0, 0, 13, 125 )
 	GlowHero:setAlpha( 0 )
 	GlowHero:setImage( RegisterImage( "uie_ui_hud_core_hero_widget_glow_hero" ) )
-	GlowHero:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	GlowHero:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	GlowHero:setShaderVector( 0, 4, 0, 0, 0 )
 	self:addElement( GlowHero )
 	self.GlowHero = GlowHero
@@ -279,7 +279,7 @@ CoD.AmmoWidgetMP_Ultimate_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	UltimateRadialMeterpath2:setRGB( 0.57, 0.57, 0.57 )
 	UltimateRadialMeterpath2:setAlpha( 0.06 )
 	UltimateRadialMeterpath2:setImage( RegisterImage( "uie_ui_hud_core_hero_widget_meter_empty" ) )
-	UltimateRadialMeterpath2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	UltimateRadialMeterpath2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	UltimateRadialMeterpath2:setShaderVector( 0, 6, 0, 0, 0 )
 	self:addElement( UltimateRadialMeterpath2 )
 	self.UltimateRadialMeterpath2 = UltimateRadialMeterpath2
@@ -340,7 +340,7 @@ CoD.AmmoWidgetMP_Ultimate_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local GlowRing = LUI.UIImage.new( 0, 0, 71.5, 195.5, 0, 0, -4, 134 )
 	GlowRing:setAlpha( 0 )
 	GlowRing:setImage( RegisterImage( "uie_abeq_flare_ring" ) )
-	GlowRing:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	GlowRing:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	GlowRing:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( GlowRing )
 	self.GlowRing = GlowRing

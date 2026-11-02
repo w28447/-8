@@ -12005,13 +12005,13 @@
         {
             "value": 1678,
             "next": 65535,
-            "name": "#hash_3faa335fd02a531",
+            "name": "#evt_mann_forcefield_doors",
             "sequence": 0,
             "cullDistance": 2200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3faa335fd02a531",
+                    "name": "#evt_mann_forcefield_doors",
                     "assetId": "#hash_35f5e4a92ddecfae",
                     "assetFileNameSustain": "#zm_white.all",
                     "assetIdRelease": "#zm_white.all",
@@ -12050,7 +12050,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_3faa335fd02a531",
+                    "name": "#evt_mann_forcefield_doors",
                     "assetId": "#hash_3096d8fd69dff38b",
                     "assetFileNameSustain": "#zm_white.all",
                     "assetIdRelease": "#zm_white.all",
@@ -12089,7 +12089,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_3faa335fd02a531",
+                    "name": "#evt_mann_forcefield_doors",
                     "assetId": "#hash_46b4a18b10b46874",
                     "assetFileNameSustain": "#zm_white.all",
                     "assetIdRelease": "#zm_white.all",
@@ -225124,14 +225124,14 @@
         {
             "value": 1418,
             "next": 65535,
-            "name": "#hash_3956c3fe80b60246",
+            "name": "#vox_audio_log_stem_1_sfx",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3956c3fe80b60246",
-                    "secondaryname": "#hash_3781c28ea8f0ce86",
+                    "name": "#vox_audio_log_stem_1_sfx",
+                    "secondaryname": "#vox_audio_log_stem_1",
                     "assetId": "#hash_6e4f325a6d445f81",
                     "assetFileNameSustain": "#zm_white.all",
                     "assetIdRelease": "#zm_white.all",
@@ -225175,14 +225175,14 @@
         {
             "value": 1401,
             "next": 65535,
-            "name": "#hash_65ded5ce6edde563",
+            "name": "#vox_audio_log_stem_2_sfx",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_65ded5ce6edde563",
-                    "secondaryname": "#hash_3781c18ea8f0ccd3",
+                    "name": "#vox_audio_log_stem_2_sfx",
+                    "secondaryname": "#vox_audio_log_stem_2",
                     "assetId": "#hash_692807b2368653a6",
                     "assetFileNameSustain": "#zm_white.all",
                     "assetIdRelease": "#zm_white.all",
@@ -225226,14 +225226,14 @@
         {
             "value": 1247,
             "next": 65535,
-            "name": "#hash_2d21d20d07304b64",
+            "name": "#vox_audio_log_stem_3_sfx",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2d21d20d07304b64",
-                    "secondaryname": "#hash_3781c08ea8f0cb20",
+                    "name": "#vox_audio_log_stem_3_sfx",
+                    "secondaryname": "#vox_audio_log_stem_3",
                     "assetId": "#hash_2e3fef8476d8e9a7",
                     "assetFileNameSustain": "#zm_white.all",
                     "assetIdRelease": "#zm_white.all",
@@ -225277,14 +225277,14 @@
         {
             "value": 1712,
             "next": 65535,
-            "name": "#hash_6fce75e5c4fe6210",
+            "name": "#vox_audio_reel_stem_1_sfx",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6fce75e5c4fe6210",
-                    "secondaryname": "#hash_2388406b6c0759fc",
+                    "name": "#vox_audio_reel_stem_1_sfx",
+                    "secondaryname": "#vox_audio_reel_stem_1",
                     "assetId": "#hash_a7aecebc2e69b3b",
                     "assetFileNameSustain": "#zm_white.all",
                     "assetIdRelease": "#zm_white.all",
@@ -225328,14 +225328,14 @@
         {
             "value": 1195,
             "next": 65535,
-            "name": "#hash_172aa60779a37741",
+            "name": "#vox_audio_reel_stem_2_sfx",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_172aa60779a37741",
-                    "secondaryname": "#hash_2388436b6c075f15",
+                    "name": "#vox_audio_reel_stem_2_sfx",
+                    "secondaryname": "#vox_audio_reel_stem_2",
                     "assetId": "#hash_1ab7fa3b70cc14c",
                     "assetFileNameSustain": "#zm_white.all",
                     "assetIdRelease": "#zm_white.all",
@@ -225379,14 +225379,14 @@
         {
             "value": 72,
             "next": 939,
-            "name": "#hash_511e79ef416368e2",
+            "name": "#vox_audio_reel_stem_3_sfx",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_511e79ef416368e2",
-                    "secondaryname": "#hash_2388426b6c075d62",
+                    "name": "#vox_audio_reel_stem_3_sfx",
+                    "secondaryname": "#vox_audio_reel_stem_3",
                     "assetId": "#hash_1b848f1311a27ce5",
                     "assetFileNameSustain": "#zm_white.all",
                     "assetIdRelease": "#zm_white.all",
@@ -225430,14 +225430,14 @@
         {
             "value": 998,
             "next": 942,
-            "name": "#hash_1a1854072d6b2453",
+            "name": "#vox_audio_reel_stem_4_sfx",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1a1854072d6b2453",
-                    "secondaryname": "#hash_23883d6b6c0754e3",
+                    "name": "#vox_audio_reel_stem_4_sfx",
+                    "secondaryname": "#vox_audio_reel_stem_4",
                     "assetId": "#hash_26b478af748baae6",
                     "assetFileNameSustain": "#zm_white.all",
                     "assetIdRelease": "#zm_white.all",
@@ -225481,14 +225481,14 @@
         {
             "value": 763,
             "next": 944,
-            "name": "#hash_39204e32adbe7694",
+            "name": "#vox_audio_reel_stem_5_sfx",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_39204e32adbe7694",
-                    "secondaryname": "#hash_23883c6b6c075330",
+                    "name": "#vox_audio_reel_stem_5_sfx",
+                    "secondaryname": "#vox_audio_reel_stem_5",
                     "assetId": "#hash_350fc552a84f85e7",
                     "assetFileNameSustain": "#zm_white.all",
                     "assetIdRelease": "#zm_white.all",
@@ -284697,13 +284697,13 @@
         {
             "value": 108,
             "next": 1475,
-            "name": "#hash_b6dbb67379dad7",
+            "name": "#zmb_lightning_long_arcs_2",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_b6dbb67379dad7",
+                    "name": "#zmb_lightning_long_arcs_2",
                     "assetId": "#hash_76f979063c21c94b",
                     "assetFileNameSustain": "#zm_white.all",
                     "assetIdRelease": "#zm_white.all",
@@ -284746,13 +284746,13 @@
         {
             "value": 152,
             "next": 65535,
-            "name": "#hash_b6dab67379d924",
+            "name": "#zmb_lightning_long_arcs_3",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_b6dab67379d924",
+                    "name": "#zmb_lightning_long_arcs_3",
                     "assetId": "#hash_b413a4c8ff725e0",
                     "assetFileNameSustain": "#zm_white.all",
                     "assetIdRelease": "#zm_white.all",
@@ -284795,13 +284795,13 @@
         {
             "value": 1261,
             "next": 65535,
-            "name": "#hash_b6d9b67379d771",
+            "name": "#zmb_lightning_long_arcs_4",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_b6d9b67379d771",
+                    "name": "#zmb_lightning_long_arcs_4",
                     "assetId": "#hash_76f979063c21c94b",
                     "assetFileNameSustain": "#zm_white.all",
                     "assetIdRelease": "#zm_white.all",
@@ -284844,13 +284844,13 @@
         {
             "value": 1768,
             "next": 65535,
-            "name": "#hash_b6d8b67379d5be",
+            "name": "#zmb_lightning_long_arcs_5",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_b6d8b67379d5be",
+                    "name": "#zmb_lightning_long_arcs_5",
                     "assetId": "#hash_b413a4c8ff725e0",
                     "assetFileNameSustain": "#zm_white.all",
                     "assetIdRelease": "#zm_white.all",
@@ -284893,13 +284893,13 @@
         {
             "value": 1455,
             "next": 65535,
-            "name": "#hash_b6d7b67379d40b",
+            "name": "#zmb_lightning_long_arcs_6",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_b6d7b67379d40b",
+                    "name": "#zmb_lightning_long_arcs_6",
                     "assetId": "#hash_b413a4c8ff725e0",
                     "assetFileNameSustain": "#zm_white.all",
                     "assetIdRelease": "#zm_white.all",
@@ -284942,13 +284942,13 @@
         {
             "value": 1783,
             "next": 65535,
-            "name": "#hash_b6d6b67379d258",
+            "name": "#zmb_lightning_long_arcs_7",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_b6d6b67379d258",
+                    "name": "#zmb_lightning_long_arcs_7",
                     "assetId": "#hash_b413a4c8ff725e0",
                     "assetFileNameSustain": "#zm_white.all",
                     "assetIdRelease": "#zm_white.all",
@@ -284991,13 +284991,13 @@
         {
             "value": 1090,
             "next": 65535,
-            "name": "#hash_369f384c047c4a77",
+            "name": "#zmb_lightning_pole_flash",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_369f384c047c4a77",
+                    "name": "#zmb_lightning_pole_flash",
                     "assetId": "#pfx/sparks/lrg/spark_lrg_00.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_white.all",
                     "assetIdRelease": "#zm_white.all",
@@ -285036,7 +285036,7 @@
                     "unk178": "#hash_1600160808"
                 },
                 {
-                    "name": "#hash_369f384c047c4a77",
+                    "name": "#zmb_lightning_pole_flash",
                     "assetId": "#pfx/sparks/lrg/spark_lrg_01.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_white.all",
                     "assetIdRelease": "#zm_white.all",
@@ -285075,7 +285075,7 @@
                     "unk178": "#hash_1600160808"
                 },
                 {
-                    "name": "#hash_369f384c047c4a77",
+                    "name": "#zmb_lightning_pole_flash",
                     "assetId": "#pfx/sparks/lrg/spark_lrg_02.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_white.all",
                     "assetIdRelease": "#zm_white.all",

@@ -17,7 +17,7 @@ CoD.GameSettings_GameModeName.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	GameModeTextBox:setRGB( 0.96, 0.93, 0.84 )
 	GameModeTextBox:setText( LocalizedGameType() )
 	GameModeTextBox:setTTF( "ttmussels_regular" )
-	GameModeTextBox:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
+	GameModeTextBox:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow" ) )
 	GameModeTextBox:setShaderVector( 0, 0.08, 0, 0, 0 )
 	GameModeTextBox:setShaderVector( 1, 0, 0, 0, 0 )
 	GameModeTextBox:setShaderVector( 2, 1, 0, 0, 0 )

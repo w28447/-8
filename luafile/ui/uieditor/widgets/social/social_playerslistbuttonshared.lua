@@ -47,7 +47,7 @@ CoD.Social_PlayersListButtonShared.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local OnOffBacking = LUI.UIImage.new( 0, 1.01, 14, 14, 0, 1.19, -4, -4 )
 	OnOffBacking:setAlpha( 0 )
 	OnOffBacking:setImage( RegisterImage( "uie_ui_menu_cac_text_bg01" ) )
-	OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	OnOffBacking:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( OnOffBacking )
 	self.OnOffBacking = OnOffBacking
@@ -55,7 +55,7 @@ CoD.Social_PlayersListButtonShared.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local Border = LUI.UIImage.new( 0, 1, 14, 14, 0, 1, 0, 0 )
 	Border:setRGB( 0.47, 0.47, 0.47 )
 	Border:setAlpha( 0 )
-	Border:setMaterial( LUI.UIImage.GetCachedMaterial( 0x61FE85EDD9F1ED1 ) )
+	Border:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_rectangle_feather_normal" ) )
 	Border:setShaderVector( 0, 0, 0, 0, 0 )
 	Border:setShaderVector( 1, 0, 0, 0, 0 )
 	Border:setupNineSliceShader( 1, 1 )
@@ -341,7 +341,7 @@ CoD.Social_PlayersListButtonShared.__resetProperties = function ( f32_arg0 )
 	f32_arg0.SocialPartyMemberIconLarge0:completeAnimation()
 	f32_arg0.OnOffBacking:setRGB( 1, 1, 1 )
 	f32_arg0.OnOffBacking:setAlpha( 0 )
-	f32_arg0.OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	f32_arg0.OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	f32_arg0.OnOffBacking:setShaderVector( 0, 1, 0, 0, 0 )
 	f32_arg0.TeamColorBacking:setAlpha( 0.5 )
 	f32_arg0.membername:setRGB( 1, 1, 1 )
@@ -738,7 +738,7 @@ CoD.Social_PlayersListButtonShared.__clipsPerState = {
 			
 			f63_arg0.OnOffBacking:completeAnimation()
 			f63_arg0.OnOffBacking:setAlpha( 0.5 )
-			f63_arg0.OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f63_arg0.OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f63_arg0.OnOffBacking:setShaderVector( 0, 2, 0, 0, 0 )
 			f63_local0( f63_arg0.OnOffBacking )
 			f63_arg0.joinable:completeAnimation()
@@ -761,7 +761,7 @@ CoD.Social_PlayersListButtonShared.__clipsPerState = {
 			
 			f65_arg0.OnOffBacking:completeAnimation()
 			f65_arg0.OnOffBacking:setAlpha( 0.25 )
-			f65_arg0.OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f65_arg0.OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f65_arg0.OnOffBacking:setShaderVector( 0, 1, 0, 0, 0 )
 			f65_local0( f65_arg0.OnOffBacking )
 		end
@@ -792,7 +792,7 @@ CoD.Social_PlayersListButtonShared.__clipsPerState = {
 			
 			f68_arg0.OnOffBacking:completeAnimation()
 			f68_arg0.OnOffBacking:setAlpha( 0.5 )
-			f68_arg0.OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f68_arg0.OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f68_arg0.OnOffBacking:setShaderVector( 0, 2, 0, 0, 0 )
 			f68_local0( f68_arg0.OnOffBacking )
 			f68_arg0.joinable:completeAnimation()
@@ -815,7 +815,7 @@ CoD.Social_PlayersListButtonShared.__clipsPerState = {
 			
 			f70_arg0.OnOffBacking:completeAnimation()
 			f70_arg0.OnOffBacking:setAlpha( 0.25 )
-			f70_arg0.OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f70_arg0.OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f70_arg0.OnOffBacking:setShaderVector( 0, 1, 0, 0, 0 )
 			f70_local0( f70_arg0.OnOffBacking )
 		end
@@ -829,7 +829,7 @@ CoD.Social_PlayersListButtonShared.__clipsPerState = {
 			f72_arg0.clipFinished( f72_arg0.TeamColorBacking )
 			f72_arg0.OnOffBacking:completeAnimation()
 			f72_arg0.OnOffBacking:setAlpha( 0.25 )
-			f72_arg0.OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f72_arg0.OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f72_arg0.OnOffBacking:setShaderVector( 0, 1, 0, 0, 0 )
 			f72_arg0.clipFinished( f72_arg0.OnOffBacking )
 		end,
@@ -841,7 +841,7 @@ CoD.Social_PlayersListButtonShared.__clipsPerState = {
 			f73_arg0.clipFinished( f73_arg0.TeamColorBacking )
 			f73_arg0.OnOffBacking:completeAnimation()
 			f73_arg0.OnOffBacking:setAlpha( 0.5 )
-			f73_arg0.OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f73_arg0.OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f73_arg0.OnOffBacking:setShaderVector( 0, 2, 0, 0, 0 )
 			f73_arg0.clipFinished( f73_arg0.OnOffBacking )
 		end,
@@ -861,7 +861,7 @@ CoD.Social_PlayersListButtonShared.__clipsPerState = {
 			
 			f74_arg0.OnOffBacking:completeAnimation()
 			f74_arg0.OnOffBacking:setAlpha( 0.5 )
-			f74_arg0.OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f74_arg0.OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f74_arg0.OnOffBacking:setShaderVector( 0, 2, 0, 0, 0 )
 			f74_local0( f74_arg0.OnOffBacking )
 		end,
@@ -881,7 +881,7 @@ CoD.Social_PlayersListButtonShared.__clipsPerState = {
 			
 			f76_arg0.OnOffBacking:completeAnimation()
 			f76_arg0.OnOffBacking:setAlpha( 0.25 )
-			f76_arg0.OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f76_arg0.OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f76_arg0.OnOffBacking:setShaderVector( 0, 1, 0, 0, 0 )
 			f76_local0( f76_arg0.OnOffBacking )
 		end,
@@ -893,7 +893,7 @@ CoD.Social_PlayersListButtonShared.__clipsPerState = {
 			f78_arg0.clipFinished( f78_arg0.TeamColorBacking )
 			f78_arg0.OnOffBacking:completeAnimation()
 			f78_arg0.OnOffBacking:setAlpha( 0.7 )
-			f78_arg0.OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f78_arg0.OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f78_arg0.OnOffBacking:setShaderVector( 0, 2, 0, 0, 0 )
 			f78_arg0.clipFinished( f78_arg0.OnOffBacking )
 		end,
@@ -912,7 +912,7 @@ CoD.Social_PlayersListButtonShared.__clipsPerState = {
 			
 			f79_arg0.OnOffBacking:completeAnimation()
 			f79_arg0.OnOffBacking:setAlpha( 0.5 )
-			f79_arg0.OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f79_arg0.OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f79_arg0.OnOffBacking:setShaderVector( 0, 2, 0, 0, 0 )
 			f79_local0( f79_arg0.OnOffBacking )
 		end,
@@ -924,7 +924,7 @@ CoD.Social_PlayersListButtonShared.__clipsPerState = {
 			f81_arg0.clipFinished( f81_arg0.TeamColorBacking )
 			f81_arg0.OnOffBacking:completeAnimation()
 			f81_arg0.OnOffBacking:setAlpha( 0.5 )
-			f81_arg0.OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f81_arg0.OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f81_arg0.OnOffBacking:setShaderVector( 0, 2, 0, 0, 0 )
 			f81_arg0.clipFinished( f81_arg0.OnOffBacking )
 		end,
@@ -944,7 +944,7 @@ CoD.Social_PlayersListButtonShared.__clipsPerState = {
 			
 			f82_arg0.OnOffBacking:completeAnimation()
 			f82_arg0.OnOffBacking:setAlpha( 0.5 )
-			f82_arg0.OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f82_arg0.OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f82_arg0.OnOffBacking:setShaderVector( 0, 2, 0, 0, 0 )
 			f82_local0( f82_arg0.OnOffBacking )
 		end,
@@ -969,7 +969,7 @@ CoD.Social_PlayersListButtonShared.__clipsPerState = {
 			
 			f84_arg0.OnOffBacking:completeAnimation()
 			f84_arg0.OnOffBacking:setAlpha( 0.7 )
-			f84_arg0.OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f84_arg0.OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f84_arg0.OnOffBacking:setShaderVector( 0, 2, 0, 0, 0 )
 			f84_local1( f84_arg0.OnOffBacking )
 		end,
@@ -994,7 +994,7 @@ CoD.Social_PlayersListButtonShared.__clipsPerState = {
 			
 			f87_arg0.OnOffBacking:completeAnimation()
 			f87_arg0.OnOffBacking:setAlpha( 0.5 )
-			f87_arg0.OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f87_arg0.OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f87_arg0.OnOffBacking:setShaderVector( 0, 2, 0, 0, 0 )
 			f87_local1( f87_arg0.OnOffBacking )
 		end,
@@ -1019,7 +1019,7 @@ CoD.Social_PlayersListButtonShared.__clipsPerState = {
 			
 			f90_arg0.OnOffBacking:completeAnimation()
 			f90_arg0.OnOffBacking:setAlpha( 0.7 )
-			f90_arg0.OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f90_arg0.OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f90_arg0.OnOffBacking:setShaderVector( 0, 2, 0, 0, 0 )
 			f90_local1( f90_arg0.OnOffBacking )
 		end
@@ -1214,7 +1214,7 @@ CoD.Social_PlayersListButtonShared.__clipsPerState = {
 			
 			f100_arg0.OnOffBacking:completeAnimation()
 			f100_arg0.OnOffBacking:setAlpha( 0.5 )
-			f100_arg0.OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f100_arg0.OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f100_arg0.OnOffBacking:setShaderVector( 0, 2, 0, 0, 0 )
 			f100_local0( f100_arg0.OnOffBacking )
 		end,
@@ -1234,7 +1234,7 @@ CoD.Social_PlayersListButtonShared.__clipsPerState = {
 			
 			f102_arg0.OnOffBacking:completeAnimation()
 			f102_arg0.OnOffBacking:setAlpha( 0.25 )
-			f102_arg0.OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f102_arg0.OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f102_arg0.OnOffBacking:setShaderVector( 0, 1, 0, 0, 0 )
 			f102_local0( f102_arg0.OnOffBacking )
 		end

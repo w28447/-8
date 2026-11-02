@@ -15,7 +15,7 @@ CoD.ConsoleEntry.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	local Panel = LUI.UIImage.new( 0, 1, -5, 5, 0.04, 0.96, -2, 2 )
 	Panel:setRGB( 0, 0, 0 )
 	Panel:setAlpha( 0 )
-	Panel:setMaterial( LUI.UIImage.GetCachedMaterial( 0x81EEB1F96D4BE0A ) )
+	Panel:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_feather_normal" ) )
 	Panel:setShaderVector( 0, 0, 0.68, 0, 0 )
 	self:addElement( Panel )
 	self.Panel = Panel

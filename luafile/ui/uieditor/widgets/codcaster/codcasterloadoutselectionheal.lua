@@ -11,7 +11,7 @@ CoD.CodCasterLoadoutSelectionHeal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	Center:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	Center:setAlpha( 0.8 )
 	Center:setScale( 1.2, 1.2 )
-	Center:setImage( RegisterImage( 0xA427E97A00EE43C ) )
+	Center:setImage( RegisterImage( "uie_codcaster_loadout_selector" ) )
 	self:addElement( Center )
 	self.Center = Center
 	

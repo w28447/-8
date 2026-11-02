@@ -57,7 +57,7 @@ CoD.ArenaDivisionPlacementBonusInternal.new = function ( f1_arg0, f1_arg1, f1_ar
 	local ladderpoint = LUI.UIText.new( 0.15, 0.85, 0, 0, 0, 0, 259, 284 )
 	ladderpoint:setText( Engine[0xF9F1239CFD921FE]( 0x1275B8C997A0D5E ) )
 	ladderpoint:setTTF( "ttmussels_regular" )
-	ladderpoint:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	ladderpoint:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	ladderpoint:setLetterSpacing( 1 )
 	ladderpoint:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	ladderpoint:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -95,7 +95,7 @@ CoD.ArenaDivisionPlacementBonusInternal.new = function ( f1_arg0, f1_arg1, f1_ar
 	Flare:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	Flare:setScale( 0, 0 )
 	Flare:setImage( RegisterImage( "uie_ui_menu_aar_levelup_flare" ) )
-	Flare:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	Flare:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	Flare:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Flare )
 	self.Flare = Flare

@@ -17,7 +17,7 @@ CoD.LeaguePlayEndRankUpRankIcon.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	Flare:setZRot( 90 )
 	Flare:setScale( 0, 0 )
 	Flare:setImage( RegisterImage( "uie_ui_menu_aar_levelup_flare" ) )
-	Flare:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	Flare:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	Flare:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Flare )
 	self.Flare = Flare

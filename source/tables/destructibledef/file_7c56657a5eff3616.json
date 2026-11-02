@@ -1,7 +1,7 @@
 {
     "name": "#hash_7c56657a5eff3616",
-    "model": "#hash_19f4f87118beeac4",
-    "unk20": "#hash_5dbcd4ea7b97e8f8",
+    "model": "#veh_t8_civ_truck_mini_dest_trash_full_dirty_wht_japan",
+    "unk20": "#veh_t8_civ_truck_mini_trash_dead_full_wht",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
     "pieces": [

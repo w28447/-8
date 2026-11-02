@@ -19,7 +19,7 @@ CoD.LoadoutClassItemContainerInternal.new = function ( f1_arg0, f1_arg1, f1_arg2
 	local backgroundBlur = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	backgroundBlur:setRGB( 0, 0, 0 )
 	backgroundBlur:setAlpha( 0 )
-	backgroundBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	backgroundBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	backgroundBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( backgroundBlur )
 	self.backgroundBlur = backgroundBlur
@@ -49,7 +49,7 @@ CoD.LoadoutClassItemContainerInternal.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local FocusGlow = LUI.UIImage.new( 0, 1, -50, 50, 0, 1, -49, 49 )
 	FocusGlow:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_small" ) )
-	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
+	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_multiplied_add" ) )
 	FocusGlow:setShaderVector( 0, 0, 0, 0.25, 0.25 )
 	FocusGlow:setShaderVector( 1, 1.2, 0, 0, 0 )
 	FocusGlow:setupNineSliceShader( 100, 100 )

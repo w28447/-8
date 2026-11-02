@@ -1,0 +1,9 @@
+{
+    "name": "#c_t8_zmb_zod_chaos_corpse2",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 2,
+    "bodyImpactType": 2,
+    "body": "#c_t8_zmb_zod_chaos_corpse_body2",
+    "head": "#c_t8_zmb_zod_chaos_corpse_head2"
+}

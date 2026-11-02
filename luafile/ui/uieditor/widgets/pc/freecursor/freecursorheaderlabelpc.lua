@@ -17,7 +17,7 @@ CoD.freeCursorHeaderLabelPC.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local title = LUI.UIText.new( 0, 0, 10, 210, 0, 0, 7, 29 )
 	title:setRGB( 0.86, 0.74, 0.25 )
 	title:setTTF( "ttmussels_regular" )
-	title:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	title:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	title:setLetterSpacing( 4 )
 	title:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	title:setBackingType( 2 )

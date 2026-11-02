@@ -15,8 +15,8 @@ CoD.TabletIcePick_Category.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local HackBg = LUI.UIImage.new( 0, 0, 0, 1224, 0, 0, 33, 177 )
 	HackBg:setAlpha( 0 )
-	HackBg:setImage( RegisterImage( 0x816694178B99B8A ) )
-	HackBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	HackBg:setImage( RegisterImage( "uie_ui_hud_icepick_item_bg" ) )
+	HackBg:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	HackBg:setShaderVector( 0, 0, 0, 0, 0 )
 	HackBg:setupNineSliceShader( 72, 72 )
 	self:addElement( HackBg )
@@ -43,14 +43,14 @@ CoD.TabletIcePick_Category.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local HackBotBar = LUI.UIImage.new( 0, 0, -1, 1227, 0, 0, 180, 196 )
 	HackBotBar:setAlpha( 0.4 )
-	HackBotBar:setImage( RegisterImage( 0x89157CA6DBDA2C5 ) )
+	HackBotBar:setImage( RegisterImage( "uie_ui_hud_icepick_item_bot_line" ) )
 	HackBotBar:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( HackBotBar )
 	self.HackBotBar = HackBotBar
 	
 	local HackBotBarWipe = LUI.UIImage.new( 0, 0, -1, 1227, 0, 0, 180, 196 )
 	HackBotBarWipe:setAlpha( 0 )
-	HackBotBarWipe:setImage( RegisterImage( 0x89157CA6DBDA2C5 ) )
+	HackBotBarWipe:setImage( RegisterImage( "uie_ui_hud_icepick_item_bot_line" ) )
 	HackBotBarWipe:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	HackBotBarWipe:setShaderVector( 0, 0, 1, 0, 0 )
 	HackBotBarWipe:setShaderVector( 1, 0, 0, 0, 0 )
@@ -62,7 +62,7 @@ CoD.TabletIcePick_Category.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local HackBotBarWipe2 = LUI.UIImage.new( 0, 0, -1, 1227, 0, 0, 180, 196 )
 	HackBotBarWipe2:setAlpha( 0 )
-	HackBotBarWipe2:setImage( RegisterImage( 0x89157CA6DBDA2C5 ) )
+	HackBotBarWipe2:setImage( RegisterImage( "uie_ui_hud_icepick_item_bot_line" ) )
 	HackBotBarWipe2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	HackBotBarWipe2:setShaderVector( 0, 0, 1, 0, 0 )
 	HackBotBarWipe2:setShaderVector( 1, 0, 0, 0, 0 )
@@ -78,7 +78,7 @@ CoD.TabletIcePick_Category.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local ProgressBg = LUI.UIImage.new( 0, 0, -4, 20, 0, 0, 2, 26 )
 	ProgressBg:setAlpha( 0 )
-	ProgressBg:setImage( RegisterImage( 0x3B6AB72F71A2482 ) )
+	ProgressBg:setImage( RegisterImage( "uie_ui_hud_icepick_progress_bg" ) )
 	ProgressBg:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ProgressBg )
 	self.ProgressBg = ProgressBg

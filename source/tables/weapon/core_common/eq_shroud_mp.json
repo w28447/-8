@@ -47,7 +47,7 @@
     "sharedWeaponSounds": "#equipment",
     "customsettings": "#shroud_custom_settings",
     "#hash_2e4a8800": "#eq_shroud_scoreevents",
-    "projectilemodel": "#hash_5e3d51b8f1c6fde2",
+    "projectilemodel": "#wpn_t8_eqp_radar_shroud_gun_projectile_animate",
     "viewmodel": [
         "#wpn_t8_eqp_radar_shroud_gun_view"
     ],

@@ -24,7 +24,7 @@ CoD.StartMenu_Button_Emblem_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	local BgGrid = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BgGrid:setImage( RegisterImage( "uie_ui_menu_start_menu_grid" ) )
-	BgGrid:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	BgGrid:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	BgGrid:setShaderVector( 0, 0, 0, 0, 0 )
 	BgGrid:setShaderVector( 1, 1, 1, 0, 0 )
 	BgGrid:setShaderVector( 2, 0, 0, 0, 0 )
@@ -34,7 +34,7 @@ CoD.StartMenu_Button_Emblem_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	local NoiseTiledBackingAdd = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBackingAdd:setAlpha( 0.2 )
 	NoiseTiledBackingAdd:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
-	NoiseTiledBackingAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	NoiseTiledBackingAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	NoiseTiledBackingAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBackingAdd:setupNineSliceShader( 196, 88 )
 	self:addElement( NoiseTiledBackingAdd )

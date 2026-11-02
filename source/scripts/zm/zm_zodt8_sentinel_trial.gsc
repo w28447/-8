@@ -1945,7 +1945,7 @@ function function_ad0eee44( str_element )
     s_artifact = struct::get( #"hash_34f827c2750a5a25" + str_element );
     s_moveto = struct::get( s_artifact.target );
     level flag::clear( #"artifact_picked_up" );
-    mdl_artifact = util::spawn_model( #"hash_12eedcc89df28c41", s_artifact.origin, s_artifact.angles );
+    mdl_artifact = util::spawn_model( #"p8_zm_zod_artifact_mind_ghost", s_artifact.origin, s_artifact.angles );
     mdl_artifact notsolid();
     mdl_artifact setscale( 1.25 );
     mdl_artifact playloopsound( #"zmb_sentinel_artifact_lp" );
@@ -1993,7 +1993,7 @@ function function_ad0eee44( str_element )
         
         if ( str_element == #"fire" )
         {
-            mdl_artifact setmodel( #"hash_2b14d34cb1bc161a" );
+            mdl_artifact setmodel( #"p8_zm_zod_artifact_combined_fire_02" );
             mdl_artifact playloopsound( #"zmb_sentinel_artifact_ghosted_lp" );
         }
         
@@ -2556,14 +2556,14 @@ function function_22651585()
     }
     
     v_spawn = level.pap_machine.origin + ( 0, -32, 40 );
-    mdl_artifact = util::spawn_model( #"hash_2b14d34cb1bc161a", v_spawn, ( 0, -90, 0 ) );
+    mdl_artifact = util::spawn_model( #"p8_zm_zod_artifact_combined_fire_02", v_spawn, ( 0, -90, 0 ) );
     mdl_artifact notsolid();
     mdl_artifact playsound( #"zmb_sentinel_artifact_pap" );
     mdl_artifact playloopsound( #"zmb_sentinel_artifact_ghosted_lp" );
     mdl_artifact thread function_8d4d655d();
     mdl_artifact moveto( level.pap_machine.origin + ( 0, 2, 48 ), 3 );
     mdl_artifact waittill( #"movedone" );
-    mdl_artifact setmodel( #"hash_3cdbd25e43a09930" );
+    mdl_artifact setmodel( #"p8_zm_zod_artifact_mind_purple" );
     wait 2.5;
     mdl_artifact playloopsound( #"zmb_sentinel_artifact_charged_lp" );
     mdl_artifact clientfield::set( "" + #"sentinel_shader", 1 );
@@ -4900,7 +4900,7 @@ function function_50128c10( var_79727c11, a_icebergs, n_z_move )
 // Size: 0x6b0
 function function_28228fa2( s_tree )
 {
-    mdl_artifact = util::spawn_model( #"hash_3cdbd25e43a09930", s_tree.origin + ( -48, 0, 0 ), s_tree.angles + ( 0, 180, 0 ) );
+    mdl_artifact = util::spawn_model( #"p8_zm_zod_artifact_mind_purple", s_tree.origin + ( -48, 0, 0 ), s_tree.angles + ( 0, 180, 0 ) );
     mdl_artifact notsolid();
     mdl_artifact playloopsound( #"zmb_sentinel_artifact_charged_lp" );
     mdl_artifact playsound( #"zmb_step8_artifact_activate" );

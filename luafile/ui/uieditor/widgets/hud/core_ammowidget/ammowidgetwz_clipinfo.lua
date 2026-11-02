@@ -259,7 +259,7 @@ CoD.AmmoWidgetWZ_ClipInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	TotalAmmoLabel:setRGB( ColorSet.T8__BEIGE__HEADER.r, ColorSet.T8__BEIGE__HEADER.g, ColorSet.T8__BEIGE__HEADER.b )
 	TotalAmmoLabel:setAlpha( 0 )
 	TotalAmmoLabel:setTTF( "0arame_mono_stencil" )
-	TotalAmmoLabel:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	TotalAmmoLabel:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	TotalAmmoLabel:setShaderVector( 0, 1, 0, 0, 0 )
 	TotalAmmoLabel:setShaderVector( 1, 0, 0, 0, 0 )
 	TotalAmmoLabel:setShaderVector( 2, 0.8, 0.8, 0.8, 0.3 )

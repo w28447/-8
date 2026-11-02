@@ -16,7 +16,7 @@ CoD.CodCasterTeamLogoButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local backgroundBlurDisabled = LUI.UIImage.new( 0.21, 0.79, 0, 0, 0, 0, 28, 84 )
 	backgroundBlurDisabled:setRGB( 0, 0, 0 )
 	backgroundBlurDisabled:setAlpha( 0 )
-	backgroundBlurDisabled:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	backgroundBlurDisabled:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	backgroundBlurDisabled:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( backgroundBlurDisabled )
 	self.backgroundBlurDisabled = backgroundBlurDisabled
@@ -31,7 +31,7 @@ CoD.CodCasterTeamLogoButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	backgroundBlur:setRGB( 0, 0, 0 )
 	backgroundBlur:setAlpha( 0 )
 	backgroundBlur:setZoom( 3 )
-	backgroundBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	backgroundBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	backgroundBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( backgroundBlur )
 	self.backgroundBlur = backgroundBlur
@@ -45,7 +45,7 @@ CoD.CodCasterTeamLogoButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local FocusGlow = LUI.UIImage.new( 0, 1, -49, 49, 0, 1, -51, 51 )
 	FocusGlow:setAlpha( 0 )
 	FocusGlow:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_small" ) )
-	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
+	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_multiplied_add" ) )
 	FocusGlow:setShaderVector( 0, 0, 0, 0.25, 0.25 )
 	FocusGlow:setShaderVector( 1, 1.2, 0, 0, 0 )
 	FocusGlow:setupNineSliceShader( 100, 100 )
@@ -119,7 +119,7 @@ CoD.CodCasterTeamLogoButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local alertIcon = LUI.UIImage.new( 1, 1, -28, -4, 0, 0, 4, 28 )
 	alertIcon:setRGB( 1, 0.41, 0 )
 	alertIcon:setAlpha( 0 )
-	alertIcon:setImage( RegisterImage( 0x11D4E13C821CCE3 ) )
+	alertIcon:setImage( RegisterImage( "t7_hud_cac_warning_16" ) )
 	self:addElement( alertIcon )
 	self.alertIcon = alertIcon
 	

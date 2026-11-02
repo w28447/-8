@@ -26,7 +26,7 @@ CoD.SwipeTak5_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	BgGridDark:setRGB( 0.09, 0.09, 0.09 )
 	BgGridDark:setAlpha( 0.4 )
 	BgGridDark:setImage( RegisterImage( "uie_ui_hud_tak5_swipe_bg_grid" ) )
-	BgGridDark:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	BgGridDark:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	BgGridDark:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( BgGridDark )
 	self.BgGridDark = BgGridDark
@@ -34,7 +34,7 @@ CoD.SwipeTak5_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local BgGrid = LUI.UIImage.new( 0, 0, -3, 753, 0, 0, -3, 453 )
 	BgGrid:setAlpha( 0.5 )
 	BgGrid:setImage( RegisterImage( "uie_ui_hud_tak5_swipe_bg_grid" ) )
-	BgGrid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	BgGrid:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	BgGrid:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( BgGrid )
 	self.BgGrid = BgGrid

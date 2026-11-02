@@ -29,7 +29,7 @@ CoD.EmblemDrawWidgetNoImage.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	TiledPlusGrid:setAlpha( 0 )
 	TiledPlusGrid:setScale( 0.3, 0.3 )
 	TiledPlusGrid:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_repeat_plusgrid" ) )
-	TiledPlusGrid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	TiledPlusGrid:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	TiledPlusGrid:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledPlusGrid:setupNineSliceShader( 220, 220 )
 	self:addElement( TiledPlusGrid )

@@ -75,7 +75,7 @@ CoD.PC_Notif.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_ar
 	
 	local GamertagFriendInvite = LUI.UIText.new( 0, 1, 28, -72, 0, 0, 32, 50 )
 	GamertagFriendInvite:setTTF( "notosans_regular" )
-	GamertagFriendInvite:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	GamertagFriendInvite:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	GamertagFriendInvite:setShaderVector( 0, 20, 0, 0, 0 )
 	GamertagFriendInvite:setShaderVector( 1, 0, 0, 0, 0 )
 	GamertagFriendInvite:setShaderVector( 2, 0, 0, 0, 0.7 )

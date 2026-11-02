@@ -10,7 +10,7 @@ CoD.FE_ButtonPanelShaderContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local FEButtonPanel = LUI.UIImage.new( 0, 1, -2, 2, 0, 1, -3, 3 )
 	FEButtonPanel:setImage( RegisterImage( "uie_t7_menu_frontend_buttonpanelfull" ) )
-	FEButtonPanel:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	FEButtonPanel:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	FEButtonPanel:setShaderVector( 0, 0, 0, 0, 0 )
 	FEButtonPanel:setupNineSliceShader( 12, 12 )
 	self:addElement( FEButtonPanel )

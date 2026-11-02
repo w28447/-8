@@ -4227,7 +4227,7 @@ function pick_up()
 // Params 0
 // Checksum 0xd68034cf, Offset: 0x9ce0
 // Size: 0xa0, Type: bool
-function duf47()
+function function_ab9a9770()
 {
     s_trace = groundtrace( self.origin + ( 0, 0, 70 ), self.origin + ( 0, 0, -100 ), 0, self );
     

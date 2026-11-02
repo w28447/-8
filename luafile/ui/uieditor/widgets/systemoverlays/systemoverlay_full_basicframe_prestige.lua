@@ -211,7 +211,7 @@ CoD.systemOverlay_Full_BasicFrame_Prestige.new = function ( f1_arg0, f1_arg1, f1
 	local optionTextBracketR = LUI.UIImage.new( 0.5, 0.5, -463, -451, 0.5, 0.5, -17, -5 )
 	optionTextBracketR:setAlpha( 0.5 )
 	optionTextBracketR:setImage( RegisterImage( 0x34B555F15CDD010 ) )
-	optionTextBracketR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	optionTextBracketR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	optionTextBracketR:setShaderVector( 0, 3, 0, 0, 0 )
 	self:addElement( optionTextBracketR )
 	self.optionTextBracketR = optionTextBracketR
@@ -220,7 +220,7 @@ CoD.systemOverlay_Full_BasicFrame_Prestige.new = function ( f1_arg0, f1_arg1, f1
 	optionTextBracketL:setAlpha( 0.5 )
 	optionTextBracketL:setZRot( 180 )
 	optionTextBracketL:setImage( RegisterImage( 0x34B555F15CDD010 ) )
-	optionTextBracketL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	optionTextBracketL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	optionTextBracketL:setShaderVector( 0, 3, 0, 0, 0 )
 	self:addElement( optionTextBracketL )
 	self.optionTextBracketL = optionTextBracketL

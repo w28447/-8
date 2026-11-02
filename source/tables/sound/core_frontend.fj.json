@@ -9847,13 +9847,13 @@
         {
             "value": 90,
             "next": 79,
-            "name": "#hash_30be614dd9c1a249",
+            "name": "#vox_blac_my_shop_free_case",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_30be614dd9c1a249",
+                    "name": "#vox_blac_my_shop_free_case",
                     "subtitle": "#hash_6c650828f657805",
                     "assetId": "#hash_5cf98b4796c53ac7",
                     "assetFileNameSustain": "#core_frontend.fj",
@@ -9895,7 +9895,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_30be614dd9c1a249",
+                    "name": "#vox_blac_my_shop_free_case",
                     "subtitle": "#hash_7825c39d6059a1bc",
                     "assetId": "#hash_3bac9fc92bd0faa",
                     "assetFileNameSustain": "#core_frontend.fj",
@@ -9937,7 +9937,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_30be614dd9c1a249",
+                    "name": "#vox_blac_my_shop_free_case",
                     "subtitle": "#hash_727decfe56624717",
                     "assetId": "#hash_2b60a525d0e59eb5",
                     "assetFileNameSustain": "#core_frontend.fj",
@@ -9979,7 +9979,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_30be614dd9c1a249",
+                    "name": "#vox_blac_my_shop_free_case",
                     "subtitle": "#hash_52b44cce2f28acbe",
                     "assetId": "#hash_70ed26036b094340",
                     "assetFileNameSustain": "#core_frontend.fj",
@@ -10021,7 +10021,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_30be614dd9c1a249",
+                    "name": "#vox_blac_my_shop_free_case",
                     "subtitle": "#hash_567923e9d5bc0789",
                     "assetId": "#hash_66d6703530c67ff3",
                     "assetFileNameSustain": "#core_frontend.fj",
@@ -10063,7 +10063,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_30be614dd9c1a249",
+                    "name": "#vox_blac_my_shop_free_case",
                     "subtitle": "#hash_485dc7c16467e980",
                     "assetId": "#hash_264e94927ec1aa76",
                     "assetFileNameSustain": "#core_frontend.fj",
@@ -10105,7 +10105,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_30be614dd9c1a249",
+                    "name": "#vox_blac_my_shop_free_case",
                     "subtitle": "#hash_1f5ee8caec272ddb",
                     "assetId": "#hash_797416c87bc751c1",
                     "assetFileNameSustain": "#core_frontend.fj",
@@ -10147,7 +10147,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_30be614dd9c1a249",
+                    "name": "#vox_blac_my_shop_free_case",
                     "subtitle": "#hash_26d3c22551f19882",
                     "assetId": "#hash_71cd716b6230c0dc",
                     "assetFileNameSustain": "#core_frontend.fj",
@@ -10193,13 +10193,13 @@
         {
             "value": 28,
             "next": 65535,
-            "name": "#hash_b952ff5bfebae18",
+            "name": "#vox_blac_my_shop_free_ult",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_b952ff5bfebae18",
+                    "name": "#vox_blac_my_shop_free_ult",
                     "subtitle": "#hash_5206ecedb262b2fc",
                     "assetId": "#hash_7c30aa427af7dd28",
                     "assetFileNameSustain": "#core_frontend.fj",
@@ -10241,7 +10241,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_b952ff5bfebae18",
+                    "name": "#vox_blac_my_shop_free_ult",
                     "subtitle": "#hash_6093470444464045",
                     "assetId": "#hash_561c4ef0e539ebd",
                     "assetFileNameSustain": "#core_frontend.fj",
@@ -10283,7 +10283,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_b952ff5bfebae18",
+                    "name": "#vox_blac_my_shop_free_ult",
                     "subtitle": "#hash_354f6dc84e5855fe",
                     "assetId": "#hash_a22796ff305d2",
                     "assetFileNameSustain": "#core_frontend.fj",
@@ -10325,7 +10325,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_b952ff5bfebae18",
+                    "name": "#vox_blac_my_shop_free_ult",
                     "subtitle": "#hash_51b40df872b07a57",
                     "assetId": "#hash_4081dc48d9bff2cf",
                     "assetFileNameSustain": "#core_frontend.fj",

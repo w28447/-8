@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_vehicles_cargo_truck",
     "type": "#tag",
-    "material": "#hash_4b0f7189a8da9130",
+    "material": "#vd/mtl_loot_ui_icon_tags_vehicles_cargo_truck",
     "bundle": {
         "type": "#tag",
         "title": "localized18#hash_15f6265e44ff1076",

@@ -11,7 +11,7 @@ CoD.ZMScr_TrialsSm.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local CheckBox2 = LUI.UIImage.new( 0, 0, 3, 33, 0, 0, 4, 34 )
-	CheckBox2:setImage( RegisterImage( 0x3A6C1FB3B354832 ) )
+	CheckBox2:setImage( RegisterImage( "uie_trial_strike_empty" ) )
 	self:addElement( CheckBox2 )
 	self.CheckBox2 = CheckBox2
 	
@@ -82,7 +82,7 @@ CoD.ZMScr_TrialsSm.__resetProperties = function ( f4_arg0 )
 	f4_arg0.glow:completeAnimation()
 	f4_arg0.Counter:setAlpha( 1 )
 	f4_arg0.CheckBox2:setAlpha( 1 )
-	f4_arg0.CheckBox2:setImage( RegisterImage( 0x3A6C1FB3B354832 ) )
+	f4_arg0.CheckBox2:setImage( RegisterImage( "uie_trial_strike_empty" ) )
 	f4_arg0.ZmFxSpark2Ext0:setLeftRight( 0, 0, 12.5, 63.5 )
 	f4_arg0.ZmFxSpark2Ext0:setTopBottom( 0, 0, -63, 14 )
 	f4_arg0.ZmFxSpark2Ext0:setAlpha( 0 )
@@ -214,7 +214,7 @@ CoD.ZMScr_TrialsSm.__clipsPerState = {
 			f19_arg0:__resetProperties()
 			f19_arg0:setupElementClipCounter( 3 )
 			f19_arg0.CheckBox2:completeAnimation()
-			f19_arg0.CheckBox2:setImage( RegisterImage( 0x3A6C1FB3B354832 ) )
+			f19_arg0.CheckBox2:setImage( RegisterImage( "uie_trial_strike_empty" ) )
 			f19_arg0.clipFinished( f19_arg0.CheckBox2 )
 			f19_arg0.white:completeAnimation()
 			f19_arg0.white:setAlpha( 1 )

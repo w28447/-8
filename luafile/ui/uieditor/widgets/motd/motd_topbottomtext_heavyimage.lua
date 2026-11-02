@@ -34,7 +34,7 @@ CoD.MOTD_TopBottomText_HeavyImage.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	TitleLbl:setRGB( 0.86, 0.74, 0.25 )
 	TitleLbl:setAlpha( 0.1 )
 	TitleLbl:setTTF( "ttmussels_demibold" )
-	TitleLbl:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	TitleLbl:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	TitleLbl:setShaderVector( 0, 0, 0, 0, 0 )
 	TitleLbl:setShaderVector( 1, 0, 0, 0, 0 )
 	TitleLbl:setShaderVector( 2, 1, 1, 1, 0 )

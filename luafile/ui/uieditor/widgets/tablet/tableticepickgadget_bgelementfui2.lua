@@ -12,7 +12,7 @@ CoD.TabletIcePickGadget_BgElementFui2.new = function ( f1_arg0, f1_arg1, f1_arg2
 	ConnectedText:setRGB( 0.22, 0.77, 1 )
 	ConnectedText:setAlpha( 0.5 )
 	ConnectedText:setImage( RegisterImage( "uie_ui_menu_inspection_connected_text" ) )
-	ConnectedText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	ConnectedText:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	ConnectedText:setShaderVector( 0, 1.62, 0, 0, 0 )
 	self:addElement( ConnectedText )
 	self.ConnectedText = ConnectedText

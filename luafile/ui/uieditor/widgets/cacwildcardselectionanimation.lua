@@ -18,7 +18,7 @@ CoD.CACWildcardSelectionAnimation.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local ButtonFrameSelected = LUI.UIImage.new( 0, 1, -5, 5, 0, 1, -5, 5 )
 	ButtonFrameSelected:setAlpha( 0 )
-	ButtonFrameSelected:setImage( RegisterImage( 0xE5631774AE12114 ) )
+	ButtonFrameSelected:setImage( RegisterImage( "uie_ui_menu_cac_attachment_button_frame_selected" ) )
 	ButtonFrameSelected:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ButtonFrameSelected )
 	self.ButtonFrameSelected = ButtonFrameSelected

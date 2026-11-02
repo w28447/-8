@@ -15,7 +15,7 @@ CoD.ObituaryCalloutExpandedContainer.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	local DamageDealtBackingBlur = LUI.UIImage.new( 0.5, 0.5, -252.5, 252.5, 0.5, 0.5, -69, 2 )
 	DamageDealtBackingBlur:setRGB( 0, 0, 0 )
-	DamageDealtBackingBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	DamageDealtBackingBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	DamageDealtBackingBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( DamageDealtBackingBlur )
 	self.DamageDealtBackingBlur = DamageDealtBackingBlur

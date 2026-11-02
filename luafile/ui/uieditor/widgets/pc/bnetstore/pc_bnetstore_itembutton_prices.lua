@@ -14,7 +14,7 @@ CoD.PC_BnetStore_ItemButton_Prices.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	SalePrice:setAlpha( 0 )
 	SalePrice:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	SalePrice:setTTF( "ttmussels_regular" )
-	SalePrice:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	SalePrice:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	SalePrice:setShaderVector( 0, 25, 0, 0, 0 )
 	SalePrice:setShaderVector( 1, 0, 0, 0, 0 )
 	SalePrice:setShaderVector( 2, 0.16, 0.6, 0.07, 0.4 )

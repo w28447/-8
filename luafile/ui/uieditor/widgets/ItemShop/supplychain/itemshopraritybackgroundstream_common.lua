@@ -33,7 +33,7 @@ CoD.ItemShopRarityBackgroundStream_Common.new = function ( f1_arg0, f1_arg1, f1_
 	local RadialGlow = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	RadialGlow:setAlpha( 0.15 )
 	RadialGlow:setImage( RegisterImage( "uie_ui_menu_common_radial_glow01" ) )
-	RadialGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	RadialGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	RadialGlow:setShaderVector( 0, 1, 1, 0, 0 )
 	RadialGlow:setShaderVector( 1, 1, 2, 0, 0 )
 	RadialGlow:setShaderVector( 2, 0, 0, 0, 0 )

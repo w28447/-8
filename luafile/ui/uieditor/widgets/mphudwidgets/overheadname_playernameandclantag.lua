@@ -23,7 +23,7 @@ CoD.OverheadName_PlayerNameAndClanTag.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local PlayerName = LUI.UIText.new( 0, 0, 62, 262, 0, 0, 0, 24 )
 	PlayerName:setTTF( "notosans_bold" )
-	PlayerName:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	PlayerName:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	PlayerName:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	PlayerName:linkToElementModel( self, "playerName", true, function ( model )
 		local f3_local0 = model:get()

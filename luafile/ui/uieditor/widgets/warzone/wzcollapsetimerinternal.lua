@@ -14,7 +14,7 @@ CoD.WZCollapseTimerInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local blur = LUI.UIImage.new( 0, 0, -6, 145, 0, 0, 346.5, 384.5 )
 	blur:setAlpha( 0 )
-	blur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	blur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	blur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( blur )
 	self.blur = blur
@@ -73,7 +73,7 @@ CoD.WZCollapseTimerInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local Timer = LUI.UIText.new( 0.5, 0.5, -35, 235, 0, 0, 313, 361 )
 	Timer:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	Timer:setTTF( "0arame_mono_stencil" )
-	Timer:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	Timer:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	Timer:setShaderVector( 0, 1, 0, 0, 0 )
 	Timer:setShaderVector( 1, 1, 0, 0, 0 )
 	Timer:setShaderVector( 2, 1, 1, 1, 0.2 )
@@ -91,7 +91,7 @@ CoD.WZCollapseTimerInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	TimerDownButNotOut:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	TimerDownButNotOut:setAlpha( 0 )
 	TimerDownButNotOut:setTTF( "0arame_mono_stencil" )
-	TimerDownButNotOut:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	TimerDownButNotOut:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	TimerDownButNotOut:setShaderVector( 0, 1, 0, 0, 0 )
 	TimerDownButNotOut:setShaderVector( 1, 1, 0, 0, 0 )
 	TimerDownButNotOut:setShaderVector( 2, 1, 1, 1, 0.2 )
@@ -114,7 +114,7 @@ CoD.WZCollapseTimerInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local notch = LUI.UIImage.new( 0, 0, 4, 12, 0, 0, 359, 371 )
 	notch:setAlpha( 0 )
 	notch:setImage( RegisterImage( "uie_wz_hud_map_danger_bar_notch" ) )
-	notch:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	notch:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	notch:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( notch )
 	self.notch = notch
@@ -127,7 +127,7 @@ CoD.WZCollapseTimerInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	highlight2:setRGB( 0, 0.1, 1 )
 	highlight2:setScale( 0, 0 )
 	highlight2:setImage( RegisterImage( "uie_ui_hud_notifications_glow" ) )
-	highlight2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	highlight2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	highlight2:setShaderVector( 0, 3, 0, 0, 0 )
 	self:addElement( highlight2 )
 	self.highlight2 = highlight2
@@ -138,7 +138,7 @@ CoD.WZCollapseTimerInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	highlight:setZRot( 360 )
 	highlight:setScale( 1.96, 0.4 )
 	highlight:setImage( RegisterImage( "uie_ui_hud_notifications_glow" ) )
-	highlight:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	highlight:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	highlight:setShaderVector( 0, 3, 0, 0, 0 )
 	self:addElement( highlight )
 	self.highlight = highlight
@@ -148,7 +148,7 @@ CoD.WZCollapseTimerInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	Message:setAlpha( 0 )
 	Message:setText( Engine[0xF9F1239CFD921FE]( 0xD22DE36990C6974 ) )
 	Message:setTTF( "ttmussels_regular" )
-	Message:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	Message:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	Message:setShaderVector( 0, 1.02, 0, 0, 0 )
 	Message:setShaderVector( 1, -0.23, 0, 0, 0 )
 	Message:setShaderVector( 2, 0, 0, 1, 1 )

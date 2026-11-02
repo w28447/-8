@@ -13,7 +13,7 @@ CoD.CodCasterObjectiveStatusLifeCount.new = function ( f1_arg0, f1_arg1, f1_arg2
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local Blur = LUI.UIImage.new( 0.5, 0.5, -205, 205, 0.5, 0.5, -13.5, 11.5 )
-	Blur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	Blur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	Blur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( Blur )
 	self.Blur = Blur

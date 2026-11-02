@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_deadlyanimals_02",
+    "type": "#tag",
+    "material": "#vd/mtl_loot_ui_icon_tags_deadlyanimals_02",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#tags/deadly_animals_02",
+        "icon": "image#loot_ui_icon_tags_deadlyanimals_trex",
+        "isdefault": 0
+    }
+}

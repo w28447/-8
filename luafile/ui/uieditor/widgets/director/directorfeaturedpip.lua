@@ -13,22 +13,22 @@ CoD.DirectorFeaturedPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local FeaturedPipCurrentBracket = LUI.UIImage.new( 0, 0, 0, 54, 0, 0, 0, 22 )
 	FeaturedPipCurrentBracket:setAlpha( 0 )
-	FeaturedPipCurrentBracket:setImage( RegisterImage( 0xA2CE59E7B7605F ) )
+	FeaturedPipCurrentBracket:setImage( RegisterImage( "uie_ui_director_featured_pip_current_brackets" ) )
 	FeaturedPipCurrentBracket:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FeaturedPipCurrentBracket )
 	self.FeaturedPipCurrentBracket = FeaturedPipCurrentBracket
 	
 	local FeaturedPipEmpty = LUI.UIImage.new( 0, 0, 0, 54, 0, 0, 0, 22 )
 	FeaturedPipEmpty:setAlpha( 0.25 )
-	FeaturedPipEmpty:setImage( RegisterImage( 0x4C042BC6C9D43A9 ) )
+	FeaturedPipEmpty:setImage( RegisterImage( "uie_ui_director_featured_pip_empty" ) )
 	self:addElement( FeaturedPipEmpty )
 	self.FeaturedPipEmpty = FeaturedPipEmpty
 	
 	local FeaturedPipCurrent = LUI.UIImage.new( 0, 0, 0, 54, 0, 0, 0, 22 )
 	FeaturedPipCurrent:setRGB( 0.93, 0.81, 0.03 )
 	FeaturedPipCurrent:setAlpha( 0 )
-	FeaturedPipCurrent:setImage( RegisterImage( 0x9D0184504FDF2CD ) )
-	FeaturedPipCurrent:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	FeaturedPipCurrent:setImage( RegisterImage( "uie_ui_director_featured_pip_current" ) )
+	FeaturedPipCurrent:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	FeaturedPipCurrent:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FeaturedPipCurrent )
 	self.FeaturedPipCurrent = FeaturedPipCurrent
@@ -37,7 +37,7 @@ CoD.DirectorFeaturedPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	FeaturedPipGlow:setRGB( 0.89, 0.45, 0.04 )
 	FeaturedPipGlow:setAlpha( 0 )
 	FeaturedPipGlow:setImage( RegisterImage( 0x69CF640F22433BA ) )
-	FeaturedPipGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	FeaturedPipGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	FeaturedPipGlow:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( FeaturedPipGlow )
 	self.FeaturedPipGlow = FeaturedPipGlow
@@ -45,7 +45,7 @@ CoD.DirectorFeaturedPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local FeaturedPipGlow2 = LUI.UIImage.new( 0, 0, 12, 42, 0, 0, 8.5, 13.5 )
 	FeaturedPipGlow2:setAlpha( 0 )
 	FeaturedPipGlow2:setImage( RegisterImage( 0x69CF640F22433BA ) )
-	FeaturedPipGlow2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	FeaturedPipGlow2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	FeaturedPipGlow2:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FeaturedPipGlow2 )
 	self.FeaturedPipGlow2 = FeaturedPipGlow2
@@ -54,7 +54,7 @@ CoD.DirectorFeaturedPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	Image:setRGB( 0.89, 0.45, 0.04 )
 	Image:setAlpha( 0 )
 	Image:setImage( RegisterImage( 0x69CF640F22433BA ) )
-	Image:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	Image:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	Image:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( Image )
 	self.Image = Image

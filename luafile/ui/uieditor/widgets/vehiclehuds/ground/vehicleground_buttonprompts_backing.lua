@@ -10,7 +10,7 @@ CoD.VehicleGround_ButtonPrompts_Backing.new = function ( f1_arg0, f1_arg1, f1_ar
 	local GradientBG = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	GradientBG:setRGB( 0, 0, 0 )
 	GradientBG:setAlpha( 0.75 )
-	GradientBG:setImage( RegisterImage( 0x79E902D10483736 ) )
+	GradientBG:setImage( RegisterImage( "uie_hud_gradient01" ) )
 	GradientBG:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_edges" ) )
 	GradientBG:setShaderVector( 0, 0, 0, 0, 0.2 )
 	self:addElement( GradientBG )

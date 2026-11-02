@@ -16,7 +16,7 @@ CoD.GameEndScore_GameStatusPlayerKills.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local PlayerKills = LUI.UIText.new( 1, 1, -90, -8, 0, 0, 7.5, 42.5 )
 	PlayerKills:setTTF( "0arame_mono_stencil" )
-	PlayerKills:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	PlayerKills:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	PlayerKills:setShaderVector( 0, 0.8, 0, 0, 0 )
 	PlayerKills:setShaderVector( 1, 0, 0, 0, 0 )
 	PlayerKills:setShaderVector( 2, 1, 1, 1, 0.35 )

@@ -38,14 +38,14 @@ CoD.vhud_HellstormRing.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local GlowL = LUI.UIImage.new( 0, 0, 0, 368, 0, 0, 0, 736 )
 	GlowL:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_ring_glow" ) )
-	GlowL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	GlowL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	GlowL:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( GlowL )
 	self.GlowL = GlowL
 	
 	local GlowR = LUI.UIImage.new( 0.5, 0.5, 368, 0, 0, 0, 0, 736 )
 	GlowR:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_ring_glow" ) )
-	GlowR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	GlowR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	GlowR:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( GlowR )
 	self.GlowR = GlowR

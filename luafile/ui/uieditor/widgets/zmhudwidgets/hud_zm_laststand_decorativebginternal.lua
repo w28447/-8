@@ -15,14 +15,14 @@ CoD.Hud_ZM_LastStand_DecorativeBGInternal.new = function ( f1_arg0, f1_arg1, f1_
 	
 	local DecorativeCenter = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	DecorativeCenter:setImage( RegisterImage( "uie_zm_hud_revive_decorativebg01" ) )
-	DecorativeCenter:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	DecorativeCenter:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	DecorativeCenter:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( DecorativeCenter )
 	self.DecorativeCenter = DecorativeCenter
 	
 	local DecorativeRing = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	DecorativeRing:setImage( RegisterImage( "uie_zm_hud_revive_decorativebg03" ) )
-	DecorativeRing:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	DecorativeRing:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	DecorativeRing:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( DecorativeRing )
 	self.DecorativeRing = DecorativeRing

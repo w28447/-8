@@ -85,7 +85,7 @@ CoD.DirectorCustomStartButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	PlayTextFocus:setAlpha( 0 )
 	PlayTextFocus:setText( LocalizeToUpperString( "menu/play" ) )
 	PlayTextFocus:setTTF( "ttmussels_demibold" )
-	PlayTextFocus:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
+	PlayTextFocus:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow" ) )
 	PlayTextFocus:setShaderVector( 0, 0.14, 0, 0, 0 )
 	PlayTextFocus:setShaderVector( 1, 0.34, 0, 0, 0 )
 	PlayTextFocus:setShaderVector( 2, 1, 0, 0, 0 )

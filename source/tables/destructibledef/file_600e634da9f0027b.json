@@ -1,7 +1,7 @@
 {
     "name": "#hash_600e634da9f0027b",
     "model": "#veh_t8_civ_truck_mini_dest_tanker_full_dirty_wht_morocco",
-    "unk20": "#hash_7c83f8ee833d5ae3",
+    "unk20": "#veh_t8_civ_truck_mini_tanker_dead_full_wht",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
     "pieces": [

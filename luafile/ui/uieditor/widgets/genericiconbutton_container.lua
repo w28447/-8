@@ -11,7 +11,7 @@ CoD.GenericIconButton_Container.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local Blur = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 14, 0 )
 	Blur:setRGB( 0.08, 0.08, 0.08 )
 	Blur:setAlpha( 0.8 )
-	Blur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	Blur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	Blur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( Blur )
 	self.Blur = Blur
@@ -49,7 +49,7 @@ CoD.GenericIconButton_Container.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local Glow = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, -55, 7 )
 	Glow:setAlpha( 0 )
-	Glow:setImage( RegisterImage( 0xC3B2316BAE91099 ) )
+	Glow:setImage( RegisterImage( "uie_ui_menu_director_selection_bar" ) )
 	self:addElement( Glow )
 	self.Glow = Glow
 	

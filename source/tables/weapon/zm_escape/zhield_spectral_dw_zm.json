@@ -71,13 +71,13 @@
     "tunables1": "#zhield_spectral_dw_tunables_zm",
     "sharedWeaponSounds": "#battle_shield",
     "viewmodel": [
-        "#hash_607323a4b934bd31"
+        "#wpn_t8_zm_esc_shield_key_view"
     ],
     "worldModel": [
-        "#hash_6db3dde314ca084"
+        "#wpn_t8_zm_esc_shield_key_world"
     ],
     "stowedmodel": [
-        "#hash_6db3dde314ca084"
+        "#wpn_t8_zm_esc_shield_key_world"
     ],
     "gadgetIconAvailable": "#ui_icon_weapons_zm_shield_spectral_door",
     "gadgetIconUnavailable": "#ui_icon_weapons_zm_shield_spectral_door",
@@ -88,10 +88,10 @@
     "fx_bd8": "#hash_f282363a66bd14e2",
     "#hash_21329beb": [
         {
-            "model": "#hash_6db3dde314ca084"
+            "model": "#wpn_t8_zm_esc_shield_key_world"
         },
         {
-            "model": "#hash_6db3dde314ca084"
+            "model": "#wpn_t8_zm_esc_shield_key_world"
         }
     ]
 }

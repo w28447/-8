@@ -53,7 +53,7 @@ CoD.PurchaseContract_StateIndicator.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	Free:setAlpha( 0 )
 	Free:setText( LocalizeToUpperString( "mpui/free" ) )
 	Free:setTTF( "ttmussels_demibold" )
-	Free:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	Free:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	Free:setLetterSpacing( 2 )
 	Free:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	Free:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

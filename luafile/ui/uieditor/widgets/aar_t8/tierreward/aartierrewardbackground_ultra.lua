@@ -44,7 +44,7 @@ CoD.AARTierRewardBackground_Ultra.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local RadialGlow = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	RadialGlow:setAlpha( 0.9 )
 	RadialGlow:setImage( RegisterImage( "uie_ui_menu_common_radial_glow01" ) )
-	RadialGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	RadialGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	RadialGlow:setShaderVector( 0, 0.5, 0, 0, 0 )
 	RadialGlow:setShaderVector( 1, 1, 2, 0, 0 )
 	RadialGlow:setShaderVector( 2, 0, 0, 0, 0 )

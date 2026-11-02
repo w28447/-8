@@ -36,7 +36,7 @@ CoD.ZMInvObjectiveProgress.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local TextBacking = LUI.UIImage.new( 0.5, 0.5, -192, 192, 0, 0, 3, 137 )
 	TextBacking:setAlpha( 0.9 )
 	TextBacking:setImage( RegisterImage( "uie_zm_hud_inventory_objectivesmoke" ) )
-	TextBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	TextBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	TextBacking:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( TextBacking )
 	self.TextBacking = TextBacking
@@ -51,7 +51,7 @@ CoD.ZMInvObjectiveProgress.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local Description = LUI.UIText.new( 0.5, 0.5, -185, 185, 0, 0, 55, 76 )
 	Description:setRGB( 0, 0.75, 1 )
 	Description:setTTF( "skorzhen" )
-	Description:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	Description:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	Description:setShaderVector( 0, 0.7, 0, 0, 0 )
 	Description:setShaderVector( 1, 1, 0, 0, 0 )
 	Description:setShaderVector( 2, 0.05, 0, 0.2, 1 )

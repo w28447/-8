@@ -15,7 +15,7 @@ CoD.ZMScr_ListingSm.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local AllyBGMainBlur = LUI.UIImage.new( 0, 0, 0, 196, 0, 0, 0, 88 )
 	AllyBGMainBlur:setImage( RegisterImage( 0xA0DC137E93FBA11 ) )
-	AllyBGMainBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	AllyBGMainBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	AllyBGMainBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( AllyBGMainBlur )
 	self.AllyBGMainBlur = AllyBGMainBlur

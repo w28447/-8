@@ -39,7 +39,7 @@ function function_3e8d9b27( previs_weapon )
     }
     else
     {
-        previs_model setmodel( #"hash_7a80bed4a96537e6" );
+        previs_model setmodel( #"wpn_t8_eqp_alarm_world_yellow" );
     }
     
     previs_model notsolid();

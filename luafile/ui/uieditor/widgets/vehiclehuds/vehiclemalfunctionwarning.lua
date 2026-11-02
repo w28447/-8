@@ -18,7 +18,7 @@ CoD.vehicleMalfunctionWarning.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local GlowRed2 = LUI.UIImage.new( 0, 0, -311, 631, 0, 0, -240, 281 )
 	GlowRed2:setRGB( 1, 0, 0 )
 	GlowRed2:setImage( RegisterImage( "uie_ui_hud_vehicle_lockon_glow" ) )
-	GlowRed2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	GlowRed2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	GlowRed2:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( GlowRed2 )
 	self.GlowRed2 = GlowRed2
@@ -58,7 +58,7 @@ CoD.vehicleMalfunctionWarning.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 0, 0, 320, 0.09, 0.09, -3.5, 37.5 )
 	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
-	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
 	self:addElement( NoiseTiledBacking )
@@ -66,7 +66,7 @@ CoD.vehicleMalfunctionWarning.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local TiledLed2 = LUI.UIImage.new( 0, 1.28, 0, 0, 0, 1, 0, 0 )
 	TiledLed2:setImage( RegisterImage( "uie_ui_menu_store_repeat_dot_pattern" ) )
-	TiledLed2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	TiledLed2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	TiledLed2:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledLed2:setupNineSliceShader( 24, 24 )
 	self:addElement( TiledLed2 )
@@ -74,7 +74,7 @@ CoD.vehicleMalfunctionWarning.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local TiledLed3 = LUI.UIImage.new( 0, 1.28, 0, 0, 0, 1, 0, 0 )
 	TiledLed3:setImage( RegisterImage( "uie_ui_menu_store_repeat_dot_pattern" ) )
-	TiledLed3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	TiledLed3:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	TiledLed3:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledLed3:setupNineSliceShader( 24, 24 )
 	self:addElement( TiledLed3 )
@@ -82,7 +82,7 @@ CoD.vehicleMalfunctionWarning.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local TiledLedAdd = LUI.UIImage.new( 0, 1.28, 0, 0, 0, 1, 0, 0 )
 	TiledLedAdd:setImage( RegisterImage( "uie_ui_menu_store_repeat_dot_pattern" ) )
-	TiledLedAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	TiledLedAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	TiledLedAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledLedAdd:setupNineSliceShader( 24, 24 )
 	self:addElement( TiledLedAdd )
@@ -92,7 +92,7 @@ CoD.vehicleMalfunctionWarning.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	GlowStatic:setRGB( 0.86, 0, 0 )
 	GlowStatic:setScale( 1.3, 1.5 )
 	GlowStatic:setImage( RegisterImage( "uie_ui_hud_common_glow" ) )
-	GlowStatic:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	GlowStatic:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	GlowStatic:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( GlowStatic )
 	self.GlowStatic = GlowStatic
@@ -100,14 +100,14 @@ CoD.vehicleMalfunctionWarning.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local Glow = LUI.UIImage.new( 0.5, 0.5, -160, 160, 0, 0, -23.5, 64.5 )
 	Glow:setRGB( 1, 0, 0 )
 	Glow:setImage( RegisterImage( "uie_ui_hud_common_glow" ) )
-	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	Glow:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Glow )
 	self.Glow = Glow
 	
 	local TiledLed = LUI.UIImage.new( 0, 1.28, 0, 0, 0, 1, 0, 0 )
 	TiledLed:setImage( RegisterImage( "uie_ui_menu_store_repeat_dot_pattern" ) )
-	TiledLed:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	TiledLed:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	TiledLed:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledLed:setupNineSliceShader( 24, 24 )
 	self:addElement( TiledLed )
@@ -138,7 +138,7 @@ CoD.vehicleMalfunctionWarning.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local text = LUI.UIText.new( 0.5, 0.5, -125, 195, 0.5, 0.5, -12.5, 14.5 )
 	text:setText( Engine[0xF9F1239CFD921FE]( 0x7BAB87FECE0C88C ) )
 	text:setTTF( "0arame_mono_stencil" )
-	text:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6250C6FCAC36BD4 ) )
+	text:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_outline" ) )
 	text:setShaderVector( 0, 0, 0, 0, 0 )
 	text:setShaderVector( 1, 1, 0, 0, 1 )
 	text:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

@@ -10,7 +10,7 @@ CoD.CommonAnalysingIndicator.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local AnalysingFrame = LUI.UIImage.new( 0, 0, 0, 112, 0, 0, 0, 112 )
 	AnalysingFrame:setImage( RegisterImage( "uie_ui_menu_inspection_analysing_frame" ) )
-	AnalysingFrame:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	AnalysingFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	AnalysingFrame:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( AnalysingFrame )
 	self.AnalysingFrame = AnalysingFrame
@@ -45,7 +45,7 @@ CoD.CommonAnalysingIndicator.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local AnalysingText = LUI.UIImage.new( 0, 0, 81.5, 185.5, 0, 0, 20.5, 52.5 )
 	AnalysingText:setAlpha( 0 )
 	AnalysingText:setImage( RegisterImage( "uie_ui_menu_inspection_analysing_text" ) )
-	AnalysingText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	AnalysingText:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	AnalysingText:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( AnalysingText )
 	self.AnalysingText = AnalysingText
@@ -53,7 +53,7 @@ CoD.CommonAnalysingIndicator.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local ConnectedText = LUI.UIImage.new( 0, 0, 81.5, 181.5, 0, 0, 20.5, 52.5 )
 	ConnectedText:setAlpha( 0 )
 	ConnectedText:setImage( RegisterImage( "uie_ui_menu_inspection_connected_text" ) )
-	ConnectedText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	ConnectedText:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	ConnectedText:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ConnectedText )
 	self.ConnectedText = ConnectedText
@@ -61,7 +61,7 @@ CoD.CommonAnalysingIndicator.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local ConnectedTextDepth = LUI.UIImage.new( 0, 0, 81.5, 181.5, 0, 0, 20.5, 52.5 )
 	ConnectedTextDepth:setAlpha( 0 )
 	ConnectedTextDepth:setImage( RegisterImage( "uie_ui_menu_inspection_connected_text" ) )
-	ConnectedTextDepth:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	ConnectedTextDepth:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	ConnectedTextDepth:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ConnectedTextDepth )
 	self.ConnectedTextDepth = ConnectedTextDepth
@@ -69,7 +69,7 @@ CoD.CommonAnalysingIndicator.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local Arrow = LUI.UIImage.new( 0, 0, 58.5, 70.5, 0, 0, 41.5, 53.5 )
 	Arrow:setZRot( -90 )
 	Arrow:setImage( RegisterImage( "uie_ui_menu_social_emblem_corner" ) )
-	Arrow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	Arrow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	Arrow:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Arrow )
 	self.Arrow = Arrow
@@ -100,12 +100,12 @@ CoD.CommonAnalysingIndicator.__resetProperties = function ( f2_arg0 )
 	f2_arg0.AnalysingFrameWipe:setShaderVector( 4, 0, 0, 0, 0 )
 	f2_arg0.AnalysingBacking:setAlpha( 1 )
 	f2_arg0.ConnectedText:setAlpha( 0 )
-	f2_arg0.ConnectedText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	f2_arg0.ConnectedText:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	f2_arg0.ConnectedText:setShaderVector( 0, 1, 0, 0, 0 )
 	f2_arg0.ConnectedTextDepth:setAlpha( 0 )
 	f2_arg0.ConnectedTextDepth:setZoom( 0 )
 	f2_arg0.Arrow:setAlpha( 1 )
-	f2_arg0.Arrow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	f2_arg0.Arrow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	f2_arg0.Arrow:setShaderVector( 0, 1, 0, 0, 0 )
 	f2_arg0.AnalysingBackingProgress:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	f2_arg0.AnalysingBackingProgress:setShaderVector( 0, 0, 0, 0, 0 )
@@ -114,7 +114,7 @@ CoD.CommonAnalysingIndicator.__resetProperties = function ( f2_arg0 )
 	f2_arg0.AnalysingBackingProgress:setShaderVector( 3, 0, 0, 0, 0 )
 	f2_arg0.AnalysingBackingProgress:setShaderVector( 4, 0, 0, 0, 0 )
 	f2_arg0.AnalysingText:setAlpha( 0 )
-	f2_arg0.AnalysingText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	f2_arg0.AnalysingText:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	f2_arg0.AnalysingText:setShaderVector( 0, 1, 0, 0, 0 )
 end
 
@@ -158,7 +158,7 @@ CoD.CommonAnalysingIndicator.__clipsPerState = {
 			
 			f3_arg0.ConnectedText:completeAnimation()
 			f3_arg0.ConnectedText:setAlpha( 0 )
-			f3_arg0.ConnectedText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f3_arg0.ConnectedText:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f3_arg0.ConnectedText:setShaderVector( 0, 1, 0, 0, 0 )
 			f3_local0( f3_arg0.ConnectedText )
 			local f3_local1 = function ( f8_arg0 )
@@ -210,7 +210,7 @@ CoD.CommonAnalysingIndicator.__clipsPerState = {
 			
 			f3_arg0.Arrow:completeAnimation()
 			f3_arg0.Arrow:setAlpha( 0.3 )
-			f3_arg0.Arrow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+			f3_arg0.Arrow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 			f3_arg0.Arrow:setShaderVector( 0, 1, 0, 0, 0 )
 			f3_local2( f3_arg0.Arrow )
 			f3_arg0.nextClip = "DefaultClip"
@@ -375,7 +375,7 @@ CoD.CommonAnalysingIndicator.__clipsPerState = {
 			
 			f15_arg0.AnalysingText:completeAnimation()
 			f15_arg0.AnalysingText:setAlpha( 0 )
-			f15_arg0.AnalysingText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f15_arg0.AnalysingText:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f15_arg0.AnalysingText:setShaderVector( 0, 1, 0, 0, 0 )
 			f15_local4( f15_arg0.AnalysingText )
 		end

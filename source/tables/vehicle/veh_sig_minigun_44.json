@@ -15,7 +15,7 @@
     "skidSpeedMax": 600,
     "peelSpeedMax": 600,
     "futzName": "#mpl_quad_pov",
-    "model": "#hash_253fe56e77e698b3",
+    "model": "#wpn_t8_sig_minigun_turret_44",
     "deathModel": "#tag_origin",
     "compassIconMaterial": "#compass_turret_white",
     "steerAxisName": "AXIS_LSTICK",

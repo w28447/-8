@@ -17,7 +17,7 @@ CoD.PaintjobSelectorItem_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local SceneBlur = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	SceneBlur:setRGB( 0, 0, 0 )
-	SceneBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	SceneBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	SceneBlur:setShaderVector( 0, 0, 0.4, 0, 0 )
 	self:addElement( SceneBlur )
 	self.SceneBlur = SceneBlur
@@ -34,7 +34,7 @@ CoD.PaintjobSelectorItem_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local FocusGlow = LUI.UIImage.new( 0, 1, -130, 130, 0.05, 0.95, -44, 44 )
 	FocusGlow:setAlpha( 0 )
 	FocusGlow:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_large" ) )
-	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
+	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_multiplied_add" ) )
 	FocusGlow:setShaderVector( 0, 0, 0, 0.25, 0.25 )
 	FocusGlow:setShaderVector( 1, 1.2, 0, 0, 0 )
 	FocusGlow:setupNineSliceShader( 300, 300 )
@@ -100,14 +100,14 @@ CoD.PaintjobSelectorItem_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local equippedIcon = LUI.UIImage.new( 1, 1, -23, -2, 0, 0, 1.5, 22.5 )
 	equippedIcon:setRGB( 0.56, 0.68, 0.27 )
 	equippedIcon:setAlpha( 0 )
-	equippedIcon:setImage( RegisterImage( 0xB0337CBFC61A7A2 ) )
+	equippedIcon:setImage( RegisterImage( "t7_hud_cac_equipped_16" ) )
 	self:addElement( equippedIcon )
 	self.equippedIcon = equippedIcon
 	
 	local alertIcon = LUI.UIImage.new( 1, 1, -23, -2, 0, 0, 1.5, 22.5 )
 	alertIcon:setRGB( 1, 0.41, 0 )
 	alertIcon:setAlpha( 0 )
-	alertIcon:setImage( RegisterImage( 0x11D4E13C821CCE3 ) )
+	alertIcon:setImage( RegisterImage( "t7_hud_cac_warning_16" ) )
 	self:addElement( alertIcon )
 	self.alertIcon = alertIcon
 	

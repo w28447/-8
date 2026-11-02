@@ -24,7 +24,7 @@ LUI.createMenu.player_insertion_choice = function ( f1_arg0, f1_arg1 )
 	InsertionChoice:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
 	InsertionChoice:setBackingType( 2 )
 	InsertionChoice:setBackingXPadding( 3 )
-	InsertionChoice:setBackingMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	InsertionChoice:setBackingMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	InsertionChoice:setBackingShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( InsertionChoice )
 	self.InsertionChoice = InsertionChoice

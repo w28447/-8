@@ -47,7 +47,7 @@ CoD.CallingCards_Asset_robotdawg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	glowyBits:setAlpha( 0 )
 	glowyBits:setScale( 1.05, 1.05 )
 	glowyBits:setImage( RegisterImage( "uie_ui_icon_callingcards_wz_vehicular_master_glowbits" ) )
-	glowyBits:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	glowyBits:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	glowyBits:setShaderVector( 0, 1.62, 0, 0, 0 )
 	self:addElement( glowyBits )
 	self.glowyBits = glowyBits
@@ -75,7 +75,7 @@ CoD.CallingCards_Asset_robotdawg.__resetProperties = function ( f2_arg0 )
 	f2_arg0.Mask2:setShaderVector( 3, 0, 0, 0, 0 )
 	f2_arg0.Mask2:setShaderVector( 4, 0, 0, 0, 0 )
 	f2_arg0.glowyBits:setAlpha( 0 )
-	f2_arg0.glowyBits:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	f2_arg0.glowyBits:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	f2_arg0.glowyBits:setShaderVector( 0, 1.62, 0, 0, 0 )
 end
 
@@ -170,7 +170,7 @@ CoD.CallingCards_Asset_robotdawg.__clipsPerState = {
 			
 			f3_arg0.glowyBits:completeAnimation()
 			f3_arg0.glowyBits:setAlpha( 0 )
-			f3_arg0.glowyBits:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f3_arg0.glowyBits:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f3_arg0.glowyBits:setShaderVector( 0, 1.62, 0, 0, 0 )
 			f3_local2( f3_arg0.glowyBits )
 			f3_arg0.nextClip = "DefaultClip"

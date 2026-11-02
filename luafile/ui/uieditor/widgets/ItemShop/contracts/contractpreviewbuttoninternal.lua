@@ -51,7 +51,7 @@ CoD.ContractPreviewButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.LED2 = LED2
 	
 	local ContractIcon = LUI.UIImage.new( 0, 0, 1, 225, 0, 0, -1, 309 )
-	ContractIcon:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	ContractIcon:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	ContractIcon:setShaderVector( 0, 0.9, 0, 0, 0 )
 	ContractIcon:setShaderVector( 1, 1, 1, 0, 0 )
 	ContractIcon:setShaderVector( 2, 0, 0, 0, 0 )
@@ -65,7 +65,7 @@ CoD.ContractPreviewButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.ContractIcon = ContractIcon
 	
 	local Border = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	Border:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE7BDCB879A5176D ) )
+	Border:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_rectangle_normal" ) )
 	Border:setShaderVector( 0, 0, 0, 0, 0 )
 	Border:setShaderVector( 1, 0, 0, 0, 0 )
 	Border:setupNineSliceShader( 1, 1 )

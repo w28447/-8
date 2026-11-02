@@ -93,7 +93,7 @@ CoD.AmmoWidgetMP_AbilityItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local Box = LUI.UIImage.new( 0, 0, -0.5, 69.5, 0, 0, -4.5, 65.5 )
 	Box:setImage( RegisterImage( "uie_ui_hud_core_abeg_widget_box" ) )
-	Box:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	Box:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	Box:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( Box )
 	self.Box = Box
@@ -173,7 +173,7 @@ CoD.AmmoWidgetMP_AbilityItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	GlowRing:setRGB( 1, 0.44, 0 )
 	GlowRing:setAlpha( 0 )
 	GlowRing:setImage( RegisterImage( "uie_hex_flare_ring" ) )
-	GlowRing:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	GlowRing:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	GlowRing:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( GlowRing )
 	self.GlowRing = GlowRing

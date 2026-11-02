@@ -10,7 +10,7 @@ CoD.StartMenu_Barracks_WZ_WinRecordWidget.new = function ( f1_arg0, f1_arg1, f1_
 	
 	local BgGrid = LUI.UIImage.new( 0, 0, 0, 457, 0, 1, 0, 0 )
 	BgGrid:setImage( RegisterImage( "uie_ui_menu_start_menu_small_grid" ) )
-	BgGrid:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	BgGrid:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	BgGrid:setShaderVector( 0, 0, 0, 0, 0 )
 	BgGrid:setShaderVector( 1, 1, 1, 0, 0 )
 	BgGrid:setShaderVector( 2, 0, 0, 0, 0 )

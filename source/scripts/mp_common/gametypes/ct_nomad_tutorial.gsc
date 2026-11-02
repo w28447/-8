@@ -1404,7 +1404,7 @@ function function_4f54cf00( s_loc, var_ebb5bb71 )
         level.var_632734b1 = 1;
     }
     
-    e_mine = ct_utils::function_9a283f84( s_loc, #"hash_22e8d1ae72884594" );
+    e_mine = ct_utils::function_9a283f84( s_loc, #"wpn_t8_eqp_tripwire_ied_projectile" );
     e_mine setscale( 1.5 );
     v_loc = ( s_loc.origin[ 0 ], s_loc.origin[ 1 ], s_loc.origin[ 2 ] + 10 );
     waypoint = ct_utils::create_waypoint( #"hash_43f27b76957da4d2", v_loc, s_loc.angles, #"any", undefined, undefined, undefined );

@@ -37,7 +37,7 @@ CoD.DirectorFindGamePlaylistInfoDescriptionPanel.new = function ( f1_arg0, f1_ar
 	LayoutElementBR2:setAlpha( 0.2 )
 	LayoutElementBR2:setZRot( -90 )
 	LayoutElementBR2:setImage( RegisterImage( 0x34B575F15CDD376 ) )
-	LayoutElementBR2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	LayoutElementBR2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	LayoutElementBR2:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( LayoutElementBR2 )
 	self.LayoutElementBR2 = LayoutElementBR2

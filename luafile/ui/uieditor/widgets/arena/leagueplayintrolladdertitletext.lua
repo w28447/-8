@@ -13,7 +13,7 @@ CoD.LeaguePlayIntrolLadderTitleText.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	CurrentSkillPlacementGlowPC = LUI.UIText.new( 0, 0, 0, 1922, 0, 0, 0, 48 )
 	CurrentSkillPlacementGlowPC:setTTF( "ttmussels_demibold" )
-	CurrentSkillPlacementGlowPC:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	CurrentSkillPlacementGlowPC:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	CurrentSkillPlacementGlowPC:setShaderVector( 0, 0.47, 0, 0, 0 )
 	CurrentSkillPlacementGlowPC:setShaderVector( 1, 0.05, 0, 0, 0 )
 	CurrentSkillPlacementGlowPC:setShaderVector( 2, 1, 1, 1, 0.28 )

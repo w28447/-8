@@ -26,7 +26,7 @@ CoD.Hud_ZM_Trial_Shame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.Portrait = Portrait
 	
 	local Skull = LUI.UIImage.new( 0, 0, 53, 149, 0, 0, 131.5, 227.5 )
-	Skull:setImage( RegisterImage( 0xE4DE8D9B8388B9F ) )
+	Skull:setImage( RegisterImage( "uie_trial_strike_cross" ) )
 	self:addElement( Skull )
 	self.Skull = Skull
 	

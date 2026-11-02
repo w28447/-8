@@ -26,7 +26,7 @@ CoD.PC_Achievement_Container.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local FocusGlow = LUI.UIImage.new( -0.01, 1.01, -134, 134, 0.99, 0.01, -120, 120 )
 	FocusGlow:setAlpha( 0 )
 	FocusGlow:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_large" ) )
-	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
+	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_multiplied_add" ) )
 	FocusGlow:setShaderVector( 0, 0, 0, 0.25, 0.25 )
 	FocusGlow:setShaderVector( 1, 1.2, 0, 0, 0 )
 	FocusGlow:setupNineSliceShader( 300, 500 )
@@ -51,7 +51,7 @@ CoD.PC_Achievement_Container.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local ProgressBarBGBlur = LUI.UIImage.new( 0, 1, 110, -80, 0, 1, 11, -11 )
 	ProgressBarBGBlur:setRGB( 0.08, 0.08, 0.08 )
-	ProgressBarBGBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	ProgressBarBGBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	ProgressBarBGBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( ProgressBarBGBlur )
 	self.ProgressBarBGBlur = ProgressBarBGBlur

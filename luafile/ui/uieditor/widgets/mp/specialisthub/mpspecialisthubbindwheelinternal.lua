@@ -20,7 +20,7 @@ CoD.MPSpecialistHUBBindWheelInternal.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	local TiledPlusGrid = LUI.UIImage.new( 0, 0, -21.5, 1898.5, 0, 0, 0, 1082 )
 	TiledPlusGrid:setAlpha( 0.02 )
 	TiledPlusGrid:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_repeat_plusgrid" ) )
-	TiledPlusGrid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	TiledPlusGrid:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	TiledPlusGrid:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledPlusGrid:setupNineSliceShader( 220, 220 )
 	self:addElement( TiledPlusGrid )

@@ -12,7 +12,7 @@ CoD.AmmoWidgetZM_WeaponName.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	HeroAbilityUseString:setRGB( 0.92, 0.92, 0.92 )
 	HeroAbilityUseString:setText( "" )
 	HeroAbilityUseString:setTTF( "skorzhen" )
-	HeroAbilityUseString:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	HeroAbilityUseString:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	HeroAbilityUseString:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	HeroAbilityUseString:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )
 	self:addElement( HeroAbilityUseString )

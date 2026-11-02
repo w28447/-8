@@ -17,7 +17,7 @@ CoD.Waypoint_ZmTrialArcade.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local ProgressBarBGBlur = LUI.UIImage.new( 0.5, 0.5, -179, 179, 0.5, 0.5, 60, 80 )
-	ProgressBarBGBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	ProgressBarBGBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	ProgressBarBGBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( ProgressBarBGBlur )
 	self.ProgressBarBGBlur = ProgressBarBGBlur
@@ -210,7 +210,7 @@ CoD.Waypoint_ZmTrialArcade.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local WaypointPattern = LUI.UIImage.new( 0.5, 0.5, -37, 39, 0.5, 0.5, -38, 38 )
 	WaypointPattern:setImage( RegisterImage( "uie_ui_hud_core_waypoint_led" ) )
-	WaypointPattern:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	WaypointPattern:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	WaypointPattern:setShaderVector( 0, 1.3, 0, 0, 0 )
 	WaypointPattern:linkToElementModel( self, "color", true, function ( model )
 		local f25_local0 = model:get()

@@ -53,7 +53,7 @@
     "model": "#veh_t8_civ_car_classic_muscle_dest_dirty_warzone_blu",
     "deathModel": "#veh_t8_civ_car_classic_muscle_convertible_dead_blu",
     "soundDef": "#hash_423a2a88987e802c",
-    "compassIconMaterial": "#hash_5a7110565df4eb14",
+    "compassIconMaterial": "#compass_vehicle_musclecar",
     "destructibleDef": "#hash_2c90dccdf3c861de",
     "tacticalModeIcon": "#uie_ui_icon_minimap_wz_musclecar",
     "steerAxisName": "AXIS_LSTICK",

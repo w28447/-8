@@ -50,7 +50,7 @@ CoD.GameEndScoreRoundPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local Glow2 = LUI.UIImage.new( -0.05, 1.05, 0, 0, -0.05, 1.05, 0, 0 )
 	Glow2:setAlpha( 0 )
 	Glow2:setImage( RegisterImage( 0x69CF640F22433BA ) )
-	Glow2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	Glow2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	Glow2:setShaderVector( 0, 1, 0, 0, 0 )
 	Glow2:linkToElementModel( self, "teamColor", true, function ( model )
 		local f3_local0 = model:get()
@@ -73,7 +73,7 @@ CoD.GameEndScoreRoundPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local BoxLine = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BoxLine:setAlpha( 0.7 )
-	BoxLine:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE7BDCB879A5176D ) )
+	BoxLine:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_rectangle_normal" ) )
 	BoxLine:setShaderVector( 0, 0, 0, 0, 0 )
 	BoxLine:setShaderVector( 1, 0.5, 0.5, 0.5, 0 )
 	BoxLine:setupNineSliceShader( 1, 1 )

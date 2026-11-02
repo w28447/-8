@@ -678,7 +678,7 @@ function function_bdd1bac8( var_a1a0c2e3 )
         if ( isdefined( mdl_lock ) && !isdefined( mdl_lock.var_1e4fbc72 ) && n_time - mdl_lock.n_start_time > 1000 )
         {
             mdl_lock.var_1e4fbc72 = 1;
-            mdl_lock setmodel( #"hash_2ac3e09056fba532" );
+            mdl_lock setmodel( #"p8_zm_esc_magic_lock_lrg_blue" );
             mdl_lock clientfield::set( "" + #"zombie_spectral_key_stun", 0 );
             
             foreach ( e_player in level.activeplayers )

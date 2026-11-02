@@ -21,7 +21,7 @@ CoD.ReadyEvents_Scorestreaks_Iconcontainer.new = function ( f1_arg0, f1_arg1, f1
 	local pipLeftAdd = LUI.UIImage.new( 0, 0, 0, 6, 0, 0, 0, 50 )
 	pipLeftAdd:setRGB( ColorSet.PlayerYellow.r, ColorSet.PlayerYellow.g, ColorSet.PlayerYellow.b )
 	pipLeftAdd:setImage( RegisterImage( "uie_ui_hud_core_up_arrows" ) )
-	pipLeftAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	pipLeftAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	pipLeftAdd:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( pipLeftAdd )
 	self.pipLeftAdd = pipLeftAdd
@@ -35,7 +35,7 @@ CoD.ReadyEvents_Scorestreaks_Iconcontainer.new = function ( f1_arg0, f1_arg1, f1
 	local pipRightAdd = LUI.UIImage.new( 0, 0, 56, 62, 0, 0, 0, 50 )
 	pipRightAdd:setRGB( ColorSet.PlayerYellow.r, ColorSet.PlayerYellow.g, ColorSet.PlayerYellow.b )
 	pipRightAdd:setImage( RegisterImage( "uie_ui_hud_core_up_arrows" ) )
-	pipRightAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	pipRightAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	pipRightAdd:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( pipRightAdd )
 	self.pipRightAdd = pipRightAdd
@@ -50,9 +50,9 @@ end
 CoD.ReadyEvents_Scorestreaks_Iconcontainer.__resetProperties = function ( f2_arg0 )
 	f2_arg0.pipLeftAdd:completeAnimation()
 	f2_arg0.pipRightAdd:completeAnimation()
-	f2_arg0.pipLeftAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	f2_arg0.pipLeftAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	f2_arg0.pipLeftAdd:setShaderVector( 0, 2, 0, 0, 0 )
-	f2_arg0.pipRightAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	f2_arg0.pipRightAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	f2_arg0.pipRightAdd:setShaderVector( 0, 2, 0, 0, 0 )
 end
 
@@ -87,7 +87,7 @@ CoD.ReadyEvents_Scorestreaks_Iconcontainer.__clipsPerState = {
 			end
 			
 			f3_arg0.pipLeftAdd:completeAnimation()
-			f3_arg0.pipLeftAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f3_arg0.pipLeftAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f3_arg0.pipLeftAdd:setShaderVector( 0, 1, 0, 0, 0 )
 			f3_local0( f3_arg0.pipLeftAdd )
 			local f3_local1 = function ( f8_arg0 )
@@ -116,7 +116,7 @@ CoD.ReadyEvents_Scorestreaks_Iconcontainer.__clipsPerState = {
 			end
 			
 			f3_arg0.pipRightAdd:completeAnimation()
-			f3_arg0.pipRightAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f3_arg0.pipRightAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f3_arg0.pipRightAdd:setShaderVector( 0, 1, 0, 0, 0 )
 			f3_local1( f3_arg0.pipRightAdd )
 			f3_arg0.nextClip = "DefaultClip"

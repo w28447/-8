@@ -65,7 +65,7 @@ CoD.freeCursorButtonPrompt.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local label = LUI.UIText.new( 0, 0, 82, 151, 0, 0, 8, 26 )
 	label:setRGB( 0.92, 0.92, 0.92 )
 	label:setTTF( "ttmussels_demibold" )
-	label:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	label:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	label:setLetterSpacing( 4 )
 	label:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	label:linkToElementModel( self, "Label", true, function ( model )

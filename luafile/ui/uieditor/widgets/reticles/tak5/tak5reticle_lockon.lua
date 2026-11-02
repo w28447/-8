@@ -25,7 +25,7 @@ CoD.Tak5Reticle_LockOn.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	LockOnAdd:setAlpha( 0.2 )
 	LockOnAdd:setZRot( 135 )
 	LockOnAdd:setImage( RegisterImage( "uie_ui_hud_tak5_reticle_pointer" ) )
-	LockOnAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	LockOnAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	LockOnAdd:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( LockOnAdd )
 	self.LockOnAdd = LockOnAdd
@@ -95,7 +95,7 @@ CoD.Tak5Reticle_LockOn.__resetProperties = function ( f7_arg0 )
 	f7_arg0.LockOnAdd:setAlpha( 0.2 )
 	f7_arg0.LockOnAdd:setZRot( 135 )
 	f7_arg0.LockOnAdd:setScale( 1, 1 )
-	f7_arg0.LockOnAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	f7_arg0.LockOnAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	f7_arg0.LockOnAdd:setShaderVector( 0, 1.5, 0, 0, 0 )
 end
 
@@ -115,7 +115,7 @@ CoD.Tak5Reticle_LockOn.__clipsPerState = {
 			f8_arg0.LockOnAdd:setAlpha( 0.2 )
 			f8_arg0.LockOnAdd:setZRot( 135 )
 			f8_arg0.LockOnAdd:setScale( 0.25, 0.25 )
-			f8_arg0.LockOnAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f8_arg0.LockOnAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f8_arg0.LockOnAdd:setShaderVector( 0, 1.5, 0, 0, 0 )
 			f8_arg0.clipFinished( f8_arg0.LockOnAdd )
 		end

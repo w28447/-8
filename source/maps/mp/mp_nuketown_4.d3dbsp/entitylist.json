@@ -52043,7 +52043,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_6823271f1a12f035",
+                    "value": "#p8_nt4_missile_hatch_main_door_left",
                     "unk1a": true
                 },
                 {
@@ -52144,7 +52144,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_2b57551126b4998e",
+                    "value": "#p8_nt4_missile_hatch_main_door_right",
                     "unk1a": true
                 },
                 {
@@ -52245,7 +52245,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_618749a12ef1c751",
+                    "value": "#p8_nt4_missile_hatch_train_support_left",
                     "unk1a": true
                 },
                 {
@@ -52346,7 +52346,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_39889ab1a5de7532",
+                    "value": "#p8_nt4_missile_hatch_train_support_right",
                     "unk1a": true
                 },
                 {

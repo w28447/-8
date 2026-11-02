@@ -33,7 +33,7 @@ CoD.OverheadName_WZ_PlayerNumber.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local IDNumber2 = LUI.UIText.new( 0.5, 0.5, -11, 12, 0, 0, 2.5, 25.5 )
 	IDNumber2:setTTF( "ttmussels_demibold" )
-	IDNumber2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x336C1AE82B1520A ) )
+	IDNumber2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield_add" ) )
 	IDNumber2:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	IDNumber2:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
 	IDNumber2:linkToElementModel( self, "teammateIndex", true, function ( model )

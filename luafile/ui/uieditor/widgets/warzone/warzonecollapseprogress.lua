@@ -61,7 +61,7 @@ CoD.WarzoneCollapseProgress.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local vehiclePosition = LUI.UIImage.new( 0.4, 0.4, -26, 26, 1, 1, -30, 22 )
 	vehiclePosition:setAlpha( 0 )
 	vehiclePosition:setZRot( 270 )
-	vehiclePosition:setImage( RegisterImage( 0xB024F5E0D917C61 ) )
+	vehiclePosition:setImage( RegisterImage( "uie_ui_icon_minimap_wz_chinook" ) )
 	vehiclePosition:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook" ) )
 	vehiclePosition:setShaderVector( 0, 4, 4, 0, 0 )
 	vehiclePosition:setShaderVector( 1, 30, 0, 0, 0 )

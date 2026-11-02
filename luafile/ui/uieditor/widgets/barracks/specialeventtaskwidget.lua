@@ -96,7 +96,7 @@ CoD.SpecialEventTaskWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local LevelMeterBg = LUI.UIImage.new( 0, 1.12, -2, -54, 0.5, 0.5, 33.5, 51.5 )
 	LevelMeterBg:setImage( RegisterImage( "uie_ui_menu_inspection_level_meter_bg" ) )
-	LevelMeterBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	LevelMeterBg:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	LevelMeterBg:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( LevelMeterBg )
 	self.LevelMeterBg = LevelMeterBg

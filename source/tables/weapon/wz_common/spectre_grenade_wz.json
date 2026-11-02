@@ -41,7 +41,7 @@
     "customsettings": "#spectre_grenade_wz_customsettings",
     "projectilemodel": "#wpn_t8_eqp_grenade_smoke_projectile",
     "viewmodel": [
-        "#hash_2a5f03ab9f498e4f"
+        "#wpn_t8_eqp_grenade_smoke_wz_view"
     ],
     "worldModel": [
         "#wpn_t8_eqp_grenade_smoke_world"

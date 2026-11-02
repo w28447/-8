@@ -10,7 +10,7 @@ CoD.HealthBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	
 	local Blur = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 2.5, 14.5 )
 	Blur:setYRot( 180 )
-	Blur:setMaterial( LUI.UIImage.GetCachedMaterial( 0x81EEB1F96D4BE0A ) )
+	Blur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_feather_normal" ) )
 	Blur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( Blur )
 	self.Blur = Blur
@@ -19,7 +19,7 @@ CoD.HealthBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	Backer:setRGB( 0, 0, 0 )
 	Backer:setAlpha( 0.7 )
 	Backer:setYRot( 180 )
-	Backer:setImage( RegisterImage( 0x3F02AF56D3B7437 ) )
+	Backer:setImage( RegisterImage( "uie_hud_core_player_healthbar_backer" ) )
 	Backer:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_repeat_nineslice_normal" ) )
 	Backer:setShaderVector( 0, 0, 0, 0, 0 )
 	Backer:setShaderVector( 1, 4, 1, 0, 0 )
@@ -31,7 +31,7 @@ CoD.HealthBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	local HealthBackground = LUI.UIImage.new( 0, 0.99, 1, 1, 0, 0, 4, 13 )
 	HealthBackground:setRGB( 0.37, 0.4, 0.44 )
 	HealthBackground:setImage( RegisterImage( "uie_hud_core_player_healthbar_empty" ) )
-	HealthBackground:setMaterial( LUI.UIImage.GetCachedMaterial( 0xBEEFD90021D3628 ) )
+	HealthBackground:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_repeat_nineslice_feathered_add" ) )
 	HealthBackground:setShaderVector( 0, 0, 0, 0, 0 )
 	HealthBackground:setShaderVector( 1, 4, 1, 0, 0 )
 	HealthBackground:setShaderVector( 2, 0, 1, 0, 1 )
@@ -41,8 +41,8 @@ CoD.HealthBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	
 	local CleanseBarBG = LUI.UIImage.new( 0, 0.99, 1, 1, 0, 0, 4, 13 )
 	CleanseBarBG:setRGB( ColorSet.CleanseBar.r, ColorSet.CleanseBar.g, ColorSet.CleanseBar.b )
-	CleanseBarBG:setImage( RegisterImage( 0x75961ABECF3E11A ) )
-	CleanseBarBG:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7E89392B94A41DE ) )
+	CleanseBarBG:setImage( RegisterImage( "uie_hud_core_player_healthbar_buff" ) )
+	CleanseBarBG:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_repeat_nineslice_feathered_normal" ) )
 	CleanseBarBG:setShaderVector( 0, 0, 0, 0, 0 )
 	CleanseBarBG:setShaderVector( 1, 4, 1, 0, 0 )
 	CleanseBarBG:setShaderVector( 2, 0, 1, 0, 1 )
@@ -51,8 +51,8 @@ CoD.HealthBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	self.CleanseBarBG = CleanseBarBG
 	
 	local HealthFill = LUI.UIImage.new( 0, 0.99, 1, 1, 0, 0, 4, 13 )
-	HealthFill:setImage( RegisterImage( 0x700B275CC09FEF2 ) )
-	HealthFill:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7E89392B94A41DE ) )
+	HealthFill:setImage( RegisterImage( "uie_hud_core_player_healthbar" ) )
+	HealthFill:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_repeat_nineslice_feathered_normal" ) )
 	HealthFill:setShaderVector( 0, 0, 0, 0, 0 )
 	HealthFill:setShaderVector( 1, 4, 1, 0, 0 )
 	HealthFill:setShaderVector( 2, 0, 1, 0, 1 )
@@ -63,8 +63,8 @@ CoD.HealthBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	local LowHealthFill = LUI.UIImage.new( 0, 0.99, 1, 1, 0, 0, 4, 13 )
 	LowHealthFill:setRGB( 1, 0, 0 )
 	LowHealthFill:setAlpha( 0 )
-	LowHealthFill:setImage( RegisterImage( 0x700B275CC09FEF2 ) )
-	LowHealthFill:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7E89392B94A41DE ) )
+	LowHealthFill:setImage( RegisterImage( "uie_hud_core_player_healthbar" ) )
+	LowHealthFill:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_repeat_nineslice_feathered_normal" ) )
 	LowHealthFill:setShaderVector( 0, 0, 0, 0, 0 )
 	LowHealthFill:setShaderVector( 1, 4, 1, 0, 0 )
 	LowHealthFill:setShaderVector( 2, 0, 1, 0, 1 )
@@ -73,7 +73,7 @@ CoD.HealthBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	self.LowHealthFill = LowHealthFill
 	
 	local WoundBar = LUI.UIImage.new( 0, 0.99, 1, 1, 0, 0, 6.5, 10.5 )
-	WoundBar:setImage( RegisterImage( 0xC31716385F5211C ) )
+	WoundBar:setImage( RegisterImage( "uie_ui_hud_core_wounded_bar" ) )
 	WoundBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	WoundBar:setShaderVector( 0, 0, 1, 0, 0 )
 	WoundBar:setShaderVector( 1, 0, 0, 0, 0 )
@@ -85,8 +85,8 @@ CoD.HealthBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	
 	local CleanseBar = LUI.UIImage.new( 0, 0.99, 1, 1, 0, 0, 4, 13 )
 	CleanseBar:setRGB( ColorSet.CleanseBar.r, ColorSet.CleanseBar.g, ColorSet.CleanseBar.b )
-	CleanseBar:setImage( RegisterImage( 0x700B275CC09FEF2 ) )
-	CleanseBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7E89392B94A41DE ) )
+	CleanseBar:setImage( RegisterImage( "uie_hud_core_player_healthbar" ) )
+	CleanseBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_repeat_nineslice_feathered_normal" ) )
 	CleanseBar:setShaderVector( 0, 0, 0, 0, 0 )
 	CleanseBar:setShaderVector( 1, 4, 1, 0, 0 )
 	CleanseBar:setShaderVector( 2, 0, 1, 0, 1 )

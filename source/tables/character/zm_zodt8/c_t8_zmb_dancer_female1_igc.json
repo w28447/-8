@@ -1,0 +1,8 @@
+{
+    "name": "#c_t8_zmb_dancer_female1_igc",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "body": "#c_t8_zmb_dancer_female_fb1_igc"
+}

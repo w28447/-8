@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_graffitiskulls_04",
     "type": "#tag",
-    "material": "#hash_7a0f357929d8c09d",
+    "material": "#vd/mtl_loot_ui_icon_tags_graffitiskulls_04",
     "bundle": {
         "type": "#tag",
         "title": "localized18#hash_385424ab072dd24d",

@@ -43,7 +43,7 @@ CoD.EquippedScorestreakListItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local ScorestreaksBGAdd = LUI.UIImage.new( 0, 0, -8, 108, 0, 0, -9, 159 )
 	ScorestreaksBGAdd:setAlpha( 0 )
 	ScorestreaksBGAdd:setImage( RegisterImage( 0x62843B22FDD53AB ) )
-	ScorestreaksBGAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	ScorestreaksBGAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	ScorestreaksBGAdd:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( ScorestreaksBGAdd )
 	self.ScorestreaksBGAdd = ScorestreaksBGAdd

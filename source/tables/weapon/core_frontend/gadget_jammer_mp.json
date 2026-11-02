@@ -40,12 +40,12 @@
     "sharedWeaponSounds": "#equipment",
     "weaponHeadObjective": "#inworld_trophysystem",
     "customsettings": "#gadget_jammer_settings",
-    "projectilemodel": "#hash_788ee73fa8e934a4",
+    "projectilemodel": "#wpn_t8_eqp_disruptor_world",
     "viewmodel": [
-        "#hash_1a6f90af8d4b64d1"
+        "#wpn_t8_eqp_disruptor_view"
     ],
     "worldModel": [
-        "#hash_788ee73fa8e934a4"
+        "#wpn_t8_eqp_disruptor_world"
     ],
     "gadgetIconAvailable": "#ui_icon_equipment_trophysystem",
     "gadgetIconUnavailable": "#ui_icon_equipment_trophysystem_dark",

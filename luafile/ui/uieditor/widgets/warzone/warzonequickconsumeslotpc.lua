@@ -120,7 +120,7 @@ CoD.WarzoneQuickConsumeSlotPC.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	EmptyBlur = LUI.UIImage.new( 0.5, 0.5, -33.5, 33.5, 0, 0, 21.5, 88.5 )
 	EmptyBlur:setScale( 0.96, 0.96 )
-	EmptyBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	EmptyBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	EmptyBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( EmptyBlur )
 	self.EmptyBlur = EmptyBlur

@@ -11,7 +11,7 @@ CoD.ZMInventoryListBackingInternalTip.new = function ( f1_arg0, f1_arg1, f1_arg2
 	Base:setRGB( 0, 0, 0 )
 	Base:setAlpha( 0.9 )
 	Base:setImage( RegisterImage( "uie_zm_hud_inventory_backing_tip_solid" ) )
-	Base:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	Base:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	Base:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( Base )
 	self.Base = Base
@@ -29,7 +29,7 @@ CoD.ZMInventoryListBackingInternalTip.new = function ( f1_arg0, f1_arg1, f1_arg2
 	local BG = LUI.UIImage.new( 0, 0, 0, 200, 0, 1, 0, 0 )
 	BG:setAlpha( 0.9 )
 	BG:setImage( RegisterImage( "uie_zm_hud_inventory_backing_tip" ) )
-	BG:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	BG:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	BG:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( BG )
 	self.BG = BG

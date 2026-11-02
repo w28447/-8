@@ -23,7 +23,7 @@ CoD.TabletIcePick_BackgroundPC.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local FillFrameAdd = LUI.UIImage.new( -0.06, 1.07, 0, 0, 0, 1, -26, 26 )
 	FillFrameAdd:setRGB( 0.02, 0.59, 0.99 )
-	FillFrameAdd:setImage( RegisterImage( 0x2AABF859E4BD498 ) )
+	FillFrameAdd:setImage( RegisterImage( "uie_ui_hud_icepick_breach_box" ) )
 	FillFrameAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FillFrameAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	FillFrameAdd:setupNineSliceShader( 250, 60 )
@@ -32,7 +32,7 @@ CoD.TabletIcePick_BackgroundPC.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local FillFrame = LUI.UIImage.new( -0.06, 1.07, 0, 0, 0, 1, -26, 26 )
 	FillFrame:setRGB( 0.02, 0.59, 0.99 )
-	FillFrame:setImage( RegisterImage( 0x2AABF859E4BD498 ) )
+	FillFrame:setImage( RegisterImage( "uie_ui_hud_icepick_breach_box" ) )
 	FillFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FillFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	FillFrame:setupNineSliceShader( 250, 60 )
@@ -51,7 +51,7 @@ CoD.TabletIcePick_BackgroundPC.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local GlowLarge = LUI.UIImage.new( -0.27, 1.27, 0, 0, 0.5, 0.5, -60, 60 )
 	GlowLarge:setAlpha( 0.8 )
 	GlowLarge:setImage( RegisterImage( 0xC1B5BC57AE822F0 ) )
-	GlowLarge:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	GlowLarge:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	GlowLarge:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( GlowLarge )
 	self.GlowLarge = GlowLarge

@@ -31,8 +31,8 @@ CoD.ReadyEvents_Scorestreaks.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	self.BackgroundAdd = BackgroundAdd
 	
 	local NotificationFlare = LUI.UIImage.new( 0, 0, -47, 241, 0, 0, 0, 50 )
-	NotificationFlare:setImage( RegisterImage( 0x6CA2666560B030 ) )
-	NotificationFlare:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	NotificationFlare:setImage( RegisterImage( "uie_ui_hud_core_notification_flare" ) )
+	NotificationFlare:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	NotificationFlare:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( NotificationFlare )
 	self.NotificationFlare = NotificationFlare
@@ -170,7 +170,7 @@ CoD.ReadyEvents_Scorestreaks.__resetProperties = function ( f13_arg0 )
 	f13_arg0.ButtonProgressRing:setAlpha( 1 )
 	f13_arg0.ScorestreakInfo:setAlpha( 1 )
 	f13_arg0.NotificationFlare:setAlpha( 1 )
-	f13_arg0.NotificationFlare:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	f13_arg0.NotificationFlare:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	f13_arg0.NotificationFlare:setShaderVector( 0, 1, 0, 0, 0 )
 	f13_arg0.Background:setAlpha( 0.3 )
 end
@@ -261,7 +261,7 @@ CoD.ReadyEvents_Scorestreaks.__clipsPerState = {
 			
 			f15_arg0.NotificationFlare:completeAnimation()
 			f15_arg0.NotificationFlare:setAlpha( 0 )
-			f15_arg0.NotificationFlare:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f15_arg0.NotificationFlare:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f15_arg0.NotificationFlare:setShaderVector( 0, 1, 0, 0, 0 )
 			f15_local2( f15_arg0.NotificationFlare )
 			local f15_local3 = function ( f27_arg0 )
@@ -408,7 +408,7 @@ CoD.ReadyEvents_Scorestreaks.__clipsPerState = {
 			
 			f35_arg0.NotificationFlare:completeAnimation()
 			f35_arg0.NotificationFlare:setAlpha( 0 )
-			f35_arg0.NotificationFlare:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f35_arg0.NotificationFlare:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f35_arg0.NotificationFlare:setShaderVector( 0, 1, 0, 0, 0 )
 			f35_local2( f35_arg0.NotificationFlare )
 			local f35_local3 = function ( f47_arg0 )

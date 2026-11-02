@@ -27,7 +27,7 @@ CoD.ZMDailyCallingsTierSkipNotification.new = function ( f1_arg0, f1_arg1, f1_ar
 	Header:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	Header:setText( LocalizeToUpperString( "aar/tier_skip" ) )
 	Header:setTTF( "dinnext_regular" )
-	Header:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	Header:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	Header:setLetterSpacing( 3 )
 	Header:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	Header:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )

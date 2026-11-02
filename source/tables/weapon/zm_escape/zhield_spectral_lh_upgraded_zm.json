@@ -32,23 +32,23 @@
     "tunables1": "#zhield_spectral_lh_tunables_upgraded_zm",
     "sharedWeaponSounds": "#battle_shield",
     "viewmodel": [
-        "#hash_680f4721293d1e60"
+        "#wpn_t8_zm_esc_shield_door_view"
     ],
     "worldModel": [
-        "#hash_7aa44eb45c359e1b"
+        "#wpn_t8_zm_esc_shield_door_world"
     ],
     "stowedmodel": [
-        "#hash_7aa44eb45c359e1b"
+        "#wpn_t8_zm_esc_shield_door_world"
     ],
     "inventoryIconZm": "#ui_icon_weapons_zm_shield_spectral_door",
     "image_e90": "#t7_icon_weapon_hero_reaper_kf",
     "fireRumble": "#defaultweapon_fire",
     "#hash_21329beb": [
         {
-            "model": "#hash_7aa44eb45c359e1b"
+            "model": "#wpn_t8_zm_esc_shield_door_world"
         },
         {
-            "model": "#hash_7aa44eb45c359e1b"
+            "model": "#wpn_t8_zm_esc_shield_door_world"
         }
     ]
 }

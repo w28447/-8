@@ -15,7 +15,7 @@ CoD.GameEndScore_GameStatus.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local BackingBlur = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BackingBlur:setRGB( 0, 0, 0 )
-	BackingBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	BackingBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	BackingBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BackingBlur )
 	self.BackingBlur = BackingBlur
@@ -74,14 +74,14 @@ CoD.GameEndScore_GameStatus.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local TeamIcon = LUI.UIImage.new( 0.5, 0.5, 405, 444, 0, 0, 8, 42 )
 	TeamIcon:setAlpha( 0 )
-	TeamIcon:setImage( RegisterImage( 0xA16F29EFD38E823 ) )
+	TeamIcon:setImage( RegisterImage( "uie_social_friend_icon" ) )
 	self:addElement( TeamIcon )
 	self.TeamIcon = TeamIcon
 	
 	local TeamCount = LUI.UIText.new( 0.5, 0.5, 451, 543, 0, 0, 8, 43 )
 	TeamCount:setAlpha( 0 )
 	TeamCount:setTTF( "0arame_mono_stencil" )
-	TeamCount:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	TeamCount:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	TeamCount:setShaderVector( 0, 0.8, 0, 0, 0 )
 	TeamCount:setShaderVector( 1, 0, 0, 0, 0 )
 	TeamCount:setShaderVector( 2, 1, 1, 1, 0.35 )
@@ -104,7 +104,7 @@ CoD.GameEndScore_GameStatus.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local SpectatorCount = LUI.UIText.new( 0.5, 0.5, 868, 960, 0, 0, 57.5, 92.5 )
 	SpectatorCount:setAlpha( 0 )
 	SpectatorCount:setTTF( "0arame_mono_stencil" )
-	SpectatorCount:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	SpectatorCount:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	SpectatorCount:setShaderVector( 0, 0.8, 0, 0, 0 )
 	SpectatorCount:setShaderVector( 1, 0, 0, 0, 0 )
 	SpectatorCount:setShaderVector( 2, 1, 1, 1, 0.35 )

@@ -2213,7 +2213,7 @@ function function_caa7eeb()
     }
     
     self zm_vo::vo_say( #"hash_34171dfc4d06ae4b", 0, 1, 9999 );
-    level.var_92830991 = util::spawn_model( #"hash_7ad70aa7f6e8c41f", self.origin + ( 0, 0, 48 ), self.angles );
+    level.var_92830991 = util::spawn_model( #"p8_zm_red_key_perseus", self.origin + ( 0, 0, 48 ), self.angles );
     level.var_92830991 setscale( 4 );
     level.var_92830991 thread zm_red_challenges_rewards::function_51fd2597( 0 );
     level.var_92830991 thread zm_red_challenges_rewards::function_f7cdf2f7( 2 );

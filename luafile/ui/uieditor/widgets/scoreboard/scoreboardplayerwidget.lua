@@ -10,8 +10,8 @@ CoD.ScoreboardPlayerWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local BGBlue = LUI.UIImage.new( 0.5, 0.5, -43, 43, 0.5, 0.5, -30, 30 )
 	BGBlue:setAlpha( 0 )
-	BGBlue:setImage( RegisterImage( 0xED0AEB8D8F30C1D ) )
-	BGBlue:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	BGBlue:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_list_portrait_shoutcaster" ) )
+	BGBlue:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	BGBlue:setShaderVector( 0, 1, 0, 0, 0 )
 	BGBlue:subscribeToGlobalModel( f1_arg1, "Factions", "alliesFactionColor", function ( model )
 		local f2_local0 = model:get()
@@ -24,8 +24,8 @@ CoD.ScoreboardPlayerWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local BGRed = LUI.UIImage.new( 0.5, 0.5, -43, 43, 0.5, 0.5, -30, 30 )
 	BGRed:setAlpha( 0 )
-	BGRed:setImage( RegisterImage( 0xED0AEB8D8F30C1D ) )
-	BGRed:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	BGRed:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_list_portrait_shoutcaster" ) )
+	BGRed:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	BGRed:setShaderVector( 0, 1, 0, 0, 0 )
 	BGRed:subscribeToGlobalModel( f1_arg1, "Factions", "axisFactionColor", function ( model )
 		local f3_local0 = model:get()
@@ -38,7 +38,7 @@ CoD.ScoreboardPlayerWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local BGBueSelected = LUI.UIImage.new( 0.5, 0.5, -43, 43, 0.5, 0.5, -30, 30 )
 	BGBueSelected:setAlpha( 0 )
-	BGBueSelected:setImage( RegisterImage( 0x73562CFCEF8AD77 ) )
+	BGBueSelected:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_list_portrait_selected_shoutcaster" ) )
 	BGBueSelected:subscribeToGlobalModel( f1_arg1, "Factions", "alliesFactionColor", function ( model )
 		local f4_local0 = model:get()
 		if f4_local0 ~= nil then
@@ -50,7 +50,7 @@ CoD.ScoreboardPlayerWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local BGBueOverlay = LUI.UIImage.new( 0.5, 0.5, -43, 43, 0.5, 0.5, -30, 30 )
 	BGBueOverlay:setAlpha( 0 )
-	BGBueOverlay:setImage( RegisterImage( 0x73562CFCEF8AD77 ) )
+	BGBueOverlay:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_list_portrait_selected_shoutcaster" ) )
 	BGBueOverlay:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	BGBueOverlay:subscribeToGlobalModel( f1_arg1, "Factions", "alliesFactionColor", function ( model )
 		local f5_local0 = model:get()
@@ -63,7 +63,7 @@ CoD.ScoreboardPlayerWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local BGRedSelected = LUI.UIImage.new( 0.5, 0.5, -43, 43, 0.5, 0.5, -30, 30 )
 	BGRedSelected:setAlpha( 0 )
-	BGRedSelected:setImage( RegisterImage( 0x73562CFCEF8AD77 ) )
+	BGRedSelected:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_list_portrait_selected_shoutcaster" ) )
 	BGRedSelected:subscribeToGlobalModel( f1_arg1, "Factions", "axisFactionColor", function ( model )
 		local f6_local0 = model:get()
 		if f6_local0 ~= nil then
@@ -75,7 +75,7 @@ CoD.ScoreboardPlayerWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local BGRedOverlay = LUI.UIImage.new( 0.5, 0.5, -43, 43, 0.5, 0.5, -30, 30 )
 	BGRedOverlay:setAlpha( 0 )
-	BGRedOverlay:setImage( RegisterImage( 0x73562CFCEF8AD77 ) )
+	BGRedOverlay:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_list_portrait_selected_shoutcaster" ) )
 	BGRedOverlay:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	BGRedOverlay:subscribeToGlobalModel( f1_arg1, "Factions", "axisFactionColor", function ( model )
 		local f7_local0 = model:get()

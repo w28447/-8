@@ -27,7 +27,7 @@ LUI.createMenu.DirectorGamemodeSelectionZMOffline = function ( f1_arg0, f1_arg1 
 	
 	local TEMPBlackBGOverlay = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	TEMPBlackBGOverlay:setRGB( 0, 0, 0 )
-	TEMPBlackBGOverlay:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	TEMPBlackBGOverlay:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	TEMPBlackBGOverlay:setShaderVector( 0, 0.01, 0.5, 0, 0 )
 	self:addElement( TEMPBlackBGOverlay )
 	self.TEMPBlackBGOverlay = TEMPBlackBGOverlay
@@ -411,7 +411,7 @@ LUI.createMenu.DirectorGamemodeSelectionZMOffline = function ( f1_arg0, f1_arg1 
 	DottedDivider:setAlpha( 0 )
 	DottedDivider:setZRot( 90 )
 	DottedDivider:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
-	DottedDivider:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	DottedDivider:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	DottedDivider:setShaderVector( 0, 0, 0, 0, 0 )
 	DottedDivider:setupNineSliceShader( 4, 8 )
 	self:addElement( DottedDivider )

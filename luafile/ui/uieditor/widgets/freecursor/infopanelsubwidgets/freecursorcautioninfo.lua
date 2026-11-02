@@ -17,7 +17,7 @@ CoD.freeCursorCautionInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local cautionText = LUI.UIText.new( 0, 0, 20, 400, 0, 0, 0, 18 )
 	cautionText:setRGB( 0.29, 0.3, 0.31 )
 	cautionText:setTTF( "ttmussels_demibold" )
-	cautionText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	cautionText:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	cautionText:setLineSpacing( 4 )
 	cautionText:setAlignment( Enum.LUIAlignment[0x830CFD395E6AA0A] )
 	cautionText:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

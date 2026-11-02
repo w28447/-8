@@ -10,14 +10,14 @@ CoD.outofbounds_alert_icon.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local AlertIcon = LUI.UIImage.new( 0, 0, 0, 64, 0, 0, 0, 58 )
 	AlertIcon:setImage( RegisterImage( "uie_ui_hud_out_of_bounds_warning_icon" ) )
-	AlertIcon:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	AlertIcon:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	AlertIcon:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( AlertIcon )
 	self.AlertIcon = AlertIcon
 	
 	local AlertIconAdd = LUI.UIImage.new( 0, 0, 0, 64, 0, 0, 0, 58 )
 	AlertIconAdd:setImage( RegisterImage( "uie_ui_hud_out_of_bounds_warning_icon" ) )
-	AlertIconAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	AlertIconAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	AlertIconAdd:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( AlertIconAdd )
 	self.AlertIconAdd = AlertIconAdd
@@ -33,11 +33,11 @@ CoD.outofbounds_alert_icon.__resetProperties = function ( f2_arg0 )
 	f2_arg0.AlertIcon:completeAnimation()
 	f2_arg0.AlertIconAdd:completeAnimation()
 	f2_arg0.AlertIcon:setAlpha( 1 )
-	f2_arg0.AlertIcon:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	f2_arg0.AlertIcon:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	f2_arg0.AlertIcon:setShaderVector( 0, 1, 0, 0, 0 )
 	f2_arg0.AlertIconAdd:setAlpha( 1 )
 	f2_arg0.AlertIconAdd:setZoom( 0 )
-	f2_arg0.AlertIconAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	f2_arg0.AlertIconAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	f2_arg0.AlertIconAdd:setShaderVector( 0, 1, 0, 0, 0 )
 end
 
@@ -48,7 +48,7 @@ CoD.outofbounds_alert_icon.__clipsPerState = {
 			f3_arg0:setupElementClipCounter( 2 )
 			f3_arg0.AlertIcon:completeAnimation()
 			f3_arg0.AlertIcon:setAlpha( 1 )
-			f3_arg0.AlertIcon:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+			f3_arg0.AlertIcon:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 			f3_arg0.AlertIcon:setShaderVector( 0, 1, 0, 0, 0 )
 			f3_arg0.clipFinished( f3_arg0.AlertIcon )
 			local f3_local0 = function ( f4_arg0 )
@@ -69,7 +69,7 @@ CoD.outofbounds_alert_icon.__clipsPerState = {
 			f3_arg0.AlertIconAdd:completeAnimation()
 			f3_arg0.AlertIconAdd:setAlpha( 1 )
 			f3_arg0.AlertIconAdd:setZoom( 0 )
-			f3_arg0.AlertIconAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f3_arg0.AlertIconAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f3_arg0.AlertIconAdd:setShaderVector( 0, 1, 0, 0, 0 )
 			f3_local0( f3_arg0.AlertIconAdd )
 			f3_arg0.nextClip = "DefaultClip"

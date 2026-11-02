@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_caricature_recon",
     "type": "#tag",
-    "material": "#hash_4c554e8d1cabc6bd",
+    "material": "#vd/mtl_loot_ui_icon_tags_caricature_recon",
     "bundle": {
         "type": "#tag",
         "title": "localized18#tags/caricature_recon",

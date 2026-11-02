@@ -27,14 +27,14 @@ CoD.vhudHellstormFrameRight.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local FrameBoxesLeftAdd = LUI.UIImage.new( 0, 0, 390.5, 316.5, 0, 0, 224, 260 )
 	FrameBoxesLeftAdd:setAlpha( 0.7 )
 	FrameBoxesLeftAdd:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_frame_boxes" ) )
-	FrameBoxesLeftAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	FrameBoxesLeftAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	FrameBoxesLeftAdd:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( FrameBoxesLeftAdd )
 	self.FrameBoxesLeftAdd = FrameBoxesLeftAdd
 	
 	local FrameEngineLeft = LUI.UIImage.new( 0, 0, 229, 189, 0, 0, 236, 282 )
 	FrameEngineLeft:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_frame_engine" ) )
-	FrameEngineLeft:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	FrameEngineLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	FrameEngineLeft:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( FrameEngineLeft )
 	self.FrameEngineLeft = FrameEngineLeft
@@ -64,7 +64,7 @@ CoD.vhudHellstormFrameRight.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local FrameGraphicLeft = LUI.UIImage.new( 0, 0, 316.5, 280.5, 0, 0, 0, 484 )
 	FrameGraphicLeft:setAlpha( 0.8 )
 	FrameGraphicLeft:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_frame_graphic_left" ) )
-	FrameGraphicLeft:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	FrameGraphicLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	FrameGraphicLeft:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FrameGraphicLeft )
 	self.FrameGraphicLeft = FrameGraphicLeft
@@ -102,7 +102,7 @@ CoD.vhudHellstormFrameRight.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	StrokeR = LUI.UIImage.new( 0.5, 0.5, -194.5, -14.5, 0.5, 0.5, -5, 23 )
 	StrokeR:setImage( RegisterImage( 0xEFA29833AEF0480 ) )
-	StrokeR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	StrokeR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	StrokeR:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( StrokeR )
 	self.StrokeR = StrokeR

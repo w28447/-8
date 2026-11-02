@@ -13,13 +13,13 @@ CoD.CodCasterTeamScoreboard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local BlurBot = LUI.UIImage.new( 0.5, 0.5, -233, 233, 0.62, 0.62, -37.5, 37.5 )
-	BlurBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	BlurBot:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	BlurBot:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BlurBot )
 	self.BlurBot = BlurBot
 	
 	local BlurTop = LUI.UIImage.new( 0.5, 0.5, -235, 235, 0.18, 0.18, -12.5, 12.5 )
-	BlurTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	BlurTop:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	BlurTop:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BlurTop )
 	self.BlurTop = BlurTop
@@ -131,7 +131,7 @@ CoD.CodCasterTeamScoreboard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local gamemode = LUI.UIText.new( 0.5, 0.5, -100, 100, 0, 0, 10, 30 )
 	gamemode:setTTF( "ttmussels_demibold" )
-	gamemode:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	gamemode:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	gamemode:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	gamemode:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )
 	gamemode:subscribeToGlobalModel( f1_arg1, "Scoreboard", "gameType", function ( model )

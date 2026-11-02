@@ -21,7 +21,7 @@ CoD.SupplyChainDetailImage3d.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local DecalImage = LUI.UIFixedAspectRatioImage.new( 0, 0, 92, 352, 0, 0, 92, 352 )
 	DecalImage:setAlpha( 0 )
-	DecalImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0x146ECDAC27D1842 ) )
+	DecalImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_grid_fade" ) )
 	DecalImage:setShaderVector( 0, 1, 0, 0, 0 )
 	DecalImage:setShaderVector( 1, 200, 200, 0, 0 )
 	DecalImage:setStretchedDimension( 6 )

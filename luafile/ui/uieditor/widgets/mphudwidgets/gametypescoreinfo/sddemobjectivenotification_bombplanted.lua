@@ -83,7 +83,7 @@ CoD.SDDemObjectiveNotification_BombPlanted.new = function ( f1_arg0, f1_arg1, f1
 	local BombLabel = LUI.UIText.new( 0, 0, 55.5, 86.5, 0, 0, 12.5, 45.5 )
 	BombLabel:setText( CoD.BaseUtility.AlreadyLocalized( "A" ) )
 	BombLabel:setTTF( "ttmussels_demibold" )
-	BombLabel:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6250C6FCAC36BD4 ) )
+	BombLabel:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_outline" ) )
 	BombLabel:setShaderVector( 0, 0.25, 0, 0, 0 )
 	BombLabel:setShaderVector( 1, 0, 0, 0, 1 )
 	BombLabel:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

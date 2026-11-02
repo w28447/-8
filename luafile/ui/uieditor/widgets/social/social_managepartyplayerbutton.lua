@@ -61,7 +61,7 @@ CoD.Social_ManagePartyPlayerButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	FocusGlow = LUI.UIImage.new( 0, 1, -37, 37, 0, 1, -37, 37 )
 	FocusGlow:setAlpha( 0 )
 	FocusGlow:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_small" ) )
-	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
+	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_multiplied_add" ) )
 	FocusGlow:setShaderVector( 0, 0, 0, 0.24, 0.24 )
 	FocusGlow:setShaderVector( 1, 1, 0, 0, 0 )
 	FocusGlow:setupNineSliceShader( 75, 75 )

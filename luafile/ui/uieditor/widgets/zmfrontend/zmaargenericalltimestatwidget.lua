@@ -18,7 +18,7 @@ CoD.ZMAARGenericAllTimeStatWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.PerformBg = PerformBg
 	
 	local YellowLine = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 22, 30 )
-	YellowLine:setImage( RegisterImage( 0xE6E505307F7B8D7 ) )
+	YellowLine:setImage( RegisterImage( "uie_summary_divider" ) )
 	YellowLine:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	YellowLine:setShaderVector( 0, 0, 0, 0, 0 )
 	YellowLine:setupNineSliceShader( 3, 60 )

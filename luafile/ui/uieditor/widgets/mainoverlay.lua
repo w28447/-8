@@ -23,7 +23,7 @@ CoD.MainOverlay.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	BuildInfo:setAlpha( 0.6 )
 	BuildInfo:setText( Engine[0xF9F1239CFD921FE]( 0x4D16564DEF246AA ) )
 	BuildInfo:setTTF( "0arame_mono_stencil" )
-	BuildInfo:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	BuildInfo:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	BuildInfo:setShaderVector( 0, 1, 0, 0, 0 )
 	BuildInfo:setShaderVector( 1, 0, 0, 0, 0 )
 	BuildInfo:setShaderVector( 2, 0, 0, 0, 0.5 )

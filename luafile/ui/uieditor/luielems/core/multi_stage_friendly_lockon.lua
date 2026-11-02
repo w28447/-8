@@ -31,7 +31,7 @@ LUI.createMenu.multi_stage_friendly_lockon = function ( f1_arg0, f1_arg1 )
 	LockOnReticleAdd:setZRot( 135 )
 	LockOnReticleAdd:setScale( 0.75, 0.75 )
 	LockOnReticleAdd:setImage( RegisterImage( "uie_ui_hud_tak5_reticle_pointer" ) )
-	LockOnReticleAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	LockOnReticleAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	LockOnReticleAdd:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( LockOnReticleAdd )
 	self.LockOnReticleAdd = LockOnReticleAdd

@@ -10,7 +10,7 @@ CoD.CardGlowCorners.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	local GlowCornerTL = LUI.UIImage.new( 0.5, 0.5, -285, -101, 0.5, 0.5, -465, -261 )
 	GlowCornerTL:setYRot( 180 )
 	GlowCornerTL:setImage( RegisterImage( 0x4D375378B954B47 ) )
-	GlowCornerTL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	GlowCornerTL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	GlowCornerTL:setShaderVector( 0, 4, 0, 0, 0 )
 	self:addElement( GlowCornerTL )
 	self.GlowCornerTL = GlowCornerTL
@@ -18,7 +18,7 @@ CoD.CardGlowCorners.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	local GlowCornerBR = LUI.UIImage.new( 0.5, 0.5, 101, 285, 0.5, 0.5, 261, 465 )
 	GlowCornerBR:setXRot( 180 )
 	GlowCornerBR:setImage( RegisterImage( 0x4D375378B954B47 ) )
-	GlowCornerBR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	GlowCornerBR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	GlowCornerBR:setShaderVector( 0, 4, 0, 0, 0 )
 	self:addElement( GlowCornerBR )
 	self.GlowCornerBR = GlowCornerBR
@@ -27,14 +27,14 @@ CoD.CardGlowCorners.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	GlowCornerBL:setXRot( 180 )
 	GlowCornerBL:setYRot( 180 )
 	GlowCornerBL:setImage( RegisterImage( 0x4D375378B954B47 ) )
-	GlowCornerBL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	GlowCornerBL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	GlowCornerBL:setShaderVector( 0, 4, 0, 0, 0 )
 	self:addElement( GlowCornerBL )
 	self.GlowCornerBL = GlowCornerBL
 	
 	local GlowCornerTR = LUI.UIImage.new( 0.5, 0.5, 101, 285, 0.5, 0.5, -465, -261 )
 	GlowCornerTR:setImage( RegisterImage( 0x4D375378B954B47 ) )
-	GlowCornerTR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	GlowCornerTR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	GlowCornerTR:setShaderVector( 0, 4, 0, 0, 0 )
 	self:addElement( GlowCornerTR )
 	self.GlowCornerTR = GlowCornerTR

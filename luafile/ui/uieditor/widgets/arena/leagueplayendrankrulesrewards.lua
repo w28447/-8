@@ -37,7 +37,7 @@ CoD.leaguePlayEndRankRulesRewards.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local DotLine = LUI.UIImage.new( 0, 0, -1, 210, 0, 0, 261, 265 )
 	DotLine:setAlpha( 0.2 )
 	DotLine:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline_tiled" ) )
-	DotLine:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	DotLine:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	DotLine:setShaderVector( 0, 0, 0, 0, 0 )
 	DotLine:setupNineSliceShader( 16, 4 )
 	self:addElement( DotLine )

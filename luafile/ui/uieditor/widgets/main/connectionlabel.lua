@@ -12,7 +12,7 @@ CoD.ConnectionLabel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	lblConnecting:setRGB( 0.26, 0.25, 0.25 )
 	lblConnecting:setText( LocalizeToUpperString( "menu/connecting_dw" ) )
 	lblConnecting:setTTF( "ttmussels_demibold" )
-	lblConnecting:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	lblConnecting:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	lblConnecting:setLetterSpacing( 6 )
 	lblConnecting:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	lblConnecting:setAlignment( Enum.LUIAlignment[0x70510683C22104B] )

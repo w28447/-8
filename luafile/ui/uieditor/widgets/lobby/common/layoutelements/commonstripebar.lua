@@ -10,7 +10,7 @@ CoD.CommonStripeBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local TopStripe = LUI.UIImage.new( 0, 0, 0, 696, 0, 0, 0, 16 )
 	TopStripe:setImage( RegisterImage( "uie_ui_menu_inspection_window_loading_stripe" ) )
-	TopStripe:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	TopStripe:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	TopStripe:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( TopStripe )
 	self.TopStripe = TopStripe
@@ -44,7 +44,7 @@ CoD.CommonStripeBar.__resetProperties = function ( f2_arg0 )
 	f2_arg0.TopStripeWipe:setShaderVector( 3, 0, 0, 0, 0 )
 	f2_arg0.TopStripeWipe:setShaderVector( 4, 0, 0, 0, 0 )
 	f2_arg0.TopStripe:setAlpha( 1 )
-	f2_arg0.TopStripe:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	f2_arg0.TopStripe:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	f2_arg0.TopStripe:setShaderVector( 0, 1, 0, 0, 0 )
 end
 
@@ -62,7 +62,7 @@ CoD.CommonStripeBar.__clipsPerState = {
 			
 			f3_arg0.TopStripe:completeAnimation()
 			f3_arg0.TopStripe:setAlpha( 0.5 )
-			f3_arg0.TopStripe:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f3_arg0.TopStripe:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f3_arg0.TopStripe:setShaderVector( 0, 1, 0, 0, 0 )
 			f3_local0( f3_arg0.TopStripe )
 			f3_arg0.TopStripeWipe:completeAnimation()
@@ -93,7 +93,7 @@ CoD.CommonStripeBar.__clipsPerState = {
 			
 			f5_arg0.TopStripe:completeAnimation()
 			f5_arg0.TopStripe:setAlpha( 0.5 )
-			f5_arg0.TopStripe:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f5_arg0.TopStripe:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f5_arg0.TopStripe:setShaderVector( 0, 1, 0, 0, 0 )
 			f5_local0( f5_arg0.TopStripe )
 			local f5_local1 = function ( f8_arg0 )

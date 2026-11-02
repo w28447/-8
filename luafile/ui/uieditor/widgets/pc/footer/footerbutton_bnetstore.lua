@@ -39,13 +39,13 @@ CoD.FooterButton_BnetStore.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local GlowImage = LUI.UIImage.new( 0, 1, 2, -2, 0, 0, -48, 2 )
 	GlowImage:setAlpha( 0 )
-	GlowImage:setImage( RegisterImage( 0x7B23E8B1ACF3472 ) )
+	GlowImage:setImage( RegisterImage( "uie_ui_menu_director_selection_glow01" ) )
 	self:addElement( GlowImage )
 	self.GlowImage = GlowImage
 	
 	local Glowadictiv = LUI.UIImage.new( 0, 1, 2, -2, 0, 0, -38, 12 )
 	Glowadictiv:setAlpha( 0 )
-	Glowadictiv:setImage( RegisterImage( 0x7B23E8B1ACF3472 ) )
+	Glowadictiv:setImage( RegisterImage( "uie_ui_menu_director_selection_glow01" ) )
 	self:addElement( Glowadictiv )
 	self.Glowadictiv = Glowadictiv
 	
@@ -127,7 +127,7 @@ CoD.FooterButton_BnetStore.__resetProperties = function ( f4_arg0 )
 	f4_arg0.GlowImage:setAlpha( 0 )
 	f4_arg0.BackingTint:setAlpha( 0 )
 	f4_arg0.Glowadictiv:setAlpha( 0 )
-	f4_arg0.Glowadictiv:setImage( RegisterImage( 0x7B23E8B1ACF3472 ) )
+	f4_arg0.Glowadictiv:setImage( RegisterImage( "uie_ui_menu_director_selection_glow01" ) )
 end
 
 CoD.FooterButton_BnetStore.__clipsPerState = {
@@ -284,7 +284,7 @@ CoD.FooterButton_BnetStore.__clipsPerState = {
 			local f13_local1 = function ( f15_arg0 )
 				f13_arg0.Glowadictiv:beginAnimation( 100 )
 				f13_arg0.Glowadictiv:setAlpha( 0 )
-				f13_arg0.Glowadictiv:setImage( RegisterImage( 0x7B23E8B1ACF3472 ) )
+				f13_arg0.Glowadictiv:setImage( RegisterImage( "uie_ui_menu_director_selection_glow01" ) )
 				f13_arg0.Glowadictiv:registerEventHandler( "interrupted_keyframe", f13_arg0.clipInterrupted )
 				f13_arg0.Glowadictiv:registerEventHandler( "transition_complete_keyframe", f13_arg0.clipFinished )
 			end

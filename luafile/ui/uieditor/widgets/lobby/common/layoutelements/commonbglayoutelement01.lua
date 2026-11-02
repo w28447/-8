@@ -17,7 +17,7 @@ CoD.CommonBgLayoutElement01.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local DotGridPattern01 = LUI.UIImage.new( 0, 0, 10.5, 134.5, 0, 0, 10, 26 )
 	DotGridPattern01:setAlpha( 0 )
 	DotGridPattern01:setImage( RegisterImage( "uie_ui_menu_inspection_grid_dot_pattern02" ) )
-	DotGridPattern01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	DotGridPattern01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	DotGridPattern01:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( DotGridPattern01 )
 	self.DotGridPattern01 = DotGridPattern01
@@ -25,7 +25,7 @@ CoD.CommonBgLayoutElement01.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local DotGridPattern02 = LUI.UIImage.new( 0, 0, 10.5, 134.5, 0, 0, 10, 26 )
 	DotGridPattern02:setAlpha( 0 )
 	DotGridPattern02:setImage( RegisterImage( "uie_ui_menu_inspection_grid_dot_pattern01" ) )
-	DotGridPattern02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	DotGridPattern02:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	DotGridPattern02:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( DotGridPattern02 )
 	self.DotGridPattern02 = DotGridPattern02
@@ -33,7 +33,7 @@ CoD.CommonBgLayoutElement01.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local DotGridPattern03 = LUI.UIImage.new( 0, 0, 10.5, 134.5, 0, 0, 10, 26 )
 	DotGridPattern03:setAlpha( 0 )
 	DotGridPattern03:setImage( RegisterImage( "uie_ui_menu_inspection_grid_dot_pattern03" ) )
-	DotGridPattern03:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	DotGridPattern03:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	DotGridPattern03:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( DotGridPattern03 )
 	self.DotGridPattern03 = DotGridPattern03
@@ -52,13 +52,13 @@ CoD.CommonBgLayoutElement01.__resetProperties = function ( f2_arg0 )
 	f2_arg0.DotGridPattern03:completeAnimation()
 	f2_arg0.DotGridBg:setAlpha( 1 )
 	f2_arg0.DotGridPattern01:setAlpha( 0 )
-	f2_arg0.DotGridPattern01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	f2_arg0.DotGridPattern01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	f2_arg0.DotGridPattern01:setShaderVector( 0, 1, 0, 0, 0 )
 	f2_arg0.DotGridPattern02:setAlpha( 0 )
-	f2_arg0.DotGridPattern02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	f2_arg0.DotGridPattern02:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	f2_arg0.DotGridPattern02:setShaderVector( 0, 1, 0, 0, 0 )
 	f2_arg0.DotGridPattern03:setAlpha( 0 )
-	f2_arg0.DotGridPattern03:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	f2_arg0.DotGridPattern03:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	f2_arg0.DotGridPattern03:setShaderVector( 0, 1, 0, 0, 0 )
 end
 
@@ -141,7 +141,7 @@ CoD.CommonBgLayoutElement01.__clipsPerState = {
 			
 			f3_arg0.DotGridPattern01:completeAnimation()
 			f3_arg0.DotGridPattern01:setAlpha( 0 )
-			f3_arg0.DotGridPattern01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f3_arg0.DotGridPattern01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f3_arg0.DotGridPattern01:setShaderVector( 0, 1, 0, 0, 0 )
 			f3_local1( f3_arg0.DotGridPattern01 )
 			local f3_local2 = function ( f15_arg0 )
@@ -195,7 +195,7 @@ CoD.CommonBgLayoutElement01.__clipsPerState = {
 			
 			f3_arg0.DotGridPattern02:completeAnimation()
 			f3_arg0.DotGridPattern02:setAlpha( 0 )
-			f3_arg0.DotGridPattern02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f3_arg0.DotGridPattern02:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f3_arg0.DotGridPattern02:setShaderVector( 0, 1, 0, 0, 0 )
 			f3_local2( f3_arg0.DotGridPattern02 )
 			local f3_local3 = function ( f23_arg0 )
@@ -249,7 +249,7 @@ CoD.CommonBgLayoutElement01.__clipsPerState = {
 			
 			f3_arg0.DotGridPattern03:completeAnimation()
 			f3_arg0.DotGridPattern03:setAlpha( 0 )
-			f3_arg0.DotGridPattern03:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+			f3_arg0.DotGridPattern03:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 			f3_arg0.DotGridPattern03:setShaderVector( 0, 1, 0, 0, 0 )
 			f3_local3( f3_arg0.DotGridPattern03 )
 			f3_arg0.nextClip = "DefaultClip"

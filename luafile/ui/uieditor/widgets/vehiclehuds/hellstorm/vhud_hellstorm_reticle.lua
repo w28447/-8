@@ -43,8 +43,8 @@ CoD.vhud_hellstorm_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.MissileContainer = MissileContainer
 	
 	local DotGridBlur = LUI.UIImage.new( -0, 1, -9, -9, -0, 1, -4, -4 )
-	DotGridBlur:setImage( RegisterImage( 0x56EB38F1457B4AE ) )
-	DotGridBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	DotGridBlur:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_repeat_blur_grid" ) )
+	DotGridBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	DotGridBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	DotGridBlur:setupNineSliceShader( 108, 108 )
 	self:addElement( DotGridBlur )
@@ -75,8 +75,8 @@ CoD.vhud_hellstorm_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local DotGridBlur2 = LUI.UIImage.new( -0, 1, -9, -9, -0, 1, -4, -4 )
 	DotGridBlur2:setAlpha( 0 )
-	DotGridBlur2:setImage( RegisterImage( 0x56EB38F1457B4AE ) )
-	DotGridBlur2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	DotGridBlur2:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_repeat_blur_grid" ) )
+	DotGridBlur2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	DotGridBlur2:setShaderVector( 0, 0, 0, 0, 0 )
 	DotGridBlur2:setupNineSliceShader( 108, 108 )
 	self:addElement( DotGridBlur2 )
@@ -86,7 +86,7 @@ CoD.vhud_hellstorm_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	DotGridCenter:setAlpha( 0 )
 	DotGridCenter:setScale( 2, 2 )
 	DotGridCenter:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_center_grid" ) )
-	DotGridCenter:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	DotGridCenter:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	DotGridCenter:setShaderVector( 0, 5, 0, 0, 0 )
 	self:addElement( DotGridCenter )
 	self.DotGridCenter = DotGridCenter
@@ -139,7 +139,7 @@ CoD.vhud_hellstorm_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local CenterDot = LUI.UIImage.new( 0.5, 0.5, -2, 2, 0.5, 0.5, -2, 2 )
 	CenterDot:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame_dot" ) )
-	CenterDot:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	CenterDot:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	CenterDot:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( CenterDot )
 	self.CenterDot = CenterDot
@@ -170,7 +170,7 @@ CoD.vhud_hellstorm_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local TimerSegmentsBase = LUI.UIImage.new( 0.5, 0.5, -210, 210, 0.5, 0.5, -208, 212 )
 	TimerSegmentsBase:setAlpha( 0.1 )
 	TimerSegmentsBase:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_timer" ) )
-	TimerSegmentsBase:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	TimerSegmentsBase:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	TimerSegmentsBase:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( TimerSegmentsBase )
 	self.TimerSegmentsBase = TimerSegmentsBase

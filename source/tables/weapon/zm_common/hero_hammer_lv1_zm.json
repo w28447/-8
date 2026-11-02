@@ -48,7 +48,7 @@
     ],
     "gadgetIconAvailable": "#ui_icon_equpiment_zm_meleehammer_lv1",
     "gadgetIconUnavailable": "#ui_icon_equpiment_zm_meleehammer_lv1_dark",
-    "reticleCenter": "#hash_9113a4bd1b38c65",
+    "reticleCenter": "#i_reticle_grapple_center",
     "inventoryIconZm": "#ui_icon_equpiment_zm_meleehammer_lv1",
     "hudIcon": "#ui_icon_equpiment_zm_meleehammer_lv1",
     "image_e90": "#ui_icon_equpiment_zm_meleehammer_lv1",

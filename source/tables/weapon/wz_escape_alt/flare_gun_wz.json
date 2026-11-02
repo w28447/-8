@@ -42,8 +42,8 @@
     "sound660": "#uin_unavailable_charging",
     "tunables1": "#flare_gun_tunables_wz",
     "sharedWeaponSounds": "#equipment",
-    "model_d28": "#hash_326cc6a2a2ef6e4",
-    "projectilemodel": "#hash_326cc6a2a2ef6e4",
+    "model_d28": "#wpn_t8_eqp_flare_gun_projectile",
+    "projectilemodel": "#wpn_t8_eqp_flare_gun_projectile",
     "viewmodel": [
         "#wpn_t8_eqp_flare_gun_view"
     ],

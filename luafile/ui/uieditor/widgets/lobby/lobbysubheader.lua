@@ -43,7 +43,7 @@ CoD.Lobbysubheader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local TriangleBGPattern01 = LUI.UIImage.new( -0.1, 1.1, 0, 0, 1, 1, -582, -114 )
 	TriangleBGPattern01:setAlpha( 0.04 )
 	TriangleBGPattern01:setImage( RegisterImage( "uie_ui_menu_cac_grid_pattern_bg01" ) )
-	TriangleBGPattern01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	TriangleBGPattern01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	TriangleBGPattern01:setShaderVector( 0, 0, 0, 0, 0 )
 	TriangleBGPattern01:setupNineSliceShader( 256, 256 )
 	self:addElement( TriangleBGPattern01 )

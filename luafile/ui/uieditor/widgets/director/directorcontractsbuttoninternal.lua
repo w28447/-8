@@ -15,7 +15,7 @@ CoD.DirectorContractsButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local BlurBg = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	BlurBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	BlurBg:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	BlurBg:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BlurBg )
 	self.BlurBg = BlurBg
@@ -57,7 +57,7 @@ CoD.DirectorContractsButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	MiddleText:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	MiddleText:setText( LocalizeToUpperString( "blackmarket/contracts" ) )
 	MiddleText:setTTF( "ttmussels_regular" )
-	MiddleText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	MiddleText:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	MiddleText:setLetterSpacing( 3 )
 	MiddleText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	MiddleText:setAlignment( Enum.LUIAlignment[0x6ED4298C93DC5ED] )

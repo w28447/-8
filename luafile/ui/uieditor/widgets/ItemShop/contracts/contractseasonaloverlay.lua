@@ -25,7 +25,7 @@ CoD.ContractSeasonalOverlay.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local PixelGridTiledBacking2 = LUI.UIImage.new( 0, 0, 1, 401, 0, 0, 12.5, 29.5 )
 	PixelGridTiledBacking2:setAlpha( 0.05 )
 	PixelGridTiledBacking2:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
-	PixelGridTiledBacking2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	PixelGridTiledBacking2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	PixelGridTiledBacking2:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGridTiledBacking2:setupNineSliceShader( 128, 128 )
 	self:addElement( PixelGridTiledBacking2 )
@@ -33,7 +33,7 @@ CoD.ContractSeasonalOverlay.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local Border = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	Border:setRGB( 0.67, 0.67, 0.67 )
-	Border:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE7BDCB879A5176D ) )
+	Border:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_rectangle_normal" ) )
 	Border:setShaderVector( 0, 0, 0, 0, 0 )
 	Border:setShaderVector( 1, 0, 0, 0, 0 )
 	Border:setupNineSliceShader( 1, 1 )

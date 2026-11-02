@@ -9,7 +9,7 @@ CoD.AmmoWidget_OIC_bulletPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local Image = LUI.UIImage.new( 0, 0, -10, 30, 0, 0, 0, 40 )
-	Image:setImage( RegisterImage( 0x708E1E3721B37B6 ) )
+	Image:setImage( RegisterImage( "uie_ui_hud_oic_bullet" ) )
 	self:addElement( Image )
 	self.Image = Image
 	

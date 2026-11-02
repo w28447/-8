@@ -14,7 +14,7 @@ CoD.CommonTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	local ZMTabBackingGlowRed = LUI.UIImage.new( 0, 1, -111, 111, 0, 1, -111, 111 )
 	ZMTabBackingGlowRed:setAlpha( 0 )
 	ZMTabBackingGlowRed:setImage( RegisterImage( "uie_ui_menu_common_tab_glowred" ) )
-	ZMTabBackingGlowRed:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	ZMTabBackingGlowRed:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	ZMTabBackingGlowRed:setShaderVector( 0, 1.36, 0, 0, 0 )
 	self:addElement( ZMTabBackingGlowRed )
 	self.ZMTabBackingGlowRed = ZMTabBackingGlowRed
@@ -22,7 +22,7 @@ CoD.CommonTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	local ZMTabBackingRed = LUI.UIImage.new( 0, 1, -67, 67, 0, 1, -32, 32 )
 	ZMTabBackingRed:setAlpha( 0 )
 	ZMTabBackingRed:setImage( RegisterImage( "uie_ui_menu_common_tab_backing_red" ) )
-	ZMTabBackingRed:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	ZMTabBackingRed:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	ZMTabBackingRed:setShaderVector( 0, 0.9, 0, 0, 0 )
 	self:addElement( ZMTabBackingRed )
 	self.ZMTabBackingRed = ZMTabBackingRed
@@ -80,7 +80,7 @@ CoD.CommonTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	local TabBackingGlow = LUI.UIImage.new( 0, 1, -117, 117, 0, 1, -111, 111 )
 	TabBackingGlow:setAlpha( 0 )
 	TabBackingGlow:setImage( RegisterImage( "uie_ui_menu_common_tab_glow" ) )
-	TabBackingGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	TabBackingGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	TabBackingGlow:setShaderVector( 0, 1.36, 0, 0, 0 )
 	self:addElement( TabBackingGlow )
 	self.TabBackingGlow = TabBackingGlow
@@ -88,7 +88,7 @@ CoD.CommonTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	local TabBacking = LUI.UIImage.new( 0, 1, -66, 66, 0, 1, -30, 30 )
 	TabBacking:setAlpha( 0 )
 	TabBacking:setImage( RegisterImage( "uie_ui_menu_common_tab_backing" ) )
-	TabBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	TabBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	TabBacking:setShaderVector( 0, 0.9, 0, 0, 0 )
 	self:addElement( TabBacking )
 	self.TabBacking = TabBacking

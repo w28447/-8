@@ -9,7 +9,7 @@ CoD.WeaponLevelUpTitle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local TitleBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	TitleBacking:setAlpha( 0.8 )
-	TitleBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	TitleBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	TitleBacking:setShaderVector( 0, 0, 1, 0, 0 )
 	self:addElement( TitleBacking )
 	self.TitleBacking = TitleBacking
@@ -17,7 +17,7 @@ CoD.WeaponLevelUpTitle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local TitlePixels = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	TitlePixels:setAlpha( 0.5 )
 	TitlePixels:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
-	TitlePixels:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	TitlePixels:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	TitlePixels:setShaderVector( 0, 0, 0, 0, 0 )
 	TitlePixels:setupNineSliceShader( 100, 100 )
 	self:addElement( TitlePixels )

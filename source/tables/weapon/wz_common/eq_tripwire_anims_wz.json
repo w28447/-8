@@ -61,7 +61,7 @@
     ],
     "customsettings": "#tripwire_custom_settings",
     "#hash_2e4a8800": "#eq_tripwire_scoreevents",
-    "projectilemodel": "#hash_22e8d1ae72884594",
+    "projectilemodel": "#wpn_t8_eqp_tripwire_ied_projectile",
     "viewmodel": [
         "#wpn_t8_eqp_tripwire_slingshot_view"
     ],

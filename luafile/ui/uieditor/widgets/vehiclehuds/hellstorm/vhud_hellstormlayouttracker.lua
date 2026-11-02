@@ -12,14 +12,14 @@ CoD.vhud_HellstormLayoutTracker.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	LayoutTracker:setAlpha( 0.5 )
 	LayoutTracker:setScale( 0.5, 0.5 )
 	LayoutTracker:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_top_fui" ) )
-	LayoutTracker:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	LayoutTracker:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	LayoutTracker:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( LayoutTracker )
 	self.LayoutTracker = LayoutTracker
 	
 	local TrackingBar = LUI.UIImage.new( 0, 0, 365.5, 377.5, 0, 0, 34, 50 )
-	TrackingBar:setImage( RegisterImage( 0x4B7002AD21F76C7 ) )
-	TrackingBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	TrackingBar:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_tracking_bar" ) )
+	TrackingBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	TrackingBar:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( TrackingBar )
 	self.TrackingBar = TrackingBar

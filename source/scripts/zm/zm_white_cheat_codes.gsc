@@ -94,9 +94,9 @@ function grav()
     #/
     
     level thread zm_white_util::function_ec34b5ee( #"vox_code_correct_rush_0" );
-    zm_bgb_newtonian_negation::function_8622e664( 1 );
+    zm_bgb_newtonian_negation::invert_gravity( 1 );
     wait 60;
-    zm_bgb_newtonian_negation::function_8622e664( 0 );
+    zm_bgb_newtonian_negation::invert_gravity( 0 );
     
     /#
         iprintlnbold( "<dev string:x9e>" );

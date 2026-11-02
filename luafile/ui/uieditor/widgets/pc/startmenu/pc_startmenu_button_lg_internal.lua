@@ -35,7 +35,7 @@ CoD.PC_StartMenu_Button_LG_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local NoiseTiledBackingAdd = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBackingAdd:setAlpha( 0.2 )
 	NoiseTiledBackingAdd:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
-	NoiseTiledBackingAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	NoiseTiledBackingAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	NoiseTiledBackingAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBackingAdd:setupNineSliceShader( 196, 88 )
 	self:addElement( NoiseTiledBackingAdd )
@@ -141,7 +141,7 @@ CoD.PC_StartMenu_Button_LG_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local BracketL = LUI.UIFixedAspectRatioImage.new( 0.5, 0.5, -130, -30, 0.5, 0.5, -42, 58 )
 	BracketL:setImage( RegisterImage( "uie_textbracket" ) )
-	BracketL:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	BracketL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	BracketL:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( BracketL )
 	self.BracketL = BracketL
@@ -149,7 +149,7 @@ CoD.PC_StartMenu_Button_LG_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local BracketL2 = LUI.UIFixedAspectRatioImage.new( 0.5, 0.5, -130, -30, 0.5, 0.5, -42, 58 )
 	BracketL2:setRGB( 1, 0.88, 0.71 )
 	BracketL2:setImage( RegisterImage( "uie_textbracket" ) )
-	BracketL2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	BracketL2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	BracketL2:setShaderVector( 0, 1.3, 0, 0, 0 )
 	self:addElement( BracketL2 )
 	self.BracketL2 = BracketL2
@@ -157,7 +157,7 @@ CoD.PC_StartMenu_Button_LG_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local BracketR = LUI.UIFixedAspectRatioImage.new( 0.5, 0.5, 30, 130, 0.5, 0.5, -42, 58 )
 	BracketR:setYRot( 180 )
 	BracketR:setImage( RegisterImage( "uie_textbracket" ) )
-	BracketR:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	BracketR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	BracketR:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( BracketR )
 	self.BracketR = BracketR
@@ -166,7 +166,7 @@ CoD.PC_StartMenu_Button_LG_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	BracketR2:setRGB( 1, 0.88, 0.71 )
 	BracketR2:setYRot( 180 )
 	BracketR2:setImage( RegisterImage( "uie_textbracket" ) )
-	BracketR2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	BracketR2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	BracketR2:setShaderVector( 0, 1.3, 0, 0, 0 )
 	self:addElement( BracketR2 )
 	self.BracketR2 = BracketR2

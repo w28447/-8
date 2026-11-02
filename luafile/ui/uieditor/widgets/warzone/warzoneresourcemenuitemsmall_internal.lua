@@ -13,7 +13,7 @@ CoD.WarzoneResourceMenuItemSmall_Internal.new = function ( f1_arg0, f1_arg1, f1_
 	local blurPC = nil
 	
 	blurPC = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	blurPC:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	blurPC:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	blurPC:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( blurPC )
 	self.blurPC = blurPC

@@ -55,7 +55,7 @@ CoD.HealthInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	
 	local HealthValue = LUI.UIText.new( 0, 0, 287, 351, 0, 0, 38, 64 )
 	HealthValue:setTTF( "0arame_mono_stencil" )
-	HealthValue:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	HealthValue:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	HealthValue:setShaderVector( 0, 0.8, 0, 0, 0 )
 	HealthValue:setShaderVector( 1, 0, 0, 0, 0 )
 	HealthValue:setShaderVector( 2, 1, 1, 1, 0.25 )

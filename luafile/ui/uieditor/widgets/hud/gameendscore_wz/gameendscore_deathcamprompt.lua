@@ -43,7 +43,7 @@ CoD.GameEndScore_DeathCamPrompt.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	WaypointPattern:setRGB( 0.13, 0.87, 0.94 )
 	WaypointPattern:setAlpha( 0.75 )
 	WaypointPattern:setImage( RegisterImage( "uie_ui_hud_core_waypoint_led" ) )
-	WaypointPattern:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	WaypointPattern:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	WaypointPattern:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( WaypointPattern )
 	self.WaypointPattern = WaypointPattern
@@ -51,7 +51,7 @@ CoD.GameEndScore_DeathCamPrompt.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local YouText = LUI.UIText.new( 0.5, 0.5, -44, 14, 0, 0, 16.5, 37.5 )
 	YouText:setText( LocalizeToUpperString( "wz/you" ) )
 	YouText:setTTF( "ttmussels_demibold" )
-	YouText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	YouText:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	YouText:setShaderVector( 0, 0.5, 0, 0, 0 )
 	YouText:setShaderVector( 1, 0, 0, 0, 0 )
 	YouText:setShaderVector( 2, 0, 0, 0, 0.5 )
@@ -63,7 +63,7 @@ CoD.GameEndScore_DeathCamPrompt.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local Arrows = LUI.UIImage.new( 0.5, 0.5, -31, 1, 0, 0, 54.5, 86.5 )
 	Arrows:setImage( RegisterImage( "uie_ui_hud_revive_arrow" ) )
-	Arrows:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	Arrows:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	Arrows:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Arrows )
 	self.Arrows = Arrows

@@ -11,7 +11,7 @@ CoD.LeaguePlayEndRankUpRank.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local CurrentRank = LUI.UIText.new( 0.5, 0.5, -100, 100, 1, 1, -72, 0 )
 	CurrentRank:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	CurrentRank:setTTF( "ttmussels_demibold" )
-	CurrentRank:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	CurrentRank:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	CurrentRank:setShaderVector( 0, 0.3, 0, 0, 0 )
 	CurrentRank:setShaderVector( 1, 0, 0, 0, 0 )
 	CurrentRank:setShaderVector( 2, 0.4, 0.3, 0, 0.6 )

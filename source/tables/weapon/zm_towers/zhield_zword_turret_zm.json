@@ -49,10 +49,10 @@
     "tunables1": "#zhield_zword_turret_tunables_zm",
     "sharedWeaponSounds": "#zhield_towers_shield",
     "viewmodel": [
-        "#hash_2a2eae8b8d64d6c9"
+        "#wpn_t8_zm_tower_shield_combined_view"
     ],
     "worldModel": [
-        "#hash_2bbcba00bc56421c"
+        "#wpn_t8_zm_tower_shield_combined_world"
     ],
     "gadgetIconAvailable": "#ui_icon_weapons_zm_shield_buckler",
     "gadgetIconUnavailable": "#ui_icon_weapons_zm_shield_buckler",
@@ -69,10 +69,10 @@
     "exitImpactSounds": "#bullet_exit",
     "#hash_21329beb": [
         {
-            "model": "#hash_2ade4f6bd9de10b4"
+            "model": "#wpn_t8_zm_tower_shield_combined_d1_world"
         },
         {
-            "model": "#hash_3c9f0cdd73ce9475"
+            "model": "#wpn_t8_zm_tower_shield_combined_d2_world"
         }
     ]
 }

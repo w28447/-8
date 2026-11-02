@@ -135,7 +135,7 @@ CoD.StartMenu_Barracks_WZ_WinRecordContainer.new = function ( f1_arg0, f1_arg1, 
 	DotlineTop = LUI.UIImage.new( 0, 0, 8.5, 468.5, 0, 0, 224.5, 228.5 )
 	DotlineTop:setAlpha( 0.2 )
 	DotlineTop:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline" ) )
-	DotlineTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	DotlineTop:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	DotlineTop:setShaderVector( 0, 1.2, 0, 0, 0 )
 	self:addElement( DotlineTop )
 	self.DotlineTop = DotlineTop
@@ -143,7 +143,7 @@ CoD.StartMenu_Barracks_WZ_WinRecordContainer.new = function ( f1_arg0, f1_arg1, 
 	DotlineBot = LUI.UIImage.new( 0, 0, 8.5, 468.5, 0, 0, 446.5, 450.5 )
 	DotlineBot:setAlpha( 0.2 )
 	DotlineBot:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline" ) )
-	DotlineBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	DotlineBot:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	DotlineBot:setShaderVector( 0, 1.2, 0, 0, 0 )
 	self:addElement( DotlineBot )
 	self.DotlineBot = DotlineBot

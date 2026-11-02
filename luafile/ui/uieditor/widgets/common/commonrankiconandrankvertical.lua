@@ -21,7 +21,7 @@ CoD.CommonRankIconAndRankVertical.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local rankText = LUI.UIText.new( 0, 0, 57, 86, 0.5, 0.5, -10, 10 )
 	rankText:setTTF( "0arame_mono_stencil" )
-	rankText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	rankText:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	rankText:setShaderVector( 0, 1, 0, 0, 0 )
 	rankText:setShaderVector( 1, 0, 0, 0, 0 )
 	rankText:setShaderVector( 2, 0, 0, 0, 0.5 )

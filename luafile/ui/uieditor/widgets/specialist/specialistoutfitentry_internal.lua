@@ -31,7 +31,7 @@ CoD.SpecialistOutfitEntry_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	LockedIcon:setAlpha( 0 )
 	LockedIcon:setScale( 0.25, 0.25 )
 	LockedIcon:setImage( RegisterImage( "uie_ui_icon_global_lock" ) )
-	LockedIcon:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	LockedIcon:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	LockedIcon:setShaderVector( 0, 4, 0, 0, 0 )
 	self:addElement( LockedIcon )
 	self.LockedIcon = LockedIcon

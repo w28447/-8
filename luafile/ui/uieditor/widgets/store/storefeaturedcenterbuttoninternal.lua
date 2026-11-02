@@ -132,14 +132,14 @@ CoD.StoreFeaturedCenterButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2
 	local equippedIcon = LUI.UIImage.new( 0.98, 0.98, -17.5, 3.5, 0.03, 0.03, -5.5, 15.5 )
 	equippedIcon:setRGB( 0.56, 0.68, 0.27 )
 	equippedIcon:setAlpha( 0 )
-	equippedIcon:setImage( RegisterImage( 0xB0337CBFC61A7A2 ) )
+	equippedIcon:setImage( RegisterImage( "t7_hud_cac_equipped_16" ) )
 	self:addElement( equippedIcon )
 	self.equippedIcon = equippedIcon
 	
 	local alertIcon = LUI.UIImage.new( 0.97, 0.97, -14.5, 6.5, 0.03, 0.03, -7, 14 )
 	alertIcon:setRGB( 1, 0.41, 0 )
 	alertIcon:setAlpha( 0 )
-	alertIcon:setImage( RegisterImage( 0x11D4E13C821CCE3 ) )
+	alertIcon:setImage( RegisterImage( "t7_hud_cac_warning_16" ) )
 	self:addElement( alertIcon )
 	self.alertIcon = alertIcon
 	

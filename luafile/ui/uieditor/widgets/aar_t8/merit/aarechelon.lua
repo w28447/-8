@@ -15,7 +15,7 @@ CoD.AAREchelon.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	
 	local blurBg = LUI.UIImage.new( 0, 0, 0, 400, 0, 0, 0, 400 )
 	blurBg:setAlpha( 0 )
-	blurBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	blurBg:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	blurBg:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( blurBg )
 	self.blurBg = blurBg
@@ -37,7 +37,7 @@ CoD.AAREchelon.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	local GridBg = LUI.UIImage.new( 0, 0, 0, 400, 0, 0, 0, 400 )
 	GridBg:setAlpha( 0.02 )
 	GridBg:setImage( RegisterImage( "uie_ui_menu_aar_info_grid_sub" ) )
-	GridBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	GridBg:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	GridBg:setShaderVector( 0, 0, 0, 0, 0 )
 	GridBg:setupNineSliceShader( 292, 236 )
 	self:addElement( GridBg )
@@ -57,7 +57,7 @@ CoD.AAREchelon.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	Flare:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	Flare:setAlpha( 0 )
 	Flare:setImage( RegisterImage( "uie_ui_menu_aar_levelup_flare" ) )
-	Flare:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	Flare:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	Flare:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Flare )
 	self.Flare = Flare

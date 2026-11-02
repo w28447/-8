@@ -119,22 +119,22 @@ CoD.TabbedScoreboardMapInfographic.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local LeftFuiElementBlur = LUI.UIImage.new( 0, 0, 28.5, 144.5, 0, 0, 457, 517 )
 	LeftFuiElementBlur:setRGB( 0, 0, 0 )
 	LeftFuiElementBlur:setAlpha( 0.05 )
-	LeftFuiElementBlur:setImage( RegisterImage( 0x3570AE130F7102B ) )
+	LeftFuiElementBlur:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_map_fui_element" ) )
 	self:addElement( LeftFuiElementBlur )
 	self.LeftFuiElementBlur = LeftFuiElementBlur
 	
 	local LeftFuiElement = LUI.UIImage.new( 0, 0, 26.5, 142.5, 0, 0, 455, 515 )
-	LeftFuiElement:setImage( RegisterImage( 0x3570AE130F7102B ) )
+	LeftFuiElement:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_map_fui_element" ) )
 	self:addElement( LeftFuiElement )
 	self.LeftFuiElement = LeftFuiElement
 	
 	local LeftFuiElement2 = LUI.UIImage.new( 0, 0, 26.5, 142.5, 0, 0, 455, 515 )
-	LeftFuiElement2:setImage( RegisterImage( 0x3570AE130F7102B ) )
+	LeftFuiElement2:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_map_fui_element" ) )
 	self:addElement( LeftFuiElement2 )
 	self.LeftFuiElement2 = LeftFuiElement2
 	
 	local SatelliteTextGlow = LUI.UIImage.new( 0, 0, 632.5, 856.5, 0, 0, 513, 553 )
-	SatelliteTextGlow:setImage( RegisterImage( 0x20A8A24C5B343CF ) )
+	SatelliteTextGlow:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_map_satellite_glow" ) )
 	self:addElement( SatelliteTextGlow )
 	self.SatelliteTextGlow = SatelliteTextGlow
 	

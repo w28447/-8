@@ -2586,7 +2586,7 @@ function timer_til_despawn( v_float )
 {
     self endon( #"kill_weapon_movement" );
     
-    if ( #"hash_30b0badbca0a10de" === self.model )
+    if ( #"wpn_t8_zm_eqp_lightning_rod_world" === self.model )
     {
         self.angles = ( self.angles[ 0 ] + 90, self.angles[ 1 ], self.angles[ 2 ] );
     }

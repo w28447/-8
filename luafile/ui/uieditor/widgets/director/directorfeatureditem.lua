@@ -15,7 +15,7 @@ CoD.DirectorFeaturedItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local GamemodeBackground = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	GamemodeBackground:setImage( RegisterImage( 0x42C6A5D3E653E02 ) )
-	GamemodeBackground:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	GamemodeBackground:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	GamemodeBackground:setShaderVector( 0, 0.35, 0.19, 0, 0 )
 	GamemodeBackground:setShaderVector( 1, 1, 1, 0, 0 )
 	GamemodeBackground:setShaderVector( 2, 0, 0, 0, 0 )
@@ -38,7 +38,7 @@ CoD.DirectorFeaturedItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	Header:setBackingAlpha( 0.7 )
 	Header:setBackingXPadding( 10 )
 	Header:setBackingYPadding( 3 )
-	Header:setBackingImage( RegisterImage( 0xC229CEBABEEAB0E ) )
+	Header:setBackingImage( RegisterImage( "uie_ui_icon_corner_bar_noise" ) )
 	Header:linkToElementModel( self, "name", true, function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then

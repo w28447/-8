@@ -15,7 +15,7 @@ CoD.Warzone_EMP_Compass.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	self.Backer = Backer
 	
 	local EMPcompass = LUI.UIImage.new( 0, 0, 0, 772, 0, 0, 0, 100 )
-	EMPcompass:setImage( RegisterImage( 0x5E328FFCA14F162 ) )
+	EMPcompass:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_emp_compass_widget" ) )
 	EMPcompass:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_emp" ) )
 	EMPcompass:setShaderVector( 0, 35.93, 0, 0, 0 )
 	EMPcompass:setShaderVector( 1, 0.83, 0, 0, 0 )

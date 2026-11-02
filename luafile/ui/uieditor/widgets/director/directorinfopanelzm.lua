@@ -21,7 +21,7 @@ CoD.DirectorInfoPanelZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local CroppedZmBacking2 = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 20, 0 )
 	CroppedZmBacking2:setAlpha( 0.5 )
 	CroppedZmBacking2:setImage( RegisterImage( "uie_ui_hud_zm_aar_reward_bg" ) )
-	CroppedZmBacking2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	CroppedZmBacking2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	CroppedZmBacking2:setShaderVector( 0, 0, 0, 0, 0 )
 	CroppedZmBacking2:setShaderVector( 1, 1, 1, 0, 0 )
 	CroppedZmBacking2:setShaderVector( 2, 0, 0, 0, 0 )
@@ -31,7 +31,7 @@ CoD.DirectorInfoPanelZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local BotPatterLeft = LUI.UIImage.new( 0, 0, 0, 168, 1, 1, -168, 0 )
 	BotPatterLeft:setAlpha( 0.8 )
 	BotPatterLeft:setImage( RegisterImage( "uie_ui_hud_zm_aar_bg_pattern" ) )
-	BotPatterLeft:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	BotPatterLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	BotPatterLeft:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( BotPatterLeft )
 	self.BotPatterLeft = BotPatterLeft
@@ -40,7 +40,7 @@ CoD.DirectorInfoPanelZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	BotPatterRight:setAlpha( 0.8 )
 	BotPatterRight:setYRot( 180 )
 	BotPatterRight:setImage( RegisterImage( "uie_ui_hud_zm_aar_bg_pattern" ) )
-	BotPatterRight:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	BotPatterRight:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	BotPatterRight:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( BotPatterRight )
 	self.BotPatterRight = BotPatterRight
@@ -62,7 +62,7 @@ CoD.DirectorInfoPanelZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local CroppedZmBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 16, 0 )
 	CroppedZmBacking:setImage( RegisterImage( "uie_ui_hud_zm_aar_reward_bg" ) )
-	CroppedZmBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	CroppedZmBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	CroppedZmBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	CroppedZmBacking:setShaderVector( 1, 1, 1, 0, 0 )
 	CroppedZmBacking:setShaderVector( 2, 0, 0, 0, 0 )
@@ -80,7 +80,7 @@ CoD.DirectorInfoPanelZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	self.InfoPanelBG1 = InfoPanelBG1
 	
 	local MapImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 20, 230 )
-	MapImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	MapImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	MapImage:setShaderVector( 0, 0, 0, 0, 0 )
 	MapImage:setShaderVector( 1, 1, 1, 0, 0 )
 	MapImage:setShaderVector( 2, 0, 0, 0, 0 )
@@ -456,7 +456,7 @@ CoD.DirectorInfoPanelZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	self.TopBar = TopBar
 	
 	YellowLine = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 15.5, 23.5 )
-	YellowLine:setImage( RegisterImage( 0xE6E505307F7B8D7 ) )
+	YellowLine:setImage( RegisterImage( "uie_summary_divider" ) )
 	YellowLine:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	YellowLine:setShaderVector( 0, 0, 0, 0, 0 )
 	YellowLine:setupNineSliceShader( 3, 60 )
@@ -481,7 +481,7 @@ CoD.DirectorInfoPanelZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local MapName = LUI.UIText.new( 0, 0, 15, 525, 0, 0, 196, 230 )
 	MapName:setRGB( 0.92, 0.92, 0.92 )
 	MapName:setTTF( "skorzhen" )
-	MapName:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	MapName:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	MapName:setShaderVector( 0, 1, 0, 0, 0 )
 	MapName:setShaderVector( 1, 0, 0, 0, 0 )
 	MapName:setShaderVector( 2, 0, 0, 0, 0.9 )

@@ -55,7 +55,7 @@ CoD.PC_ConnectionQueuingOverlay.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local Header = LUI.UIText.new( 0.5, 0.5, -324.5, 324.5, 0.2, 0.2, 0, 30 )
 	Header:setText( Engine[0xF9F1239CFD921FE]( "menu/login_queue_default" ) )
 	Header:setTTF( "ttmussels_demibold" )
-	Header:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	Header:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	Header:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	Header:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
 	self:addElement( Header )

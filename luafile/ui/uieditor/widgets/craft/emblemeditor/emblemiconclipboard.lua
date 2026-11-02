@@ -15,7 +15,7 @@ CoD.EmblemIconClipboard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local Backing = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	Backing:setRGB( 0, 0, 0 )
-	Backing:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	Backing:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	Backing:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( Backing )
 	self.Backing = Backing
@@ -31,7 +31,7 @@ CoD.EmblemIconClipboard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local NoiseTiledBackingAdd = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBackingAdd:setAlpha( 0.2 )
 	NoiseTiledBackingAdd:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
-	NoiseTiledBackingAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	NoiseTiledBackingAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	NoiseTiledBackingAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBackingAdd:setupNineSliceShader( 196, 88 )
 	self:addElement( NoiseTiledBackingAdd )
@@ -202,7 +202,7 @@ CoD.EmblemIconClipboard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	FooterStripe1 = LUI.UIImage.new( 0, 0, 0, 252, 1, 1, -36, -1 )
 	FooterStripe1:setAlpha( 0.1 )
 	FooterStripe1:setImage( RegisterImage( 0xC7A051F5EFC70E5 ) )
-	FooterStripe1:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	FooterStripe1:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	FooterStripe1:setShaderVector( 0, 0, 0, 0, 0 )
 	FooterStripe1:setupNineSliceShader( 245, 40 )
 	self:addElement( FooterStripe1 )

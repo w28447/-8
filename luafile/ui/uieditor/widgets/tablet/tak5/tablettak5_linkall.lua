@@ -16,7 +16,7 @@ CoD.TabletTak5_LinkAll.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local ModuleLink01Add = LUI.UIImage.new( 0, 0, 50.5, 240.5, 0, 0, 48, 70 )
 	ModuleLink01Add:setAlpha( 0.2 )
 	ModuleLink01Add:setImage( RegisterImage( "uie_ui_hud_tak5_module_link01" ) )
-	ModuleLink01Add:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	ModuleLink01Add:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	ModuleLink01Add:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ModuleLink01Add )
 	self.ModuleLink01Add = ModuleLink01Add
@@ -29,7 +29,7 @@ CoD.TabletTak5_LinkAll.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local ModuleLink02Add = LUI.UIImage.new( 0, 0, 130, 244, 0, 0, 60.5, 188.5 )
 	ModuleLink02Add:setAlpha( 0.2 )
 	ModuleLink02Add:setImage( RegisterImage( "uie_ui_hud_tak5_module_link02" ) )
-	ModuleLink02Add:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	ModuleLink02Add:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	ModuleLink02Add:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ModuleLink02Add )
 	self.ModuleLink02Add = ModuleLink02Add
@@ -42,7 +42,7 @@ CoD.TabletTak5_LinkAll.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local ModuleLink03Add = LUI.UIImage.new( 0, 0, 239.5, 253.5, 0, 0, 5, 59 )
 	ModuleLink03Add:setAlpha( 0.2 )
 	ModuleLink03Add:setImage( RegisterImage( "uie_ui_hud_tak5_module_link03" ) )
-	ModuleLink03Add:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	ModuleLink03Add:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	ModuleLink03Add:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ModuleLink03Add )
 	self.ModuleLink03Add = ModuleLink03Add
@@ -55,35 +55,35 @@ CoD.TabletTak5_LinkAll.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local ModuleLink04Add = LUI.UIImage.new( 0, 0, 9.5, 33.5, 0, 0, 134.5, 188.5 )
 	ModuleLink04Add:setAlpha( 0.2 )
 	ModuleLink04Add:setImage( RegisterImage( "uie_ui_hud_tak5_module_link04" ) )
-	ModuleLink04Add:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	ModuleLink04Add:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	ModuleLink04Add:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ModuleLink04Add )
 	self.ModuleLink04Add = ModuleLink04Add
 	
 	local Connector01 = LUI.UIImage.new( 0, 0, 235.5, 249.5, 0, 0, 52, 66 )
 	Connector01:setImage( RegisterImage( "uie_ui_hud_tak5_link_con01" ) )
-	Connector01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	Connector01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	Connector01:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Connector01 )
 	self.Connector01 = Connector01
 	
 	local Connector02 = LUI.UIImage.new( 0, 0, 0, 14, 0, 0, 129, 143 )
 	Connector02:setImage( RegisterImage( "uie_ui_hud_tak5_link_con02" ) )
-	Connector02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	Connector02:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	Connector02:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Connector02 )
 	self.Connector02 = Connector02
 	
 	local Connector03 = LUI.UIImage.new( 0, 0, 248.5, 262.5, 0, 0, -0.5, 13.5 )
 	Connector03:setImage( RegisterImage( "uie_ui_hud_tak5_link_con02" ) )
-	Connector03:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	Connector03:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	Connector03:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Connector03 )
 	self.Connector03 = Connector03
 	
 	local Connector04 = LUI.UIImage.new( 0, 0, 126.5, 140.5, 0, 0, 180, 194 )
 	Connector04:setImage( RegisterImage( "uie_ui_hud_tak5_link_con02" ) )
-	Connector04:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	Connector04:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	Connector04:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Connector04 )
 	self.Connector04 = Connector04

@@ -1618,7 +1618,7 @@ function function_9d8118f5( v_origin )
         var_116b3a00 = 0;
     }
     
-    if ( self zm_utility::duf47() || var_806b07bd zm_utility::duf47() )
+    if ( self zm_utility::function_ab9a9770() || var_806b07bd zm_utility::function_ab9a9770() )
     {
         var_116b3a00 = 0;
     }
@@ -1823,7 +1823,7 @@ function function_3fa57f3f()
 // Params 3
 // Checksum 0x5676b58f, Offset: 0x5620
 // Size: 0x1fa
-function function_f51e3503( n_max_distance, var_5250f4f6, var_8bc18989 )
+function player_proximity_watcher( n_max_distance, var_5250f4f6, var_8bc18989 )
 {
     self endon( #"disconnect", #"bled_out", #"bgb_update" );
     self.var_9c42f3fe = [];

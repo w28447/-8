@@ -11,7 +11,7 @@ CoD.AmmoWidget_AmmoCaliber.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local ammoType = LUI.UIText.new( 0, 0, 0, 164, 0, 0, 0, 14 )
 	ammoType:setRGB( 0.73, 0.71, 0.64 )
 	ammoType:setTTF( "ttmussels_regular" )
-	ammoType:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	ammoType:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	ammoType:setShaderVector( 0, 1, 0, 0, 0 )
 	ammoType:setShaderVector( 1, 0, 0, 0, 0 )
 	ammoType:setShaderVector( 2, 0.8, 0.8, 0.8, 0.3 )

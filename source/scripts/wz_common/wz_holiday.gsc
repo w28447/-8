@@ -39,17 +39,17 @@ function function_af9a5cd8()
         
         foreach ( dynent in chests )
         {
-            add_helico( dynent, #"hash_3904843a3766b7f0" );
+            add_helico( dynent, #"p8_fxanim_wz_spd_supply_stash_01_mod" );
         }
         
         foreach ( dynent in ammo )
         {
-            add_helico( dynent, #"hash_2f2a5c17b72fb1e9" );
+            add_helico( dynent, #"p8_fxanim_wz_spd_supply_stash_ammo_mod" );
         }
         
         foreach ( dynent in health )
         {
-            add_helico( dynent, #"hash_44278e5311d869f1" );
+            add_helico( dynent, #"p8_fxanim_wz_spd_supply_stash_health_mod" );
         }
     }
 }
@@ -117,98 +117,98 @@ function function_c5d0e538()
     
     if ( isdefined( var_76c1a919 ) )
     {
-        add_helico( var_76c1a919, #"hash_5e132c061625eb87" );
+        add_helico( var_76c1a919, #"p8_fxanim_wz_win_supply_stash_magic_box_mod" );
     }
     
     var_80d7570e = getdynent( #"hospital_stash_quest" );
     
     if ( isdefined( var_80d7570e ) )
     {
-        add_helico( var_80d7570e, #"hash_5e132c061625eb87" );
+        add_helico( var_80d7570e, #"p8_fxanim_wz_win_supply_stash_magic_box_mod" );
     }
     
     graveyard_chest = getdynent( #"zombie_stash_graveyard" );
     
     if ( isdefined( graveyard_chest ) )
     {
-        add_helico( graveyard_chest, #"hash_5e132c061625eb87" );
+        add_helico( graveyard_chest, #"p8_fxanim_wz_win_supply_stash_magic_box_mod" );
     }
     
     var_726be3fe = getdynent( #"zombie_stash_graveyard_quest" );
     
     if ( isdefined( var_726be3fe ) )
     {
-        add_helico( var_726be3fe, #"hash_5e132c061625eb87" );
+        add_helico( var_726be3fe, #"p8_fxanim_wz_win_supply_stash_magic_box_mod" );
     }
     
     diner_chest = getdynent( #"zombie_supply_stash_diner" );
     
     if ( isdefined( diner_chest ) )
     {
-        add_helico( diner_chest, #"hash_5e132c061625eb87" );
+        add_helico( diner_chest, #"p8_fxanim_wz_win_supply_stash_magic_box_mod" );
     }
     
     var_676cdb27 = getdynent( #"zombie_supply_stash_diner_quest" );
     
     if ( isdefined( var_676cdb27 ) )
     {
-        add_helico( var_676cdb27, #"hash_5e132c061625eb87" );
+        add_helico( var_676cdb27, #"p8_fxanim_wz_win_supply_stash_magic_box_mod" );
     }
     
     lighthouse_chest = getdynent( #"zombie_supply_stash_lighthouse" );
     
     if ( isdefined( lighthouse_chest ) )
     {
-        add_helico( lighthouse_chest, #"hash_5e132c061625eb87" );
+        add_helico( lighthouse_chest, #"p8_fxanim_wz_win_supply_stash_magic_box_mod" );
     }
     
     var_667d5645 = getdynent( #"zombie_supply_stash_lighthouse_quest" );
     
     if ( isdefined( var_667d5645 ) )
     {
-        add_helico( var_667d5645, #"hash_5e132c061625eb87" );
+        add_helico( var_667d5645, #"p8_fxanim_wz_win_supply_stash_magic_box_mod" );
     }
     
     boxing_gym_chest = getdynent( #"zombie_supply_stash_boxinggym" );
     
     if ( isdefined( boxing_gym_chest ) )
     {
-        add_helico( boxing_gym_chest, #"hash_5e132c061625eb87" );
+        add_helico( boxing_gym_chest, #"p8_fxanim_wz_win_supply_stash_magic_box_mod" );
     }
     
     var_b9d1e3a4 = getdynent( #"zombie_supply_stash_boxinggym_quest" );
     
     if ( isdefined( var_b9d1e3a4 ) )
     {
-        add_helico( var_b9d1e3a4, #"hash_5e132c061625eb87" );
+        add_helico( var_b9d1e3a4, #"p8_fxanim_wz_win_supply_stash_magic_box_mod" );
     }
     
     farm_chest = getdynent( #"zombie_supply_stash_farm" );
     
     if ( isdefined( farm_chest ) )
     {
-        add_helico( farm_chest, #"hash_5e132c061625eb87" );
+        add_helico( farm_chest, #"p8_fxanim_wz_win_supply_stash_magic_box_mod" );
     }
     
     var_cd5ee6fb = getdynent( #"zombie_supply_stash_farm_quest" );
     
     if ( isdefined( var_cd5ee6fb ) )
     {
-        add_helico( var_cd5ee6fb, #"hash_5e132c061625eb87" );
+        add_helico( var_cd5ee6fb, #"p8_fxanim_wz_win_supply_stash_magic_box_mod" );
     }
     
     var_d3db07bc = getdynent( #"zombie_supply_stash_crater" );
     
     if ( isdefined( var_d3db07bc ) )
     {
-        add_helico( var_d3db07bc, #"hash_5e132c061625eb87" );
+        add_helico( var_d3db07bc, #"p8_fxanim_wz_win_supply_stash_magic_box_mod" );
     }
     
     var_955bd1d9 = getdynent( #"zombie_supply_stash_crater_quest" );
     
     if ( isdefined( var_955bd1d9 ) )
     {
-        add_helico( var_955bd1d9, #"hash_5e132c061625eb87" );
+        add_helico( var_955bd1d9, #"p8_fxanim_wz_win_supply_stash_magic_box_mod" );
     }
 }
 

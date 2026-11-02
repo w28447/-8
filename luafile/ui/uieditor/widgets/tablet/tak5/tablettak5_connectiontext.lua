@@ -24,7 +24,7 @@ CoD.TabletTak5_ConnectionText.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	ConnectionAdd:setAlpha( 0 )
 	ConnectionAdd:setText( LocalizeToUpperString( "mpui/linked" ) )
 	ConnectionAdd:setTTF( "dinnext_regular" )
-	ConnectionAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x336C1AE82B1520A ) )
+	ConnectionAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield_add" ) )
 	ConnectionAdd:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	ConnectionAdd:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
 	self:addElement( ConnectionAdd )
@@ -37,7 +37,7 @@ CoD.TabletTak5_ConnectionText.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local ConnectionDataAdd = LUI.UIImage.new( 0, 0, 16, 144, 0, 0, 9, 23 )
 	ConnectionDataAdd:setImage( RegisterImage( "uie_ui_hud_tak5_data_normal" ) )
-	ConnectionDataAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	ConnectionDataAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	ConnectionDataAdd:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( ConnectionDataAdd )
 	self.ConnectionDataAdd = ConnectionDataAdd

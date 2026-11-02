@@ -17,7 +17,7 @@ CoD.Support_ExtraButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local BGTopBlur = LUI.UIImage.new( 0, 0, -12, 60, 0, 0, 5, 69 )
 	BGTopBlur:setImage( RegisterImage( "uie_ui_hud_core_frame_streaks_widget_top_mask" ) )
-	BGTopBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	BGTopBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	BGTopBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BGTopBlur )
 	self.BGTopBlur = BGTopBlur

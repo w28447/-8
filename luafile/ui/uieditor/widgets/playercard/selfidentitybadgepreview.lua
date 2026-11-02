@@ -31,7 +31,7 @@ CoD.SelfIdentityBadgePreview.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local DotLineTop = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, -6, -2 )
 	DotLineTop:setAlpha( 0.4 )
 	DotLineTop:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline" ) )
-	DotLineTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	DotLineTop:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	DotLineTop:setShaderVector( 0, 1.2, 0, 0, 0 )
 	self:addElement( DotLineTop )
 	self.DotLineTop = DotLineTop
@@ -39,7 +39,7 @@ CoD.SelfIdentityBadgePreview.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local DotLineBottom = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 93, 97 )
 	DotLineBottom:setAlpha( 0.4 )
 	DotLineBottom:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline" ) )
-	DotLineBottom:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	DotLineBottom:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	DotLineBottom:setShaderVector( 0, 1.2, 0, 0, 0 )
 	self:addElement( DotLineBottom )
 	self.DotLineBottom = DotLineBottom

@@ -17,7 +17,7 @@ CoD.CommonSocialArrow.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local SocialArrow03Add = LUI.UIImage.new( 0, 0, 0, 8, 0, 0, 0, 12 )
 	SocialArrow03Add:setAlpha( 0.2 )
 	SocialArrow03Add:setImage( RegisterImage( "uie_ui_menu_social_info_arrow" ) )
-	SocialArrow03Add:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	SocialArrow03Add:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	SocialArrow03Add:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( SocialArrow03Add )
 	self.SocialArrow03Add = SocialArrow03Add
@@ -31,7 +31,7 @@ CoD.CommonSocialArrow.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local SocialArrow02Add = LUI.UIImage.new( 0, 0, 8, 16, 0, 0, 0, 12 )
 	SocialArrow02Add:setAlpha( 0.4 )
 	SocialArrow02Add:setImage( RegisterImage( "uie_ui_menu_social_info_arrow" ) )
-	SocialArrow02Add:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	SocialArrow02Add:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	SocialArrow02Add:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( SocialArrow02Add )
 	self.SocialArrow02Add = SocialArrow02Add
@@ -45,7 +45,7 @@ CoD.CommonSocialArrow.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local SocialArrow01Add = LUI.UIImage.new( 0, 0, 16, 24, 0, 0, 0, 12 )
 	SocialArrow01Add:setAlpha( 0.9 )
 	SocialArrow01Add:setImage( RegisterImage( "uie_ui_menu_social_info_arrow" ) )
-	SocialArrow01Add:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	SocialArrow01Add:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	SocialArrow01Add:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( SocialArrow01Add )
 	self.SocialArrow01Add = SocialArrow01Add

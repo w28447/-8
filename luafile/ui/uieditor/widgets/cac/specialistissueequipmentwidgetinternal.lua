@@ -30,7 +30,7 @@ CoD.SpecialistIssueEquipmentWidgetInternal.new = function ( f1_arg0, f1_arg1, f1
 	NoCosDescription:setBackingColor( 0.09, 0.09, 0.09 )
 	NoCosDescription:setBackingXPadding( 4 )
 	NoCosDescription:setBackingYPadding( 3 )
-	NoCosDescription:setBackingMaterial( LUI.UIImage.GetCachedMaterial( 0x9B9049CF3C351D4 ) )
+	NoCosDescription:setBackingMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_mask_normal" ) )
 	NoCosDescription:setBackingShaderVector( 0, 0, 0.5, 0, 0 )
 	self:addElement( NoCosDescription )
 	self.NoCosDescription = NoCosDescription

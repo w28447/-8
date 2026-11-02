@@ -14,7 +14,7 @@ CoD.NotificationRewardWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local PixelBacking = LUI.UIImage.new( 0, 0, 312, 384, 0, 0, 12, 84 )
 	PixelBacking:setRGB( 0.12, 0.12, 0.12 )
-	PixelBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	PixelBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	PixelBacking:setShaderVector( 0, 0, 0.5, 0, 0 )
 	self:addElement( PixelBacking )
 	self.PixelBacking = PixelBacking

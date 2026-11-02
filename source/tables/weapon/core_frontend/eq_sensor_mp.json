@@ -47,7 +47,7 @@
     "sharedWeaponSounds": "#equipment",
     "customsettings": "#sensor_custom_settings",
     "#hash_2e4a8800": "#eq_sensor_dart_scoreevents",
-    "projectilemodel": "#hash_614592ab57592df6",
+    "projectilemodel": "#wpn_t8_eqp_sensor_dart_gun_projectile_animate",
     "viewmodel": [
         "#wpn_t8_eqp_sensor_dart_gun_view"
     ],

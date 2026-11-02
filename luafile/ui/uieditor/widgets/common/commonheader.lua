@@ -13,7 +13,7 @@ CoD.CommonHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local BGSceneBlur = LUI.UIImage.new( -0.1, 1.1, 0, 0, 0, 0, -15, 52 )
-	BGSceneBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	BGSceneBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	BGSceneBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	BGSceneBlur:registerEventHandler( "menu_loaded", function ( element, event )
 		local f2_local0 = nil
@@ -79,7 +79,7 @@ CoD.CommonHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	TopBar2:setRGB( 0.46, 0.46, 0.51 )
 	TopBar2:setAlpha( 0.8 )
 	TopBar2:setImage( RegisterImage( "uie_ui_menu_cac_primary_button_top_bar" ) )
-	TopBar2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	TopBar2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	TopBar2:setShaderVector( 0, 2, 0, 0, 0 )
 	TopBar2:registerEventHandler( "menu_loaded", function ( element, event )
 		local f5_local0 = nil
@@ -156,7 +156,7 @@ CoD.CommonHeader.__resetProperties = function ( f11_arg0 )
 	f11_arg0.subtitle:completeAnimation()
 	f11_arg0.TopBar2:setRGB( 0.46, 0.46, 0.51 )
 	f11_arg0.TopBar2:setAlpha( 0.8 )
-	f11_arg0.TopBar2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	f11_arg0.TopBar2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	f11_arg0.TopBar2:setShaderVector( 0, 2, 0, 0, 0 )
 	f11_arg0.subtitle:setLeftRight( 0, 0, 25, 1059 )
 end
@@ -175,7 +175,7 @@ CoD.CommonHeader.__clipsPerState = {
 			f13_arg0.TopBar2:completeAnimation()
 			f13_arg0.TopBar2:setRGB( 0.83, 0.11, 0.01 )
 			f13_arg0.TopBar2:setAlpha( 1 )
-			f13_arg0.TopBar2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+			f13_arg0.TopBar2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 			f13_arg0.TopBar2:setShaderVector( 0, 2, 0, 0, 0 )
 			f13_arg0.clipFinished( f13_arg0.TopBar2 )
 			f13_arg0.subtitle:completeAnimation()
@@ -199,7 +199,7 @@ CoD.CommonHeader.__clipsPerState = {
 			f15_arg0.TopBar2:completeAnimation()
 			f15_arg0.TopBar2:setRGB( 0.83, 0.11, 0.01 )
 			f15_arg0.TopBar2:setAlpha( 1 )
-			f15_arg0.TopBar2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+			f15_arg0.TopBar2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 			f15_arg0.TopBar2:setShaderVector( 0, 2, 0, 0, 0 )
 			f15_arg0.clipFinished( f15_arg0.TopBar2 )
 		end

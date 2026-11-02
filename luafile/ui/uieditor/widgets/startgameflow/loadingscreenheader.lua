@@ -69,7 +69,7 @@ CoD.LoadingScreenHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	MapNameShadow:setRGB( 0, 0, 0 )
 	MapNameShadow:setAlpha( 0.25 )
 	MapNameShadow:setTTF( "ttmussels_regular" )
-	MapNameShadow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
+	MapNameShadow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow" ) )
 	MapNameShadow:setShaderVector( 0, 0.4, 0, 0, 0 )
 	MapNameShadow:setShaderVector( 1, 0, 0, 0, 0 )
 	MapNameShadow:setShaderVector( 2, 1, 0, 0, 0 )

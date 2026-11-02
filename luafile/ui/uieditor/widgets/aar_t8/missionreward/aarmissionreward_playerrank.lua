@@ -12,7 +12,7 @@ CoD.AARMissionReward_PlayerRank.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local RankblurBg = LUI.UIImage.new( 0, 0, 222, 478, 0, 0, 3, 259 )
-	RankblurBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	RankblurBg:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	RankblurBg:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( RankblurBg )
 	self.RankblurBg = RankblurBg
@@ -36,7 +36,7 @@ CoD.AARMissionReward_PlayerRank.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local RankGridBg = LUI.UIImage.new( 0, 0, 222, 478, 0, 0, 3, 259 )
 	RankGridBg:setAlpha( 0.03 )
 	RankGridBg:setImage( RegisterImage( "uie_ui_menu_aar_info_grid_sub" ) )
-	RankGridBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	RankGridBg:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	RankGridBg:setShaderVector( 0, 0, 0, 0, 0 )
 	RankGridBg:setupNineSliceShader( 292, 236 )
 	self:addElement( RankGridBg )
@@ -74,14 +74,14 @@ CoD.AARMissionReward_PlayerRank.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	Flare:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	Flare:setAlpha( 0 )
 	Flare:setImage( RegisterImage( "uie_ui_menu_aar_levelup_flare" ) )
-	Flare:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	Flare:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	Flare:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Flare )
 	self.Flare = Flare
 	
 	local Placement = LUI.UIText.new( 0, 0, 478, 803, 0, 0, 70, 191 )
 	Placement:setTTF( "0arame_mono_stencil" )
-	Placement:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	Placement:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	Placement:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	Placement:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
 	Placement:subscribeToGlobalModel( f1_arg1, "AARMissionReward", "rank", function ( model )

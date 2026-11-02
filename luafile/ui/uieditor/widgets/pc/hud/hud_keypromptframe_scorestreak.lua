@@ -9,7 +9,7 @@ CoD.HUD_KeyPromptFrame_ScoreStreak.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local ScoreStreakBlur = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	ScoreStreakBlur:setScale( 0.95, 0.96 )
-	ScoreStreakBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	ScoreStreakBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	ScoreStreakBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( ScoreStreakBlur )
 	self.ScoreStreakBlur = ScoreStreakBlur

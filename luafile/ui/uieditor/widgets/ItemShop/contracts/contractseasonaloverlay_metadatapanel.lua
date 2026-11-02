@@ -18,7 +18,7 @@ CoD.ContractSeasonalOverlay_MetadataPanel.new = function ( f1_arg0, f1_arg1, f1_
 	local PixelGridTiledBacking2 = LUI.UIImage.new( 0, 0, 0, 546, 0, 0, 0.5, 24.5 )
 	PixelGridTiledBacking2:setAlpha( 0.05 )
 	PixelGridTiledBacking2:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
-	PixelGridTiledBacking2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	PixelGridTiledBacking2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	PixelGridTiledBacking2:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGridTiledBacking2:setupNineSliceShader( 128, 128 )
 	self:addElement( PixelGridTiledBacking2 )

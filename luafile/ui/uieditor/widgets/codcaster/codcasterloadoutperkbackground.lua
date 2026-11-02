@@ -9,13 +9,13 @@ CoD.CodCasterLoadoutPerkBackground.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local BG = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 4, 67 )
 	BG:setRGB( 0, 0, 0 )
-	BG:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	BG:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	BG:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BG )
 	self.BG = BG
 	
 	local CodCasterLoadoutPerkBackground = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 0, 76 )
-	CodCasterLoadoutPerkBackground:setImage( RegisterImage( 0x6237BCC6F1A8D53 ) )
+	CodCasterLoadoutPerkBackground:setImage( RegisterImage( "uie_codcaster_loadout_generic_background" ) )
 	CodCasterLoadoutPerkBackground:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	CodCasterLoadoutPerkBackground:setShaderVector( 0, 0, 0, 0, 0 )
 	CodCasterLoadoutPerkBackground:setupNineSliceShader( 55, 38 )

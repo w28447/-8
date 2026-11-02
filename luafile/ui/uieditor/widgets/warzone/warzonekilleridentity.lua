@@ -17,7 +17,7 @@ CoD.WarzoneKillerIdentity.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local SceneBlur = LUI.UIImage.new( 0.5, 0.5, -253, 253, 0.5, 0.5, -40, 40 )
 	SceneBlur:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	SceneBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	SceneBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	SceneBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( SceneBlur )
 	self.SceneBlur = SceneBlur
@@ -32,7 +32,7 @@ CoD.WarzoneKillerIdentity.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local BackingBorder2 = LUI.UIImage.new( 0.5, 0.5, -253, 253, 0.5, 0.5, -40, 40 )
 	BackingBorder2:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
-	BackingBorder2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	BackingBorder2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	BackingBorder2:setShaderVector( 0, 0, 0, 0, 0 )
 	BackingBorder2:setupNineSliceShader( 196, 88 )
 	self:addElement( BackingBorder2 )
@@ -68,7 +68,7 @@ CoD.WarzoneKillerIdentity.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	KillerLabel:setAlpha( 0.8 )
 	KillerLabel:setText( LocalizeToUpperString( "mpui/killer" ) )
 	KillerLabel:setTTF( "ttmussels_regular" )
-	KillerLabel:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	KillerLabel:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	KillerLabel:setShaderVector( 0, 1, 0, 0, 0 )
 	KillerLabel:setShaderVector( 1, 0, 0, 0, 0 )
 	KillerLabel:setShaderVector( 2, 0, 0, 0, 0.35 )

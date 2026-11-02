@@ -12,7 +12,7 @@ CoD.genericPooledVehicleHealthWidget.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	local HealthBarBlur = LUI.UIImage.new( 0, 0, 0, 94, 0, 0, 0, 216 )
 	HealthBarBlur:setImage( RegisterImage( "uie_hud_minimap_health_meter_bg" ) )
-	HealthBarBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	HealthBarBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	HealthBarBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( HealthBarBlur )
 	self.HealthBarBlur = HealthBarBlur

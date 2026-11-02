@@ -12,7 +12,7 @@ CoD.AARTierRewardTypeImageContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local Image = LUI.UIFixedAspectRatioImage.new( 0.5, 0.5, -146, 146, 0, 0, 28, 404 )
-	Image:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	Image:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	Image:setShaderVector( 0, 0.5, 0.5, 0, 0 )
 	Image:setShaderVector( 1, 1, 1, 0, 0 )
 	Image:setShaderVector( 2, 0, 0, 0, 0 )
@@ -28,7 +28,7 @@ CoD.AARTierRewardTypeImageContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local ContrabandImage = LUI.UIFixedAspectRatioImage.new( 0.5, 0.5, -146, 146, 0, 0, 49.5, 382.5 )
 	ContrabandImage:setAlpha( 0 )
-	ContrabandImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	ContrabandImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	ContrabandImage:setShaderVector( 0, 0.5, 0.5, 0, 0 )
 	ContrabandImage:setShaderVector( 1, 1, 1, 0, 0 )
 	ContrabandImage:setShaderVector( 2, 0, 0, 0, 0 )
@@ -57,7 +57,7 @@ CoD.AARTierRewardTypeImageContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	self.CallingCardImage = CallingCardImage
 	
 	local CharacterImage = LUI.UIImage.new( 0.5, 0.5, -146, 146, 0, 0, 28, 406 )
-	CharacterImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	CharacterImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	CharacterImage:setShaderVector( 0, 0, 0, 0, 0 )
 	CharacterImage:setShaderVector( 1, 1, 1, 0, 0 )
 	CharacterImage:setShaderVector( 2, 0, 0, 0, 0 )
@@ -72,7 +72,7 @@ CoD.AARTierRewardTypeImageContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local WarPaint = LUI.UIImage.new( 0.5, 0.5, -110, 110, 0, 0, 106, 326 )
 	WarPaint:setAlpha( 0 )
-	WarPaint:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	WarPaint:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	WarPaint:setShaderVector( 0, 0.5, 0.5, 0, 0 )
 	WarPaint:setShaderVector( 1, 1.1, 1.1, 0, 0 )
 	WarPaint:setShaderVector( 2, 0, 0, 0, 0 )

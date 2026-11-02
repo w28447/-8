@@ -16,7 +16,7 @@ CoD.CompetitiveAARDivisionRankAwardTittle.new = function ( f1_arg0, f1_arg1, f1_
 	PlacementMessage:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	PlacementMessage:setText( Engine[0xF9F1239CFD921FE]( 0x80004416A6EAFD0 ) )
 	PlacementMessage:setTTF( "ttmussels_demibold" )
-	PlacementMessage:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	PlacementMessage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	PlacementMessage:setLetterSpacing( 4 )
 	PlacementMessage:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	PlacementMessage:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

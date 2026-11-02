@@ -24,7 +24,7 @@ CoD.KIllcamTeamPanelRight.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local CallingCardGridPatternRight = LUI.UIImage.new( 0, 0, 64, 450, 0, 0, 0, 68 )
 	CallingCardGridPatternRight:setRGB( 0.79, 0.61, 0.11 )
 	CallingCardGridPatternRight:setImage( RegisterImage( 0x684DCF03A2BF70F ) )
-	CallingCardGridPatternRight:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	CallingCardGridPatternRight:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	CallingCardGridPatternRight:setShaderVector( 0, 3, 0, 0, 0 )
 	self:addElement( CallingCardGridPatternRight )
 	self.CallingCardGridPatternRight = CallingCardGridPatternRight

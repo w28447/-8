@@ -17,7 +17,7 @@ CoD.DirectorTierSkipNotificationCompleteInternal.new = function ( f1_arg0, f1_ar
 	Header:setRGB( ColorSet.T8__GREEN.r, ColorSet.T8__GREEN.g, ColorSet.T8__GREEN.b )
 	Header:setText( LocalizeToUpperString( 0x7694D34181BA0D5 ) )
 	Header:setTTF( "ttmussels_regular" )
-	Header:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	Header:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	Header:setLetterSpacing( 3 )
 	Header:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	Header:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )

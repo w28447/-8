@@ -84,7 +84,7 @@ function function_a425bf07()
 {
     s_doll = struct::get( #"creepy_friend" );
     s_trigger_loc = struct::get( s_doll.target );
-    mdl_doll = util::spawn_model( #"hash_249386b68e19b345", s_doll.origin, s_doll.angles );
+    mdl_doll = util::spawn_model( #"p8_zm_zod_doll_antique", s_doll.origin, s_doll.angles );
     s_unitrigger = s_trigger_loc zm_unitrigger::create( undefined, 32 );
     s_trigger_loc waittill( #"trigger_activated" );
     mdl_doll thread function_e7fd1a33();

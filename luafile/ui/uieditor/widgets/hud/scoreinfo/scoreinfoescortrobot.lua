@@ -21,7 +21,7 @@ CoD.ScoreInfoEscortRobot.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	self.RobotObjective = RobotObjective
 	
 	local MovingImage = LUI.UIImage.new( 0, 0, 28, 44, 1, 1, -27, -11 )
-	MovingImage:setImage( RegisterImage( 0xA6EF6D2C1A5DF0E ) )
+	MovingImage:setImage( RegisterImage( "uie_ui_hud_core_arrow_sm" ) )
 	self:addElement( MovingImage )
 	self.MovingImage = MovingImage
 	

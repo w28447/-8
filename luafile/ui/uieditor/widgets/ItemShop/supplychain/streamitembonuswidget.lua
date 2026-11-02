@@ -24,7 +24,7 @@ CoD.StreamItemBonusWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local PixelGridTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0.13, 0.87, 0, 0 )
 	PixelGridTiledBacking:setAlpha( 0.3 )
 	PixelGridTiledBacking:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
-	PixelGridTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	PixelGridTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	PixelGridTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGridTiledBacking:setupNineSliceShader( 128, 128 )
 	self:addElement( PixelGridTiledBacking )

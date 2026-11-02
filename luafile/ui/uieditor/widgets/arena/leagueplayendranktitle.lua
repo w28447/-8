@@ -12,7 +12,7 @@ CoD.leaguePlayEndRankTitle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	Flash:setRGB( 0.92, 0.89, 0.72 )
 	Flash:setAlpha( 0 )
 	Flash:setImage( RegisterImage( "uie_ui_menu_aar_levelup_gradientglow" ) )
-	Flash:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	Flash:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	Flash:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Flash )
 	self.Flash = Flash
@@ -37,7 +37,7 @@ CoD.leaguePlayEndRankTitle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	LeveledUpTextAdd:setAlpha( 0 )
 	LeveledUpTextAdd:setText( Engine[0xF9F1239CFD921FE]( 0xC950E3B6C414F51 ) )
 	LeveledUpTextAdd:setTTF( "ttmussels_regular" )
-	LeveledUpTextAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x336C1AE82B1520A ) )
+	LeveledUpTextAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield_add" ) )
 	LeveledUpTextAdd:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_rft" ) )
 	LeveledUpTextAdd:setShaderVector( 0, 1, 0, 0, 0 )
 	LeveledUpTextAdd:setShaderVector( 1, 0, 0, 0, 0 )
@@ -53,7 +53,7 @@ CoD.leaguePlayEndRankTitle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	Flare:setRGB( 0.92, 0.89, 0.72 )
 	Flare:setAlpha( 0 )
 	Flare:setImage( RegisterImage( "uie_ui_menu_aar_levelup_flare" ) )
-	Flare:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
+	Flare:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_add" ) )
 	Flare:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Flare )
 	self.Flare = Flare

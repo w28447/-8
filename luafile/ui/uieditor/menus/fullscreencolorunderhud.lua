@@ -88,7 +88,7 @@ LUI.createMenu.FullScreenColorUnderHUD = function ( f8_arg0, f8_arg1 )
 	self.anyChildUsesUpdateState = true
 	
 	local Fullscreen = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	Fullscreen:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	Fullscreen:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	Fullscreen:setShaderVector( 0, 0, 0.8, 0, 0 )
 	self:addElement( Fullscreen )
 	self.Fullscreen = Fullscreen

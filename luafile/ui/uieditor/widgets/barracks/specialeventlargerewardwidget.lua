@@ -18,7 +18,7 @@ CoD.SpecialEventLargeRewardWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local FixedAspectRatioImage = LUI.UIFixedAspectRatioImage.new( 0.5, 0.5, -44, 44, 0.5, 0.5, -44, 44 )
 	FixedAspectRatioImage:setImage( RegisterImage( 0x3754381ECA16647 ) )
-	FixedAspectRatioImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
+	FixedAspectRatioImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_normal" ) )
 	FixedAspectRatioImage:setShaderVector( 0, 0, 0, 0, 0 )
 	FixedAspectRatioImage:setShaderVector( 1, 1, 1, 0, 0 )
 	FixedAspectRatioImage:setShaderVector( 2, 0, 0, 0, 0 )

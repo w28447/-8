@@ -12,7 +12,7 @@ CoD.CodCasterMiniMapName.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	bg:setRGB( 0, 0, 0 )
 	bg:setAlpha( 0.85 )
 	bg:setImage( RegisterImage( 0x650EEDEA9341CB9 ) )
-	bg:setMaterial( LUI.UIImage.GetCachedMaterial( 0x5EBE8D6E802F0F5 ) )
+	bg:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_feathered_normal" ) )
 	bg:setShaderVector( 0, 1, 0, 0, 0 )
 	bg:setShaderVector( 1, 0.3, 0, 0, 0 )
 	bg:setShaderVector( 2, 2, 0, 0, 0 )
@@ -23,7 +23,7 @@ CoD.CodCasterMiniMapName.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local mapTitle = LUI.UIText.new( 0.49, 0.49, -10, 162, 0.5, 0.5, -11.5, 13.5 )
 	mapTitle:setTTF( "ttmussels_regular" )
-	mapTitle:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
+	mapTitle:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	mapTitle:setShaderVector( 0, 0.3, 0, 0, 0 )
 	mapTitle:setShaderVector( 1, 0.3, 0, 0, 0 )
 	mapTitle:setShaderVector( 2, 0, 0, 0, 0.75 )

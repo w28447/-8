@@ -19,7 +19,7 @@ CoD.ScoreboardMapWZInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local BlurBG = LUI.UIImage.new( 0.5, 1.5, -474, -484, 0.49, 1.49, -473, -483 )
-	BlurBG:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	BlurBG:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	BlurBG:setShaderVector( 0, 0.5, 0, 0, 0 )
 	self:addElement( BlurBG )
 	self.BlurBG = BlurBG
@@ -27,7 +27,7 @@ CoD.ScoreboardMapWZInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local BlurBGTint = LUI.UIImage.new( 0.5, 1.5, -475, -483, 0.49, 1.49, -474, -482 )
 	BlurBGTint:setRGB( 0.11, 0.11, 0.11 )
 	BlurBGTint:setAlpha( 0.9 )
-	BlurBGTint:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	BlurBGTint:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	BlurBGTint:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( BlurBGTint )
 	self.BlurBGTint = BlurBGTint
@@ -38,7 +38,7 @@ CoD.ScoreboardMapWZInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local MapGrid02 = LUI.UIImage.new( 0.46, 1.46, -402, -474, 0.47, 1.47, -403, -469 )
 	MapGrid02:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_map_grid01" ) )
-	MapGrid02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7EA4827662D4CD4 ) )
+	MapGrid02:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_repeat_add" ) )
 	MapGrid02:setShaderVector( 0, 4, 5.92, 0, 0 )
 	MapGrid02:setShaderVector( 1, 0, 1, 0, 1 )
 	self:addElement( MapGrid02 )
@@ -62,7 +62,7 @@ CoD.ScoreboardMapWZInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local TopLeftCornerElement = LUI.UIImage.new( 0, 0, 5.5, 45.5, 0, 0, 6, 46 )
 	TopLeftCornerElement:setRGB( 0, 0, 0 )
-	TopLeftCornerElement:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	TopLeftCornerElement:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	TopLeftCornerElement:setShaderVector( 0, 0, 0.5, 0, 0 )
 	self:addElement( TopLeftCornerElement )
 	self.TopLeftCornerElement = TopLeftCornerElement
@@ -74,7 +74,7 @@ CoD.ScoreboardMapWZInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local BlurBgTLCorner = LUI.UIImage.new( 0, 0, 5.5, 46.5, 0, 0, 6, 47 )
 	BlurBgTLCorner:setRGB( 0, 0, 0 )
 	BlurBgTLCorner:setAlpha( 0.8 )
-	BlurBgTLCorner:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	BlurBgTLCorner:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	BlurBgTLCorner:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( BlurBgTLCorner )
 	self.BlurBgTLCorner = BlurBgTLCorner
@@ -101,8 +101,8 @@ CoD.ScoreboardMapWZInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local TiledDotRight = LUI.UIImage.new( 1, 1, -25, -5, 0.5, 1.49, -476, -476 )
 	TiledDotRight:setAlpha( 0.02 )
-	TiledDotRight:setImage( RegisterImage( 0x1D86AD0278EBECC ) )
-	TiledDotRight:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	TiledDotRight:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_repeat_led_pattern" ) )
+	TiledDotRight:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	TiledDotRight:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledDotRight:setupNineSliceShader( 12, 12 )
 	self:addElement( TiledDotRight )
@@ -110,15 +110,15 @@ CoD.ScoreboardMapWZInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local TiledDotBot = LUI.UIImage.new( 0.5, 0.5, -477.5, 458.5, 0.5, 0.5, 460, 478 )
 	TiledDotBot:setAlpha( 0.02 )
-	TiledDotBot:setImage( RegisterImage( 0x1D86AD0278EBECC ) )
-	TiledDotBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	TiledDotBot:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_repeat_led_pattern" ) )
+	TiledDotBot:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	TiledDotBot:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledDotBot:setupNineSliceShader( 12, 12 )
 	self:addElement( TiledDotBot )
 	self.TiledDotBot = TiledDotBot
 	
 	local MapFrame = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	MapFrame:setImage( RegisterImage( 0x3D54BC53A40189A ) )
+	MapFrame:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_repeat_frames" ) )
 	MapFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	MapFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	MapFrame:setupNineSliceShader( 16, 16 )

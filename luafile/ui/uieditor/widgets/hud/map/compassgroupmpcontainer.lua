@@ -21,7 +21,7 @@ CoD.CompassGroupMPContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local WZBlur = LUI.UIImage.new( 0, 0, 12, 332, 0, 0, 19, 331 )
 	WZBlur:setAlpha( 0 )
 	WZBlur:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_map_square_backer_blur" ) )
-	WZBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	WZBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	WZBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( WZBlur )
 	self.WZBlur = WZBlur

@@ -15,7 +15,7 @@ CoD.DirectorLaboratoryButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local BlurBg = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	BlurBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	BlurBg:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	BlurBg:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BlurBg )
 	self.BlurBg = BlurBg
@@ -43,7 +43,7 @@ CoD.DirectorLaboratoryButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	BlackMarketName:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	BlackMarketName:setText( LocalizeToUpperString( "menu/laboratory" ) )
 	BlackMarketName:setTTF( "ttmussels_demibold" )
-	BlackMarketName:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	BlackMarketName:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	BlackMarketName:setLetterSpacing( 3 )
 	BlackMarketName:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	BlackMarketName:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

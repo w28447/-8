@@ -76,7 +76,7 @@ CoD.ReservesReroll.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local LayoutElementTL2 = LUI.UIImage.new( 1, 1, -40, -24, 0, 0, 168, 184 )
 	LayoutElementTL2:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	LayoutElementTL2:setImage( RegisterImage( 0x34B575F15CDD376 ) )
-	LayoutElementTL2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	LayoutElementTL2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	LayoutElementTL2:setShaderVector( 0, 3, 0, 0, 0 )
 	self:addElement( LayoutElementTL2 )
 	self.LayoutElementTL2 = LayoutElementTL2
@@ -85,7 +85,7 @@ CoD.ReservesReroll.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	LayoutElementTL:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	LayoutElementTL:setZRot( 90 )
 	LayoutElementTL:setImage( RegisterImage( 0x34B575F15CDD376 ) )
-	LayoutElementTL:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
+	LayoutElementTL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_normal_multiplied_normal" ) )
 	LayoutElementTL:setShaderVector( 0, 3, 0, 0, 0 )
 	self:addElement( LayoutElementTL )
 	self.LayoutElementTL = LayoutElementTL
@@ -291,7 +291,7 @@ CoD.ReservesReroll.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	DotPatternTop = LUI.UIImage.new( 0, 1, 13, -13, 0, 0, 22, 26 )
 	DotPatternTop:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline_tiled" ) )
-	DotPatternTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	DotPatternTop:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	DotPatternTop:setShaderVector( 0, 0, 0, 0, 0 )
 	DotPatternTop:setupNineSliceShader( 16, 4 )
 	self:addElement( DotPatternTop )
@@ -299,7 +299,7 @@ CoD.ReservesReroll.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	DotPatternBtm = LUI.UIImage.new( 0, 1, 13, -13, 0, 0, 148, 152 )
 	DotPatternBtm:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline_tiled" ) )
-	DotPatternBtm:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	DotPatternBtm:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_add" ) )
 	DotPatternBtm:setShaderVector( 0, 0, 0, 0, 0 )
 	DotPatternBtm:setupNineSliceShader( 16, 4 )
 	self:addElement( DotPatternBtm )

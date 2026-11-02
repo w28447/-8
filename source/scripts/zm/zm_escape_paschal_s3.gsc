@@ -150,7 +150,7 @@ function private function_486ef0f6()
     if ( !isdefined( level.var_bbc27d0e ) )
     {
         var_c26c0a90 = struct::get( "k_fx_pos", "targetname" );
-        level.var_bbc27d0e = util::spawn_model( #"hash_4c06bc763e373f0f", var_c26c0a90.origin, var_c26c0a90.angles );
+        level.var_bbc27d0e = util::spawn_model( #"p8_fxanim_zm_esc_book_zombie_timeline_mod", var_c26c0a90.origin, var_c26c0a90.angles );
     }
     
     var_a9b19429 = 0;
@@ -1199,7 +1199,7 @@ function private function_4e69659c()
 // Size: 0x15c
 function private function_23d7198d( e_player )
 {
-    if ( self zm_utility::duf47() && !e_player zm_utility::duf47() )
+    if ( self zm_utility::function_ab9a9770() && !e_player zm_utility::function_ab9a9770() )
     {
         n_distance = distance( self.origin, e_player.origin );
         
@@ -1209,7 +1209,7 @@ function private function_23d7198d( e_player )
         }
     }
     
-    if ( self zm_utility::duf47() && e_player zm_utility::duf47() )
+    if ( self zm_utility::function_ab9a9770() && e_player zm_utility::function_ab9a9770() )
     {
         if ( isdefined( self.t_interact ) && !( isdefined( e_player.var_c0a4d6b1 ) && e_player.var_c0a4d6b1 ) )
         {
@@ -1229,7 +1229,7 @@ function private function_524c833( e_player )
     self endon( #"death" );
     e_player endon( #"death" );
     
-    while ( self zm_utility::duf47() && e_player zm_utility::duf47() )
+    while ( self zm_utility::function_ab9a9770() && e_player zm_utility::function_ab9a9770() )
     {
         wait 0.2;
     }
@@ -3209,7 +3209,7 @@ function function_a9c796c9( var_ad361c37 )
 function private function_3f41df11( var_aa11c23c )
 {
     var_aa11c23c endon( #"death", #"hash_300e9fed7925cd69" );
-    a_str_monitors = array( #"p8_zm_esc_comm_monitor_sml_01_screen_symbol_01", #"p8_zm_esc_comm_monitor_sml_01_screen_symbol_02", #"p8_zm_esc_comm_monitor_sml_01_screen_symbol_03", #"p8_zm_esc_comm_monitor_sml_01_screen_symbol_04", #"p8_zm_esc_comm_monitor_sml_01_screen_symbol_05", #"p8_zm_esc_comm_monitor_sml_01_screen_symbol_06", #"p8_zm_esc_comm_monitor_sml_01_screen_symbol_07", #"hash_7b808500f6070c8d", #"hash_7b808400f6070ada", #"hash_7b7cf700f603e56c", #"hash_7b7cf800f603e71f", #"hash_7b7cf900f603e8d2" );
+    a_str_monitors = array( #"p8_zm_esc_comm_monitor_sml_01_screen_symbol_01", #"p8_zm_esc_comm_monitor_sml_01_screen_symbol_02", #"p8_zm_esc_comm_monitor_sml_01_screen_symbol_03", #"p8_zm_esc_comm_monitor_sml_01_screen_symbol_04", #"p8_zm_esc_comm_monitor_sml_01_screen_symbol_05", #"p8_zm_esc_comm_monitor_sml_01_screen_symbol_06", #"p8_zm_esc_comm_monitor_sml_01_screen_symbol_07", #"p8_zm_esc_comm_monitor_sml_01_screen_symbol_08", #"p8_zm_esc_comm_monitor_sml_01_screen_symbol_09", #"p8_zm_esc_comm_monitor_sml_01_screen_symbol_10", #"p8_zm_esc_comm_monitor_sml_01_screen_symbol_11", #"p8_zm_esc_comm_monitor_sml_01_screen_symbol_12" );
     n_ph = level.var_72ea8db7[ self.script_int ];
     var_d7fe6e89 = a_str_monitors[ n_ph ];
     var_888f63a1 = level.var_e2279748[ n_ph ] + 6;

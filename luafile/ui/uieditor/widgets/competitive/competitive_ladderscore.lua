@@ -22,7 +22,7 @@ CoD.Competitive_ladderScore.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	PLUS:setScale( 1.25, 1.25 )
 	PLUS:setText( Engine[0xF9F1239CFD921FE]( "mp/plus" ) )
 	PLUS:setTTF( "0arame_mono_stencil" )
-	PLUS:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
+	PLUS:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_distfield" ) )
 	PLUS:setAlignment( Engine[0x7F8853DC3581AA4]( Enum.LUIAlignment[0xFEEB12BCB0D7041] ) )
 	PLUS:setAlignment( Engine[0x7F8853DC3581AA4]( Enum.LUIAlignment[0xF41D595A2B0EDF3] ) )
 	self:addElement( PLUS )

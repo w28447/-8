@@ -17,7 +17,7 @@ LUI.createMenu.LeaguePlayLadderResults = function ( f1_arg0, f1_arg1 )
 	f1_local1:addElementToPendingUpdateStateList( self )
 	
 	local BlurBG = LUI.UIImage.new( -0.5, 1.5, 0, 0, 0.5, 1.5, -540, -540 )
-	BlurBG:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
+	BlurBG:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_mask_normal" ) )
 	BlurBG:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BlurBG )
 	self.BlurBG = BlurBG

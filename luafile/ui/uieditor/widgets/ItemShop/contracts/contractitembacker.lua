@@ -41,7 +41,7 @@ CoD.ContractItemBacker.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local Border = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	Border:setRGB( 0.87, 0.87, 0.87 )
-	Border:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE7BDCB879A5176D ) )
+	Border:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_rectangle_normal" ) )
 	Border:setShaderVector( 0, 0, 0, 0, 0 )
 	Border:setShaderVector( 1, 0, 0, 0, 0 )
 	Border:setupNineSliceShader( 1, 1 )

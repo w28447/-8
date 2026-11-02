@@ -44,7 +44,7 @@ CoD.vhud_hellstorm_AltWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local bracketL = LUI.UIImage.new( 0, 0, 73.5, 79.5, 0, 0, 13, 35 )
 	bracketL:setAlpha( 0 )
-	bracketL:setImage( RegisterImage( 0x80B4C9BD564D5B0 ) )
+	bracketL:setImage( RegisterImage( "uie_ui_hud_vehicle_altitude_bracket" ) )
 	self:addElement( bracketL )
 	self.bracketL = bracketL
 	

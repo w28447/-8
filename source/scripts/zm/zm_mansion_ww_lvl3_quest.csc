@@ -156,11 +156,11 @@ function function_6bc1e300( localclientnum, oldval, newval, bnewent, binitialsna
 {
     if ( newval )
     {
-        forcestreamxmodel( #"hash_36f02881e6dba006" );
+        forcestreamxmodel( #"p8_zm_man_bat_bile_02" );
         return;
     }
     
-    stopforcestreamingxmodel( #"hash_36f02881e6dba006" );
+    stopforcestreamingxmodel( #"p8_zm_man_bat_bile_02" );
 }
 
 // Namespace mansion_ww_lvl3_quest/zm_mansion_ww_lvl3_quest
