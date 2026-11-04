@@ -86,7 +86,7 @@
     "members": [
         {
             "name": "#max_files",
-            "scrName": "#hash_91e31538",
+            "scrName": "#max_files",
             "type": "INT16"
         },
         {

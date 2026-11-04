@@ -389,7 +389,7 @@ Lobby.Timer.AutoMPPump = function ()
 	elseif f19_local4 == Lobby.Timer.LOBBY_STATUS.VOTING then
 		Lobby.MapVote.ShowVote()
 		if f19_local6 == Lobby.Timer.MATCH_START_INVALID then
-			f19_local6 = Engine[0x9D33D652B9B0F3B]() + Dvar[0xA0A01C39967B404]:get()
+			f19_local6 = Engine[0x9D33D652B9B0F3B]() + Dvar.lobbytimerstatusvotinginterval:get()
 			Lobby.TeamSelection.ClearTeam( Enum.team_t[0x97263B3C1ABADF7] )
 		else
 			Engine.SetModelValue( f19_local14, Engine[0xF9F1239CFD921FE]( "menu/votingtimeremaining" ) .. ": " .. f19_local7 )
@@ -685,7 +685,7 @@ Lobby.Timer.AutoMPArenaPump = function ()
 	elseif f22_local4 == Lobby.Timer.LOBBY_STATUS.VOTING then
 		Lobby.MapVote.ShowVote()
 		if f22_local6 == Lobby.Timer.MATCH_START_INVALID then
-			f22_local6 = Engine[0x9D33D652B9B0F3B]() + Dvar[0xA0A01C39967B404]:get()
+			f22_local6 = Engine[0x9D33D652B9B0F3B]() + Dvar.lobbytimerstatusvotinginterval:get()
 			Lobby.TeamSelection.ClearTeam( Enum.team_t[0x97263B3C1ABADF7] )
 		else
 			Engine.SetModelValue( f22_local14, Engine[0xF9F1239CFD921FE]( "menu/votingtimeremaining" ) .. ": " .. f22_local7 )

@@ -302,7 +302,7 @@ function function_69e60a10( var_e4204b3 )
                     if ( level.players[ 0 ] util::is_player_looking_at( point.origin, 0.8, 0 ) )
                     {
                         b_failed = 0;
-                        var_47748885 = 28;
+                        n_clearance = 28;
                         var_c5330f11 = 32;
                         v_color = ( 1, 0, 1 );
                         
@@ -311,19 +311,19 @@ function function_69e60a10( var_e4204b3 )
                             if ( itemlistbundle.itemlist[ 0 ].itementry === "<dev string:x188>" || itemlistbundle.itemlist[ 0 ].itementry === "<dev string:x19e>" || itemlistbundle.itemlist[ 0 ].itementry === "<dev string:x1aa>" || itemlistbundle.itemlist[ 0 ].itementry === "<dev string:x1b6>" || itemlistbundle.itemlist[ 0 ].itementry === "<dev string:x1c2>" || itemlistbundle.itemlist[ 0 ].itementry === "<dev string:x1ce>" || itemlistbundle.itemlist[ 0 ].itementry === "<dev string:x1da>" )
                             {
                                 v_color = ( 1, 1, 0 );
-                                var_47748885 = 4;
+                                n_clearance = 4;
                                 var_c5330f11 = 4;
                             }
                             else if ( itemlistbundle.itemlist[ 0 ].itementry === "<dev string:x1e6>" )
                             {
                                 v_color = ( 1, 1, 0 );
-                                var_47748885 = 8;
+                                n_clearance = 8;
                                 var_c5330f11 = 8;
                             }
                         }
                         
                         n_radius = 4;
-                        items = item_world::function_2e3efdda( point.origin, undefined, 1, var_47748885, -1, 1 );
+                        items = item_world::function_2e3efdda( point.origin, undefined, 1, n_clearance, -1, 1 );
                         
                         if ( items.size > 0 )
                         {
@@ -355,7 +355,7 @@ function function_69e60a10( var_e4204b3 )
                             if ( items.size > 0 )
                             {
                                 var_abc7e003 = item_world::function_2e3efdda( point.origin, undefined, 20, var_24b0b1ea, -1, 1 );
-                                var_abc7e003 = arraysortclosest( var_abc7e003, point.origin, 10, var_47748885 );
+                                var_abc7e003 = arraysortclosest( var_abc7e003, point.origin, 10, n_clearance );
                                 
                                 foreach ( item_type in itemlistbundle.itemlist )
                                 {
@@ -391,7 +391,7 @@ function function_69e60a10( var_e4204b3 )
                         {
                             for ( i = 0; i < 8 ; i++ )
                             {
-                                var_7cb887a8[ i ] = point.origin + ( 0, 0, 16 ) + vectorscale( anglestoforward( v_angles ), var_47748885 );
+                                var_7cb887a8[ i ] = point.origin + ( 0, 0, 16 ) + vectorscale( anglestoforward( v_angles ), n_clearance );
                                 v_angles += ( 0, var_3e832e74, 0 );
                             }
                         }
@@ -412,18 +412,18 @@ function function_69e60a10( var_e4204b3 )
                         
                         if ( isdefined( itemlistbundle.supplystash ) && itemlistbundle.supplystash )
                         {
-                            var_47748885 = n_depth;
+                            n_clearance = n_depth;
                             
                             foreach ( i, v_test in var_7cb887a8 )
                             {
                                 if ( i > 2 )
                                 {
-                                    var_47748885 = n_width;
+                                    n_clearance = n_width;
                                 }
                                 
                                 a_trace = bullettrace( point.origin + ( 0, 0, 24 ), v_test, 0, level.players[ 0 ] );
                                 
-                                if ( distancesquared( a_trace[ #"position" ], point.origin + ( 0, 0, 24 ) ) < var_47748885 * var_47748885 - 2 && !isdefined( a_trace[ #"dynent" ] ) )
+                                if ( distancesquared( a_trace[ #"position" ], point.origin + ( 0, 0, 24 ) ) < n_clearance * n_clearance - 2 && !isdefined( a_trace[ #"dynent" ] ) )
                                 {
                                     v_color = ( 1, 0, 0 );
                                     b_failed = 1;
@@ -435,7 +435,7 @@ function function_69e60a10( var_e4204b3 )
                                 }
                             }
                             
-                            var_47748885 = 18;
+                            n_clearance = 18;
                         }
                         else
                         {
@@ -443,7 +443,7 @@ function function_69e60a10( var_e4204b3 )
                             {
                                 a_trace = bullettrace( point.origin + ( 0, 0, 16 ), v_test, 0, level.players[ 0 ] );
                                 
-                                if ( distancesquared( a_trace[ #"position" ], point.origin + ( 0, 0, 16 ) ) < var_47748885 * var_47748885 - 3 && !isdefined( a_trace[ #"dynent" ] ) )
+                                if ( distancesquared( a_trace[ #"position" ], point.origin + ( 0, 0, 16 ) ) < n_clearance * n_clearance - 3 && !isdefined( a_trace[ #"dynent" ] ) )
                                 {
                                     v_color = ( 1, 0, 0 );
                                     b_failed = 1;
@@ -478,7 +478,7 @@ function function_69e60a10( var_e4204b3 )
                         
                         if ( bullettracepassed( point.origin, level.players[ 0 ] geteye(), 0, level.players[ 0 ], var_c24ea284 ) )
                         {
-                            circle( point.origin, var_47748885, v_color, 0, 1, 8 );
+                            circle( point.origin, n_clearance, v_color, 0, 1, 8 );
                             
                             if ( var_4b82457c < 512 )
                             {

@@ -1294,7 +1294,7 @@ version 174 {
         prt_wz_bruno_dlc0, // 0x1,
         prt_wz_scarlett, // 0x2,
         prt_wz_firebreak, // 0x3,
-        hash_8bb7d93747987a1, // 0x4,
+        prt_wz_stanton_dlc0, // 0x4,
         prt_wz_brutus, // 0x5,
         prt_wz_hudson_hawaiian, // 0x6,
         prt_wz_captain_price, // 0x7,
@@ -1419,7 +1419,7 @@ version 174 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -1535,7 +1535,7 @@ version 174 {
     // offset 0xc98b8, size 0x100
     byte unlocks[32];
     // offset 0xc99b8, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xc99b9, size 0x29
     characterinfo characters[unlockablecharacters];
     // offset 0xc99e2, size 0x1
@@ -2845,7 +2845,7 @@ version 173 {
         prt_wz_bruno_dlc0, // 0x1,
         prt_wz_scarlett, // 0x2,
         prt_wz_firebreak, // 0x3,
-        hash_8bb7d93747987a1, // 0x4,
+        prt_wz_stanton_dlc0, // 0x4,
         prt_wz_brutus, // 0x5,
         prt_wz_hudson_hawaiian, // 0x6,
         prt_wz_captain_price, // 0x7,
@@ -2970,7 +2970,7 @@ version 173 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -3086,7 +3086,7 @@ version 173 {
     // offset 0xc98b8, size 0x100
     byte unlocks[32];
     // offset 0xc99b8, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xc99b9, size 0x29
     characterinfo characters[unlockablecharacters];
     // offset 0xc99e2, size 0x1
@@ -4394,7 +4394,7 @@ version 172 {
         prt_wz_bruno_dlc0, // 0x1,
         prt_wz_scarlett, // 0x2,
         prt_wz_firebreak, // 0x3,
-        hash_8bb7d93747987a1, // 0x4,
+        prt_wz_stanton_dlc0, // 0x4,
         prt_wz_brutus, // 0x5,
         prt_wz_hudson_hawaiian, // 0x6,
         prt_wz_captain_price, // 0x7,
@@ -4519,7 +4519,7 @@ version 172 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -4635,7 +4635,7 @@ version 172 {
     // offset 0xc8ef8, size 0x100
     byte unlocks[32];
     // offset 0xc8ff8, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xc8ff9, size 0x29
     characterinfo characters[unlockablecharacters];
     // offset 0xc9022, size 0x1
@@ -5941,7 +5941,7 @@ version 171 {
         prt_wz_bruno_dlc0, // 0x1,
         prt_wz_scarlett, // 0x2,
         prt_wz_firebreak, // 0x3,
-        hash_8bb7d93747987a1, // 0x4,
+        prt_wz_stanton_dlc0, // 0x4,
         prt_wz_brutus, // 0x5,
         prt_wz_hudson_hawaiian, // 0x6,
         prt_wz_captain_price, // 0x7,
@@ -6066,7 +6066,7 @@ version 171 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -6182,7 +6182,7 @@ version 171 {
     // offset 0xc8538, size 0x100
     byte unlocks[32];
     // offset 0xc8638, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xc8639, size 0x29
     characterinfo characters[unlockablecharacters];
     // offset 0xc8662, size 0x1
@@ -7486,7 +7486,7 @@ version 170 {
         prt_wz_bruno_dlc0, // 0x1,
         prt_wz_scarlett, // 0x2,
         prt_wz_firebreak, // 0x3,
-        hash_8bb7d93747987a1, // 0x4,
+        prt_wz_stanton_dlc0, // 0x4,
         prt_wz_brutus, // 0x5,
         prt_wz_hudson_hawaiian, // 0x6,
         prt_wz_captain_price, // 0x7,
@@ -7611,7 +7611,7 @@ version 170 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -7727,7 +7727,7 @@ version 170 {
     // offset 0xc7b78, size 0x100
     byte unlocks[32];
     // offset 0xc7c78, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xc7c79, size 0x29
     characterinfo characters[unlockablecharacters];
     // offset 0xc7ca2, size 0x1
@@ -9029,7 +9029,7 @@ version 169 {
         prt_wz_bruno_dlc0, // 0x1,
         prt_wz_scarlett, // 0x2,
         prt_wz_firebreak, // 0x3,
-        hash_8bb7d93747987a1, // 0x4,
+        prt_wz_stanton_dlc0, // 0x4,
         prt_wz_brutus, // 0x5,
         prt_wz_hudson_hawaiian, // 0x6,
         prt_wz_captain_price, // 0x7,
@@ -9154,7 +9154,7 @@ version 169 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -9270,7 +9270,7 @@ version 169 {
     // offset 0xc7650, size 0x100
     byte unlocks[32];
     // offset 0xc7750, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xc7751, size 0x29
     characterinfo characters[unlockablecharacters];
     // offset 0xc777a, size 0x1
@@ -10570,7 +10570,7 @@ version 168 {
         prt_wz_bruno_dlc0, // 0x1,
         prt_wz_scarlett, // 0x2,
         prt_wz_firebreak, // 0x3,
-        hash_8bb7d93747987a1, // 0x4,
+        prt_wz_stanton_dlc0, // 0x4,
         prt_wz_brutus, // 0x5,
         prt_wz_hudson_hawaiian, // 0x6,
         prt_wz_captain_price, // 0x7,
@@ -10695,7 +10695,7 @@ version 168 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -10811,7 +10811,7 @@ version 168 {
     // offset 0xc6c90, size 0x100
     byte unlocks[32];
     // offset 0xc6d90, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xc6d91, size 0x29
     characterinfo characters[unlockablecharacters];
     // offset 0xc6dba, size 0x1
@@ -12109,7 +12109,7 @@ version 167 {
         prt_wz_bruno_dlc0, // 0x1,
         prt_wz_scarlett, // 0x2,
         prt_wz_firebreak, // 0x3,
-        hash_8bb7d93747987a1, // 0x4,
+        prt_wz_stanton_dlc0, // 0x4,
         prt_wz_brutus, // 0x5,
         prt_wz_hudson_hawaiian, // 0x6,
         prt_wz_captain_price, // 0x7,
@@ -12234,7 +12234,7 @@ version 167 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -12350,7 +12350,7 @@ version 167 {
     // offset 0xc62d0, size 0x100
     byte unlocks[32];
     // offset 0xc63d0, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xc63d1, size 0x29
     characterinfo characters[unlockablecharacters];
     // offset 0xc63fa, size 0x1
@@ -13646,7 +13646,7 @@ version 166 {
         prt_wz_bruno_dlc0, // 0x1,
         prt_wz_scarlett, // 0x2,
         prt_wz_firebreak, // 0x3,
-        hash_8bb7d93747987a1, // 0x4,
+        prt_wz_stanton_dlc0, // 0x4,
         prt_wz_brutus, // 0x5,
         prt_wz_hudson_hawaiian, // 0x6,
         prt_wz_captain_price, // 0x7,
@@ -13771,7 +13771,7 @@ version 166 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -13887,7 +13887,7 @@ version 166 {
     // offset 0xc5910, size 0x100
     byte unlocks[32];
     // offset 0xc5a10, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xc5a11, size 0x29
     characterinfo characters[unlockablecharacters];
     // offset 0xc5a3a, size 0x1
@@ -15183,7 +15183,7 @@ version 165 {
         prt_wz_bruno_dlc0, // 0x1,
         prt_wz_scarlett, // 0x2,
         prt_wz_firebreak, // 0x3,
-        hash_8bb7d93747987a1, // 0x4,
+        prt_wz_stanton_dlc0, // 0x4,
         prt_wz_brutus, // 0x5,
         prt_wz_hudson_hawaiian, // 0x6,
         prt_wz_captain_price, // 0x7,
@@ -15307,7 +15307,7 @@ version 165 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -15423,7 +15423,7 @@ version 165 {
     // offset 0xc5910, size 0x100
     byte unlocks[32];
     // offset 0xc5a10, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xc5a11, size 0x29
     characterinfo characters[unlockablecharacters];
     // offset 0xc5a3a, size 0x1
@@ -16717,7 +16717,7 @@ version 164 {
         prt_wz_bruno_dlc0, // 0x1,
         prt_wz_scarlett, // 0x2,
         prt_wz_firebreak, // 0x3,
-        hash_8bb7d93747987a1, // 0x4,
+        prt_wz_stanton_dlc0, // 0x4,
         prt_wz_brutus, // 0x5,
         prt_wz_hudson_hawaiian, // 0x6,
         prt_wz_captain_price, // 0x7,
@@ -16840,7 +16840,7 @@ version 164 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -16956,7 +16956,7 @@ version 164 {
     // offset 0xc53e8, size 0x100
     byte unlocks[32];
     // offset 0xc54e8, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xc54e9, size 0x29
     characterinfo characters[unlockablecharacters];
     // offset 0xc5512, size 0x1
@@ -18246,7 +18246,7 @@ version 163 {
         prt_wz_bruno_dlc0, // 0x1,
         prt_wz_scarlett, // 0x2,
         prt_wz_firebreak, // 0x3,
-        hash_8bb7d93747987a1, // 0x4,
+        prt_wz_stanton_dlc0, // 0x4,
         prt_wz_brutus, // 0x5,
         prt_wz_hudson_hawaiian, // 0x6,
         prt_wz_captain_price, // 0x7,
@@ -18369,7 +18369,7 @@ version 163 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -18485,7 +18485,7 @@ version 163 {
     // offset 0xc4998, size 0x100
     byte unlocks[32];
     // offset 0xc4a98, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xc4a99, size 0x29
     characterinfo characters[unlockablecharacters];
     // offset 0xc4ac2, size 0x1
@@ -19773,7 +19773,7 @@ version 162 {
         prt_wz_bruno_dlc0, // 0x1,
         prt_wz_scarlett, // 0x2,
         prt_wz_firebreak, // 0x3,
-        hash_8bb7d93747987a1, // 0x4,
+        prt_wz_stanton_dlc0, // 0x4,
         prt_wz_brutus, // 0x5,
         prt_wz_hudson_hawaiian, // 0x6,
         prt_wz_captain_price, // 0x7,
@@ -19894,7 +19894,7 @@ version 162 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -20010,7 +20010,7 @@ version 162 {
     // offset 0xc4998, size 0x100
     byte unlocks[32];
     // offset 0xc4a98, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xc4a99, size 0x29
     characterinfo characters[unlockablecharacters];
     // offset 0xc4ac2, size 0x1
@@ -21294,7 +21294,7 @@ version 161 {
         prt_wz_bruno_dlc0, // 0x1,
         prt_wz_scarlett, // 0x2,
         prt_wz_firebreak, // 0x3,
-        hash_8bb7d93747987a1, // 0x4,
+        prt_wz_stanton_dlc0, // 0x4,
         prt_wz_brutus, // 0x5,
         prt_wz_hudson_hawaiian, // 0x6,
         prt_wz_captain_price, // 0x7,
@@ -21415,7 +21415,7 @@ version 161 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -21531,7 +21531,7 @@ version 161 {
     // offset 0xc3f48, size 0x100
     byte unlocks[32];
     // offset 0xc4048, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xc4049, size 0x29
     characterinfo characters[unlockablecharacters];
     // offset 0xc4072, size 0x1
@@ -22813,7 +22813,7 @@ version 160 {
         prt_wz_bruno_dlc0, // 0x1,
         prt_wz_scarlett, // 0x2,
         prt_wz_firebreak, // 0x3,
-        hash_8bb7d93747987a1, // 0x4,
+        prt_wz_stanton_dlc0, // 0x4,
         prt_wz_brutus, // 0x5,
         prt_wz_hudson_hawaiian, // 0x6,
         prt_wz_captain_price, // 0x7,
@@ -22934,7 +22934,7 @@ version 160 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -23050,7 +23050,7 @@ version 160 {
     // offset 0xc3a20, size 0x100
     byte unlocks[32];
     // offset 0xc3b20, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xc3b21, size 0x29
     characterinfo characters[unlockablecharacters];
     // offset 0xc3b4a, size 0x1
@@ -24332,7 +24332,7 @@ version 159 {
         prt_wz_bruno_dlc0, // 0x1,
         prt_wz_scarlett, // 0x2,
         prt_wz_firebreak, // 0x3,
-        hash_8bb7d93747987a1, // 0x4,
+        prt_wz_stanton_dlc0, // 0x4,
         prt_wz_brutus, // 0x5,
         prt_wz_hudson_hawaiian, // 0x6,
         prt_wz_captain_price, // 0x7,
@@ -24453,7 +24453,7 @@ version 159 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -24569,7 +24569,7 @@ version 159 {
     // offset 0xc3a20, size 0x100
     byte unlocks[32];
     // offset 0xc3b20, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xc3b21, size 0x29
     characterinfo characters[unlockablecharacters];
     // offset 0xc3b4a, size 0x1
@@ -25849,7 +25849,7 @@ version 158 {
         prt_wz_bruno_dlc0, // 0x1,
         prt_wz_scarlett, // 0x2,
         prt_wz_firebreak, // 0x3,
-        hash_8bb7d93747987a1, // 0x4,
+        prt_wz_stanton_dlc0, // 0x4,
         prt_wz_brutus, // 0x5,
         prt_wz_hudson_hawaiian, // 0x6,
         prt_wz_captain_price, // 0x7,
@@ -25970,7 +25970,7 @@ version 158 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -26086,7 +26086,7 @@ version 158 {
     // offset 0xc34f8, size 0x100
     byte unlocks[32];
     // offset 0xc35f8, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xc35f9, size 0x29
     characterinfo characters[unlockablecharacters];
     // offset 0xc3622, size 0x1
@@ -27365,7 +27365,7 @@ version 157 {
         prt_wz_bruno_dlc0, // 0x1,
         prt_wz_scarlett, // 0x2,
         prt_wz_firebreak, // 0x3,
-        hash_8bb7d93747987a1, // 0x4,
+        prt_wz_stanton_dlc0, // 0x4,
         prt_wz_brutus, // 0x5,
         prt_wz_hudson_hawaiian, // 0x6,
         prt_wz_captain_price, // 0x7,
@@ -27486,7 +27486,7 @@ version 157 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -27602,7 +27602,7 @@ version 157 {
     // offset 0xc34f8, size 0x100
     byte unlocks[32];
     // offset 0xc35f8, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xc35f9, size 0x29
     characterinfo characters[unlockablecharacters];
     // offset 0xc3622, size 0x1
@@ -28881,7 +28881,7 @@ version 156 {
         prt_wz_bruno_dlc0, // 0x1,
         prt_wz_scarlett, // 0x2,
         prt_wz_firebreak, // 0x3,
-        hash_8bb7d93747987a1, // 0x4,
+        prt_wz_stanton_dlc0, // 0x4,
         prt_wz_brutus, // 0x5,
         prt_wz_hudson_hawaiian, // 0x6,
         prt_wz_captain_price, // 0x7,
@@ -29001,7 +29001,7 @@ version 156 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -29117,7 +29117,7 @@ version 156 {
     // offset 0xc0348, size 0x100
     byte unlocks[32];
     // offset 0xc0448, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xc0449, size 0x29
     characterinfo characters[unlockablecharacters];
     // offset 0xc0472, size 0x1
@@ -30396,7 +30396,7 @@ version 155 {
         prt_wz_bruno_dlc0, // 0x1,
         prt_wz_scarlett, // 0x2,
         prt_wz_firebreak, // 0x3,
-        hash_8bb7d93747987a1, // 0x4,
+        prt_wz_stanton_dlc0, // 0x4,
         prt_wz_brutus, // 0x5,
         prt_wz_hudson_hawaiian, // 0x6,
         prt_wz_captain_price, // 0x7,
@@ -30516,7 +30516,7 @@ version 155 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -30632,7 +30632,7 @@ version 155 {
     // offset 0xc0348, size 0x100
     byte unlocks[32];
     // offset 0xc0448, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xc0449, size 0x29
     characterinfo characters[unlockablecharacters];
     // offset 0xc0472, size 0x1
@@ -31911,7 +31911,7 @@ version 154 {
         prt_wz_bruno_dlc0, // 0x1,
         prt_wz_scarlett, // 0x2,
         prt_wz_firebreak, // 0x3,
-        hash_8bb7d93747987a1, // 0x4,
+        prt_wz_stanton_dlc0, // 0x4,
         prt_wz_brutus, // 0x5,
         prt_wz_hudson_hawaiian, // 0x6,
         prt_wz_captain_price, // 0x7,
@@ -32030,7 +32030,7 @@ version 154 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -32146,7 +32146,7 @@ version 154 {
     // offset 0xbd198, size 0x100
     byte unlocks[32];
     // offset 0xbd298, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xbd299, size 0x29
     characterinfo characters[unlockablecharacters];
     // offset 0xbd2c2, size 0x1
@@ -33425,7 +33425,7 @@ version 153 {
         prt_wz_bruno_dlc0, // 0x1,
         prt_wz_scarlett, // 0x2,
         prt_wz_firebreak, // 0x3,
-        hash_8bb7d93747987a1, // 0x4,
+        prt_wz_stanton_dlc0, // 0x4,
         prt_wz_brutus, // 0x5,
         prt_wz_hudson_hawaiian, // 0x6,
         prt_wz_captain_price, // 0x7,
@@ -33544,7 +33544,7 @@ version 153 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -33659,7 +33659,7 @@ version 153 {
     // offset 0xbd198, size 0x100
     byte unlocks[32];
     // offset 0xbd298, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xbd299, size 0x28
     characterinfo characters[unlockablecharacters];
     // offset 0xbd2c1, size 0x1
@@ -34932,7 +34932,7 @@ version 152 {
         prt_wz_bruno_dlc0, // 0x1,
         prt_wz_scarlett, // 0x2,
         prt_wz_firebreak, // 0x3,
-        hash_8bb7d93747987a1, // 0x4,
+        prt_wz_stanton_dlc0, // 0x4,
         prt_wz_brutus, // 0x5,
         prt_wz_hudson_hawaiian, // 0x6,
         prt_wz_captain_price, // 0x7,
@@ -35051,7 +35051,7 @@ version 152 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -35166,7 +35166,7 @@ version 152 {
     // offset 0xbb5d8, size 0x100
     byte unlocks[32];
     // offset 0xbb6d8, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xbb6d9, size 0x28
     characterinfo characters[unlockablecharacters];
     // offset 0xbb701, size 0x1
@@ -36439,7 +36439,7 @@ version 151 {
         prt_wz_bruno_dlc0, // 0x1,
         prt_wz_scarlett, // 0x2,
         prt_wz_firebreak, // 0x3,
-        hash_8bb7d93747987a1, // 0x4,
+        prt_wz_stanton_dlc0, // 0x4,
         prt_wz_brutus, // 0x5,
         prt_wz_hudson_hawaiian, // 0x6,
         prt_wz_captain_price, // 0x7,
@@ -36557,7 +36557,7 @@ version 151 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -36672,7 +36672,7 @@ version 151 {
     // offset 0xb84e8, size 0x100
     byte unlocks[32];
     // offset 0xb85e8, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xb85e9, size 0x28
     characterinfo characters[unlockablecharacters];
     // offset 0xb8611, size 0x1
@@ -37938,7 +37938,7 @@ version 150 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -38050,7 +38050,7 @@ version 150 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -38165,7 +38165,7 @@ version 150 {
     // offset 0xb84e8, size 0x100
     byte unlocks[32];
     // offset 0xb85e8, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xb85e9, size 0x28
     characterinfo characters[unlockablecharacters];
     // offset 0xb8611, size 0x1
@@ -39431,7 +39431,7 @@ version 149 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -39542,7 +39542,7 @@ version 149 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -39657,7 +39657,7 @@ version 149 {
     // offset 0xb53f8, size 0x100
     byte unlocks[32];
     // offset 0xb54f8, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xb54f9, size 0x28
     characterinfo characters[unlockablecharacters];
     // offset 0xb5521, size 0x1
@@ -40921,7 +40921,7 @@ version 148 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -41032,7 +41032,7 @@ version 148 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -41147,7 +41147,7 @@ version 148 {
     // offset 0xb4ed0, size 0x100
     byte unlocks[32];
     // offset 0xb4fd0, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xb4fd1, size 0x28
     characterinfo characters[unlockablecharacters];
     // offset 0xb4ff9, size 0x1
@@ -42409,7 +42409,7 @@ version 147 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -42520,7 +42520,7 @@ version 147 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -42635,7 +42635,7 @@ version 147 {
     // offset 0xb49a8, size 0x100
     byte unlocks[32];
     // offset 0xb4aa8, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xb4aa9, size 0x28
     characterinfo characters[unlockablecharacters];
     // offset 0xb4ad1, size 0x1
@@ -43893,7 +43893,7 @@ version 146 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -44004,7 +44004,7 @@ version 146 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -44119,7 +44119,7 @@ version 146 {
     // offset 0xb3f58, size 0x100
     byte unlocks[32];
     // offset 0xb4058, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xb4059, size 0x28
     characterinfo characters[unlockablecharacters];
     // offset 0xb4081, size 0x1
@@ -45375,7 +45375,7 @@ version 145 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -45486,7 +45486,7 @@ version 145 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -45601,7 +45601,7 @@ version 145 {
     // offset 0xb3a30, size 0x100
     byte unlocks[32];
     // offset 0xb3b30, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xb3b31, size 0x28
     characterinfo characters[unlockablecharacters];
     // offset 0xb3b59, size 0x1
@@ -46855,7 +46855,7 @@ version 144 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -46966,7 +46966,7 @@ version 144 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -47081,7 +47081,7 @@ version 144 {
     // offset 0xb3508, size 0x100
     byte unlocks[32];
     // offset 0xb3608, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xb3609, size 0x28
     characterinfo characters[unlockablecharacters];
     // offset 0xb3631, size 0x1
@@ -48333,7 +48333,7 @@ version 143 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -48444,7 +48444,7 @@ version 143 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -48559,7 +48559,7 @@ version 143 {
     // offset 0xb2fe0, size 0x100
     byte unlocks[32];
     // offset 0xb30e0, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xb30e1, size 0x28
     characterinfo characters[unlockablecharacters];
     // offset 0xb3109, size 0x1
@@ -49807,7 +49807,7 @@ version 142 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -49918,7 +49918,7 @@ version 142 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -50033,7 +50033,7 @@ version 142 {
     // offset 0xb2590, size 0x100
     byte unlocks[32];
     // offset 0xb2690, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xb2691, size 0x28
     characterinfo characters[unlockablecharacters];
     // offset 0xb26b9, size 0x1
@@ -51267,7 +51267,7 @@ version 141 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -51377,7 +51377,7 @@ version 141 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -51492,7 +51492,7 @@ version 141 {
     // offset 0xb0198, size 0x100
     byte unlocks[32];
     // offset 0xb0298, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xb0299, size 0x28
     characterinfo characters[unlockablecharacters];
     // offset 0xb02c1, size 0x1
@@ -52726,7 +52726,7 @@ version 140 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -52834,7 +52834,7 @@ version 140 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -52949,7 +52949,7 @@ version 140 {
     // offset 0xa9fb8, size 0x100
     byte unlocks[32];
     // offset 0xaa0b8, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xaa0b9, size 0x28
     characterinfo characters[unlockablecharacters];
     // offset 0xaa0e1, size 0x1
@@ -54169,7 +54169,7 @@ version 139 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -54277,7 +54277,7 @@ version 139 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -54392,7 +54392,7 @@ version 139 {
     // offset 0xa8a10, size 0x100
     byte unlocks[32];
     // offset 0xa8b10, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xa8b11, size 0x28
     characterinfo characters[unlockablecharacters];
     // offset 0xa8b39, size 0x1
@@ -55612,7 +55612,7 @@ version 138 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -55719,7 +55719,7 @@ version 138 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -55834,7 +55834,7 @@ version 138 {
     // offset 0xa59c8, size 0x100
     byte unlocks[32];
     // offset 0xa5ac8, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xa5ac9, size 0x28
     characterinfo characters[unlockablecharacters];
     // offset 0xa5af1, size 0x1
@@ -57034,7 +57034,7 @@ version 137 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -57141,7 +57141,7 @@ version 137 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -57256,7 +57256,7 @@ version 137 {
     // offset 0xa68c8, size 0x100
     byte unlocks[32];
     // offset 0xa69c8, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xa69c9, size 0x28
     characterinfo characters[unlockablecharacters];
     // offset 0xa69f1, size 0x1
@@ -58438,7 +58438,7 @@ version 136 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -58545,7 +58545,7 @@ version 136 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -58660,7 +58660,7 @@ version 136 {
     // offset 0xa29c8, size 0x100
     byte unlocks[32];
     // offset 0xa2ac8, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xa2ac9, size 0x28
     characterinfo characters[unlockablecharacters];
     // offset 0xa2af1, size 0x1
@@ -59840,7 +59840,7 @@ version 135 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -59947,7 +59947,7 @@ version 135 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -60062,7 +60062,7 @@ version 135 {
     // offset 0xa22c8, size 0x100
     byte unlocks[32];
     // offset 0xa23c8, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xa23c9, size 0x28
     characterinfo characters[unlockablecharacters];
     // offset 0xa23f1, size 0x1
@@ -61238,7 +61238,7 @@ version 134 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -61345,7 +61345,7 @@ version 134 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -61460,7 +61460,7 @@ version 134 {
     // offset 0xa1878, size 0x100
     byte unlocks[32];
     // offset 0xa1978, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xa1979, size 0x28
     characterinfo characters[unlockablecharacters];
     // offset 0xa19a1, size 0x1
@@ -62635,7 +62635,7 @@ version 133 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -62742,7 +62742,7 @@ version 133 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -62857,7 +62857,7 @@ version 133 {
     // offset 0xa1370, size 0x100
     byte unlocks[32];
     // offset 0xa1470, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0xa1471, size 0x28
     characterinfo characters[unlockablecharacters];
     // offset 0xa1499, size 0x1
@@ -64026,7 +64026,7 @@ version 132 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -64133,7 +64133,7 @@ version 132 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -64248,7 +64248,7 @@ version 132 {
     // offset 0x9fb70, size 0x100
     byte unlocks[32];
     // offset 0x9fc70, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x9fc71, size 0x28
     characterinfo characters[unlockablecharacters];
     // offset 0x9fc99, size 0x1
@@ -65417,7 +65417,7 @@ version 131 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -65523,7 +65523,7 @@ version 131 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -65638,7 +65638,7 @@ version 131 {
     // offset 0x9fb70, size 0x100
     byte unlocks[32];
     // offset 0x9fc70, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x9fc71, size 0x28
     characterinfo characters[unlockablecharacters];
     // offset 0x9fc99, size 0x1
@@ -66805,7 +66805,7 @@ version 130 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -66911,7 +66911,7 @@ version 130 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -67026,7 +67026,7 @@ version 130 {
     // offset 0x9f2b0, size 0x100
     byte unlocks[32];
     // offset 0x9f3b0, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x9f3b1, size 0x28
     characterinfo characters[unlockablecharacters];
     // offset 0x9f3d9, size 0x1
@@ -68193,7 +68193,7 @@ version 129 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -68298,7 +68298,7 @@ version 129 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -68413,7 +68413,7 @@ version 129 {
     // offset 0x9c4e0, size 0x100
     byte unlocks[32];
     // offset 0x9c5e0, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x9c5e1, size 0x28
     characterinfo characters[unlockablecharacters];
     // offset 0x9c609, size 0x1
@@ -69575,7 +69575,7 @@ version 128 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -69680,7 +69680,7 @@ version 128 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -69795,7 +69795,7 @@ version 128 {
     // offset 0x9b588, size 0x100
     byte unlocks[32];
     // offset 0x9b688, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x9b689, size 0x28
     characterinfo characters[unlockablecharacters];
     // offset 0x9b6b1, size 0x1
@@ -70955,7 +70955,7 @@ version 127 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -71060,7 +71060,7 @@ version 127 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -71174,7 +71174,7 @@ version 127 {
     // offset 0x9aec0, size 0x100
     byte unlocks[32];
     // offset 0x9afc0, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x9afc1, size 0x27
     characterinfo characters[unlockablecharacters];
     // offset 0x9afe8, size 0x1
@@ -72326,7 +72326,7 @@ version 126 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -72428,7 +72428,7 @@ version 126 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -72542,7 +72542,7 @@ version 126 {
     // offset 0x9ae40, size 0x100
     byte unlocks[32];
     // offset 0x9af40, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x9af41, size 0x27
     characterinfo characters[unlockablecharacters];
     // offset 0x9af68, size 0x1
@@ -73690,7 +73690,7 @@ version 125 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -73792,7 +73792,7 @@ version 125 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -73906,7 +73906,7 @@ version 125 {
     // offset 0x9a3f0, size 0x100
     byte unlocks[32];
     // offset 0x9a4f0, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x9a4f1, size 0x27
     characterinfo characters[unlockablecharacters];
     // offset 0x9a518, size 0x1
@@ -75043,7 +75043,7 @@ version 124 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -75145,7 +75145,7 @@ version 124 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -75259,7 +75259,7 @@ version 124 {
     // offset 0x98520, size 0x100
     byte unlocks[32];
     // offset 0x98620, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x98621, size 0x27
     characterinfo characters[unlockablecharacters];
     // offset 0x98648, size 0x1
@@ -76394,7 +76394,7 @@ version 123 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -76496,7 +76496,7 @@ version 123 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -76610,7 +76610,7 @@ version 123 {
     // offset 0x97e58, size 0x100
     byte unlocks[32];
     // offset 0x97f58, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x97f59, size 0x27
     characterinfo characters[unlockablecharacters];
     // offset 0x97f80, size 0x1
@@ -77745,7 +77745,7 @@ version 122 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -77846,7 +77846,7 @@ version 122 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -77960,7 +77960,7 @@ version 122 {
     // offset 0x950f8, size 0x100
     byte unlocks[32];
     // offset 0x951f8, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x951f9, size 0x27
     characterinfo characters[unlockablecharacters];
     // offset 0x95220, size 0x1
@@ -79091,7 +79091,7 @@ version 121 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -79192,7 +79192,7 @@ version 121 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -79306,7 +79306,7 @@ version 121 {
     // offset 0x946a8, size 0x100
     byte unlocks[32];
     // offset 0x947a8, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x947a9, size 0x27
     characterinfo characters[unlockablecharacters];
     // offset 0x947d0, size 0x1
@@ -80437,7 +80437,7 @@ version 120 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -80532,7 +80532,7 @@ version 120 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -80646,7 +80646,7 @@ version 120 {
     // offset 0x83668, size 0x100
     byte unlocks[32];
     // offset 0x83768, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x83769, size 0x27
     characterinfo characters[unlockablecharacters];
     // offset 0x83790, size 0x1
@@ -81775,7 +81775,7 @@ version 119 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -81870,7 +81870,7 @@ version 119 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -81984,7 +81984,7 @@ version 119 {
     // offset 0x83140, size 0x100
     byte unlocks[32];
     // offset 0x83240, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x83241, size 0x27
     characterinfo characters[unlockablecharacters];
     // offset 0x83268, size 0x1
@@ -83112,7 +83112,7 @@ version 118 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -83207,7 +83207,7 @@ version 118 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -83321,7 +83321,7 @@ version 118 {
     // offset 0x82c38, size 0x100
     byte unlocks[32];
     // offset 0x82d38, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x82d39, size 0x27
     characterinfo characters[unlockablecharacters];
     // offset 0x82d60, size 0x1
@@ -84449,7 +84449,7 @@ version 117 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -84541,7 +84541,7 @@ version 117 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -84655,7 +84655,7 @@ version 117 {
     // offset 0x7a418, size 0x100
     byte unlocks[32];
     // offset 0x7a518, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x7a519, size 0x27
     characterinfo characters[unlockablecharacters];
     // offset 0x7a540, size 0x1
@@ -85783,7 +85783,7 @@ version 116 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -85874,7 +85874,7 @@ version 116 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -85988,7 +85988,7 @@ version 116 {
     // offset 0x776b8, size 0x100
     byte unlocks[32];
     // offset 0x777b8, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x777b9, size 0x27
     characterinfo characters[unlockablecharacters];
     // offset 0x777e0, size 0x1
@@ -87108,7 +87108,7 @@ version 115 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -87199,7 +87199,7 @@ version 115 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -87313,7 +87313,7 @@ version 115 {
     // offset 0x76c68, size 0x100
     byte unlocks[32];
     // offset 0x76d68, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x76d69, size 0x27
     characterinfo characters[unlockablecharacters];
     // offset 0x76d90, size 0x1
@@ -88430,7 +88430,7 @@ version 114 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -88521,7 +88521,7 @@ version 114 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -88635,7 +88635,7 @@ version 114 {
     // offset 0x75d50, size 0x100
     byte unlocks[32];
     // offset 0x75e50, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x75e51, size 0x27
     characterinfo characters[unlockablecharacters];
     // offset 0x75e78, size 0x1
@@ -89748,7 +89748,7 @@ version 113 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -89839,7 +89839,7 @@ version 113 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -89953,7 +89953,7 @@ version 113 {
     // offset 0x75c48, size 0x100
     byte unlocks[32];
     // offset 0x75d48, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x75d49, size 0x27
     characterinfo characters[unlockablecharacters];
     // offset 0x75d70, size 0x1
@@ -91066,7 +91066,7 @@ version 112 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -91156,7 +91156,7 @@ version 112 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -91270,7 +91270,7 @@ version 112 {
     // offset 0x75c48, size 0x100
     byte unlocks[32];
     // offset 0x75d48, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x75d49, size 0x27
     characterinfo characters[unlockablecharacters];
     // offset 0x75d70, size 0x1
@@ -92383,7 +92383,7 @@ version 111 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -92471,7 +92471,7 @@ version 111 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -92585,7 +92585,7 @@ version 111 {
     // offset 0x70188, size 0x100
     byte unlocks[32];
     // offset 0x70288, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x70289, size 0x27
     characterinfo characters[unlockablecharacters];
     // offset 0x702b0, size 0x1
@@ -93698,7 +93698,7 @@ version 110 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -93785,7 +93785,7 @@ version 110 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -93899,7 +93899,7 @@ version 110 {
     // offset 0x6d428, size 0x100
     byte unlocks[32];
     // offset 0x6d528, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x6d529, size 0x27
     characterinfo characters[unlockablecharacters];
     // offset 0x6d550, size 0x1
@@ -95012,7 +95012,7 @@ version 109 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -95098,7 +95098,7 @@ version 109 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -95212,7 +95212,7 @@ version 109 {
     // offset 0x6a6c8, size 0x100
     byte unlocks[32];
     // offset 0x6a7c8, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x6a7c9, size 0x27
     characterinfo characters[unlockablecharacters];
     // offset 0x6a7f0, size 0x1
@@ -96323,7 +96323,7 @@ version 108 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -96409,7 +96409,7 @@ version 108 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -96523,7 +96523,7 @@ version 108 {
     // offset 0x6a2c8, size 0x100
     byte unlocks[32];
     // offset 0x6a3c8, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x6a3c9, size 0x27
     characterinfo characters[unlockablecharacters];
     // offset 0x6a3f0, size 0x1
@@ -97631,7 +97631,7 @@ version 107 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -97717,7 +97717,7 @@ version 107 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -97831,7 +97831,7 @@ version 107 {
     // offset 0x69898, size 0x100
     byte unlocks[32];
     // offset 0x69998, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x69999, size 0x27
     characterinfo characters[unlockablecharacters];
     // offset 0x699c0, size 0x1
@@ -98939,7 +98939,7 @@ version 106 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -99016,7 +99016,7 @@ version 106 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -99130,7 +99130,7 @@ version 106 {
     // offset 0x50278, size 0x100
     byte unlocks[32];
     // offset 0x50378, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x50379, size 0x27
     characterinfo characters[unlockablecharacters];
     // offset 0x503a0, size 0x1
@@ -100236,7 +100236,7 @@ version 105 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -100312,7 +100312,7 @@ version 105 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -100426,7 +100426,7 @@ version 105 {
     // offset 0x4fd50, size 0x100
     byte unlocks[32];
     // offset 0x4fe50, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x4fe51, size 0x27
     characterinfo characters[unlockablecharacters];
     // offset 0x4fe78, size 0x1
@@ -101526,7 +101526,7 @@ version 104 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -101602,7 +101602,7 @@ version 104 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -101716,7 +101716,7 @@ version 104 {
     // offset 0x4f810, size 0x100
     byte unlocks[32];
     // offset 0x4f910, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x4f911, size 0x27
     characterinfo characters[unlockablecharacters];
     // offset 0x4f938, size 0x1
@@ -102814,7 +102814,7 @@ version 103 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -102890,7 +102890,7 @@ version 103 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -103004,7 +103004,7 @@ version 103 {
     // offset 0x4f2e8, size 0x100
     byte unlocks[32];
     // offset 0x4f3e8, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x4f3e9, size 0x27
     characterinfo characters[unlockablecharacters];
     // offset 0x4f410, size 0x1
@@ -104102,7 +104102,7 @@ version 102 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -104178,7 +104178,7 @@ version 102 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -104292,7 +104292,7 @@ version 102 {
     // offset 0x4f2e8, size 0x100
     byte unlocks[32];
     // offset 0x4f3e8, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x4f3e9, size 0x27
     characterinfo characters[unlockablecharacters];
     // offset 0x4f410, size 0x1
@@ -105383,7 +105383,7 @@ version 101 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -105459,7 +105459,7 @@ version 101 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -105573,7 +105573,7 @@ version 101 {
     // offset 0x4e3d0, size 0x100
     byte unlocks[32];
     // offset 0x4e4d0, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x4e4d1, size 0x27
     characterinfo characters[unlockablecharacters];
     // offset 0x4e4f8, size 0x1
@@ -106664,7 +106664,7 @@ version 100 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -106739,7 +106739,7 @@ version 100 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -106853,7 +106853,7 @@ version 100 {
     // offset 0x4b770, size 0x100
     byte unlocks[32];
     // offset 0x4b870, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x4b871, size 0x27
     characterinfo characters[unlockablecharacters];
     // offset 0x4b898, size 0x1
@@ -107942,7 +107942,7 @@ version 99 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -108017,7 +108017,7 @@ version 99 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -108131,7 +108131,7 @@ version 99 {
     // offset 0x4b6f0, size 0x100
     byte unlocks[32];
     // offset 0x4b7f0, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x4b7f1, size 0x27
     characterinfo characters[unlockablecharacters];
     // offset 0x4b818, size 0x1
@@ -109218,7 +109218,7 @@ version 98 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -109293,7 +109293,7 @@ version 98 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -109407,7 +109407,7 @@ version 98 {
     // offset 0x4b6d0, size 0x100
     byte unlocks[32];
     // offset 0x4b7d0, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x4b7d1, size 0x27
     characterinfo characters[unlockablecharacters];
     // offset 0x4b7f8, size 0x1
@@ -110493,7 +110493,7 @@ version 97 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -110568,7 +110568,7 @@ version 97 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -110682,7 +110682,7 @@ version 97 {
     // offset 0x4b1c8, size 0x100
     byte unlocks[32];
     // offset 0x4b2c8, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x4b2c9, size 0x27
     characterinfo characters[unlockablecharacters];
     // offset 0x4b2f0, size 0x1
@@ -111768,7 +111768,7 @@ version 96 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -111844,7 +111844,7 @@ version 96 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -111958,7 +111958,7 @@ version 96 {
     // offset 0x4b1c8, size 0x100
     byte unlocks[32];
     // offset 0x4b2c8, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x4b2c9, size 0x27
     characterinfo characters[unlockablecharacters];
     // offset 0x4b2f0, size 0x1
@@ -113022,7 +113022,7 @@ version 95 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -113098,7 +113098,7 @@ version 95 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -113212,7 +113212,7 @@ version 95 {
     // offset 0x4aa78, size 0x100
     byte unlocks[32];
     // offset 0x4ab78, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x4ab79, size 0x27
     characterinfo characters[unlockablecharacters];
     // offset 0x4aba0, size 0x1
@@ -114264,7 +114264,7 @@ version 94 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -114340,7 +114340,7 @@ version 94 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_outrider, // 0x6,
@@ -114454,7 +114454,7 @@ version 94 {
     // offset 0x48b88, size 0x100
     byte unlocks[32];
     // offset 0x48c88, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x48c89, size 0x27
     characterinfo characters[unlockablecharacters];
     // offset 0x48cb0, size 0x1
@@ -115504,7 +115504,7 @@ version 93 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -115580,7 +115580,7 @@ version 93 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -115693,7 +115693,7 @@ version 93 {
     // offset 0x48a38, size 0x100
     byte unlocks[32];
     // offset 0x48b38, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x48b39, size 0x26
     characterinfo characters[unlockablecharacters];
     // offset 0x48b5f, size 0x1
@@ -116745,7 +116745,7 @@ version 92 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         hash_203a1dcc75cf8c53, // 0x6,
@@ -116812,7 +116812,7 @@ version 92 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -116925,7 +116925,7 @@ version 92 {
     // offset 0x48a38, size 0x100
     byte unlocks[32];
     // offset 0x48b38, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x48b39, size 0x26
     characterinfo characters[unlockablecharacters];
     // offset 0x48b5f, size 0x1
@@ -117977,7 +117977,7 @@ version 91 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         hash_203a1dcc75cf8c53, // 0x6,
@@ -118044,7 +118044,7 @@ version 91 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -118156,7 +118156,7 @@ version 91 {
     // offset 0x48a38, size 0x100
     byte unlocks[32];
     // offset 0x48b38, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x48b39, size 0x25
     characterinfo characters[unlockablecharacters];
     // offset 0x48b5e, size 0x1
@@ -119194,7 +119194,7 @@ version 90 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         hash_203a1dcc75cf8c53, // 0x6,
@@ -119261,7 +119261,7 @@ version 90 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -119373,7 +119373,7 @@ version 90 {
     // offset 0x43638, size 0x100
     byte unlocks[32];
     // offset 0x43738, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x43739, size 0x25
     characterinfo characters[unlockablecharacters];
     // offset 0x4375e, size 0x1
@@ -120411,7 +120411,7 @@ version 89 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         hash_203a1dcc75cf8c53, // 0x6,
@@ -120477,7 +120477,7 @@ version 89 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -120589,7 +120589,7 @@ version 89 {
     // offset 0x40b48, size 0x100
     byte unlocks[32];
     // offset 0x40c48, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x40c49, size 0x25
     characterinfo characters[unlockablecharacters];
     // offset 0x40c6e, size 0x1
@@ -121627,7 +121627,7 @@ version 88 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         hash_203a1dcc75cf8c53, // 0x6,
@@ -121693,7 +121693,7 @@ version 88 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -121805,7 +121805,7 @@ version 88 {
     // offset 0x40be8, size 0x100
     byte unlocks[32];
     // offset 0x40ce8, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x40ce9, size 0x25
     characterinfo characters[unlockablecharacters];
     // offset 0x40d0e, size 0x1
@@ -122841,7 +122841,7 @@ version 87 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         hash_203a1dcc75cf8c53, // 0x6,
@@ -122907,7 +122907,7 @@ version 87 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -123019,7 +123019,7 @@ version 87 {
     // offset 0x3efe8, size 0x100
     byte unlocks[32];
     // offset 0x3f0e8, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x3f0e9, size 0x25
     characterinfo characters[unlockablecharacters];
     // offset 0x3f10e, size 0x1
@@ -124043,7 +124043,7 @@ version 86 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         hash_203a1dcc75cf8c53, // 0x6,
@@ -124109,7 +124109,7 @@ version 86 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -124221,7 +124221,7 @@ version 86 {
     // offset 0x3ee08, size 0x100
     byte unlocks[32];
     // offset 0x3ef08, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x3ef09, size 0x25
     characterinfo characters[unlockablecharacters];
     // offset 0x3ef2e, size 0x1
@@ -125243,7 +125243,7 @@ version 85 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         hash_203a1dcc75cf8c53, // 0x6,
@@ -125309,7 +125309,7 @@ version 85 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -125421,7 +125421,7 @@ version 85 {
     // offset 0x3ed88, size 0x100
     byte unlocks[32];
     // offset 0x3ee88, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x3ee89, size 0x25
     characterinfo characters[unlockablecharacters];
     // offset 0x3eeae, size 0x1
@@ -126441,7 +126441,7 @@ version 84 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         hash_203a1dcc75cf8c53, // 0x6,
@@ -126507,7 +126507,7 @@ version 84 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -126619,7 +126619,7 @@ version 84 {
     // offset 0x3e940, size 0x100
     byte unlocks[32];
     // offset 0x3ea40, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x3ea41, size 0x25
     characterinfo characters[unlockablecharacters];
     // offset 0x3ea66, size 0x1
@@ -127639,7 +127639,7 @@ version 83 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         hash_203a1dcc75cf8c53, // 0x6,
@@ -127704,7 +127704,7 @@ version 83 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -127816,7 +127816,7 @@ version 83 {
     // offset 0x3be90, size 0x100
     byte unlocks[32];
     // offset 0x3bf90, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x3bf91, size 0x25
     characterinfo characters[unlockablecharacters];
     // offset 0x3bfb6, size 0x1
@@ -128834,7 +128834,7 @@ version 82 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         hash_203a1dcc75cf8c53, // 0x6,
@@ -128899,7 +128899,7 @@ version 82 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -129011,7 +129011,7 @@ version 82 {
     // offset 0x3bd90, size 0x100
     byte unlocks[32];
     // offset 0x3be90, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x3be91, size 0x25
     characterinfo characters[unlockablecharacters];
     // offset 0x3beb6, size 0x1
@@ -130002,7 +130002,7 @@ version 81 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         hash_203a1dcc75cf8c53, // 0x6,
@@ -130067,7 +130067,7 @@ version 81 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -130179,7 +130179,7 @@ version 81 {
     // offset 0x385e8, size 0x100
     byte unlocks[32];
     // offset 0x386e8, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x386e9, size 0x25
     characterinfo characters[unlockablecharacters];
     // offset 0x3870e, size 0x1
@@ -131166,7 +131166,7 @@ version 80 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         hash_203a1dcc75cf8c53, // 0x6,
@@ -131231,7 +131231,7 @@ version 80 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -131343,7 +131343,7 @@ version 80 {
     // offset 0x37d58, size 0x100
     byte unlocks[32];
     // offset 0x37e58, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x37e59, size 0x25
     characterinfo characters[unlockablecharacters];
     // offset 0x37e7e, size 0x1
@@ -132294,7 +132294,7 @@ version 79 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         hash_203a1dcc75cf8c53, // 0x6,
@@ -132359,7 +132359,7 @@ version 79 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -132471,7 +132471,7 @@ version 79 {
     // offset 0x37158, size 0x100
     byte unlocks[32];
     // offset 0x37258, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x37259, size 0x25
     characterinfo characters[unlockablecharacters];
     // offset 0x3727e, size 0x1
@@ -133416,7 +133416,7 @@ version 78 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         hash_203a1dcc75cf8c53, // 0x6,
@@ -133481,7 +133481,7 @@ version 78 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -133593,7 +133593,7 @@ version 78 {
     // offset 0x36480, size 0x100
     byte unlocks[32];
     // offset 0x36580, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x36581, size 0x25
     characterinfo characters[unlockablecharacters];
     // offset 0x365a6, size 0x1
@@ -134536,7 +134536,7 @@ version 77 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         hash_203a1dcc75cf8c53, // 0x6,
@@ -134601,7 +134601,7 @@ version 77 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -134713,7 +134713,7 @@ version 77 {
     // offset 0x36038, size 0x100
     byte unlocks[32];
     // offset 0x36138, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x36139, size 0x25
     characterinfo characters[unlockablecharacters];
     // offset 0x3615e, size 0x1
@@ -135655,7 +135655,7 @@ version 76 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         hash_203a1dcc75cf8c53, // 0x6,
@@ -135720,7 +135720,7 @@ version 76 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -135832,7 +135832,7 @@ version 76 {
     // offset 0x35c10, size 0x100
     byte unlocks[32];
     // offset 0x35d10, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x35d11, size 0x25
     characterinfo characters[unlockablecharacters];
     // offset 0x35d36, size 0x1
@@ -136767,7 +136767,7 @@ version 75 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         hash_203a1dcc75cf8c53, // 0x6,
@@ -136832,7 +136832,7 @@ version 75 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -136944,7 +136944,7 @@ version 75 {
     // offset 0x34ad8, size 0x100
     byte unlocks[32];
     // offset 0x34bd8, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x34bd9, size 0x25
     characterinfo characters[unlockablecharacters];
     // offset 0x34bfe, size 0x1
@@ -137879,7 +137879,7 @@ version 74 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         hash_203a1dcc75cf8c53, // 0x6,
@@ -137942,7 +137942,7 @@ version 74 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -138054,7 +138054,7 @@ version 74 {
     // offset 0x34ad8, size 0x100
     byte unlocks[32];
     // offset 0x34bd8, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x34bd9, size 0x25
     characterinfo characters[unlockablecharacters];
     // offset 0x34bfe, size 0x1
@@ -138989,7 +138989,7 @@ version 73 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         hash_203a1dcc75cf8c53, // 0x6,
@@ -139052,7 +139052,7 @@ version 73 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -139164,7 +139164,7 @@ version 73 {
     // offset 0x34ad8, size 0x100
     byte unlocks[32];
     // offset 0x34bd8, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x34bd9, size 0x25
     characterinfo characters[unlockablecharacters];
     // offset 0x34bfe, size 0x6
@@ -140097,7 +140097,7 @@ version 72 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         hash_203a1dcc75cf8c53, // 0x6,
@@ -140163,7 +140163,7 @@ version 72 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -140275,7 +140275,7 @@ version 72 {
     // offset 0x34ad8, size 0x100
     byte unlocks[32];
     // offset 0x34bd8, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x34bd9, size 0x25
     characterinfo characters[unlockablecharacters];
     // offset 0x34bfe, size 0x6
@@ -141208,7 +141208,7 @@ version 71 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         hash_203a1dcc75cf8c53, // 0x6,
@@ -141271,7 +141271,7 @@ version 71 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -141383,7 +141383,7 @@ version 71 {
     // offset 0x34ad8, size 0x100
     byte unlocks[32];
     // offset 0x34bd8, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x34bd9, size 0x25
     characterinfo characters[unlockablecharacters];
     // offset 0x34bfe, size 0x6
@@ -142314,7 +142314,7 @@ version 70 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         hash_203a1dcc75cf8c53, // 0x6,
@@ -142377,7 +142377,7 @@ version 70 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -142489,7 +142489,7 @@ version 70 {
     // offset 0x34a98, size 0x100
     byte unlocks[32];
     // offset 0x34b98, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x34b99, size 0x25
     characterinfo characters[unlockablecharacters];
     // offset 0x34bbe, size 0x6
@@ -143413,7 +143413,7 @@ version 69 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         hash_203a1dcc75cf8c53, // 0x6,
@@ -143476,7 +143476,7 @@ version 69 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -143588,7 +143588,7 @@ version 69 {
     // offset 0x34670, size 0x100
     byte unlocks[32];
     // offset 0x34770, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x34771, size 0x25
     characterinfo characters[unlockablecharacters];
     // offset 0x34796, size 0x6
@@ -144510,7 +144510,7 @@ version 68 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         hash_203a1dcc75cf8c53, // 0x6,
@@ -144573,7 +144573,7 @@ version 68 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -144685,7 +144685,7 @@ version 68 {
     // offset 0x34228, size 0x100
     byte unlocks[32];
     // offset 0x34328, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x34329, size 0x25
     characterinfo characters[unlockablecharacters];
     // offset 0x3434e, size 0x6
@@ -145607,7 +145607,7 @@ version 67 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         hash_203a1dcc75cf8c53, // 0x6,
@@ -145670,7 +145670,7 @@ version 67 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -145772,7 +145772,7 @@ version 67 {
     // offset 0x34228, size 0x100
     byte unlocks[32];
     // offset 0x34328, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x34329, size 0x25
     characterinfo characters[unlockablecharacters];
     // offset 0x3434e, size 0x1
@@ -146684,7 +146684,7 @@ version 66 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         hash_203a1dcc75cf8c53, // 0x6,
@@ -146747,7 +146747,7 @@ version 66 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -146849,7 +146849,7 @@ version 66 {
     // offset 0x33ea8, size 0x100
     byte unlocks[32];
     // offset 0x33fa8, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x33fa9, size 0x25
     characterinfo characters[unlockablecharacters];
     // offset 0x33fce, size 0x1
@@ -147755,7 +147755,7 @@ version 65 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         hash_203a1dcc75cf8c53, // 0x6,
@@ -147818,7 +147818,7 @@ version 65 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -147920,7 +147920,7 @@ version 65 {
     // offset 0x33c08, size 0x100
     byte unlocks[32];
     // offset 0x33d08, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x33d09, size 0x25
     characterinfo characters[unlockablecharacters];
     // offset 0x33d2e, size 0x1
@@ -148793,7 +148793,7 @@ version 64 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         hash_203a1dcc75cf8c53, // 0x6,
@@ -148856,7 +148856,7 @@ version 64 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -148958,7 +148958,7 @@ version 64 {
     // offset 0x33c08, size 0x100
     byte unlocks[32];
     // offset 0x33d08, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x33d09, size 0x25
     characterinfo characters[unlockablecharacters];
     // offset 0x33d2e, size 0x1
@@ -149867,7 +149867,7 @@ version 63 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         hash_203a1dcc75cf8c53, // 0x6,
@@ -149930,7 +149930,7 @@ version 63 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -150032,7 +150032,7 @@ version 63 {
     // offset 0x33c08, size 0x100
     byte unlocks[32];
     // offset 0x33d08, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x33d09, size 0x25
     characterinfo characters[unlockablecharacters];
     // offset 0x33d2e, size 0x1
@@ -150930,7 +150930,7 @@ version 62 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -150987,7 +150987,7 @@ version 62 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -151089,7 +151089,7 @@ version 62 {
     // offset 0x32240, size 0x100
     byte unlocks[32];
     // offset 0x32340, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x32341, size 0x25
     characterinfo characters[unlockablecharacters];
     // offset 0x32366, size 0x1
@@ -151985,7 +151985,7 @@ version 61 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -152042,7 +152042,7 @@ version 61 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -152144,7 +152144,7 @@ version 61 {
     // offset 0x32200, size 0x100
     byte unlocks[32];
     // offset 0x32300, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x32301, size 0x25
     characterinfo characters[unlockablecharacters];
     // offset 0x32326, size 0x1
@@ -153038,7 +153038,7 @@ version 60 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -153095,7 +153095,7 @@ version 60 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -153197,7 +153197,7 @@ version 60 {
     // offset 0x32120, size 0x100
     byte unlocks[32];
     // offset 0x32220, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x32221, size 0x25
     characterinfo characters[unlockablecharacters];
     // offset 0x32246, size 0x1
@@ -154091,7 +154091,7 @@ version 59 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -154148,7 +154148,7 @@ version 59 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -154246,7 +154246,7 @@ version 59 {
     // offset 0x31d18, size 0x100
     byte unlocks[32];
     // offset 0x31e18, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x31e19, size 0x25
     characterinfo characters[unlockablecharacters];
     // offset 0x31e3e, size 0x1
@@ -155138,7 +155138,7 @@ version 58 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -155195,7 +155195,7 @@ version 58 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -155293,7 +155293,7 @@ version 58 {
     // offset 0x31cf8, size 0x100
     byte unlocks[32];
     // offset 0x31df8, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x31df9, size 0x25
     characterinfo characters[unlockablecharacters];
     // offset 0x31e1e, size 0x1
@@ -156181,7 +156181,7 @@ version 57 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -156238,7 +156238,7 @@ version 57 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -156336,7 +156336,7 @@ version 57 {
     // offset 0x31ce8, size 0x100
     byte unlocks[32];
     // offset 0x31de8, size 0x1
-    bool hash_1c05484619bf1aa7;
+    bool completedctchallenges;
     // offset 0x31de9, size 0x25
     characterinfo characters[unlockablecharacters];
     // offset 0x31e0e, size 0x1
@@ -157224,7 +157224,7 @@ version 56 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -157281,7 +157281,7 @@ version 56 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -158241,7 +158241,7 @@ version 55 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -158298,7 +158298,7 @@ version 55 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -159252,7 +159252,7 @@ version 54 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -159309,7 +159309,7 @@ version 54 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -160261,7 +160261,7 @@ version 53 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -160318,7 +160318,7 @@ version 53 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -161260,7 +161260,7 @@ version 52 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -162198,7 +162198,7 @@ version 51 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -163132,7 +163132,7 @@ version 50 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -164052,7 +164052,7 @@ version 49 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -165028,7 +165028,7 @@ version 48 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -166000,7 +166000,7 @@ version 47 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -166972,7 +166972,7 @@ version 46 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -167922,7 +167922,7 @@ version 45 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -168872,7 +168872,7 @@ version 44 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -169819,7 +169819,7 @@ version 43 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -170764,7 +170764,7 @@ version 42 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -171705,7 +171705,7 @@ version 41 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -172644,7 +172644,7 @@ version 40 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -173579,7 +173579,7 @@ version 39 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -174508,7 +174508,7 @@ version 38 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -175433,7 +175433,7 @@ version 37 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -176357,7 +176357,7 @@ version 36 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -177281,7 +177281,7 @@ version 35 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -178201,7 +178201,7 @@ version 34 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -179121,7 +179121,7 @@ version 33 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -180033,7 +180033,7 @@ version 32 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -180869,7 +180869,7 @@ version 31 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -181701,7 +181701,7 @@ version 30 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -182534,7 +182534,7 @@ version 29 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -183362,7 +183362,7 @@ version 28 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -184188,7 +184188,7 @@ version 27 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -184895,7 +184895,7 @@ version 26 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -185578,7 +185578,7 @@ version 25 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -186245,7 +186245,7 @@ version 24 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -186890,7 +186890,7 @@ version 23 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,
@@ -187531,7 +187531,7 @@ version 22 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_enforcer, // 0x4,
         prt_wz_nikolai, // 0x5,
         prt_wz_dempsey, // 0x6,

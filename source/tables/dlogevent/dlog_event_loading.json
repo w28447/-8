@@ -122,7 +122,7 @@
         },
         {
             "name": "#thread",
-            "scrName": "#hash_ccf2090e",
+            "scrName": "#thread",
             "type": "STRING",
             "len": 32
         },

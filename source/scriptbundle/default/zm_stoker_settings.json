@@ -55,7 +55,7 @@
     "instakillweakpointdamagescale": 5,
     "damagescale": 0.5,
     "category": "#heavy",
-    "hash_854eebd": 0.15,
+    "numplayerhealthscale": 0.15,
     "hash_cd8b7a6c": 0.8,
     "hash_20dea374": 100,
     "hash_a22e6e32": 48,

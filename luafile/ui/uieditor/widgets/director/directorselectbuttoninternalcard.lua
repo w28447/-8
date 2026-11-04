@@ -230,7 +230,7 @@ CoD.DirectorSelectButtonInternalCard.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	PercentInstalled:subscribeToGlobalModel( f1_arg1, "LobbyRoot", "percentInstalled", function ( model )
 		local f9_local0 = model:get()
 		if f9_local0 ~= nil then
-			PercentInstalled:setText( LocalizeIntoString( 0x643A70B24A36F6, f9_local0 ) )
+			PercentInstalled:setText( LocalizeIntoString( "director/percent_installed", f9_local0 ) )
 		end
 	end )
 	self:addElement( PercentInstalled )

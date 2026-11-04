@@ -25,19 +25,19 @@
     ],
     "matchquitpenalty": [
         {
-            "hash_193f434b": 0,
+            "timewindow": 0,
             "hash_2ec63ef8": 5
         },
         {
-            "hash_193f434b": 2,
+            "timewindow": 2,
             "hash_2ec63ef8": 10
         },
         {
-            "hash_193f434b": 3,
+            "timewindow": 3,
             "hash_2ec63ef8": 20
         },
         {
-            "hash_193f434b": 4,
+            "timewindow": 4,
             "hash_2ec63ef8": 30
         }
     ],

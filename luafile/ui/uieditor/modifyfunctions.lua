@@ -272,7 +272,7 @@ end
 function PrependLevelTypeStringWithSeparator( f41_arg0, f41_arg1 )
 	local f41_local0 = "menu/level_caps"
 	if Engine.CurrentSessionMode() == Enum.eModes.mode_warzone then
-		f41_local0 = 0xE15E03CF165A930
+		f41_local0 = "warzone/echelon_caps"
 	elseif LuaUtils.IsArenaMode() then
 		f41_local0 = "arena/rank"
 	end

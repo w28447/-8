@@ -126,7 +126,7 @@
         },
         {
             "name": "#repair_count",
-            "scrName": "#hash_7352c057",
+            "scrName": "#repair_count",
             "type": "INT16"
         },
         {

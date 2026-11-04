@@ -794,7 +794,7 @@ function function_b7fc06b2( localclientnum, oldval, newval, bnewent, binitialsna
 // Size: 0x5c
 function water_splashies( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    self postfx::playpostfxbundle( #"hash_50d5d465e2b9b355" );
+    self postfx::playpostfxbundle( #"pstfx_sprite_rain_splash" );
 }
 
 // Namespace zm_zodt8/zm_zodt8

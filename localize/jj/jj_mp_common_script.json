@@ -5,7 +5,7 @@
     "killstreak/earned_qrdrone": "^3[{+actionslot 4}]^7 でドラゴンファイア",
     "warzone/button_finish": "^3[{+activate}]^7 ヒューミリエーション",
     "coop/revive_emergency_reserve_once": "蘇生中、緊急リザーブを消費",
-    "hash_ddc319addc8bcb2": "GAME OVER",
+    "mp/game_over_caps": "GAME OVER",
     "killstreak/emp_inbound": "パワーコア展開",
     "killstreak/emp_hacked": "パワーコアをハッキング",
     "coop/player_needs_to_be_revived": "$(clientName)に蘇生が必要",

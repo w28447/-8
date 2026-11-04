@@ -288,7 +288,7 @@
     "damagescale": 0.7,
     "hash_167cbf22": 64,
     "category": "#miniboss",
-    "hash_854eebd": 0.75,
+    "numplayerhealthscale": 0.75,
     "explosivedamagescale": 0.5,
     "hash_652a36f2": 1024,
     "hash_cdf6b76d": 1,

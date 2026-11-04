@@ -132,7 +132,7 @@ function on_contract_complete( params )
 // Params 3
 // Checksum 0x4bd25048, Offset: 0xde0
 // Size: 0x31a
-function give_xp( var_c14ca2e6, xpstat, amount )
+function give_xp( xptype, xpstat, amount )
 {
     player = self;
     assert( isplayer( player ) );
@@ -146,13 +146,13 @@ function give_xp( var_c14ca2e6, xpstat, amount )
     if ( isdefined( var_60a35182 ) && var_60a35182 )
     {
         prevxp = player stats::get_stat_global( "PARAGON_RANKXP" );
-        player addrankxpvalue( var_c14ca2e6, amount );
+        player addrankxpvalue( xptype, amount );
         curxp = player stats::get_stat_global( "PARAGON_RANKXP" );
     }
     else
     {
         prevxp = player stats::get_stat_global( "RANKXP" );
-        player addrankxpvalue( var_c14ca2e6, amount );
+        player addrankxpvalue( xptype, amount );
         curxp = player stats::get_stat_global( "RANKXP" );
         
         if ( isdefined( player.pers ) && isdefined( player.pers[ #"plevel" ] ) && player.pers[ #"plevel" ] == level.maxprestige - 1 )

@@ -631,7 +631,7 @@ version 92 {
     };
 
     // idx 44 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -643,7 +643,7 @@ version 92 {
     };
 
     // idx 46 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -733,7 +733,7 @@ version 92 {
     };
 
     // idx 61 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -793,7 +793,7 @@ version 92 {
     };
 
     // idx 71 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -1065,7 +1065,7 @@ version 92 {
     };
 
     // idx 106 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -1861,7 +1861,7 @@ version 92 {
         // offset 0x3a9, size 0x1
         dart_restrictions dart;
         // offset 0x3aa, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x3ab, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x3ac, size 0x1
@@ -1877,11 +1877,11 @@ version 92 {
         // offset 0x3b1, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x3b2, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x3b3, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x3b4, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x3b5, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x3b6, size 0x1
@@ -1919,7 +1919,7 @@ version 92 {
         // offset 0x3c6, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x3c7, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x3c8, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x3c9, size 0x1
@@ -2045,7 +2045,7 @@ version 92 {
         // offset 0x405, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x406, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x407, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x408, size 0x1
@@ -2079,13 +2079,13 @@ version 92 {
         // offset 0x416, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x417, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x418, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x419, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x41a, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x41b, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x41c, size 0x1
@@ -2715,7 +2715,7 @@ version 92 {
         // offset 0x3886e, size 0x1
         bool disablecontracts;
         // offset 0x3886f, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x38870, size 0x1
         bool allowannouncer;
         // offset 0x38871, size 0x1
@@ -4517,7 +4517,7 @@ version 91 {
     };
 
     // idx 44 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -4529,7 +4529,7 @@ version 91 {
     };
 
     // idx 46 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -4619,7 +4619,7 @@ version 91 {
     };
 
     // idx 61 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -4679,7 +4679,7 @@ version 91 {
     };
 
     // idx 71 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -4951,7 +4951,7 @@ version 91 {
     };
 
     // idx 106 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -5747,7 +5747,7 @@ version 91 {
         // offset 0x3a9, size 0x1
         dart_restrictions dart;
         // offset 0x3aa, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x3ab, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x3ac, size 0x1
@@ -5763,11 +5763,11 @@ version 91 {
         // offset 0x3b1, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x3b2, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x3b3, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x3b4, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x3b5, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x3b6, size 0x1
@@ -5805,7 +5805,7 @@ version 91 {
         // offset 0x3c6, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x3c7, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x3c8, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x3c9, size 0x1
@@ -5931,7 +5931,7 @@ version 91 {
         // offset 0x405, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x406, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x407, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x408, size 0x1
@@ -5965,13 +5965,13 @@ version 91 {
         // offset 0x416, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x417, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x418, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x419, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x41a, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x41b, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x41c, size 0x1
@@ -6601,7 +6601,7 @@ version 91 {
         // offset 0x3886e, size 0x1
         bool disablecontracts;
         // offset 0x3886f, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x38870, size 0x1
         bool allowannouncer;
         // offset 0x38871, size 0x1
@@ -8403,7 +8403,7 @@ version 90 {
     };
 
     // idx 44 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -8415,7 +8415,7 @@ version 90 {
     };
 
     // idx 46 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -8505,7 +8505,7 @@ version 90 {
     };
 
     // idx 61 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -8565,7 +8565,7 @@ version 90 {
     };
 
     // idx 71 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -8837,7 +8837,7 @@ version 90 {
     };
 
     // idx 106 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -9633,7 +9633,7 @@ version 90 {
         // offset 0x3a9, size 0x1
         dart_restrictions dart;
         // offset 0x3aa, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x3ab, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x3ac, size 0x1
@@ -9649,11 +9649,11 @@ version 90 {
         // offset 0x3b1, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x3b2, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x3b3, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x3b4, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x3b5, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x3b6, size 0x1
@@ -9691,7 +9691,7 @@ version 90 {
         // offset 0x3c6, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x3c7, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x3c8, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x3c9, size 0x1
@@ -9817,7 +9817,7 @@ version 90 {
         // offset 0x405, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x406, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x407, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x408, size 0x1
@@ -9851,13 +9851,13 @@ version 90 {
         // offset 0x416, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x417, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x418, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x419, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x41a, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x41b, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x41c, size 0x1
@@ -10487,7 +10487,7 @@ version 90 {
         // offset 0x3886e, size 0x1
         bool disablecontracts;
         // offset 0x3886f, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x38870, size 0x1
         bool allowannouncer;
         // offset 0x38871, size 0x1
@@ -12289,7 +12289,7 @@ version 89 {
     };
 
     // idx 44 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -12301,7 +12301,7 @@ version 89 {
     };
 
     // idx 46 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -12391,7 +12391,7 @@ version 89 {
     };
 
     // idx 61 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -12451,7 +12451,7 @@ version 89 {
     };
 
     // idx 71 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -12723,7 +12723,7 @@ version 89 {
     };
 
     // idx 106 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -13519,7 +13519,7 @@ version 89 {
         // offset 0x3a9, size 0x1
         dart_restrictions dart;
         // offset 0x3aa, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x3ab, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x3ac, size 0x1
@@ -13535,11 +13535,11 @@ version 89 {
         // offset 0x3b1, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x3b2, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x3b3, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x3b4, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x3b5, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x3b6, size 0x1
@@ -13577,7 +13577,7 @@ version 89 {
         // offset 0x3c6, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x3c7, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x3c8, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x3c9, size 0x1
@@ -13703,7 +13703,7 @@ version 89 {
         // offset 0x405, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x406, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x407, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x408, size 0x1
@@ -13737,13 +13737,13 @@ version 89 {
         // offset 0x416, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x417, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x418, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x419, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x41a, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x41b, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x41c, size 0x1
@@ -14373,7 +14373,7 @@ version 89 {
         // offset 0x3886e, size 0x1
         bool disablecontracts;
         // offset 0x3886f, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x38870, size 0x1
         bool allowannouncer;
         // offset 0x38871, size 0x1
@@ -16175,7 +16175,7 @@ version 88 {
     };
 
     // idx 44 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -16187,7 +16187,7 @@ version 88 {
     };
 
     // idx 46 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -16277,7 +16277,7 @@ version 88 {
     };
 
     // idx 61 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -16337,7 +16337,7 @@ version 88 {
     };
 
     // idx 71 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -16589,7 +16589,7 @@ version 88 {
     };
 
     // idx 104 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -17381,7 +17381,7 @@ version 88 {
         // offset 0x399, size 0x1
         dart_restrictions dart;
         // offset 0x39a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x39b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x39c, size 0x1
@@ -17397,11 +17397,11 @@ version 88 {
         // offset 0x3a1, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x3a2, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x3a3, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x3a4, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x3a5, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x3a6, size 0x1
@@ -17439,7 +17439,7 @@ version 88 {
         // offset 0x3b6, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x3b7, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x3b8, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x3b9, size 0x1
@@ -17565,7 +17565,7 @@ version 88 {
         // offset 0x3f5, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x3f6, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x3f7, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x3f8, size 0x1
@@ -17599,13 +17599,13 @@ version 88 {
         // offset 0x406, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x407, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x408, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x409, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x40a, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x40b, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x40c, size 0x1
@@ -18235,7 +18235,7 @@ version 88 {
         // offset 0x3885e, size 0x1
         bool disablecontracts;
         // offset 0x3885f, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x38860, size 0x1
         bool allowannouncer;
         // offset 0x38861, size 0x1
@@ -20015,7 +20015,7 @@ version 87 {
     };
 
     // idx 43 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -20027,7 +20027,7 @@ version 87 {
     };
 
     // idx 45 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -20117,7 +20117,7 @@ version 87 {
     };
 
     // idx 60 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -20177,7 +20177,7 @@ version 87 {
     };
 
     // idx 70 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -20429,7 +20429,7 @@ version 87 {
     };
 
     // idx 103 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -21219,7 +21219,7 @@ version 87 {
         // offset 0x389, size 0x1
         dart_restrictions dart;
         // offset 0x38a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x38b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x38c, size 0x1
@@ -21235,11 +21235,11 @@ version 87 {
         // offset 0x391, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x392, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x393, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x394, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x395, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x396, size 0x1
@@ -21277,7 +21277,7 @@ version 87 {
         // offset 0x3a6, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x3a7, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x3a8, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x3a9, size 0x1
@@ -21403,7 +21403,7 @@ version 87 {
         // offset 0x3e5, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x3e6, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x3e7, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x3e8, size 0x1
@@ -21437,13 +21437,13 @@ version 87 {
         // offset 0x3f6, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x3f7, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x3f8, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x3f9, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x3fa, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x3fb, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x3fc, size 0x1
@@ -22073,7 +22073,7 @@ version 87 {
         // offset 0x3884e, size 0x1
         bool disablecontracts;
         // offset 0x3884f, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x38850, size 0x1
         bool allowannouncer;
         // offset 0x38851, size 0x1
@@ -23834,7 +23834,7 @@ version 86 {
     };
 
     // idx 43 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -23846,7 +23846,7 @@ version 86 {
     };
 
     // idx 45 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -23936,7 +23936,7 @@ version 86 {
     };
 
     // idx 60 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -23996,7 +23996,7 @@ version 86 {
     };
 
     // idx 70 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -24248,7 +24248,7 @@ version 86 {
     };
 
     // idx 103 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -25038,7 +25038,7 @@ version 86 {
         // offset 0x389, size 0x1
         dart_restrictions dart;
         // offset 0x38a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x38b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x38c, size 0x1
@@ -25054,11 +25054,11 @@ version 86 {
         // offset 0x391, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x392, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x393, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x394, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x395, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x396, size 0x1
@@ -25096,7 +25096,7 @@ version 86 {
         // offset 0x3a6, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x3a7, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x3a8, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x3a9, size 0x1
@@ -25222,7 +25222,7 @@ version 86 {
         // offset 0x3e5, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x3e6, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x3e7, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x3e8, size 0x1
@@ -25256,13 +25256,13 @@ version 86 {
         // offset 0x3f6, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x3f7, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x3f8, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x3f9, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x3fa, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x3fb, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x3fc, size 0x1
@@ -25892,7 +25892,7 @@ version 86 {
         // offset 0x3884e, size 0x1
         bool disablecontracts;
         // offset 0x3884f, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x38850, size 0x1
         bool allowannouncer;
         // offset 0x38851, size 0x1
@@ -27653,7 +27653,7 @@ version 85 {
     };
 
     // idx 43 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -27665,7 +27665,7 @@ version 85 {
     };
 
     // idx 45 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -27755,7 +27755,7 @@ version 85 {
     };
 
     // idx 60 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -27815,7 +27815,7 @@ version 85 {
     };
 
     // idx 70 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -28067,7 +28067,7 @@ version 85 {
     };
 
     // idx 103 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -28857,7 +28857,7 @@ version 85 {
         // offset 0x389, size 0x1
         dart_restrictions dart;
         // offset 0x38a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x38b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x38c, size 0x1
@@ -28873,11 +28873,11 @@ version 85 {
         // offset 0x391, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x392, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x393, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x394, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x395, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x396, size 0x1
@@ -28915,7 +28915,7 @@ version 85 {
         // offset 0x3a6, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x3a7, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x3a8, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x3a9, size 0x1
@@ -29041,7 +29041,7 @@ version 85 {
         // offset 0x3e5, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x3e6, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x3e7, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x3e8, size 0x1
@@ -29075,13 +29075,13 @@ version 85 {
         // offset 0x3f6, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x3f7, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x3f8, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x3f9, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x3fa, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x3fb, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x3fc, size 0x1
@@ -29711,7 +29711,7 @@ version 85 {
         // offset 0x3884e, size 0x1
         bool disablecontracts;
         // offset 0x3884f, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x38850, size 0x1
         bool allowannouncer;
         // offset 0x38851, size 0x1
@@ -31472,7 +31472,7 @@ version 84 {
     };
 
     // idx 43 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -31484,7 +31484,7 @@ version 84 {
     };
 
     // idx 45 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -31574,7 +31574,7 @@ version 84 {
     };
 
     // idx 60 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -31634,7 +31634,7 @@ version 84 {
     };
 
     // idx 70 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -31886,7 +31886,7 @@ version 84 {
     };
 
     // idx 103 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -32676,7 +32676,7 @@ version 84 {
         // offset 0x389, size 0x1
         dart_restrictions dart;
         // offset 0x38a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x38b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x38c, size 0x1
@@ -32692,11 +32692,11 @@ version 84 {
         // offset 0x391, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x392, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x393, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x394, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x395, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x396, size 0x1
@@ -32734,7 +32734,7 @@ version 84 {
         // offset 0x3a6, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x3a7, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x3a8, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x3a9, size 0x1
@@ -32860,7 +32860,7 @@ version 84 {
         // offset 0x3e5, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x3e6, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x3e7, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x3e8, size 0x1
@@ -32894,13 +32894,13 @@ version 84 {
         // offset 0x3f6, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x3f7, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x3f8, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x3f9, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x3fa, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x3fb, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x3fc, size 0x1
@@ -33530,7 +33530,7 @@ version 84 {
         // offset 0x3884e, size 0x1
         bool disablecontracts;
         // offset 0x3884f, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x38850, size 0x1
         bool allowannouncer;
         // offset 0x38851, size 0x1
@@ -35281,7 +35281,7 @@ version 83 {
     };
 
     // idx 42 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -35293,7 +35293,7 @@ version 83 {
     };
 
     // idx 44 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -35383,7 +35383,7 @@ version 83 {
     };
 
     // idx 59 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -35443,7 +35443,7 @@ version 83 {
     };
 
     // idx 69 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -35695,7 +35695,7 @@ version 83 {
     };
 
     // idx 102 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -36475,7 +36475,7 @@ version 83 {
         // offset 0x361, size 0x1
         dart_restrictions dart;
         // offset 0x362, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x363, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x364, size 0x1
@@ -36491,11 +36491,11 @@ version 83 {
         // offset 0x369, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x36a, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x36b, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x36c, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x36d, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x36e, size 0x1
@@ -36533,7 +36533,7 @@ version 83 {
         // offset 0x37e, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x37f, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x380, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x381, size 0x1
@@ -36659,7 +36659,7 @@ version 83 {
         // offset 0x3bd, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x3be, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x3bf, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x3c0, size 0x1
@@ -36693,13 +36693,13 @@ version 83 {
         // offset 0x3ce, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x3cf, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x3d0, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x3d1, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x3d2, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x3d3, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x3d4, size 0x1
@@ -37329,7 +37329,7 @@ version 83 {
         // offset 0x38826, size 0x1
         bool disablecontracts;
         // offset 0x38827, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x38828, size 0x1
         bool allowannouncer;
         // offset 0x38829, size 0x1
@@ -39028,7 +39028,7 @@ version 82 {
     };
 
     // idx 42 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -39040,7 +39040,7 @@ version 82 {
     };
 
     // idx 44 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -39130,7 +39130,7 @@ version 82 {
     };
 
     // idx 59 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -39190,7 +39190,7 @@ version 82 {
     };
 
     // idx 69 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -39442,7 +39442,7 @@ version 82 {
     };
 
     // idx 102 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -40212,7 +40212,7 @@ version 82 {
         // offset 0x359, size 0x1
         dart_restrictions dart;
         // offset 0x35a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x35b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x35c, size 0x1
@@ -40228,11 +40228,11 @@ version 82 {
         // offset 0x361, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x362, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x363, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x364, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x365, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x366, size 0x1
@@ -40270,7 +40270,7 @@ version 82 {
         // offset 0x376, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x377, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x378, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x379, size 0x1
@@ -40396,7 +40396,7 @@ version 82 {
         // offset 0x3b5, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x3b6, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x3b7, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x3b8, size 0x1
@@ -40430,13 +40430,13 @@ version 82 {
         // offset 0x3c6, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x3c7, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x3c8, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x3c9, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x3ca, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x3cb, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x3cc, size 0x1
@@ -41066,7 +41066,7 @@ version 82 {
         // offset 0x3881e, size 0x1
         bool disablecontracts;
         // offset 0x3881f, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x38820, size 0x1
         bool allowannouncer;
         // offset 0x38821, size 0x1
@@ -42754,7 +42754,7 @@ version 81 {
     };
 
     // idx 42 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -42766,7 +42766,7 @@ version 81 {
     };
 
     // idx 44 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -42856,7 +42856,7 @@ version 81 {
     };
 
     // idx 59 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -42916,7 +42916,7 @@ version 81 {
     };
 
     // idx 69 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -43168,7 +43168,7 @@ version 81 {
     };
 
     // idx 102 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -43938,7 +43938,7 @@ version 81 {
         // offset 0x359, size 0x1
         dart_restrictions dart;
         // offset 0x35a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x35b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x35c, size 0x1
@@ -43954,11 +43954,11 @@ version 81 {
         // offset 0x361, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x362, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x363, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x364, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x365, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x366, size 0x1
@@ -43996,7 +43996,7 @@ version 81 {
         // offset 0x376, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x377, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x378, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x379, size 0x1
@@ -44122,7 +44122,7 @@ version 81 {
         // offset 0x3b5, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x3b6, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x3b7, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x3b8, size 0x1
@@ -44156,13 +44156,13 @@ version 81 {
         // offset 0x3c6, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x3c7, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x3c8, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x3c9, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x3ca, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x3cb, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x3cc, size 0x1
@@ -44792,7 +44792,7 @@ version 81 {
         // offset 0x38817, size 0x1
         bool disablecontracts;
         // offset 0x38818, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x38819, size 0x1
         bool allowannouncer;
         // offset 0x3881a, size 0x1
@@ -46480,7 +46480,7 @@ version 80 {
     };
 
     // idx 42 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -46492,7 +46492,7 @@ version 80 {
     };
 
     // idx 44 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -46582,7 +46582,7 @@ version 80 {
     };
 
     // idx 59 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -46642,7 +46642,7 @@ version 80 {
     };
 
     // idx 69 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -46894,7 +46894,7 @@ version 80 {
     };
 
     // idx 102 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -47664,7 +47664,7 @@ version 80 {
         // offset 0x359, size 0x1
         dart_restrictions dart;
         // offset 0x35a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x35b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x35c, size 0x1
@@ -47680,11 +47680,11 @@ version 80 {
         // offset 0x361, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x362, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x363, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x364, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x365, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x366, size 0x1
@@ -47722,7 +47722,7 @@ version 80 {
         // offset 0x376, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x377, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x378, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x379, size 0x1
@@ -47848,7 +47848,7 @@ version 80 {
         // offset 0x3b5, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x3b6, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x3b7, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x3b8, size 0x1
@@ -47882,13 +47882,13 @@ version 80 {
         // offset 0x3c6, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x3c7, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x3c8, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x3c9, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x3ca, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x3cb, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x3cc, size 0x1
@@ -48518,7 +48518,7 @@ version 80 {
         // offset 0x38817, size 0x1
         bool disablecontracts;
         // offset 0x38818, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x38819, size 0x1
         bool allowannouncer;
         // offset 0x3881a, size 0x1
@@ -50206,7 +50206,7 @@ version 79 {
     };
 
     // idx 42 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -50218,7 +50218,7 @@ version 79 {
     };
 
     // idx 44 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -50308,7 +50308,7 @@ version 79 {
     };
 
     // idx 59 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -50368,7 +50368,7 @@ version 79 {
     };
 
     // idx 69 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -50620,7 +50620,7 @@ version 79 {
     };
 
     // idx 102 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -51390,7 +51390,7 @@ version 79 {
         // offset 0x359, size 0x1
         dart_restrictions dart;
         // offset 0x35a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x35b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x35c, size 0x1
@@ -51406,11 +51406,11 @@ version 79 {
         // offset 0x361, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x362, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x363, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x364, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x365, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x366, size 0x1
@@ -51448,7 +51448,7 @@ version 79 {
         // offset 0x376, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x377, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x378, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x379, size 0x1
@@ -51574,7 +51574,7 @@ version 79 {
         // offset 0x3b5, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x3b6, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x3b7, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x3b8, size 0x1
@@ -51608,13 +51608,13 @@ version 79 {
         // offset 0x3c6, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x3c7, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x3c8, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x3c9, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x3ca, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x3cb, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x3cc, size 0x1
@@ -52244,7 +52244,7 @@ version 79 {
         // offset 0x38817, size 0x1
         bool disablecontracts;
         // offset 0x38818, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x38819, size 0x1
         bool allowannouncer;
         // offset 0x3881a, size 0x1
@@ -53930,7 +53930,7 @@ version 78 {
     };
 
     // idx 42 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -53942,7 +53942,7 @@ version 78 {
     };
 
     // idx 44 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -54032,7 +54032,7 @@ version 78 {
     };
 
     // idx 59 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -54092,7 +54092,7 @@ version 78 {
     };
 
     // idx 69 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -54344,7 +54344,7 @@ version 78 {
     };
 
     // idx 102 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -55114,7 +55114,7 @@ version 78 {
         // offset 0x359, size 0x1
         dart_restrictions dart;
         // offset 0x35a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x35b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x35c, size 0x1
@@ -55130,11 +55130,11 @@ version 78 {
         // offset 0x361, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x362, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x363, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x364, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x365, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x366, size 0x1
@@ -55172,7 +55172,7 @@ version 78 {
         // offset 0x376, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x377, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x378, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x379, size 0x1
@@ -55298,7 +55298,7 @@ version 78 {
         // offset 0x3b5, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x3b6, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x3b7, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x3b8, size 0x1
@@ -55332,13 +55332,13 @@ version 78 {
         // offset 0x3c6, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x3c7, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x3c8, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x3c9, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x3ca, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x3cb, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x3cc, size 0x1
@@ -55968,7 +55968,7 @@ version 78 {
         // offset 0x38817, size 0x1
         bool disablecontracts;
         // offset 0x38818, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x38819, size 0x1
         bool allowannouncer;
         // offset 0x3881a, size 0x1
@@ -57656,7 +57656,7 @@ version 77 {
     };
 
     // idx 42 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -57668,7 +57668,7 @@ version 77 {
     };
 
     // idx 44 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -57758,7 +57758,7 @@ version 77 {
     };
 
     // idx 59 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -57818,7 +57818,7 @@ version 77 {
     };
 
     // idx 69 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -58070,7 +58070,7 @@ version 77 {
     };
 
     // idx 102 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -58840,7 +58840,7 @@ version 77 {
         // offset 0x359, size 0x1
         dart_restrictions dart;
         // offset 0x35a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x35b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x35c, size 0x1
@@ -58856,11 +58856,11 @@ version 77 {
         // offset 0x361, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x362, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x363, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x364, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x365, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x366, size 0x1
@@ -58898,7 +58898,7 @@ version 77 {
         // offset 0x376, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x377, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x378, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x379, size 0x1
@@ -59024,7 +59024,7 @@ version 77 {
         // offset 0x3b5, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x3b6, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x3b7, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x3b8, size 0x1
@@ -59058,13 +59058,13 @@ version 77 {
         // offset 0x3c6, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x3c7, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x3c8, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x3c9, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x3ca, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x3cb, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x3cc, size 0x1
@@ -59694,7 +59694,7 @@ version 77 {
         // offset 0x38817, size 0x1
         bool disablecontracts;
         // offset 0x38818, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x38819, size 0x1
         bool allowannouncer;
         // offset 0x3881a, size 0x1
@@ -61382,7 +61382,7 @@ version 76 {
     };
 
     // idx 42 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -61394,7 +61394,7 @@ version 76 {
     };
 
     // idx 44 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -61484,7 +61484,7 @@ version 76 {
     };
 
     // idx 59 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -61544,7 +61544,7 @@ version 76 {
     };
 
     // idx 69 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -61796,7 +61796,7 @@ version 76 {
     };
 
     // idx 102 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -62566,7 +62566,7 @@ version 76 {
         // offset 0x359, size 0x1
         dart_restrictions dart;
         // offset 0x35a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x35b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x35c, size 0x1
@@ -62582,11 +62582,11 @@ version 76 {
         // offset 0x361, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x362, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x363, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x364, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x365, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x366, size 0x1
@@ -62624,7 +62624,7 @@ version 76 {
         // offset 0x376, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x377, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x378, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x379, size 0x1
@@ -62750,7 +62750,7 @@ version 76 {
         // offset 0x3b5, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x3b6, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x3b7, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x3b8, size 0x1
@@ -62784,13 +62784,13 @@ version 76 {
         // offset 0x3c6, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x3c7, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x3c8, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x3c9, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x3ca, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x3cb, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x3cc, size 0x1
@@ -63420,7 +63420,7 @@ version 76 {
         // offset 0x38817, size 0x1
         bool disablecontracts;
         // offset 0x38818, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x38819, size 0x1
         bool allowannouncer;
         // offset 0x3881a, size 0x1
@@ -65106,7 +65106,7 @@ version 75 {
     };
 
     // idx 42 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -65118,7 +65118,7 @@ version 75 {
     };
 
     // idx 44 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -65208,7 +65208,7 @@ version 75 {
     };
 
     // idx 59 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -65268,7 +65268,7 @@ version 75 {
     };
 
     // idx 69 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -65520,7 +65520,7 @@ version 75 {
     };
 
     // idx 102 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -66268,7 +66268,7 @@ version 75 {
         // offset 0x349, size 0x1
         dart_restrictions dart;
         // offset 0x34a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x34b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x34c, size 0x1
@@ -66284,11 +66284,11 @@ version 75 {
         // offset 0x351, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x352, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x353, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x354, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x355, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x356, size 0x1
@@ -66326,7 +66326,7 @@ version 75 {
         // offset 0x366, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x367, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x368, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x369, size 0x1
@@ -66452,7 +66452,7 @@ version 75 {
         // offset 0x3a5, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x3a6, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x3a7, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x3a8, size 0x1
@@ -66486,13 +66486,13 @@ version 75 {
         // offset 0x3b6, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x3b7, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x3b8, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x3b9, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x3ba, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x3bb, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x3bc, size 0x1
@@ -67122,7 +67122,7 @@ version 75 {
         // offset 0x38807, size 0x1
         bool disablecontracts;
         // offset 0x38808, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x38809, size 0x1
         bool allowannouncer;
         // offset 0x3880a, size 0x1
@@ -68792,7 +68792,7 @@ version 74 {
     };
 
     // idx 42 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -68804,7 +68804,7 @@ version 74 {
     };
 
     // idx 44 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -68894,7 +68894,7 @@ version 74 {
     };
 
     // idx 59 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -68954,7 +68954,7 @@ version 74 {
     };
 
     // idx 69 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -69206,7 +69206,7 @@ version 74 {
     };
 
     // idx 102 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -69954,7 +69954,7 @@ version 74 {
         // offset 0x349, size 0x1
         dart_restrictions dart;
         // offset 0x34a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x34b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x34c, size 0x1
@@ -69970,11 +69970,11 @@ version 74 {
         // offset 0x351, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x352, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x353, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x354, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x355, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x356, size 0x1
@@ -70012,7 +70012,7 @@ version 74 {
         // offset 0x366, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x367, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x368, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x369, size 0x1
@@ -70138,7 +70138,7 @@ version 74 {
         // offset 0x3a5, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x3a6, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x3a7, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x3a8, size 0x1
@@ -70172,13 +70172,13 @@ version 74 {
         // offset 0x3b6, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x3b7, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x3b8, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x3b9, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x3ba, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x3bb, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x3bc, size 0x1
@@ -70806,7 +70806,7 @@ version 74 {
         // offset 0x387ff, size 0x1
         bool disablecontracts;
         // offset 0x38800, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x38801, size 0x1
         bool allowannouncer;
         // offset 0x38802, size 0x1
@@ -72476,7 +72476,7 @@ version 73 {
     };
 
     // idx 42 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -72488,7 +72488,7 @@ version 73 {
     };
 
     // idx 44 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -72578,7 +72578,7 @@ version 73 {
     };
 
     // idx 59 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -72638,7 +72638,7 @@ version 73 {
     };
 
     // idx 69 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -72890,7 +72890,7 @@ version 73 {
     };
 
     // idx 102 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -73632,7 +73632,7 @@ version 73 {
         // offset 0x349, size 0x1
         dart_restrictions dart;
         // offset 0x34a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x34b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x34c, size 0x1
@@ -73648,11 +73648,11 @@ version 73 {
         // offset 0x351, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x352, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x353, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x354, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x355, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x356, size 0x1
@@ -73690,7 +73690,7 @@ version 73 {
         // offset 0x366, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x367, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x368, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x369, size 0x1
@@ -73814,7 +73814,7 @@ version 73 {
         // offset 0x3a4, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x3a5, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x3a6, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x3a7, size 0x1
@@ -73848,13 +73848,13 @@ version 73 {
         // offset 0x3b5, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x3b6, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x3b7, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x3b8, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x3b9, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x3ba, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x3bb, size 0x1
@@ -74482,7 +74482,7 @@ version 73 {
         // offset 0x387ff, size 0x1
         bool disablecontracts;
         // offset 0x38800, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x38801, size 0x1
         bool allowannouncer;
         // offset 0x38802, size 0x1
@@ -76152,7 +76152,7 @@ version 72 {
     };
 
     // idx 42 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -76164,7 +76164,7 @@ version 72 {
     };
 
     // idx 44 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -76254,7 +76254,7 @@ version 72 {
     };
 
     // idx 59 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -76314,7 +76314,7 @@ version 72 {
     };
 
     // idx 69 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -76566,7 +76566,7 @@ version 72 {
     };
 
     // idx 102 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -77308,7 +77308,7 @@ version 72 {
         // offset 0x349, size 0x1
         dart_restrictions dart;
         // offset 0x34a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x34b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x34c, size 0x1
@@ -77324,11 +77324,11 @@ version 72 {
         // offset 0x351, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x352, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x353, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x354, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x355, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x356, size 0x1
@@ -77366,7 +77366,7 @@ version 72 {
         // offset 0x366, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x367, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x368, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x369, size 0x1
@@ -77490,7 +77490,7 @@ version 72 {
         // offset 0x3a4, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x3a5, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x3a6, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x3a7, size 0x1
@@ -77524,13 +77524,13 @@ version 72 {
         // offset 0x3b5, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x3b6, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x3b7, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x3b8, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x3b9, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x3ba, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x3bb, size 0x1
@@ -78158,7 +78158,7 @@ version 72 {
         // offset 0x387ff, size 0x1
         bool disablecontracts;
         // offset 0x38800, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x38801, size 0x1
         bool allowannouncer;
         // offset 0x38802, size 0x1
@@ -79828,7 +79828,7 @@ version 71 {
     };
 
     // idx 42 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -79840,7 +79840,7 @@ version 71 {
     };
 
     // idx 44 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -79930,7 +79930,7 @@ version 71 {
     };
 
     // idx 59 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -79990,7 +79990,7 @@ version 71 {
     };
 
     // idx 69 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -80242,7 +80242,7 @@ version 71 {
     };
 
     // idx 102 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -80984,7 +80984,7 @@ version 71 {
         // offset 0x349, size 0x1
         dart_restrictions dart;
         // offset 0x34a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x34b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x34c, size 0x1
@@ -81000,11 +81000,11 @@ version 71 {
         // offset 0x351, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x352, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x353, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x354, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x355, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x356, size 0x1
@@ -81042,7 +81042,7 @@ version 71 {
         // offset 0x366, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x367, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x368, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x369, size 0x1
@@ -81166,7 +81166,7 @@ version 71 {
         // offset 0x3a4, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x3a5, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x3a6, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x3a7, size 0x1
@@ -81200,13 +81200,13 @@ version 71 {
         // offset 0x3b5, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x3b6, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x3b7, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x3b8, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x3b9, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x3ba, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x3bb, size 0x1
@@ -81834,7 +81834,7 @@ version 71 {
         // offset 0x387ff, size 0x1
         bool disablecontracts;
         // offset 0x38800, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x38801, size 0x1
         bool allowannouncer;
         // offset 0x38802, size 0x1
@@ -83504,7 +83504,7 @@ version 70 {
     };
 
     // idx 42 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -83516,7 +83516,7 @@ version 70 {
     };
 
     // idx 44 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -83606,7 +83606,7 @@ version 70 {
     };
 
     // idx 59 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -83666,7 +83666,7 @@ version 70 {
     };
 
     // idx 69 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -83898,7 +83898,7 @@ version 70 {
     };
 
     // idx 100 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -84600,7 +84600,7 @@ version 70 {
         // offset 0x2f9, size 0x1
         dart_restrictions dart;
         // offset 0x2fa, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x2fb, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x2fc, size 0x1
@@ -84616,11 +84616,11 @@ version 70 {
         // offset 0x301, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x302, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x303, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x304, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x305, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x306, size 0x1
@@ -84658,7 +84658,7 @@ version 70 {
         // offset 0x316, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x317, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x318, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x319, size 0x1
@@ -84782,7 +84782,7 @@ version 70 {
         // offset 0x354, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x355, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x356, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x357, size 0x1
@@ -84816,13 +84816,13 @@ version 70 {
         // offset 0x365, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x366, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x367, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x368, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x369, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x36a, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x36b, size 0x1
@@ -85450,7 +85450,7 @@ version 70 {
         // offset 0x387af, size 0x1
         bool disablecontracts;
         // offset 0x387b0, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x387b1, size 0x1
         bool allowannouncer;
         // offset 0x387b2, size 0x1
@@ -87049,7 +87049,7 @@ version 69 {
     };
 
     // idx 42 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -87061,7 +87061,7 @@ version 69 {
     };
 
     // idx 44 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -87145,7 +87145,7 @@ version 69 {
     };
 
     // idx 58 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -87205,7 +87205,7 @@ version 69 {
     };
 
     // idx 68 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -87437,7 +87437,7 @@ version 69 {
     };
 
     // idx 99 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -88139,7 +88139,7 @@ version 69 {
         // offset 0x2f9, size 0x1
         dart_restrictions dart;
         // offset 0x2fa, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x2fb, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x2fc, size 0x1
@@ -88155,11 +88155,11 @@ version 69 {
         // offset 0x301, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x302, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x303, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x304, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x305, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x306, size 0x1
@@ -88197,7 +88197,7 @@ version 69 {
         // offset 0x316, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x317, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x318, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x319, size 0x1
@@ -88319,7 +88319,7 @@ version 69 {
         // offset 0x353, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x354, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x355, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x356, size 0x1
@@ -88353,13 +88353,13 @@ version 69 {
         // offset 0x364, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x365, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x366, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x367, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x368, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x369, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x36a, size 0x1
@@ -88987,7 +88987,7 @@ version 69 {
         // offset 0x387af, size 0x1
         bool disablecontracts;
         // offset 0x387b0, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x387b1, size 0x1
         bool allowannouncer;
         // offset 0x387b2, size 0x1
@@ -90586,7 +90586,7 @@ version 68 {
     };
 
     // idx 42 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -90598,7 +90598,7 @@ version 68 {
     };
 
     // idx 44 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -90682,7 +90682,7 @@ version 68 {
     };
 
     // idx 58 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -90742,7 +90742,7 @@ version 68 {
     };
 
     // idx 68 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -90974,7 +90974,7 @@ version 68 {
     };
 
     // idx 99 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -91664,7 +91664,7 @@ version 68 {
         // offset 0x2e1, size 0x1
         dart_restrictions dart;
         // offset 0x2e2, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x2e3, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x2e4, size 0x1
@@ -91680,11 +91680,11 @@ version 68 {
         // offset 0x2e9, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x2ea, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x2eb, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x2ec, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x2ed, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x2ee, size 0x1
@@ -91722,7 +91722,7 @@ version 68 {
         // offset 0x2fe, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x2ff, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x300, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x301, size 0x1
@@ -91844,7 +91844,7 @@ version 68 {
         // offset 0x33b, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x33c, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x33d, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x33e, size 0x1
@@ -91878,13 +91878,13 @@ version 68 {
         // offset 0x34c, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x34d, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x34e, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x34f, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x350, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x351, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x352, size 0x1
@@ -92512,7 +92512,7 @@ version 68 {
         // offset 0x38797, size 0x1
         bool disablecontracts;
         // offset 0x38798, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x38799, size 0x1
         bool allowannouncer;
         // offset 0x3879a, size 0x1
@@ -94083,7 +94083,7 @@ version 67 {
     };
 
     // idx 41 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -94095,7 +94095,7 @@ version 67 {
     };
 
     // idx 43 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -94179,7 +94179,7 @@ version 67 {
     };
 
     // idx 57 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -94239,7 +94239,7 @@ version 67 {
     };
 
     // idx 67 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -94471,7 +94471,7 @@ version 67 {
     };
 
     // idx 98 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -95159,7 +95159,7 @@ version 67 {
         // offset 0x2d1, size 0x1
         dart_restrictions dart;
         // offset 0x2d2, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x2d3, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x2d4, size 0x1
@@ -95175,11 +95175,11 @@ version 67 {
         // offset 0x2d9, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x2da, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x2db, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x2dc, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x2dd, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x2de, size 0x1
@@ -95217,7 +95217,7 @@ version 67 {
         // offset 0x2ee, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x2ef, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x2f0, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x2f1, size 0x1
@@ -95339,7 +95339,7 @@ version 67 {
         // offset 0x32b, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x32c, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x32d, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x32e, size 0x1
@@ -95373,13 +95373,13 @@ version 67 {
         // offset 0x33c, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x33d, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x33e, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x33f, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x340, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x341, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x342, size 0x1
@@ -96007,7 +96007,7 @@ version 67 {
         // offset 0x38787, size 0x1
         bool disablecontracts;
         // offset 0x38788, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x38789, size 0x1
         bool allowannouncer;
         // offset 0x3878a, size 0x1
@@ -97559,7 +97559,7 @@ version 66 {
     };
 
     // idx 41 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -97571,7 +97571,7 @@ version 66 {
     };
 
     // idx 43 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -97655,7 +97655,7 @@ version 66 {
     };
 
     // idx 57 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -97715,7 +97715,7 @@ version 66 {
     };
 
     // idx 67 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -97947,7 +97947,7 @@ version 66 {
     };
 
     // idx 98 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -98635,7 +98635,7 @@ version 66 {
         // offset 0x2d1, size 0x1
         dart_restrictions dart;
         // offset 0x2d2, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x2d3, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x2d4, size 0x1
@@ -98651,11 +98651,11 @@ version 66 {
         // offset 0x2d9, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x2da, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x2db, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x2dc, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x2dd, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x2de, size 0x1
@@ -98693,7 +98693,7 @@ version 66 {
         // offset 0x2ee, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x2ef, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x2f0, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x2f1, size 0x1
@@ -98815,7 +98815,7 @@ version 66 {
         // offset 0x32b, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x32c, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x32d, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x32e, size 0x1
@@ -98849,13 +98849,13 @@ version 66 {
         // offset 0x33c, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x33d, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x33e, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x33f, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x340, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x341, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x342, size 0x1
@@ -99483,7 +99483,7 @@ version 66 {
         // offset 0x38787, size 0x1
         bool disablecontracts;
         // offset 0x38788, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x38789, size 0x1
         bool allowannouncer;
         // offset 0x3878a, size 0x1
@@ -101005,7 +101005,7 @@ version 65 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -101017,7 +101017,7 @@ version 65 {
     };
 
     // idx 41 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -101101,7 +101101,7 @@ version 65 {
     };
 
     // idx 55 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -101161,7 +101161,7 @@ version 65 {
     };
 
     // idx 65 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -101393,7 +101393,7 @@ version 65 {
     };
 
     // idx 96 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -102081,7 +102081,7 @@ version 65 {
         // offset 0x2d1, size 0x1
         dart_restrictions dart;
         // offset 0x2d2, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x2d3, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x2d4, size 0x1
@@ -102097,11 +102097,11 @@ version 65 {
         // offset 0x2d9, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x2da, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x2db, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x2dc, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x2dd, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x2de, size 0x1
@@ -102139,7 +102139,7 @@ version 65 {
         // offset 0x2ee, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x2ef, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x2f0, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x2f1, size 0x1
@@ -102261,7 +102261,7 @@ version 65 {
         // offset 0x32b, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x32c, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x32d, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x32e, size 0x1
@@ -102295,13 +102295,13 @@ version 65 {
         // offset 0x33c, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x33d, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x33e, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x33f, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x340, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x341, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x342, size 0x1
@@ -102929,7 +102929,7 @@ version 65 {
         // offset 0x38787, size 0x1
         bool disablecontracts;
         // offset 0x38788, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x38789, size 0x1
         bool allowannouncer;
         // offset 0x3878a, size 0x1
@@ -104451,7 +104451,7 @@ version 64 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -104463,7 +104463,7 @@ version 64 {
     };
 
     // idx 41 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -104547,7 +104547,7 @@ version 64 {
     };
 
     // idx 55 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -104607,7 +104607,7 @@ version 64 {
     };
 
     // idx 65 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -104839,7 +104839,7 @@ version 64 {
     };
 
     // idx 96 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -105527,7 +105527,7 @@ version 64 {
         // offset 0x2d1, size 0x1
         dart_restrictions dart;
         // offset 0x2d2, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x2d3, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x2d4, size 0x1
@@ -105543,11 +105543,11 @@ version 64 {
         // offset 0x2d9, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x2da, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x2db, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x2dc, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x2dd, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x2de, size 0x1
@@ -105585,7 +105585,7 @@ version 64 {
         // offset 0x2ee, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x2ef, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x2f0, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x2f1, size 0x1
@@ -105707,7 +105707,7 @@ version 64 {
         // offset 0x32b, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x32c, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x32d, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x32e, size 0x1
@@ -105741,13 +105741,13 @@ version 64 {
         // offset 0x33c, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x33d, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x33e, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x33f, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x340, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x341, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x342, size 0x1
@@ -106375,7 +106375,7 @@ version 64 {
         // offset 0x38787, size 0x1
         bool disablecontracts;
         // offset 0x38788, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x38789, size 0x1
         bool allowannouncer;
         // offset 0x3878a, size 0x1
@@ -107902,7 +107902,7 @@ version 63 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -107914,7 +107914,7 @@ version 63 {
     };
 
     // idx 41 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -107998,7 +107998,7 @@ version 63 {
     };
 
     // idx 55 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -108058,7 +108058,7 @@ version 63 {
     };
 
     // idx 65 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -108284,7 +108284,7 @@ version 63 {
     };
 
     // idx 96 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -108978,7 +108978,7 @@ version 63 {
         // offset 0x289, size 0x1
         dart_restrictions dart;
         // offset 0x28a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x28b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x28c, size 0x1
@@ -108994,11 +108994,11 @@ version 63 {
         // offset 0x291, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x292, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x293, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x294, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x295, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x296, size 0x1
@@ -109036,7 +109036,7 @@ version 63 {
         // offset 0x2a6, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x2a7, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x2a8, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x2a9, size 0x1
@@ -109158,7 +109158,7 @@ version 63 {
         // offset 0x2e3, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x2e4, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x2e5, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x2e6, size 0x1
@@ -109192,13 +109192,13 @@ version 63 {
         // offset 0x2f4, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x2f5, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x2f6, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x2f7, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x2f8, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x2f9, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x2fa, size 0x1
@@ -109826,7 +109826,7 @@ version 63 {
         // offset 0x3873f, size 0x1
         bool disablecontracts;
         // offset 0x38740, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x38741, size 0x1
         bool allowannouncer;
         // offset 0x38742, size 0x1
@@ -111319,7 +111319,7 @@ version 62 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -111331,7 +111331,7 @@ version 62 {
     };
 
     // idx 41 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -111415,7 +111415,7 @@ version 62 {
     };
 
     // idx 55 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -111475,7 +111475,7 @@ version 62 {
     };
 
     // idx 65 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -111701,7 +111701,7 @@ version 62 {
     };
 
     // idx 96 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -112395,7 +112395,7 @@ version 62 {
         // offset 0x289, size 0x1
         dart_restrictions dart;
         // offset 0x28a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x28b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x28c, size 0x1
@@ -112411,11 +112411,11 @@ version 62 {
         // offset 0x291, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x292, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x293, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x294, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x295, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x296, size 0x1
@@ -112453,7 +112453,7 @@ version 62 {
         // offset 0x2a6, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x2a7, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x2a8, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x2a9, size 0x1
@@ -112575,7 +112575,7 @@ version 62 {
         // offset 0x2e3, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x2e4, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x2e5, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x2e6, size 0x1
@@ -112609,13 +112609,13 @@ version 62 {
         // offset 0x2f4, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x2f5, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x2f6, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x2f7, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x2f8, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x2f9, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x2fa, size 0x1
@@ -113243,7 +113243,7 @@ version 62 {
         // offset 0x3873f, size 0x1
         bool disablecontracts;
         // offset 0x38740, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x38741, size 0x1
         bool allowannouncer;
         // offset 0x38742, size 0x1
@@ -114736,7 +114736,7 @@ version 61 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -114748,7 +114748,7 @@ version 61 {
     };
 
     // idx 41 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -114832,7 +114832,7 @@ version 61 {
     };
 
     // idx 55 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -114892,7 +114892,7 @@ version 61 {
     };
 
     // idx 65 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -115118,7 +115118,7 @@ version 61 {
     };
 
     // idx 96 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -115812,7 +115812,7 @@ version 61 {
         // offset 0x289, size 0x1
         dart_restrictions dart;
         // offset 0x28a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x28b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x28c, size 0x1
@@ -115828,11 +115828,11 @@ version 61 {
         // offset 0x291, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x292, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x293, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x294, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x295, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x296, size 0x1
@@ -115870,7 +115870,7 @@ version 61 {
         // offset 0x2a6, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x2a7, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x2a8, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x2a9, size 0x1
@@ -115992,7 +115992,7 @@ version 61 {
         // offset 0x2e3, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x2e4, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x2e5, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x2e6, size 0x1
@@ -116026,13 +116026,13 @@ version 61 {
         // offset 0x2f4, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x2f5, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x2f6, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x2f7, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x2f8, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x2f9, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x2fa, size 0x1
@@ -116660,7 +116660,7 @@ version 61 {
         // offset 0x3873f, size 0x1
         bool disablecontracts;
         // offset 0x38740, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x38741, size 0x1
         bool allowannouncer;
         // offset 0x38742, size 0x1
@@ -118153,7 +118153,7 @@ version 60 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -118165,7 +118165,7 @@ version 60 {
     };
 
     // idx 41 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -118249,7 +118249,7 @@ version 60 {
     };
 
     // idx 55 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -118309,7 +118309,7 @@ version 60 {
     };
 
     // idx 65 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -118535,7 +118535,7 @@ version 60 {
     };
 
     // idx 96 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -119229,7 +119229,7 @@ version 60 {
         // offset 0x289, size 0x1
         dart_restrictions dart;
         // offset 0x28a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x28b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x28c, size 0x1
@@ -119245,11 +119245,11 @@ version 60 {
         // offset 0x291, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x292, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x293, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x294, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x295, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x296, size 0x1
@@ -119287,7 +119287,7 @@ version 60 {
         // offset 0x2a6, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x2a7, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x2a8, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x2a9, size 0x1
@@ -119409,7 +119409,7 @@ version 60 {
         // offset 0x2e3, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x2e4, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x2e5, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x2e6, size 0x1
@@ -119443,13 +119443,13 @@ version 60 {
         // offset 0x2f4, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x2f5, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x2f6, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x2f7, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x2f8, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x2f9, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x2fa, size 0x1
@@ -120077,7 +120077,7 @@ version 60 {
         // offset 0x3873f, size 0x1
         bool disablecontracts;
         // offset 0x38740, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x38741, size 0x1
         bool allowannouncer;
         // offset 0x38742, size 0x1
@@ -121570,7 +121570,7 @@ version 59 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -121582,7 +121582,7 @@ version 59 {
     };
 
     // idx 41 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -121666,7 +121666,7 @@ version 59 {
     };
 
     // idx 55 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -121726,7 +121726,7 @@ version 59 {
     };
 
     // idx 65 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -121952,7 +121952,7 @@ version 59 {
     };
 
     // idx 96 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -122646,7 +122646,7 @@ version 59 {
         // offset 0x289, size 0x1
         dart_restrictions dart;
         // offset 0x28a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x28b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x28c, size 0x1
@@ -122662,11 +122662,11 @@ version 59 {
         // offset 0x291, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x292, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x293, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x294, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x295, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x296, size 0x1
@@ -122704,7 +122704,7 @@ version 59 {
         // offset 0x2a6, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x2a7, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x2a8, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x2a9, size 0x1
@@ -122826,7 +122826,7 @@ version 59 {
         // offset 0x2e3, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x2e4, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x2e5, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x2e6, size 0x1
@@ -122860,13 +122860,13 @@ version 59 {
         // offset 0x2f4, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x2f5, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x2f6, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x2f7, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x2f8, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x2f9, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x2fa, size 0x1
@@ -123494,7 +123494,7 @@ version 59 {
         // offset 0x3873f, size 0x1
         bool disablecontracts;
         // offset 0x38740, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x38741, size 0x1
         bool allowannouncer;
         // offset 0x38742, size 0x1
@@ -124981,7 +124981,7 @@ version 58 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -124993,7 +124993,7 @@ version 58 {
     };
 
     // idx 41 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -125077,7 +125077,7 @@ version 58 {
     };
 
     // idx 55 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -125137,7 +125137,7 @@ version 58 {
     };
 
     // idx 65 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -125363,7 +125363,7 @@ version 58 {
     };
 
     // idx 96 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -126057,7 +126057,7 @@ version 58 {
         // offset 0x289, size 0x1
         dart_restrictions dart;
         // offset 0x28a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x28b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x28c, size 0x1
@@ -126073,11 +126073,11 @@ version 58 {
         // offset 0x291, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x292, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x293, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x294, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x295, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x296, size 0x1
@@ -126115,7 +126115,7 @@ version 58 {
         // offset 0x2a6, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x2a7, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x2a8, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x2a9, size 0x1
@@ -126237,7 +126237,7 @@ version 58 {
         // offset 0x2e3, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x2e4, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x2e5, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x2e6, size 0x1
@@ -126271,13 +126271,13 @@ version 58 {
         // offset 0x2f4, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x2f5, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x2f6, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x2f7, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x2f8, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x2f9, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x2fa, size 0x1
@@ -126905,7 +126905,7 @@ version 58 {
         // offset 0x379bf, size 0x1
         bool disablecontracts;
         // offset 0x379c0, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x379c1, size 0x1
         bool allowannouncer;
         // offset 0x379c2, size 0x1
@@ -128388,7 +128388,7 @@ version 57 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -128400,7 +128400,7 @@ version 57 {
     };
 
     // idx 41 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -128484,7 +128484,7 @@ version 57 {
     };
 
     // idx 55 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -128544,7 +128544,7 @@ version 57 {
     };
 
     // idx 65 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -128770,7 +128770,7 @@ version 57 {
     };
 
     // idx 96 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -129456,7 +129456,7 @@ version 57 {
         // offset 0x279, size 0x1
         dart_restrictions dart;
         // offset 0x27a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x27b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x27c, size 0x1
@@ -129472,11 +129472,11 @@ version 57 {
         // offset 0x281, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x282, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x283, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x284, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x285, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x286, size 0x1
@@ -129512,7 +129512,7 @@ version 57 {
         // offset 0x295, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x296, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x297, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x298, size 0x1
@@ -129636,7 +129636,7 @@ version 57 {
         // offset 0x2d3, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x2d4, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x2d5, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x2d6, size 0x1
@@ -129670,13 +129670,13 @@ version 57 {
         // offset 0x2e4, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x2e5, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x2e6, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x2e7, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x2e8, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x2e9, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x2ea, size 0x1
@@ -130304,7 +130304,7 @@ version 57 {
         // offset 0x379af, size 0x1
         bool disablecontracts;
         // offset 0x379b0, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x379b1, size 0x1
         bool allowannouncer;
         // offset 0x379b2, size 0x1
@@ -131769,7 +131769,7 @@ version 56 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -131781,7 +131781,7 @@ version 56 {
     };
 
     // idx 41 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -131865,7 +131865,7 @@ version 56 {
     };
 
     // idx 55 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -131925,7 +131925,7 @@ version 56 {
     };
 
     // idx 65 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -132151,7 +132151,7 @@ version 56 {
     };
 
     // idx 96 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -132837,7 +132837,7 @@ version 56 {
         // offset 0x279, size 0x1
         dart_restrictions dart;
         // offset 0x27a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x27b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x27c, size 0x1
@@ -132853,11 +132853,11 @@ version 56 {
         // offset 0x281, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x282, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x283, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x284, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x285, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x286, size 0x1
@@ -132893,7 +132893,7 @@ version 56 {
         // offset 0x295, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x296, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x297, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x298, size 0x1
@@ -133017,7 +133017,7 @@ version 56 {
         // offset 0x2d3, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x2d4, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x2d5, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x2d6, size 0x1
@@ -133051,13 +133051,13 @@ version 56 {
         // offset 0x2e4, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x2e5, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x2e6, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x2e7, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x2e8, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x2e9, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x2ea, size 0x1
@@ -133685,7 +133685,7 @@ version 56 {
         // offset 0x379af, size 0x1
         bool disablecontracts;
         // offset 0x379b0, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x379b1, size 0x1
         bool allowannouncer;
         // offset 0x379b2, size 0x1
@@ -135144,7 +135144,7 @@ version 55 {
     };
 
     // idx 38 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -135156,7 +135156,7 @@ version 55 {
     };
 
     // idx 40 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -135240,7 +135240,7 @@ version 55 {
     };
 
     // idx 54 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -135300,7 +135300,7 @@ version 55 {
     };
 
     // idx 64 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -135526,7 +135526,7 @@ version 55 {
     };
 
     // idx 95 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -136212,7 +136212,7 @@ version 55 {
         // offset 0x279, size 0x1
         dart_restrictions dart;
         // offset 0x27a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x27b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x27c, size 0x1
@@ -136228,11 +136228,11 @@ version 55 {
         // offset 0x281, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x282, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x283, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x284, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x285, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x286, size 0x1
@@ -136268,7 +136268,7 @@ version 55 {
         // offset 0x295, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x296, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x297, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x298, size 0x1
@@ -136390,7 +136390,7 @@ version 55 {
         // offset 0x2d2, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x2d3, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x2d4, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x2d5, size 0x1
@@ -136424,13 +136424,13 @@ version 55 {
         // offset 0x2e3, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x2e4, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x2e5, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x2e6, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x2e7, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x2e8, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x2e9, size 0x1
@@ -137058,7 +137058,7 @@ version 55 {
         // offset 0x379af, size 0x1
         bool disablecontracts;
         // offset 0x379b0, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x379b1, size 0x1
         bool allowannouncer;
         // offset 0x379b2, size 0x1
@@ -138517,7 +138517,7 @@ version 54 {
     };
 
     // idx 38 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -138529,7 +138529,7 @@ version 54 {
     };
 
     // idx 40 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -138613,7 +138613,7 @@ version 54 {
     };
 
     // idx 54 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -138673,7 +138673,7 @@ version 54 {
     };
 
     // idx 64 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -138899,7 +138899,7 @@ version 54 {
     };
 
     // idx 95 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -139585,7 +139585,7 @@ version 54 {
         // offset 0x279, size 0x1
         dart_restrictions dart;
         // offset 0x27a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x27b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x27c, size 0x1
@@ -139601,11 +139601,11 @@ version 54 {
         // offset 0x281, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x282, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x283, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x284, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x285, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x286, size 0x1
@@ -139641,7 +139641,7 @@ version 54 {
         // offset 0x295, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x296, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x297, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x298, size 0x1
@@ -139763,7 +139763,7 @@ version 54 {
         // offset 0x2d2, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x2d3, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x2d4, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x2d5, size 0x1
@@ -139797,13 +139797,13 @@ version 54 {
         // offset 0x2e3, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x2e4, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x2e5, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x2e6, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x2e7, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x2e8, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x2e9, size 0x1
@@ -140423,7 +140423,7 @@ version 54 {
         // offset 0x3798f, size 0x1
         bool disablecontracts;
         // offset 0x37990, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x37991, size 0x1
         bool allowannouncer;
         // offset 0x37992, size 0x1
@@ -141882,7 +141882,7 @@ version 53 {
     };
 
     // idx 38 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -141894,7 +141894,7 @@ version 53 {
     };
 
     // idx 40 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -141978,7 +141978,7 @@ version 53 {
     };
 
     // idx 54 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -142038,7 +142038,7 @@ version 53 {
     };
 
     // idx 64 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -142264,7 +142264,7 @@ version 53 {
     };
 
     // idx 95 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -142950,7 +142950,7 @@ version 53 {
         // offset 0x279, size 0x1
         dart_restrictions dart;
         // offset 0x27a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x27b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x27c, size 0x1
@@ -142966,11 +142966,11 @@ version 53 {
         // offset 0x281, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x282, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x283, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x284, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x285, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x286, size 0x1
@@ -143006,7 +143006,7 @@ version 53 {
         // offset 0x295, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x296, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x297, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x298, size 0x1
@@ -143128,7 +143128,7 @@ version 53 {
         // offset 0x2d2, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x2d3, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x2d4, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x2d5, size 0x1
@@ -143162,13 +143162,13 @@ version 53 {
         // offset 0x2e3, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x2e4, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x2e5, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x2e6, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x2e7, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x2e8, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x2e9, size 0x1
@@ -143630,9 +143630,9 @@ version 53 {
         // offset 0x2f270, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f278, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f280, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f288, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f290, size 0x8
@@ -143758,9 +143758,9 @@ version 53 {
         // offset 0x2f4d0, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f4d8, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f4e0, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4e8, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4f8, size 0x8
@@ -144228,7 +144228,7 @@ version 53 {
         // offset 0x37fab, size 0x1
         bool disablecontracts;
         // offset 0x37fac, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x37fad, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x37fae, size 0x1
@@ -145817,7 +145817,7 @@ version 52 {
     };
 
     // idx 37 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -145829,7 +145829,7 @@ version 52 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -145913,7 +145913,7 @@ version 52 {
     };
 
     // idx 53 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -145973,7 +145973,7 @@ version 52 {
     };
 
     // idx 63 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -146199,7 +146199,7 @@ version 52 {
     };
 
     // idx 94 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -146885,7 +146885,7 @@ version 52 {
         // offset 0x279, size 0x1
         dart_restrictions dart;
         // offset 0x27a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x27b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x27c, size 0x1
@@ -146901,11 +146901,11 @@ version 52 {
         // offset 0x281, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x282, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x283, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x284, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x285, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x286, size 0x1
@@ -146941,7 +146941,7 @@ version 52 {
         // offset 0x295, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x296, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x297, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x298, size 0x1
@@ -147063,7 +147063,7 @@ version 52 {
         // offset 0x2d2, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x2d3, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x2d4, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x2d5, size 0x1
@@ -147097,13 +147097,13 @@ version 52 {
         // offset 0x2e3, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x2e4, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x2e5, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x2e6, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x2e7, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x2e8, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x2e9, size 0x1
@@ -147565,9 +147565,9 @@ version 52 {
         // offset 0x2f270, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f278, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f280, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f288, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f290, size 0x8
@@ -147693,9 +147693,9 @@ version 52 {
         // offset 0x2f4d0, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f4d8, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f4e0, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4e8, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4f8, size 0x8
@@ -148163,7 +148163,7 @@ version 52 {
         // offset 0x37fab, size 0x1
         bool disablecontracts;
         // offset 0x37fac, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x37fad, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x37fae, size 0x1
@@ -149752,7 +149752,7 @@ version 51 {
     };
 
     // idx 37 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -149764,7 +149764,7 @@ version 51 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -149848,7 +149848,7 @@ version 51 {
     };
 
     // idx 53 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -149908,7 +149908,7 @@ version 51 {
     };
 
     // idx 63 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -150134,7 +150134,7 @@ version 51 {
     };
 
     // idx 94 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -150820,7 +150820,7 @@ version 51 {
         // offset 0x279, size 0x1
         dart_restrictions dart;
         // offset 0x27a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x27b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x27c, size 0x1
@@ -150836,11 +150836,11 @@ version 51 {
         // offset 0x281, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x282, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x283, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x284, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x285, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x286, size 0x1
@@ -150876,7 +150876,7 @@ version 51 {
         // offset 0x295, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x296, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x297, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x298, size 0x1
@@ -150998,7 +150998,7 @@ version 51 {
         // offset 0x2d2, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x2d3, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x2d4, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x2d5, size 0x1
@@ -151032,13 +151032,13 @@ version 51 {
         // offset 0x2e3, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x2e4, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x2e5, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x2e6, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x2e7, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x2e8, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x2e9, size 0x1
@@ -151500,9 +151500,9 @@ version 51 {
         // offset 0x2f270, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f278, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f280, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f288, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f290, size 0x8
@@ -151624,9 +151624,9 @@ version 51 {
         // offset 0x2f4c0, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f4c8, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f4d0, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4d8, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4e8, size 0x8
@@ -152094,7 +152094,7 @@ version 51 {
         // offset 0x37f9b, size 0x1
         bool disablecontracts;
         // offset 0x37f9c, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x37f9d, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x37f9e, size 0x1
@@ -153683,7 +153683,7 @@ version 50 {
     };
 
     // idx 37 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -153695,7 +153695,7 @@ version 50 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -153779,7 +153779,7 @@ version 50 {
     };
 
     // idx 53 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -153839,7 +153839,7 @@ version 50 {
     };
 
     // idx 63 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -154065,7 +154065,7 @@ version 50 {
     };
 
     // idx 94 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -154751,7 +154751,7 @@ version 50 {
         // offset 0x279, size 0x1
         dart_restrictions dart;
         // offset 0x27a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x27b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x27c, size 0x1
@@ -154767,11 +154767,11 @@ version 50 {
         // offset 0x281, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x282, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x283, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x284, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x285, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x286, size 0x1
@@ -154807,7 +154807,7 @@ version 50 {
         // offset 0x295, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x296, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x297, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x298, size 0x1
@@ -154929,7 +154929,7 @@ version 50 {
         // offset 0x2d2, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x2d3, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x2d4, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x2d5, size 0x1
@@ -154963,13 +154963,13 @@ version 50 {
         // offset 0x2e3, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x2e4, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x2e5, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x2e6, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x2e7, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x2e8, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x2e9, size 0x1
@@ -155431,9 +155431,9 @@ version 50 {
         // offset 0x2f270, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f278, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f280, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f288, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f290, size 0x8
@@ -155555,9 +155555,9 @@ version 50 {
         // offset 0x2f4c0, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f4c8, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f4d0, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4d8, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4e8, size 0x8
@@ -156023,7 +156023,7 @@ version 50 {
         // offset 0x37f9a, size 0x1
         bool disablecontracts;
         // offset 0x37f9b, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x37f9c, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x37f9d, size 0x1
@@ -157612,7 +157612,7 @@ version 49 {
     };
 
     // idx 37 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -157624,7 +157624,7 @@ version 49 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -157708,7 +157708,7 @@ version 49 {
     };
 
     // idx 53 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -157768,7 +157768,7 @@ version 49 {
     };
 
     // idx 63 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -157994,7 +157994,7 @@ version 49 {
     };
 
     // idx 94 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -158680,7 +158680,7 @@ version 49 {
         // offset 0x279, size 0x1
         dart_restrictions dart;
         // offset 0x27a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x27b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x27c, size 0x1
@@ -158696,11 +158696,11 @@ version 49 {
         // offset 0x281, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x282, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x283, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x284, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x285, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x286, size 0x1
@@ -158736,7 +158736,7 @@ version 49 {
         // offset 0x295, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x296, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x297, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x298, size 0x1
@@ -158858,7 +158858,7 @@ version 49 {
         // offset 0x2d2, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x2d3, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x2d4, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x2d5, size 0x1
@@ -158892,13 +158892,13 @@ version 49 {
         // offset 0x2e3, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x2e4, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x2e5, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x2e6, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x2e7, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x2e8, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x2e9, size 0x1
@@ -159360,9 +159360,9 @@ version 49 {
         // offset 0x2f270, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f278, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f280, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f288, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f290, size 0x8
@@ -159484,9 +159484,9 @@ version 49 {
         // offset 0x2f4c0, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f4c8, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f4d0, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4d8, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4e8, size 0x8
@@ -159952,7 +159952,7 @@ version 49 {
         // offset 0x37f9a, size 0x1
         bool disablecontracts;
         // offset 0x37f9b, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x37f9c, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x37f9d, size 0x1
@@ -161539,7 +161539,7 @@ version 48 {
     };
 
     // idx 37 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -161551,7 +161551,7 @@ version 48 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -161635,7 +161635,7 @@ version 48 {
     };
 
     // idx 53 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -161695,7 +161695,7 @@ version 48 {
     };
 
     // idx 63 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -161921,7 +161921,7 @@ version 48 {
     };
 
     // idx 94 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -162607,7 +162607,7 @@ version 48 {
         // offset 0x279, size 0x1
         dart_restrictions dart;
         // offset 0x27a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x27b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x27c, size 0x1
@@ -162623,11 +162623,11 @@ version 48 {
         // offset 0x281, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x282, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x283, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x284, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x285, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x286, size 0x1
@@ -162663,7 +162663,7 @@ version 48 {
         // offset 0x295, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x296, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x297, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x298, size 0x1
@@ -162785,7 +162785,7 @@ version 48 {
         // offset 0x2d2, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x2d3, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x2d4, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x2d5, size 0x1
@@ -162819,13 +162819,13 @@ version 48 {
         // offset 0x2e3, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x2e4, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x2e5, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x2e6, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x2e7, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x2e8, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x2e9, size 0x1
@@ -163287,9 +163287,9 @@ version 48 {
         // offset 0x2f270, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f278, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f280, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f288, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f290, size 0x8
@@ -163411,9 +163411,9 @@ version 48 {
         // offset 0x2f4c0, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f4c8, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f4d0, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4d8, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4e8, size 0x8
@@ -163879,7 +163879,7 @@ version 48 {
         // offset 0x37f9a, size 0x1
         bool disablecontracts;
         // offset 0x37f9b, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x37f9c, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x37f9d, size 0x1
@@ -165468,7 +165468,7 @@ version 47 {
     };
 
     // idx 37 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -165480,7 +165480,7 @@ version 47 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -165564,7 +165564,7 @@ version 47 {
     };
 
     // idx 53 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -165624,7 +165624,7 @@ version 47 {
     };
 
     // idx 63 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -165850,7 +165850,7 @@ version 47 {
     };
 
     // idx 94 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -166536,7 +166536,7 @@ version 47 {
         // offset 0x279, size 0x1
         dart_restrictions dart;
         // offset 0x27a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x27b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x27c, size 0x1
@@ -166552,11 +166552,11 @@ version 47 {
         // offset 0x281, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x282, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x283, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x284, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x285, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x286, size 0x1
@@ -166592,7 +166592,7 @@ version 47 {
         // offset 0x295, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x296, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x297, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x298, size 0x1
@@ -166714,7 +166714,7 @@ version 47 {
         // offset 0x2d2, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x2d3, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x2d4, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x2d5, size 0x1
@@ -166748,13 +166748,13 @@ version 47 {
         // offset 0x2e3, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x2e4, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x2e5, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x2e6, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x2e7, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x2e8, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x2e9, size 0x1
@@ -167216,9 +167216,9 @@ version 47 {
         // offset 0x2f270, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f278, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f280, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f288, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f290, size 0x8
@@ -167340,9 +167340,9 @@ version 47 {
         // offset 0x2f4c0, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f4c8, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f4d0, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4d8, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4e8, size 0x8
@@ -167808,7 +167808,7 @@ version 47 {
         // offset 0x37f9a, size 0x1
         bool disablecontracts;
         // offset 0x37f9b, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x37f9c, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x37f9d, size 0x1
@@ -169397,7 +169397,7 @@ version 46 {
     };
 
     // idx 37 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -169409,7 +169409,7 @@ version 46 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -169493,7 +169493,7 @@ version 46 {
     };
 
     // idx 53 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -169553,7 +169553,7 @@ version 46 {
     };
 
     // idx 63 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -169779,7 +169779,7 @@ version 46 {
     };
 
     // idx 94 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -170465,7 +170465,7 @@ version 46 {
         // offset 0x279, size 0x1
         dart_restrictions dart;
         // offset 0x27a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x27b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x27c, size 0x1
@@ -170481,11 +170481,11 @@ version 46 {
         // offset 0x281, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x282, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x283, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x284, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x285, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x286, size 0x1
@@ -170521,7 +170521,7 @@ version 46 {
         // offset 0x295, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x296, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x297, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x298, size 0x1
@@ -170643,7 +170643,7 @@ version 46 {
         // offset 0x2d2, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x2d3, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x2d4, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x2d5, size 0x1
@@ -170677,13 +170677,13 @@ version 46 {
         // offset 0x2e3, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x2e4, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x2e5, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x2e6, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x2e7, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x2e8, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x2e9, size 0x1
@@ -171145,9 +171145,9 @@ version 46 {
         // offset 0x2f270, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f278, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f280, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f288, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f290, size 0x8
@@ -171269,9 +171269,9 @@ version 46 {
         // offset 0x2f4c0, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f4c8, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f4d0, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4d8, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4e8, size 0x8
@@ -171735,7 +171735,7 @@ version 46 {
         // offset 0x37f99, size 0x1
         bool disablecontracts;
         // offset 0x37f9a, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x37f9b, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x37f9c, size 0x1
@@ -173324,7 +173324,7 @@ version 45 {
     };
 
     // idx 37 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -173336,7 +173336,7 @@ version 45 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -173420,7 +173420,7 @@ version 45 {
     };
 
     // idx 53 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -173480,7 +173480,7 @@ version 45 {
     };
 
     // idx 63 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -173706,7 +173706,7 @@ version 45 {
     };
 
     // idx 94 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -174392,7 +174392,7 @@ version 45 {
         // offset 0x279, size 0x1
         dart_restrictions dart;
         // offset 0x27a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x27b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x27c, size 0x1
@@ -174408,11 +174408,11 @@ version 45 {
         // offset 0x281, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x282, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x283, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x284, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x285, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x286, size 0x1
@@ -174448,7 +174448,7 @@ version 45 {
         // offset 0x295, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x296, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x297, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x298, size 0x1
@@ -174570,7 +174570,7 @@ version 45 {
         // offset 0x2d2, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x2d3, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x2d4, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x2d5, size 0x1
@@ -174604,13 +174604,13 @@ version 45 {
         // offset 0x2e3, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x2e4, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x2e5, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x2e6, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x2e7, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x2e8, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x2e9, size 0x1
@@ -175072,9 +175072,9 @@ version 45 {
         // offset 0x2f270, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f278, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f280, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f288, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f290, size 0x8
@@ -175196,9 +175196,9 @@ version 45 {
         // offset 0x2f4c0, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f4c8, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f4d0, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4d8, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4e8, size 0x8
@@ -175662,7 +175662,7 @@ version 45 {
         // offset 0x37f99, size 0x1
         bool disablecontracts;
         // offset 0x37f9a, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x37f9b, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x37f9c, size 0x1
@@ -177245,7 +177245,7 @@ version 44 {
     };
 
     // idx 37 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -177257,7 +177257,7 @@ version 44 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -177341,7 +177341,7 @@ version 44 {
     };
 
     // idx 53 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -177401,7 +177401,7 @@ version 44 {
     };
 
     // idx 63 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -177627,7 +177627,7 @@ version 44 {
     };
 
     // idx 94 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -178313,7 +178313,7 @@ version 44 {
         // offset 0x279, size 0x1
         dart_restrictions dart;
         // offset 0x27a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x27b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x27c, size 0x1
@@ -178329,11 +178329,11 @@ version 44 {
         // offset 0x281, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x282, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x283, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x284, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x285, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x286, size 0x1
@@ -178369,7 +178369,7 @@ version 44 {
         // offset 0x295, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x296, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x297, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x298, size 0x1
@@ -178491,7 +178491,7 @@ version 44 {
         // offset 0x2d2, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x2d3, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x2d4, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x2d5, size 0x1
@@ -178525,13 +178525,13 @@ version 44 {
         // offset 0x2e3, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x2e4, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x2e5, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x2e6, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x2e7, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x2e8, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x2e9, size 0x1
@@ -178993,9 +178993,9 @@ version 44 {
         // offset 0x2f270, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f278, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f280, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f288, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f290, size 0x8
@@ -179117,9 +179117,9 @@ version 44 {
         // offset 0x2f4c0, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f4c8, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f4d0, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4d8, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4e8, size 0x8
@@ -179583,7 +179583,7 @@ version 44 {
         // offset 0x37f99, size 0x1
         bool disablecontracts;
         // offset 0x37f9a, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x37f9b, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x37f9c, size 0x1
@@ -181166,7 +181166,7 @@ version 43 {
     };
 
     // idx 37 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -181178,7 +181178,7 @@ version 43 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -181262,7 +181262,7 @@ version 43 {
     };
 
     // idx 53 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -181322,7 +181322,7 @@ version 43 {
     };
 
     // idx 63 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -181548,7 +181548,7 @@ version 43 {
     };
 
     // idx 94 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -182234,7 +182234,7 @@ version 43 {
         // offset 0x279, size 0x1
         dart_restrictions dart;
         // offset 0x27a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x27b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x27c, size 0x1
@@ -182250,11 +182250,11 @@ version 43 {
         // offset 0x281, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x282, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x283, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x284, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x285, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x286, size 0x1
@@ -182290,7 +182290,7 @@ version 43 {
         // offset 0x295, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x296, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x297, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x298, size 0x1
@@ -182412,7 +182412,7 @@ version 43 {
         // offset 0x2d2, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x2d3, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x2d4, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x2d5, size 0x1
@@ -182446,13 +182446,13 @@ version 43 {
         // offset 0x2e3, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x2e4, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x2e5, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x2e6, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x2e7, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x2e8, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x2e9, size 0x1
@@ -182914,9 +182914,9 @@ version 43 {
         // offset 0x2f270, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f278, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f280, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f288, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f290, size 0x8
@@ -183038,9 +183038,9 @@ version 43 {
         // offset 0x2f4c0, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f4c8, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f4d0, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4d8, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4e8, size 0x8
@@ -183502,7 +183502,7 @@ version 43 {
         // offset 0x37f98, size 0x1
         bool disablecontracts;
         // offset 0x37f99, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x37f9a, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x37f9b, size 0x1
@@ -185085,7 +185085,7 @@ version 42 {
     };
 
     // idx 37 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -185097,7 +185097,7 @@ version 42 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -185181,7 +185181,7 @@ version 42 {
     };
 
     // idx 53 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -185241,7 +185241,7 @@ version 42 {
     };
 
     // idx 63 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -185467,7 +185467,7 @@ version 42 {
     };
 
     // idx 94 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -186153,7 +186153,7 @@ version 42 {
         // offset 0x279, size 0x1
         dart_restrictions dart;
         // offset 0x27a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x27b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x27c, size 0x1
@@ -186169,11 +186169,11 @@ version 42 {
         // offset 0x281, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x282, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x283, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x284, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x285, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x286, size 0x1
@@ -186209,7 +186209,7 @@ version 42 {
         // offset 0x295, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x296, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x297, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x298, size 0x1
@@ -186331,7 +186331,7 @@ version 42 {
         // offset 0x2d2, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x2d3, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x2d4, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x2d5, size 0x1
@@ -186365,13 +186365,13 @@ version 42 {
         // offset 0x2e3, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x2e4, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x2e5, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x2e6, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x2e7, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x2e8, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x2e9, size 0x1
@@ -186833,9 +186833,9 @@ version 42 {
         // offset 0x2f270, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f278, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f280, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f288, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f290, size 0x8
@@ -186957,9 +186957,9 @@ version 42 {
         // offset 0x2f4c0, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f4c8, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f4d0, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4d8, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4e8, size 0x8
@@ -187417,7 +187417,7 @@ version 42 {
         // offset 0x37f8f, size 0x1
         bool disablecontracts;
         // offset 0x37f90, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x37f91, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x37f92, size 0x1
@@ -188998,7 +188998,7 @@ version 41 {
     };
 
     // idx 37 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -189010,7 +189010,7 @@ version 41 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -189094,7 +189094,7 @@ version 41 {
     };
 
     // idx 53 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -189154,7 +189154,7 @@ version 41 {
     };
 
     // idx 63 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -189380,7 +189380,7 @@ version 41 {
     };
 
     // idx 94 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -190060,7 +190060,7 @@ version 41 {
         // offset 0x271, size 0x1
         dart_restrictions dart;
         // offset 0x272, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x273, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x274, size 0x1
@@ -190076,11 +190076,11 @@ version 41 {
         // offset 0x279, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x27a, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x27b, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x27c, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x27d, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x27e, size 0x1
@@ -190116,7 +190116,7 @@ version 41 {
         // offset 0x28d, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x28e, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x28f, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x290, size 0x1
@@ -190240,7 +190240,7 @@ version 41 {
         // offset 0x2cb, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x2cc, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x2cd, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x2ce, size 0x1
@@ -190274,13 +190274,13 @@ version 41 {
         // offset 0x2dc, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x2dd, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x2de, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x2df, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x2e0, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x2e1, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x2e2, size 0x1
@@ -190742,9 +190742,9 @@ version 41 {
         // offset 0x2f270, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f278, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f280, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f288, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f290, size 0x8
@@ -190866,9 +190866,9 @@ version 41 {
         // offset 0x2f4c0, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f4c8, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f4d0, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4d8, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4e8, size 0x8
@@ -191326,7 +191326,7 @@ version 41 {
         // offset 0x37f87, size 0x1
         bool disablecontracts;
         // offset 0x37f88, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x37f89, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x37f8a, size 0x1
@@ -192897,7 +192897,7 @@ version 40 {
     };
 
     // idx 37 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -192909,7 +192909,7 @@ version 40 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -192987,7 +192987,7 @@ version 40 {
     };
 
     // idx 52 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -193047,7 +193047,7 @@ version 40 {
     };
 
     // idx 62 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -193273,7 +193273,7 @@ version 40 {
     };
 
     // idx 93 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -193953,7 +193953,7 @@ version 40 {
         // offset 0x271, size 0x1
         dart_restrictions dart;
         // offset 0x272, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x273, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x274, size 0x1
@@ -193969,11 +193969,11 @@ version 40 {
         // offset 0x279, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x27a, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x27b, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x27c, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x27d, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x27e, size 0x1
@@ -194009,7 +194009,7 @@ version 40 {
         // offset 0x28d, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x28e, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x28f, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x290, size 0x1
@@ -194133,7 +194133,7 @@ version 40 {
         // offset 0x2cb, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x2cc, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x2cd, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x2ce, size 0x1
@@ -194167,13 +194167,13 @@ version 40 {
         // offset 0x2dc, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x2dd, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x2de, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x2df, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x2e0, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x2e1, size 0x1
         hash_534a46290ad30b38 bonuscard_primary_gunfighter_2;
         // offset 0x2e2, size 0x1
@@ -194633,9 +194633,9 @@ version 40 {
         // offset 0x2f270, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f278, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f280, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f288, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f290, size 0x8
@@ -194757,9 +194757,9 @@ version 40 {
         // offset 0x2f4c0, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f4c8, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f4d0, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4d8, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4e8, size 0x8
@@ -195217,7 +195217,7 @@ version 40 {
         // offset 0x37f87, size 0x1
         bool disablecontracts;
         // offset 0x37f88, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x37f89, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x37f8a, size 0x1
@@ -196794,7 +196794,7 @@ version 39 {
     };
 
     // idx 38 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -196806,7 +196806,7 @@ version 39 {
     };
 
     // idx 40 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -196884,7 +196884,7 @@ version 39 {
     };
 
     // idx 53 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -196944,7 +196944,7 @@ version 39 {
     };
 
     // idx 63 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -197142,7 +197142,7 @@ version 39 {
     };
 
     // idx 91 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -197804,7 +197804,7 @@ version 39 {
         // offset 0x239, size 0x1
         dart_restrictions dart;
         // offset 0x23a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x23b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x23c, size 0x1
@@ -197820,11 +197820,11 @@ version 39 {
         // offset 0x241, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x242, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x243, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x244, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x245, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x246, size 0x1
@@ -197862,7 +197862,7 @@ version 39 {
         // offset 0x256, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x257, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x258, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x259, size 0x1
@@ -197984,7 +197984,7 @@ version 39 {
         // offset 0x293, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x294, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x295, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x296, size 0x1
@@ -198018,13 +198018,13 @@ version 39 {
         // offset 0x2a4, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x2a5, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x2a6, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x2a7, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x2a8, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x2a9, size 0x1
         hash_1c88a52efa6e7bdb hash_578fac7f7b2db62b;
         // offset 0x2aa, size 0x1
@@ -198486,9 +198486,9 @@ version 39 {
         // offset 0x2f270, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f278, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f280, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f288, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f290, size 0x8
@@ -198610,9 +198610,9 @@ version 39 {
         // offset 0x2f4c0, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f4c8, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f4d0, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4d8, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4e8, size 0x8
@@ -199070,7 +199070,7 @@ version 39 {
         // offset 0x37f4f, size 0x1
         bool disablecontracts;
         // offset 0x37f50, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x37f51, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x37f52, size 0x1
@@ -200596,7 +200596,7 @@ version 38 {
     };
 
     // idx 38 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -200608,7 +200608,7 @@ version 38 {
     };
 
     // idx 40 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -200686,7 +200686,7 @@ version 38 {
     };
 
     // idx 53 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -200746,7 +200746,7 @@ version 38 {
     };
 
     // idx 63 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -200944,7 +200944,7 @@ version 38 {
     };
 
     // idx 91 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -201600,7 +201600,7 @@ version 38 {
         // offset 0x239, size 0x1
         dart_restrictions dart;
         // offset 0x23a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x23b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x23c, size 0x1
@@ -201616,11 +201616,11 @@ version 38 {
         // offset 0x241, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x242, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x243, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x244, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x245, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x246, size 0x1
@@ -201658,7 +201658,7 @@ version 38 {
         // offset 0x256, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x257, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x258, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x259, size 0x1
@@ -201778,7 +201778,7 @@ version 38 {
         // offset 0x292, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x293, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x294, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x295, size 0x1
@@ -201812,13 +201812,13 @@ version 38 {
         // offset 0x2a3, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x2a4, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x2a5, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x2a6, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x2a7, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x2a8, size 0x1
         hash_1c88a52efa6e7bdb hash_578fac7f7b2db62b;
         // offset 0x2a9, size 0x1
@@ -202280,9 +202280,9 @@ version 38 {
         // offset 0x2f270, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f278, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f280, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f288, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f290, size 0x8
@@ -202404,9 +202404,9 @@ version 38 {
         // offset 0x2f4c0, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f4c8, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f4d0, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4d8, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4e8, size 0x8
@@ -202864,7 +202864,7 @@ version 38 {
         // offset 0x37f4f, size 0x1
         bool disablecontracts;
         // offset 0x37f50, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x37f51, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x37f52, size 0x1
@@ -204390,7 +204390,7 @@ version 37 {
     };
 
     // idx 38 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -204402,7 +204402,7 @@ version 37 {
     };
 
     // idx 40 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -204480,7 +204480,7 @@ version 37 {
     };
 
     // idx 53 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -204540,7 +204540,7 @@ version 37 {
     };
 
     // idx 63 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -204732,7 +204732,7 @@ version 37 {
     };
 
     // idx 90 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -205388,7 +205388,7 @@ version 37 {
         // offset 0x239, size 0x1
         dart_restrictions dart;
         // offset 0x23a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x23b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x23c, size 0x1
@@ -205404,11 +205404,11 @@ version 37 {
         // offset 0x241, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x242, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x243, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x244, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x245, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x246, size 0x1
@@ -205446,7 +205446,7 @@ version 37 {
         // offset 0x256, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x257, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x258, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x259, size 0x1
@@ -205564,7 +205564,7 @@ version 37 {
         // offset 0x291, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x292, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x293, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x294, size 0x1
@@ -205598,13 +205598,13 @@ version 37 {
         // offset 0x2a2, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x2a3, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x2a4, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x2a5, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x2a6, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x2a7, size 0x1
         hash_1c88a52efa6e7bdb hash_578fac7f7b2db62b;
         // offset 0x2a8, size 0x1
@@ -206066,9 +206066,9 @@ version 37 {
         // offset 0x2f270, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f278, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f280, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f288, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f290, size 0x8
@@ -206190,9 +206190,9 @@ version 37 {
         // offset 0x2f4c0, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f4c8, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f4d0, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4d8, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4e8, size 0x8
@@ -206650,7 +206650,7 @@ version 37 {
         // offset 0x37f4f, size 0x1
         bool disablecontracts;
         // offset 0x37f50, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x37f51, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x37f52, size 0x1
@@ -208176,7 +208176,7 @@ version 36 {
     };
 
     // idx 38 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -208188,7 +208188,7 @@ version 36 {
     };
 
     // idx 40 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -208266,7 +208266,7 @@ version 36 {
     };
 
     // idx 53 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -208326,7 +208326,7 @@ version 36 {
     };
 
     // idx 63 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -208518,7 +208518,7 @@ version 36 {
     };
 
     // idx 90 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -209174,7 +209174,7 @@ version 36 {
         // offset 0x239, size 0x1
         dart_restrictions dart;
         // offset 0x23a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x23b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x23c, size 0x1
@@ -209190,11 +209190,11 @@ version 36 {
         // offset 0x241, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x242, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x243, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x244, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x245, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x246, size 0x1
@@ -209232,7 +209232,7 @@ version 36 {
         // offset 0x256, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x257, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x258, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x259, size 0x1
@@ -209350,7 +209350,7 @@ version 36 {
         // offset 0x291, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x292, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x293, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x294, size 0x1
@@ -209384,13 +209384,13 @@ version 36 {
         // offset 0x2a2, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x2a3, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x2a4, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x2a5, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x2a6, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x2a7, size 0x1
         hash_1c88a52efa6e7bdb hash_578fac7f7b2db62b;
         // offset 0x2a8, size 0x1
@@ -209852,9 +209852,9 @@ version 36 {
         // offset 0x2f270, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f278, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f280, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f288, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f290, size 0x8
@@ -209976,9 +209976,9 @@ version 36 {
         // offset 0x2f4c0, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f4c8, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f4d0, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4d8, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4e8, size 0x8
@@ -210436,7 +210436,7 @@ version 36 {
         // offset 0x35ecf, size 0x1
         bool disablecontracts;
         // offset 0x35ed0, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x35ed1, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x35ed2, size 0x1
@@ -211962,7 +211962,7 @@ version 35 {
     };
 
     // idx 38 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -211974,7 +211974,7 @@ version 35 {
     };
 
     // idx 40 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -212052,7 +212052,7 @@ version 35 {
     };
 
     // idx 53 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -212112,7 +212112,7 @@ version 35 {
     };
 
     // idx 63 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -212304,7 +212304,7 @@ version 35 {
     };
 
     // idx 90 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -212960,7 +212960,7 @@ version 35 {
         // offset 0x239, size 0x1
         dart_restrictions dart;
         // offset 0x23a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x23b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x23c, size 0x1
@@ -212976,11 +212976,11 @@ version 35 {
         // offset 0x241, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x242, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x243, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x244, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x245, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x246, size 0x1
@@ -213018,7 +213018,7 @@ version 35 {
         // offset 0x256, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x257, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x258, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x259, size 0x1
@@ -213136,7 +213136,7 @@ version 35 {
         // offset 0x291, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x292, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x293, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x294, size 0x1
@@ -213170,13 +213170,13 @@ version 35 {
         // offset 0x2a2, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x2a3, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x2a4, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x2a5, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x2a6, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x2a7, size 0x1
         hash_1c88a52efa6e7bdb hash_578fac7f7b2db62b;
         // offset 0x2a8, size 0x1
@@ -213638,9 +213638,9 @@ version 35 {
         // offset 0x2f270, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f278, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f280, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f288, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f290, size 0x8
@@ -213762,9 +213762,9 @@ version 35 {
         // offset 0x2f4c0, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f4c8, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f4d0, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4d8, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4e8, size 0x8
@@ -214222,7 +214222,7 @@ version 35 {
         // offset 0x35ecf, size 0x1
         bool disablecontracts;
         // offset 0x35ed0, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x35ed1, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x35ed2, size 0x1
@@ -215748,7 +215748,7 @@ version 34 {
     };
 
     // idx 38 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -215760,7 +215760,7 @@ version 34 {
     };
 
     // idx 40 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -215838,7 +215838,7 @@ version 34 {
     };
 
     // idx 53 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -215898,7 +215898,7 @@ version 34 {
     };
 
     // idx 63 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -216090,7 +216090,7 @@ version 34 {
     };
 
     // idx 90 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -216746,7 +216746,7 @@ version 34 {
         // offset 0x239, size 0x1
         dart_restrictions dart;
         // offset 0x23a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x23b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x23c, size 0x1
@@ -216762,11 +216762,11 @@ version 34 {
         // offset 0x241, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x242, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x243, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x244, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x245, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x246, size 0x1
@@ -216804,7 +216804,7 @@ version 34 {
         // offset 0x256, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x257, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x258, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x259, size 0x1
@@ -216922,7 +216922,7 @@ version 34 {
         // offset 0x291, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x292, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x293, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x294, size 0x1
@@ -216956,13 +216956,13 @@ version 34 {
         // offset 0x2a2, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x2a3, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x2a4, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x2a5, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x2a6, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x2a7, size 0x1
         hash_1c88a52efa6e7bdb hash_578fac7f7b2db62b;
         // offset 0x2a8, size 0x1
@@ -217424,9 +217424,9 @@ version 34 {
         // offset 0x2f270, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f278, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f280, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f288, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f290, size 0x8
@@ -217548,9 +217548,9 @@ version 34 {
         // offset 0x2f4c0, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f4c8, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f4d0, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4d8, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4e8, size 0x8
@@ -218008,7 +218008,7 @@ version 34 {
         // offset 0x35ecf, size 0x1
         bool disablecontracts;
         // offset 0x35ed0, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x35ed1, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x35ed2, size 0x1
@@ -219526,7 +219526,7 @@ version 33 {
     };
 
     // idx 37 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -219538,7 +219538,7 @@ version 33 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -219616,7 +219616,7 @@ version 33 {
     };
 
     // idx 52 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -219676,7 +219676,7 @@ version 33 {
     };
 
     // idx 62 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -219868,7 +219868,7 @@ version 33 {
     };
 
     // idx 89 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -220524,7 +220524,7 @@ version 33 {
         // offset 0x239, size 0x1
         dart_restrictions dart;
         // offset 0x23a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x23b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x23c, size 0x1
@@ -220540,11 +220540,11 @@ version 33 {
         // offset 0x241, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x242, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x243, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x244, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x245, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x246, size 0x1
@@ -220582,7 +220582,7 @@ version 33 {
         // offset 0x256, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x257, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x258, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x259, size 0x1
@@ -220700,7 +220700,7 @@ version 33 {
         // offset 0x291, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x292, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x293, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x294, size 0x1
@@ -220734,13 +220734,13 @@ version 33 {
         // offset 0x2a2, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x2a3, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x2a4, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x2a5, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x2a6, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x2a7, size 0x1
         hash_1c88a52efa6e7bdb hash_578fac7f7b2db62b;
         // offset 0x2a8, size 0x1
@@ -221202,9 +221202,9 @@ version 33 {
         // offset 0x2f270, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f278, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f280, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f288, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f290, size 0x8
@@ -221326,9 +221326,9 @@ version 33 {
         // offset 0x2f4c0, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f4c8, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f4d0, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4d8, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4e8, size 0x8
@@ -221786,7 +221786,7 @@ version 33 {
         // offset 0x35ecf, size 0x1
         bool disablecontracts;
         // offset 0x35ed0, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x35ed1, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x35ed2, size 0x1
@@ -223297,7 +223297,7 @@ version 32 {
     };
 
     // idx 37 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -223309,7 +223309,7 @@ version 32 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -223387,7 +223387,7 @@ version 32 {
     };
 
     // idx 52 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -223447,7 +223447,7 @@ version 32 {
     };
 
     // idx 62 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -223639,7 +223639,7 @@ version 32 {
     };
 
     // idx 89 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -224295,7 +224295,7 @@ version 32 {
         // offset 0x239, size 0x1
         dart_restrictions dart;
         // offset 0x23a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x23b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x23c, size 0x1
@@ -224311,11 +224311,11 @@ version 32 {
         // offset 0x241, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x242, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x243, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x244, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x245, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x246, size 0x1
@@ -224353,7 +224353,7 @@ version 32 {
         // offset 0x256, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x257, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x258, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x259, size 0x1
@@ -224471,7 +224471,7 @@ version 32 {
         // offset 0x291, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x292, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x293, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x294, size 0x1
@@ -224505,13 +224505,13 @@ version 32 {
         // offset 0x2a2, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x2a3, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x2a4, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x2a5, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x2a6, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x2a7, size 0x1
         hash_1c88a52efa6e7bdb hash_578fac7f7b2db62b;
         // offset 0x2a8, size 0x1
@@ -224973,9 +224973,9 @@ version 32 {
         // offset 0x2f270, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f278, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f280, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f288, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f290, size 0x8
@@ -225097,9 +225097,9 @@ version 32 {
         // offset 0x2f4c0, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f4c8, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f4d0, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4d8, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4e8, size 0x8
@@ -225557,7 +225557,7 @@ version 32 {
         // offset 0x35ecf, size 0x1
         bool disablecontracts;
         // offset 0x35ed0, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x35ed1, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x35ed2, size 0x1
@@ -227068,7 +227068,7 @@ version 31 {
     };
 
     // idx 37 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -227080,7 +227080,7 @@ version 31 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -227158,7 +227158,7 @@ version 31 {
     };
 
     // idx 52 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -227218,7 +227218,7 @@ version 31 {
     };
 
     // idx 62 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -227410,7 +227410,7 @@ version 31 {
     };
 
     // idx 89 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -228066,7 +228066,7 @@ version 31 {
         // offset 0x239, size 0x1
         dart_restrictions dart;
         // offset 0x23a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x23b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x23c, size 0x1
@@ -228082,11 +228082,11 @@ version 31 {
         // offset 0x241, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x242, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x243, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x244, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x245, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x246, size 0x1
@@ -228124,7 +228124,7 @@ version 31 {
         // offset 0x256, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x257, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x258, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x259, size 0x1
@@ -228242,7 +228242,7 @@ version 31 {
         // offset 0x291, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x292, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x293, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x294, size 0x1
@@ -228276,13 +228276,13 @@ version 31 {
         // offset 0x2a2, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x2a3, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x2a4, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x2a5, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x2a6, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x2a7, size 0x1
         hash_1c88a52efa6e7bdb hash_578fac7f7b2db62b;
         // offset 0x2a8, size 0x1
@@ -228744,9 +228744,9 @@ version 31 {
         // offset 0x2f270, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f278, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f280, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f288, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f290, size 0x8
@@ -228868,9 +228868,9 @@ version 31 {
         // offset 0x2f4c0, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f4c8, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f4d0, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4d8, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4e8, size 0x8
@@ -229328,7 +229328,7 @@ version 31 {
         // offset 0x35ecf, size 0x1
         bool disablecontracts;
         // offset 0x35ed0, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x35ed1, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x35ed2, size 0x1
@@ -230839,7 +230839,7 @@ version 30 {
     };
 
     // idx 37 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -230851,7 +230851,7 @@ version 30 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -230929,7 +230929,7 @@ version 30 {
     };
 
     // idx 52 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -230989,7 +230989,7 @@ version 30 {
     };
 
     // idx 62 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -231181,7 +231181,7 @@ version 30 {
     };
 
     // idx 89 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -231837,7 +231837,7 @@ version 30 {
         // offset 0x239, size 0x1
         dart_restrictions dart;
         // offset 0x23a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x23b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x23c, size 0x1
@@ -231853,11 +231853,11 @@ version 30 {
         // offset 0x241, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x242, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x243, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x244, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x245, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x246, size 0x1
@@ -231895,7 +231895,7 @@ version 30 {
         // offset 0x256, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x257, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x258, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x259, size 0x1
@@ -232013,7 +232013,7 @@ version 30 {
         // offset 0x291, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x292, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x293, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x294, size 0x1
@@ -232047,13 +232047,13 @@ version 30 {
         // offset 0x2a2, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x2a3, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x2a4, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x2a5, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x2a6, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x2a7, size 0x1
         hash_1c88a52efa6e7bdb hash_578fac7f7b2db62b;
         // offset 0x2a8, size 0x1
@@ -232515,9 +232515,9 @@ version 30 {
         // offset 0x2f270, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f278, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f280, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f288, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f290, size 0x8
@@ -232639,9 +232639,9 @@ version 30 {
         // offset 0x2f4c0, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f4c8, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f4d0, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4d8, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4e8, size 0x8
@@ -233097,7 +233097,7 @@ version 30 {
         // offset 0x35ece, size 0x1
         bool disablecontracts;
         // offset 0x35ecf, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x35ed0, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x35ed1, size 0x1
@@ -234608,7 +234608,7 @@ version 29 {
     };
 
     // idx 37 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -234620,7 +234620,7 @@ version 29 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -234698,7 +234698,7 @@ version 29 {
     };
 
     // idx 52 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -234758,7 +234758,7 @@ version 29 {
     };
 
     // idx 62 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -234930,7 +234930,7 @@ version 29 {
     };
 
     // idx 87 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -235582,7 +235582,7 @@ version 29 {
         // offset 0x229, size 0x1
         dart_restrictions dart;
         // offset 0x22a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x22b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x22c, size 0x1
@@ -235598,11 +235598,11 @@ version 29 {
         // offset 0x231, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x232, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x233, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x234, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x235, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x236, size 0x1
@@ -235640,7 +235640,7 @@ version 29 {
         // offset 0x246, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x247, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x248, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x249, size 0x1
@@ -235758,7 +235758,7 @@ version 29 {
         // offset 0x281, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x282, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x283, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x284, size 0x1
@@ -235792,13 +235792,13 @@ version 29 {
         // offset 0x292, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x293, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x294, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x295, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x296, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x297, size 0x1
         hash_1c88a52efa6e7bdb hash_578fac7f7b2db62b;
         // offset 0x298, size 0x1
@@ -236260,9 +236260,9 @@ version 29 {
         // offset 0x2f270, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f278, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f280, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f288, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f290, size 0x8
@@ -236384,9 +236384,9 @@ version 29 {
         // offset 0x2f4c0, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f4c8, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f4d0, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4d8, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4e8, size 0x8
@@ -236842,7 +236842,7 @@ version 29 {
         // offset 0x35ebe, size 0x1
         bool disablecontracts;
         // offset 0x35ebf, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x35ec0, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x35ec1, size 0x1
@@ -238341,7 +238341,7 @@ version 28 {
     };
 
     // idx 37 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -238353,7 +238353,7 @@ version 28 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -238425,7 +238425,7 @@ version 28 {
     };
 
     // idx 51 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -238485,7 +238485,7 @@ version 28 {
     };
 
     // idx 61 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -238657,7 +238657,7 @@ version 28 {
     };
 
     // idx 86 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -239309,7 +239309,7 @@ version 28 {
         // offset 0x229, size 0x1
         dart_restrictions dart;
         // offset 0x22a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x22b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x22c, size 0x1
@@ -239325,11 +239325,11 @@ version 28 {
         // offset 0x231, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x232, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x233, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x234, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x235, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x236, size 0x1
@@ -239367,7 +239367,7 @@ version 28 {
         // offset 0x246, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x247, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x248, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x249, size 0x1
@@ -239483,7 +239483,7 @@ version 28 {
         // offset 0x280, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x281, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x282, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x283, size 0x1
@@ -239517,13 +239517,13 @@ version 28 {
         // offset 0x291, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x292, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x293, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x294, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x295, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x296, size 0x1
         hash_1c88a52efa6e7bdb hash_578fac7f7b2db62b;
         // offset 0x297, size 0x1
@@ -239985,9 +239985,9 @@ version 28 {
         // offset 0x2f270, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f278, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f280, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f288, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f290, size 0x8
@@ -240109,9 +240109,9 @@ version 28 {
         // offset 0x2f4c0, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f4c8, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f4d0, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4d8, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4e8, size 0x8
@@ -240567,7 +240567,7 @@ version 28 {
         // offset 0x35ebe, size 0x1
         bool disablecontracts;
         // offset 0x35ebf, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x35ec0, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x35ec1, size 0x1
@@ -242066,7 +242066,7 @@ version 27 {
     };
 
     // idx 37 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -242078,7 +242078,7 @@ version 27 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -242150,7 +242150,7 @@ version 27 {
     };
 
     // idx 51 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -242210,7 +242210,7 @@ version 27 {
     };
 
     // idx 61 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -242382,7 +242382,7 @@ version 27 {
     };
 
     // idx 86 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -243034,7 +243034,7 @@ version 27 {
         // offset 0x229, size 0x1
         dart_restrictions dart;
         // offset 0x22a, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x22b, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x22c, size 0x1
@@ -243050,11 +243050,11 @@ version 27 {
         // offset 0x231, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x232, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x233, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x234, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x235, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x236, size 0x1
@@ -243092,7 +243092,7 @@ version 27 {
         // offset 0x246, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x247, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x248, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x249, size 0x1
@@ -243208,7 +243208,7 @@ version 27 {
         // offset 0x280, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x281, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x282, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x283, size 0x1
@@ -243242,13 +243242,13 @@ version 27 {
         // offset 0x291, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x292, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x293, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x294, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x295, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x296, size 0x1
         hash_1c88a52efa6e7bdb hash_578fac7f7b2db62b;
         // offset 0x297, size 0x1
@@ -243710,9 +243710,9 @@ version 27 {
         // offset 0x2f270, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f278, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f280, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f288, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f290, size 0x8
@@ -243834,9 +243834,9 @@ version 27 {
         // offset 0x2f4c0, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f4c8, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f4d0, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4d8, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4e8, size 0x8
@@ -244290,7 +244290,7 @@ version 27 {
         // offset 0x35ebd, size 0x1
         bool disablecontracts;
         // offset 0x35ebe, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x35ebf, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x35ec0, size 0x1
@@ -245787,7 +245787,7 @@ version 26 {
     };
 
     // idx 37 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -245799,7 +245799,7 @@ version 26 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -245871,7 +245871,7 @@ version 26 {
     };
 
     // idx 51 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -245931,7 +245931,7 @@ version 26 {
     };
 
     // idx 61 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -246103,7 +246103,7 @@ version 26 {
     };
 
     // idx 86 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -246721,7 +246721,7 @@ version 26 {
         // offset 0x1f9, size 0x1
         dart_restrictions dart;
         // offset 0x1fa, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x1fb, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x1fc, size 0x1
@@ -246737,11 +246737,11 @@ version 26 {
         // offset 0x201, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x202, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x203, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x204, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x205, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x206, size 0x1
@@ -246779,7 +246779,7 @@ version 26 {
         // offset 0x216, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x217, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x218, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x219, size 0x1
@@ -246895,7 +246895,7 @@ version 26 {
         // offset 0x250, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x251, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x252, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x253, size 0x1
@@ -246929,13 +246929,13 @@ version 26 {
         // offset 0x261, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x262, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x263, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x264, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x265, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x266, size 0x1
         hash_1c88a52efa6e7bdb hash_578fac7f7b2db62b;
         // offset 0x267, size 0x1
@@ -247397,9 +247397,9 @@ version 26 {
         // offset 0x2f270, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f278, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f280, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f288, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f290, size 0x8
@@ -247521,9 +247521,9 @@ version 26 {
         // offset 0x2f4c0, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f4c8, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f4d0, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4d8, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4e8, size 0x8
@@ -247977,7 +247977,7 @@ version 26 {
         // offset 0x35e8d, size 0x1
         bool disablecontracts;
         // offset 0x35e8e, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x35e8f, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x35e90, size 0x1
@@ -249422,7 +249422,7 @@ version 25 {
     };
 
     // idx 37 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -249434,7 +249434,7 @@ version 25 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -249506,7 +249506,7 @@ version 25 {
     };
 
     // idx 51 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -249566,7 +249566,7 @@ version 25 {
     };
 
     // idx 61 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -249738,7 +249738,7 @@ version 25 {
     };
 
     // idx 86 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -250356,7 +250356,7 @@ version 25 {
         // offset 0x1f9, size 0x1
         dart_restrictions dart;
         // offset 0x1fa, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x1fb, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x1fc, size 0x1
@@ -250372,11 +250372,11 @@ version 25 {
         // offset 0x201, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x202, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x203, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x204, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x205, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x206, size 0x1
@@ -250414,7 +250414,7 @@ version 25 {
         // offset 0x216, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x217, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x218, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x219, size 0x1
@@ -250530,7 +250530,7 @@ version 25 {
         // offset 0x250, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x251, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x252, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x253, size 0x1
@@ -250564,13 +250564,13 @@ version 25 {
         // offset 0x261, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x262, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x263, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x264, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x265, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x266, size 0x1
         hash_1c88a52efa6e7bdb hash_578fac7f7b2db62b;
         // offset 0x267, size 0x1
@@ -251032,9 +251032,9 @@ version 25 {
         // offset 0x2f270, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f278, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f280, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f288, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f290, size 0x8
@@ -251156,9 +251156,9 @@ version 25 {
         // offset 0x2f4c0, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f4c8, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f4d0, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4d8, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4e8, size 0x8
@@ -251612,7 +251612,7 @@ version 25 {
         // offset 0x35e8d, size 0x1
         bool disablecontracts;
         // offset 0x35e8e, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x35e8f, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x35e90, size 0x1
@@ -253055,7 +253055,7 @@ version 24 {
     };
 
     // idx 37 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -253067,7 +253067,7 @@ version 24 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -253139,7 +253139,7 @@ version 24 {
     };
 
     // idx 51 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -253199,7 +253199,7 @@ version 24 {
     };
 
     // idx 61 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -253371,7 +253371,7 @@ version 24 {
     };
 
     // idx 86 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -253989,7 +253989,7 @@ version 24 {
         // offset 0x1f9, size 0x1
         dart_restrictions dart;
         // offset 0x1fa, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x1fb, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x1fc, size 0x1
@@ -254005,11 +254005,11 @@ version 24 {
         // offset 0x201, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x202, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x203, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x204, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x205, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x206, size 0x1
@@ -254047,7 +254047,7 @@ version 24 {
         // offset 0x216, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x217, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x218, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x219, size 0x1
@@ -254163,7 +254163,7 @@ version 24 {
         // offset 0x250, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x251, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x252, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x253, size 0x1
@@ -254197,13 +254197,13 @@ version 24 {
         // offset 0x261, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x262, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x263, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x264, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x265, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x266, size 0x1
         hash_1c88a52efa6e7bdb hash_578fac7f7b2db62b;
         // offset 0x267, size 0x1
@@ -254661,9 +254661,9 @@ version 24 {
         // offset 0x2f260, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f268, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f270, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f278, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f280, size 0x8
@@ -254785,9 +254785,9 @@ version 24 {
         // offset 0x2f4b0, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f4b8, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f4c0, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4c8, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4d8, size 0x8
@@ -255241,7 +255241,7 @@ version 24 {
         // offset 0x35e7d, size 0x1
         bool disablecontracts;
         // offset 0x35e7e, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x35e7f, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x35e80, size 0x1
@@ -256684,7 +256684,7 @@ version 23 {
     };
 
     // idx 37 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -256696,7 +256696,7 @@ version 23 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -256768,7 +256768,7 @@ version 23 {
     };
 
     // idx 51 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -256828,7 +256828,7 @@ version 23 {
     };
 
     // idx 61 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -257000,7 +257000,7 @@ version 23 {
     };
 
     // idx 86 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -257618,7 +257618,7 @@ version 23 {
         // offset 0x1f9, size 0x1
         dart_restrictions dart;
         // offset 0x1fa, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x1fb, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x1fc, size 0x1
@@ -257634,11 +257634,11 @@ version 23 {
         // offset 0x201, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x202, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x203, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x204, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x205, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x206, size 0x1
@@ -257676,7 +257676,7 @@ version 23 {
         // offset 0x216, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x217, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x218, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x219, size 0x1
@@ -257792,7 +257792,7 @@ version 23 {
         // offset 0x250, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x251, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x252, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x253, size 0x1
@@ -257826,13 +257826,13 @@ version 23 {
         // offset 0x261, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x262, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x263, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x264, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x265, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x266, size 0x1
         hash_1c88a52efa6e7bdb hash_578fac7f7b2db62b;
         // offset 0x267, size 0x1
@@ -258286,9 +258286,9 @@ version 23 {
         // offset 0x2f250, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f258, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f260, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f268, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f270, size 0x8
@@ -258410,9 +258410,9 @@ version 23 {
         // offset 0x2f4a0, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f4a8, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f4b0, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4b8, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4c8, size 0x8
@@ -258866,7 +258866,7 @@ version 23 {
         // offset 0x35e6d, size 0x1
         bool disablecontracts;
         // offset 0x35e6e, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x35e6f, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x35e70, size 0x1
@@ -260309,7 +260309,7 @@ version 22 {
     };
 
     // idx 37 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -260321,7 +260321,7 @@ version 22 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -260393,7 +260393,7 @@ version 22 {
     };
 
     // idx 51 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -260453,7 +260453,7 @@ version 22 {
     };
 
     // idx 61 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -260625,7 +260625,7 @@ version 22 {
     };
 
     // idx 86 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -261243,7 +261243,7 @@ version 22 {
         // offset 0x1f9, size 0x1
         dart_restrictions dart;
         // offset 0x1fa, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x1fb, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x1fc, size 0x1
@@ -261259,11 +261259,11 @@ version 22 {
         // offset 0x201, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x202, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x203, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x204, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x205, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x206, size 0x1
@@ -261301,7 +261301,7 @@ version 22 {
         // offset 0x216, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x217, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x218, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x219, size 0x1
@@ -261417,7 +261417,7 @@ version 22 {
         // offset 0x250, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x251, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x252, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x253, size 0x1
@@ -261451,13 +261451,13 @@ version 22 {
         // offset 0x261, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x262, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x263, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x264, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x265, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x266, size 0x1
         hash_1c88a52efa6e7bdb hash_578fac7f7b2db62b;
         // offset 0x267, size 0x1
@@ -261911,9 +261911,9 @@ version 22 {
         // offset 0x2f250, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f258, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f260, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f268, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f270, size 0x8
@@ -262035,9 +262035,9 @@ version 22 {
         // offset 0x2f4a0, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f4a8, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f4b0, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4b8, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4c8, size 0x8
@@ -262491,7 +262491,7 @@ version 22 {
         // offset 0x35b0d, size 0x1
         bool disablecontracts;
         // offset 0x35b0e, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x35b0f, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x35b10, size 0x1
@@ -263928,7 +263928,7 @@ version 21 {
     };
 
     // idx 37 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -263940,7 +263940,7 @@ version 21 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -264012,7 +264012,7 @@ version 21 {
     };
 
     // idx 51 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -264072,7 +264072,7 @@ version 21 {
     };
 
     // idx 61 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -264244,7 +264244,7 @@ version 21 {
     };
 
     // idx 86 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -264862,7 +264862,7 @@ version 21 {
         // offset 0x1f9, size 0x1
         dart_restrictions dart;
         // offset 0x1fa, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x1fb, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x1fc, size 0x1
@@ -264878,11 +264878,11 @@ version 21 {
         // offset 0x201, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x202, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x203, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x204, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x205, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x206, size 0x1
@@ -264920,7 +264920,7 @@ version 21 {
         // offset 0x216, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x217, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x218, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x219, size 0x1
@@ -265036,7 +265036,7 @@ version 21 {
         // offset 0x250, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x251, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x252, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x253, size 0x1
@@ -265070,13 +265070,13 @@ version 21 {
         // offset 0x261, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x262, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x263, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x264, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x265, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x266, size 0x1
         hash_1c88a52efa6e7bdb hash_578fac7f7b2db62b;
         // offset 0x267, size 0x1
@@ -265534,9 +265534,9 @@ version 21 {
         // offset 0x2f260, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f268, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f270, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f278, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f280, size 0x8
@@ -265658,9 +265658,9 @@ version 21 {
         // offset 0x2f4b0, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f4b8, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f4c0, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4c8, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4d8, size 0x8
@@ -266114,7 +266114,7 @@ version 21 {
         // offset 0x35b1d, size 0x1
         bool disablecontracts;
         // offset 0x35b1e, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x35b1f, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x35b20, size 0x1
@@ -267551,7 +267551,7 @@ version 20 {
     };
 
     // idx 37 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -267563,7 +267563,7 @@ version 20 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -267635,7 +267635,7 @@ version 20 {
     };
 
     // idx 51 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -267695,7 +267695,7 @@ version 20 {
     };
 
     // idx 61 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -267867,7 +267867,7 @@ version 20 {
     };
 
     // idx 86 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -268485,7 +268485,7 @@ version 20 {
         // offset 0x1f9, size 0x1
         dart_restrictions dart;
         // offset 0x1fa, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x1fb, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x1fc, size 0x1
@@ -268501,11 +268501,11 @@ version 20 {
         // offset 0x201, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x202, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x203, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x204, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x205, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x206, size 0x1
@@ -268543,7 +268543,7 @@ version 20 {
         // offset 0x216, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x217, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x218, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x219, size 0x1
@@ -268659,7 +268659,7 @@ version 20 {
         // offset 0x250, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x251, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x252, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x253, size 0x1
@@ -268693,13 +268693,13 @@ version 20 {
         // offset 0x261, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x262, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x263, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x264, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x265, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x266, size 0x1
         hash_1c88a52efa6e7bdb hash_578fac7f7b2db62b;
         // offset 0x267, size 0x1
@@ -269153,9 +269153,9 @@ version 20 {
         // offset 0x2f250, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f258, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f260, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f268, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f270, size 0x8
@@ -269277,9 +269277,9 @@ version 20 {
         // offset 0x2f4a0, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f4a8, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f4b0, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4b8, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4c8, size 0x8
@@ -269733,7 +269733,7 @@ version 20 {
         // offset 0x35b0d, size 0x1
         bool disablecontracts;
         // offset 0x35b0e, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x35b0f, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x35b10, size 0x1
@@ -271170,7 +271170,7 @@ version 19 {
     };
 
     // idx 37 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -271182,7 +271182,7 @@ version 19 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -271254,7 +271254,7 @@ version 19 {
     };
 
     // idx 51 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -271314,7 +271314,7 @@ version 19 {
     };
 
     // idx 61 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -271474,7 +271474,7 @@ version 19 {
     };
 
     // idx 86 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -272086,7 +272086,7 @@ version 19 {
         // offset 0x1e1, size 0x1
         dart_restrictions dart;
         // offset 0x1e2, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x1e3, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x1e4, size 0x1
@@ -272102,11 +272102,11 @@ version 19 {
         // offset 0x1e9, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x1ea, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x1eb, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x1ec, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x1ed, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x1ee, size 0x1
@@ -272144,7 +272144,7 @@ version 19 {
         // offset 0x1fe, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x1ff, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x200, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x201, size 0x1
@@ -272266,7 +272266,7 @@ version 19 {
         // offset 0x23b, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x23c, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x23d, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x23e, size 0x1
@@ -272300,13 +272300,13 @@ version 19 {
         // offset 0x24c, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x24d, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x24e, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x24f, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x250, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x251, size 0x1
         hash_1c88a52efa6e7bdb hash_578fac7f7b2db62b;
         // offset 0x252, size 0x1
@@ -272760,9 +272760,9 @@ version 19 {
         // offset 0x2f250, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f258, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f260, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f268, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f270, size 0x8
@@ -272884,9 +272884,9 @@ version 19 {
         // offset 0x2f4a0, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f4a8, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f4b0, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4b8, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4c8, size 0x8
@@ -273340,7 +273340,7 @@ version 19 {
         // offset 0x35af5, size 0x1
         bool disablecontracts;
         // offset 0x35af6, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x35af7, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x35af8, size 0x1
@@ -274759,7 +274759,7 @@ version 18 {
     };
 
     // idx 37 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -274771,7 +274771,7 @@ version 18 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -274843,7 +274843,7 @@ version 18 {
     };
 
     // idx 51 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -274903,7 +274903,7 @@ version 18 {
     };
 
     // idx 61 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -275063,7 +275063,7 @@ version 18 {
     };
 
     // idx 86 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -275675,7 +275675,7 @@ version 18 {
         // offset 0x1e1, size 0x1
         dart_restrictions dart;
         // offset 0x1e2, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x1e3, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x1e4, size 0x1
@@ -275691,11 +275691,11 @@ version 18 {
         // offset 0x1e9, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x1ea, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x1eb, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x1ec, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x1ed, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x1ee, size 0x1
@@ -275733,7 +275733,7 @@ version 18 {
         // offset 0x1fe, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x1ff, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x200, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x201, size 0x1
@@ -275855,7 +275855,7 @@ version 18 {
         // offset 0x23b, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x23c, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x23d, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x23e, size 0x1
@@ -275889,13 +275889,13 @@ version 18 {
         // offset 0x24c, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x24d, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x24e, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x24f, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x250, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x251, size 0x1
         hash_1c88a52efa6e7bdb hash_578fac7f7b2db62b;
         // offset 0x252, size 0x1
@@ -276349,9 +276349,9 @@ version 18 {
         // offset 0x2f250, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f258, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f260, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f268, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f270, size 0x8
@@ -276473,9 +276473,9 @@ version 18 {
         // offset 0x2f4a0, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f4a8, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f4b0, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4b8, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4c8, size 0x8
@@ -276927,7 +276927,7 @@ version 18 {
         // offset 0x35af4, size 0x1
         bool disablecontracts;
         // offset 0x35af5, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x35af6, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x35af7, size 0x1
@@ -278344,7 +278344,7 @@ version 17 {
     };
 
     // idx 37 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -278356,7 +278356,7 @@ version 17 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -278428,7 +278428,7 @@ version 17 {
     };
 
     // idx 51 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -278488,7 +278488,7 @@ version 17 {
     };
 
     // idx 61 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -278648,7 +278648,7 @@ version 17 {
     };
 
     // idx 86 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -279260,7 +279260,7 @@ version 17 {
         // offset 0x1e1, size 0x1
         dart_restrictions dart;
         // offset 0x1e2, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x1e3, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x1e4, size 0x1
@@ -279276,11 +279276,11 @@ version 17 {
         // offset 0x1e9, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x1ea, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x1eb, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x1ec, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x1ed, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x1ee, size 0x1
@@ -279318,7 +279318,7 @@ version 17 {
         // offset 0x1fe, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x1ff, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x200, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x201, size 0x1
@@ -279440,7 +279440,7 @@ version 17 {
         // offset 0x23b, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x23c, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x23d, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x23e, size 0x1
@@ -279474,13 +279474,13 @@ version 17 {
         // offset 0x24c, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x24d, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x24e, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x24f, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x250, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x251, size 0x1
         hash_1c88a52efa6e7bdb hash_578fac7f7b2db62b;
         // offset 0x252, size 0x1
@@ -279930,9 +279930,9 @@ version 17 {
         // offset 0x2f240, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f248, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f250, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f258, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f260, size 0x8
@@ -280052,9 +280052,9 @@ version 17 {
         // offset 0x2f488, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f490, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f498, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4a0, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4b0, size 0x8
@@ -280504,7 +280504,7 @@ version 17 {
         // offset 0x35acc, size 0x1
         bool disablecontracts;
         // offset 0x35acd, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x35ace, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x35acf, size 0x1
@@ -281921,7 +281921,7 @@ version 16 {
     };
 
     // idx 37 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -281933,7 +281933,7 @@ version 16 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -281999,7 +281999,7 @@ version 16 {
     };
 
     // idx 50 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -282059,7 +282059,7 @@ version 16 {
     };
 
     // idx 60 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -282219,7 +282219,7 @@ version 16 {
     };
 
     // idx 85 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -282831,7 +282831,7 @@ version 16 {
         // offset 0x1e1, size 0x1
         dart_restrictions dart;
         // offset 0x1e2, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x1e3, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x1e4, size 0x1
@@ -282847,11 +282847,11 @@ version 16 {
         // offset 0x1e9, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x1ea, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x1eb, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x1ec, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x1ed, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x1ee, size 0x1
@@ -282889,7 +282889,7 @@ version 16 {
         // offset 0x1fe, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x1ff, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x200, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x201, size 0x1
@@ -283009,7 +283009,7 @@ version 16 {
         // offset 0x23a, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x23b, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x23c, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x23d, size 0x1
@@ -283043,13 +283043,13 @@ version 16 {
         // offset 0x24b, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x24c, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x24d, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x24e, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x24f, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x250, size 0x1
         hash_1c88a52efa6e7bdb hash_578fac7f7b2db62b;
         // offset 0x251, size 0x1
@@ -283499,9 +283499,9 @@ version 16 {
         // offset 0x2f240, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f248, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f250, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f258, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f260, size 0x8
@@ -283621,9 +283621,9 @@ version 16 {
         // offset 0x2f488, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f490, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f498, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4a0, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4b0, size 0x8
@@ -284073,7 +284073,7 @@ version 16 {
         // offset 0x35acc, size 0x1
         bool disablecontracts;
         // offset 0x35acd, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x35ace, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x35acf, size 0x1
@@ -285486,7 +285486,7 @@ version 15 {
     };
 
     // idx 37 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -285498,7 +285498,7 @@ version 15 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -285564,7 +285564,7 @@ version 15 {
     };
 
     // idx 50 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -285624,7 +285624,7 @@ version 15 {
     };
 
     // idx 60 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -285784,7 +285784,7 @@ version 15 {
     };
 
     // idx 85 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -286396,7 +286396,7 @@ version 15 {
         // offset 0x1e1, size 0x1
         dart_restrictions dart;
         // offset 0x1e2, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x1e3, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x1e4, size 0x1
@@ -286412,11 +286412,11 @@ version 15 {
         // offset 0x1e9, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x1ea, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x1eb, size 0x1
         hash_7cf68df4a00c383f bonuscard_secondary_operator_mod;
         // offset 0x1ec, size 0x1
-        hash_bbea6a608ea3199 hash_249e75e962ea5275;
+        hash_bbea6a608ea3199 gear_armor_hardcore;
         // offset 0x1ed, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x1ee, size 0x1
@@ -286454,7 +286454,7 @@ version 15 {
         // offset 0x1fe, size 0x1
         hash_238c1febcae14ff0 talent_gungho;
         // offset 0x1ff, size 0x1
-        hash_1a5ae0af21281882 hash_39045b0020cc3e00;
+        hash_1a5ae0af21281882 gear_armor_tier_three;
         // offset 0x200, size 0x1
         hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x201, size 0x1
@@ -286574,7 +286574,7 @@ version 15 {
         // offset 0x23a, size 0x1
         hash_37023cdcdd694f9f bonuscard_perk_3_greed;
         // offset 0x23b, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x23c, size 0x1
         hash_6244de4e2bcb8f67 talent_coldblooded;
         // offset 0x23d, size 0x1
@@ -286608,13 +286608,13 @@ version 15 {
         // offset 0x24b, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x24c, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x24d, size 0x1
         hash_5d9b23ac550135c0 bonuscard_perk_1_gluttony;
         // offset 0x24e, size 0x1
         hash_4383fbf652703eb7 gear_medicalinjectiongun;
         // offset 0x24f, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x250, size 0x1
         hash_1c88a52efa6e7bdb hash_578fac7f7b2db62b;
         // offset 0x251, size 0x1
@@ -287064,9 +287064,9 @@ version 15 {
         // offset 0x2f240, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f248, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f250, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f258, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f260, size 0x8
@@ -287186,9 +287186,9 @@ version 15 {
         // offset 0x2f488, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f490, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f498, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4a0, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4b0, size 0x8
@@ -287638,7 +287638,7 @@ version 15 {
         // offset 0x35acc, size 0x1
         bool disablecontracts;
         // offset 0x35acd, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x35ace, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x35acf, size 0x1
@@ -289051,7 +289051,7 @@ version 14 {
     };
 
     // idx 37 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -289063,7 +289063,7 @@ version 14 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -289129,7 +289129,7 @@ version 14 {
     };
 
     // idx 50 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -289189,7 +289189,7 @@ version 14 {
     };
 
     // idx 60 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -289349,7 +289349,7 @@ version 14 {
     };
 
     // idx 85 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -289709,7 +289709,7 @@ version 14 {
         // offset 0x1e1, size 0x1
         dart_restrictions dart;
         // offset 0x1e2, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x1e3, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x1e4, size 0x1
@@ -289721,7 +289721,7 @@ version 14 {
         // offset 0x1e7, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x1e8, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x1e9, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x1ea, size 0x1
@@ -289829,7 +289829,7 @@ version 14 {
         // offset 0x21d, size 0x1
         hash_2a01263d22967ea7 ai_tank_marker;
         // offset 0x21e, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x21f, size 0x1
         hash_3b1f3b24086d6419 hero_annihilator;
         // offset 0x220, size 0x1
@@ -289845,9 +289845,9 @@ version 14 {
         // offset 0x225, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x226, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x227, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x228, size 0x1
         hash_1c88a52efa6e7bdb hash_578fac7f7b2db62b;
         // offset 0x229, size 0x1
@@ -290293,9 +290293,9 @@ version 14 {
         // offset 0x2f240, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f248, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f250, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f258, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f260, size 0x8
@@ -290415,9 +290415,9 @@ version 14 {
         // offset 0x2f488, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f490, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f498, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4a0, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4b0, size 0x8
@@ -290867,7 +290867,7 @@ version 14 {
         // offset 0x35aa4, size 0x1
         bool disablecontracts;
         // offset 0x35aa5, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x35aa6, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x35aa7, size 0x1
@@ -292280,7 +292280,7 @@ version 13 {
     };
 
     // idx 37 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -292292,7 +292292,7 @@ version 13 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -292358,7 +292358,7 @@ version 13 {
     };
 
     // idx 50 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -292418,7 +292418,7 @@ version 13 {
     };
 
     // idx 60 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -292578,7 +292578,7 @@ version 13 {
     };
 
     // idx 85 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -292938,7 +292938,7 @@ version 13 {
         // offset 0x1e1, size 0x1
         dart_restrictions dart;
         // offset 0x1e2, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x1e3, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x1e4, size 0x1
@@ -292950,7 +292950,7 @@ version 13 {
         // offset 0x1e7, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x1e8, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x1e9, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x1ea, size 0x1
@@ -293058,7 +293058,7 @@ version 13 {
         // offset 0x21d, size 0x1
         hash_2a01263d22967ea7 ai_tank_marker;
         // offset 0x21e, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x21f, size 0x1
         hash_3b1f3b24086d6419 hero_annihilator;
         // offset 0x220, size 0x1
@@ -293074,9 +293074,9 @@ version 13 {
         // offset 0x225, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x226, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x227, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x228, size 0x1
         hash_1c88a52efa6e7bdb hash_578fac7f7b2db62b;
         // offset 0x229, size 0x1
@@ -293522,9 +293522,9 @@ version 13 {
         // offset 0x2f240, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f248, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f250, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f258, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f260, size 0x8
@@ -293644,9 +293644,9 @@ version 13 {
         // offset 0x2f488, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f490, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f498, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4a0, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4b0, size 0x8
@@ -294096,7 +294096,7 @@ version 13 {
         // offset 0x35aa4, size 0x1
         bool disablecontracts;
         // offset 0x35aa5, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x35aa6, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x35aa7, size 0x1
@@ -295509,7 +295509,7 @@ version 12 {
     };
 
     // idx 37 members 1 size 0x1
-    struct hash_50a44d8450b61eb3 {
+    struct drone_squadron_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -295521,7 +295521,7 @@ version 12 {
     };
 
     // idx 39 members 1 size 0x1
-    struct hash_c57f58cac40b078 {
+    struct eq_cluster_semtex_grenade_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -295587,7 +295587,7 @@ version 12 {
     };
 
     // idx 50 members 1 size 0x1
-    struct hash_219921bb20da3a00 {
+    struct eq_tripwire_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -295647,7 +295647,7 @@ version 12 {
     };
 
     // idx 60 members 1 size 0x1
-    struct hash_b69411b439f399c {
+    struct gadget_camo_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -295807,7 +295807,7 @@ version 12 {
     };
 
     // idx 85 members 1 size 0x1
-    struct hash_6991a65684904730 {
+    struct null_offhand_primary_restrictions {
         // offset 0x0, size 0x1
         bool restricted;
     };
@@ -296167,7 +296167,7 @@ version 12 {
         // offset 0x1e1, size 0x1
         dart_restrictions dart;
         // offset 0x1e2, size 0x1
-        hash_c57f58cac40b078 eq_cluster_semtex_grenade;
+        eq_cluster_semtex_grenade_restrictions eq_cluster_semtex_grenade;
         // offset 0x1e3, size 0x1
         hash_73f25157814312c gadget_health_regen;
         // offset 0x1e4, size 0x1
@@ -296179,7 +296179,7 @@ version 12 {
         // offset 0x1e7, size 0x1
         hash_12afb8bbc23079d7 eq_seeker_mine;
         // offset 0x1e8, size 0x1
-        hash_6991a65684904730 null_offhand_primary;
+        null_offhand_primary_restrictions null_offhand_primary;
         // offset 0x1e9, size 0x1
         hash_69a58d1e8c867ac1 eq_localheal;
         // offset 0x1ea, size 0x1
@@ -296287,7 +296287,7 @@ version 12 {
         // offset 0x21d, size 0x1
         hash_2a01263d22967ea7 ai_tank_marker;
         // offset 0x21e, size 0x1
-        hash_b69411b439f399c gadget_camo;
+        gadget_camo_restrictions gadget_camo;
         // offset 0x21f, size 0x1
         hash_3b1f3b24086d6419 hero_annihilator;
         // offset 0x220, size 0x1
@@ -296303,9 +296303,9 @@ version 12 {
         // offset 0x225, size 0x1
         hash_487279766ce72fad sig_buckler_dw;
         // offset 0x226, size 0x1
-        hash_219921bb20da3a00 eq_tripwire;
+        eq_tripwire_restrictions eq_tripwire;
         // offset 0x227, size 0x1
-        hash_50a44d8450b61eb3 drone_squadron;
+        drone_squadron_restrictions drone_squadron;
         // offset 0x228, size 0x1
         hash_1c88a52efa6e7bdb hash_578fac7f7b2db62b;
         // offset 0x229, size 0x1
@@ -296751,9 +296751,9 @@ version 12 {
         // offset 0x2f240, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f248, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f250, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f258, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f260, size 0x8
@@ -296873,9 +296873,9 @@ version 12 {
         // offset 0x2f488, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f490, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f498, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4a0, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4b0, size 0x8
@@ -297323,7 +297323,7 @@ version 12 {
         // offset 0x35aa3, size 0x1
         bool disablecontracts;
         // offset 0x35aa4, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x35aa5, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x35aa6, size 0x1
@@ -298952,9 +298952,9 @@ version 11 {
         // offset 0x2f240, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f248, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f250, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f258, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f260, size 0x8
@@ -299074,9 +299074,9 @@ version 11 {
         // offset 0x2f488, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f490, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f498, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4a0, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4b0, size 0x8
@@ -299520,7 +299520,7 @@ version 11 {
         // offset 0x35843, size 0x1
         bool disablecontracts;
         // offset 0x35844, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x35845, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x35846, size 0x1
@@ -300640,9 +300640,9 @@ version 10 {
         // offset 0x2f240, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f248, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f250, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f258, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f260, size 0x8
@@ -300762,9 +300762,9 @@ version 10 {
         // offset 0x2f488, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f490, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f498, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f4a0, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4b0, size 0x8
@@ -301208,7 +301208,7 @@ version 10 {
         // offset 0x35843, size 0x1
         bool disablecontracts;
         // offset 0x35844, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x35845, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x35846, size 0x1
@@ -302324,9 +302324,9 @@ version 9 {
         // offset 0x2f238, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f240, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f248, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f250, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f258, size 0x8
@@ -302446,9 +302446,9 @@ version 9 {
         // offset 0x2f480, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f488, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f490, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f498, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4a8, size 0x8
@@ -302890,7 +302890,7 @@ version 9 {
         // offset 0x3583a, size 0x1
         bool disablecontracts;
         // offset 0x3583b, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x3583c, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x3583d, size 0x1
@@ -304006,9 +304006,9 @@ version 8 {
         // offset 0x2f238, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f240, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f248, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f250, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f258, size 0x8
@@ -304128,9 +304128,9 @@ version 8 {
         // offset 0x2f480, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f488, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f490, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f498, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4a8, size 0x8
@@ -304572,7 +304572,7 @@ version 8 {
         // offset 0x3583a, size 0x1
         bool disablecontracts;
         // offset 0x3583b, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x3583c, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x3583d, size 0x1
@@ -305688,9 +305688,9 @@ version 7 {
         // offset 0x2f238, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f240, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f248, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f250, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f258, size 0x8
@@ -305810,9 +305810,9 @@ version 7 {
         // offset 0x2f480, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f488, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f490, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f498, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4a8, size 0x8
@@ -306254,7 +306254,7 @@ version 7 {
         // offset 0x3583a, size 0x1
         bool disablecontracts;
         // offset 0x3583b, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x3583c, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x3583d, size 0x1
@@ -307368,9 +307368,9 @@ version 6 {
         // offset 0x2f230, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f238, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f240, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f248, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f250, size 0x8
@@ -307490,9 +307490,9 @@ version 6 {
         // offset 0x2f478, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f480, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f488, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f490, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4a0, size 0x8
@@ -307934,7 +307934,7 @@ version 6 {
         // offset 0x35832, size 0x1
         bool disablecontracts;
         // offset 0x35833, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x35834, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x35835, size 0x1
@@ -309046,9 +309046,9 @@ version 5 {
         // offset 0x2f230, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f238, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f240, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f248, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f250, size 0x8
@@ -309168,9 +309168,9 @@ version 5 {
         // offset 0x2f478, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f480, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f488, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f490, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f4a0, size 0x8
@@ -309612,7 +309612,7 @@ version 5 {
         // offset 0x35832, size 0x1
         bool disablecontracts;
         // offset 0x35833, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x35834, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x35835, size 0x1
@@ -310720,9 +310720,9 @@ version 4 {
         // offset 0x2f220, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f228, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f230, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f238, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f240, size 0x8
@@ -310842,9 +310842,9 @@ version 4 {
         // offset 0x2f468, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f470, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f478, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f480, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f490, size 0x8
@@ -311286,7 +311286,7 @@ version 4 {
         // offset 0x35822, size 0x1
         bool disablecontracts;
         // offset 0x35823, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x35824, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x35825, size 0x1
@@ -312394,9 +312394,9 @@ version 3 {
         // offset 0x2f220, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f228, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f230, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f238, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f240, size 0x8
@@ -312516,9 +312516,9 @@ version 3 {
         // offset 0x2f468, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f470, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f478, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f480, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f490, size 0x8
@@ -312960,7 +312960,7 @@ version 3 {
         // offset 0x35822, size 0x1
         bool disablecontracts;
         // offset 0x35823, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x35824, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x35825, size 0x1
@@ -314064,9 +314064,9 @@ version 2 {
         // offset 0x2f220, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f228, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f230, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f238, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f240, size 0x8
@@ -314186,9 +314186,9 @@ version 2 {
         // offset 0x2f468, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f470, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f478, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f480, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f490, size 0x8
@@ -314630,7 +314630,7 @@ version 2 {
         // offset 0x35822, size 0x1
         bool disablecontracts;
         // offset 0x35823, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x35824, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x35825, size 0x1
@@ -315734,9 +315734,9 @@ version 1 {
         // offset 0x2f220, size 0x8
         uint:2 hash_2270a3136e7cd914;
         // offset 0x2f228, size 0x8
-        uint:2 hash_61484ea5fb9a0f86;
+        uint:2 specialistabilitycooldown_allies_10;
         // offset 0x2f230, size 0x8
-        uint:2 hash_61484fa5fb9a1139;
+        uint:2 specialistabilitycooldown_allies_11;
         // offset 0x2f238, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x2f240, size 0x8
@@ -315856,9 +315856,9 @@ version 1 {
         // offset 0x2f468, size 0x8
         uint:2 enemycarriervisible;
         // offset 0x2f470, size 0x8
-        uint:3 hash_34767b98ce6b103f;
+        uint:3 specialistteamkillsallowed_allies_10;
         // offset 0x2f478, size 0x8
-        uint:3 hash_34767a98ce6b0e8c;
+        uint:3 specialistteamkillsallowed_allies_11;
         // offset 0x2f480, size 0x10
         uint:9 autodestroytime;
         // offset 0x2f490, size 0x8
@@ -316300,7 +316300,7 @@ version 1 {
         // offset 0x35822, size 0x1
         bool disablecontracts;
         // offset 0x35823, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x35824, size 0x1
         bool hash_3852f8f7bfba71f9;
         // offset 0x35825, size 0x1

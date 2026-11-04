@@ -81,7 +81,7 @@ CoD.ArenaLeaguePlayUtility.GetSkillDivisionRating = function ( f10_arg0 )
 			end
 		end
 	end
-	if Dvar[0x812F2EED3017CF4]:get() == false or f10_local0 == 0 then
+	if Dvar.arena_showskilldivisioninformation:get() == false or f10_local0 == 0 then
 		f10_local0 = -1
 	end
 	local f10_local2 = Dvar[0xFF458743E663EC0]:get()
@@ -281,7 +281,7 @@ CoD.ArenaLeaguePlayUtility.GetFirestreak = function ( f18_arg0, f18_arg1 )
 end
 
 CoD.ArenaLeaguePlayUtility.ShowSkillDivisionInformation = function ()
-	return Dvar[0x812F2EED3017CF4]:get() == true
+	return Dvar.arena_showskilldivisioninformation:get() == true
 end
 
 CoD.ArenaLeaguePlayUtility.GetSkillDivisionTier = function ( f20_arg0 )
@@ -1047,7 +1047,7 @@ CoD.ArenaLeaguePlayUtility.CheckLeagueID = function ( f75_arg0, f75_arg1 )
 				local f75_local6 = f75_local5.leaguePlayStats.leagueID:get()
 				if f75_local6 and f75_local2 ~= f75_local6 then
 					local f75_local7 = f75_local5.performanceValue:get()
-					if Dvar[0x812F2EED3017CF4]:get() == true and f75_local7 >= -1 and f75_local7 <= 1 then
+					if Dvar.arena_showskilldivisioninformation:get() == true and f75_local7 >= -1 and f75_local7 <= 1 then
 						f75_local3.arenaBest.performanceValue:set( f75_local7 )
 					end
 					CoD.ArenaLeaguePlayUtility.SetLeagueIDForProcessing( f75_arg0, f75_local3.arenaBest.leaguePlayStats, f75_local5, f75_local6 )
@@ -1282,7 +1282,7 @@ CoD.ArenaLeaguePlayUtility.GetLeagueLadderPlayerRankIconFromXuid = function ( f9
 end
 
 CoD.ArenaLeaguePlayUtility.GetLeagueLadderPlayerSkillDivisionIconFromXuid = function ( f92_arg0 )
-	if f92_arg0 == 0 or Dvar[0x812F2EED3017CF4]:get() ~= true then
+	if f92_arg0 == 0 or Dvar.arena_showskilldivisioninformation:get() ~= true then
 		return "$blacktransparent"
 	end
 	local f92_local0 = Engine[0x2000A30A9678274]( f92_arg0 )
@@ -1294,7 +1294,7 @@ CoD.ArenaLeaguePlayUtility.GetLeagueLadderPlayerSkillDivisionIconFromXuid = func
 end
 
 CoD.ArenaLeaguePlayUtility.GetClientSkillDivisionIconLage = function ( f93_arg0 )
-	if f93_arg0 == 0 or Dvar[0x812F2EED3017CF4]:get() ~= true then
+	if f93_arg0 == 0 or Dvar.arena_showskilldivisioninformation:get() ~= true then
 		return "$blacktransparent"
 	end
 	local f93_local0 = Engine[0x2000A30A9678274]( f93_arg0 )
@@ -1306,7 +1306,7 @@ CoD.ArenaLeaguePlayUtility.GetClientSkillDivisionIconLage = function ( f93_arg0 
 end
 
 CoD.ArenaLeaguePlayUtility.GetClientSkillDivisionIconSmall = function ( f94_arg0 )
-	if f94_arg0 == 0 or Dvar[0x812F2EED3017CF4]:get() ~= true then
+	if f94_arg0 == 0 or Dvar.arena_showskilldivisioninformation:get() ~= true then
 		return "$blacktransparent"
 	end
 	local f94_local0 = Engine[0x2000A30A9678274]( f94_arg0 )
@@ -1318,7 +1318,7 @@ CoD.ArenaLeaguePlayUtility.GetClientSkillDivisionIconSmall = function ( f94_arg0
 end
 
 CoD.ArenaLeaguePlayUtility.GetClientSkillDivisionIconForScoreboardSmall = function ( f95_arg0 )
-	if f95_arg0 == 0 or LuaUtils.IsArenaMode() == false or Dvar[0x812F2EED3017CF4]:get() ~= true then
+	if f95_arg0 == 0 or LuaUtils.IsArenaMode() == false or Dvar.arena_showskilldivisioninformation:get() ~= true then
 		return "$blacktransparent"
 	end
 	local f95_local0 = Engine[0x2000A30A9678274]( f95_arg0 )

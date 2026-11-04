@@ -731,7 +731,7 @@ function private function_fea6f0c0( entity, stub, current_zone )
         return false;
     }
     
-    if ( isdefined( stub.s_vapor_altar ) && stub.s_vapor_altar.var_2977c27 !== "on" )
+    if ( isdefined( stub.s_vapor_altar ) && stub.s_vapor_altar.str_current_state !== "on" )
     {
         /#
             function_78eae22a( entity, stub, 17 );

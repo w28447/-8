@@ -35902,7 +35902,7 @@ fx,#zm_ai/fx8_blightfather_maggot_spawn_burst
 tracer,#assaultrifle
 tracer,#assaultrifle_enemy
 postfxbundle,#hash_7f24571d709f7d0c
-renderoverridebundle,#hash_435832b390f73dff
+renderoverridebundle,#rob_zm_spawn_fade
 image,#terrain_height_maps_0
 image,#terrain_cutout_maps_0
 image,#hash_2b8ae8eb18d0c15e

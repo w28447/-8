@@ -1,11 +1,11 @@
 {
     "buttonimage": "image#loot02_ui_icon_blackmarket_contracts_vampire_hunter",
     "popupimage": "image#hash_58e9d248c53f5898",
-    "nametext": "localized17#hash_448260d8cfcab193",
+    "nametext": "localized17#mpui/weapon_bribe_ultra",
     "categorytext": "localized17#mpui/bm_bribe",
     "name": "monthly_functional_bribe",
     "stackimage": "image#hash_37ebf65b6076f60b",
-    "desctext": "localized17#hash_b51caa0abca8b45",
+    "desctext": "localized17#mpui/weapon_bribe_ultra_desc",
     "hash_60be32fbdad1f573:hash_76dc8b88": "image#hash_60be32fbdad1f573",
     "previewimage": "image#ui_icon_blackmarket_stream_weapon_ultra"
 }

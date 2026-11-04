@@ -80,7 +80,7 @@ CoD.player_insertion_choice.__clipsPerState = {
 			f6_arg0:__resetProperties()
 			f6_arg0:setupElementClipCounter( 1 )
 			f6_arg0.InsertionChoice:completeAnimation()
-			f6_arg0.InsertionChoice:setText( Engine[0xF9F1239CFD921FE]( 0x34AD229607585B5 ) )
+			f6_arg0.InsertionChoice:setText( Engine[0xF9F1239CFD921FE]( "mpui/insertion_heli" ) )
 			f6_arg0.clipFinished( f6_arg0.InsertionChoice )
 		end
 	}

@@ -936,7 +936,7 @@ class class_7da27482
             while ( !var_ff2bed36 isstreamed( params.var_5bd51249, params.var_13fb1841 ) );
         }
         
-        var_ff704b7c = isdefined( params.var_99a89f83 ) && params.var_99a89f83;
+        var_ff704b7c = isdefined( params.forceanimation ) && params.forceanimation;
         
         if ( var_b627749c )
         {
@@ -2119,7 +2119,7 @@ function updateeventthread( localclientnum, var_d0b01271, notifyname, var_1d7f15
             case #"refresh_anim":
                 params = {};
                 [[ var_1d7f1597 ]]( localclientnum, var_d0b01271, waitresult, params );
-                params.var_99a89f83 = 1;
+                params.forceanimation = 1;
                 
                 if ( isdefined( params.var_c76f3e47 ) && params.var_c76f3e47 )
                 {

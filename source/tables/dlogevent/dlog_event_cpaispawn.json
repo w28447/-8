@@ -111,7 +111,7 @@
     "members": [
         {
             "name": "#canflank",
-            "scrName": "#hash_e3890237",
+            "scrName": "#canflank",
             "type": "INT32"
         },
         {

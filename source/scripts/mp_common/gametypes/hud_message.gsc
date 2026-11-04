@@ -18,7 +18,7 @@ function init()
     game.strings[ #"round_loss" ] = #"mp/round_loss_caps";
     game.strings[ #"victory" ] = #"mp/victory_caps";
     game.strings[ #"defeat" ] = #"mp/defeat_caps";
-    game.strings[ #"game_over" ] = #"hash_ddc319addc8bcb2";
+    game.strings[ #"game_over" ] = #"mp/game_over_caps";
     game.strings[ #"halftime" ] = #"mp/halftime_caps";
     game.strings[ #"overtime" ] = #"mp/overtime_caps";
     game.strings[ #"roundend" ] = #"mp/roundend_caps";

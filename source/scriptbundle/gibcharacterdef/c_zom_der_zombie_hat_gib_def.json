@@ -1,5 +1,5 @@
 {
-    "hash_636c8abf0f7d5df9:hash_f0b77e52": "fx#hash_636c8abf0f7d5df9",
+    "hash_636c8abf0f7d5df9:rightleg_gibfx": "fx#hash_636c8abf0f7d5df9",
     "hash_2a8233f8a1d00e7:hash_9f47c1ff": "fx#hash_2a8233f8a1d00e7",
     "hash_10fb995c": "j_knee_le",
     "hash_6ce02086fc656138:hash_fc5542ba": "fx#hash_6ce02086fc656138",
@@ -26,7 +26,7 @@
     "hash_d4319bf3": "j_knee_ri",
     "hash_466c8407": "j_elbow_ri",
     "hash_86de3f71": "j_spinelower",
-    "hash_636c8abf0f7d5df9:hash_eb4fa02d": "fx#hash_636c8abf0f7d5df9",
+    "hash_636c8abf0f7d5df9:leftleg_gibfx": "fx#hash_636c8abf0f7d5df9",
     "leftarm_gibtag": "j_elbow_le",
     "hash_6ce02086fc656138:hash_166f9028": "fx#hash_6ce02086fc656138"
 }

@@ -406,7 +406,7 @@ function get_player_index()
 // Params 1
 // Checksum 0xec317037, Offset: 0x10a8
 // Size: 0x54
-function function_8bda2199( v_pos )
+function get_closest_zombie( v_pos )
 {
     a_ai_zombies = getaiteamarray( level.zombie_team );
     

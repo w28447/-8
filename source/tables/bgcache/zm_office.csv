@@ -2805,7 +2805,7 @@ string,#hash_1960a6223dd21d1a
 string,#mpui/barrelchoke
 string,#hash_1a1e29920a655055
 string,#zmweapon/ww_freezegun_t8
-string,#hash_1c07c87a45375aaf
+string,#menu/camo_loot_party_rock
 string,#hash_1c085e4db0b218f9
 string,#hash_1c26ec319ba17c18
 string,#mpui/camo_integer
@@ -2855,7 +2855,7 @@ string,#hash_2a0d8cb4d439f0f4
 string,#hash_2a634db8501d93aa
 string,#hash_2aa6fa1848766679
 string,#hash_2af4a28719c51767
-string,#hash_2b0fae1c09a3d8a9
+string,#menu/camo_loot_zombie_flick
 string,#hash_2b27d20d2cfc1069
 string,#hash_2b3d791eb05ec296
 string,#mpui/camo_ardent
@@ -3032,7 +3032,7 @@ string,#hash_5c7aef3fdc5a4ecd
 string,#mpui/mixclip
 string,#mpui/mms_desc
 string,#hash_5d8a7dd9459f1e9f
-string,#hash_5dc620aa9640e528
+string,#menu/camo_loot_apb
 string,#hash_5e2c81adb5a5264a
 string,#hash_5e6ae4119dda43e0
 string,#mpui/camo_contagious

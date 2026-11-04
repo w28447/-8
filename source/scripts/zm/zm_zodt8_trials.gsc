@@ -1,4 +1,4 @@
-#using script_112484f657ccd8b7;
+#using scripts/zm_common/trials/zm_trial_regen_during_movement.gsc;
 #using scripts\zm_common\trials\zm_trial_damage_during_movement.gsc;
 #using script_30ba61ad5559c51d;
 #using scripts\zm_common\trials\zm_trial_no_missed_shots.gsc;
@@ -6,7 +6,7 @@
 #using script_444bc5b4fa0fe14f;
 #using script_45993630a26b2d85;
 #using script_67da0c3654a906b6;
-#using script_6951ea86fdae9ae0;
+#using scripts/zm_common/trials/zm_trial_attack_during_movement.gsc;
 #using scripts\core_common\ai\zombie_utility;
 #using scripts\core_common\util_shared;
 #using scripts\zm_common\trials\zm_trial_close_quarters;

@@ -924,7 +924,7 @@ Lobby.MatchmakingAsync.SyncHostDocumentsComplete = function ( f48_arg0, f48_arg1
 			Lobby.MatchmakingAsync.Event( f48_local1 )
 		end
 		Engine.PrintError( Enum[0x7A63DCD561B0FA8][0x8E4EED9A90F9B5E], "Lobby.MatchmakingAsync.SyncHostDocumentsComplete failed.  Failed Count = " .. tostring( Lobby.MMAsync.Sync.failedCount ) .. "\n" )
-		if Dvar[0x102D263505BECD9]:get() then
+		if Dvar.ui_lobbydebugsessionsqj:get() then
 			Lobby.Debug.SessionSQJLogBDEvent( {
 				message = "SyncHostDocumentsComplete: failed"
 			} )
@@ -935,7 +935,7 @@ Lobby.MatchmakingAsync.SyncHostDocumentsComplete = function ( f48_arg0, f48_arg1
 		if f48_arg2.syncLobbyDocuments == false then
 			Lobby.MatchmakingAsync.SyncFailedExtendTimeout()
 		end
-		if Dvar[0x102D263505BECD9]:get() then
+		if Dvar.ui_lobbydebugsessionsqj:get() then
 			Lobby.Debug.SessionSQJLogBDEvent( {
 				message = "SyncHostDocumentsComplete: success"
 			} )
@@ -1036,7 +1036,7 @@ Lobby.MatchmakingAsync.ProcessEvent = function ( f60_arg0 )
 		local f60_local5 = f60_arg0.numProbes
 		Engine.PrintInfo( Enum[0x7A63DCD561B0FA8][0x8E4EED9A90F9B5E], "Lobby.MatchmakingAsync.Event( BD_QOS_HOSTS ):" .. "\n controller: " .. tostring( f60_local1 ) .. "\n transactionID: " .. Engine[0x4C599F1694E23EF]( f60_local3 ) .. "\n numProbes: " .. tostring( f60_local5 ) .. "\n" )
 		Lobby.MatchmakingAsync.EventQoSHosts( f60_arg0 )
-		if Dvar[0x102D263505BECD9]:get() then
+		if Dvar.ui_lobbydebugsessionsqj:get() then
 			Lobby.Debug.SessionSQJLogBDEvent( {
 				eventType = f60_local0,
 				transactionID = f60_local3,
@@ -1059,7 +1059,7 @@ Lobby.MatchmakingAsync.ProcessEvent = function ( f60_arg0 )
 		Engine.PrintInfo( Enum[0x7A63DCD561B0FA8][0x8E4EED9A90F9B5E], "lobbyBackendDoc: " .. f60_local7 .. "\n" )
 		Engine.PrintInfo( Enum[0x7A63DCD561B0FA8][0x8E4EED9A90F9B5E], "lobbyBackendDocLength: " .. tostring( f60_local8 ) .. "\n" )
 		Lobby.MatchmakingAsync.EventJoinLobby( f60_arg0 )
-		if Dvar[0x102D263505BECD9]:get() then
+		if Dvar.ui_lobbydebugsessionsqj:get() then
 			Lobby.Debug.SessionSQJLogBDEvent( {
 				eventType = f60_local0,
 				matchmakingID = f60_local3,
@@ -1070,7 +1070,7 @@ Lobby.MatchmakingAsync.ProcessEvent = function ( f60_arg0 )
 		local f60_local3 = f60_arg0.lobbyID
 		Engine.PrintInfo( Enum[0x7A63DCD561B0FA8][0x8E4EED9A90F9B5E], "Lobby.MatchmakingAsync.Event( BD_LOBBY_DISBANDED ):" .. "\n controller: " .. tostring( f60_local1 ) .. "\n lobbyID: " .. Engine[0x4C599F1694E23EF]( f60_local3 ) .. "\n" )
 		Lobby.MatchmakingAsync.EventLobbyDisbanded( f60_arg0 )
-		if Dvar[0x102D263505BECD9]:get() then
+		if Dvar.ui_lobbydebugsessionsqj:get() then
 			Lobby.Debug.SessionSQJLogBDEvent( {
 				eventType = f60_local0,
 				lobbyID = f60_local3
@@ -1081,7 +1081,7 @@ Lobby.MatchmakingAsync.ProcessEvent = function ( f60_arg0 )
 		local f60_local4 = f60_arg0.matchMakingSearchStatus
 		Engine.PrintInfo( Enum[0x7A63DCD561B0FA8][0x8E4EED9A90F9B5E], "Lobby.MatchmakingAsync.Event( BD_MATCHMAKING_SEARCH_STATUS ):" .. "\n controller: " .. tostring( f60_local1 ) .. "\n matchMakingID: " .. Engine[0x4C599F1694E23EF]( f60_local3 ) .. "\n matchMakingSearchStatus: " .. f60_local4 .. "\n statusBufferSize: " .. tostring( f60_arg0.statusBufferSize ) .. "\n" )
 		Lobby.MatchmakingAsync.EventMatchmakingSearchStatus( f60_arg0 )
-		if Dvar[0x102D263505BECD9]:get() then
+		if Dvar.ui_lobbydebugsessionsqj:get() then
 			Lobby.Debug.SessionSQJLogBDEvent( {
 				eventType = f60_local0,
 				matchmakingID = f60_local3,
@@ -1097,7 +1097,7 @@ Lobby.MatchmakingAsync.ProcessEvent = function ( f60_arg0 )
 		end
 		Engine.PrintInfo( Enum[0x7A63DCD561B0FA8][0x8E4EED9A90F9B5E], "Lobby.MatchmakingAsync.Event( BD_LOBBY_NOT_FOUND ):" .. "\n controller: " .. tostring( f60_local1 ) .. "\n matchMakingID: " .. Engine[0x4C599F1694E23EF]( f60_local3 ) .. "\n lobbyNotFoundCause: " .. tostring( f60_local4 ) .. " (" .. f60_local5 .. ")" .. "\n" )
 		Lobby.MatchmakingAsync.EventLobbyNotFound( f60_arg0 )
-		if Dvar[0x102D263505BECD9]:get() then
+		if Dvar.ui_lobbydebugsessionsqj:get() then
 			Lobby.Debug.SessionSQJLogBDEvent( {
 				eventType = f60_local0,
 				matchmakingID = f60_local3,
@@ -1122,7 +1122,7 @@ Lobby.MatchmakingAsync.ProcessEvent = function ( f60_arg0 )
 		Engine.PrintInfo( Enum[0x7A63DCD561B0FA8][0x8E4EED9A90F9B5E], "lobbyBackendDoc: " .. f60_local8 .. "\n" )
 		Engine.PrintInfo( Enum[0x7A63DCD561B0FA8][0x8E4EED9A90F9B5E], "lobbyBackendDocLength: " .. tostring( f60_local9 ) .. "\n" )
 		Lobby.MatchmakingAsync.EventCreateNewLobby( f60_arg0 )
-		if Dvar[0x102D263505BECD9]:get() then
+		if Dvar.ui_lobbydebugsessionsqj:get() then
 			Lobby.Debug.SessionSQJLogBDEvent( {
 				eventType = f60_local0,
 				lobbyID = f60_local4,
@@ -1146,7 +1146,7 @@ Lobby.MatchmakingAsync.ProcessEvent = function ( f60_arg0 )
 		Engine.PrintInfo( Enum[0x7A63DCD561B0FA8][0x8E4EED9A90F9B5E], "lobbyBackendDoc: " .. f60_local7 .. "\n" )
 		Engine.PrintInfo( Enum[0x7A63DCD561B0FA8][0x8E4EED9A90F9B5E], "lobbyBackendDocLength: " .. tostring( f60_local8 ) .. "\n" )
 		Lobby.MatchmakingAsync.EventUpdatedLobbyDocument( f60_arg0 )
-		if Dvar[0x102D263505BECD9]:get() then
+		if Dvar.ui_lobbydebugsessionsqj:get() then
 			Lobby.Debug.SessionSQJLogBDEvent( {
 				eventType = f60_local0,
 				lobbyID = f60_local3,
@@ -1174,7 +1174,7 @@ Lobby.MatchmakingAsync.ProcessEvent = function ( f60_arg0 )
 		Engine.PrintInfo( Enum[0x7A63DCD561B0FA8][0x8E4EED9A90F9B5E], "lobbyBackendDoc: " .. f60_local8 .. "\n" )
 		Engine.PrintInfo( Enum[0x7A63DCD561B0FA8][0x8E4EED9A90F9B5E], "lobbyBackendDocLength: " .. tostring( f60_local9 ) .. "\n" )
 		Lobby.MatchmakingAsync.EventMergeIntoLobby( f60_arg0 )
-		if Dvar[0x102D263505BECD9]:get() then
+		if Dvar.ui_lobbydebugsessionsqj:get() then
 			Lobby.Debug.SessionSQJLogBDEvent( {
 				eventType = f60_local0,
 				matchmakingID = f60_local3,
@@ -1185,7 +1185,7 @@ Lobby.MatchmakingAsync.ProcessEvent = function ( f60_arg0 )
 	elseif f60_local0 == LuaEnum.bdEventType.BD_SYNC_HOSTDOC then
 		Engine.PrintInfo( Enum[0x7A63DCD561B0FA8][0x8E4EED9A90F9B5E], "Lobby.MatchmakingAsync.Event( BD_SYNC_HOSTDOC ):\n" )
 		Lobby.MatchmakingAsync.EventSyncHostDocument( f60_arg0 )
-		if Dvar[0x102D263505BECD9]:get() then
+		if Dvar.ui_lobbydebugsessionsqj:get() then
 			Lobby.Debug.SessionSQJLogBDEvent( {
 				eventType = f60_local0
 			} )
@@ -1193,7 +1193,7 @@ Lobby.MatchmakingAsync.ProcessEvent = function ( f60_arg0 )
 	elseif f60_local0 == LuaEnum.bdEventType.BD_INTERNAL_ERROR then
 		Engine.PrintInfo( Enum[0x7A63DCD561B0FA8][0x8E4EED9A90F9B5E], "Lobby.MatchmakingAsync.Event( BD_INTERNAL_ERROR ):\n" )
 		Lobby.MatchmakingAsync.EventLobbyDisbanded( f60_arg0 )
-		if Dvar[0x102D263505BECD9]:get() then
+		if Dvar.ui_lobbydebugsessionsqj:get() then
 			Lobby.Debug.SessionSQJLogBDEvent( {
 				eventType = f60_local0
 			} )
@@ -1755,7 +1755,7 @@ Lobby.MatchmakingAsync.AssignTeams = function ( f75_arg0, f75_arg1, f75_arg2, f7
 end
 
 Lobby.MatchmakingAsync.PumpLobbyMerging = function ()
-	if Dvar[0x6AB21D919144AA]:get() == false then
+	if Dvar.lobbymergeenabled:get() == false then
 		return 
 	elseif Lobby.MMAsync.Info.lobbyHostDocTable ~= nil then
 		local f76_local0 = Lobby.Timer.GetTimerStatus()

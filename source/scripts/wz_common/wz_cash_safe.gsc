@@ -262,7 +262,7 @@ function private function_3d49217f( activator )
 // Params 3, eflags: 0x4
 // Checksum 0x20643c8, Offset: 0xb88
 // Size: 0x1ec, Type: bool
-function private function_7c5a1e82( activator, stateindex, var_9bdcfcd8 )
+function private function_7c5a1e82( activator, stateindex, nextstateindex )
 {
     self clear_prompts( activator );
     

@@ -96,7 +96,7 @@
         },
         {
             "name": "#interaction_details",
-            "scrName": "#hash_9aa9188c",
+            "scrName": "#interaction_details",
             "type": "STRING",
             "len": 64
         },

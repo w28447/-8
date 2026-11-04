@@ -44,7 +44,7 @@
     "worldmodel": "model#wpn_t8_eqp_spawnbeacon_prop",
     "mainobjective": "spawnbeacon_objective",
     "hash_a9f4819c": "spawnbeacon_building",
-    "hash_79efc1": "spawnbeacondestroyedenemy",
+    "destroyedenemy": "spawnbeacondestroyedenemy",
     "shockrifledestructionfx": "fx#explosions/fx8_exp_elec_equip_sm",
     "pickupaudio": "mpl_spawn_beacon_pickup_npc",
     "hash_6430812efad535c8:hash_c21bf0d0": "localized18#hash_6430812efad535c8",

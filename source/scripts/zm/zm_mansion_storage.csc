@@ -39,7 +39,7 @@ function init()
 // Size: 0x74
 function secret_bookshelf_fx( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    util::playfxontag( localclientnum, level._effect[ #"hash_1789fef86cd8b57e" ], self, "tag_origin" );
+    util::playfxontag( localclientnum, level._effect[ #"bat_bile_vanish_fx" ], self, "tag_origin" );
 }
 
 // Namespace mansion_storage/zm_mansion_storage

@@ -226,7 +226,7 @@ function function_24c1b38f()
     
     if ( a_players.size > 1 )
     {
-        n_player_modifier = a_players.size * self ai::function_9139c839().var_854eebd;
+        n_player_modifier = a_players.size * self ai::function_9139c839().numplayerhealthscale;
     }
     
     var_eb6e4e3a = self ai::function_9139c839().var_544b0295 * n_player_modifier * level.brutus_round_count;

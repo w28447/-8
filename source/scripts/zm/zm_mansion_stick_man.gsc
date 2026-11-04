@@ -1404,12 +1404,12 @@ function private player_stuck()
     if ( self.str_name === "pic_gypsy" )
     {
         level.var_9661fac0 = #"scene_zm_mansn_wm_fem_fullsequence";
-        var_cab90298 = #"hash_3475f0b9b2ad7422";
+        var_cab90298 = #"pb_zm_mansn_wm_fem_intro";
     }
     else
     {
         level.var_9661fac0 = #"scene_zm_mansn_wm_male_fullsequence";
-        var_cab90298 = #"hash_54f8a53a5930ed55";
+        var_cab90298 = #"pb_zm_mansn_wm_intro";
     }
     
     var_3add8e25 = struct::get( "s_stick_scene", "targetname" );

@@ -2120,7 +2120,7 @@ CoD.OptionsUtility.CustomGameOptions.WildcardRestrictionOptionCategories = {
 	},
 	{
 		ref = "Secondary",
-		groupName = 0xB484D92443361D8,
+		groupName = "mpui/loadoutslot_primary",
 		datasourceNameHeader = "wc_primary",
 		gameSettingListName = 0xBB1D346EDD82C6F,
 		datasourceFunc = CoD.OptionsUtility.PrepareRestrictionGameOptions,

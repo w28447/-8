@@ -1160,7 +1160,7 @@ version 95 {
         prt_wz_bruno_dlc0, // 0x1,
         prt_wz_scarlett, // 0x2,
         prt_wz_firebreak, // 0x3,
-        hash_8bb7d93747987a1, // 0x4,
+        prt_wz_stanton_dlc0, // 0x4,
         prt_wz_brutus, // 0x5,
         prt_wz_hudson_hawaiian, // 0x6,
         prt_wz_captain_price, // 0x7,
@@ -1312,7 +1312,7 @@ version 95 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -1838,7 +1838,7 @@ version 95 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -2121,7 +2121,7 @@ version 95 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -2543,7 +2543,7 @@ version 95 {
     // offset 0x13300, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x133c0, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x133e0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x13400, size 0x20
@@ -3849,7 +3849,7 @@ version 94 {
         prt_wz_bruno_dlc0, // 0x1,
         prt_wz_scarlett, // 0x2,
         prt_wz_firebreak, // 0x3,
-        hash_8bb7d93747987a1, // 0x4,
+        prt_wz_stanton_dlc0, // 0x4,
         prt_wz_brutus, // 0x5,
         prt_wz_hudson_hawaiian, // 0x6,
         prt_wz_captain_price, // 0x7,
@@ -4001,7 +4001,7 @@ version 94 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -4527,7 +4527,7 @@ version 94 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -4810,7 +4810,7 @@ version 94 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -5232,7 +5232,7 @@ version 94 {
     // offset 0x13300, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x133c0, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x133e0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x13400, size 0x20
@@ -6536,7 +6536,7 @@ version 93 {
         prt_wz_bruno_dlc0, // 0x1,
         prt_wz_scarlett, // 0x2,
         prt_wz_firebreak, // 0x3,
-        hash_8bb7d93747987a1, // 0x4,
+        prt_wz_stanton_dlc0, // 0x4,
         prt_wz_brutus, // 0x5,
         prt_wz_hudson_hawaiian, // 0x6,
         prt_wz_captain_price, // 0x7,
@@ -6688,7 +6688,7 @@ version 93 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -7214,7 +7214,7 @@ version 93 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -7497,7 +7497,7 @@ version 93 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -7919,7 +7919,7 @@ version 93 {
     // offset 0x13300, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x133c0, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x133e0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x13400, size 0x20
@@ -9223,7 +9223,7 @@ version 92 {
         prt_wz_bruno_dlc0, // 0x1,
         prt_wz_scarlett, // 0x2,
         prt_wz_firebreak, // 0x3,
-        hash_8bb7d93747987a1, // 0x4,
+        prt_wz_stanton_dlc0, // 0x4,
         prt_wz_brutus, // 0x5,
         prt_wz_hudson_hawaiian, // 0x6,
         prt_wz_captain_price, // 0x7,
@@ -9374,7 +9374,7 @@ version 92 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -9900,7 +9900,7 @@ version 92 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -10183,7 +10183,7 @@ version 92 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -10605,7 +10605,7 @@ version 92 {
     // offset 0x13300, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x133c0, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x133e0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x13400, size 0x20
@@ -11907,7 +11907,7 @@ version 91 {
         prt_wz_bruno_dlc0, // 0x1,
         prt_wz_scarlett, // 0x2,
         prt_wz_firebreak, // 0x3,
-        hash_8bb7d93747987a1, // 0x4,
+        prt_wz_stanton_dlc0, // 0x4,
         prt_wz_brutus, // 0x5,
         prt_wz_hudson_hawaiian, // 0x6,
         prt_wz_captain_price, // 0x7,
@@ -12057,7 +12057,7 @@ version 91 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -12583,7 +12583,7 @@ version 91 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -12866,7 +12866,7 @@ version 91 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -13288,7 +13288,7 @@ version 91 {
     // offset 0x13300, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x133c0, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x133e0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x13400, size 0x20
@@ -14586,7 +14586,7 @@ version 90 {
         prt_wz_bruno_dlc0, // 0x1,
         prt_wz_scarlett, // 0x2,
         prt_wz_firebreak, // 0x3,
-        hash_8bb7d93747987a1, // 0x4,
+        prt_wz_stanton_dlc0, // 0x4,
         prt_wz_brutus, // 0x5,
         prt_wz_hudson_hawaiian, // 0x6,
         prt_wz_captain_price, // 0x7,
@@ -14736,7 +14736,7 @@ version 90 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -15262,7 +15262,7 @@ version 90 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -15545,7 +15545,7 @@ version 90 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -15967,7 +15967,7 @@ version 90 {
     // offset 0x13300, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x133c0, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x133e0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x13400, size 0x20
@@ -17263,7 +17263,7 @@ version 89 {
         prt_wz_bruno_dlc0, // 0x1,
         prt_wz_scarlett, // 0x2,
         prt_wz_firebreak, // 0x3,
-        hash_8bb7d93747987a1, // 0x4,
+        prt_wz_stanton_dlc0, // 0x4,
         prt_wz_brutus, // 0x5,
         prt_wz_hudson_hawaiian, // 0x6,
         prt_wz_captain_price, // 0x7,
@@ -17411,7 +17411,7 @@ version 89 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -17937,7 +17937,7 @@ version 89 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -18220,7 +18220,7 @@ version 89 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -18642,7 +18642,7 @@ version 89 {
     // offset 0x13300, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x133c0, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x133e0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x13400, size 0x20
@@ -19934,7 +19934,7 @@ version 88 {
         prt_wz_bruno_dlc0, // 0x1,
         prt_wz_scarlett, // 0x2,
         prt_wz_firebreak, // 0x3,
-        hash_8bb7d93747987a1, // 0x4,
+        prt_wz_stanton_dlc0, // 0x4,
         prt_wz_brutus, // 0x5,
         prt_wz_hudson_hawaiian, // 0x6,
         prt_wz_captain_price, // 0x7,
@@ -20082,7 +20082,7 @@ version 88 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -20608,7 +20608,7 @@ version 88 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -20891,7 +20891,7 @@ version 88 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -21313,7 +21313,7 @@ version 88 {
     // offset 0x13300, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x133c0, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x133e0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x13400, size 0x20
@@ -22605,7 +22605,7 @@ version 87 {
         prt_wz_bruno_dlc0, // 0x1,
         prt_wz_scarlett, // 0x2,
         prt_wz_firebreak, // 0x3,
-        hash_8bb7d93747987a1, // 0x4,
+        prt_wz_stanton_dlc0, // 0x4,
         prt_wz_brutus, // 0x5,
         prt_wz_hudson_hawaiian, // 0x6,
         prt_wz_captain_price, // 0x7,
@@ -22753,7 +22753,7 @@ version 87 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -23279,7 +23279,7 @@ version 87 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -23562,7 +23562,7 @@ version 87 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -23984,7 +23984,7 @@ version 87 {
     // offset 0x13300, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x133c0, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x133e0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x13400, size 0x20
@@ -25274,7 +25274,7 @@ version 86 {
         prt_wz_bruno_dlc0, // 0x1,
         prt_wz_scarlett, // 0x2,
         prt_wz_firebreak, // 0x3,
-        hash_8bb7d93747987a1, // 0x4,
+        prt_wz_stanton_dlc0, // 0x4,
         prt_wz_brutus, // 0x5,
         prt_wz_hudson_hawaiian, // 0x6,
         prt_wz_captain_price, // 0x7,
@@ -25422,7 +25422,7 @@ version 86 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -25948,7 +25948,7 @@ version 86 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -26231,7 +26231,7 @@ version 86 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -26653,7 +26653,7 @@ version 86 {
     // offset 0x13300, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x133c0, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x133e0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x13400, size 0x20
@@ -27941,7 +27941,7 @@ version 85 {
         prt_wz_bruno_dlc0, // 0x1,
         prt_wz_scarlett, // 0x2,
         prt_wz_firebreak, // 0x3,
-        hash_8bb7d93747987a1, // 0x4,
+        prt_wz_stanton_dlc0, // 0x4,
         prt_wz_brutus, // 0x5,
         prt_wz_hudson_hawaiian, // 0x6,
         prt_wz_captain_price, // 0x7,
@@ -28089,7 +28089,7 @@ version 85 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -28615,7 +28615,7 @@ version 85 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -28898,7 +28898,7 @@ version 85 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -29320,7 +29320,7 @@ version 85 {
     // offset 0x13300, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x133c0, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x133e0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x13400, size 0x20
@@ -30607,7 +30607,7 @@ version 84 {
         prt_wz_bruno_dlc0, // 0x1,
         prt_wz_scarlett, // 0x2,
         prt_wz_firebreak, // 0x3,
-        hash_8bb7d93747987a1, // 0x4,
+        prt_wz_stanton_dlc0, // 0x4,
         prt_wz_brutus, // 0x5,
         prt_wz_hudson_hawaiian, // 0x6,
         prt_wz_captain_price, // 0x7,
@@ -30755,7 +30755,7 @@ version 84 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -31281,7 +31281,7 @@ version 84 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -31564,7 +31564,7 @@ version 84 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -31986,7 +31986,7 @@ version 84 {
     // offset 0x13300, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x133c0, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x133e0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x13400, size 0x20
@@ -33266,7 +33266,7 @@ version 83 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -33408,7 +33408,7 @@ version 83 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -33934,7 +33934,7 @@ version 83 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -34217,7 +34217,7 @@ version 83 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -34639,7 +34639,7 @@ version 83 {
     // offset 0x13300, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x133c0, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x133e0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x13400, size 0x20
@@ -35917,7 +35917,7 @@ version 82 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -36059,7 +36059,7 @@ version 82 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -36585,7 +36585,7 @@ version 82 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -36868,7 +36868,7 @@ version 82 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -37290,7 +37290,7 @@ version 82 {
     // offset 0x13300, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x133c0, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x133e0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x13400, size 0x20
@@ -38566,7 +38566,7 @@ version 81 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -38708,7 +38708,7 @@ version 81 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -39234,7 +39234,7 @@ version 81 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -39517,7 +39517,7 @@ version 81 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -39939,7 +39939,7 @@ version 81 {
     // offset 0x13300, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x133c0, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x133e0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x13400, size 0x20
@@ -41211,7 +41211,7 @@ version 80 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -41353,7 +41353,7 @@ version 80 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -41879,7 +41879,7 @@ version 80 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -42162,7 +42162,7 @@ version 80 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -42584,7 +42584,7 @@ version 80 {
     // offset 0x13300, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x133c0, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x133e0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x13400, size 0x20
@@ -43854,7 +43854,7 @@ version 79 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -43996,7 +43996,7 @@ version 79 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -44522,7 +44522,7 @@ version 79 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -44805,7 +44805,7 @@ version 79 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -45227,7 +45227,7 @@ version 79 {
     // offset 0x13300, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x133c0, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x133e0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x13400, size 0x20
@@ -46495,7 +46495,7 @@ version 78 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -46637,7 +46637,7 @@ version 78 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -47163,7 +47163,7 @@ version 78 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -47446,7 +47446,7 @@ version 78 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -47868,7 +47868,7 @@ version 78 {
     // offset 0x13300, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x133c0, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x133e0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x13400, size 0x20
@@ -49134,7 +49134,7 @@ version 77 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -49276,7 +49276,7 @@ version 77 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -49802,7 +49802,7 @@ version 77 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -50085,7 +50085,7 @@ version 77 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -50507,7 +50507,7 @@ version 77 {
     // offset 0x13300, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x133c0, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x133e0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x13400, size 0x20
@@ -51769,7 +51769,7 @@ version 76 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -51911,7 +51911,7 @@ version 76 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -52437,7 +52437,7 @@ version 76 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -52720,7 +52720,7 @@ version 76 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -53142,7 +53142,7 @@ version 76 {
     // offset 0x13300, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x133c0, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x133e0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x13400, size 0x20
@@ -54390,7 +54390,7 @@ version 75 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -54531,7 +54531,7 @@ version 75 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -55057,7 +55057,7 @@ version 75 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -55340,7 +55340,7 @@ version 75 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -55762,7 +55762,7 @@ version 75 {
     // offset 0x13300, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x133c0, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x133e0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x13400, size 0x20
@@ -57004,7 +57004,7 @@ version 74 {
         prt_wz_bruno_dlc0, // 0x0,
         prt_wz_scarlett, // 0x1,
         prt_wz_firebreak, // 0x2,
-        hash_8bb7d93747987a1, // 0x3,
+        prt_wz_stanton_dlc0, // 0x3,
         prt_wz_brutus, // 0x4,
         prt_wz_hudson_hawaiian, // 0x5,
         prt_wz_enforcer, // 0x6,
@@ -57145,7 +57145,7 @@ version 74 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -57671,7 +57671,7 @@ version 74 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -57954,7 +57954,7 @@ version 74 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -58376,7 +58376,7 @@ version 74 {
     // offset 0x13300, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x133c0, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x133e0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x13400, size 0x20
@@ -59107,7 +59107,7 @@ version 73 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -59633,7 +59633,7 @@ version 73 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -59916,7 +59916,7 @@ version 73 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -60338,7 +60338,7 @@ version 73 {
     // offset 0x13300, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x133c0, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x133e0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x13400, size 0x20
@@ -61067,7 +61067,7 @@ version 72 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -61593,7 +61593,7 @@ version 72 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -61876,7 +61876,7 @@ version 72 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -62297,7 +62297,7 @@ version 72 {
     // offset 0x13300, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x133c0, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x133e0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x13400, size 0x20
@@ -63026,7 +63026,7 @@ version 71 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -63552,7 +63552,7 @@ version 71 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -63835,7 +63835,7 @@ version 71 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -64255,7 +64255,7 @@ version 71 {
     // offset 0x13300, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x133c0, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x133e0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x13400, size 0x20
@@ -64984,7 +64984,7 @@ version 70 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -65510,7 +65510,7 @@ version 70 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -65793,7 +65793,7 @@ version 70 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -66212,7 +66212,7 @@ version 70 {
     // offset 0x13300, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x133c0, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x133e0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x13400, size 0x20
@@ -66941,7 +66941,7 @@ version 69 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -67467,7 +67467,7 @@ version 69 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -67750,7 +67750,7 @@ version 69 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -68168,7 +68168,7 @@ version 69 {
     // offset 0x13300, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x133c0, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x133e0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x13400, size 0x20
@@ -68897,7 +68897,7 @@ version 68 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -69423,7 +69423,7 @@ version 68 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -69706,7 +69706,7 @@ version 68 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -70122,7 +70122,7 @@ version 68 {
     // offset 0x132e0, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x133a0, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x133c0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x133e0, size 0x20
@@ -70851,7 +70851,7 @@ version 67 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -71377,7 +71377,7 @@ version 67 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -71660,7 +71660,7 @@ version 67 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -72076,7 +72076,7 @@ version 67 {
     // offset 0x132e0, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x133a0, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x133c0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x133e0, size 0x20
@@ -72805,7 +72805,7 @@ version 66 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -73331,7 +73331,7 @@ version 66 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -73614,7 +73614,7 @@ version 66 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -74030,7 +74030,7 @@ version 66 {
     // offset 0x132e0, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x133a0, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x133c0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x133e0, size 0x20
@@ -74759,7 +74759,7 @@ version 65 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -75285,7 +75285,7 @@ version 65 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -75568,7 +75568,7 @@ version 65 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -75976,7 +75976,7 @@ version 65 {
     // offset 0x132e0, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x133a0, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x133c0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x133e0, size 0x20
@@ -76705,7 +76705,7 @@ version 64 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -77231,7 +77231,7 @@ version 64 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -77514,7 +77514,7 @@ version 64 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -77919,7 +77919,7 @@ version 64 {
     // offset 0x132e0, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x133a0, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x133c0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x133e0, size 0x20
@@ -78648,7 +78648,7 @@ version 63 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -79174,7 +79174,7 @@ version 63 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -79457,7 +79457,7 @@ version 63 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -79862,7 +79862,7 @@ version 63 {
     // offset 0x132e0, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x133a0, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x133c0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x133e0, size 0x20
@@ -80589,7 +80589,7 @@ version 62 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -81115,7 +81115,7 @@ version 62 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -81398,7 +81398,7 @@ version 62 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -81797,7 +81797,7 @@ version 62 {
     // offset 0x132e0, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x133a0, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x133c0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x133e0, size 0x20

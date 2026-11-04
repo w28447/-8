@@ -48,7 +48,7 @@ function function_27473e44()
 function init()
 {
     level._effect[ #"wolf_protector_eye_glow" ] = #"hash_66c3b340356c182b";
-    level._effect[ #"hash_2b6b5aa12ed687c5" ] = #"hash_6ded6189669f2669";
+    level._effect[ #"wolf_protector_spawn_in_fx" ] = #"hash_6ded6189669f2669";
     level._effect[ #"hash_674126a125f46aae" ] = #"hash_1d5598025e3875a8";
 }
 
@@ -108,6 +108,6 @@ function wolf_protector_fx( localclientnum, oldval, newval, bnewent, binitialsna
 // Size: 0x74
 function wolf_protector_spawn_fx( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
 {
-    util::playfxontag( localclientnum, level._effect[ #"hash_2b6b5aa12ed687c5" ], self, "j_spine4" );
+    util::playfxontag( localclientnum, level._effect[ #"wolf_protector_spawn_in_fx" ], self, "j_spine4" );
 }
 

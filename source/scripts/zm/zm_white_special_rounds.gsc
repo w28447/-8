@@ -715,9 +715,9 @@ function function_778aec95()
             playsoundatposition( #"zmb_goop_valve_turn", self.origin );
             
             /#
-                var_847964c = floor( self.var_a1edb69e / 10 * 100 );
+                n_percent_complete = floor( self.var_a1edb69e / 10 * 100 );
                 str_house = level function_b822e13( self.script_string );
-                iprintlnbold( str_house + "<dev string:xf6>" + var_847964c + "<dev string:x101>" );
+                iprintlnbold( str_house + "<dev string:xf6>" + n_percent_complete + "<dev string:x101>" );
             #/
             
             wait 1;
@@ -1374,9 +1374,9 @@ function function_1605f69a()
         iprintlnbold( "<dev string:x18b>" );
     #/
     
-    foreach ( var_5baafbb2 in level.var_76a7ad28 )
+    foreach ( s_perk_machine in level.var_76a7ad28 )
     {
-        var_5baafbb2 function_d12682c5();
+        s_perk_machine function_d12682c5();
     }
 }
 
@@ -1392,9 +1392,9 @@ function function_94cdb242()
             iprintlnbold( "<dev string:x1be>" );
         #/
         
-        foreach ( var_5baafbb2 in level.var_76a7ad28 )
+        foreach ( s_perk_machine in level.var_76a7ad28 )
         {
-            var_5baafbb2 function_f6ac524d();
+            s_perk_machine function_f6ac524d();
         }
     }
 }

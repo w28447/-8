@@ -29,7 +29,7 @@
                     "clientfield": "#ww_p1_2"
                 }
             ],
-            "hash_b048489f": 2
+            "list_components": 2
         },
         {
             "components": [
@@ -87,7 +87,7 @@
                     "clientfield": "#ww_p2_3"
                 }
             ],
-            "hash_b048489f": 3
+            "list_components": 3
         }
     ],
     "objnonlinearprogitems": [

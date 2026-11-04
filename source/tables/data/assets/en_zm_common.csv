@@ -127,7 +127,7 @@ localizeentry,d#hash_9b9be1e62972305
 localizeentry,d#zmui/towers
 localizeentry,d#menu/preview_segment
 localizeentry,d#hash_a074289074be076
-localizeentry,d#hash_a24862e70e7e1b7
+localizeentry,d#mpui/extrapellets_short
 localizeentry,#hash_a3981d66486076b
 localizeentry,#hash_a3982d66486091e
 localizeentry,#hash_a3983d664860ad1
@@ -213,7 +213,7 @@ localizeentry,d#weapon/fraggrenade
 localizeentry,d#hash_ea3f9d61eb22b16
 localizeentry,#hash_ebd88797aaa2574
 localizeentry,d#hash_ee567911dd1ce83
-localizeentry,#hash_f028c52ddb2044d
+localizeentry,#zm_zodt8/concentrated_purity
 localizeentry,d#hash_f0c72bf838645e3
 localizeentry,#hash_f1198f8984cdf5e
 localizeentry,d#menu/camo_loot_circuitboard
@@ -223,10 +223,10 @@ localizeentry,#hash_f5860e4931eff56
 localizeentry,#hash_f60cd1936dfe2ae
 localizeentry,#hash_f61ab34853f4d38
 localizeentry,d#weapon/ar_mg1909_t8
-localizeentry,d#hash_fa87b5c2614ca3e
+localizeentry,d#mpui/rf_short
 localizeentry,#hash_fb402ff44f08e0d
 localizeentry,#hash_fb9837a686bdd40
-localizeentry,#hash_fbcfc36f0c79d9a
+localizeentry,#mpui/tank_commands
 localizeentry,#zmweapon/tr_damageburst_t8_upgraded
 localizeentry,#demo/director_mode
 localizeentry,#zmtrials/artifacts_of_life_desc
@@ -396,7 +396,7 @@ localizeentry,#zmweapon/homunculus
 localizeentry,d#hash_1bba3ce9fa810d2e
 localizeentry,d#hash_1bd01414ff19ee0a
 localizeentry,d#menu/triple_kill
-localizeentry,d#hash_1c07c87a45375aaf
+localizeentry,d#menu/camo_loot_party_rock
 localizeentry,#hash_1c1bf5476938a04e
 localizeentry,#hash_1c41ce365b85b1e1
 localizeentry,#hash_1c6692a42ac7bc04
@@ -480,7 +480,7 @@ localizeentry,#hash_226b2946aba0ee8d
 localizeentry,d#hash_2278573f99a78371
 localizeentry,#hash_228c7aed5b4aa8ac
 localizeentry,d#heroes/marlton
-localizeentry,d#hash_22c77500cca0703d
+localizeentry,d#zmui/richtofen_primis_trait
 localizeentry,#hash_22cfe7bdf1f0a2e6
 localizeentry,d#menu/camo_loot_astronomy
 localizeentry,#hash_2303e09b25647ced
@@ -568,7 +568,7 @@ localizeentry,#hash_27f2dba0199373ee
 localizeentry,#hash_2823448d77d3b887
 localizeentry,#hash_282905b6967d0716
 localizeentry,#hash_282b1c9acf3429df
-localizeentry,#hash_284bab3e953057c5
+localizeentry,#menu/death_effects_money
 localizeentry,#menu/charm_salty_shaker
 localizeentry,d#hash_287117baae790d6d
 localizeentry,#hash_289f1ec940a22d13
@@ -580,7 +580,7 @@ localizeentry,d#hash_28f8d698fe4d79d2
 localizeentry,d#zmui/high_caliber_2_desc
 localizeentry,#hash_29031105ee9e8223
 localizeentry,d#hash_290718641d507e03
-localizeentry,d#hash_292f7fe53e245549
+localizeentry,d#mpui/speedreloader_short
 localizeentry,#menu/fileshare_upload_desc
 localizeentry,#hash_29518f90e27d3ee4
 localizeentry,d#hash_2958a49de1cce7d2
@@ -605,7 +605,7 @@ localizeentry,d#hash_2aa6fa1848766679
 localizeentry,#hash_2aac97940a325bb2
 localizeentry,#hash_2ac7a1712edaae1c
 localizeentry,#hash_2afe1c9235ce67ab
-localizeentry,d#hash_2b0fae1c09a3d8a9
+localizeentry,d#menu/camo_loot_zombie_flick
 localizeentry,#menu/charm_skeleton_key
 localizeentry,#menu/charm_tanuki
 localizeentry,#zmtrials/into_the_pit
@@ -683,7 +683,7 @@ localizeentry,#hash_30f600e52b287acf
 localizeentry,#zmweapon/sniper_mini14_t8_upgraded
 localizeentry,#zmtrials/pack_it_in
 localizeentry,#hash_31952300837d21df
-localizeentry,d#hash_31b306d62e0772db
+localizeentry,d#mpui/mms_short
 localizeentry,d#hash_31e9d057a03398bf
 localizeentry,d#hash_31eb9f45ee1fdeb3
 localizeentry,d#hash_31f132f1f3d76f52
@@ -709,7 +709,7 @@ localizeentry,#zmweapon/tr_midburst_t8_upgraded
 localizeentry,#hash_3341155142b0403b
 localizeentry,#hash_3367be9cb3de4426
 localizeentry,#hash_339befde77b1050d
-localizeentry,d#hash_33b1332591b8841d
+localizeentry,d#zmui/takeo_primis_trait
 localizeentry,#hash_33b2a75725cd237c
 localizeentry,d#hash_33ba5b935d8a0407
 localizeentry,#hash_33c0a0187098e7d7
@@ -762,7 +762,7 @@ localizeentry,d#menu/back
 localizeentry,d#hash_3711e06035d8ba03
 localizeentry,#zmtrials/you_made_your_points_desc
 localizeentry,d#hash_37235825812d46c6
-localizeentry,#hash_373b7a84e7ac2c2e
+localizeentry,#menu/death_effects_water
 localizeentry,d#hash_37502c0724396be2
 localizeentry,#hash_37705bc03bf50c48
 localizeentry,d#hash_37ac50379bd7d5fa
@@ -790,7 +790,7 @@ localizeentry,#zmweapon/special_crossbow_upgraded
 localizeentry,#menu/fileshare_upload_caps
 localizeentry,d#hash_38ed3ff8bccdd054
 localizeentry,d#menu/camo_loot_streetrace
-localizeentry,#hash_3923a71aa4a500e1
+localizeentry,#zombie/self_revive_interact
 localizeentry,d#menu/new
 localizeentry,d#mpui/killcounter
 localizeentry,d#warzone/start_warzone
@@ -1025,7 +1025,7 @@ localizeentry,d#hash_4825501685c8a792
 localizeentry,#menu/fileshare_permissions
 localizeentry,d#hash_4861ed6423ebd90e
 localizeentry,d#hash_486d9ecdf4662ceb
-localizeentry,d#hash_4884603e50bf2daf
+localizeentry,d#mpui/swayreduc_short
 localizeentry,d#hash_48ac48b3c418558f
 localizeentry,#hash_48c14c4d6d2739f3
 localizeentry,#menu/charm_pizza
@@ -1088,7 +1088,7 @@ localizeentry,d#mpui/quickdraw
 localizeentry,d#hash_4d54c1d40671f22f
 localizeentry,#zmtrials/perk_up_desc
 localizeentry,#hash_4db6e7d2bf1432da
-localizeentry,d#hash_4db8f6557b2d74bd
+localizeentry,d#mpui/hipgrip_short
 localizeentry,#zmweapon/shotgun_pump_t8_upgraded
 localizeentry,#hash_4ddc1166e6112c8b
 localizeentry,#zmweapon/bowie
@@ -1263,7 +1263,7 @@ localizeentry,d#mpui/steadyaim2_desc
 localizeentry,#hash_581f48e2025c4244
 localizeentry,d#menu/camo_loot_bacon
 localizeentry,d#hash_583aeb2f06dde8ae
-localizeentry,d#hash_5881b0c27f12ecc9
+localizeentry,d#mpui/extclip_short
 localizeentry,#weapon/hero_chakram
 localizeentry,#hash_58a35778e95f4ce6
 localizeentry,d#zmui/zodt8
@@ -1281,7 +1281,7 @@ localizeentry,d#hash_59a474974bec49b5
 localizeentry,#hash_59b08fe740cba9f8
 localizeentry,d#hash_59b8455b75ca4f45
 localizeentry,#hash_59f3691e270c0200
-localizeentry,#hash_59fa842fea782ea2
+localizeentry,#menu/death_effects_ice
 localizeentry,d#mpui/grip2
 localizeentry,#hash_5a10ab25dcc5374b
 localizeentry,#hash_5a22506aa046b5ff
@@ -1342,7 +1342,7 @@ localizeentry,#hash_5d6a837091f6ae5a
 localizeentry,#hash_5d81af6a5a2795d3
 localizeentry,d#hash_5d8a91c43216643a
 localizeentry,d#hash_5d986f1a4d6b83bd
-localizeentry,d#hash_5dc620aa9640e528
+localizeentry,d#menu/camo_loot_apb
 localizeentry,d#hash_5de28a4d70b730e1
 localizeentry,#hash_5dea3ff257cadc1b
 localizeentry,d#hash_5df50ce2dd193b5b
@@ -1531,7 +1531,7 @@ localizeentry,#hash_66c22a2b30e4576d
 localizeentry,d#hash_66d33b296eb64fbc
 localizeentry,d#mpui/stalker2
 localizeentry,#hash_677981ecc7a47108
-localizeentry,d#hash_6782822603c5acfc
+localizeentry,d#mpui/acog_short
 localizeentry,d#hash_6798dec552052dcd
 localizeentry,d#weapon/uber_sentrygrip
 localizeentry,#hash_67afe13d603b7c17
@@ -1648,7 +1648,7 @@ localizeentry,d#hash_70cfbdea2c6374c7
 localizeentry,#hash_70da6c04bd088333
 localizeentry,d#menu/yes
 localizeentry,#zmui/carbon_combo_desc
-localizeentry,d#hash_711dbe28b50de6b7
+localizeentry,d#mpui/steadyaim_short
 localizeentry,d#hash_711e01fdec193fa1
 localizeentry,d#presence/zm_towers
 localizeentry,d#hash_714cce81de873f11

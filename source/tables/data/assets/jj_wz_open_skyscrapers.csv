@@ -176,7 +176,7 @@ localizeentry,d#hash_1bd01414ff19ee0a
 localizeentry,d#hash_1bf992decba13b2b
 localizeentry,d#menu/triple_kill
 localizeentry,d#hash_1c067a1967345eb9
-localizeentry,d#hash_1c07c87a45375aaf
+localizeentry,d#menu/camo_loot_party_rock
 localizeentry,#menu/aim_down_the_sight
 localizeentry,d#hash_1c70bbcd2c405970
 localizeentry,d#mpui/camo_integer
@@ -294,7 +294,7 @@ localizeentry,d#hash_2ab30ae80d7cd215
 localizeentry,d#weapon/smg_fastfire_t8_operator_desc
 localizeentry,d#weapon/ar_doublebarrel_t8
 localizeentry,d#hash_2b0e1f9a3a18912b
-localizeentry,d#hash_2b0fae1c09a3d8a9
+localizeentry,d#menu/camo_loot_zombie_flick
 localizeentry,d#menu/free_look
 localizeentry,d#hash_2b13aa9e715385af
 localizeentry,d#hash_2b2096d421c8cd24
@@ -662,7 +662,7 @@ localizeentry,#weapon/pistol_standard_t8_wz_desc
 localizeentry,d#menu/hud_vehicle_steer
 localizeentry,d#menu/aim_down_sight
 localizeentry,d#weapon/tomahawk_t8
-localizeentry,d#hash_5dc620aa9640e528
+localizeentry,d#menu/camo_loot_apb
 localizeentry,d#hash_5de28a4d70b730e1
 localizeentry,d#hash_5deb16df644e7e5e
 localizeentry,d#hash_5df50ce2dd193b5b

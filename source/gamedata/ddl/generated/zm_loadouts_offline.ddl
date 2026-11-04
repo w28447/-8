@@ -395,7 +395,7 @@ version 77 {
     // offset 0x82d80, size 0x1
     bool loadoutinitialized;
     // offset 0x82d81, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x82dc1, size 0x7
     uint:1 __pad[7];
 }
@@ -798,7 +798,7 @@ version 76 {
     // offset 0x71500, size 0x1
     bool loadoutinitialized;
     // offset 0x71501, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x71541, size 0x7
     uint:1 __pad[7];
 }
@@ -1201,7 +1201,7 @@ version 75 {
     // offset 0x68500, size 0x1
     bool loadoutinitialized;
     // offset 0x68501, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x68541, size 0x7
     uint:1 __pad[7];
 }
@@ -1604,7 +1604,7 @@ version 74 {
     // offset 0x67fb0, size 0x1
     bool loadoutinitialized;
     // offset 0x67fb1, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x67ff1, size 0x7
     uint:1 __pad[7];
 }
@@ -2007,7 +2007,7 @@ version 73 {
     // offset 0x67fb0, size 0x1
     bool loadoutinitialized;
     // offset 0x67fb1, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x67ff1, size 0x7
     uint:1 __pad[7];
 }
@@ -2410,7 +2410,7 @@ version 72 {
     // offset 0x67fb0, size 0x1
     bool loadoutinitialized;
     // offset 0x67fb1, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x67ff1, size 0x7
     uint:1 __pad[7];
 }
@@ -2813,7 +2813,7 @@ version 71 {
     // offset 0x67fb0, size 0x1
     bool loadoutinitialized;
     // offset 0x67fb1, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x67ff1, size 0x7
     uint:1 __pad[7];
 }
@@ -3216,7 +3216,7 @@ version 70 {
     // offset 0x67fb0, size 0x1
     bool loadoutinitialized;
     // offset 0x67fb1, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x67ff1, size 0x7
     uint:1 __pad[7];
 }
@@ -3615,7 +3615,7 @@ version 69 {
     // offset 0x678d0, size 0x1
     bool loadoutinitialized;
     // offset 0x678d1, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x67911, size 0x7
     uint:1 __pad[7];
 }
@@ -4014,7 +4014,7 @@ version 68 {
     // offset 0x678d0, size 0x1
     bool loadoutinitialized;
     // offset 0x678d1, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x67911, size 0x7
     uint:1 __pad[7];
 }
@@ -4413,7 +4413,7 @@ version 67 {
     // offset 0x4f8d0, size 0x1
     bool loadoutinitialized;
     // offset 0x4f8d1, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x4f911, size 0x7
     uint:1 __pad[7];
 }
@@ -4814,7 +4814,7 @@ version 66 {
     // offset 0x501d0, size 0x1
     bool loadoutinitialized;
     // offset 0x501d1, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x50211, size 0x7
     uint:1 __pad[7];
 }
@@ -5217,7 +5217,7 @@ version 65 {
     // offset 0x51cd0, size 0x1
     bool loadoutinitialized;
     // offset 0x51cd1, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x51d11, size 0x7
     uint:1 __pad[7];
 }
@@ -5616,7 +5616,7 @@ version 64 {
     // offset 0x51460, size 0x1
     bool loadoutinitialized;
     // offset 0x51461, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x514a1, size 0x7
     uint:1 __pad[7];
 }
@@ -6013,7 +6013,7 @@ version 63 {
     // offset 0x51460, size 0x1
     bool loadoutinitialized;
     // offset 0x51461, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x514a1, size 0x7
     uint:1 __pad[7];
 }
@@ -6410,7 +6410,7 @@ version 62 {
     // offset 0x39460, size 0x1
     bool loadoutinitialized;
     // offset 0x39461, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x394a1, size 0x7
     uint:1 __pad[7];
 }
@@ -6807,7 +6807,7 @@ version 61 {
     // offset 0x39460, size 0x1
     bool loadoutinitialized;
     // offset 0x39461, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x394a1, size 0x7
     uint:1 __pad[7];
 }
@@ -7189,7 +7189,7 @@ version 60 {
     // offset 0x38b60, size 0x1
     bool loadoutinitialized;
     // offset 0x38b61, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x38ba1, size 0x7
     uint:1 __pad[7];
 }
@@ -7571,7 +7571,7 @@ version 59 {
     // offset 0x38b60, size 0x1
     bool loadoutinitialized;
     // offset 0x38b61, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x38ba1, size 0x7
     uint:1 __pad[7];
 }
@@ -7953,7 +7953,7 @@ version 58 {
     // offset 0x38890, size 0x1
     bool loadoutinitialized;
     // offset 0x38891, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x388d1, size 0x7
     uint:1 __pad[7];
 }
@@ -8329,7 +8329,7 @@ version 57 {
     // offset 0x2c710, size 0x1
     bool loadoutinitialized;
     // offset 0x2c711, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x2c751, size 0x7
     uint:1 __pad[7];
 }
@@ -8701,7 +8701,7 @@ version 56 {
     // offset 0x2c710, size 0x1
     bool loadoutinitialized;
     // offset 0x2c711, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x2c751, size 0x7
     uint:1 __pad[7];
 }
@@ -9073,7 +9073,7 @@ version 55 {
     // offset 0x37f10, size 0x1
     bool loadoutinitialized;
     // offset 0x37f11, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x37f51, size 0x7
     uint:1 __pad[7];
 }
@@ -9445,7 +9445,7 @@ version 54 {
     // offset 0x37f10, size 0x1
     bool loadoutinitialized;
     // offset 0x37f11, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x37f51, size 0x7
     uint:1 __pad[7];
 }
@@ -9815,7 +9815,7 @@ version 53 {
     // offset 0x36e30, size 0x1
     bool loadoutinitialized;
     // offset 0x36e31, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x36e71, size 0x7
     uint:1 __pad[7];
 }
@@ -10181,7 +10181,7 @@ version 52 {
     // offset 0x36e30, size 0x1
     bool loadoutinitialized;
     // offset 0x36e31, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x36e71, size 0x7
     uint:1 __pad[7];
 }
@@ -10547,7 +10547,7 @@ version 51 {
     // offset 0x36e30, size 0x1
     bool loadoutinitialized;
     // offset 0x36e31, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x36e71, size 0x7
     uint:1 __pad[7];
 }
@@ -10909,7 +10909,7 @@ version 50 {
     // offset 0x36e30, size 0x1
     bool loadoutinitialized;
     // offset 0x36e31, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x36e71, size 0x7
     uint:1 __pad[7];
 }
@@ -11269,7 +11269,7 @@ version 49 {
     // offset 0x36b60, size 0x1
     bool loadoutinitialized;
     // offset 0x36b61, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x36ba1, size 0x7
     uint:1 __pad[7];
 }
@@ -11629,7 +11629,7 @@ version 48 {
     // offset 0x36b60, size 0x1
     bool loadoutinitialized;
     // offset 0x36b61, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x36ba1, size 0x7
     uint:1 __pad[7];
 }
@@ -11989,7 +11989,7 @@ version 47 {
     // offset 0x36b60, size 0x1
     bool loadoutinitialized;
     // offset 0x36b61, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x36ba1, size 0x7
     uint:1 __pad[7];
 }
@@ -12234,7 +12234,7 @@ version 46 {
     };
 
     // idx 16 members 1 size 0x8
-    struct hash_22abd41674c242a4 {
+    struct wzcharacteroutfit {
         // offset 0x0, size 0x8
         bool selectedcomponent[hash_5ab26f037efe82c];
     };
@@ -12248,7 +12248,7 @@ version 46 {
         // offset 0x108, size 0x148
         variant showcaseweapon;
         // offset 0x250, size 0x100
-        hash_22abd41674c242a4 hash_e5c77948998e49[32];
+        wzcharacteroutfit hash_e5c77948998e49[32];
     };
 
     // idx 18 members 4 size 0x58
@@ -12379,7 +12379,7 @@ version 46 {
     // offset 0x42b60, size 0x1
     bool loadoutinitialized;
     // offset 0x42b61, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x42ba1, size 0x7
     uint:1 __pad[7];
 }
@@ -12624,7 +12624,7 @@ version 45 {
     };
 
     // idx 16 members 1 size 0x8
-    struct hash_22abd41674c242a4 {
+    struct wzcharacteroutfit {
         // offset 0x0, size 0x8
         bool selectedcomponent[hash_5ab26f037efe82c];
     };
@@ -12638,7 +12638,7 @@ version 45 {
         // offset 0x108, size 0x148
         variant showcaseweapon;
         // offset 0x250, size 0x100
-        hash_22abd41674c242a4 hash_e5c77948998e49[32];
+        wzcharacteroutfit hash_e5c77948998e49[32];
     };
 
     // idx 18 members 4 size 0x58
@@ -12767,7 +12767,7 @@ version 45 {
     // offset 0x42b50, size 0x1
     bool loadoutinitialized;
     // offset 0x42b51, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x42b91, size 0x7
     uint:1 __pad[7];
 }
@@ -13012,7 +13012,7 @@ version 44 {
     };
 
     // idx 16 members 1 size 0x8
-    struct hash_22abd41674c242a4 {
+    struct wzcharacteroutfit {
         // offset 0x0, size 0x8
         bool selectedcomponent[hash_5ab26f037efe82c];
     };
@@ -13026,7 +13026,7 @@ version 44 {
         // offset 0x108, size 0x148
         variant showcaseweapon;
         // offset 0x250, size 0x100
-        hash_22abd41674c242a4 hash_e5c77948998e49[32];
+        wzcharacteroutfit hash_e5c77948998e49[32];
     };
 
     // idx 18 members 4 size 0x58
@@ -13155,7 +13155,7 @@ version 44 {
     // offset 0x42850, size 0x1
     bool loadoutinitialized;
     // offset 0x42851, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x42891, size 0x7
     uint:1 __pad[7];
 }
@@ -13404,7 +13404,7 @@ version 43 {
     };
 
     // idx 17 members 1 size 0x8
-    struct hash_22abd41674c242a4 {
+    struct wzcharacteroutfit {
         // offset 0x0, size 0x8
         bool selectedcomponent[hash_5ab26f037efe82c];
     };
@@ -13418,7 +13418,7 @@ version 43 {
         // offset 0x808, size 0x148
         variant showcaseweapon;
         // offset 0x950, size 0x100
-        hash_22abd41674c242a4 hash_e5c77948998e49[32];
+        wzcharacteroutfit hash_e5c77948998e49[32];
     };
 
     // idx 19 members 4 size 0x58
@@ -13547,7 +13547,7 @@ version 43 {
     // offset 0x36850, size 0x1
     bool loadoutinitialized;
     // offset 0x36851, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x36891, size 0x7
     uint:1 __pad[7];
 }
@@ -13794,7 +13794,7 @@ version 42 {
     };
 
     // idx 17 members 1 size 0x8
-    struct hash_22abd41674c242a4 {
+    struct wzcharacteroutfit {
         // offset 0x0, size 0x8
         bool selectedcomponent[hash_5ab26f037efe82c];
     };
@@ -13808,7 +13808,7 @@ version 42 {
         // offset 0x808, size 0x148
         variant showcaseweapon;
         // offset 0x950, size 0x100
-        hash_22abd41674c242a4 hash_e5c77948998e49[32];
+        wzcharacteroutfit hash_e5c77948998e49[32];
     };
 
     // idx 19 members 4 size 0x58
@@ -13937,7 +13937,7 @@ version 42 {
     // offset 0x36850, size 0x1
     bool loadoutinitialized;
     // offset 0x36851, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x36891, size 0x7
     uint:1 __pad[7];
 }
@@ -14184,7 +14184,7 @@ version 41 {
     };
 
     // idx 17 members 1 size 0x8
-    struct hash_22abd41674c242a4 {
+    struct wzcharacteroutfit {
         // offset 0x0, size 0x8
         bool selectedcomponent[hash_5ab26f037efe82c];
     };
@@ -14198,7 +14198,7 @@ version 41 {
         // offset 0x808, size 0x148
         variant showcaseweapon;
         // offset 0x950, size 0x100
-        hash_22abd41674c242a4 hash_e5c77948998e49[32];
+        wzcharacteroutfit hash_e5c77948998e49[32];
     };
 
     // idx 19 members 4 size 0x58
@@ -14327,7 +14327,7 @@ version 41 {
     // offset 0x36850, size 0x1
     bool loadoutinitialized;
     // offset 0x36851, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x36891, size 0x7
     uint:1 __pad[7];
 }
@@ -14574,7 +14574,7 @@ version 40 {
     };
 
     // idx 17 members 1 size 0x8
-    struct hash_22abd41674c242a4 {
+    struct wzcharacteroutfit {
         // offset 0x0, size 0x8
         bool selectedcomponent[hash_5ab26f037efe82c];
     };
@@ -14588,7 +14588,7 @@ version 40 {
         // offset 0x808, size 0x148
         variant showcaseweapon;
         // offset 0x950, size 0x100
-        hash_22abd41674c242a4 hash_e5c77948998e49[32];
+        wzcharacteroutfit hash_e5c77948998e49[32];
     };
 
     // idx 19 members 4 size 0x58
@@ -14707,7 +14707,7 @@ version 40 {
     // offset 0x30520, size 0x1
     bool loadoutinitialized;
     // offset 0x30521, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x30561, size 0x7
     uint:1 __pad[7];
 }
@@ -14954,7 +14954,7 @@ version 39 {
     };
 
     // idx 17 members 1 size 0x8
-    struct hash_22abd41674c242a4 {
+    struct wzcharacteroutfit {
         // offset 0x0, size 0x8
         bool selectedcomponent[hash_5ab26f037efe82c];
     };
@@ -14968,7 +14968,7 @@ version 39 {
         // offset 0x808, size 0x148
         variant showcaseweapon;
         // offset 0x950, size 0x100
-        hash_22abd41674c242a4 hash_e5c77948998e49[32];
+        wzcharacteroutfit hash_e5c77948998e49[32];
     };
 
     // idx 19 members 4 size 0x58
@@ -15087,7 +15087,7 @@ version 39 {
     // offset 0x30520, size 0x1
     bool loadoutinitialized;
     // offset 0x30521, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x30561, size 0x7
     uint:1 __pad[7];
 }
@@ -15336,7 +15336,7 @@ version 38 {
     };
 
     // idx 17 members 1 size 0x8
-    struct hash_22abd41674c242a4 {
+    struct wzcharacteroutfit {
         // offset 0x0, size 0x8
         bool selectedcomponent[hash_5ab26f037efe82c];
     };
@@ -15350,7 +15350,7 @@ version 38 {
         // offset 0x808, size 0x148
         variant showcaseweapon;
         // offset 0x950, size 0x100
-        hash_22abd41674c242a4 hash_e5c77948998e49[32];
+        wzcharacteroutfit hash_e5c77948998e49[32];
     };
 
     // idx 19 members 4 size 0x58
@@ -15469,7 +15469,7 @@ version 38 {
     // offset 0x33af0, size 0x1
     bool loadoutinitialized;
     // offset 0x33af1, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x33b31, size 0x7
     uint:1 __pad[7];
 }
@@ -15716,7 +15716,7 @@ version 37 {
     };
 
     // idx 17 members 1 size 0x8
-    struct hash_22abd41674c242a4 {
+    struct wzcharacteroutfit {
         // offset 0x0, size 0x8
         bool selectedcomponent[hash_5ab26f037efe82c];
     };
@@ -15730,7 +15730,7 @@ version 37 {
         // offset 0x808, size 0x148
         variant showcaseweapon;
         // offset 0x950, size 0x100
-        hash_22abd41674c242a4 hash_e5c77948998e49[32];
+        wzcharacteroutfit hash_e5c77948998e49[32];
     };
 
     // idx 19 members 4 size 0x58
@@ -15849,7 +15849,7 @@ version 37 {
     // offset 0x325f0, size 0x1
     bool loadoutinitialized;
     // offset 0x325f1, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x32631, size 0x7
     uint:1 __pad[7];
 }
@@ -16096,7 +16096,7 @@ version 36 {
     };
 
     // idx 17 members 2 size 0x8
-    struct hash_22abd41674c242a4 {
+    struct wzcharacteroutfit {
         // offset 0x0, size 0x7
         bool selectedcomponent[hash_5ab26f037efe82c];
         // offset 0x7, size 0x1
@@ -16112,7 +16112,7 @@ version 36 {
         // offset 0x708, size 0x148
         variant showcaseweapon;
         // offset 0x850, size 0x100
-        hash_22abd41674c242a4 hash_e5c77948998e49[32];
+        wzcharacteroutfit hash_e5c77948998e49[32];
     };
 
     // idx 19 members 4 size 0x58
@@ -16230,7 +16230,7 @@ version 36 {
     // offset 0x2d1f0, size 0x1
     bool loadoutinitialized;
     // offset 0x2d1f1, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x2d231, size 0x7
     uint:1 __pad[7];
 }
@@ -16477,7 +16477,7 @@ version 35 {
     };
 
     // idx 17 members 2 size 0x8
-    struct hash_22abd41674c242a4 {
+    struct wzcharacteroutfit {
         // offset 0x0, size 0x7
         bool selectedcomponent[hash_5ab26f037efe82c];
         // offset 0x7, size 0x1
@@ -16493,7 +16493,7 @@ version 35 {
         // offset 0xe8, size 0x148
         variant showcaseweapon;
         // offset 0x230, size 0x20
-        hash_22abd41674c242a4 hash_e5c77948998e49[4];
+        wzcharacteroutfit hash_e5c77948998e49[4];
     };
 
     // idx 19 members 4 size 0x58
@@ -16611,7 +16611,7 @@ version 35 {
     // offset 0x2d1f0, size 0x1
     bool loadoutinitialized;
     // offset 0x2d1f1, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x2d231, size 0x7
     uint:1 __pad[7];
 }
@@ -16858,7 +16858,7 @@ version 34 {
     };
 
     // idx 17 members 2 size 0x8
-    struct hash_22abd41674c242a4 {
+    struct wzcharacteroutfit {
         // offset 0x0, size 0x7
         bool selectedcomponent[hash_5ab26f037efe82c];
         // offset 0x7, size 0x1
@@ -16872,7 +16872,7 @@ version 34 {
         // offset 0x38, size 0x148
         variant showcaseweapon;
         // offset 0x180, size 0x8
-        hash_22abd41674c242a4 hash_e5c77948998e49[1];
+        wzcharacteroutfit hash_e5c77948998e49[1];
         // offset 0x188, size 0x1
         bool selectedoutfit;
         // offset 0x189, size 0x7
@@ -16994,7 +16994,7 @@ version 34 {
     // offset 0x2d1f0, size 0x1
     bool loadoutinitialized;
     // offset 0x2d1f1, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x2d231, size 0x7
     uint:1 __pad[7];
 }
@@ -17360,7 +17360,7 @@ version 33 {
     // offset 0x58b80, size 0x1
     bool loadoutinitialized;
     // offset 0x58b81, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x58bc1, size 0x7
     uint:1 __pad[7];
 }
@@ -17726,7 +17726,7 @@ version 32 {
     // offset 0x316c0, size 0x1
     bool loadoutinitialized;
     // offset 0x316c1, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x31701, size 0x7
     uint:1 __pad[7];
 }

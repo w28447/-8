@@ -1098,7 +1098,7 @@ xanim,#vm_raygun_ads_base_down
 xanim,#hash_8f4f9a9f6490850
 xanim,#ai_zombie_base_walk_ad_v19_pain_chest_f
 xanim,#pt_grenade_prone_throw
-xanim,#hash_923a7a2394d952d
+xanim,#p8_fxanim_zm_esc_crane_dock_rotate_anim
 xanim,#vm_minigun_first_raise
 xanim,#p7_fxanim_gp_wire_sparking_xsml_anim
 xanim,#hash_956f3dc65edf006
@@ -1779,7 +1779,7 @@ xanim,#hash_2b85c7425b1da305
 xanim,#hash_2b863c5202f3c555
 xanim,#vm_minigun_sprint_putaway
 xanim,#pt_katana_stand_melee
-xanim,#hash_2bf732b76b5383ba
+xanim,#p8_fxanim_zm_esc_crane_skeleton_arm_fall_anim
 xanim,#p8_fxanim_zm_esc_warden_powerbox_off
 xanim,#hash_2c0f4b5c4f699248
 xanim,#vm_ww_blundergat_swim_uw_putaway
@@ -1905,7 +1905,7 @@ xanim,#vm_smg_thompson_reload_empty
 xanim,#ai_zombie_cp_crawl_jump_up_128_down_32
 xanim,#bo3_ai_crew_cougar_guy0_exit
 xanim,#vm_smg_thompson_sprint_drop
-xanim,#hash_32b13c90c94b5fed
+xanim,#p8_fxanim_zm_esc_wardensattic_reveal_lights_anim
 xanim,#vm_tomahawk_first_raise_additive
 xanim,#hash_32edec21e50d0a84
 xanim,#ai_t8_zm_zombie_base_trv_mantle_window_34
@@ -2118,7 +2118,7 @@ xanim,#ai_t8_zm_zombie_base_crawl_trv_jump_up_128_thru_sm_hole
 xanim,#p8_fxanim_zm_esc_power_panel_phouse_02_green_anim
 xanim,#vm_zom_raygun_mk2_putaway
 xanim,#hash_3f98a5c7d9930100
-xanim,#hash_3fbc33140c093c0d
+xanim,#p8_fxanim_zm_esc_crane_water_rotate_anim
 xanim,#vm_ww_acidgat_fire
 xanim,#p8_fxanim_zm_esc_pakasplat_start_anim
 xanim,#ch_vign_zm_mob_brutus_monologue
@@ -3836,7 +3836,7 @@ string,#hash_1960a6223dd21d1a
 string,#mpui/barrelchoke
 string,#hash_1a1e29920a655055
 string,#zm_escape/location_model_industries
-string,#hash_1c07c87a45375aaf
+string,#menu/camo_loot_party_rock
 string,#hash_1c085e4db0b218f9
 string,#mpui/camo_integer
 string,#hash_1cba478a3a2ba155
@@ -3893,7 +3893,7 @@ string,#hash_2a634db8501d93aa
 string,#hash_2a77221ed09d2928
 string,#hash_2a941f3e7eaeef08
 string,#hash_2aa6fa1848766679
-string,#hash_2b0fae1c09a3d8a9
+string,#menu/camo_loot_zombie_flick
 string,#hash_2b27d20d2cfc1069
 string,#hash_2b3d791eb05ec296
 string,#mpui/camo_ardent
@@ -4106,7 +4106,7 @@ string,#mpui/mms_desc
 string,#zm_escape/location_recreation_yard
 string,#zm_escape/location_model_industries_upper
 string,#hash_5da659405984efa3
-string,#hash_5dc620aa9640e528
+string,#menu/camo_loot_apb
 string,#hash_5df6d2cb44680b92
 string,#hash_5e20d087e1e88e10
 string,#hash_5e2c81adb5a5264a
@@ -10164,7 +10164,7 @@ client_fx,#hash_2a9ea20e6cb5f0fb
 client_fx,#maps/zm_escape/fx8_ghost_boat
 client_fx,#maps/zm_escape/fx8_magicbox_opened
 client_fx,#explosions/fx8_exp_grenade_snow
-client_fx,#hash_2b008afec3e70add
+client_fx,#maps/zm_escape/fx8_magicbox_depart
 client_fx,#hash_2b3a857498481375
 client_fx,#zm_weapons/fx8_raygun2_ug_world
 client_fx,#fire/fx_fire_ai_human_leg_left_loop
@@ -10253,7 +10253,7 @@ client_fx,#impacts/fx_bul_impact_heavy_body_fatal_exit
 client_fx,#hash_4835bd332e8a78c7
 client_fx,#zombie/fx_idgun_vortex_ug_zod_zmb
 client_fx,#vehicle/fx_treadfx_asphalt_skid_emit
-client_fx,#hash_4948d849a833ddd5
+client_fx,#maps/zm_escape/fx8_shield_residue
 client_fx,#hash_4973de04558acdb1
 client_fx,#hash_49caec92b1b2f865
 client_fx,#vehicle/fx_treadfx_snow_skid_emit

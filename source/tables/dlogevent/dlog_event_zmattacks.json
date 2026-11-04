@@ -271,7 +271,7 @@
         },
         {
             "name": "#attackerignoreall",
-            "scrName": "#hash_b88cee53",
+            "scrName": "#attackerignoreall",
             "type": "INT32"
         },
         {

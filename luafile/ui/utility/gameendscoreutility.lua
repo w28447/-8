@@ -883,7 +883,7 @@ DataSources.HighValueOperatives = DataSourceHelpers.ListSetup( "HighValueOperati
 			end
 		end
 		local f34_local6 = f34_local0
-		local f34_local1 = f34_arg0[0x3CD44D4A96C9C93]
+		local f34_local1 = f34_arg0.defaultimage
 		if not f34_local1 then
 			f34_local1 = f34_local6 or "blacktransparent"
 		end

@@ -115,7 +115,7 @@
         },
         {
             "name": "#start_event",
-            "scrName": "#hash_82d60791",
+            "scrName": "#start_event",
             "type": "BOOL"
         }
     ],

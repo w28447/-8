@@ -447,7 +447,7 @@ localizeentry,#hash_f3ff5db578adcd9
 localizeentry,#zombie/item_meat
 localizeentry,d#hash_f60cd1936dfe2ae
 localizeentry,#hash_f6a44df421be4c6
-localizeentry,d#hash_fbcfc36f0c79d9a
+localizeentry,d#mpui/tank_commands
 localizeentry,#hash_fc714290197baba
 localizeentry,#hash_fd28dd6eff4a497
 localizeentry,#hash_ff6514d651f9ff6
@@ -758,7 +758,7 @@ localizeentry,#hash_1b16ce60e5decec0
 localizeentry,#hash_1b16d060e5ded226
 localizeentry,#hash_1b16d160e5ded3d9
 localizeentry,#hash_1b16d360e5ded73f
-localizeentry,#hash_1b1948d30c6b8ec9
+localizeentry,#zm_zodt8/pickup_radiance
 localizeentry,#hash_1b1b588e76d39bc0
 localizeentry,#hash_1b1b5d8e76d3a43f
 localizeentry,#hash_1b1b5e8e76d3a5f2
@@ -775,7 +775,7 @@ localizeentry,#hash_1b69eefaf50c1bde
 localizeentry,#zm_zodt8/location_galley
 localizeentry,#hash_1b7703a4b199e9ff
 localizeentry,#hash_1b7cc06fbd95025f
-localizeentry,#hash_1b7e2d2bbc1de36a
+localizeentry,#zm_zodt8/pickup_decay_keyboard
 localizeentry,#hash_1b8956a56ef1f7e3
 localizeentry,#hash_1b895ba56ef20062
 localizeentry,#hash_1b895ca56ef20215
@@ -794,7 +794,7 @@ localizeentry,#hash_1bc42f9b18d8d23f
 localizeentry,d#hash_1bd01414ff19ee0a
 localizeentry,#hash_1bf805d49b9b3a01
 localizeentry,d#menu/triple_kill
-localizeentry,d#hash_1c07c87a45375aaf
+localizeentry,d#menu/camo_loot_party_rock
 localizeentry,#hash_1c085e4db0b218f9
 localizeentry,#hash_1c162f9eaf1a6203
 localizeentry,#hash_1c16329eaf1a671c
@@ -827,7 +827,7 @@ localizeentry,#hash_1d036c8b1510d632
 localizeentry,d#mpui/tank_inbound
 localizeentry,#hash_1d35ea46da22acaa
 localizeentry,#hash_1d3902dc8322b955
-localizeentry,#hash_1da4ec6fc5b6b9e6
+localizeentry,#zm_zodt8/pickup_plasma
 localizeentry,#hash_1dc8421f2e165fc4
 localizeentry,#hash_1deb745365a6cfdd
 localizeentry,d#zmui/mms_desc
@@ -862,7 +862,7 @@ localizeentry,#hash_1fafd0695de03324
 localizeentry,#hash_1fbf90b4e33dd110
 localizeentry,#hash_1fbf96b4e33ddb42
 localizeentry,#hash_1fbf97b4e33ddcf5
-localizeentry,#hash_1fe854f6441b337e
+localizeentry,#zm_zodt8/pickup_decay
 localizeentry,#hash_1fee0c209c43286b
 localizeentry,#hash_1fee0f209c432d84
 localizeentry,#hash_1fee11209c4330ea
@@ -922,7 +922,7 @@ localizeentry,#hash_225c691a4cc0f596
 localizeentry,#hash_225c6a1a4cc0f749
 localizeentry,#hash_225c6c1a4cc0faaf
 localizeentry,d#menu/camo_loot_seaflake
-localizeentry,#hash_229521ee4f96b6db
+localizeentry,#zm_zodt8/craft_distillation_kit
 localizeentry,#hash_229651b097292334
 localizeentry,d#menu/camo_loot_astronomy
 localizeentry,#hash_22fd2373769eb158
@@ -1075,7 +1075,7 @@ localizeentry,#hash_29942b066bec9a98
 localizeentry,#hash_29942c066bec9c4b
 localizeentry,#hash_29942e066bec9fb1
 localizeentry,#hash_299431066beca4ca
-localizeentry,#hash_29b72f36c8ee8557
+localizeentry,#zm_zodt8/pickup_radiance_keyboard
 localizeentry,d#hash_29c8316725752063
 localizeentry,d#mpui/camo_active_kill_counter
 localizeentry,d#menu/x_kills
@@ -1117,7 +1117,7 @@ localizeentry,d#hash_2aa6fa1848766679
 localizeentry,#hash_2aaa58d195779a1c
 localizeentry,#hash_2aaf16c14ba25bd4
 localizeentry,#hash_2b0a7eea7d5837b2
-localizeentry,d#hash_2b0fae1c09a3d8a9
+localizeentry,d#menu/camo_loot_zombie_flick
 localizeentry,d#hash_2b27d20d2cfc1069
 localizeentry,#hash_2b3bb217a51771eb
 localizeentry,d#hash_2b3d791eb05ec296
@@ -1205,7 +1205,7 @@ localizeentry,#hash_2e816a34f4c828df
 localizeentry,d#mpui/reflex
 localizeentry,#hash_2ea09148e2b8bef7
 localizeentry,d#hash_2ea2a5c77a5deb75
-localizeentry,#hash_2eb14d935f8e39c2
+localizeentry,#zm_zodt8/pickup_plasma_keyboard
 localizeentry,#hash_2eb9fe0bb50d3361
 localizeentry,d#hash_2ec61c43d90fcf56
 localizeentry,#hash_2ee972150b394c38
@@ -2510,7 +2510,7 @@ localizeentry,#hash_5db59d42b6f19c51
 localizeentry,#hash_5db59e42b6f19e04
 localizeentry,#hash_5db59f42b6f19fb7
 localizeentry,#hash_5db5a042b6f1a16a
-localizeentry,d#hash_5dc620aa9640e528
+localizeentry,d#menu/camo_loot_apb
 localizeentry,d#hash_5de28a4d70b730e1
 localizeentry,#hash_5de2aa8056027fee
 localizeentry,#hash_5de9dee0c0a470e5
@@ -2749,7 +2749,7 @@ localizeentry,#hash_667ba4278a0cce7e
 localizeentry,#hash_667ba6278a0cd1e4
 localizeentry,#hash_667ba7278a0cd397
 localizeentry,#hash_667ba9278a0cd6fd
-localizeentry,#hash_669c0c5deaada19f
+localizeentry,#zm_zodt8/pickup_purity_keyboard
 localizeentry,#hash_66b8302fd6768e9b
 localizeentry,#hash_66b8312fd676904e
 localizeentry,#hash_66b8322fd6769201
@@ -3399,7 +3399,7 @@ localizeentry,#hash_7e7d3996edd02adc
 localizeentry,#hash_7e7d3b96edd02e42
 localizeentry,#hash_7e7d3c96edd02ff5
 localizeentry,#hash_7ed3d98c25f1502a
-localizeentry,#hash_7ee0d1946efa3d21
+localizeentry,#zm_zodt8/pickup_purity
 localizeentry,d#hash_7ee42cc3497825b0
 localizeentry,#hash_7f12bb33e3e10d68
 localizeentry,#hash_7f13a69efbd6d206

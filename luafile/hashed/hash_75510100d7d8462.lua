@@ -45,7 +45,7 @@ end
 Lobby.AE.ShouldParseContractSharedAchievementStateResponse = function ( f2_arg0, f2_arg1 )
 	local f2_local0 = f2_arg1:getUInt( "version" )
 	Engine[0xCBE250CE5CD8C70]( f2_arg0, f2_local0 )
-	if f2_local0 ~= Dvar[0x34F00ADB7D10075]:get() then
+	if f2_local0 ~= Dvar.lootcontracts_version:get() then
 		return false
 	else
 		return true

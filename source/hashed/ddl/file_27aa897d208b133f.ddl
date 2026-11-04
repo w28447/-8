@@ -24,7 +24,7 @@ version 1 {
     // offset 0x360, size 0x20
     uint hash_b4e700934aceed;
     // offset 0x380, size 0x20
-    uint hash_c8d937db9b118c6;
+    uint r_picmip_spec;
     // offset 0x3a0, size 0x20
     uint hash_148e89c5ba9d3e53;
     // offset 0x3c0, size 0x20

@@ -125,7 +125,7 @@
                 "members": [
                     {
                         "name": "#send_success",
-                        "scrName": "#hash_38bd0193",
+                        "scrName": "#send_success",
                         "type": "BOOL"
                     },
                     {

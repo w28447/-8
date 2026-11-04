@@ -1,9 +1,9 @@
 {
     "buttonimage": "image#loot02_ui_icon_blackmarket_contracts_vampire_hunter",
     "popupimage": "image#ui_icon_blackmarket_reserves_weapon_ultra_confirm",
-    "nametext": "localized17#hash_448260d8cfcab193",
+    "nametext": "localized17#mpui/weapon_bribe_ultra",
     "categorytext": "localized17#mpui/bm_bribe",
     "name": "functional_dlc_bribe",
-    "desctext": "localized17#hash_b51caa0abca8b45",
+    "desctext": "localized17#mpui/weapon_bribe_ultra_desc",
     "previewimage": "image#ui_icon_blackmarket_stream_weapon_ultra"
 }

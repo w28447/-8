@@ -167,7 +167,7 @@
         },
         {
             "name": "#subscription_count",
-            "scrName": "#hash_63b46511",
+            "scrName": "#subscription_count",
             "type": "INT32"
         }
     ],

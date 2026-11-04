@@ -1334,7 +1334,7 @@ function function_9bc73093( n_stage )
     level util::delay( 0.2, undefined, &scene::play, #"p8_fxanim_zm_zod_skybox_bundle", var_d503d5d9 );
     self thread scene::play( self.str_scene, "pain", self );
     level thread function_f74b38da( "zm_power_on_rumble" );
-    n_wait = 0.6 * getanimlength( #"hash_24f221de31f87832" );
+    n_wait = 0.6 * getanimlength( #"p8_fxanim_zm_zod_boss_eye_pain_anim" );
     wait n_wait;
     
     if ( n_stage != 5 )

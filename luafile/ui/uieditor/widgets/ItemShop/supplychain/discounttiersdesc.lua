@@ -12,7 +12,7 @@ CoD.DiscountTiersDesc.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local OneTierDesc = LUI.UIText.new( 0.5, 0.5, -156, 44, 0.5, 0.5, -12, 16 )
 	OneTierDesc:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	OneTierDesc:setText( Engine[0xF9F1239CFD921FE]( 0xA53B7CE50DE4FBC ) )
+	OneTierDesc:setText( Engine[0xF9F1239CFD921FE]( "mpui/single_tier" ) )
 	OneTierDesc:setTTF( "ttmussels_demibold" )
 	OneTierDesc:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_font_cached_glow_custom_normal" ) )
 	OneTierDesc:setShaderVector( 0, 0.5, 0, 0, 0 )

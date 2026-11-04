@@ -555,7 +555,7 @@ end
 CoD.LobbyUtility.ForceOffline = function ()
 	if (LuaDefine.isPS4 or LuaDefine.isXbox) and LuaUtils.IsSkuOfflineOnly() then
 		return true
-	elseif LuaDefine.isPC and Dvar[0xC2F09BAD1862417]:get() then
+	elseif LuaDefine.isPC and Dvar.nodw:get() then
 		return true
 	else
 		return false

@@ -39,7 +39,7 @@ function __init__()
 function function_250232f4( localclientnum )
 {
     lui::createcustomcameramenu( #"laboratory", localclientnum, &function_a856f9dd, 1, &function_ca3a6506, &function_64c9ba5 );
-    level flag::init( #"hash_511b4468376ea105" );
+    level flag::init( #"laboratory_results_ready" );
     level flag::init( #"laboratory_activated" );
     level flag::init( #"hash_71fc63117cc5bf06" + 1 );
     level flag::init( #"hash_71fc63117cc5bf06" + 2 );
@@ -63,7 +63,7 @@ function function_250232f4( localclientnum )
     level.var_49f26c00.var_c6761aa2 setmodel( #"p8_zm_lab_tube_02_script" );
     level.var_49f26c00.var_dcbe4732 setmodel( #"p8_zm_lab_tube_03_script" );
     level.var_49f26c00.var_f48ac46 setmodel( #"p8_zm_lab_tube_04_script" );
-    level._effect[ #"hash_6d42ec7a48079d27" ] = "maps/core_frontend/fx8_frontend_zombie_lab_elixir_bubbles_base";
+    level._effect[ #"fx_bottle_fluid_bubbles" ] = "maps/core_frontend/fx8_frontend_zombie_lab_elixir_bubbles_base";
     level._effect[ #"fx_bottle_classic" ] = "maps/core_frontend/fx8_frontend_zombie_lab_elixir_classic";
     level._effect[ #"fx_bottle_common" ] = "maps/core_frontend/fx8_frontend_zombie_lab_elixir_common";
     level._effect[ #"fx_bottle_epic" ] = "maps/core_frontend/fx8_frontend_zombie_lab_elixir_epic";
@@ -374,7 +374,7 @@ function function_64c9ba5( localclientnum, menu_data )
     exploder::stop_exploder( #"hash_7bc4347f95dd65fc" );
     level notify( #"hash_490aea66046d4a50" );
     function_a8f6e36c( localclientnum, 0 );
-    level flag::clear( #"hash_511b4468376ea105" );
+    level flag::clear( #"laboratory_results_ready" );
     function_49dde74( 0 );
     forceambientroom( "" );
     function_d160164e();
@@ -688,7 +688,7 @@ function lab_set_rewards( localclientnum )
         level.var_49f26c00.var_887781fe += "_lab";
         level.var_49f26c00.var_84c77a9e += "_lab";
         function_b3efb400( !level flag::get( #"hash_4bbc47f6a0a31743" ) );
-        level flag::set( #"hash_511b4468376ea105" );
+        level flag::set( #"laboratory_results_ready" );
     }
 }
 
@@ -1485,7 +1485,7 @@ function function_9c935526( localclientnum )
     level flag::clear( #"hash_4f26b4e33ddb3509" );
     function_b3efb400( 0 );
     function_9dee7481();
-    level flag::clear( #"hash_511b4468376ea105" );
+    level flag::clear( #"laboratory_results_ready" );
     function_a8f6e36c( localclientnum, 2 );
     function_b760318d( 2 );
 }
@@ -1526,9 +1526,9 @@ function function_365bef4( localclientnum, b_debug = 0 )
     function_a8188266( 0, 2 );
     var_fc9cafb5 = gettime();
     
-    if ( !level flag::get( #"hash_511b4468376ea105" ) && !b_debug )
+    if ( !level flag::get( #"laboratory_results_ready" ) && !b_debug )
     {
-        waitresult = level waittilltimeout( 10, #"hash_511b4468376ea105" );
+        waitresult = level waittilltimeout( 10, #"laboratory_results_ready" );
         
         if ( waitresult._notify == #"timeout" )
         {
@@ -1798,9 +1798,9 @@ function function_254a0f6d( localclientnum )
     function_9c935526();
     var_fc9cafb5 = gettime();
     
-    if ( !level flag::get( #"hash_511b4468376ea105" ) )
+    if ( !level flag::get( #"laboratory_results_ready" ) )
     {
-        waitresult = level waittilltimeout( 10, #"hash_511b4468376ea105" );
+        waitresult = level waittilltimeout( 10, #"laboratory_results_ready" );
         
         if ( waitresult._notify == #"timeout" )
         {
@@ -2163,9 +2163,9 @@ function function_24222bb4( localclientnum, a_ents )
     {
         level scene::stop( #"p8_fxanim_core_frontend_zm_lab_bottle_fluids_bundle" );
         function_8cd01001( localclientnum, a_ents[ #"bottle_fluid_01" ], a_ents[ #"bottle_fluid_02" ], a_ents[ #"bottle_fluid_03" ] );
-        util::playfxontag( localclientnum, level._effect[ #"hash_6d42ec7a48079d27" ], a_ents[ #"bottle_fluid_01" ], "bottle_fluid_base_jnt" );
-        util::playfxontag( localclientnum, level._effect[ #"hash_6d42ec7a48079d27" ], a_ents[ #"bottle_fluid_02" ], "bottle_fluid_base_jnt" );
-        util::playfxontag( localclientnum, level._effect[ #"hash_6d42ec7a48079d27" ], a_ents[ #"bottle_fluid_03" ], "bottle_fluid_base_jnt" );
+        util::playfxontag( localclientnum, level._effect[ #"fx_bottle_fluid_bubbles" ], a_ents[ #"bottle_fluid_01" ], "bottle_fluid_base_jnt" );
+        util::playfxontag( localclientnum, level._effect[ #"fx_bottle_fluid_bubbles" ], a_ents[ #"bottle_fluid_02" ], "bottle_fluid_base_jnt" );
+        util::playfxontag( localclientnum, level._effect[ #"fx_bottle_fluid_bubbles" ], a_ents[ #"bottle_fluid_03" ], "bottle_fluid_base_jnt" );
     }
 }
 

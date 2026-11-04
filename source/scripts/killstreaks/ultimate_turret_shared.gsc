@@ -1190,15 +1190,15 @@ function function_c524c4c8()
 // Size: 0x62
 function get_target_offset( target )
 {
-    var_8134d046 = -12;
+    target_z_offset = -12;
     stance = target getstance();
     
     if ( stance == "prone" )
     {
-        var_8134d046 = -2;
+        target_z_offset = -2;
     }
     
-    return ( 0, 0, var_8134d046 );
+    return ( 0, 0, target_z_offset );
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared

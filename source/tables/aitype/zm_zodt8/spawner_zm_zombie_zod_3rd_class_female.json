@@ -18,9 +18,9 @@
         "#c_t8_zmb_3rdclass_female1",
         "#hash_527359033a0fec16",
         "#c_t8_zmb_3rdclass_female2",
-        "#hash_7887f7fa61198709",
+        "#c_t8_zmb_3rdclass_female2_nohat",
         "#c_t8_zmb_3rdclass_female3",
-        "#hash_7befa3e8cd85887a"
+        "#c_t8_zmb_3rdclass_female3_nohat"
     ],
     "meleeWeapon": "#zombie_ai_defaultmelee_zm",
     "aimTable": "#soldier_aim",

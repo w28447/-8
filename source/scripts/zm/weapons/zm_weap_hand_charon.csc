@@ -97,7 +97,7 @@ function function_d64a6790( localclientnum, oldval, newval, bnewent, binitialsna
         
         if ( isdefined( self ) )
         {
-            self playrenderoverridebundle( #"hash_429426f01ad84c8b" );
+            self playrenderoverridebundle( #"rob_zm_hell_dust" );
             
             if ( isdefined( self gettagorigin( "j_spine4" ) ) )
             {
@@ -184,7 +184,7 @@ function function_120153b7( localclientnum, oldval, newval, bnewent, binitialsna
 {
     self endon( #"death" );
     self zm_utility::good_barricade_damaged( localclientnum );
-    self playrenderoverridebundle( #"hash_429426f01ad84c8b" );
+    self playrenderoverridebundle( #"rob_zm_hell_dust" );
     
     if ( isdefined( self gettagorigin( "j_spine4" ) ) )
     {

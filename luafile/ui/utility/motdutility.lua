@@ -776,7 +776,7 @@ CoD.MOTDUtility.FeatureCard_AddFeatureCardsByLocation = function ( f63_arg0, f63
 	local f63_local0 = Engine[0xD30724405ED0D69]( f63_arg2 )
 	local f63_local1 = function ( f64_arg0, f64_arg1 )
 		if f64_arg1 == CoD.MOTDUtility.MOTD_GetMOTDChannel() then
-			return Engine[0xF9F1239CFD921FE]( 0xEA2339DFD00ADED )
+			return Engine[0xF9F1239CFD921FE]( "menu/motd_fw_desc" )
 		else
 			return f64_arg0.content_short or ""
 		end

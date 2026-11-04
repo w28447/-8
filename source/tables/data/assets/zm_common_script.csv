@@ -76,7 +76,7 @@ scriptparsetree,#scripts/zm_common/trials/zm_trial_turn_on_power.gsc
 scriptparsetree,#scripts/zm_common/trials/zm_trial_activate_hazards.gsc
 scriptparsetree,#scripts/zm_common/gametypes/perplayer.gsc
 scriptparsetree,#scripts/zm/perk/zm_perk_tortoise.csc
-scriptparsetree,#hash_112484f657ccd8b7
+scriptparsetree,#scripts/zm_common/trials/zm_trial_regen_during_movement.gsc
 scriptparsetree,#scripts/zm_common/zm_perks.gsc
 scriptparsetree,#scripts/zm_common/zm_customgame.csc
 scriptparsetree,#scripts/zm_common/trials/zm_trial_disable_buys.gsc
@@ -230,7 +230,7 @@ scriptparsetree,#scripts/zm_common/trials/zm_trial_flag_check.gsc
 scriptparsetree,#scripts/zm/powerup/zm_powerup_double_points.csc
 scriptparsetree,#scripts/zm_common/zm_unitrigger.gsc
 scriptparsetree,#scripts/zm_common/aats/zm_aat_plasmatic_burst.csc
-scriptparsetree,#hash_45657e86e8f90414
+scriptparsetree,#scripts/zm_common/trials/zm_trial_attack_during_movement.csc
 scriptparsetree,#scripts/zm_common/trials/zm_trial_moving_hill.gsc
 scriptparsetree,#hash_45993630a26b2d85
 scriptparsetree,#scripts/zm_common/talisman/zm_talisman_perk_reducecost_1.gsc
@@ -333,7 +333,7 @@ scriptparsetree,#scripts/zm_common/talisman/zm_talisman_special_startlv3.gsc
 scriptparsetree,#hash_68cf49837639e4f1
 scriptparsetree,#scripts/zm_common/talisman/zm_talisman_box_guarantee_box_only.gsc
 scriptparsetree,#scripts/zm_common/callings/zm_callings_devgui.gsc
-scriptparsetree,#hash_6951ea86fdae9ae0
+scriptparsetree,#scripts/zm_common/trials/zm_trial_attack_during_movement.gsc
 scriptparsetree,#scripts/zm/powerup/zm_powerup_double_points.gsc
 scriptparsetree,#scripts/zm_common/trials/zm_trial_disable_upgraded_weapons.gsc
 scriptparsetree,#scripts/zm/perk/zm_perk_mod_bandolier.gsc

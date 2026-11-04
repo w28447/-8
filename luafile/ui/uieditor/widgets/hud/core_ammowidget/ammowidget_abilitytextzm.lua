@@ -315,7 +315,7 @@ CoD.AmmoWidget_AbilityTextZM.__clipsPerState = {
 			f28_arg0:setupElementClipCounter( 5 )
 			local f28_local0 = function ( f29_arg0 )
 				f28_arg0.TankTextInfo:beginAnimation( 390 )
-				f28_arg0.TankTextInfo:setText( Engine[0xF9F1239CFD921FE]( 0xFBCFC36F0C79D9A ) )
+				f28_arg0.TankTextInfo:setText( Engine[0xF9F1239CFD921FE]( "mpui/tank_commands" ) )
 				f28_arg0.TankTextInfo:registerEventHandler( "interrupted_keyframe", f28_arg0.clipInterrupted )
 				f28_arg0.TankTextInfo:registerEventHandler( "transition_complete_keyframe", f28_arg0.clipFinished )
 			end
@@ -381,7 +381,7 @@ CoD.AmmoWidget_AbilityTextZM.__clipsPerState = {
 			f35_arg0:setupElementClipCounter( 4 )
 			f35_arg0.TankTextInfo:completeAnimation()
 			f35_arg0.TankTextInfo:setAlpha( 1 )
-			f35_arg0.TankTextInfo:setText( Engine[0xF9F1239CFD921FE]( 0xFBCFC36F0C79D9A ) )
+			f35_arg0.TankTextInfo:setText( Engine[0xF9F1239CFD921FE]( "mpui/tank_commands" ) )
 			f35_arg0.clipFinished( f35_arg0.TankTextInfo )
 			f35_arg0.Text_Prompt_Arrow:completeAnimation()
 			f35_arg0.Text_Prompt_Arrow:setAlpha( 0.99 )
@@ -405,7 +405,7 @@ CoD.AmmoWidget_AbilityTextZM.__clipsPerState = {
 			
 			f36_arg0.TankTextInfo:completeAnimation()
 			f36_arg0.TankTextInfo:setAlpha( 1 )
-			f36_arg0.TankTextInfo:setText( Engine[0xF9F1239CFD921FE]( 0xFBCFC36F0C79D9A ) )
+			f36_arg0.TankTextInfo:setText( Engine[0xF9F1239CFD921FE]( "mpui/tank_commands" ) )
 			f36_local0( f36_arg0.TankTextInfo )
 			f36_arg0.Text_Prompt_Arrow:completeAnimation()
 			f36_arg0.Text_Prompt_Arrow:setLeftRight( 0, 0, -10, 0 )
@@ -491,7 +491,7 @@ CoD.AmmoWidget_AbilityTextZM.__clipsPerState = {
 			f44_arg0:setupElementClipCounter( 5 )
 			local f44_local0 = function ( f45_arg0 )
 				f44_arg0.TankTextInfo:beginAnimation( 200 )
-				f44_arg0.TankTextInfo:setText( Engine[0xF9F1239CFD921FE]( 0xFBCFC36F0C79D9A ) )
+				f44_arg0.TankTextInfo:setText( Engine[0xF9F1239CFD921FE]( "mpui/tank_commands" ) )
 				f44_arg0.TankTextInfo:registerEventHandler( "interrupted_keyframe", f44_arg0.clipInterrupted )
 				f44_arg0.TankTextInfo:registerEventHandler( "transition_complete_keyframe", f44_arg0.clipFinished )
 			end

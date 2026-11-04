@@ -49,8 +49,8 @@ function __init__()
     level.ct_shared_objcounter = ct_shared_objcounter::register( "ct_shared_objcounter" );
     level._effect[ #"zoneedgemarker" ] = [];
     level._effect[ #"zoneedgemarker" ][ 0 ] = #"ui/fx8_infil_marker_neutral";
-    level._effect[ #"zoneedgemarker" ][ 1 ] = #"hash_5c2ae9f4f331d4b9";
-    level._effect[ #"zoneedgemarker" ][ 2 ] = #"hash_7d1b0f001ea88b82";
+    level._effect[ #"zoneedgemarker" ][ 1 ] = #"ui/fx8_infil_marker_frnd";
+    level._effect[ #"zoneedgemarker" ][ 2 ] = #"ui/fx8_infil_marker_enmy";
     level._effect[ #"zoneedgemarker" ][ 3 ] = #"ui/fx8_infil_marker_contested";
     level.var_57b466e9 = level._effect[ #"zoneedgemarker" ][ 0 ];
     level.var_84c5e66d = "area_";

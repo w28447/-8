@@ -25,7 +25,7 @@
                     "clientfield": "#zm_orange_zipquest_crank_2"
                 }
             ],
-            "hash_b048489f": 2
+            "list_components": 2
         },
         {
             "components": [
@@ -71,7 +71,7 @@
                     "clientfield": "#zm_orange_zipquest_keycard_2"
                 }
             ],
-            "hash_b048489f": 3
+            "list_components": 3
         },
         {
             "components": [
@@ -87,7 +87,7 @@
                     "clientfield": "#zm_orange_zipquest_handle_final"
                 }
             ],
-            "hash_b048489f": 1
+            "list_components": 1
         }
     ],
     "shieldpieces": [

@@ -400,12 +400,12 @@ function use_dynent( dynent, activator )
 {
     stateindex = function_ffdbe8c2( dynent );
     bundle = function_489009c1( dynent );
-    var_9bdcfcd8 = undefined;
+    nextstateindex = undefined;
     
     if ( isdefined( bundle ) && isdefined( bundle.dynentstates ) && isdefined( bundle.dynentstates[ stateindex ] ) )
     {
         state = bundle.dynentstates[ stateindex ];
-        var_9bdcfcd8 = isdefined( state.state_on_interact ) ? state.state_on_interact : 0;
+        nextstateindex = isdefined( state.state_on_interact ) ? state.state_on_interact : 0;
         
         if ( isdefined( activator ) )
         {
@@ -415,11 +415,11 @@ function use_dynent( dynent, activator )
             
             if ( dot > 0 )
             {
-                var_9bdcfcd8 = isdefined( state.state_on_interact ) ? state.state_on_interact : 0;
+                nextstateindex = isdefined( state.state_on_interact ) ? state.state_on_interact : 0;
             }
             else
             {
-                var_9bdcfcd8 = isdefined( state.state_on_facing ) ? state.state_on_facing : 0;
+                nextstateindex = isdefined( state.state_on_facing ) ? state.state_on_facing : 0;
             }
         }
         
@@ -430,12 +430,12 @@ function use_dynent( dynent, activator )
         
         if ( isdefined( dynent.onuse ) )
         {
-            succeeded = dynent thread [[ dynent.onuse ]]( activator, stateindex, var_9bdcfcd8 );
+            succeeded = dynent thread [[ dynent.onuse ]]( activator, stateindex, nextstateindex );
         }
         
         if ( !isdefined( succeeded ) || succeeded == 1 )
         {
-            setdynentstate( dynent, var_9bdcfcd8 );
+            setdynentstate( dynent, nextstateindex );
         }
         
         return ( isdefined( bundle.interpolationsec ) ? bundle.interpolationsec : 0 );

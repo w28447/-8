@@ -35,13 +35,13 @@ function event_handler[gametype_init] main( eventstruct )
     level.effect_scriptbundles[ #"zoneedgemarkerwndw" ] = struct::get_script_bundle( "teamcolorfx", "teamcolorfx_koth_edge_marker_window" );
     level._effect[ #"zoneedgemarker" ] = [];
     level._effect[ #"zoneedgemarker" ][ 0 ] = #"ui/fx8_infil_marker_neutral";
-    level._effect[ #"zoneedgemarker" ][ 1 ] = #"hash_5c2ae9f4f331d4b9";
-    level._effect[ #"zoneedgemarker" ][ 2 ] = #"hash_7d1b0f001ea88b82";
+    level._effect[ #"zoneedgemarker" ][ 1 ] = #"ui/fx8_infil_marker_frnd";
+    level._effect[ #"zoneedgemarker" ][ 2 ] = #"ui/fx8_infil_marker_enmy";
     level._effect[ #"zoneedgemarker" ][ 3 ] = #"ui/fx8_infil_marker_contested";
     level._effect[ #"zoneedgemarkerwndw" ] = [];
     level._effect[ #"zoneedgemarkerwndw" ][ 0 ] = #"ui/fx8_infil_marker_neutral_window";
-    level._effect[ #"zoneedgemarkerwndw" ][ 1 ] = #"hash_5565c3fc2c7742fe";
-    level._effect[ #"zoneedgemarkerwndw" ][ 2 ] = #"hash_3283b765fe480df7";
+    level._effect[ #"zoneedgemarkerwndw" ][ 1 ] = #"ui/fx8_infil_marker_frnd_window";
+    level._effect[ #"zoneedgemarkerwndw" ][ 2 ] = #"ui/fx8_infil_marker_enmy_window";
     level._effect[ #"zoneedgemarkerwndw" ][ 3 ] = #"ui/fx8_infil_marker_contested_window";
     level.mission_bundle = getscriptbundle( "mission_settings_control" );
     callback::on_localclient_connect( &on_localclient_connect );
@@ -469,8 +469,8 @@ function function_185b0894( localclientnum, oldval, newval )
     self endon( "4f9ede08240c30af" );
     basepitch = 0.8;
     var_9a7dc638 = 1;
-    var_f802a6b1 = 255;
-    progresspercentage = 1 / var_f802a6b1;
+    maxprogress = 255;
+    progresspercentage = 1 / maxprogress;
     waitresult = level waittill( #"zone_initialization" );
     
     while ( true )

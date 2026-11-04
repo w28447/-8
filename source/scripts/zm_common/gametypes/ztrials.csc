@@ -1,4 +1,4 @@
-#using script_45657e86e8f90414;
+#using scripts/zm_common/trials/zm_trial_attack_during_movement.csc;
 #using scripts\zm_common\trials\zm_trial_kill_enemies_for_health.csc;
 #using script_70ab01a7690ea256;
 #using scripts\core_common\flag_shared;
@@ -47,7 +47,7 @@ function onstartgametype()
 // Size: 0x5c
 function private event_handler[event_b72c1844] function_df05c5d( eventstruct )
 {
-    if ( namespace_fcd611c3::is_active() && self namespace_fcd611c3::function_26f124d8() )
+    if ( zm_trial_attack_during_movement::is_active() && self zm_trial_attack_during_movement::function_26f124d8() )
     {
         return;
     }

@@ -1041,23 +1041,23 @@ function private function_4facba35( str_drop, v_origin, v_spawn )
     switch ( str_drop )
     {
         case #"concentrated_decay":
-            str_prompt = zm_utility::function_d6046228( #"hash_1fe854f6441b337e", #"hash_1b7e2d2bbc1de36a" );
+            str_prompt = zm_utility::function_d6046228( #"zm_zodt8/pickup_decay", #"zm_zodt8/pickup_decay_keyboard" );
             var_a071ccba sethintstring( str_prompt );
             var_abf1e2f7 setmodel( #"c_t8_zmb_concentrated_catalyst_heart" );
             v_origin += ( 0, 0, 5 );
             break;
         case #"concentrated_plasma":
-            str_prompt = zm_utility::function_d6046228( #"hash_1da4ec6fc5b6b9e6", #"hash_2eb14d935f8e39c2" );
+            str_prompt = zm_utility::function_d6046228( #"zm_zodt8/pickup_plasma", #"zm_zodt8/pickup_plasma_keyboard" );
             var_a071ccba sethintstring( str_prompt );
             var_abf1e2f7 setmodel( #"c_t8_zmb_concentrated_catalyst_skull" );
             break;
         case #"concentrated_purity":
-            str_prompt = zm_utility::function_d6046228( #"hash_7ee0d1946efa3d21", #"hash_669c0c5deaada19f" );
+            str_prompt = zm_utility::function_d6046228( #"zm_zodt8/pickup_purity", #"zm_zodt8/pickup_purity_keyboard" );
             var_a071ccba sethintstring( str_prompt );
             var_abf1e2f7 setmodel( #"c_t8_zmb_concentrated_catalyst_foot" );
             break;
         case #"concentrated_radiance":
-            str_prompt = zm_utility::function_d6046228( #"hash_1b1948d30c6b8ec9", #"hash_29b72f36c8ee8557" );
+            str_prompt = zm_utility::function_d6046228( #"zm_zodt8/pickup_radiance", #"zm_zodt8/pickup_radiance_keyboard" );
             var_a071ccba sethintstring( str_prompt );
             var_abf1e2f7 setmodel( #"c_t8_zmb_concentrated_catalyst_hand" );
             break;

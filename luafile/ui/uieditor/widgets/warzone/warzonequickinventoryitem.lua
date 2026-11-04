@@ -217,7 +217,7 @@ CoD.WarzoneQuickInventoryItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], 0x1F7289BC37F8FA5, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], nil )
 			return true
 		elseif not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "availableAction", CoD.WZUtility.ItemAvailableAction.SWAP ) and CoD.WZUtility.IsQuickInventoryOpen( controller ) then
-			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], 0x918999DDF357263, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "warzone/swap_item", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], nil )
 			return true
 		elseif CoD.WZUtility.IsQuickInventoryOpen( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "availableAction", CoD.WZUtility.ItemAvailableAction.NONE ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "availableAction", CoD.WZUtility.ItemAvailableAction.CONSUME ) then
 			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "warzone/equip_item", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], nil )

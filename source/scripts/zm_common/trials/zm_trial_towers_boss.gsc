@@ -172,7 +172,7 @@ function private boss_fight()
     var_47312393 = struct::get( #"towers_boss_location_1", "script_noteworthy" );
     sp_spawner = getent( "zombie_towers_boss_spawner", "script_noteworthy" );
     level thread function_4d682898();
-    level thread function_92e1954c();
+    level thread weakpoint_damage_watcher();
     level thread function_1a05e10c( #"boss_ranged_attack_1", "m_quest", "spear_warn" );
     level thread function_1a05e10c( #"boss_ranged_attack_2_start", "m_quest", "missle_warn" );
     level thread function_1a05e10c( #"boss_ranged_attack_2_launched", "m_quest", "missle_track" );
@@ -271,7 +271,7 @@ function private function_33935d5f()
 // Params 0, eflags: 0x4
 // Checksum 0x26220de6, Offset: 0x12e8
 // Size: 0x8a
-function private function_92e1954c()
+function private weakpoint_damage_watcher()
 {
     self notify( "602480c649d8e17f" );
     self endon( "602480c649d8e17f" );

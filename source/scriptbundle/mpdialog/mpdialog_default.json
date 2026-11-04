@@ -52,7 +52,7 @@
     "enemycontactdistance": 2000,
     "vmtype": "server",
     "supplypodsuccessdialogbuffer": 1.75,
-    "hash_16ceeed": 0.2,
+    "clonesuccessdelay": 0.2,
     "radiationfieldsuccesslinecount": 6,
     "killstreakspotdelay": 10,
     "enemycontactchance": 100,

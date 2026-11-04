@@ -56,7 +56,7 @@ Lobby.Merge.Update = function ()
 end
 
 Lobby.Merge.Pump = function ()
-	if Dvar[0x6AB21D919144AA]:get() == false or Dvar[0x4BADE8473F0165F]:get() == true then
+	if Dvar.lobbymergeenabled:get() == false or Dvar[0x4BADE8473F0165F]:get() == true then
 		return 
 	elseif Engine[0xE39F1F30B306065]() and Dvar[0x6D033E0551BFF83]:get() == false then
 		return 

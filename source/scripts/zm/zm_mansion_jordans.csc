@@ -51,7 +51,7 @@ function function_5869f09a( localclientnum, oldval, newval, bnewent, binitialsna
 // Size: 0x5c
 function function_c51132ba( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    self playrenderoverridebundle( #"hash_429426f01ad84c8b" );
+    self playrenderoverridebundle( #"rob_zm_hell_dust" );
 }
 
 /#

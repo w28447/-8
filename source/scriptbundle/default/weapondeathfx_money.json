@@ -3,7 +3,7 @@
     "hash_44a8590d669bed6b:hash_904b37bc": "impact_fx_table#hash_44a8590d669bed6b",
     "image": "loot04_ui_icon_blackmarket_reserves_death_fx_money",
     "name": "weapondeathfx_money",
-    "displayname": "localized17#hash_284bab3e953057c5",
+    "displayname": "localized17#menu/death_effects_money",
     "icon": "loot04_ui_icon_cac_death_fx_money",
     "bullet_money_exit": "impact_fx_table#bullet_money_exit",
     "previewimage": "image#loot04_ui_icon_blackmarket_reserves_death_fx_money"

@@ -3683,7 +3683,7 @@ string,#hash_1b13f0782c49ab87
 string,#zm_white/location_bunker_lounge
 string,#zmweapon/ww_freezegun_t8
 string,#hash_1bf1ded4916b4aa6
-string,#hash_1c07c87a45375aaf
+string,#menu/camo_loot_party_rock
 string,#hash_1c085e4db0b218f9
 string,#mpui/camo_integer
 string,#hash_1c978c7c32d6accb
@@ -3754,7 +3754,7 @@ string,#hash_2a634db8501d93aa
 string,#hash_2a77221ed09d2928
 string,#hash_2aa6fa1848766679
 string,#zmweapon/galvaknuckles_t8
-string,#hash_2b0fae1c09a3d8a9
+string,#menu/camo_loot_zombie_flick
 string,#hash_2b27d20d2cfc1069
 string,#hash_2b3d791eb05ec296
 string,#mpui/camo_ardent
@@ -3982,7 +3982,7 @@ string,#mpui/mixclip
 string,#mpui/mms_desc
 string,#hash_5d01239f88dfd90c
 string,#hash_5d01269f88dfde25
-string,#hash_5dc620aa9640e528
+string,#menu/camo_loot_apb
 string,#hash_5df9a1469d000961
 string,#hash_5e083adaa2cc330e
 string,#hash_5e2c81adb5a5264a
@@ -11959,7 +11959,7 @@ client_fx,#hash_6910f1de979f539f
 client_fx,#maps/zm_white/fx8_power_wisp
 client_fx,#impacts/fx8_bul_impact_blood_corpse_nonfatal
 client_fx,#impacts/fx_bul_impact_blood_head_fatal
-client_fx,#hash_69af1783a31b44f7
+client_fx,#player/fx8_plyr_pstfx_115_smoke
 client_fx,#hash_6a84f61b7271e098
 client_fx,#zm_weapons/fx8_raygun_impact_ug_zmb
 client_fx,#explosions/fx8_exp_grenade_dirt
@@ -11985,7 +11985,7 @@ client_fx,#hash_6ecef2377e01d48d
 client_fx,#player/fx_plyr_land_dust_dirt_xlg
 client_fx,#zm_weapons/fx8_raygun_view_zmb
 client_fx,#impacts/fx8_bul_impact_robot_head_nonfatal
-client_fx,#hash_709cca7d0048aa72
+client_fx,#player/fx8_plyr_pstfx_115_screen
 client_fx,#impacts/fx8_bul_impact_sand_lg
 client_fx,#hash_70f0169b86a98ce1
 client_fx,#impacts/fx8_bul_impact_sand_sm

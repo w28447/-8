@@ -239,9 +239,9 @@ function private function_a6a40735( var_d1017f27, var_e06cb519, var_bf6f8ec3, n_
 // Params 2, eflags: 0x4
 // Checksum 0xb1419030, Offset: 0xee8
 // Size: 0x3e
-function private function_7b01d125( var_a0639b8c, var_f65a9845 )
+function private function_7b01d125( n_season, var_f65a9845 )
 {
-    return level.callingsbundle.var_2e61f0ce[ var_a0639b8c ].var_ecb4fc1[ var_f65a9845 ].index;
+    return level.callingsbundle.var_2e61f0ce[ n_season ].var_ecb4fc1[ var_f65a9845 ].index;
 }
 
 // Namespace zm_callings/zm_callings

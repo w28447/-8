@@ -86,7 +86,7 @@
     "members": [
         {
             "name": "#video_id",
-            "scrName": "#hash_817208f0",
+            "scrName": "#video_id",
             "type": "UINT64"
         },
         {

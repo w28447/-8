@@ -140,7 +140,7 @@ CoD.DirectorPlaylistOptionInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	PercentInstalled:subscribeToGlobalModel( f1_arg1, "LobbyRoot", "percentInstalled", function ( model )
 		local f5_local0 = model:get()
 		if f5_local0 ~= nil then
-			PercentInstalled:setText( LocalizeIntoString( 0x643A70B24A36F6, f5_local0 ) )
+			PercentInstalled:setText( LocalizeIntoString( "director/percent_installed", f5_local0 ) )
 		end
 	end )
 	self:addElement( PercentInstalled )

@@ -275,7 +275,7 @@ function event_handler[gametype_init] main( eventstruct )
 function function_e843475e( localclientnum, menuname )
 {
     lui::createcameramenu( menuname, localclientnum, #"tag_align_frontend_background", #"ui_scene_cam_background" );
-    lui::function_9d7ab167( menuname, localclientnum, 3, #"wz_inspection_struct", #"hash_191c3f4fc94449f1" );
+    lui::function_9d7ab167( menuname, localclientnum, 3, #"wz_inspection_struct", #"ui_scene_cam_blur_screen" );
 }
 
 // Namespace frontend/frontend
@@ -634,7 +634,7 @@ function function_daa3f7d0( localclientnum, weaponinfo, should_update_weapon_opt
         position = struct::get( #"tag_align_inspection_weapon1" );
         origin = position.origin + info.offset;
         angles = position.angles + info.angles;
-        level.var_44011752 thread animation::play( #"hash_3689442490c2e5dd", origin, angles );
+        level.var_44011752 thread animation::play( #"o_wpn_t8_ar_accurate_prop_static", origin, angles );
         level thread scene::play( #"scene_frontend_inspection_weapon", "inspection_weapon_full" );
         level.var_44011752 show();
     }
@@ -2385,11 +2385,11 @@ function function_ce0c92c1( localclientnum, var_dde5862c )
         
         if ( isdefined( level.var_4c6f850d ) )
         {
-            var_19b413e2 = level.var_4c6f850d;
+            old_character_list = level.var_4c6f850d;
             var_375e4c88 = [];
             var_8632c0a1 = [];
             
-            foreach ( xuid, data in var_19b413e2 )
+            foreach ( xuid, data in old_character_list )
             {
                 if ( array::contains( var_dde5862c, xuid ) )
                 {

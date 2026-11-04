@@ -1733,7 +1733,7 @@ DataSources.StartMenuGameOptions = ListHelper_SetupDataSource( "StartMenuGameOpt
 				}
 			} )
 		end
-		if true == Dvar[0xA94323F2C9E094C]:get() then
+		if true == Dvar.ui_autocontrolledplayer:get() then
 			table.insert( f115_local0, {
 				models = {
 					displayText = "MENU_AUTO_CONTROL_PLAYER",
@@ -11409,7 +11409,7 @@ DataSourceHelpers.PerControllerDataSourceSetup( "DeadSpectate", "deadSpectator",
 	f629_local0:set( false )
 end )
 DataSources.DebugSessionSearchQoSJoin = ListHelper_SetupDataSource( "DebugSessionSearchQoSJoin", function ( f630_arg0 )
-	if not Dvar[0x102D263505BECD9]:exists() or Dvar[0x102D263505BECD9]:get() == false then
+	if not Dvar.ui_lobbydebugsessionsqj:exists() or Dvar.ui_lobbydebugsessionsqj:get() == false then
 		return {}
 	end
 	local f630_local0 = function ( f631_arg0, f631_arg1 )

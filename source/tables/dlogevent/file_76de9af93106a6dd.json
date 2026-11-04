@@ -168,7 +168,7 @@
         },
         {
             "name": "#checkpointname",
-            "scrName": "#hash_ad68ffd3",
+            "scrName": "#checkpointname",
             "type": "STRING",
             "len": 48
         },

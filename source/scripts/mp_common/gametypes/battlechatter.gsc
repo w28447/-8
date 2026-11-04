@@ -4593,7 +4593,7 @@ function function_e44c3a3c( weapon, attacker, eventorigin, eventobject, timedela
                     player thread test_player_dialog( 0 );
                     player thread test_commander_dialog( spacing );
                     break;
-                case #"hash_3af5f0a904b3f8fa":
+                case #"other-commander":
                     player thread test_other_dialog( 0 );
                     player thread test_commander_dialog( spacing );
                     break;

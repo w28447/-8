@@ -163,7 +163,7 @@
         },
         {
             "name": "#sysmem",
-            "scrName": "#hash_f9c3ed23",
+            "scrName": "#sysmem",
             "type": "UINT32"
         },
         {
@@ -183,7 +183,7 @@
         },
         {
             "name": "#gpu_autodetected",
-            "scrName": "#hash_2fd9b1f1",
+            "scrName": "#gpu_autodetected",
             "type": "INT8"
         },
         {

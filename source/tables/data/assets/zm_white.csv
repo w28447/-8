@@ -70814,7 +70814,7 @@ fx,d#hash_311a865a91014b22
 fx,d#hash_317f3a24ff92b8ca
 fx,#zombie/fx_idgun_ug_hole_sm_zod_zmb
 fx,#zm_ai/fx8_cata_plasma_blast_c
-fx,#hash_31c4723879504cb7
+fx,#zombie/fx8_magicbox_lid_skull
 fx,#hash_31d142c6e5adc4c7
 fx,#hash_320a84148445fb55
 fx,#hash_323d2731015bcf27
@@ -71121,7 +71121,7 @@ fx,#hash_68b62da5b4ce9cdc
 fx,#hash_68dcc6c2d16a4bd4
 fx,#maps/zm_white/fx8_power_wisp
 fx,#hash_69674ebe6d16afc9
-fx,#hash_69af1783a31b44f7
+fx,#player/fx8_plyr_pstfx_115_smoke
 fx,#hash_69b5310c9f5f1b6f
 fx,#hash_69ba95a5e365d16a
 fx,#hash_69bcdd42c049bc53
@@ -71171,7 +71171,7 @@ fx,#zm_ai/fx8_cata_plasma_blast_ground
 fx,#hash_703ae02d8b3c721c
 fx,#hash_704e65e370e10d32
 fx,d#hash_7078b4e4e1897123
-fx,#hash_709cca7d0048aa72
+fx,#player/fx8_plyr_pstfx_115_screen
 fx,#maps/zm_escape/fx8_spinning_trap_sparks_child
 fx,#hash_70a9fd0149ba18c7
 fx,#hash_70f0169b86a98ce1
@@ -71279,7 +71279,7 @@ beam,d#hash_391c0834d2b675c4
 beam,#hash_6135c0b4e06762cf
 beam,#hash_6dbb971f98be8984
 beam,d#hash_7acce16c04e24d58
-postfxbundle,#hash_98397d99cb3a03
+postfxbundle,#pstfx_zm_115_dmg
 postfxbundle,#pstfx_zm_office_teleporter
 postfxbundle,d#hash_1663ca7cc81f9b17
 postfxbundle,#pstfx_zm_wormhole
@@ -71857,7 +71857,7 @@ fx,#hash_5bc1a47a08046ef2
 fx,#weapon/fx8_hero_flamethrower_end_3p
 fx,d#impacts/fx8_bul_impact_water_sm
 fx,d#impacts/fx_bul_impact_armor_head_nonfatal_exit
-fx,d#hash_5f376e9395e16666
+fx,d#zombie/fx8_magicbox_depart
 fx,d#hash_5f8c0dac5484812f
 fx,d#weapon/fx8_trail_grenade
 fx,#hash_604d5c9040f91067

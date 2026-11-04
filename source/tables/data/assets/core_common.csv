@@ -99920,8 +99920,8 @@ prestige,#hash_64778c24bfbe93e
 prestige,#hash_6f66cd3f614e57c
 prestige,#hash_7186ed3f631cf48
 prestige,#hash_72961d3f6402c64
-prestige,#hash_957ecb20017e238
-prestige,#hash_95b69b2001aec76
+prestige,#paragon_mp_t4_10
+prestige,#paragon_mp_t4_09
 prestige,#hash_95b6ab2001aee29
 prestige,#hash_95b6fb2001af6a8
 prestige,#hash_95b70b2001af85b
@@ -99974,9 +99974,9 @@ prestige,#hash_348aaee6dc539756
 prestige,#hash_35b866ec0355adf3
 prestige,#hash_35cc70ec036667fb
 prestige,#hash_35f281ec0387541b
-prestige,#hash_374da8cdbb6b66b6
-prestige,#hash_374da9cdbb6b6869
-prestige,#hash_374daecdbb6b70e8
+prestige,#paragon_mp_t7_08
+prestige,#paragon_mp_t7_09
+prestige,#paragon_mp_t7_02
 prestige,#hash_374dafcdbb6b729b
 prestige,#hash_374db1cdbb6b7601
 prestige,#hash_374db2cdbb6b77b4
@@ -99998,8 +99998,8 @@ prestige,#hash_4844b9083935610b
 prestige,#hash_4844ba08393562be
 prestige,#hash_4844bb0839356471
 prestige,#hash_4844be083935698a
-prestige,#hash_4844bf0839356b3d
-prestige,#hash_484f2908393e73e0
+prestige,#paragon_wz_t8_44
+prestige,#paragon_wz_t8_14
 prestige,#hash_484f2a08393e7593
 prestige,#hash_484f2b08393e7746
 prestige,#hash_484f2c08393e78f9
@@ -100047,8 +100047,8 @@ prestige,#hash_5d2a78cd96902347
 prestige,#hash_5d58a5db917b79b1
 prestige,#hash_5d84b8db91a0d4e5
 prestige,#hash_5d99c2db91b341ed
-prestige,#hash_60235dbd4a984a63
-prestige,#hash_60235ebd4a984c16
+prestige,#paragon_mp_t5_01
+prestige,#paragon_mp_t5_02
 prestige,#hash_60235fbd4a984dc9
 prestige,#hash_602360bd4a984f7c
 prestige,#hash_602361bd4a98512f
@@ -110272,7 +110272,7 @@ playerroletemplate,#prt_zm_dempsey_whi
 playerroletemplate,#prt_wz_bruno_dlc0
 playerroletemplate,#prt_wz_scarlett
 playerroletemplate,#prt_mp_zombie_male
-playerroletemplate,#hash_8bb7d93747987a1
+playerroletemplate,#prt_wz_stanton_dlc0
 playerroletemplate,#prt_zm_russman
 playerroletemplate,#prt_wz_brutus
 playerroletemplate,#prt_zm_diego

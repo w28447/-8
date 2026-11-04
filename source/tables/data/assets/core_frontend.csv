@@ -1299,7 +1299,7 @@ xanim,#hash_368048321c7cca09
 xanim,#pt_supply_pod_prone_hold_idle
 xanim,#hash_368889e4e8f7c30f
 xanim,#hash_36888ae4e8f7c4c2
-xanim,#hash_3689442490c2e5dd
+xanim,#o_wpn_t8_ar_accurate_prop_static
 xanim,#hash_368edca50489f10d
 xanim,#vm_smart_cover_ads_down
 xanim,#pt_recon_sensor_gun_stand_fire
@@ -56293,7 +56293,7 @@ xcam,#hash_12d9c84320ae2ca1
 xcam,#ui_cam_char_customization_preview
 xcam,#ui_cam_store_camera
 xcam,#ui_cam_icon_pistol_shotgun
-xcam,#hash_191c3f4fc94449f1
+xcam,#ui_scene_cam_blur_screen
 xcam,#hash_1a3262e868e5cbac
 xcam,#ui_cam_icon_lmg_cqb
 xcam,#hash_1ae1e697609dd70b
@@ -56309,7 +56309,7 @@ xcam,#ui_cam_cac_hero_annihilator
 xcam,#hash_2547de4f2204205b
 xcam,d#ui_cam_cac_ar_accurate
 xcam,#ui_cam_cac_launcher_multi
-xcam,#hash_2598b6f5e72695c7
+xcam,#ui_scene_cam_lobby_draft
 xcam,#hash_280980eb3790a627
 xcam,d#ui_scene_cam_zm_factions_tn_completion
 xcam,d#ui_cam_icon_smg_fastfire
@@ -80309,7 +80309,7 @@ playerroletemplate,d#prt_zm_dempsey_whi
 playerroletemplate,d#prt_wz_bruno_dlc0
 playerroletemplate,d#prt_wz_scarlett
 playerroletemplate,d#prt_mp_zombie_male
-playerroletemplate,d#hash_8bb7d93747987a1
+playerroletemplate,d#prt_wz_stanton_dlc0
 playerroletemplate,d#prt_zm_russman
 playerroletemplate,d#prt_wz_brutus
 playerroletemplate,d#prt_zm_diego

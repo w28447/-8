@@ -162,7 +162,7 @@ CoD.ContractDetailsPanelSunset.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local TierBoostDisclaimer = LUI.UIText.new( 0, 0, 304.5, 714.5, 0, 0, 310, 324 )
 	TierBoostDisclaimer:setAlpha( 0 )
-	TierBoostDisclaimer:setText( Engine[0xF9F1239CFD921FE]( 0x92255DD4A01A50B ) )
+	TierBoostDisclaimer:setText( Engine[0xF9F1239CFD921FE]( "menu/tier_boost_disclaimer" ) )
 	TierBoostDisclaimer:setTTF( "default" )
 	TierBoostDisclaimer:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	self:addElement( TierBoostDisclaimer )

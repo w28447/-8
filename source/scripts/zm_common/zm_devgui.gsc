@@ -2112,14 +2112,14 @@
                     
                     break;
                 case #"100_self_revives":
-                    array::thread_all( getplayers(), &zm_laststand::function_3d685b5f, 100 );
+                    array::thread_all( getplayers(), &zm_laststand::set_self_revive_count, 100 );
                     break;
                 case #"hash_72783b08840a3ab7":
                     players = getplayers();
                     
                     if ( players.size >= 1 )
                     {
-                        players[ 0 ] thread zm_laststand::function_3d685b5f( 100 );
+                        players[ 0 ] thread zm_laststand::set_self_revive_count( 100 );
                     }
                     
                     break;
@@ -2128,7 +2128,7 @@
                     
                     if ( players.size >= 2 )
                     {
-                        players[ 1 ] thread zm_laststand::function_3d685b5f( 100 );
+                        players[ 1 ] thread zm_laststand::set_self_revive_count( 100 );
                     }
                     
                     break;
@@ -2137,7 +2137,7 @@
                     
                     if ( players.size >= 3 )
                     {
-                        players[ 2 ] thread zm_laststand::function_3d685b5f( 100 );
+                        players[ 2 ] thread zm_laststand::set_self_revive_count( 100 );
                     }
                     
                     break;
@@ -2146,7 +2146,7 @@
                     
                     if ( players.size >= 4 )
                     {
-                        players[ 3 ] thread zm_laststand::function_3d685b5f( 100 );
+                        players[ 3 ] thread zm_laststand::set_self_revive_count( 100 );
                     }
                     
                     break;
@@ -2985,7 +2985,7 @@
         origin = chest.zbarrier.origin;
         forward = anglestoforward( chest.zbarrier.angles );
         right = anglestoright( chest.zbarrier.angles );
-        var_21f5823e = vectortoangles( right );
+        plangles = vectortoangles( right );
         plorigin = origin - 48 * right;
         
         switch ( entnum )
@@ -3005,7 +3005,7 @@
         }
         
         self setorigin( plorigin );
-        self setplayerangles( var_21f5823e );
+        self setplayerangles( plangles );
     }
 
     // Namespace zm_devgui/zm_devgui
@@ -3026,7 +3026,7 @@
         origin = pap.origin;
         forward = anglestoforward( pap.angles );
         right = anglestoright( pap.angles );
-        var_21f5823e = vectortoangles( right * -1 );
+        plangles = vectortoangles( right * -1 );
         plorigin = origin + 72 * right;
         
         switch ( entnum )
@@ -3046,7 +3046,7 @@
         }
         
         self setorigin( plorigin );
-        self setplayerangles( var_21f5823e );
+        self setplayerangles( plangles );
     }
 
     // Namespace zm_devgui/zm_devgui

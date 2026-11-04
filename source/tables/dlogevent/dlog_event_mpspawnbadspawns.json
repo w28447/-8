@@ -159,7 +159,7 @@
         },
         {
             "name": "#spawnpointidshift",
-            "scrName": "#hash_6b51b203",
+            "scrName": "#spawnpointidshift",
             "type": "INT32"
         },
         {

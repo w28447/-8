@@ -84,7 +84,7 @@ function __init__()
 // Size: 0x34
 function on_player_connect()
 {
-    self thread function_b7c101fa();
+    self thread self_revive_player_setup();
     self thread function_6155752d();
 }
 
@@ -130,7 +130,7 @@ function player_last_stand_stats( einflictor, attacker, idamage, smeansofdeath, 
     
     self increment_downed_stat();
     
-    if ( level flag::get( "solo_game" ) && self function_618fd37e() == 0 && getnumconnectedplayers() < 2 )
+    if ( level flag::get( "solo_game" ) && self get_self_revive_count() == 0 && getnumconnectedplayers() < 2 )
     {
         self zm_stats::increment_client_stat( "deaths" );
         self zm_stats::increment_player_stat( "deaths" );
@@ -223,7 +223,7 @@ function playerlaststand( einflictor, attacker, idamage, smeansofdeath, weapon, 
     currweapon = self getcurrentweapon();
     self stats::function_e24eec31( currweapon, #"deathsduringuse", 1 );
     
-    if ( self function_618fd37e() > 0 && !( isdefined( level.var_28bbd30a ) && level.var_28bbd30a ) )
+    if ( self get_self_revive_count() > 0 && !( isdefined( level.var_28bbd30a ) && level.var_28bbd30a ) )
     {
         if ( isdefined( level.var_af29d768 ) )
         {
@@ -1092,14 +1092,14 @@ function function_4d3cb10()
 {
     level notify( #"notify_check_self_revive_for_hotjoin" );
     level endon( #"notify_check_self_revive_for_hotjoin" );
-    var_9156a121 = 0;
+    b_solo_mode = 0;
     var_972a361b = 0;
     waitframe( 1 );
     a_e_players = getplayers();
     
     if ( a_e_players.size == 1 )
     {
-        var_9156a121 = 1;
+        b_solo_mode = 1;
         
         if ( !level flag::get( "solo_game" ) )
         {
@@ -1117,15 +1117,15 @@ function function_4d3cb10()
     {
         foreach ( e_player in a_e_players )
         {
-            if ( isdefined( e_player.var_240cf7be ) && e_player.var_240cf7be )
+            if ( isdefined( e_player.b_solo_self_revive ) && e_player.b_solo_self_revive )
             {
-                if ( var_9156a121 )
+                if ( b_solo_mode )
                 {
-                    e_player function_3d685b5f( int( max( 0, e_player.var_d66589da - e_player.var_308dc243 ) ) );
+                    e_player set_self_revive_count( int( max( 0, e_player.var_d66589da - e_player.var_308dc243 ) ) );
                     continue;
                 }
                 
-                e_player function_3d685b5f( int( max( 0, e_player.var_5d4c5daf - e_player.var_308dc243 ) ) );
+                e_player set_self_revive_count( int( max( 0, e_player.var_5d4c5daf - e_player.var_308dc243 ) ) );
             }
         }
     }
@@ -1135,7 +1135,7 @@ function function_4d3cb10()
 // Params 1
 // Checksum 0x6e3d5d34, Offset: 0x36c8
 // Size: 0x88
-function function_3d685b5f( self_revive_count )
+function set_self_revive_count( self_revive_count )
 {
     self_revive_count = int( max( self_revive_count, 0 ) );
     self.var_72249004 = self_revive_count;
@@ -1151,7 +1151,7 @@ function function_3d685b5f( self_revive_count )
 // Params 0
 // Checksum 0x751c7673, Offset: 0x3758
 // Size: 0xa
-function function_618fd37e()
+function get_self_revive_count()
 {
     return self.var_72249004;
 }
@@ -1160,7 +1160,7 @@ function function_618fd37e()
 // Params 2
 // Checksum 0x8996fc42, Offset: 0x3770
 // Size: 0x9c
-function function_3a00302e( n_count = 1, var_d47c52b4 = 1 )
+function increment_self_revive_count( n_count = 1, var_d47c52b4 = 1 )
 {
     if ( var_d47c52b4 )
     {
@@ -1168,28 +1168,28 @@ function function_3a00302e( n_count = 1, var_d47c52b4 = 1 )
         self.var_5d4c5daf += n_count;
     }
     
-    self function_3d685b5f( self function_618fd37e() + n_count );
+    self set_self_revive_count( self get_self_revive_count() + n_count );
 }
 
 // Namespace zm_laststand/zm_laststand
 // Params 2
 // Checksum 0xa31b9415, Offset: 0x3818
 // Size: 0x84
-function function_409dc98e( n_count = 1, b_revived = 1 )
+function decrement_self_revive_count( n_count = 1, b_revived = 1 )
 {
     if ( b_revived )
     {
         self.var_308dc243 += n_count;
     }
     
-    self function_3d685b5f( self function_618fd37e() - n_count );
+    self set_self_revive_count( self get_self_revive_count() - n_count );
 }
 
 // Namespace zm_laststand/zm_laststand
 // Params 0
 // Checksum 0x26722328, Offset: 0x38a8
 // Size: 0x1cc
-function function_b7c101fa()
+function self_revive_player_setup()
 {
     self endon( #"disconnect" );
     self.var_72249004 = 0;
@@ -1203,7 +1203,7 @@ function function_b7c101fa()
     if ( getplayers().size == 1 )
     {
         self_revive_count = self.var_d66589da;
-        self.var_240cf7be = 1;
+        self.b_solo_self_revive = 1;
     }
     else
     {
@@ -1216,11 +1216,11 @@ function function_b7c101fa()
     {
         self.var_d66589da = int( var_48f2f554 );
         self.var_5d4c5daf = int( var_48f2f554 );
-        self function_3d685b5f( var_48f2f554 );
+        self set_self_revive_count( var_48f2f554 );
         return;
     }
     
-    self function_3d685b5f( self_revive_count );
+    self set_self_revive_count( self_revive_count );
 }
 
 // Namespace zm_laststand/zm_laststand
@@ -2021,7 +2021,7 @@ function private revive_internal( reviver, b_track_stats, var_c0ab6a65 = 0 )
     
     if ( var_c0ab6a65 )
     {
-        self function_409dc98e();
+        self decrement_self_revive_count();
     }
     
     self allowjump( 1 );

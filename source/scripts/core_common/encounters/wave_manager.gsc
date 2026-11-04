@@ -2045,25 +2045,25 @@ function function_1c556906( kvp, str_spawner_targetname )
 // Params 2
 // Checksum 0x4d14abd4, Offset: 0x5ea8
 // Size: 0x206
-function function_a3469200( kvp, var_4b054c7f )
+function function_a3469200( kvp, n_spawn_set )
 {
     a_ai = [];
     var_fed53aae = self wave_manager_sys::function_32b947df( kvp );
     
-    if ( isdefined( var_4b054c7f ) )
+    if ( isdefined( n_spawn_set ) )
     {
-        var_4b054c7f--;
+        n_spawn_set--;
     }
     
     foreach ( var_dcd6c23 in var_fed53aae )
     {
         if ( isdefined( var_dcd6c23.var_376c2c29 ) )
         {
-            if ( isdefined( var_4b054c7f ) && var_4b054c7f > 0 )
+            if ( isdefined( n_spawn_set ) && n_spawn_set > 0 )
             {
-                if ( isdefined( var_dcd6c23.var_376c2c29[ var_4b054c7f ] ) )
+                if ( isdefined( var_dcd6c23.var_376c2c29[ n_spawn_set ] ) )
                 {
-                    a_ai = var_dcd6c23.var_376c2c29[ var_4b054c7f ].m_a_ai;
+                    a_ai = var_dcd6c23.var_376c2c29[ n_spawn_set ].m_a_ai;
                 }
             }
             else

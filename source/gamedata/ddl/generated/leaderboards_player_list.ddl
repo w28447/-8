@@ -14,7 +14,7 @@ version 2 {
     // offset 0x8, size 0x3200
     player playerslist[200];
     // offset 0x3208, size 0x8
-    uint:8 hash_b941cba3c015f7b;
+    uint:8 removedfriendscount;
     // offset 0x3210, size 0x3200
     player removedfriends[200];
     // offset 0x6410, size 0x1

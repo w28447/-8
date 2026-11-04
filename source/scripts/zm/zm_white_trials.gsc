@@ -1,7 +1,7 @@
 #using script_23c01b321e642c31;
 #using script_30ba61ad5559c51d;
 #using script_43642da1b2402e5c;
-#using script_6951ea86fdae9ae0;
+#using scripts/zm_common/trials/zm_trial_attack_during_movement.gsc;
 #using script_6f5e741b2bceba3a;
 #using scripts\core_common\ai\zombie_utility;
 #using scripts\core_common\array_shared;

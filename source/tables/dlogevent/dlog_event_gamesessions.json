@@ -244,7 +244,7 @@
         },
         {
             "name": "#buildtimestamp",
-            "scrName": "#hash_1df7f164",
+            "scrName": "#buildtimestamp",
             "type": "STRING",
             "len": 64
         },

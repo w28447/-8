@@ -10,7 +10,7 @@ localizeentry,#hash_b4161658ce1809f
 localizeentry,d#mp/host_ended_game
 localizeentry,#coop/revive_emergency_reserve_once
 localizeentry,#wz/arav
-localizeentry,#hash_ddc319addc8bcb2
+localizeentry,#mp/game_over_caps
 localizeentry,d#mp/host_sucks
 localizeentry,d#mp/defeat_caps
 localizeentry,#killstreak/emp_inbound

@@ -1,4 +1,4 @@
-#using script_6951ea86fdae9ae0;
+#using scripts/zm_common/trials/zm_trial_attack_during_movement.gsc;
 #using scripts\core_common\ai\zombie_utility;
 #using scripts\core_common\ai_shared;
 #using scripts\core_common\array_shared;
@@ -323,7 +323,7 @@ function electric_cherry_reload_attack()
             continue;
         }
         
-        if ( namespace_fcd611c3::is_active() && !self namespace_fcd611c3::function_26f124d8() )
+        if ( zm_trial_attack_during_movement::is_active() && !self zm_trial_attack_during_movement::function_26f124d8() )
         {
             continue;
         }

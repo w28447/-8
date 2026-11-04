@@ -17966,7 +17966,7 @@ string,#hash_1bca74d07d1c411a
 string,#tags/caricature_firebreak
 string,#hash_1bd543d4f9451309
 string,#hash_1be423614009f5a3
-string,#hash_1c07c87a45375aaf
+string,#menu/camo_loot_party_rock
 string,#hash_1c18729ada98aa23
 string,#hash_1c18d4d345e36b58
 string,#hash_1c1a39adc5276503
@@ -18391,7 +18391,7 @@ string,#weapon/ar_doublebarrel_t8
 string,#emotes/bubbles
 string,#hash_2b082ab65e0ce211
 string,#zm_contract/pack_a_punch_desc
-string,#hash_2b0fae1c09a3d8a9
+string,#menu/camo_loot_zombie_flick
 string,#hash_2b27d20d2cfc1069
 string,#hash_2b299b2c390eda43
 string,#challenge/killjoy_master
@@ -18793,7 +18793,7 @@ string,#hash_3b78e32a22c0be7c
 string,#coop_score/kill_assist_rocketeer
 string,#hash_3b8a13a7a35bfb30
 string,#score/warthog_destroyed
-string,#hash_3b8fe5d823f60c86
+string,#mp/captured_the_flag
 string,#score/war_machine_shutdown
 string,#hash_3b9fd15073490108
 string,#hash_3b9fd3507349046e
@@ -19704,7 +19704,7 @@ string,#contract/match_wins_desc
 string,#hash_5d8ce20bafb14fec
 string,#hash_5daa2c1ba56010fc
 string,#hash_5dad26b86d789df6
-string,#hash_5dc620aa9640e528
+string,#menu/camo_loot_apb
 string,#hash_5dc9c8058ffe85fd
 string,#emotes/scuttlebutt_polly
 string,#hash_5dd80834840167d1
@@ -20545,7 +20545,7 @@ string,#menu/fileshare_category_screenshots
 string,#hash_7df641bc63860c5d
 string,#emotes/waiting
 string,#challenge/humiliation_nosebreaker_desc
-string,#hash_7dff411c780ea6a6
+string,#mp/hq_destroyed_by
 string,#hash_7e02da224fcffe46
 string,#hash_7e03963e29bfac7f
 string,#hash_7e16caa63420dc98
@@ -20695,7 +20695,7 @@ fx,#_t6/explosions/fx_exp_equipment
 fx,#killstreaks/fx_air_drop_marker_gold
 fx,#weapon/fx_prox_grenade_wrn_grn
 fx,#hash_5f76ecd582d98e38
-fx,#hash_695b2e7e4b63a645
+fx,#weapon/fx8_equip_spwnbcn_exp
 fx,#light/fx_light_red_spike_charge_os
 fx,#hash_6b74a0816b45e3f8
 fx,#hash_6ce02086fc656138
@@ -20828,7 +20828,7 @@ client_fx,#fire/fx_fire_ai_human_leg_right_loop
 client_fx,#hash_b22f1c8195d08d2
 client_fx,#smoke/fx_smk_ai_human_leg_left_os
 client_fx,#fire/fx_fire_ai_human_head_loop
-client_fx,#hash_c9cf0acc938a7f6
+client_fx,#zombie/fx8_fire_limb_zmb
 client_fx,#hash_cd236ddbdfe5e3d
 client_fx,#hash_d185de6377a14df
 client_fx,#_t6/weapon/riotshield/fx_riotshield_depoly_lights

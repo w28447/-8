@@ -2005,7 +2005,7 @@ version 228 {
         // offset 0xcda8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xcdf0, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xce38, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xce80, size 0x48
@@ -2465,7 +2465,7 @@ version 228 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -2917,7 +2917,7 @@ version 228 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -2925,7 +2925,7 @@ version 228 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -5311,7 +5311,7 @@ version 227 {
         // offset 0xcca8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xccf0, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xcd38, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xcd80, size 0x48
@@ -5769,7 +5769,7 @@ version 227 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -6221,7 +6221,7 @@ version 227 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -6229,7 +6229,7 @@ version 227 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -8611,7 +8611,7 @@ version 226 {
         // offset 0xcc68, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xccb0, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xccf8, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xcd40, size 0x48
@@ -9069,7 +9069,7 @@ version 226 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -9521,7 +9521,7 @@ version 226 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -9529,7 +9529,7 @@ version 226 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -11893,7 +11893,7 @@ version 225 {
         // offset 0xcb48, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xcb90, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xcbd8, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xcc20, size 0x48
@@ -12349,7 +12349,7 @@ version 225 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -12801,7 +12801,7 @@ version 225 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -12809,7 +12809,7 @@ version 225 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -15163,7 +15163,7 @@ version 224 {
         // offset 0xcaa8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xcaf0, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xcb38, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xcb80, size 0x48
@@ -15617,7 +15617,7 @@ version 224 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -16069,7 +16069,7 @@ version 224 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -16077,7 +16077,7 @@ version 224 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -18431,7 +18431,7 @@ version 223 {
         // offset 0xcaa8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xcaf0, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xcb38, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xcb80, size 0x48
@@ -18885,7 +18885,7 @@ version 223 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -19337,7 +19337,7 @@ version 223 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -19345,7 +19345,7 @@ version 223 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -21699,7 +21699,7 @@ version 222 {
         // offset 0xcaa8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xcaf0, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xcb38, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xcb80, size 0x48
@@ -22153,7 +22153,7 @@ version 222 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -22601,7 +22601,7 @@ version 222 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -22609,7 +22609,7 @@ version 222 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -24963,7 +24963,7 @@ version 221 {
         // offset 0xca78, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xcac0, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xcb08, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xcb50, size 0x48
@@ -25417,7 +25417,7 @@ version 221 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -25865,7 +25865,7 @@ version 221 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -25873,7 +25873,7 @@ version 221 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -28227,7 +28227,7 @@ version 220 {
         // offset 0xca78, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xcac0, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xcb08, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xcb50, size 0x48
@@ -28681,7 +28681,7 @@ version 220 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -29127,7 +29127,7 @@ version 220 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -29135,7 +29135,7 @@ version 220 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -31483,7 +31483,7 @@ version 219 {
         // offset 0xc9b8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xca00, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xca48, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xca90, size 0x48
@@ -31937,7 +31937,7 @@ version 219 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -32383,7 +32383,7 @@ version 219 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -32391,7 +32391,7 @@ version 219 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -34727,7 +34727,7 @@ version 218 {
         // offset 0xc8f8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc940, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc988, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc9d0, size 0x48
@@ -35181,7 +35181,7 @@ version 218 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -35627,7 +35627,7 @@ version 218 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -35635,7 +35635,7 @@ version 218 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -37969,7 +37969,7 @@ version 217 {
         // offset 0xc8b0, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc8f8, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc940, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc988, size 0x48
@@ -38423,7 +38423,7 @@ version 217 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -38869,7 +38869,7 @@ version 217 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -38877,7 +38877,7 @@ version 217 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -41211,7 +41211,7 @@ version 216 {
         // offset 0xc8b0, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc8f8, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc940, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc988, size 0x48
@@ -41665,7 +41665,7 @@ version 216 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -42107,7 +42107,7 @@ version 216 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -42115,7 +42115,7 @@ version 216 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -44441,7 +44441,7 @@ version 215 {
         // offset 0xc790, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc7d8, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc820, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc868, size 0x48
@@ -44895,7 +44895,7 @@ version 215 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -45337,7 +45337,7 @@ version 215 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -45345,7 +45345,7 @@ version 215 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -47671,7 +47671,7 @@ version 214 {
         // offset 0xc790, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc7d8, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc820, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc868, size 0x48
@@ -48125,7 +48125,7 @@ version 214 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -48565,7 +48565,7 @@ version 214 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -48573,7 +48573,7 @@ version 214 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -50899,7 +50899,7 @@ version 213 {
         // offset 0xc790, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc7d8, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc820, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc868, size 0x48
@@ -51353,7 +51353,7 @@ version 213 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -51793,7 +51793,7 @@ version 213 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -51801,7 +51801,7 @@ version 213 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -54127,7 +54127,7 @@ version 212 {
         // offset 0xc790, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc7d8, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc820, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc868, size 0x48
@@ -54581,7 +54581,7 @@ version 212 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -55022,7 +55022,7 @@ version 212 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -55030,7 +55030,7 @@ version 212 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -57352,7 +57352,7 @@ version 211 {
         // offset 0xc750, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc798, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc7e0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc828, size 0x48
@@ -57806,7 +57806,7 @@ version 211 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -58247,7 +58247,7 @@ version 211 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -58255,7 +58255,7 @@ version 211 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -60573,7 +60573,7 @@ version 210 {
         // offset 0xc710, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc758, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc7a0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc7e8, size 0x48
@@ -61027,7 +61027,7 @@ version 210 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -61468,7 +61468,7 @@ version 210 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -61476,7 +61476,7 @@ version 210 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -63794,7 +63794,7 @@ version 209 {
         // offset 0xc710, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc758, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc7a0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc7e8, size 0x48
@@ -64248,7 +64248,7 @@ version 209 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -64684,7 +64684,7 @@ version 209 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -64692,7 +64692,7 @@ version 209 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -67008,7 +67008,7 @@ version 208 {
         // offset 0xc6c8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc710, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc758, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc7a0, size 0x48
@@ -67462,7 +67462,7 @@ version 208 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -67898,7 +67898,7 @@ version 208 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -67906,7 +67906,7 @@ version 208 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -70222,7 +70222,7 @@ version 207 {
         // offset 0xc6c8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc710, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc758, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc7a0, size 0x48
@@ -70676,7 +70676,7 @@ version 207 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -71111,7 +71111,7 @@ version 207 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -71119,7 +71119,7 @@ version 207 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -73435,7 +73435,7 @@ version 206 {
         // offset 0xc6c8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc710, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc758, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc7a0, size 0x48
@@ -73889,7 +73889,7 @@ version 206 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -74314,7 +74314,7 @@ version 206 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -74322,7 +74322,7 @@ version 206 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -76638,7 +76638,7 @@ version 205 {
         // offset 0xc6c8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc710, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc758, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc7a0, size 0x48
@@ -77092,7 +77092,7 @@ version 205 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -77516,7 +77516,7 @@ version 205 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -77524,7 +77524,7 @@ version 205 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -79840,7 +79840,7 @@ version 204 {
         // offset 0xc6c8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc710, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc758, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc7a0, size 0x48
@@ -80294,7 +80294,7 @@ version 204 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -80716,7 +80716,7 @@ version 204 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -80724,7 +80724,7 @@ version 204 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -83040,7 +83040,7 @@ version 203 {
         // offset 0xc6c8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc710, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc758, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc7a0, size 0x48
@@ -83494,7 +83494,7 @@ version 203 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -83914,7 +83914,7 @@ version 203 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -83922,7 +83922,7 @@ version 203 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -86234,7 +86234,7 @@ version 202 {
         // offset 0xc688, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc6d0, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc718, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc760, size 0x48
@@ -86688,7 +86688,7 @@ version 202 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -87108,7 +87108,7 @@ version 202 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -87116,7 +87116,7 @@ version 202 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -89426,7 +89426,7 @@ version 201 {
         // offset 0xc648, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc690, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc6d8, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc720, size 0x48
@@ -89880,7 +89880,7 @@ version 201 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -90300,7 +90300,7 @@ version 201 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -90308,7 +90308,7 @@ version 201 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -92618,7 +92618,7 @@ version 200 {
         // offset 0xc648, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc690, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc6d8, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc720, size 0x48
@@ -93072,7 +93072,7 @@ version 200 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -93491,7 +93491,7 @@ version 200 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -93499,7 +93499,7 @@ version 200 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -95801,7 +95801,7 @@ version 199 {
         // offset 0xc528, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc570, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc5b8, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc600, size 0x48
@@ -96255,7 +96255,7 @@ version 199 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -96674,7 +96674,7 @@ version 199 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -96682,7 +96682,7 @@ version 199 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -98978,7 +98978,7 @@ version 198 {
         // offset 0xc468, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc4b0, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc4f8, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc540, size 0x48
@@ -99432,7 +99432,7 @@ version 198 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -99851,7 +99851,7 @@ version 198 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -99859,7 +99859,7 @@ version 198 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -102155,7 +102155,7 @@ version 197 {
         // offset 0xc468, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc4b0, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc4f8, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc540, size 0x48
@@ -102609,7 +102609,7 @@ version 197 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -103027,7 +103027,7 @@ version 197 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -103035,7 +103035,7 @@ version 197 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -105313,7 +105313,7 @@ version 196 {
         // offset 0xc348, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc390, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc3d8, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc420, size 0x48
@@ -105765,7 +105765,7 @@ version 196 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -106183,7 +106183,7 @@ version 196 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -106191,7 +106191,7 @@ version 196 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -108469,7 +108469,7 @@ version 195 {
         // offset 0xc348, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc390, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc3d8, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc420, size 0x48
@@ -108921,7 +108921,7 @@ version 195 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -109338,7 +109338,7 @@ version 195 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -109346,7 +109346,7 @@ version 195 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -111616,7 +111616,7 @@ version 194 {
         // offset 0xc228, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc270, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc2b8, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc300, size 0x48
@@ -112068,7 +112068,7 @@ version 194 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -112485,7 +112485,7 @@ version 194 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -112493,7 +112493,7 @@ version 194 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -114763,7 +114763,7 @@ version 193 {
         // offset 0xc228, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc270, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc2b8, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc300, size 0x48
@@ -115215,7 +115215,7 @@ version 193 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -115630,7 +115630,7 @@ version 193 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -115638,7 +115638,7 @@ version 193 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -117900,7 +117900,7 @@ version 192 {
         // offset 0xc108, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc150, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc198, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc1e0, size 0x48
@@ -118352,7 +118352,7 @@ version 192 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -118767,7 +118767,7 @@ version 192 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -118775,7 +118775,7 @@ version 192 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -121037,7 +121037,7 @@ version 191 {
         // offset 0xc108, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc150, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc198, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc1e0, size 0x48
@@ -121489,7 +121489,7 @@ version 191 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -121904,7 +121904,7 @@ version 191 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -121912,7 +121912,7 @@ version 191 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -124172,7 +124172,7 @@ version 190 {
         // offset 0xc108, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc150, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc198, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc1e0, size 0x48
@@ -124624,7 +124624,7 @@ version 190 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -125037,7 +125037,7 @@ version 190 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -125045,7 +125045,7 @@ version 190 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -127303,7 +127303,7 @@ version 189 {
         // offset 0xc108, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc150, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc198, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc1e0, size 0x48
@@ -127755,7 +127755,7 @@ version 189 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -128168,7 +128168,7 @@ version 189 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -128176,7 +128176,7 @@ version 189 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -130436,7 +130436,7 @@ version 188 {
         // offset 0xc108, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc150, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc198, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc1e0, size 0x48
@@ -130888,7 +130888,7 @@ version 188 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -131301,7 +131301,7 @@ version 188 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -131309,7 +131309,7 @@ version 188 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -133567,7 +133567,7 @@ version 187 {
         // offset 0xc108, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc150, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc198, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc1e0, size 0x48
@@ -134019,7 +134019,7 @@ version 187 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -134432,7 +134432,7 @@ version 187 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -134440,7 +134440,7 @@ version 187 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -136697,7 +136697,7 @@ version 186 {
         // offset 0xc108, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc150, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc198, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc1e0, size 0x48
@@ -137149,7 +137149,7 @@ version 186 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -137562,7 +137562,7 @@ version 186 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -137570,7 +137570,7 @@ version 186 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -139826,7 +139826,7 @@ version 185 {
         // offset 0xc108, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc150, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc198, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc1e0, size 0x48
@@ -140278,7 +140278,7 @@ version 185 {
         // offset 0x400, size 0x20
         uint leaguenamecode;
         // offset 0x420, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x440, size 0x20
         uint dailybonuspool;
         // offset 0x460, size 0x20
@@ -140691,7 +140691,7 @@ version 185 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -140699,7 +140699,7 @@ version 185 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -142954,7 +142954,7 @@ version 184 {
         // offset 0xc108, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc150, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc198, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc1e0, size 0x48
@@ -143404,7 +143404,7 @@ version 184 {
         // offset 0x3e0, size 0x20
         uint leaguenamecode;
         // offset 0x400, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x420, size 0x20
         uint dailybonuspool;
         // offset 0x440, size 0x20
@@ -143817,7 +143817,7 @@ version 184 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -143825,7 +143825,7 @@ version 184 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -146080,7 +146080,7 @@ version 183 {
         // offset 0xc108, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc150, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc198, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc1e0, size 0x48
@@ -146530,7 +146530,7 @@ version 183 {
         // offset 0x3e0, size 0x20
         uint leaguenamecode;
         // offset 0x400, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x420, size 0x20
         uint dailybonuspool;
         // offset 0x440, size 0x20
@@ -146943,7 +146943,7 @@ version 183 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -146951,7 +146951,7 @@ version 183 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -149204,7 +149204,7 @@ version 182 {
         // offset 0xc108, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc150, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc198, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc1e0, size 0x48
@@ -149650,7 +149650,7 @@ version 182 {
         // offset 0x3a0, size 0x20
         uint leaguenamecode;
         // offset 0x3c0, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x3e0, size 0x20
         uint dailybonuspool;
         // offset 0x400, size 0x20
@@ -150063,7 +150063,7 @@ version 182 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -150071,7 +150071,7 @@ version 182 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -152322,7 +152322,7 @@ version 181 {
         // offset 0xc0c0, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc108, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc150, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc198, size 0x48
@@ -152768,7 +152768,7 @@ version 181 {
         // offset 0x3a0, size 0x20
         uint leaguenamecode;
         // offset 0x3c0, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x3e0, size 0x20
         uint dailybonuspool;
         // offset 0x400, size 0x20
@@ -153181,7 +153181,7 @@ version 181 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -153189,7 +153189,7 @@ version 181 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -155440,7 +155440,7 @@ version 180 {
         // offset 0xc0c0, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc108, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc150, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc198, size 0x48
@@ -155882,7 +155882,7 @@ version 180 {
         // offset 0x3a0, size 0x20
         uint leaguenamecode;
         // offset 0x3c0, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x3e0, size 0x20
         uint dailybonuspool;
         // offset 0x400, size 0x20
@@ -156295,7 +156295,7 @@ version 180 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -156303,7 +156303,7 @@ version 180 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -158554,7 +158554,7 @@ version 179 {
         // offset 0xc0c0, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc108, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc150, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc198, size 0x48
@@ -158996,7 +158996,7 @@ version 179 {
         // offset 0x3a0, size 0x20
         uint leaguenamecode;
         // offset 0x3c0, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x3e0, size 0x20
         uint dailybonuspool;
         // offset 0x400, size 0x20
@@ -159408,7 +159408,7 @@ version 179 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -159416,7 +159416,7 @@ version 179 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -161663,7 +161663,7 @@ version 178 {
         // offset 0xc030, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc078, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc0c0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc108, size 0x48
@@ -162103,7 +162103,7 @@ version 178 {
         // offset 0x3a0, size 0x20
         uint leaguenamecode;
         // offset 0x3c0, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x3e0, size 0x20
         uint dailybonuspool;
         // offset 0x400, size 0x20
@@ -162515,7 +162515,7 @@ version 178 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -162523,7 +162523,7 @@ version 178 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -164770,7 +164770,7 @@ version 177 {
         // offset 0xc030, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc078, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc0c0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc108, size 0x48
@@ -165210,7 +165210,7 @@ version 177 {
         // offset 0x3a0, size 0x20
         uint leaguenamecode;
         // offset 0x3c0, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x3e0, size 0x20
         uint dailybonuspool;
         // offset 0x400, size 0x20
@@ -165621,7 +165621,7 @@ version 177 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -165629,7 +165629,7 @@ version 177 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -167876,7 +167876,7 @@ version 176 {
         // offset 0xc030, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc078, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc0c0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc108, size 0x48
@@ -168316,7 +168316,7 @@ version 176 {
         // offset 0x3a0, size 0x20
         uint leaguenamecode;
         // offset 0x3c0, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x3e0, size 0x20
         uint dailybonuspool;
         // offset 0x400, size 0x20
@@ -168722,7 +168722,7 @@ version 176 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -168730,7 +168730,7 @@ version 176 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -170977,7 +170977,7 @@ version 175 {
         // offset 0xc030, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc078, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc0c0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc108, size 0x48
@@ -171417,7 +171417,7 @@ version 175 {
         // offset 0x3a0, size 0x20
         uint leaguenamecode;
         // offset 0x3c0, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x3e0, size 0x20
         uint dailybonuspool;
         // offset 0x400, size 0x20
@@ -171823,7 +171823,7 @@ version 175 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -171831,7 +171831,7 @@ version 175 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -174076,7 +174076,7 @@ version 174 {
         // offset 0xc030, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc078, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc0c0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc108, size 0x48
@@ -174516,7 +174516,7 @@ version 174 {
         // offset 0x3a0, size 0x20
         uint leaguenamecode;
         // offset 0x3c0, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x3e0, size 0x20
         uint dailybonuspool;
         // offset 0x400, size 0x20
@@ -174921,7 +174921,7 @@ version 174 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -174929,7 +174929,7 @@ version 174 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -177156,7 +177156,7 @@ version 173 {
         // offset 0xbf10, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbf58, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbfa0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbfe8, size 0x48
@@ -177594,7 +177594,7 @@ version 173 {
         // offset 0x3a0, size 0x20
         uint leaguenamecode;
         // offset 0x3c0, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x3e0, size 0x20
         uint dailybonuspool;
         // offset 0x400, size 0x20
@@ -177999,7 +177999,7 @@ version 173 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -178007,7 +178007,7 @@ version 173 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -180234,7 +180234,7 @@ version 172 {
         // offset 0xbf10, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbf58, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbfa0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbfe8, size 0x48
@@ -180672,7 +180672,7 @@ version 172 {
         // offset 0x3a0, size 0x20
         uint leaguenamecode;
         // offset 0x3c0, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x3e0, size 0x20
         uint dailybonuspool;
         // offset 0x400, size 0x20
@@ -181075,7 +181075,7 @@ version 172 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -181083,7 +181083,7 @@ version 172 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -183310,7 +183310,7 @@ version 171 {
         // offset 0xbf10, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbf58, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbfa0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbfe8, size 0x48
@@ -183744,7 +183744,7 @@ version 171 {
         // offset 0x360, size 0x20
         uint leaguenamecode;
         // offset 0x380, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x3a0, size 0x20
         uint dailybonuspool;
         // offset 0x3c0, size 0x20
@@ -184147,7 +184147,7 @@ version 171 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -184155,7 +184155,7 @@ version 171 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -186374,7 +186374,7 @@ version 170 {
         // offset 0xbe10, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbe58, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbea0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbee8, size 0x48
@@ -186808,7 +186808,7 @@ version 170 {
         // offset 0x360, size 0x20
         uint leaguenamecode;
         // offset 0x380, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x3a0, size 0x20
         uint dailybonuspool;
         // offset 0x3c0, size 0x20
@@ -187211,7 +187211,7 @@ version 170 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -187219,7 +187219,7 @@ version 170 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -189436,7 +189436,7 @@ version 169 {
         // offset 0xbdc8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbe10, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbe58, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbea0, size 0x48
@@ -189870,7 +189870,7 @@ version 169 {
         // offset 0x360, size 0x20
         uint leaguenamecode;
         // offset 0x380, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x3a0, size 0x20
         uint dailybonuspool;
         // offset 0x3c0, size 0x20
@@ -190273,7 +190273,7 @@ version 169 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -190281,7 +190281,7 @@ version 169 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -192498,7 +192498,7 @@ version 168 {
         // offset 0xbdc8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbe10, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbe58, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbea0, size 0x48
@@ -192928,7 +192928,7 @@ version 168 {
         // offset 0x360, size 0x20
         uint leaguenamecode;
         // offset 0x380, size 0x20
-        uint hash_3a864dec1f172498;
+        uint firstbronzepointsbarrack;
         // offset 0x3a0, size 0x20
         uint dailybonuspool;
         // offset 0x3c0, size 0x20
@@ -193331,7 +193331,7 @@ version 168 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -193339,7 +193339,7 @@ version 168 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -195556,7 +195556,7 @@ version 167 {
         // offset 0xbdc8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbe10, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbe58, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbea0, size 0x48
@@ -196375,7 +196375,7 @@ version 167 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -196383,7 +196383,7 @@ version 167 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -198598,7 +198598,7 @@ version 166 {
         // offset 0xbd80, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbdc8, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbe10, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbe58, size 0x48
@@ -199417,7 +199417,7 @@ version 166 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -199425,7 +199425,7 @@ version 166 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -201634,7 +201634,7 @@ version 165 {
         // offset 0xbca8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbcf0, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbd38, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbd80, size 0x48
@@ -202453,7 +202453,7 @@ version 165 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -202461,7 +202461,7 @@ version 165 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -204670,7 +204670,7 @@ version 164 {
         // offset 0xbca8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbcf0, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbd38, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbd80, size 0x48
@@ -205485,7 +205485,7 @@ version 164 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -205493,7 +205493,7 @@ version 164 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -207700,7 +207700,7 @@ version 163 {
         // offset 0xbc60, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbca8, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbcf0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbd38, size 0x48
@@ -208515,7 +208515,7 @@ version 163 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -208523,7 +208523,7 @@ version 163 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -210730,7 +210730,7 @@ version 162 {
         // offset 0xbc60, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbca8, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbcf0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbd38, size 0x48
@@ -211541,7 +211541,7 @@ version 162 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -211549,7 +211549,7 @@ version 162 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -213756,7 +213756,7 @@ version 161 {
         // offset 0xbc60, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbca8, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbcf0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbd38, size 0x48
@@ -214566,7 +214566,7 @@ version 161 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -214574,7 +214574,7 @@ version 161 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -216781,7 +216781,7 @@ version 160 {
         // offset 0xbc60, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbca8, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbcf0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbd38, size 0x48
@@ -217589,7 +217589,7 @@ version 160 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -217597,7 +217597,7 @@ version 160 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -219804,7 +219804,7 @@ version 159 {
         // offset 0xbc60, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbca8, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbcf0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbd38, size 0x48
@@ -220586,7 +220586,7 @@ version 159 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -220594,7 +220594,7 @@ version 159 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -222799,7 +222799,7 @@ version 158 {
         // offset 0xbc60, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbca8, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbcf0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbd38, size 0x48
@@ -223575,7 +223575,7 @@ version 158 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -223583,7 +223583,7 @@ version 158 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -225786,7 +225786,7 @@ version 157 {
         // offset 0xbc18, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbc60, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbca8, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbcf0, size 0x48
@@ -226560,7 +226560,7 @@ version 157 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -226568,7 +226568,7 @@ version 157 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -228765,7 +228765,7 @@ version 156 {
         // offset 0xbc18, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbc60, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbca8, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbcf0, size 0x48
@@ -229539,7 +229539,7 @@ version 156 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -229547,7 +229547,7 @@ version 156 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -231722,7 +231722,7 @@ version 155 {
         // offset 0xbbd8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbc20, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbc68, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbcb0, size 0x48
@@ -232496,7 +232496,7 @@ version 155 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -232504,7 +232504,7 @@ version 155 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -234675,7 +234675,7 @@ version 154 {
         // offset 0xbb48, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbb90, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbbd8, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbc20, size 0x48
@@ -235447,7 +235447,7 @@ version 154 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -235455,7 +235455,7 @@ version 154 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -237626,7 +237626,7 @@ version 153 {
         // offset 0xbb48, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbb90, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbbd8, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbc20, size 0x48
@@ -238398,7 +238398,7 @@ version 153 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -238406,7 +238406,7 @@ version 153 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -240574,7 +240574,7 @@ version 152 {
         // offset 0xbb48, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbb90, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbbd8, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbc20, size 0x48
@@ -241346,7 +241346,7 @@ version 152 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -241354,7 +241354,7 @@ version 152 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -243510,7 +243510,7 @@ version 151 {
         // offset 0xb9e0, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xba28, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xba70, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbab8, size 0x48
@@ -244282,7 +244282,7 @@ version 151 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -244290,7 +244290,7 @@ version 151 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -246442,7 +246442,7 @@ version 150 {
         // offset 0xb960, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xb9a8, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xb9f0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xba38, size 0x48
@@ -247214,7 +247214,7 @@ version 150 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -247222,7 +247222,7 @@ version 150 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -249374,7 +249374,7 @@ version 149 {
         // offset 0xb960, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xb9a8, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xb9f0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xba38, size 0x48
@@ -250144,7 +250144,7 @@ version 149 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -250152,7 +250152,7 @@ version 149 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -252302,7 +252302,7 @@ version 148 {
         // offset 0xb920, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xb968, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xb9b0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xb9f8, size 0x48
@@ -253072,7 +253072,7 @@ version 148 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -253080,7 +253080,7 @@ version 148 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -255228,7 +255228,7 @@ version 147 {
         // offset 0xb8e0, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xb928, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xb970, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xb9b8, size 0x48
@@ -255998,7 +255998,7 @@ version 147 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -256006,7 +256006,7 @@ version 147 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -258154,7 +258154,7 @@ version 146 {
         // offset 0xb8e0, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xb928, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xb970, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xb9b8, size 0x48
@@ -258920,7 +258920,7 @@ version 146 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -258928,7 +258928,7 @@ version 146 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -261076,7 +261076,7 @@ version 145 {
         // offset 0xb8e0, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xb928, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xb970, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xb9b8, size 0x48
@@ -261842,7 +261842,7 @@ version 145 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -261850,7 +261850,7 @@ version 145 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -263998,7 +263998,7 @@ version 144 {
         // offset 0xb870, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xb8b8, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xb900, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xb948, size 0x48
@@ -264764,7 +264764,7 @@ version 144 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -264772,7 +264772,7 @@ version 144 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -266920,7 +266920,7 @@ version 143 {
         // offset 0xb870, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xb8b8, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xb900, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xb948, size 0x48
@@ -267684,7 +267684,7 @@ version 143 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -267692,7 +267692,7 @@ version 143 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -269840,7 +269840,7 @@ version 142 {
         // offset 0xb870, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xb8b8, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xb900, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xb948, size 0x48
@@ -270600,7 +270600,7 @@ version 142 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -270608,7 +270608,7 @@ version 142 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -272754,7 +272754,7 @@ version 141 {
         // offset 0xb828, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xb870, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xb8b8, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xb900, size 0x48
@@ -273514,7 +273514,7 @@ version 141 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -273522,7 +273522,7 @@ version 141 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -275668,7 +275668,7 @@ version 140 {
         // offset 0xb828, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xb870, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xb8b8, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xb900, size 0x48
@@ -276426,7 +276426,7 @@ version 140 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -276434,7 +276434,7 @@ version 140 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -278580,7 +278580,7 @@ version 139 {
         // offset 0xb828, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xb870, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xb8b8, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xb900, size 0x48
@@ -279336,7 +279336,7 @@ version 139 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -279344,7 +279344,7 @@ version 139 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -281490,7 +281490,7 @@ version 138 {
         // offset 0xb828, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xb870, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xb8b8, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xb900, size 0x48
@@ -282245,7 +282245,7 @@ version 138 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -282253,7 +282253,7 @@ version 138 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -284399,7 +284399,7 @@ version 137 {
         // offset 0xb828, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xb870, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xb8b8, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xb900, size 0x48
@@ -285156,7 +285156,7 @@ version 137 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -285164,7 +285164,7 @@ version 137 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -287310,7 +287310,7 @@ version 136 {
         // offset 0xb828, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xb870, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xb8b8, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xb900, size 0x48
@@ -288067,7 +288067,7 @@ version 136 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -288075,7 +288075,7 @@ version 136 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -290219,7 +290219,7 @@ version 135 {
         // offset 0xb828, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xb870, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xb8b8, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xb900, size 0x48
@@ -290976,7 +290976,7 @@ version 135 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -290984,7 +290984,7 @@ version 135 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -293125,7 +293125,7 @@ version 134 {
         // offset 0xb828, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xb870, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xb8b8, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xb900, size 0x48
@@ -293878,7 +293878,7 @@ version 134 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -293886,7 +293886,7 @@ version 134 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -296027,7 +296027,7 @@ version 133 {
         // offset 0xb828, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xb870, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xb8b8, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xb900, size 0x48
@@ -296776,7 +296776,7 @@ version 133 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -296784,7 +296784,7 @@ version 133 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -298925,7 +298925,7 @@ version 132 {
         // offset 0xb828, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xb870, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xb8b8, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xb900, size 0x48
@@ -299662,7 +299662,7 @@ version 132 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -299670,7 +299670,7 @@ version 132 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -301801,7 +301801,7 @@ version 131 {
         // offset 0xb6c0, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xb708, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xb750, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xb798, size 0x48
@@ -302538,7 +302538,7 @@ version 131 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -302546,7 +302546,7 @@ version 131 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -304671,7 +304671,7 @@ version 130 {
         // offset 0xb5e8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xb630, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xb678, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xb6c0, size 0x48
@@ -305406,7 +305406,7 @@ version 130 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -305414,7 +305414,7 @@ version 130 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -307539,7 +307539,7 @@ version 129 {
         // offset 0xb5e8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xb630, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xb678, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xb6c0, size 0x48
@@ -308266,7 +308266,7 @@ version 129 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -308274,7 +308274,7 @@ version 129 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -310399,7 +310399,7 @@ version 128 {
         // offset 0xb5e8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xb630, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xb678, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xb6c0, size 0x48
@@ -311106,7 +311106,7 @@ version 128 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -311114,7 +311114,7 @@ version 128 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -313239,7 +313239,7 @@ version 127 {
         // offset 0xb5c8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xb610, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xb658, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xb6a0, size 0x48
@@ -313946,7 +313946,7 @@ version 127 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -313954,7 +313954,7 @@ version 127 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -316077,7 +316077,7 @@ version 126 {
         // offset 0xb5c8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xb610, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xb658, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xb6a0, size 0x48
@@ -316784,7 +316784,7 @@ version 126 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -316792,7 +316792,7 @@ version 126 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -317821,7 +317821,7 @@ version 125 {
         // offset 0x2640, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x2680, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x26c8, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2710, size 0x48
@@ -318977,7 +318977,7 @@ version 125 {
         // offset 0xbfc0, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xc008, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xc050, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xc098, size 0x48
@@ -319688,7 +319688,7 @@ version 125 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -319696,7 +319696,7 @@ version 125 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -320725,7 +320725,7 @@ version 124 {
         // offset 0x2640, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x2680, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x26c8, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2710, size 0x48
@@ -321875,7 +321875,7 @@ version 124 {
         // offset 0xbee8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbf30, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbf78, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbfc0, size 0x48
@@ -322586,7 +322586,7 @@ version 124 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -322594,7 +322594,7 @@ version 124 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -323623,7 +323623,7 @@ version 123 {
         // offset 0x2640, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x2680, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x26c8, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2710, size 0x48
@@ -324773,7 +324773,7 @@ version 123 {
         // offset 0xbee8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbf30, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbf78, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbfc0, size 0x48
@@ -325484,7 +325484,7 @@ version 123 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -325492,7 +325492,7 @@ version 123 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -326514,7 +326514,7 @@ version 122 {
         // offset 0x2648, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x2688, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x26d0, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2718, size 0x48
@@ -327650,7 +327650,7 @@ version 122 {
         // offset 0xbe30, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbe78, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbec0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbf08, size 0x48
@@ -328361,7 +328361,7 @@ version 122 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -328369,7 +328369,7 @@ version 122 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -329391,7 +329391,7 @@ version 121 {
         // offset 0x2648, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x2688, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x26d0, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2718, size 0x48
@@ -330527,7 +330527,7 @@ version 121 {
         // offset 0xbe30, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbe78, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbec0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbf08, size 0x48
@@ -331238,7 +331238,7 @@ version 121 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -331246,7 +331246,7 @@ version 121 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -332262,7 +332262,7 @@ version 120 {
         // offset 0x2600, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x2640, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2688, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x26d0, size 0x48
@@ -333396,7 +333396,7 @@ version 120 {
         // offset 0xbda0, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbde8, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbe30, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbe78, size 0x48
@@ -334107,7 +334107,7 @@ version 120 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -334115,7 +334115,7 @@ version 120 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -335127,7 +335127,7 @@ version 119 {
         // offset 0x2600, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x2640, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2688, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x26d0, size 0x48
@@ -336261,7 +336261,7 @@ version 119 {
         // offset 0xbda0, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbde8, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbe30, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbe78, size 0x48
@@ -336972,7 +336972,7 @@ version 119 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -336980,7 +336980,7 @@ version 119 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -337992,7 +337992,7 @@ version 118 {
         // offset 0x2600, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x2640, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2688, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x26d0, size 0x48
@@ -339126,7 +339126,7 @@ version 118 {
         // offset 0xbda0, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbde8, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbe30, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbe78, size 0x48
@@ -339837,7 +339837,7 @@ version 118 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -339845,7 +339845,7 @@ version 118 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -340855,7 +340855,7 @@ version 117 {
         // offset 0x25b8, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x25f8, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2640, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2688, size 0x48
@@ -341989,7 +341989,7 @@ version 117 {
         // offset 0xbd58, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbda0, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbde8, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbe30, size 0x48
@@ -342702,7 +342702,7 @@ version 117 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -342710,7 +342710,7 @@ version 117 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -343720,7 +343720,7 @@ version 116 {
         // offset 0x25b8, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x25f8, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2640, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2688, size 0x48
@@ -344854,7 +344854,7 @@ version 116 {
         // offset 0xbd58, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbda0, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbde8, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbe30, size 0x48
@@ -345565,7 +345565,7 @@ version 116 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -345573,7 +345573,7 @@ version 116 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -346581,7 +346581,7 @@ version 115 {
         // offset 0x2570, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x25b0, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x25f8, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2640, size 0x48
@@ -347707,7 +347707,7 @@ version 115 {
         // offset 0xbbf0, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbc38, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbc80, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbcc8, size 0x48
@@ -348414,7 +348414,7 @@ version 115 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -348422,7 +348422,7 @@ version 115 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -349443,7 +349443,7 @@ version 114 {
         // offset 0x2570, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x25b0, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x25f8, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2640, size 0x48
@@ -350569,7 +350569,7 @@ version 114 {
         // offset 0xbbf0, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbc38, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbc80, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbcc8, size 0x48
@@ -351276,7 +351276,7 @@ version 114 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -351284,7 +351284,7 @@ version 114 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -352275,7 +352275,7 @@ version 113 {
         // offset 0x2560, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x25a0, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x25e8, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2630, size 0x48
@@ -353401,7 +353401,7 @@ version 113 {
         // offset 0xbb50, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbb98, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbbe0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbc28, size 0x48
@@ -354108,7 +354108,7 @@ version 113 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -354116,7 +354116,7 @@ version 113 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -355107,7 +355107,7 @@ version 112 {
         // offset 0x2560, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x25a0, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x25e8, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2630, size 0x48
@@ -356233,7 +356233,7 @@ version 112 {
         // offset 0xbb50, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbb98, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbbe0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbc28, size 0x48
@@ -356940,7 +356940,7 @@ version 112 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -356948,7 +356948,7 @@ version 112 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -357938,7 +357938,7 @@ version 111 {
         // offset 0x2560, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x25a0, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x25e8, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2630, size 0x48
@@ -359064,7 +359064,7 @@ version 111 {
         // offset 0xbb50, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbb98, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbbe0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbc28, size 0x48
@@ -359771,7 +359771,7 @@ version 111 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -359779,7 +359779,7 @@ version 111 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -360765,7 +360765,7 @@ version 110 {
         // offset 0x2538, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x2578, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x25c0, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2608, size 0x48
@@ -361893,7 +361893,7 @@ version 110 {
         // offset 0xbb30, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbb78, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbbc0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbc08, size 0x48
@@ -362596,7 +362596,7 @@ version 110 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -362604,7 +362604,7 @@ version 110 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -363590,7 +363590,7 @@ version 109 {
         // offset 0x2538, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x2578, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x25c0, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2608, size 0x48
@@ -364716,7 +364716,7 @@ version 109 {
         // offset 0xbae8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbb30, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbb78, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbbc0, size 0x48
@@ -365419,7 +365419,7 @@ version 109 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -365427,7 +365427,7 @@ version 109 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -366413,7 +366413,7 @@ version 108 {
         // offset 0x2538, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x2578, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x25c0, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2608, size 0x48
@@ -367539,7 +367539,7 @@ version 108 {
         // offset 0xbae8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbb30, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbb78, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbbc0, size 0x48
@@ -368242,7 +368242,7 @@ version 108 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -368250,7 +368250,7 @@ version 108 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -369234,7 +369234,7 @@ version 107 {
         // offset 0x24f0, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x2530, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2578, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x25c0, size 0x48
@@ -370360,7 +370360,7 @@ version 107 {
         // offset 0xbaa0, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbae8, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbb30, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbb78, size 0x48
@@ -371063,7 +371063,7 @@ version 107 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -371071,7 +371071,7 @@ version 107 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -372055,7 +372055,7 @@ version 106 {
         // offset 0x24f0, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x2530, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2578, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x25c0, size 0x48
@@ -373179,7 +373179,7 @@ version 106 {
         // offset 0xba60, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xbaa8, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xbaf0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbb38, size 0x48
@@ -373884,7 +373884,7 @@ version 106 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -373892,7 +373892,7 @@ version 106 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -374864,7 +374864,7 @@ version 105 {
         // offset 0x24d8, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x2518, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2560, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x25a8, size 0x48
@@ -375988,7 +375988,7 @@ version 105 {
         // offset 0xb9f8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xba40, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xba88, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbad0, size 0x48
@@ -376693,7 +376693,7 @@ version 105 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -376701,7 +376701,7 @@ version 105 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -377671,7 +377671,7 @@ version 104 {
         // offset 0x24d8, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x2518, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2560, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x25a8, size 0x48
@@ -378795,7 +378795,7 @@ version 104 {
         // offset 0xb9f8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xba40, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xba88, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbad0, size 0x48
@@ -379500,7 +379500,7 @@ version 104 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -379508,7 +379508,7 @@ version 104 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -380478,7 +380478,7 @@ version 103 {
         // offset 0x24d8, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x2518, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2560, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x25a8, size 0x48
@@ -381602,7 +381602,7 @@ version 103 {
         // offset 0xb9f8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xba40, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xba88, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbad0, size 0x48
@@ -382307,7 +382307,7 @@ version 103 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -382315,7 +382315,7 @@ version 103 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -383284,7 +383284,7 @@ version 102 {
         // offset 0x24d8, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x2518, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2560, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x25a8, size 0x48
@@ -384408,7 +384408,7 @@ version 102 {
         // offset 0xb9f8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xba40, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xba88, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbad0, size 0x48
@@ -385113,7 +385113,7 @@ version 102 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -385121,7 +385121,7 @@ version 102 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -386089,7 +386089,7 @@ version 101 {
         // offset 0x24d8, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x2518, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2560, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x25a8, size 0x48
@@ -387213,7 +387213,7 @@ version 101 {
         // offset 0xb9f8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xba40, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xba88, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbad0, size 0x48
@@ -387918,7 +387918,7 @@ version 101 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -387926,7 +387926,7 @@ version 101 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -388893,7 +388893,7 @@ version 100 {
         // offset 0x24d8, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x2518, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2560, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x25a8, size 0x48
@@ -390017,7 +390017,7 @@ version 100 {
         // offset 0xb9f8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xba40, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xba88, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbad0, size 0x48
@@ -390722,7 +390722,7 @@ version 100 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -390730,7 +390730,7 @@ version 100 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -391696,7 +391696,7 @@ version 99 {
         // offset 0x24d8, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x2518, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2560, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x25a8, size 0x48
@@ -392820,7 +392820,7 @@ version 99 {
         // offset 0xb9f8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xba40, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xba88, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbad0, size 0x48
@@ -393525,7 +393525,7 @@ version 99 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -393533,7 +393533,7 @@ version 99 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -394498,7 +394498,7 @@ version 98 {
         // offset 0x24d8, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x2518, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2560, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x25a8, size 0x48
@@ -395622,7 +395622,7 @@ version 98 {
         // offset 0xb9f8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xba40, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xba88, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xbad0, size 0x48
@@ -396327,7 +396327,7 @@ version 98 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -396335,7 +396335,7 @@ version 98 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -397300,7 +397300,7 @@ version 97 {
         // offset 0x24d8, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x2518, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2560, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x25a8, size 0x48
@@ -398416,7 +398416,7 @@ version 97 {
         // offset 0xb8d8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xb920, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xb968, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xb9b0, size 0x48
@@ -399121,7 +399121,7 @@ version 97 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -399129,7 +399129,7 @@ version 97 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -400092,7 +400092,7 @@ version 96 {
         // offset 0x2490, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x24d0, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2518, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2560, size 0x48
@@ -401196,7 +401196,7 @@ version 96 {
         // offset 0xb690, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xb6d8, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xb720, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xb768, size 0x48
@@ -401899,7 +401899,7 @@ version 96 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -401907,7 +401907,7 @@ version 96 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -402864,7 +402864,7 @@ version 95 {
         // offset 0x23d0, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x2410, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2458, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x24a0, size 0x48
@@ -403962,7 +403962,7 @@ version 95 {
         // offset 0xb528, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xb570, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xb5b8, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xb600, size 0x48
@@ -404667,7 +404667,7 @@ version 95 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -404675,7 +404675,7 @@ version 95 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -405632,7 +405632,7 @@ version 94 {
         // offset 0x23d0, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x2410, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2458, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x24a0, size 0x48
@@ -406730,7 +406730,7 @@ version 94 {
         // offset 0xb528, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xb570, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xb5b8, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xb600, size 0x48
@@ -407435,7 +407435,7 @@ version 94 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -407443,7 +407443,7 @@ version 94 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -408386,7 +408386,7 @@ version 93 {
         // offset 0x23d0, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x2410, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2458, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x24a0, size 0x48
@@ -409484,7 +409484,7 @@ version 93 {
         // offset 0xb528, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xb570, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xb5b8, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xb600, size 0x48
@@ -410189,7 +410189,7 @@ version 93 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -410197,7 +410197,7 @@ version 93 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -411136,7 +411136,7 @@ version 92 {
         // offset 0x23d0, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x2410, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2458, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x24a0, size 0x48
@@ -412234,7 +412234,7 @@ version 92 {
         // offset 0xb528, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xb570, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xb5b8, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xb600, size 0x48
@@ -412939,7 +412939,7 @@ version 92 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -412947,7 +412947,7 @@ version 92 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -413862,7 +413862,7 @@ version 91 {
         // offset 0x2340, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x2380, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x23c8, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2410, size 0x48
@@ -414944,7 +414944,7 @@ version 91 {
         // offset 0xb250, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xb298, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xb2e0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xb328, size 0x48
@@ -415643,7 +415643,7 @@ version 91 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -415651,7 +415651,7 @@ version 91 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -416562,7 +416562,7 @@ version 90 {
         // offset 0x22b0, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x22f0, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2338, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2380, size 0x48
@@ -417632,7 +417632,7 @@ version 90 {
         // offset 0xb010, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xb058, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xb0a0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xb0e8, size 0x48
@@ -418325,7 +418325,7 @@ version 90 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -418333,7 +418333,7 @@ version 90 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -419242,7 +419242,7 @@ version 89 {
         // offset 0x22a8, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x22e8, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2330, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2378, size 0x48
@@ -420298,7 +420298,7 @@ version 89 {
         // offset 0xafb8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xb000, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xb048, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xb090, size 0x48
@@ -420981,7 +420981,7 @@ version 89 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -420989,7 +420989,7 @@ version 89 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -421898,7 +421898,7 @@ version 88 {
         // offset 0x22a8, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x22e8, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2330, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2378, size 0x48
@@ -422954,7 +422954,7 @@ version 88 {
         // offset 0xafb8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xb000, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xb048, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xb090, size 0x48
@@ -423635,7 +423635,7 @@ version 88 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -423643,7 +423643,7 @@ version 88 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -424550,7 +424550,7 @@ version 87 {
         // offset 0x2260, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x22a0, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x22e8, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2330, size 0x48
@@ -425588,7 +425588,7 @@ version 87 {
         // offset 0xace8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xad30, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xad78, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xadc0, size 0x48
@@ -426267,7 +426267,7 @@ version 87 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -426275,7 +426275,7 @@ version 87 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -427180,7 +427180,7 @@ version 86 {
         // offset 0x2220, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x2260, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x22a8, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x22f0, size 0x48
@@ -428212,7 +428212,7 @@ version 86 {
         // offset 0xabf8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xac40, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xac88, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xacd0, size 0x48
@@ -428889,7 +428889,7 @@ version 86 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -428897,7 +428897,7 @@ version 86 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -429794,7 +429794,7 @@ version 85 {
         // offset 0x2100, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x2140, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2188, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x21d0, size 0x48
@@ -430816,7 +430816,7 @@ version 85 {
         // offset 0xa970, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xa9b8, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xaa00, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xaa48, size 0x48
@@ -431487,7 +431487,7 @@ version 85 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -431495,7 +431495,7 @@ version 85 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -432392,7 +432392,7 @@ version 84 {
         // offset 0x2100, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x2140, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2188, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x21d0, size 0x48
@@ -433414,7 +433414,7 @@ version 84 {
         // offset 0xa970, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xa9b8, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xaa00, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xaa48, size 0x48
@@ -434085,7 +434085,7 @@ version 84 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -434093,7 +434093,7 @@ version 84 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         bonuscard_perk_2_greed, // 0x1c,
         bonuscard_secondary_gunfighter, // 0x1d,
@@ -434989,7 +434989,7 @@ version 83 {
         // offset 0x2100, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x2140, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2188, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x21d0, size 0x48
@@ -436007,7 +436007,7 @@ version 83 {
         // offset 0xa910, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xa958, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xa9a0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xa9e8, size 0x48
@@ -436678,7 +436678,7 @@ version 83 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -436686,7 +436686,7 @@ version 83 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         bonuscard_perk_2_greed, // 0x1c,
         bonuscard_secondary_gunfighter, // 0x1d,
@@ -437582,7 +437582,7 @@ version 82 {
         // offset 0x2100, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x2140, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2188, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x21d0, size 0x48
@@ -438598,7 +438598,7 @@ version 82 {
         // offset 0xa8d0, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xa918, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xa960, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xa9a8, size 0x48
@@ -439269,7 +439269,7 @@ version 82 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -439277,7 +439277,7 @@ version 82 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         bonuscard_perk_2_greed, // 0x1c,
         bonuscard_secondary_gunfighter, // 0x1d,
@@ -440171,7 +440171,7 @@ version 81 {
         // offset 0x20b8, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x20f8, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2140, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2188, size 0x48
@@ -441175,7 +441175,7 @@ version 81 {
         // offset 0xa6d8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xa720, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xa768, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xa7b0, size 0x48
@@ -441846,7 +441846,7 @@ version 81 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -441854,7 +441854,7 @@ version 81 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         bonuscard_perk_2_greed, // 0x1c,
         bonuscard_secondary_gunfighter, // 0x1d,
@@ -442748,7 +442748,7 @@ version 80 {
         // offset 0x20b8, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x20f8, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2140, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2188, size 0x48
@@ -443752,7 +443752,7 @@ version 80 {
         // offset 0xa6d8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xa720, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xa768, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xa7b0, size 0x48
@@ -444421,7 +444421,7 @@ version 80 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -444429,7 +444429,7 @@ version 80 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         bonuscard_perk_2_greed, // 0x1c,
         bonuscard_secondary_gunfighter, // 0x1d,
@@ -445323,7 +445323,7 @@ version 79 {
         // offset 0x20b8, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x20f8, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2140, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2188, size 0x48
@@ -446319,7 +446319,7 @@ version 79 {
         // offset 0xa5f0, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xa638, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xa680, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xa6c8, size 0x48
@@ -446988,7 +446988,7 @@ version 79 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -446996,7 +446996,7 @@ version 79 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         bonuscard_perk_2_greed, // 0x1c,
         bonuscard_secondary_gunfighter, // 0x1d,
@@ -447890,7 +447890,7 @@ version 78 {
         // offset 0x20b8, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x20f8, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2140, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2188, size 0x48
@@ -448886,7 +448886,7 @@ version 78 {
         // offset 0xa5f0, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xa638, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xa680, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xa6c8, size 0x48
@@ -449555,7 +449555,7 @@ version 78 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -449563,7 +449563,7 @@ version 78 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         bonuscard_perk_2_greed, // 0x1c,
         bonuscard_secondary_gunfighter, // 0x1d,
@@ -450434,7 +450434,7 @@ version 77 {
         // offset 0x2070, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x20b0, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x20f8, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2140, size 0x48
@@ -451432,7 +451432,7 @@ version 77 {
         // offset 0xa5f0, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xa638, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xa680, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xa6c8, size 0x48
@@ -452105,7 +452105,7 @@ version 77 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -452113,7 +452113,7 @@ version 77 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         bonuscard_perk_2_greed, // 0x1c,
         bonuscard_secondary_gunfighter, // 0x1d,
@@ -452980,7 +452980,7 @@ version 76 {
         // offset 0x2028, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x2068, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x20b0, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x20f8, size 0x48
@@ -453966,7 +453966,7 @@ version 76 {
         // offset 0xa3d0, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xa418, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xa460, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xa4a8, size 0x48
@@ -454635,7 +454635,7 @@ version 76 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -454643,7 +454643,7 @@ version 76 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         bonuscard_perk_2_greed, // 0x1c,
         bonuscard_secondary_gunfighter, // 0x1d,
@@ -455506,7 +455506,7 @@ version 75 {
         // offset 0x1fa8, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x1fe8, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2030, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2078, size 0x48
@@ -456486,7 +456486,7 @@ version 75 {
         // offset 0xa290, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xa2d8, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xa320, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xa368, size 0x48
@@ -457155,7 +457155,7 @@ version 75 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -457163,7 +457163,7 @@ version 75 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         bonuscard_perk_2_greed, // 0x1c,
         bonuscard_secondary_gunfighter, // 0x1d,
@@ -458026,7 +458026,7 @@ version 74 {
         // offset 0x1fa8, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x1fe8, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2030, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2078, size 0x48
@@ -459004,7 +459004,7 @@ version 74 {
         // offset 0xa250, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xa298, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xa2e0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xa328, size 0x48
@@ -459673,7 +459673,7 @@ version 74 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -459681,7 +459681,7 @@ version 74 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         bonuscard_perk_2_greed, // 0x1c,
         bonuscard_secondary_gunfighter, // 0x1d,
@@ -460542,7 +460542,7 @@ version 73 {
         // offset 0x1f68, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x1fa8, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x1ff0, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2038, size 0x48
@@ -461520,7 +461520,7 @@ version 73 {
         // offset 0xa210, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xa258, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xa2a0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xa2e8, size 0x48
@@ -462189,7 +462189,7 @@ version 73 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -462197,7 +462197,7 @@ version 73 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         bonuscard_perk_2_greed, // 0x1c,
         bonuscard_secondary_gunfighter, // 0x1d,
@@ -463058,7 +463058,7 @@ version 72 {
         // offset 0x1f68, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x1fa8, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x1ff0, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2038, size 0x48
@@ -464034,7 +464034,7 @@ version 72 {
         // offset 0xa1d0, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xa218, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xa260, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xa2a8, size 0x48
@@ -464703,7 +464703,7 @@ version 72 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -464711,7 +464711,7 @@ version 72 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         bonuscard_perk_2_greed, // 0x1c,
         bonuscard_secondary_gunfighter, // 0x1d,
@@ -465572,7 +465572,7 @@ version 71 {
         // offset 0x1f68, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x1fa8, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x1ff0, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2038, size 0x48
@@ -466546,7 +466546,7 @@ version 71 {
         // offset 0xa1b8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xa200, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xa248, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xa290, size 0x48
@@ -467215,7 +467215,7 @@ version 71 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -467223,7 +467223,7 @@ version 71 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         bonuscard_perk_2_greed, // 0x1c,
         bonuscard_secondary_gunfighter, // 0x1d,
@@ -468080,7 +468080,7 @@ version 70 {
         // offset 0x1f50, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x1f90, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x1fd8, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2020, size 0x48
@@ -469034,7 +469034,7 @@ version 70 {
         // offset 0xa218, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xa260, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xa2a8, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xa2f0, size 0x48
@@ -469701,7 +469701,7 @@ version 70 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -469709,7 +469709,7 @@ version 70 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         bonuscard_perk_2_greed, // 0x1c,
         bonuscard_secondary_gunfighter, // 0x1d,
@@ -470562,7 +470562,7 @@ version 69 {
         // offset 0x1f50, size 0x40
         hash_2b6b162a9af31225 hash_d8ed5062e7b639d;
         // offset 0x1f90, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x1fd8, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2020, size 0x48
@@ -471516,7 +471516,7 @@ version 69 {
         // offset 0xa218, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xa260, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xa2a8, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xa2f0, size 0x48
@@ -472183,7 +472183,7 @@ version 69 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -472191,7 +472191,7 @@ version 69 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         bonuscard_perk_2_greed, // 0x1c,
         bonuscard_secondary_gunfighter, // 0x1d,
@@ -473042,7 +473042,7 @@ version 68 {
         // offset 0x1f08, size 0x48
         hash_6c116eea1f7184ec mastery_specialist_killjoy;
         // offset 0x1f50, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x1f98, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x1fe0, size 0x48
@@ -474000,7 +474000,7 @@ version 68 {
         // offset 0xa290, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xa2d8, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xa320, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xa368, size 0x48
@@ -474667,7 +474667,7 @@ version 68 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -474675,7 +474675,7 @@ version 68 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         bonuscard_perk_2_greed, // 0x1c,
         bonuscard_secondary_gunfighter, // 0x1d,
@@ -475526,7 +475526,7 @@ version 67 {
         // offset 0x1f08, size 0x48
         hash_6c116eea1f7184ec mastery_specialist_killjoy;
         // offset 0x1f50, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x1f98, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x1fe0, size 0x48
@@ -476484,7 +476484,7 @@ version 67 {
         // offset 0xa290, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xa2d8, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xa320, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xa368, size 0x48
@@ -477146,7 +477146,7 @@ version 67 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -477154,7 +477154,7 @@ version 67 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         bonuscard_perk_2_greed, // 0x1c,
         bonuscard_secondary_gunfighter, // 0x1d,
@@ -478005,7 +478005,7 @@ version 66 {
         // offset 0x1ec8, size 0x48
         hash_6c116eea1f7184ec mastery_specialist_killjoy;
         // offset 0x1f10, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x1f58, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x1fa0, size 0x48
@@ -478963,7 +478963,7 @@ version 66 {
         // offset 0xa210, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xa258, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xa2a0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xa2e8, size 0x48
@@ -479625,7 +479625,7 @@ version 66 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -479633,7 +479633,7 @@ version 66 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         bonuscard_perk_2_greed, // 0x1c,
         bonuscard_secondary_gunfighter, // 0x1d,
@@ -480484,7 +480484,7 @@ version 65 {
         // offset 0x1ec8, size 0x48
         hash_6c116eea1f7184ec mastery_specialist_killjoy;
         // offset 0x1f10, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x1f58, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x1fa0, size 0x48
@@ -481440,7 +481440,7 @@ version 65 {
         // offset 0xa1c8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xa210, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xa258, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xa2a0, size 0x48
@@ -482102,7 +482102,7 @@ version 65 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -482110,7 +482110,7 @@ version 65 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         bonuscard_perk_2_greed, // 0x1c,
         bonuscard_secondary_gunfighter, // 0x1d,
@@ -482961,7 +482961,7 @@ version 64 {
         // offset 0x1ec8, size 0x48
         hash_6c116eea1f7184ec mastery_specialist_killjoy;
         // offset 0x1f10, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x1f58, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x1fa0, size 0x48
@@ -483905,7 +483905,7 @@ version 64 {
         // offset 0xa018, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xa060, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xa0a8, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xa0f0, size 0x48
@@ -484563,7 +484563,7 @@ version 64 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -484571,7 +484571,7 @@ version 64 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         bonuscard_perk_2_greed, // 0x1c,
         bonuscard_secondary_gunfighter, // 0x1d,
@@ -485422,7 +485422,7 @@ version 63 {
         // offset 0x1ec8, size 0x48
         hash_6c116eea1f7184ec mastery_specialist_killjoy;
         // offset 0x1f10, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x1f58, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x1fa0, size 0x48
@@ -486360,7 +486360,7 @@ version 63 {
         // offset 0x9f40, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0x9f88, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0x9fd0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xa018, size 0x48
@@ -487018,7 +487018,7 @@ version 63 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -487026,7 +487026,7 @@ version 63 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         bonuscard_perk_2_greed, // 0x1c,
         bonuscard_secondary_gunfighter, // 0x1d,
@@ -487875,7 +487875,7 @@ version 62 {
         // offset 0x1e80, size 0x48
         hash_6c116eea1f7184ec mastery_specialist_killjoy;
         // offset 0x1ec8, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x1f10, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x1f58, size 0x48
@@ -488813,7 +488813,7 @@ version 62 {
         // offset 0x9ef8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0x9f40, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0x9f88, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0x9fd0, size 0x48
@@ -489471,7 +489471,7 @@ version 62 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -489479,7 +489479,7 @@ version 62 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         bonuscard_perk_2_greed, // 0x1c,
         bonuscard_secondary_gunfighter, // 0x1d,
@@ -490328,7 +490328,7 @@ version 61 {
         // offset 0x1e80, size 0x48
         hash_6c116eea1f7184ec mastery_specialist_killjoy;
         // offset 0x1ec8, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x1f10, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x1f58, size 0x48
@@ -491266,7 +491266,7 @@ version 61 {
         // offset 0x9ef8, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0x9f40, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0x9f88, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0x9fd0, size 0x48
@@ -491930,7 +491930,7 @@ version 61 {
         gear_equipmentcharge, // 0x16,
         bonuscard_secondary_gunfighter_2, // 0x17,
         bonuscard_secondary_gunfighter_3, // 0x18,
-        hash_39045b0020cc3e00, // 0x19,
+        gear_armor_tier_three, // 0x19,
         talent_scavenger, // 0x1a,
         bonuscard_perk_2_greed, // 0x1b,
         bonuscard_secondary_gunfighter, // 0x1c,
@@ -492779,7 +492779,7 @@ version 60 {
         // offset 0x1e80, size 0x48
         hash_6c116eea1f7184ec mastery_specialist_killjoy;
         // offset 0x1ec8, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x1f10, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x1f58, size 0x48
@@ -493711,7 +493711,7 @@ version 60 {
         // offset 0x9e20, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0x9e68, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0x9eb0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0x9ef8, size 0x48
@@ -494375,7 +494375,7 @@ version 60 {
         gear_equipmentcharge, // 0x16,
         bonuscard_secondary_gunfighter_2, // 0x17,
         bonuscard_secondary_gunfighter_3, // 0x18,
-        hash_39045b0020cc3e00, // 0x19,
+        gear_armor_tier_three, // 0x19,
         talent_scavenger, // 0x1a,
         bonuscard_perk_2_greed, // 0x1b,
         bonuscard_secondary_gunfighter, // 0x1c,
@@ -495224,7 +495224,7 @@ version 59 {
         // offset 0x1e80, size 0x48
         hash_6c116eea1f7184ec mastery_specialist_killjoy;
         // offset 0x1ec8, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x1f10, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x1f58, size 0x48
@@ -496152,7 +496152,7 @@ version 59 {
         // offset 0x9d90, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0x9dd8, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0x9e20, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0x9e68, size 0x48
@@ -496816,7 +496816,7 @@ version 59 {
         gear_equipmentcharge, // 0x16,
         bonuscard_secondary_gunfighter_2, // 0x17,
         bonuscard_secondary_gunfighter_3, // 0x18,
-        hash_39045b0020cc3e00, // 0x19,
+        gear_armor_tier_three, // 0x19,
         talent_scavenger, // 0x1a,
         bonuscard_perk_2_greed, // 0x1b,
         bonuscard_secondary_gunfighter, // 0x1c,
@@ -497665,7 +497665,7 @@ version 58 {
         // offset 0x1e80, size 0x48
         hash_6c116eea1f7184ec mastery_specialist_killjoy;
         // offset 0x1ec8, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x1f10, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x1f58, size 0x48
@@ -498591,7 +498591,7 @@ version 58 {
         // offset 0x9d48, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0x9d90, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0x9dd8, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0x9e20, size 0x48
@@ -499255,7 +499255,7 @@ version 58 {
         gear_equipmentcharge, // 0x16,
         bonuscard_secondary_gunfighter_2, // 0x17,
         bonuscard_secondary_gunfighter_3, // 0x18,
-        hash_39045b0020cc3e00, // 0x19,
+        gear_armor_tier_three, // 0x19,
         talent_scavenger, // 0x1a,
         bonuscard_perk_2_greed, // 0x1b,
         bonuscard_secondary_gunfighter, // 0x1c,
@@ -500100,7 +500100,7 @@ version 57 {
         // offset 0x1e80, size 0x48
         hash_6c116eea1f7184ec mastery_specialist_killjoy;
         // offset 0x1ec8, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x1f10, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x1f58, size 0x48
@@ -501026,7 +501026,7 @@ version 57 {
         // offset 0x9d48, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0x9d90, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0x9dd8, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0x9e20, size 0x48
@@ -501690,7 +501690,7 @@ version 57 {
         gear_equipmentcharge, // 0x16,
         bonuscard_secondary_gunfighter_2, // 0x17,
         bonuscard_secondary_gunfighter_3, // 0x18,
-        hash_39045b0020cc3e00, // 0x19,
+        gear_armor_tier_three, // 0x19,
         talent_scavenger, // 0x1a,
         bonuscard_perk_2_greed, // 0x1b,
         bonuscard_secondary_gunfighter, // 0x1c,
@@ -502535,7 +502535,7 @@ version 56 {
         // offset 0x1e80, size 0x48
         hash_6c116eea1f7184ec mastery_specialist_killjoy;
         // offset 0x1ec8, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x1f10, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x1f58, size 0x48
@@ -503459,7 +503459,7 @@ version 56 {
         // offset 0x9d00, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0x9d48, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0x9d90, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0x9dd8, size 0x48
@@ -504121,7 +504121,7 @@ version 56 {
         gear_equipmentcharge, // 0x16,
         bonuscard_secondary_gunfighter_2, // 0x17,
         bonuscard_secondary_gunfighter_3, // 0x18,
-        hash_39045b0020cc3e00, // 0x19,
+        gear_armor_tier_three, // 0x19,
         talent_scavenger, // 0x1a,
         bonuscard_perk_2_greed, // 0x1b,
         bonuscard_secondary_gunfighter, // 0x1c,
@@ -504976,7 +504976,7 @@ version 55 {
         // offset 0x1fe8, size 0x48
         hash_6c116eea1f7184ec mastery_specialist_killjoy;
         // offset 0x2030, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2078, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x20c0, size 0x48
@@ -505908,7 +505908,7 @@ version 55 {
         // offset 0x9f88, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0x9fd0, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xa018, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xa060, size 0x48
@@ -506572,7 +506572,7 @@ version 55 {
         gear_equipmentcharge, // 0x16,
         bonuscard_secondary_gunfighter_2, // 0x17,
         bonuscard_secondary_gunfighter_3, // 0x18,
-        hash_39045b0020cc3e00, // 0x19,
+        gear_armor_tier_three, // 0x19,
         talent_scavenger, // 0x1a,
         bonuscard_perk_2_greed, // 0x1b,
         bonuscard_secondary_gunfighter, // 0x1c,
@@ -507425,7 +507425,7 @@ version 54 {
         // offset 0x1fa0, size 0x48
         hash_6c116eea1f7184ec mastery_specialist_killjoy;
         // offset 0x1fe8, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2030, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2078, size 0x48
@@ -508349,7 +508349,7 @@ version 54 {
         // offset 0x9e20, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0x9e68, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0x9eb0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0x9ef8, size 0x48
@@ -509011,7 +509011,7 @@ version 54 {
         gear_equipmentcharge, // 0x16,
         bonuscard_secondary_gunfighter_2, // 0x17,
         bonuscard_secondary_gunfighter_3, // 0x18,
-        hash_39045b0020cc3e00, // 0x19,
+        gear_armor_tier_three, // 0x19,
         talent_scavenger, // 0x1a,
         bonuscard_perk_2_greed, // 0x1b,
         bonuscard_secondary_gunfighter, // 0x1c,
@@ -509874,7 +509874,7 @@ version 53 {
         // offset 0x1fa0, size 0x48
         hash_6c116eea1f7184ec mastery_specialist_killjoy;
         // offset 0x1fe8, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2030, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2078, size 0x48
@@ -510798,7 +510798,7 @@ version 53 {
         // offset 0x9e20, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0x9e68, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0x9eb0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0x9ef8, size 0x48
@@ -511460,7 +511460,7 @@ version 53 {
         gear_equipmentcharge, // 0x16,
         bonuscard_secondary_gunfighter_2, // 0x17,
         bonuscard_secondary_gunfighter_3, // 0x18,
-        hash_39045b0020cc3e00, // 0x19,
+        gear_armor_tier_three, // 0x19,
         talent_scavenger, // 0x1a,
         bonuscard_perk_2_greed, // 0x1b,
         bonuscard_secondary_gunfighter, // 0x1c,
@@ -512323,7 +512323,7 @@ version 52 {
         // offset 0x1fa0, size 0x48
         hash_6c116eea1f7184ec mastery_specialist_killjoy;
         // offset 0x1fe8, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2030, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2078, size 0x48
@@ -513247,7 +513247,7 @@ version 52 {
         // offset 0x9e20, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0x9e68, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0x9eb0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0x9ef8, size 0x48
@@ -513903,7 +513903,7 @@ version 52 {
         gear_equipmentcharge, // 0x16,
         bonuscard_secondary_gunfighter_2, // 0x17,
         bonuscard_secondary_gunfighter_3, // 0x18,
-        hash_39045b0020cc3e00, // 0x19,
+        gear_armor_tier_three, // 0x19,
         talent_scavenger, // 0x1a,
         bonuscard_perk_2_greed, // 0x1b,
         bonuscard_secondary_gunfighter, // 0x1c,
@@ -514766,7 +514766,7 @@ version 51 {
         // offset 0x1fa0, size 0x48
         hash_6c116eea1f7184ec mastery_specialist_killjoy;
         // offset 0x1fe8, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2030, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2078, size 0x48
@@ -515690,7 +515690,7 @@ version 51 {
         // offset 0x9e20, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0x9e68, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0x9eb0, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0x9ef8, size 0x48
@@ -516336,7 +516336,7 @@ version 51 {
         gear_equipmentcharge, // 0x16,
         bonuscard_secondary_gunfighter_2, // 0x17,
         bonuscard_secondary_gunfighter_3, // 0x18,
-        hash_39045b0020cc3e00, // 0x19,
+        gear_armor_tier_three, // 0x19,
         talent_scavenger, // 0x1a,
         bonuscard_perk_2_greed, // 0x1b,
         bonuscard_secondary_gunfighter, // 0x1c,
@@ -517185,7 +517185,7 @@ version 50 {
         // offset 0x1fa0, size 0x48
         hash_6c116eea1f7184ec mastery_specialist_killjoy;
         // offset 0x1fe8, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2030, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2078, size 0x48
@@ -518105,7 +518105,7 @@ version 50 {
         // offset 0x9ff0, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xa038, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xa080, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xa0c8, size 0x48
@@ -518751,7 +518751,7 @@ version 50 {
         gear_equipmentcharge, // 0x16,
         bonuscard_secondary_gunfighter_2, // 0x17,
         bonuscard_secondary_gunfighter_3, // 0x18,
-        hash_39045b0020cc3e00, // 0x19,
+        gear_armor_tier_three, // 0x19,
         talent_scavenger, // 0x1a,
         bonuscard_perk_2_greed, // 0x1b,
         bonuscard_secondary_gunfighter, // 0x1c,
@@ -519598,7 +519598,7 @@ version 49 {
         // offset 0x1f58, size 0x48
         hash_6c116eea1f7184ec mastery_specialist_killjoy;
         // offset 0x1fa0, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x1fe8, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2030, size 0x48
@@ -520512,7 +520512,7 @@ version 49 {
         // offset 0x9ed0, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0x9f18, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0x9f60, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0x9fa8, size 0x48
@@ -521154,7 +521154,7 @@ version 49 {
         gear_equipmentcharge, // 0x16,
         bonuscard_secondary_gunfighter_2, // 0x17,
         bonuscard_secondary_gunfighter_3, // 0x18,
-        hash_39045b0020cc3e00, // 0x19,
+        gear_armor_tier_three, // 0x19,
         talent_scavenger, // 0x1a,
         bonuscard_perk_2_greed, // 0x1b,
         bonuscard_secondary_gunfighter, // 0x1c,
@@ -522001,7 +522001,7 @@ version 48 {
         // offset 0x1f58, size 0x48
         hash_6c116eea1f7184ec mastery_specialist_killjoy;
         // offset 0x1fa0, size 0x48
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x1fe8, size 0x48
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2030, size 0x48
@@ -522915,7 +522915,7 @@ version 48 {
         // offset 0x9ed0, size 0x48
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0x9f18, size 0x48
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0x9f60, size 0x48
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0x9fa8, size 0x48
@@ -523554,7 +523554,7 @@ version 48 {
         gear_equipmentcharge, // 0x16,
         bonuscard_secondary_gunfighter_2, // 0x17,
         bonuscard_secondary_gunfighter_3, // 0x18,
-        hash_39045b0020cc3e00, // 0x19,
+        gear_armor_tier_three, // 0x19,
         talent_scavenger, // 0x1a,
         bonuscard_perk_2_greed, // 0x1b,
         bonuscard_secondary_gunfighter, // 0x1c,
@@ -524379,7 +524379,7 @@ version 47 {
         // offset 0x1d40, size 0x40
         hash_6c116eea1f7184ec mastery_specialist_killjoy;
         // offset 0x1d80, size 0x40
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x1dc0, size 0x40
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x1e00, size 0x40
@@ -525293,7 +525293,7 @@ version 47 {
         // offset 0x8f30, size 0x40
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0x8f70, size 0x40
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0x8fb0, size 0x40
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0x8ff0, size 0x40
@@ -525932,7 +525932,7 @@ version 47 {
         gear_equipmentcharge, // 0x16,
         bonuscard_secondary_gunfighter_2, // 0x17,
         bonuscard_secondary_gunfighter_3, // 0x18,
-        hash_39045b0020cc3e00, // 0x19,
+        gear_armor_tier_three, // 0x19,
         talent_scavenger, // 0x1a,
         bonuscard_perk_2_greed, // 0x1b,
         bonuscard_secondary_gunfighter, // 0x1c,
@@ -526757,7 +526757,7 @@ version 46 {
         // offset 0x1d40, size 0x40
         hash_6c116eea1f7184ec mastery_specialist_killjoy;
         // offset 0x1d80, size 0x40
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x1dc0, size 0x40
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x1e00, size 0x40
@@ -527679,7 +527679,7 @@ version 46 {
         // offset 0x9030, size 0x40
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0x9070, size 0x40
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0x90b0, size 0x40
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0x90f0, size 0x40
@@ -528320,7 +528320,7 @@ version 46 {
         gear_equipmentcharge, // 0x16,
         bonuscard_secondary_gunfighter_2, // 0x17,
         bonuscard_secondary_gunfighter_3, // 0x18,
-        hash_39045b0020cc3e00, // 0x19,
+        gear_armor_tier_three, // 0x19,
         talent_scavenger, // 0x1a,
         bonuscard_perk_2_greed, // 0x1b,
         bonuscard_secondary_gunfighter, // 0x1c,
@@ -529145,7 +529145,7 @@ version 45 {
         // offset 0x1d40, size 0x40
         hash_6c116eea1f7184ec mastery_specialist_killjoy;
         // offset 0x1d80, size 0x40
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x1dc0, size 0x40
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x1e00, size 0x40
@@ -530059,7 +530059,7 @@ version 45 {
         // offset 0x8f30, size 0x40
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0x8f70, size 0x40
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0x8fb0, size 0x40
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0x8ff0, size 0x40
@@ -530700,7 +530700,7 @@ version 45 {
         gear_equipmentcharge, // 0x16,
         bonuscard_secondary_gunfighter_2, // 0x17,
         bonuscard_secondary_gunfighter_3, // 0x18,
-        hash_39045b0020cc3e00, // 0x19,
+        gear_armor_tier_three, // 0x19,
         talent_scavenger, // 0x1a,
         bonuscard_perk_2_greed, // 0x1b,
         bonuscard_secondary_gunfighter, // 0x1c,
@@ -531525,7 +531525,7 @@ version 44 {
         // offset 0x1d40, size 0x40
         hash_6c116eea1f7184ec mastery_specialist_killjoy;
         // offset 0x1d80, size 0x40
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x1dc0, size 0x40
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x1e00, size 0x40
@@ -532437,7 +532437,7 @@ version 44 {
         // offset 0x8ef0, size 0x40
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0x8f30, size 0x40
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0x8f70, size 0x40
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0x8fb0, size 0x40
@@ -533076,7 +533076,7 @@ version 44 {
         gear_equipmentcharge, // 0x16,
         bonuscard_secondary_gunfighter_2, // 0x17,
         bonuscard_secondary_gunfighter_3, // 0x18,
-        hash_39045b0020cc3e00, // 0x19,
+        gear_armor_tier_three, // 0x19,
         talent_scavenger, // 0x1a,
         bonuscard_perk_2_greed, // 0x1b,
         bonuscard_secondary_gunfighter, // 0x1c,
@@ -533901,7 +533901,7 @@ version 43 {
         // offset 0x1d40, size 0x40
         hash_6c116eea1f7184ec mastery_specialist_killjoy;
         // offset 0x1d80, size 0x40
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x1dc0, size 0x40
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x1e00, size 0x40
@@ -534811,7 +534811,7 @@ version 43 {
         // offset 0x8f00, size 0x40
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0x8f40, size 0x40
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0x8f80, size 0x40
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0x8fc0, size 0x40
@@ -535450,7 +535450,7 @@ version 43 {
         gear_equipmentcharge, // 0x16,
         bonuscard_secondary_gunfighter_2, // 0x17,
         bonuscard_secondary_gunfighter_3, // 0x18,
-        hash_39045b0020cc3e00, // 0x19,
+        gear_armor_tier_three, // 0x19,
         talent_scavenger, // 0x1a,
         bonuscard_perk_2_greed, // 0x1b,
         bonuscard_secondary_gunfighter, // 0x1c,
@@ -536273,7 +536273,7 @@ version 42 {
         // offset 0x1d00, size 0x40
         hash_6c116eea1f7184ec mastery_specialist_killjoy;
         // offset 0x1d40, size 0x40
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x1d80, size 0x40
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x1dc0, size 0x40
@@ -537177,7 +537177,7 @@ version 42 {
         // offset 0x8e00, size 0x40
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0x8e40, size 0x40
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0x8e80, size 0x40
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0x8ec0, size 0x40
@@ -537812,7 +537812,7 @@ version 42 {
         gear_equipmentcharge, // 0x16,
         bonuscard_secondary_gunfighter_2, // 0x17,
         bonuscard_secondary_gunfighter_3, // 0x18,
-        hash_39045b0020cc3e00, // 0x19,
+        gear_armor_tier_three, // 0x19,
         talent_scavenger, // 0x1a,
         bonuscard_perk_2_greed, // 0x1b,
         bonuscard_secondary_gunfighter, // 0x1c,
@@ -538635,7 +538635,7 @@ version 41 {
         // offset 0x1d00, size 0x40
         hash_6c116eea1f7184ec mastery_specialist_killjoy;
         // offset 0x1d40, size 0x40
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x1d80, size 0x40
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x1dc0, size 0x40
@@ -539539,7 +539539,7 @@ version 41 {
         // offset 0x8e00, size 0x40
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0x8e40, size 0x40
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0x8e80, size 0x40
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0x8ec0, size 0x40
@@ -540174,7 +540174,7 @@ version 41 {
         gear_equipmentcharge, // 0x16,
         bonuscard_secondary_gunfighter_2, // 0x17,
         bonuscard_secondary_gunfighter_3, // 0x18,
-        hash_39045b0020cc3e00, // 0x19,
+        gear_armor_tier_three, // 0x19,
         talent_scavenger, // 0x1a,
         bonuscard_perk_2_greed, // 0x1b,
         bonuscard_secondary_gunfighter, // 0x1c,
@@ -540991,7 +540991,7 @@ version 40 {
         // offset 0x1d00, size 0x40
         hash_6c116eea1f7184ec mastery_specialist_killjoy;
         // offset 0x1d40, size 0x40
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x1d80, size 0x40
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x1dc0, size 0x40
@@ -541895,7 +541895,7 @@ version 40 {
         // offset 0x8e00, size 0x40
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0x8e40, size 0x40
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0x8e80, size 0x40
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0x8ec0, size 0x40
@@ -542545,7 +542545,7 @@ version 40 {
         gear_equipmentcharge, // 0x16,
         bonuscard_secondary_gunfighter_2, // 0x17,
         bonuscard_secondary_gunfighter_3, // 0x18,
-        hash_39045b0020cc3e00, // 0x19,
+        gear_armor_tier_three, // 0x19,
         talent_scavenger, // 0x1a,
         bonuscard_perk_2_greed, // 0x1b,
         bonuscard_secondary_gunfighter, // 0x1c,
@@ -543362,7 +543362,7 @@ version 39 {
         // offset 0x1d00, size 0x40
         hash_6c116eea1f7184ec mastery_specialist_killjoy;
         // offset 0x1d40, size 0x40
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x1d80, size 0x40
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x1dc0, size 0x40
@@ -544266,7 +544266,7 @@ version 39 {
         // offset 0x8e00, size 0x40
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0x8e40, size 0x40
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0x8e80, size 0x40
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0x8ec0, size 0x40
@@ -544916,7 +544916,7 @@ version 39 {
         gear_equipmentcharge, // 0x16,
         bonuscard_secondary_gunfighter_2, // 0x17,
         bonuscard_secondary_gunfighter_3, // 0x18,
-        hash_39045b0020cc3e00, // 0x19,
+        gear_armor_tier_three, // 0x19,
         talent_scavenger, // 0x1a,
         bonuscard_perk_2_greed, // 0x1b,
         bonuscard_secondary_gunfighter, // 0x1c,
@@ -545837,7 +545837,7 @@ version 38 {
         // offset 0x2540, size 0x40
         hash_6c116eea1f7184ec medal_share_care_package;
         // offset 0x2580, size 0x40
-        hash_6c116eea1f7184ec hash_4db43fdd0b45e605;
+        hash_6c116eea1f7184ec medal_end_enemy_using_radiation_field;
         // offset 0x25c0, size 0x40
         hash_6c116eea1f7184ec medal_capture_enemy_crate;
         // offset 0x2600, size 0x40
@@ -545857,7 +545857,7 @@ version 38 {
         // offset 0x27c0, size 0x40
         hash_6c116eea1f7184ec medal_radiation_field_shutdown;
         // offset 0x2800, size 0x40
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2840, size 0x40
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2880, size 0x40
@@ -547221,7 +547221,7 @@ version 38 {
         // offset 0xd240, size 0x40
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xd280, size 0x40
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xd2c0, size 0x40
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xd300, size 0x40
@@ -548033,7 +548033,7 @@ version 38 {
         gear_equipmentcharge, // 0x16,
         bonuscard_secondary_gunfighter_2, // 0x17,
         bonuscard_secondary_gunfighter_3, // 0x18,
-        hash_39045b0020cc3e00, // 0x19,
+        gear_armor_tier_three, // 0x19,
         talent_scavenger, // 0x1a,
         bonuscard_perk_2_greed, // 0x1b,
         bonuscard_secondary_gunfighter, // 0x1c,
@@ -548691,7 +548691,7 @@ version 38 {
     // offset 0x23b60, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x23c20, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x23c40, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x23c60, size 0x20
@@ -549426,7 +549426,7 @@ version 37 {
         // offset 0x2540, size 0x40
         hash_6c116eea1f7184ec medal_share_care_package;
         // offset 0x2580, size 0x40
-        hash_6c116eea1f7184ec hash_4db43fdd0b45e605;
+        hash_6c116eea1f7184ec medal_end_enemy_using_radiation_field;
         // offset 0x25c0, size 0x40
         hash_6c116eea1f7184ec medal_capture_enemy_crate;
         // offset 0x2600, size 0x40
@@ -549446,7 +549446,7 @@ version 37 {
         // offset 0x27c0, size 0x40
         hash_6c116eea1f7184ec medal_radiation_field_shutdown;
         // offset 0x2800, size 0x40
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2840, size 0x40
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2880, size 0x40
@@ -550810,7 +550810,7 @@ version 37 {
         // offset 0xd240, size 0x40
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xd280, size 0x40
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xd2c0, size 0x40
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xd300, size 0x40
@@ -551621,7 +551621,7 @@ version 37 {
         gear_equipmentcharge, // 0x16,
         bonuscard_secondary_gunfighter_2, // 0x17,
         bonuscard_secondary_gunfighter_3, // 0x18,
-        hash_39045b0020cc3e00, // 0x19,
+        gear_armor_tier_three, // 0x19,
         talent_scavenger, // 0x1a,
         bonuscard_perk_2_greed, // 0x1b,
         bonuscard_secondary_gunfighter, // 0x1c,
@@ -552275,7 +552275,7 @@ version 37 {
     // offset 0x23b60, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x23c20, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x23c40, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x23c60, size 0x20
@@ -552980,7 +552980,7 @@ version 36 {
         // offset 0x2540, size 0x40
         hash_6c116eea1f7184ec medal_share_care_package;
         // offset 0x2580, size 0x40
-        hash_6c116eea1f7184ec hash_4db43fdd0b45e605;
+        hash_6c116eea1f7184ec medal_end_enemy_using_radiation_field;
         // offset 0x25c0, size 0x40
         hash_6c116eea1f7184ec medal_capture_enemy_crate;
         // offset 0x2600, size 0x40
@@ -553000,7 +553000,7 @@ version 36 {
         // offset 0x27c0, size 0x40
         hash_6c116eea1f7184ec medal_radiation_field_shutdown;
         // offset 0x2800, size 0x40
-        hash_6c116eea1f7184ec hash_71c1da13637fd3fb;
+        hash_6c116eea1f7184ec melee_crowbar_for_diamond;
         // offset 0x2840, size 0x40
         hash_6c116eea1f7184ec disarm_hacked_carepackage;
         // offset 0x2880, size 0x40
@@ -554364,7 +554364,7 @@ version 36 {
         // offset 0xd240, size 0x40
         hash_6c116eea1f7184ec stats_stop_enemy_killstreak;
         // offset 0xd280, size 0x40
-        hash_6c116eea1f7184ec hash_a35eb7542985769;
+        hash_6c116eea1f7184ec stats_lightning_strike_killjoy;
         // offset 0xd2c0, size 0x40
         hash_6c116eea1f7184ec stats_escort_robot_escort_goal;
         // offset 0xd300, size 0x40
@@ -555233,7 +555233,7 @@ version 36 {
         gear_equipmentcharge, // 0x16,
         bonuscard_secondary_gunfighter_2, // 0x17,
         bonuscard_secondary_gunfighter_3, // 0x18,
-        hash_39045b0020cc3e00, // 0x19,
+        gear_armor_tier_three, // 0x19,
         talent_scavenger, // 0x1a,
         bonuscard_perk_2_greed, // 0x1b,
         bonuscard_secondary_gunfighter, // 0x1c,
@@ -555899,7 +555899,7 @@ version 36 {
     // offset 0x23b60, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x23c20, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x23c40, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x23c60, size 0x20

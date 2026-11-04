@@ -602,7 +602,7 @@ function function_31a0b1ef( item, attachmentitem, var_41a74919 = 1 )
         return 0;
     }
     
-    var_2496b555 = 0;
+    removedattachment = 0;
     
     for ( index = 0; index < item.attachments.size ; index++ )
     {
@@ -610,18 +610,18 @@ function function_31a0b1ef( item, attachmentitem, var_41a74919 = 1 )
         
         if ( isdefined( attachment ) && attachment.networkid === attachmentitem.networkid )
         {
-            var_2496b555 = 1;
+            removedattachment = 1;
             arrayremoveindex( item.attachments, index, 0 );
             break;
         }
     }
     
-    if ( var_2496b555 && var_41a74919 )
+    if ( removedattachment && var_41a74919 )
     {
         function_6e9e7169( item );
     }
     
-    return var_2496b555;
+    return removedattachment;
 }
 
 // Namespace item_inventory_util/item_inventory_util

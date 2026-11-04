@@ -1355,7 +1355,7 @@ function wasproximityalarmactivatedbyself()
 // Params 3
 // Checksum 0x18d6f45d, Offset: 0x3788
 // Size: 0x1e4
-function proximityalarmactivate( active, watcher, var_af12fba0 = undefined )
+function proximityalarmactivate( active, watcher, triggeringentity = undefined )
 {
     if ( !isplayer( self.owner ) )
     {
@@ -1473,7 +1473,7 @@ function proximityalarmloop( watcher, owner )
     self.proximity_deployed = 1;
     alarmstatusold = "notify";
     alarmstatus = "off";
-    var_af12fba0 = undefined;
+    triggeringentity = undefined;
     
     while ( true )
     {
@@ -1498,7 +1498,7 @@ function proximityalarmloop( watcher, owner )
         {
             if ( alarmstatus == "on" )
             {
-                self proximityalarmactivate( 1, watcher, var_af12fba0 );
+                self proximityalarmactivate( 1, watcher, triggeringentity );
             }
             else
             {
@@ -1509,7 +1509,7 @@ function proximityalarmloop( watcher, owner )
         }
         
         alarmstatus = "off";
-        var_af12fba0 = undefined;
+        triggeringentity = undefined;
         actors = getactorarray();
         players = getplayers();
         detectentities = arraycombine( players, actors, 0, 0 );
@@ -1599,7 +1599,7 @@ function proximityalarmloop( watcher, owner )
             }
             
             alarmstatus = "on";
-            var_af12fba0 = entity;
+            triggeringentity = entity;
             break;
         }
     }

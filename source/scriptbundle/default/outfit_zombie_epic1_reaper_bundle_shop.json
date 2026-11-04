@@ -3,5 +3,5 @@
     "loot05_ui_icon_blackmarket_itemshop_bundle_grinder_reaper": "image#loot05_ui_icon_blackmarket_itemshop_bundle_grinder_reaper",
     "nametext": "localized17#mpui/reaper_zombie",
     "name": "outfit_zombie_epic1_reaper_bundle_shop",
-    "desctext": "localized17#hash_7f28cb19ccc52d25"
+    "desctext": "localized17#mpui/reaper_zombie_desc"
 }

@@ -2289,14 +2289,14 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 	},
 	CustomGamesNotification = {
 		menuName = "SystemOverlay_FreeCursor",
-		title = 0xCD9D367AFD39C8B,
+		title = "mpui/enter_custom_games",
 		description = function ()
 			if CoD.isWarzone then
 				return 0xE49E17BA15E27B
 			elseif LuaUtils.IsArenaMode() then
 				return 0x4A917216574AD4C
 			else
-				return 0x6F3E57AE4BFB89D
+				return "mpui/enter_custom_games_desc"
 			end
 		end,
 		categoryType = CoD.OverlayUtility.OverlayTypes.CustomGames,
@@ -2356,8 +2356,8 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 	},
 	CustomMutationsNotification = {
 		menuName = "SystemOverlay_FreeCursor",
-		title = 0x3B0E3BB0D43F91C,
-		description = 0x5B29A99004A6B64,
+		title = "zmui/enter_custom_mutations",
+		description = "zmui/enter_custom_mutations_desc",
 		categoryType = CoD.OverlayUtility.OverlayTypes.CustomGames,
 		[CoD.OverlayUtility.aCrossPromptFn] = function ( f251_arg0 )
 			return function ( f252_arg0, f252_arg1 )

@@ -116,7 +116,7 @@ CoD.AmmoWidgetEquipmentText.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	ExtraTextPC = LUI.UIText.new( 0, 1, 0, 0, 0.5, 0.5, -59, -41 )
 	ExtraTextPC:setAlpha( 0 )
-	ExtraTextPC:setText( Engine[0xF9F1239CFD921FE]( 0xE5D33208E8D6267 ) )
+	ExtraTextPC:setText( Engine[0xF9F1239CFD921FE]( "mpui/hawk_enter" ) )
 	ExtraTextPC:setTTF( "ttmussels_regular" )
 	ExtraTextPC:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	ExtraTextPC:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )

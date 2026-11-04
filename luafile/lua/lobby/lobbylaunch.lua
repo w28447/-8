@@ -35,7 +35,7 @@ Lobby.Launch.HostLaunchInit = function ()
 	Lobby.Launch.hostLaunch.printAtTime = f3_local0 + Lobby.Launch.printInterval
 	Lobby.Launch.hostLaunch.fadeToBlackTime = f3_local0 + Dvar[0xF6674CAE730AA08]:get()
 	Lobby.Launch.hostLaunch.launchTime = f3_local0 + Dvar[0xAC3D72F21D83F1B]:get()
-	Lobby.Launch.hostLaunch.waitForClientAckTime = f3_local0 + Dvar[0xE0639684531C4C8]:get()
+	Lobby.Launch.hostLaunch.waitForClientAckTime = f3_local0 + Dvar.lobbylaunch_waitforclientackdelay:get()
 	Lobby.Timer.ResetUIModel()
 	Engine.SetModelValue( Engine.CreateModel( Engine.GetGlobalModel(), "lobbyRoot.spinnerActive" ), true )
 	return true

@@ -1232,7 +1232,7 @@ function function_50aeeeff()
     
     foreach ( player in a_e_players )
     {
-        player zm_laststand::function_3a00302e();
+        player zm_laststand::increment_self_revive_count();
     }
     
     self.mdl_reward delete();

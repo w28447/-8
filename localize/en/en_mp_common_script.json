@@ -5,7 +5,7 @@
     "killstreak/earned_qrdrone": "Press ^3[{+actionslot 4}]^7 for Dragonfire",
     "warzone/button_finish": "^3[{+activate}]^7 Humiliate",
     "coop/revive_emergency_reserve_once": "Reviving, Emergency Reserve Expended",
-    "hash_ddc319addc8bcb2": "GAME OVER",
+    "mp/game_over_caps": "GAME OVER",
     "killstreak/emp_inbound": "Power Core deployed",
     "killstreak/emp_hacked": "Power Core hacked",
     "coop/player_needs_to_be_revived": "$(clientName) needs to be revived",

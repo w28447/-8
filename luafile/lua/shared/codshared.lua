@@ -412,7 +412,7 @@ end
 f0_local0.ForceOffline = function ()
 	if (LuaDefine.isPS4 or LuaDefine.isXbox) and LuaUtils.IsSkuOfflineOnly() then
 		return true
-	elseif LuaDefine.isPC and Dvar[0xC851E2925BC63E4]:get() == 0 and Dvar[0xC2F09BAD1862417]:get() == 1 then
+	elseif LuaDefine.isPC and Dvar[0xC851E2925BC63E4]:get() == 0 and Dvar.nodw:get() == 1 then
 		return true
 	else
 		return false
@@ -967,10 +967,10 @@ f0_local0.Loot.MasterSeasonTable = 0xFE613834D811EC6
 f0_local0.Loot.MasterContractTable = "gamedata/loot/loot_contracts.csv"
 f0_local0.Loot.MasterReservesTable = 0x42660E60408E67A
 f0_local0.Loot.LastSeasonStartTime = "1569862800"
-f0_local0.Loot.SEASON_INFO_NUMBER = 0xDCCDC690358AE80
-f0_local0.Loot.SEASON_INFO_MAX_TIERS = 0xDB6B258E890058B
-f0_local0.Loot.SEASON_INFO_DROP_VERSIONS = 0x612F26908E35700
-f0_local0.Loot.SEASON_INFO_HIGHEST_DROP_VERSION = 0x30E13B4E29C0E4A
+f0_local0.Loot.SEASON_INFO_NUMBER = "season_number"
+f0_local0.Loot.SEASON_INFO_MAX_TIERS = "max_tiers"
+f0_local0.Loot.SEASON_INFO_DROP_VERSIONS = "drop_versions"
+f0_local0.Loot.SEASON_INFO_HIGHEST_DROP_VERSION = "highest_drop_version"
 f0_local0.Loot.SEASON_INFO_ASSET_POSTSEASON = 0xABCAB4113C3EBFD
 f0_local0.Loot.SEASON_INFO_ASSET_ALLRNG = 0xBAC3D33F590FB73
 f0_local0.Loot.SEASON_INFO_TABLENAME = "table_name"

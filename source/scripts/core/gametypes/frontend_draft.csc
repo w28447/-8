@@ -503,7 +503,7 @@ function setup_team( localclientnum )
     
     if ( sessionmode == 3 )
     {
-        level.draftxcam = #"hash_2598b6f5e72695c7";
+        level.draftxcam = #"ui_scene_cam_lobby_draft";
         targetname = "WZdraftCharacter";
     }
     else if ( sessionmode == 0 )

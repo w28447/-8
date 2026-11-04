@@ -367,7 +367,7 @@
         },
         {
             "name": "#postfx_smaa_us",
-            "scrName": "#hash_748be5db",
+            "scrName": "#postfx_smaa_us",
             "type": "INT32"
         },
         {

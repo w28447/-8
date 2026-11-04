@@ -1185,7 +1185,7 @@ CoD.DemoUtility.AddHUDWidgets = function ( f114_arg0, f114_arg1 )
 				Engine.exec( f114_local1, "demo_regeneratehighlightreel" )
 			else
 				LuaUtils.ShowMessageDialog( f114_local1, Enum.MessageDialogType[0x8BCCDF5038F1B0B], Engine[0xF9F1239CFD921FE]( 0x4F1B56A7BD9CDF ), Engine[0xF9F1239CFD921FE]( "menu/notice" ) )
-				Dvar[0xFF56845FD43D403]:set( true )
+				Dvar.demo_pause:set( true )
 			end
 		end
 		if CoD.isPC then

@@ -35,7 +35,7 @@ function init()
         level._effect[ #"hash_62ee80337662b3cd" ] = #"hash_d49412589217ae5";
         level._effect[ #"hash_7ef82b98770c5c0d" ] = #"zm_ai/fx8_bat_transform";
         level._effect[ #"bile_idle_fx" ] = #"hash_26219308102ab88";
-        level._effect[ #"hash_1789fef86cd8b57e" ] = #"hash_6155f098cde9b5d6";
+        level._effect[ #"bat_bile_vanish_fx" ] = #"hash_6155f098cde9b5d6";
         level._effect[ #"hash_6ded20ebb8e016ba" ] = #"hash_12294859753682f";
         level._effect[ #"hash_c0e8acbde8dbc06" ] = #"hash_3c302e20c7521265";
         level._effect[ #"hash_1e5190677354bcbb" ] = #"hash_43db5529d30606a4";
@@ -139,7 +139,7 @@ function bile_idle_fx( localclientnum, oldval, newval, bnewent, binitialsnap, fi
     {
         stopfx( localclientnum, self.var_25092f46 );
         self.var_25092f46 = undefined;
-        playfx( localclientnum, level._effect[ #"hash_1789fef86cd8b57e" ], self.origin );
+        playfx( localclientnum, level._effect[ #"bat_bile_vanish_fx" ], self.origin );
     }
     
     if ( newval )

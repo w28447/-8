@@ -217,10 +217,10 @@ function function_406d206b( var_c34665fc )
 // Params 1
 // Checksum 0xbeb23f9e, Offset: 0xbe0
 // Size: 0x2e
-function function_9a79647b( var_8de6cf73 )
+function function_9a79647b( n_max_health_percent )
 {
     self.nuke_damage_func = &nuke_damage_func;
-    self.var_3b6e5508 = var_8de6cf73;
+    self.var_3b6e5508 = n_max_health_percent;
 }
 
 // Namespace zm_powerup_nuke/zm_powerup_nuke

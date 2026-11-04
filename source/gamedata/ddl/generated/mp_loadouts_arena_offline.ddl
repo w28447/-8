@@ -437,7 +437,7 @@ version 72 {
     // offset 0x2de0, size 0x1
     bool loadoutinitialized;
     // offset 0x2de1, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x2e21, size 0x7
     uint:1 __pad[7];
 }
@@ -882,7 +882,7 @@ version 71 {
     // offset 0x2de0, size 0x1
     bool loadoutinitialized;
     // offset 0x2de1, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x2e21, size 0x7
     uint:1 __pad[7];
 }
@@ -1327,7 +1327,7 @@ version 70 {
     // offset 0x2de0, size 0x1
     bool loadoutinitialized;
     // offset 0x2de1, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x2e21, size 0x7
     uint:1 __pad[7];
 }
@@ -1772,7 +1772,7 @@ version 69 {
     // offset 0x2de0, size 0x1
     bool loadoutinitialized;
     // offset 0x2de1, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x2e21, size 0x7
     uint:1 __pad[7];
 }
@@ -2217,7 +2217,7 @@ version 68 {
     // offset 0x2de0, size 0x1
     bool loadoutinitialized;
     // offset 0x2de1, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x2e21, size 0x7
     uint:1 __pad[7];
 }
@@ -2662,7 +2662,7 @@ version 67 {
     // offset 0x2de0, size 0x1
     bool loadoutinitialized;
     // offset 0x2de1, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x2e21, size 0x7
     uint:1 __pad[7];
 }
@@ -3107,7 +3107,7 @@ version 66 {
     // offset 0x2de0, size 0x1
     bool loadoutinitialized;
     // offset 0x2de1, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x2e21, size 0x7
     uint:1 __pad[7];
 }
@@ -3552,7 +3552,7 @@ version 65 {
     // offset 0x2de0, size 0x1
     bool loadoutinitialized;
     // offset 0x2de1, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x2e21, size 0x7
     uint:1 __pad[7];
 }
@@ -3967,7 +3967,7 @@ version 64 {
     // offset 0x1b3f0, size 0x1
     bool loadoutinitialized;
     // offset 0x1b3f1, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x1b431, size 0x7
     uint:1 __pad[7];
 }
@@ -4384,7 +4384,7 @@ version 63 {
     // offset 0x1b6f0, size 0x1
     bool loadoutinitialized;
     // offset 0x1b6f1, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x1b731, size 0x7
     uint:1 __pad[7];
 }
@@ -4801,7 +4801,7 @@ version 62 {
     // offset 0x1bf60, size 0x1
     bool loadoutinitialized;
     // offset 0x1bf61, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x1bfa1, size 0x7
     uint:1 __pad[7];
 }
@@ -5214,7 +5214,7 @@ version 61 {
     // offset 0x1bc00, size 0x1
     bool loadoutinitialized;
     // offset 0x1bc01, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x1bc41, size 0x7
     uint:1 __pad[7];
 }
@@ -5609,7 +5609,7 @@ version 60 {
     // offset 0x1bc00, size 0x1
     bool loadoutinitialized;
     // offset 0x1bc01, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x1bc41, size 0x7
     uint:1 __pad[7];
 }
@@ -6002,7 +6002,7 @@ version 59 {
     // offset 0x1bc00, size 0x1
     bool loadoutinitialized;
     // offset 0x1bc01, size 0x40
-    bool hash_d4aef679e9c5e94[64];
+    bool reservebools[64];
     // offset 0x1bc41, size 0x7
     uint:1 __pad[7];
 }

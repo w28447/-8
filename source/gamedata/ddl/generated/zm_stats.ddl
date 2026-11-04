@@ -107,7 +107,7 @@ version 114 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -822,7 +822,7 @@ version 113 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -1536,7 +1536,7 @@ version 112 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -2246,7 +2246,7 @@ version 111 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -2945,7 +2945,7 @@ version 110 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -3643,7 +3643,7 @@ version 109 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -4340,7 +4340,7 @@ version 108 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -5037,7 +5037,7 @@ version 107 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -5726,7 +5726,7 @@ version 106 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -6411,7 +6411,7 @@ version 105 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -7092,7 +7092,7 @@ version 104 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -7768,7 +7768,7 @@ version 103 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -8442,7 +8442,7 @@ version 102 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -9115,7 +9115,7 @@ version 101 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -9787,7 +9787,7 @@ version 100 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -10456,7 +10456,7 @@ version 99 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -11143,7 +11143,7 @@ version 98 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -11850,7 +11850,7 @@ version 97 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -12661,7 +12661,7 @@ version 96 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -13471,7 +13471,7 @@ version 95 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -14273,7 +14273,7 @@ version 94 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -15075,7 +15075,7 @@ version 93 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -15876,7 +15876,7 @@ version 92 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -16676,7 +16676,7 @@ version 91 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -17475,7 +17475,7 @@ version 90 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -18274,7 +18274,7 @@ version 89 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -19072,7 +19072,7 @@ version 88 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -19870,7 +19870,7 @@ version 87 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -20639,7 +20639,7 @@ version 86 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -21396,7 +21396,7 @@ version 85 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -22150,7 +22150,7 @@ version 84 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -22902,7 +22902,7 @@ version 83 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -23650,7 +23650,7 @@ version 82 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -24390,7 +24390,7 @@ version 81 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -25131,7 +25131,7 @@ version 80 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -25869,7 +25869,7 @@ version 79 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -26606,7 +26606,7 @@ version 78 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -27342,7 +27342,7 @@ version 77 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -28077,7 +28077,7 @@ version 76 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -28901,7 +28901,7 @@ version 75 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -29729,7 +29729,7 @@ version 74 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -30564,7 +30564,7 @@ version 73 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -31399,7 +31399,7 @@ version 72 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -31639,7 +31639,7 @@ version 72 {
         pistol_standard_t8_upgraded, // 0x9,
         ar_modular_t8_upgraded, // 0xa,
         ww_tricannon_t8_upgraded, // 0xb,
-        hash_f5adf40e8a647e1, // 0xc,
+        ww_trident_t8, // 0xc,
         smg_standard_t8_upgraded, // 0xd,
         ar_damage_t8, // 0xe,
         spknifeork, // 0xf,
@@ -31895,7 +31895,7 @@ version 72 {
         zm_bgb_now_you_see_me, // 0x6,
         zm_bgb_arsenal_accelerator, // 0x7,
         zm_bgb_sword_flay, // 0x8,
-        hash_f5adf40e8a647e1, // 0x9,
+        ww_trident_t8, // 0x9,
         zm_bgb_newtonian_negation, // 0xa,
         zm_bgb_wall_power, // 0xb,
         zm_bgb_extra_credit, // 0xc,
@@ -32234,7 +32234,7 @@ version 71 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -32468,7 +32468,7 @@ version 71 {
         pistol_standard_t8_upgraded, // 0x9,
         ar_modular_t8_upgraded, // 0xa,
         ww_tricannon_t8_upgraded, // 0xb,
-        hash_f5adf40e8a647e1, // 0xc,
+        ww_trident_t8, // 0xc,
         smg_standard_t8_upgraded, // 0xd,
         ar_damage_t8, // 0xe,
         spknifeork, // 0xf,
@@ -32718,7 +32718,7 @@ version 71 {
         zm_bgb_now_you_see_me, // 0x6,
         zm_bgb_arsenal_accelerator, // 0x7,
         zm_bgb_sword_flay, // 0x8,
-        hash_f5adf40e8a647e1, // 0x9,
+        ww_trident_t8, // 0x9,
         zm_bgb_newtonian_negation, // 0xa,
         zm_bgb_wall_power, // 0xb,
         zm_bgb_extra_credit, // 0xc,
@@ -33057,7 +33057,7 @@ version 70 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -33291,7 +33291,7 @@ version 70 {
         pistol_standard_t8_upgraded, // 0x9,
         ar_modular_t8_upgraded, // 0xa,
         ww_tricannon_t8_upgraded, // 0xb,
-        hash_f5adf40e8a647e1, // 0xc,
+        ww_trident_t8, // 0xc,
         smg_standard_t8_upgraded, // 0xd,
         ar_damage_t8, // 0xe,
         spknifeork, // 0xf,
@@ -33540,7 +33540,7 @@ version 70 {
         zm_bgb_now_you_see_me, // 0x6,
         zm_bgb_arsenal_accelerator, // 0x7,
         zm_bgb_sword_flay, // 0x8,
-        hash_f5adf40e8a647e1, // 0x9,
+        ww_trident_t8, // 0x9,
         zm_bgb_newtonian_negation, // 0xa,
         zm_bgb_wall_power, // 0xb,
         zm_bgb_extra_credit, // 0xc,
@@ -33879,7 +33879,7 @@ version 69 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -34109,7 +34109,7 @@ version 69 {
         pistol_standard_t8_upgraded, // 0x9,
         ar_modular_t8_upgraded, // 0xa,
         ww_tricannon_t8_upgraded, // 0xb,
-        hash_f5adf40e8a647e1, // 0xc,
+        ww_trident_t8, // 0xc,
         smg_standard_t8_upgraded, // 0xd,
         ar_damage_t8, // 0xe,
         spknifeork, // 0xf,
@@ -34354,7 +34354,7 @@ version 69 {
         zm_bgb_now_you_see_me, // 0x6,
         zm_bgb_arsenal_accelerator, // 0x7,
         zm_bgb_sword_flay, // 0x8,
-        hash_f5adf40e8a647e1, // 0x9,
+        ww_trident_t8, // 0x9,
         zm_bgb_newtonian_negation, // 0xa,
         zm_bgb_wall_power, // 0xb,
         zm_bgb_extra_credit, // 0xc,
@@ -34691,7 +34691,7 @@ version 68 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -34921,7 +34921,7 @@ version 68 {
         pistol_standard_t8_upgraded, // 0x9,
         ar_modular_t8_upgraded, // 0xa,
         ww_tricannon_t8_upgraded, // 0xb,
-        hash_f5adf40e8a647e1, // 0xc,
+        ww_trident_t8, // 0xc,
         smg_standard_t8_upgraded, // 0xd,
         ar_damage_t8, // 0xe,
         spknifeork, // 0xf,
@@ -35166,7 +35166,7 @@ version 68 {
         zm_bgb_now_you_see_me, // 0x6,
         zm_bgb_arsenal_accelerator, // 0x7,
         zm_bgb_sword_flay, // 0x8,
-        hash_f5adf40e8a647e1, // 0x9,
+        ww_trident_t8, // 0x9,
         zm_bgb_newtonian_negation, // 0xa,
         zm_bgb_wall_power, // 0xb,
         zm_bgb_extra_credit, // 0xc,
@@ -35504,7 +35504,7 @@ version 67 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -36311,7 +36311,7 @@ version 66 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -37117,7 +37117,7 @@ version 65 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -37902,7 +37902,7 @@ version 64 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -38679,7 +38679,7 @@ version 63 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -39456,7 +39456,7 @@ version 62 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -40230,7 +40230,7 @@ version 61 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -41004,7 +41004,7 @@ version 60 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -41776,7 +41776,7 @@ version 59 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -42546,7 +42546,7 @@ version 58 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -43316,7 +43316,7 @@ version 57 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -44073,7 +44073,7 @@ version 56 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -44830,7 +44830,7 @@ version 55 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -45582,7 +45582,7 @@ version 54 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -46311,7 +46311,7 @@ version 53 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -47038,7 +47038,7 @@ version 52 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -47756,7 +47756,7 @@ version 51 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -48460,7 +48460,7 @@ version 50 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -49164,7 +49164,7 @@ version 49 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -50219,7 +50219,7 @@ version 48 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -50342,7 +50342,7 @@ version 48 {
         codpoints, // 0x6b,
         shield_charge_pickedup, // 0x6c,
         hash_29bf8d4ddf84dd24, // 0x6d,
-        hash_29e6ec48e9101f71, // 0x6e,
+        zm_daily_kills_packed_pistol, // 0x6e,
         specialty_mod_extraammo_drank, // 0x6f,
         specialty_quickrevive_drank, // 0x70,
         revives, // 0x71,
@@ -50362,7 +50362,7 @@ version 48 {
         pap_weapon_double_packed, // 0x7f,
         player_returns, // 0x80,
         darkops_zod_super_ee, // 0x81,
-        hash_31c3f50baa002a76, // 0x82,
+        zm_daily_kills_packed_mg, // 0x82,
         plevel, // 0x83,
         hash_328d6e683a2addc2, // 0x84,
         ww_grenade_pickedup, // 0x85,
@@ -50492,7 +50492,7 @@ version 48 {
         catalyst_plasmas_killed, // 0x101,
         hash_5913a206f4ee760c, // 0x102,
         gum_gobbler_anywhere_but_here, // 0x103,
-        hash_5a2c6be15132de02, // 0x104,
+        bgb_tokens_gained_this_game, // 0x104,
         specialty_mod_additionalprimaryweapon_drank, // 0x105,
         hash_5a65e8030a21c479, // 0x106,
         maxxp, // 0x107,
@@ -50876,7 +50876,7 @@ version 48 {
     // offset 0x11f40, size 0x200
     xhash heroweaponsmaxed[8];
     // offset 0x12140, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x12160, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x12180, size 0x20
@@ -51503,7 +51503,7 @@ version 47 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -51616,7 +51616,7 @@ version 47 {
         cheat_too_friendly, // 0x61,
         codpoints, // 0x62,
         shield_charge_pickedup, // 0x63,
-        hash_29e6ec48e9101f71, // 0x64,
+        zm_daily_kills_packed_pistol, // 0x64,
         specialty_mod_extraammo_drank, // 0x65,
         specialty_quickrevive_drank, // 0x66,
         revives, // 0x67,
@@ -51636,7 +51636,7 @@ version 47 {
         pap_weapon_double_packed, // 0x75,
         player_returns, // 0x76,
         darkops_zod_super_ee, // 0x77,
-        hash_31c3f50baa002a76, // 0x78,
+        zm_daily_kills_packed_mg, // 0x78,
         plevel, // 0x79,
         hash_328d6e683a2addc2, // 0x7a,
         ww_grenade_pickedup, // 0x7b,
@@ -51759,7 +51759,7 @@ version 47 {
         catalyst_plasmas_killed, // 0xf0,
         hash_5913a206f4ee760c, // 0xf1,
         gum_gobbler_anywhere_but_here, // 0xf2,
-        hash_5a2c6be15132de02, // 0xf3,
+        bgb_tokens_gained_this_game, // 0xf3,
         specialty_mod_additionalprimaryweapon_drank, // 0xf4,
         maxxp, // 0xf5,
         insta_kill_pickedup, // 0xf6,
@@ -52140,7 +52140,7 @@ version 47 {
     // offset 0x11f40, size 0x200
     xhash heroweaponsmaxed[8];
     // offset 0x12140, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x12160, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x12180, size 0x20
@@ -52767,7 +52767,7 @@ version 46 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -52880,7 +52880,7 @@ version 46 {
         cheat_too_friendly, // 0x61,
         codpoints, // 0x62,
         shield_charge_pickedup, // 0x63,
-        hash_29e6ec48e9101f71, // 0x64,
+        zm_daily_kills_packed_pistol, // 0x64,
         specialty_mod_extraammo_drank, // 0x65,
         specialty_quickrevive_drank, // 0x66,
         revives, // 0x67,
@@ -52900,7 +52900,7 @@ version 46 {
         pap_weapon_double_packed, // 0x75,
         player_returns, // 0x76,
         darkops_zod_super_ee, // 0x77,
-        hash_31c3f50baa002a76, // 0x78,
+        zm_daily_kills_packed_mg, // 0x78,
         plevel, // 0x79,
         hash_328d6e683a2addc2, // 0x7a,
         ww_grenade_pickedup, // 0x7b,
@@ -53022,7 +53022,7 @@ version 46 {
         catalyst_plasmas_killed, // 0xef,
         hash_5913a206f4ee760c, // 0xf0,
         gum_gobbler_anywhere_but_here, // 0xf1,
-        hash_5a2c6be15132de02, // 0xf2,
+        bgb_tokens_gained_this_game, // 0xf2,
         specialty_mod_additionalprimaryweapon_drank, // 0xf3,
         maxxp, // 0xf4,
         insta_kill_pickedup, // 0xf5,
@@ -53403,7 +53403,7 @@ version 46 {
     // offset 0x11f40, size 0x200
     xhash heroweaponsmaxed[8];
     // offset 0x12140, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x12160, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x12180, size 0x20
@@ -54127,7 +54127,7 @@ version 45 {
         cheat_too_friendly, // 0x61,
         codpoints, // 0x62,
         shield_charge_pickedup, // 0x63,
-        hash_29e6ec48e9101f71, // 0x64,
+        zm_daily_kills_packed_pistol, // 0x64,
         specialty_mod_extraammo_drank, // 0x65,
         specialty_quickrevive_drank, // 0x66,
         revives, // 0x67,
@@ -54147,7 +54147,7 @@ version 45 {
         pap_weapon_double_packed, // 0x75,
         player_returns, // 0x76,
         darkops_zod_super_ee, // 0x77,
-        hash_31c3f50baa002a76, // 0x78,
+        zm_daily_kills_packed_mg, // 0x78,
         plevel, // 0x79,
         hash_328d6e683a2addc2, // 0x7a,
         ww_grenade_pickedup, // 0x7b,
@@ -54269,7 +54269,7 @@ version 45 {
         catalyst_plasmas_killed, // 0xef,
         hash_5913a206f4ee760c, // 0xf0,
         gum_gobbler_anywhere_but_here, // 0xf1,
-        hash_5a2c6be15132de02, // 0xf2,
+        bgb_tokens_gained_this_game, // 0xf2,
         specialty_mod_additionalprimaryweapon_drank, // 0xf3,
         maxxp, // 0xf4,
         insta_kill_pickedup, // 0xf5,
@@ -54650,7 +54650,7 @@ version 45 {
     // offset 0x11f40, size 0x200
     xhash heroweaponsmaxed[8];
     // offset 0x12140, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x12160, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x12180, size 0x20
@@ -55372,7 +55372,7 @@ version 44 {
         cheat_too_friendly, // 0x61,
         codpoints, // 0x62,
         shield_charge_pickedup, // 0x63,
-        hash_29e6ec48e9101f71, // 0x64,
+        zm_daily_kills_packed_pistol, // 0x64,
         specialty_mod_extraammo_drank, // 0x65,
         specialty_quickrevive_drank, // 0x66,
         revives, // 0x67,
@@ -55392,7 +55392,7 @@ version 44 {
         pap_weapon_double_packed, // 0x75,
         player_returns, // 0x76,
         darkops_zod_super_ee, // 0x77,
-        hash_31c3f50baa002a76, // 0x78,
+        zm_daily_kills_packed_mg, // 0x78,
         plevel, // 0x79,
         hash_328d6e683a2addc2, // 0x7a,
         ww_grenade_pickedup, // 0x7b,
@@ -55514,7 +55514,7 @@ version 44 {
         catalyst_plasmas_killed, // 0xef,
         hash_5913a206f4ee760c, // 0xf0,
         gum_gobbler_anywhere_but_here, // 0xf1,
-        hash_5a2c6be15132de02, // 0xf2,
+        bgb_tokens_gained_this_game, // 0xf2,
         specialty_mod_additionalprimaryweapon_drank, // 0xf3,
         maxxp, // 0xf4,
         insta_kill_pickedup, // 0xf5,
@@ -55895,7 +55895,7 @@ version 44 {
     // offset 0x11f40, size 0x200
     xhash heroweaponsmaxed[8];
     // offset 0x12140, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x12160, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x12180, size 0x20
@@ -56607,7 +56607,7 @@ version 43 {
         cheat_too_friendly, // 0x61,
         codpoints, // 0x62,
         shield_charge_pickedup, // 0x63,
-        hash_29e6ec48e9101f71, // 0x64,
+        zm_daily_kills_packed_pistol, // 0x64,
         specialty_mod_extraammo_drank, // 0x65,
         specialty_quickrevive_drank, // 0x66,
         revives, // 0x67,
@@ -56627,7 +56627,7 @@ version 43 {
         pap_weapon_double_packed, // 0x75,
         player_returns, // 0x76,
         darkops_zod_super_ee, // 0x77,
-        hash_31c3f50baa002a76, // 0x78,
+        zm_daily_kills_packed_mg, // 0x78,
         plevel, // 0x79,
         hash_328d6e683a2addc2, // 0x7a,
         ww_grenade_pickedup, // 0x7b,
@@ -56749,7 +56749,7 @@ version 43 {
         catalyst_plasmas_killed, // 0xef,
         hash_5913a206f4ee760c, // 0xf0,
         gum_gobbler_anywhere_but_here, // 0xf1,
-        hash_5a2c6be15132de02, // 0xf2,
+        bgb_tokens_gained_this_game, // 0xf2,
         specialty_mod_additionalprimaryweapon_drank, // 0xf3,
         maxxp, // 0xf4,
         insta_kill_pickedup, // 0xf5,
@@ -57130,7 +57130,7 @@ version 43 {
     // offset 0x11f40, size 0x200
     xhash heroweaponsmaxed[8];
     // offset 0x12140, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x12160, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x12180, size 0x20
@@ -57831,7 +57831,7 @@ version 42 {
         cheat_too_friendly, // 0x60,
         codpoints, // 0x61,
         shield_charge_pickedup, // 0x62,
-        hash_29e6ec48e9101f71, // 0x63,
+        zm_daily_kills_packed_pistol, // 0x63,
         specialty_mod_extraammo_drank, // 0x64,
         specialty_quickrevive_drank, // 0x65,
         revives, // 0x66,
@@ -57851,7 +57851,7 @@ version 42 {
         pap_weapon_double_packed, // 0x74,
         player_returns, // 0x75,
         darkops_zod_super_ee, // 0x76,
-        hash_31c3f50baa002a76, // 0x77,
+        zm_daily_kills_packed_mg, // 0x77,
         plevel, // 0x78,
         hash_328d6e683a2addc2, // 0x79,
         ww_grenade_pickedup, // 0x7a,
@@ -57973,7 +57973,7 @@ version 42 {
         catalyst_plasmas_killed, // 0xee,
         hash_5913a206f4ee760c, // 0xef,
         gum_gobbler_anywhere_but_here, // 0xf0,
-        hash_5a2c6be15132de02, // 0xf1,
+        bgb_tokens_gained_this_game, // 0xf1,
         specialty_mod_additionalprimaryweapon_drank, // 0xf2,
         maxxp, // 0xf3,
         insta_kill_pickedup, // 0xf4,
@@ -58354,7 +58354,7 @@ version 42 {
     // offset 0x11f40, size 0x200
     xhash heroweaponsmaxed[8];
     // offset 0x12140, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x12160, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x12180, size 0x20
@@ -59055,7 +59055,7 @@ version 41 {
         cheat_too_friendly, // 0x60,
         codpoints, // 0x61,
         shield_charge_pickedup, // 0x62,
-        hash_29e6ec48e9101f71, // 0x63,
+        zm_daily_kills_packed_pistol, // 0x63,
         specialty_mod_extraammo_drank, // 0x64,
         specialty_quickrevive_drank, // 0x65,
         revives, // 0x66,
@@ -59075,7 +59075,7 @@ version 41 {
         pap_weapon_double_packed, // 0x74,
         player_returns, // 0x75,
         darkops_zod_super_ee, // 0x76,
-        hash_31c3f50baa002a76, // 0x77,
+        zm_daily_kills_packed_mg, // 0x77,
         plevel, // 0x78,
         hash_328d6e683a2addc2, // 0x79,
         ww_grenade_pickedup, // 0x7a,
@@ -59197,7 +59197,7 @@ version 41 {
         catalyst_plasmas_killed, // 0xee,
         hash_5913a206f4ee760c, // 0xef,
         gum_gobbler_anywhere_but_here, // 0xf0,
-        hash_5a2c6be15132de02, // 0xf1,
+        bgb_tokens_gained_this_game, // 0xf1,
         specialty_mod_additionalprimaryweapon_drank, // 0xf2,
         maxxp, // 0xf3,
         insta_kill_pickedup, // 0xf4,
@@ -59578,7 +59578,7 @@ version 41 {
     // offset 0x11f40, size 0x200
     xhash heroweaponsmaxed[8];
     // offset 0x12140, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x12160, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x12180, size 0x20
@@ -60276,7 +60276,7 @@ version 40 {
         cheat_too_friendly, // 0x5d,
         codpoints, // 0x5e,
         shield_charge_pickedup, // 0x5f,
-        hash_29e6ec48e9101f71, // 0x60,
+        zm_daily_kills_packed_pistol, // 0x60,
         specialty_mod_extraammo_drank, // 0x61,
         specialty_quickrevive_drank, // 0x62,
         revives, // 0x63,
@@ -60295,7 +60295,7 @@ version 40 {
         pap_weapon_double_packed, // 0x70,
         player_returns, // 0x71,
         darkops_zod_super_ee, // 0x72,
-        hash_31c3f50baa002a76, // 0x73,
+        zm_daily_kills_packed_mg, // 0x73,
         plevel, // 0x74,
         hash_328d6e683a2addc2, // 0x75,
         ww_grenade_pickedup, // 0x76,
@@ -60413,7 +60413,7 @@ version 40 {
         catalyst_plasmas_killed, // 0xe6,
         hash_5913a206f4ee760c, // 0xe7,
         gum_gobbler_anywhere_but_here, // 0xe8,
-        hash_5a2c6be15132de02, // 0xe9,
+        bgb_tokens_gained_this_game, // 0xe9,
         specialty_mod_additionalprimaryweapon_drank, // 0xea,
         maxxp, // 0xeb,
         insta_kill_pickedup, // 0xec,
@@ -60786,7 +60786,7 @@ version 40 {
     // offset 0x14d80, size 0x200
     xhash heroweaponsmaxed[8];
     // offset 0x14f80, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x14fa0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x14fc0, size 0x20
@@ -61484,7 +61484,7 @@ version 39 {
         cheat_too_friendly, // 0x5d,
         codpoints, // 0x5e,
         shield_charge_pickedup, // 0x5f,
-        hash_29e6ec48e9101f71, // 0x60,
+        zm_daily_kills_packed_pistol, // 0x60,
         specialty_mod_extraammo_drank, // 0x61,
         specialty_quickrevive_drank, // 0x62,
         revives, // 0x63,
@@ -61503,7 +61503,7 @@ version 39 {
         pap_weapon_double_packed, // 0x70,
         player_returns, // 0x71,
         darkops_zod_super_ee, // 0x72,
-        hash_31c3f50baa002a76, // 0x73,
+        zm_daily_kills_packed_mg, // 0x73,
         plevel, // 0x74,
         hash_328d6e683a2addc2, // 0x75,
         ww_grenade_pickedup, // 0x76,
@@ -61621,7 +61621,7 @@ version 39 {
         catalyst_plasmas_killed, // 0xe6,
         hash_5913a206f4ee760c, // 0xe7,
         gum_gobbler_anywhere_but_here, // 0xe8,
-        hash_5a2c6be15132de02, // 0xe9,
+        bgb_tokens_gained_this_game, // 0xe9,
         specialty_mod_additionalprimaryweapon_drank, // 0xea,
         maxxp, // 0xeb,
         insta_kill_pickedup, // 0xec,
@@ -61993,7 +61993,7 @@ version 39 {
     // offset 0x14d80, size 0x200
     xhash heroweaponsmaxed[8];
     // offset 0x14f80, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x14fa0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x14fc0, size 0x20
@@ -62692,7 +62692,7 @@ version 38 {
         cheat_too_friendly, // 0x5e,
         codpoints, // 0x5f,
         shield_charge_pickedup, // 0x60,
-        hash_29e6ec48e9101f71, // 0x61,
+        zm_daily_kills_packed_pistol, // 0x61,
         specialty_mod_extraammo_drank, // 0x62,
         specialty_quickrevive_drank, // 0x63,
         revives, // 0x64,
@@ -62712,7 +62712,7 @@ version 38 {
         player_returns, // 0x72,
         hash_30dba31670499d10, // 0x73,
         darkops_zod_super_ee, // 0x74,
-        hash_31c3f50baa002a76, // 0x75,
+        zm_daily_kills_packed_mg, // 0x75,
         plevel, // 0x76,
         hash_328d6e683a2addc2, // 0x77,
         ww_grenade_pickedup, // 0x78,
@@ -62829,7 +62829,7 @@ version 38 {
         catalyst_plasmas_killed, // 0xe7,
         hash_5913a206f4ee760c, // 0xe8,
         gum_gobbler_anywhere_but_here, // 0xe9,
-        hash_5a2c6be15132de02, // 0xea,
+        bgb_tokens_gained_this_game, // 0xea,
         specialty_mod_additionalprimaryweapon_drank, // 0xeb,
         maxxp, // 0xec,
         insta_kill_pickedup, // 0xed,
@@ -63201,7 +63201,7 @@ version 38 {
     // offset 0x14d80, size 0x200
     xhash heroweaponsmaxed[8];
     // offset 0x14f80, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x14fa0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x14fc0, size 0x20
@@ -63885,7 +63885,7 @@ version 37 {
         cheat_too_friendly, // 0x4f,
         codpoints, // 0x50,
         shield_charge_pickedup, // 0x51,
-        hash_29e6ec48e9101f71, // 0x52,
+        zm_daily_kills_packed_pistol, // 0x52,
         specialty_mod_extraammo_drank, // 0x53,
         specialty_quickrevive_drank, // 0x54,
         revives, // 0x55,
@@ -63903,7 +63903,7 @@ version 37 {
         player_returns, // 0x61,
         hash_30dba31670499d10, // 0x62,
         darkops_zod_super_ee, // 0x63,
-        hash_31c3f50baa002a76, // 0x64,
+        zm_daily_kills_packed_mg, // 0x64,
         plevel, // 0x65,
         hash_328d6e683a2addc2, // 0x66,
         ww_grenade_pickedup, // 0x67,
@@ -64010,7 +64010,7 @@ version 37 {
         catalyst_plasmas_killed, // 0xcc,
         hash_5913a206f4ee760c, // 0xcd,
         gum_gobbler_anywhere_but_here, // 0xce,
-        hash_5a2c6be15132de02, // 0xcf,
+        bgb_tokens_gained_this_game, // 0xcf,
         specialty_mod_additionalprimaryweapon_drank, // 0xd0,
         maxxp, // 0xd1,
         insta_kill_pickedup, // 0xd2,
@@ -64358,7 +64358,7 @@ version 37 {
     // offset 0x10a00, size 0x200
     xhash heroweaponsmaxed[8];
     // offset 0x10c00, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x10c20, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x10c40, size 0x20
@@ -65032,7 +65032,7 @@ version 36 {
         cheat_too_friendly, // 0x4f,
         codpoints, // 0x50,
         shield_charge_pickedup, // 0x51,
-        hash_29e6ec48e9101f71, // 0x52,
+        zm_daily_kills_packed_pistol, // 0x52,
         specialty_mod_extraammo_drank, // 0x53,
         specialty_quickrevive_drank, // 0x54,
         revives, // 0x55,
@@ -65050,7 +65050,7 @@ version 36 {
         player_returns, // 0x61,
         hash_30dba31670499d10, // 0x62,
         darkops_zod_super_ee, // 0x63,
-        hash_31c3f50baa002a76, // 0x64,
+        zm_daily_kills_packed_mg, // 0x64,
         plevel, // 0x65,
         hash_328d6e683a2addc2, // 0x66,
         ww_grenade_pickedup, // 0x67,
@@ -65157,7 +65157,7 @@ version 36 {
         catalyst_plasmas_killed, // 0xcc,
         hash_5913a206f4ee760c, // 0xcd,
         gum_gobbler_anywhere_but_here, // 0xce,
-        hash_5a2c6be15132de02, // 0xcf,
+        bgb_tokens_gained_this_game, // 0xcf,
         specialty_mod_additionalprimaryweapon_drank, // 0xd0,
         maxxp, // 0xd1,
         insta_kill_pickedup, // 0xd2,
@@ -65505,7 +65505,7 @@ version 36 {
     // offset 0x10a00, size 0x200
     xhash heroweaponsmaxed[8];
     // offset 0x10c00, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x10c20, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x10c40, size 0x20
@@ -66177,7 +66177,7 @@ version 35 {
         cheat_too_friendly, // 0x4f,
         codpoints, // 0x50,
         shield_charge_pickedup, // 0x51,
-        hash_29e6ec48e9101f71, // 0x52,
+        zm_daily_kills_packed_pistol, // 0x52,
         specialty_mod_extraammo_drank, // 0x53,
         specialty_quickrevive_drank, // 0x54,
         revives, // 0x55,
@@ -66195,7 +66195,7 @@ version 35 {
         player_returns, // 0x61,
         hash_30dba31670499d10, // 0x62,
         darkops_zod_super_ee, // 0x63,
-        hash_31c3f50baa002a76, // 0x64,
+        zm_daily_kills_packed_mg, // 0x64,
         plevel, // 0x65,
         hash_328d6e683a2addc2, // 0x66,
         ww_grenade_pickedup, // 0x67,
@@ -66302,7 +66302,7 @@ version 35 {
         catalyst_plasmas_killed, // 0xcc,
         hash_5913a206f4ee760c, // 0xcd,
         gum_gobbler_anywhere_but_here, // 0xce,
-        hash_5a2c6be15132de02, // 0xcf,
+        bgb_tokens_gained_this_game, // 0xcf,
         specialty_mod_additionalprimaryweapon_drank, // 0xd0,
         maxxp, // 0xd1,
         insta_kill_pickedup, // 0xd2,
@@ -66650,7 +66650,7 @@ version 35 {
     // offset 0x10a00, size 0x200
     xhash heroweaponsmaxed[8];
     // offset 0x10c00, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x10c20, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x10c40, size 0x20
@@ -67322,7 +67322,7 @@ version 34 {
         cheat_too_friendly, // 0x4f,
         codpoints, // 0x50,
         shield_charge_pickedup, // 0x51,
-        hash_29e6ec48e9101f71, // 0x52,
+        zm_daily_kills_packed_pistol, // 0x52,
         specialty_mod_extraammo_drank, // 0x53,
         specialty_quickrevive_drank, // 0x54,
         revives, // 0x55,
@@ -67340,7 +67340,7 @@ version 34 {
         player_returns, // 0x61,
         hash_30dba31670499d10, // 0x62,
         darkops_zod_super_ee, // 0x63,
-        hash_31c3f50baa002a76, // 0x64,
+        zm_daily_kills_packed_mg, // 0x64,
         plevel, // 0x65,
         hash_328d6e683a2addc2, // 0x66,
         ww_grenade_pickedup, // 0x67,
@@ -67446,7 +67446,7 @@ version 34 {
         catalyst_plasmas_killed, // 0xcb,
         hash_5913a206f4ee760c, // 0xcc,
         gum_gobbler_anywhere_but_here, // 0xcd,
-        hash_5a2c6be15132de02, // 0xce,
+        bgb_tokens_gained_this_game, // 0xce,
         specialty_mod_additionalprimaryweapon_drank, // 0xcf,
         maxxp, // 0xd0,
         insta_kill_pickedup, // 0xd1,
@@ -67791,7 +67791,7 @@ version 34 {
     // offset 0x10a00, size 0x200
     xhash heroweaponsmaxed[8];
     // offset 0x10c00, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x10c20, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x10c40, size 0x20
@@ -68463,7 +68463,7 @@ version 33 {
         cheat_too_friendly, // 0x4f,
         codpoints, // 0x50,
         shield_charge_pickedup, // 0x51,
-        hash_29e6ec48e9101f71, // 0x52,
+        zm_daily_kills_packed_pistol, // 0x52,
         specialty_mod_extraammo_drank, // 0x53,
         specialty_quickrevive_drank, // 0x54,
         revives, // 0x55,
@@ -68481,7 +68481,7 @@ version 33 {
         player_returns, // 0x61,
         hash_30dba31670499d10, // 0x62,
         darkops_zod_super_ee, // 0x63,
-        hash_31c3f50baa002a76, // 0x64,
+        zm_daily_kills_packed_mg, // 0x64,
         plevel, // 0x65,
         hash_328d6e683a2addc2, // 0x66,
         ww_grenade_pickedup, // 0x67,
@@ -68587,7 +68587,7 @@ version 33 {
         catalyst_plasmas_killed, // 0xcb,
         hash_5913a206f4ee760c, // 0xcc,
         gum_gobbler_anywhere_but_here, // 0xcd,
-        hash_5a2c6be15132de02, // 0xce,
+        bgb_tokens_gained_this_game, // 0xce,
         specialty_mod_additionalprimaryweapon_drank, // 0xcf,
         maxxp, // 0xd0,
         insta_kill_pickedup, // 0xd1,
@@ -68930,7 +68930,7 @@ version 33 {
     // offset 0x3800, size 0xd200
     hash_67b00e3091cde2fd attachments[attachments_e];
     // offset 0x10a00, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x10a20, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x10a40, size 0x20
@@ -69602,7 +69602,7 @@ version 32 {
         cheat_too_friendly, // 0x4f,
         codpoints, // 0x50,
         shield_charge_pickedup, // 0x51,
-        hash_29e6ec48e9101f71, // 0x52,
+        zm_daily_kills_packed_pistol, // 0x52,
         specialty_mod_extraammo_drank, // 0x53,
         specialty_quickrevive_drank, // 0x54,
         revives, // 0x55,
@@ -69620,7 +69620,7 @@ version 32 {
         player_returns, // 0x61,
         hash_30dba31670499d10, // 0x62,
         darkops_zod_super_ee, // 0x63,
-        hash_31c3f50baa002a76, // 0x64,
+        zm_daily_kills_packed_mg, // 0x64,
         plevel, // 0x65,
         hash_328d6e683a2addc2, // 0x66,
         ww_grenade_pickedup, // 0x67,
@@ -69726,7 +69726,7 @@ version 32 {
         catalyst_plasmas_killed, // 0xcb,
         hash_5913a206f4ee760c, // 0xcc,
         gum_gobbler_anywhere_but_here, // 0xcd,
-        hash_5a2c6be15132de02, // 0xce,
+        bgb_tokens_gained_this_game, // 0xce,
         specialty_mod_additionalprimaryweapon_drank, // 0xcf,
         maxxp, // 0xd0,
         insta_kill_pickedup, // 0xd1,
@@ -70077,7 +70077,7 @@ version 32 {
     // offset 0x3800, size 0xf000
     hash_67b00e3091cde2fd attachments[attachments_e];
     // offset 0x12800, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x12820, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x12840, size 0x20
@@ -70749,7 +70749,7 @@ version 31 {
         cheat_too_friendly, // 0x4f,
         codpoints, // 0x50,
         shield_charge_pickedup, // 0x51,
-        hash_29e6ec48e9101f71, // 0x52,
+        zm_daily_kills_packed_pistol, // 0x52,
         specialty_mod_extraammo_drank, // 0x53,
         specialty_quickrevive_drank, // 0x54,
         revives, // 0x55,
@@ -70767,7 +70767,7 @@ version 31 {
         player_returns, // 0x61,
         hash_30dba31670499d10, // 0x62,
         darkops_zod_super_ee, // 0x63,
-        hash_31c3f50baa002a76, // 0x64,
+        zm_daily_kills_packed_mg, // 0x64,
         plevel, // 0x65,
         hash_328d6e683a2addc2, // 0x66,
         ww_grenade_pickedup, // 0x67,
@@ -70873,7 +70873,7 @@ version 31 {
         catalyst_plasmas_killed, // 0xcb,
         hash_5913a206f4ee760c, // 0xcc,
         gum_gobbler_anywhere_but_here, // 0xcd,
-        hash_5a2c6be15132de02, // 0xce,
+        bgb_tokens_gained_this_game, // 0xce,
         specialty_mod_additionalprimaryweapon_drank, // 0xcf,
         maxxp, // 0xd0,
         insta_kill_pickedup, // 0xd1,
@@ -71220,7 +71220,7 @@ version 31 {
     // offset 0x3800, size 0xf000
     hash_67b00e3091cde2fd attachments[attachments_e];
     // offset 0x12800, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x12820, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x12840, size 0x20
@@ -71884,7 +71884,7 @@ version 30 {
         cheat_too_friendly, // 0x47,
         codpoints, // 0x48,
         shield_charge_pickedup, // 0x49,
-        hash_29e6ec48e9101f71, // 0x4a,
+        zm_daily_kills_packed_pistol, // 0x4a,
         specialty_mod_extraammo_drank, // 0x4b,
         specialty_quickrevive_drank, // 0x4c,
         revives, // 0x4d,
@@ -71898,7 +71898,7 @@ version 30 {
         player_returns, // 0x55,
         hash_30dba31670499d10, // 0x56,
         darkops_zod_super_ee, // 0x57,
-        hash_31c3f50baa002a76, // 0x58,
+        zm_daily_kills_packed_mg, // 0x58,
         plevel, // 0x59,
         hash_328d6e683a2addc2, // 0x5a,
         ww_grenade_pickedup, // 0x5b,
@@ -71999,7 +71999,7 @@ version 30 {
         use_pap, // 0xba,
         hash_5913a206f4ee760c, // 0xbb,
         gum_gobbler_anywhere_but_here, // 0xbc,
-        hash_5a2c6be15132de02, // 0xbd,
+        bgb_tokens_gained_this_game, // 0xbd,
         specialty_mod_additionalprimaryweapon_drank, // 0xbe,
         maxxp, // 0xbf,
         insta_kill_pickedup, // 0xc0,
@@ -72339,7 +72339,7 @@ version 30 {
     // offset 0x3800, size 0xf000
     hash_67b00e3091cde2fd attachments[attachments_e];
     // offset 0x12800, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x12820, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x12840, size 0x20
@@ -72989,7 +72989,7 @@ version 29 {
         cheat_too_friendly, // 0x47,
         codpoints, // 0x48,
         shield_charge_pickedup, // 0x49,
-        hash_29e6ec48e9101f71, // 0x4a,
+        zm_daily_kills_packed_pistol, // 0x4a,
         specialty_mod_extraammo_drank, // 0x4b,
         specialty_quickrevive_drank, // 0x4c,
         revives, // 0x4d,
@@ -73003,7 +73003,7 @@ version 29 {
         player_returns, // 0x55,
         hash_30dba31670499d10, // 0x56,
         darkops_zod_super_ee, // 0x57,
-        hash_31c3f50baa002a76, // 0x58,
+        zm_daily_kills_packed_mg, // 0x58,
         plevel, // 0x59,
         hash_328d6e683a2addc2, // 0x5a,
         ww_grenade_pickedup, // 0x5b,
@@ -73104,7 +73104,7 @@ version 29 {
         use_pap, // 0xba,
         hash_5913a206f4ee760c, // 0xbb,
         gum_gobbler_anywhere_but_here, // 0xbc,
-        hash_5a2c6be15132de02, // 0xbd,
+        bgb_tokens_gained_this_game, // 0xbd,
         specialty_mod_additionalprimaryweapon_drank, // 0xbe,
         maxxp, // 0xbf,
         insta_kill_pickedup, // 0xc0,
@@ -73444,7 +73444,7 @@ version 29 {
     // offset 0x3800, size 0xf000
     hash_67b00e3091cde2fd attachments[attachments_e];
     // offset 0x12800, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x12820, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x12840, size 0x20
@@ -74092,7 +74092,7 @@ version 28 {
         cheat_too_friendly, // 0x47,
         codpoints, // 0x48,
         shield_charge_pickedup, // 0x49,
-        hash_29e6ec48e9101f71, // 0x4a,
+        zm_daily_kills_packed_pistol, // 0x4a,
         specialty_mod_extraammo_drank, // 0x4b,
         specialty_quickrevive_drank, // 0x4c,
         revives, // 0x4d,
@@ -74106,7 +74106,7 @@ version 28 {
         player_returns, // 0x55,
         hash_30dba31670499d10, // 0x56,
         darkops_zod_super_ee, // 0x57,
-        hash_31c3f50baa002a76, // 0x58,
+        zm_daily_kills_packed_mg, // 0x58,
         plevel, // 0x59,
         hash_328d6e683a2addc2, // 0x5a,
         ww_grenade_pickedup, // 0x5b,
@@ -74207,7 +74207,7 @@ version 28 {
         use_pap, // 0xba,
         hash_5913a206f4ee760c, // 0xbb,
         gum_gobbler_anywhere_but_here, // 0xbc,
-        hash_5a2c6be15132de02, // 0xbd,
+        bgb_tokens_gained_this_game, // 0xbd,
         specialty_mod_additionalprimaryweapon_drank, // 0xbe,
         maxxp, // 0xbf,
         insta_kill_pickedup, // 0xc0,
@@ -74547,7 +74547,7 @@ version 28 {
     // offset 0x3800, size 0xf000
     hash_67b00e3091cde2fd attachments[attachments_e];
     // offset 0x12800, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x12820, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x12840, size 0x20
@@ -75193,7 +75193,7 @@ version 27 {
         cheat_too_friendly, // 0x47,
         codpoints, // 0x48,
         shield_charge_pickedup, // 0x49,
-        hash_29e6ec48e9101f71, // 0x4a,
+        zm_daily_kills_packed_pistol, // 0x4a,
         specialty_mod_extraammo_drank, // 0x4b,
         specialty_quickrevive_drank, // 0x4c,
         revives, // 0x4d,
@@ -75207,7 +75207,7 @@ version 27 {
         player_returns, // 0x55,
         hash_30dba31670499d10, // 0x56,
         darkops_zod_super_ee, // 0x57,
-        hash_31c3f50baa002a76, // 0x58,
+        zm_daily_kills_packed_mg, // 0x58,
         plevel, // 0x59,
         hash_328d6e683a2addc2, // 0x5a,
         ww_grenade_pickedup, // 0x5b,
@@ -75308,7 +75308,7 @@ version 27 {
         use_pap, // 0xba,
         hash_5913a206f4ee760c, // 0xbb,
         gum_gobbler_anywhere_but_here, // 0xbc,
-        hash_5a2c6be15132de02, // 0xbd,
+        bgb_tokens_gained_this_game, // 0xbd,
         specialty_mod_additionalprimaryweapon_drank, // 0xbe,
         maxxp, // 0xbf,
         insta_kill_pickedup, // 0xc0,
@@ -75648,7 +75648,7 @@ version 27 {
     // offset 0x3800, size 0xf000
     hash_67b00e3091cde2fd attachments[attachments_e];
     // offset 0x12800, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x12820, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x12840, size 0x20
@@ -76294,7 +76294,7 @@ version 26 {
         cheat_too_friendly, // 0x47,
         codpoints, // 0x48,
         shield_charge_pickedup, // 0x49,
-        hash_29e6ec48e9101f71, // 0x4a,
+        zm_daily_kills_packed_pistol, // 0x4a,
         specialty_mod_extraammo_drank, // 0x4b,
         specialty_quickrevive_drank, // 0x4c,
         revives, // 0x4d,
@@ -76308,7 +76308,7 @@ version 26 {
         player_returns, // 0x55,
         hash_30dba31670499d10, // 0x56,
         darkops_zod_super_ee, // 0x57,
-        hash_31c3f50baa002a76, // 0x58,
+        zm_daily_kills_packed_mg, // 0x58,
         plevel, // 0x59,
         hash_328d6e683a2addc2, // 0x5a,
         ww_grenade_pickedup, // 0x5b,
@@ -76409,7 +76409,7 @@ version 26 {
         use_pap, // 0xba,
         hash_5913a206f4ee760c, // 0xbb,
         gum_gobbler_anywhere_but_here, // 0xbc,
-        hash_5a2c6be15132de02, // 0xbd,
+        bgb_tokens_gained_this_game, // 0xbd,
         specialty_mod_additionalprimaryweapon_drank, // 0xbe,
         maxxp, // 0xbf,
         insta_kill_pickedup, // 0xc0,
@@ -76748,7 +76748,7 @@ version 26 {
     // offset 0x3800, size 0xf000
     hash_67b00e3091cde2fd attachments[attachments_e];
     // offset 0x12800, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x12820, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x12840, size 0x20

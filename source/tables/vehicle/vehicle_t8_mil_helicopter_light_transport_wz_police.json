@@ -79,7 +79,7 @@
                 "hash_24c083a4": 0,
                 "hash_aa779930": "VehicleHUD_GroundVehicle",
                 "hash_bf777968": "1 1 1 1",
-                "hash_9b2a3de7": "IsAttackMode"
+                "hudcondition": "IsAttackMode"
             },
             {
                 "bindings": [
@@ -142,7 +142,7 @@
                 "hash_24c083a4": 0,
                 "hash_aa779930": "VehicleHUD_GroundVehicle",
                 "hash_bf777968": "1 1 1 1",
-                "hash_9b2a3de7": "IsVehicleOwner"
+                "hudcondition": "IsVehicleOwner"
             }
         ],
         "healthpoolsize": 3000,

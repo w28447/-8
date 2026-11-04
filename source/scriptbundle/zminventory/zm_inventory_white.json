@@ -36,7 +36,7 @@
                     "clientfield": "#teleporter_modifier_item_3"
                 }
             ],
-            "hash_b048489f": 3
+            "list_components": 3
         },
         {
             "components": [
@@ -63,7 +63,7 @@
                     "clientfield": "#teleporter_pad_2"
                 }
             ],
-            "hash_b048489f": 2
+            "list_components": 2
         }
     ],
     "shieldpieces": [

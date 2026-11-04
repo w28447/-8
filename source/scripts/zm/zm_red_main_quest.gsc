@@ -6582,7 +6582,7 @@ function function_542a6ee4( e_player, str_ww, str_task, n_spotlight, var_d8d4faf
                 level function_37411f7e( a_s_spawns, str_ww, 0, 1, var_d8d4faff );
                 break;
             case #"air":
-                a_s_spawns = struct::get_array( #"hash_6da4b236b2ab84fa" );
+                a_s_spawns = struct::get_array( #"s_play_clouded" );
                 n_to_kill += a_s_spawns.size;
                 level function_37411f7e( a_s_spawns, str_ww, 0, 1, var_d8d4faff );
                 break;
@@ -8611,8 +8611,8 @@ function function_a2147cf()
             v_ballista = mdl_ballista gettagorigin( "mid_moss_01_jnt" );
             n_dist = distance2dsquared( self.origin, v_ballista );
             var_5168e40f = self zm_utility::is_player_looking_at( v_ballista, 0.7, 0 );
-            var_f62556c4 = mdl_ballista math::get_dot_right( self.origin ) > 0;
-            b_pushing = n_dist <= 512 * 512 && var_5168e40f && var_f62556c4;
+            b_on_right = mdl_ballista math::get_dot_right( self.origin ) > 0;
+            b_pushing = n_dist <= 512 * 512 && var_5168e40f && b_on_right;
             
             if ( b_pushing )
             {

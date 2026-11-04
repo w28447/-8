@@ -30,7 +30,7 @@ function __init__()
 // Size: 0x74
 function function_201c2cb7( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    self playrenderoverridebundle( isdefined( self.var_fab3cf78 ) ? self.var_fab3cf78 : #"hash_435832b390f73dff" );
+    self playrenderoverridebundle( isdefined( self.var_fab3cf78 ) ? self.var_fab3cf78 : #"rob_zm_spawn_fade" );
 }
 
 // Namespace zm_transform/zm_transformation

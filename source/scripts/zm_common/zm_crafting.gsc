@@ -2212,7 +2212,7 @@ function private function_42673a26( player )
         origin = unitrigger.origin;
         forward = anglestoforward( unitrigger.angles );
         right = anglestoright( unitrigger.angles );
-        var_21f5823e = vectortoangles( forward * -1 );
+        plangles = vectortoangles( forward * -1 );
         plorigin = origin + 48 * forward;
         
         switch ( entnum )
@@ -2232,7 +2232,7 @@ function private function_42673a26( player )
         }
         
         self setorigin( plorigin );
-        self setplayerangles( var_21f5823e );
+        self setplayerangles( plangles );
     }
 
 #/

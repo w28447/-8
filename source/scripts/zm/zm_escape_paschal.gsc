@@ -585,7 +585,7 @@ function function_fc4ee98b()
     e_player = function_b3b2516a();
     zm_vo::vo_stop_all( e_player.origin, 512 );
     e_player thread zm_vo::function_a2bd5a0c( #"vox_m_quest_light_react" );
-    n_length = getanimlength( #"hash_32b13c90c94b5fed" ) - 6;
+    n_length = getanimlength( #"p8_fxanim_zm_esc_wardensattic_reveal_lights_anim" ) - 6;
     wait n_length;
     e_player = function_b3b2516a();
     e_richtofen = function_b1203924();

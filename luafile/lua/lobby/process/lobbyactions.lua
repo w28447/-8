@@ -1292,7 +1292,7 @@ Lobby.Actions.CanHostServer = function ( f113_arg0, f113_arg1 )
 end
 
 Lobby.Actions.GeoMinCheck = function ( f115_arg0, f115_arg1 )
-	local f115_local0 = Dvar[0xE01BF4D20878528]:get()
+	local f115_local0 = Dvar.lobbysearchgeomin:get()
 	if f115_local0 == 0 then
 		return true
 	end
@@ -1507,7 +1507,7 @@ Lobby.Actions.QoSJoinSearchResults = function ( f122_arg0, f122_arg1, f122_arg2 
 				end
 				local f124_local1 = false
 				if f124_arg0.minInitialCount <= #f124_arg0.qosResultsValid then
-					if f124_local0 - f124_arg0.firstResultTime > Dvar[0x95ED89C6C609D26]:get() then
+					if f124_local0 - f124_arg0.firstResultTime > Dvar.qos_firstupdatems:get() then
 						if f124_local0 - f124_arg0.updateTime > Dvar[0x127D354AE4B1E8A]:get() then
 							f124_local1 = true
 						else
@@ -1665,7 +1665,7 @@ Lobby.Actions.QoSJoinSearchResults = function ( f122_arg0, f122_arg1, f122_arg2 
 				} )
 				return 
 			elseif f126_local0.isDedicated == true then
-				if f126_local0.latency * 1000 > Dvar[0x39E15BDB813DCCB]:get() then
+				if f126_local0.latency * 1000 > Dvar.lobbysearchdediunparkpinglimit:get() then
 					table.insert( f126_arg0.qosResultsInvalid, f126_local0 )
 					Engine[0xDE279ECDDDD966]( Engine.GetPrimaryController(), 0x69BB0F061EE9FE5, {
 						status = "ignore qos latency",
@@ -2812,13 +2812,13 @@ Lobby.Actions.AsyncMatchmakingStartSearch = function ( f216_arg0, f216_arg1, f21
 				LobbyVM.ProcessCompleteError( {
 					actionId = f217_arg0.actionId
 				} )
-				if Dvar[0x102D263505BECD9]:get() then
+				if Dvar.ui_lobbydebugsessionsqj:get() then
 					Lobby.Debug.SessionSQJLogBDEvent( {
 						message = "AsyncMatchmakingStartSearch: FAILED"
 					} )
 				end
 				return 
-			elseif Dvar[0x102D263505BECD9]:get() then
+			elseif Dvar.ui_lobbydebugsessionsqj:get() then
 				Lobby.Debug.SessionSQJLogBDEvent( {
 					message = "AsyncMatchmakingStartSearch: STARTED"
 				} )
@@ -2838,7 +2838,7 @@ Lobby.Actions.AsyncMatchmakingStartSearch = function ( f216_arg0, f216_arg1, f21
 				Lobby.MMAsync.Info.matchmakingID = f218_local0.mm_id
 				Lobby.MatchmakingAsync.AddSearch()
 				Engine.PrintInfo( Enum[0x7A63DCD561B0FA8][0x8E4EED9A90F9B5E], "Lobby.Actions.AsyncMatchmakingStart(complete) \n" )
-				if Dvar[0x102D263505BECD9]:get() then
+				if Dvar.ui_lobbydebugsessionsqj:get() then
 					Lobby.Debug.SessionSQJLogBDEvent( {
 						message = string.format( "AsyncMatchmakingStartSearch: COMPLETE, MMID: %s", Engine[0x4C599F1694E23EF]( f218_local0.mm_id ) )
 					} )
@@ -3196,7 +3196,7 @@ Lobby.Actions.SyncLobbyHostDoc = function ( f240_arg0, f240_arg1, f240_arg2, f24
 			Engine.PrintInfo( Enum[0x7A63DCD561B0FA8][0x8E4EED9A90F9B5E], "lobbyHostDoc: " .. f241_local2.lobbyDoc .. "\n" )
 			Engine.PrintInfo( Enum[0x7A63DCD561B0FA8][0x8E4EED9A90F9B5E], "lobbyBackendDoc: " .. f241_local1.lobbyDoc .. "\n" )
 			local f241_local3 = Lobby.MatchmakingAsync.SyncHostDocs( nil, f241_arg0.controller, f241_arg0.timeout, f241_local0, f241_local1.update_id, f241_local2.lobbyDoc, f241_arg0.actionId )
-			if Dvar[0x102D263505BECD9]:get() then
+			if Dvar.ui_lobbydebugsessionsqj:get() then
 				Lobby.Debug.SessionSQJLogBDEvent( {
 					message = string.format( "SyncLobbyHostDoc: LobbyID: %s, UpdateID: %s", Engine[0x4C599F1694E23EF]( f241_local0 ), Engine[0x4C599F1694E23EF]( f241_local1.update_id ) )
 				} )

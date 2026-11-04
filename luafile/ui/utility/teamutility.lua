@@ -631,7 +631,7 @@ DataSources.ChangeTeamOptions = DataSourceHelpers.ListSetup( "ChangeTeamOptions"
 	if f42_local3 ~= Enum.team_t[0xE4DDAC9C5C45556] and f42_local4 == true then
 		table.insert( f42_local2, f42_local0( f42_arg0, 0x79A28BE744E24FB, "spectator", 0xE6B92255B28A2BF, "", false ) )
 	end
-	if true == Dvar[0xA94323F2C9E094C]:get() then
+	if true == Dvar.ui_autocontrolledplayer:get() then
 		table.insert( f42_local2, f42_local0( f42_arg0, "MENU_AUTO_CONTROL_PLAYER", "autocontrol", "MENU_AUTO_CONTROL_PLAYER_DESC", "", false ) )
 	end
 	return f42_local2

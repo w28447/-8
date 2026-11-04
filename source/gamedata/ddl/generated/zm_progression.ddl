@@ -381,7 +381,7 @@ version 144 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -389,7 +389,7 @@ version 144 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -867,7 +867,7 @@ version 144 {
         // offset 0x2630, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2660, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2690, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x26c0, size 0x18
@@ -885,7 +885,7 @@ version 144 {
         // offset 0x27c8, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x27e0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2810, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2840, size 0x30
@@ -2198,7 +2198,7 @@ version 144 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -2206,7 +2206,7 @@ version 144 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -2738,7 +2738,7 @@ version 143 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -2746,7 +2746,7 @@ version 143 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -3224,7 +3224,7 @@ version 143 {
         // offset 0x2630, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2660, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2690, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x26c0, size 0x18
@@ -3242,7 +3242,7 @@ version 143 {
         // offset 0x27c8, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x27e0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2810, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2840, size 0x30
@@ -4554,7 +4554,7 @@ version 143 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -4562,7 +4562,7 @@ version 143 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -5094,7 +5094,7 @@ version 142 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -5102,7 +5102,7 @@ version 142 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -5580,7 +5580,7 @@ version 142 {
         // offset 0x2630, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2660, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2690, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x26c0, size 0x18
@@ -5598,7 +5598,7 @@ version 142 {
         // offset 0x27c8, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x27e0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2810, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2840, size 0x30
@@ -6908,7 +6908,7 @@ version 142 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -6916,7 +6916,7 @@ version 142 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -7448,7 +7448,7 @@ version 141 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -7456,7 +7456,7 @@ version 141 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -7934,7 +7934,7 @@ version 141 {
         // offset 0x2630, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2660, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2690, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x26c0, size 0x18
@@ -7952,7 +7952,7 @@ version 141 {
         // offset 0x27c8, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x27e0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2810, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2840, size 0x30
@@ -9258,7 +9258,7 @@ version 141 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -9266,7 +9266,7 @@ version 141 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -9798,7 +9798,7 @@ version 140 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -9806,7 +9806,7 @@ version 140 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -10280,7 +10280,7 @@ version 140 {
         // offset 0x25d0, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2600, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2630, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2660, size 0x18
@@ -10298,7 +10298,7 @@ version 140 {
         // offset 0x2768, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x2780, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x27b0, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x27e0, size 0x30
@@ -11599,7 +11599,7 @@ version 140 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -11607,7 +11607,7 @@ version 140 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -12139,7 +12139,7 @@ version 139 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -12147,7 +12147,7 @@ version 139 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -12619,7 +12619,7 @@ version 139 {
         // offset 0x25a8, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x25d8, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2608, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2638, size 0x18
@@ -12637,7 +12637,7 @@ version 139 {
         // offset 0x2740, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x2758, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2788, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x27b8, size 0x30
@@ -13928,7 +13928,7 @@ version 139 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -13936,7 +13936,7 @@ version 139 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -14468,7 +14468,7 @@ version 138 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -14476,7 +14476,7 @@ version 138 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -14948,7 +14948,7 @@ version 138 {
         // offset 0x25a8, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x25d8, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2608, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2638, size 0x18
@@ -14966,7 +14966,7 @@ version 138 {
         // offset 0x2740, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x2758, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2788, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x27b8, size 0x30
@@ -16256,7 +16256,7 @@ version 138 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -16264,7 +16264,7 @@ version 138 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -16796,7 +16796,7 @@ version 137 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -16804,7 +16804,7 @@ version 137 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -17274,7 +17274,7 @@ version 137 {
         // offset 0x2590, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x25c0, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x25f0, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2620, size 0x30
@@ -17290,7 +17290,7 @@ version 137 {
         // offset 0x2710, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x2728, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2758, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2788, size 0x30
@@ -18576,7 +18576,7 @@ version 137 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -18584,7 +18584,7 @@ version 137 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -19116,7 +19116,7 @@ version 136 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -19124,7 +19124,7 @@ version 136 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -19588,7 +19588,7 @@ version 136 {
         // offset 0x2548, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2578, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x25a8, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x25d8, size 0x30
@@ -19604,7 +19604,7 @@ version 136 {
         // offset 0x26c8, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x26e0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2710, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2740, size 0x30
@@ -20873,7 +20873,7 @@ version 136 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -20881,7 +20881,7 @@ version 136 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -21413,7 +21413,7 @@ version 135 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -21421,7 +21421,7 @@ version 135 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -21885,7 +21885,7 @@ version 135 {
         // offset 0x2548, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2578, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x25a8, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x25d8, size 0x30
@@ -21901,7 +21901,7 @@ version 135 {
         // offset 0x26c8, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x26e0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2710, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2740, size 0x30
@@ -23168,7 +23168,7 @@ version 135 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -23176,7 +23176,7 @@ version 135 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -23708,7 +23708,7 @@ version 134 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -23716,7 +23716,7 @@ version 134 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -24180,7 +24180,7 @@ version 134 {
         // offset 0x2548, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2578, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x25a8, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x25d8, size 0x30
@@ -24196,7 +24196,7 @@ version 134 {
         // offset 0x26c8, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x26e0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2710, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2740, size 0x30
@@ -25462,7 +25462,7 @@ version 134 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -25470,7 +25470,7 @@ version 134 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -26002,7 +26002,7 @@ version 133 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -26010,7 +26010,7 @@ version 133 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -26474,7 +26474,7 @@ version 133 {
         // offset 0x2548, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2578, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x25a8, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x25d8, size 0x30
@@ -26490,7 +26490,7 @@ version 133 {
         // offset 0x26c8, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x26e0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2710, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2740, size 0x30
@@ -27755,7 +27755,7 @@ version 133 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -27763,7 +27763,7 @@ version 133 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -28295,7 +28295,7 @@ version 132 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -28303,7 +28303,7 @@ version 132 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -28767,7 +28767,7 @@ version 132 {
         // offset 0x2548, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2578, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x25a8, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x25d8, size 0x30
@@ -28783,7 +28783,7 @@ version 132 {
         // offset 0x26c8, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x26e0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2710, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2740, size 0x30
@@ -30048,7 +30048,7 @@ version 132 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -30056,7 +30056,7 @@ version 132 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -30588,7 +30588,7 @@ version 131 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -30596,7 +30596,7 @@ version 131 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -31058,7 +31058,7 @@ version 131 {
         // offset 0x2530, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2560, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2590, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x25c0, size 0x30
@@ -31074,7 +31074,7 @@ version 131 {
         // offset 0x26b0, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x26c8, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x26f8, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2728, size 0x30
@@ -32339,7 +32339,7 @@ version 131 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -32347,7 +32347,7 @@ version 131 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -32879,7 +32879,7 @@ version 130 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -32887,7 +32887,7 @@ version 130 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -33343,7 +33343,7 @@ version 130 {
         // offset 0x24e8, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2518, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2548, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2578, size 0x30
@@ -33359,7 +33359,7 @@ version 130 {
         // offset 0x2668, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x2680, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x26b0, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x26e0, size 0x30
@@ -34614,7 +34614,7 @@ version 130 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -34622,7 +34622,7 @@ version 130 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -35154,7 +35154,7 @@ version 129 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -35162,7 +35162,7 @@ version 129 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -35614,7 +35614,7 @@ version 129 {
         // offset 0x2488, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x24b8, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x24e8, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2518, size 0x30
@@ -35630,7 +35630,7 @@ version 129 {
         // offset 0x2608, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x2620, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2650, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2680, size 0x30
@@ -36880,7 +36880,7 @@ version 129 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -36888,7 +36888,7 @@ version 129 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -37420,7 +37420,7 @@ version 128 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -37428,7 +37428,7 @@ version 128 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -37880,7 +37880,7 @@ version 128 {
         // offset 0x2488, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x24b8, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x24e8, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2518, size 0x30
@@ -37896,7 +37896,7 @@ version 128 {
         // offset 0x2608, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x2620, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2650, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2680, size 0x30
@@ -39142,7 +39142,7 @@ version 128 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -39150,7 +39150,7 @@ version 128 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -39682,7 +39682,7 @@ version 127 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -39690,7 +39690,7 @@ version 127 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -40140,7 +40140,7 @@ version 127 {
         // offset 0x2460, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2490, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x24c0, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x24f0, size 0x30
@@ -40156,7 +40156,7 @@ version 127 {
         // offset 0x25e0, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x25f8, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2628, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2658, size 0x30
@@ -41398,7 +41398,7 @@ version 127 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -41406,7 +41406,7 @@ version 127 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -41938,7 +41938,7 @@ version 126 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -41946,7 +41946,7 @@ version 126 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -42396,7 +42396,7 @@ version 126 {
         // offset 0x2460, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2490, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x24c0, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x24f0, size 0x30
@@ -42412,7 +42412,7 @@ version 126 {
         // offset 0x25e0, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x25f8, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2628, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2658, size 0x30
@@ -43650,7 +43650,7 @@ version 126 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -43658,7 +43658,7 @@ version 126 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -44190,7 +44190,7 @@ version 125 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -44198,7 +44198,7 @@ version 125 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -44646,7 +44646,7 @@ version 125 {
         // offset 0x2448, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2478, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x24a8, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x24d8, size 0x30
@@ -44662,7 +44662,7 @@ version 125 {
         // offset 0x25c8, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x25e0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2610, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2640, size 0x30
@@ -45893,7 +45893,7 @@ version 125 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -45901,7 +45901,7 @@ version 125 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -46433,7 +46433,7 @@ version 124 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -46441,7 +46441,7 @@ version 124 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -46887,7 +46887,7 @@ version 124 {
         // offset 0x2418, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2448, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2478, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x24a8, size 0x30
@@ -46903,7 +46903,7 @@ version 124 {
         // offset 0x2598, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x25b0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x25e0, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2610, size 0x30
@@ -48132,7 +48132,7 @@ version 124 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -48140,7 +48140,7 @@ version 124 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -48672,7 +48672,7 @@ version 123 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -48680,7 +48680,7 @@ version 123 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -49126,7 +49126,7 @@ version 123 {
         // offset 0x2418, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2448, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2478, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x24a8, size 0x30
@@ -49142,7 +49142,7 @@ version 123 {
         // offset 0x2598, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x25b0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x25e0, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2610, size 0x30
@@ -50370,7 +50370,7 @@ version 123 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -50378,7 +50378,7 @@ version 123 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -50910,7 +50910,7 @@ version 122 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -50918,7 +50918,7 @@ version 122 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -51364,7 +51364,7 @@ version 122 {
         // offset 0x2418, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2448, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2478, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x24a8, size 0x30
@@ -51380,7 +51380,7 @@ version 122 {
         // offset 0x2598, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x25b0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x25e0, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2610, size 0x30
@@ -52606,7 +52606,7 @@ version 122 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -52614,7 +52614,7 @@ version 122 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -53146,7 +53146,7 @@ version 121 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -53154,7 +53154,7 @@ version 121 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -53600,7 +53600,7 @@ version 121 {
         // offset 0x2418, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2448, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2478, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x24a8, size 0x30
@@ -53616,7 +53616,7 @@ version 121 {
         // offset 0x2598, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x25b0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x25e0, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2610, size 0x30
@@ -54842,7 +54842,7 @@ version 121 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -54850,7 +54850,7 @@ version 121 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -55382,7 +55382,7 @@ version 120 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -55390,7 +55390,7 @@ version 120 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -55836,7 +55836,7 @@ version 120 {
         // offset 0x2418, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2448, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2478, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x24a8, size 0x30
@@ -55852,7 +55852,7 @@ version 120 {
         // offset 0x2598, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x25b0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x25e0, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2610, size 0x30
@@ -57077,7 +57077,7 @@ version 120 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -57085,7 +57085,7 @@ version 120 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -57617,7 +57617,7 @@ version 119 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -57625,7 +57625,7 @@ version 119 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -58071,7 +58071,7 @@ version 119 {
         // offset 0x2418, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2448, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2478, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x24a8, size 0x30
@@ -58087,7 +58087,7 @@ version 119 {
         // offset 0x2598, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x25b0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x25e0, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2610, size 0x30
@@ -59311,7 +59311,7 @@ version 119 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -59319,7 +59319,7 @@ version 119 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -59851,7 +59851,7 @@ version 118 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -59859,7 +59859,7 @@ version 118 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -60305,7 +60305,7 @@ version 118 {
         // offset 0x2418, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2448, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2478, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x24a8, size 0x30
@@ -60321,7 +60321,7 @@ version 118 {
         // offset 0x2598, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x25b0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x25e0, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2610, size 0x30
@@ -61544,7 +61544,7 @@ version 118 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -61552,7 +61552,7 @@ version 118 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -62084,7 +62084,7 @@ version 117 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -62092,7 +62092,7 @@ version 117 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -62538,7 +62538,7 @@ version 117 {
         // offset 0x2418, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2448, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2478, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x24a8, size 0x30
@@ -62554,7 +62554,7 @@ version 117 {
         // offset 0x2598, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x25b0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x25e0, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2610, size 0x30
@@ -63793,7 +63793,7 @@ version 117 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -63801,7 +63801,7 @@ version 117 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -64333,7 +64333,7 @@ version 116 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -64341,7 +64341,7 @@ version 116 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -64787,7 +64787,7 @@ version 116 {
         // offset 0x2418, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2448, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2478, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x24a8, size 0x30
@@ -64803,7 +64803,7 @@ version 116 {
         // offset 0x2598, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x25b0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x25e0, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2610, size 0x30
@@ -66062,7 +66062,7 @@ version 116 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -66070,7 +66070,7 @@ version 116 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -66602,7 +66602,7 @@ version 115 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -66610,7 +66610,7 @@ version 115 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -67054,7 +67054,7 @@ version 115 {
         // offset 0x2400, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2430, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2460, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2490, size 0x30
@@ -67070,7 +67070,7 @@ version 115 {
         // offset 0x2580, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x2598, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x25c8, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x25f8, size 0x30
@@ -68327,7 +68327,7 @@ version 115 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -68335,7 +68335,7 @@ version 115 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -68867,7 +68867,7 @@ version 114 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -68875,7 +68875,7 @@ version 114 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -69319,7 +69319,7 @@ version 114 {
         // offset 0x2400, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2430, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2460, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2490, size 0x30
@@ -69335,7 +69335,7 @@ version 114 {
         // offset 0x2580, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x2598, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x25c8, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x25f8, size 0x30
@@ -70696,7 +70696,7 @@ version 114 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -70704,7 +70704,7 @@ version 114 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -71236,7 +71236,7 @@ version 113 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -71244,7 +71244,7 @@ version 113 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -71688,7 +71688,7 @@ version 113 {
         // offset 0x2400, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2430, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2460, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2490, size 0x30
@@ -71704,7 +71704,7 @@ version 113 {
         // offset 0x2580, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x2598, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x25c8, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x25f8, size 0x30
@@ -73064,7 +73064,7 @@ version 113 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -73072,7 +73072,7 @@ version 113 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -73604,7 +73604,7 @@ version 112 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -73612,7 +73612,7 @@ version 112 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -74056,7 +74056,7 @@ version 112 {
         // offset 0x2400, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2430, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2460, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2490, size 0x30
@@ -74072,7 +74072,7 @@ version 112 {
         // offset 0x2580, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x2598, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x25c8, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x25f8, size 0x30
@@ -75428,7 +75428,7 @@ version 112 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -75436,7 +75436,7 @@ version 112 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -75968,7 +75968,7 @@ version 111 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -75976,7 +75976,7 @@ version 111 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -76420,7 +76420,7 @@ version 111 {
         // offset 0x2400, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2430, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2460, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2490, size 0x30
@@ -76436,7 +76436,7 @@ version 111 {
         // offset 0x2580, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x2598, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x25c8, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x25f8, size 0x30
@@ -77791,7 +77791,7 @@ version 111 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -77799,7 +77799,7 @@ version 111 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -78331,7 +78331,7 @@ version 110 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -78339,7 +78339,7 @@ version 110 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -78779,7 +78779,7 @@ version 110 {
         // offset 0x23a0, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x23d0, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2400, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2430, size 0x30
@@ -78795,7 +78795,7 @@ version 110 {
         // offset 0x2520, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x2538, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2568, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2598, size 0x30
@@ -80145,7 +80145,7 @@ version 110 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -80153,7 +80153,7 @@ version 110 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -80685,7 +80685,7 @@ version 109 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -80693,7 +80693,7 @@ version 109 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -81133,7 +81133,7 @@ version 109 {
         // offset 0x23a0, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x23d0, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2400, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2430, size 0x30
@@ -81149,7 +81149,7 @@ version 109 {
         // offset 0x2520, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x2538, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2568, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2598, size 0x30
@@ -82498,7 +82498,7 @@ version 109 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -82506,7 +82506,7 @@ version 109 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -83038,7 +83038,7 @@ version 108 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -83046,7 +83046,7 @@ version 108 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -83486,7 +83486,7 @@ version 108 {
         // offset 0x23a0, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x23d0, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2400, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2430, size 0x30
@@ -83502,7 +83502,7 @@ version 108 {
         // offset 0x2520, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x2538, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2568, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2598, size 0x30
@@ -84850,7 +84850,7 @@ version 108 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -84858,7 +84858,7 @@ version 108 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -85390,7 +85390,7 @@ version 107 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -85398,7 +85398,7 @@ version 107 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -85838,7 +85838,7 @@ version 107 {
         // offset 0x23a0, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x23d0, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2400, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2430, size 0x30
@@ -85854,7 +85854,7 @@ version 107 {
         // offset 0x2520, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x2538, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2568, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2598, size 0x30
@@ -87202,7 +87202,7 @@ version 107 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -87210,7 +87210,7 @@ version 107 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -87742,7 +87742,7 @@ version 106 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -87750,7 +87750,7 @@ version 106 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -88190,7 +88190,7 @@ version 106 {
         // offset 0x23a0, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x23d0, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2400, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2430, size 0x30
@@ -88206,7 +88206,7 @@ version 106 {
         // offset 0x2520, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x2538, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2568, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2598, size 0x30
@@ -89552,7 +89552,7 @@ version 106 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -89560,7 +89560,7 @@ version 106 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -90092,7 +90092,7 @@ version 105 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -90100,7 +90100,7 @@ version 105 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -90542,7 +90542,7 @@ version 105 {
         // offset 0x23c8, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x23f8, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2428, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2458, size 0x30
@@ -90558,7 +90558,7 @@ version 105 {
         // offset 0x2548, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x2560, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2590, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x25c0, size 0x30
@@ -91902,7 +91902,7 @@ version 105 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -91910,7 +91910,7 @@ version 105 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -92442,7 +92442,7 @@ version 104 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -92450,7 +92450,7 @@ version 104 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -92892,7 +92892,7 @@ version 104 {
         // offset 0x23c8, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x23f8, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2428, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2458, size 0x30
@@ -92908,7 +92908,7 @@ version 104 {
         // offset 0x2548, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x2560, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2590, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x25c0, size 0x30
@@ -94251,7 +94251,7 @@ version 104 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -94259,7 +94259,7 @@ version 104 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -94791,7 +94791,7 @@ version 103 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -94799,7 +94799,7 @@ version 103 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -95237,7 +95237,7 @@ version 103 {
         // offset 0x2378, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x23a8, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x23d8, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2408, size 0x30
@@ -95253,7 +95253,7 @@ version 103 {
         // offset 0x24f8, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x2510, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2540, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2570, size 0x30
@@ -96594,7 +96594,7 @@ version 103 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -96602,7 +96602,7 @@ version 103 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -97124,7 +97124,7 @@ version 102 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -97132,7 +97132,7 @@ version 102 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -97570,7 +97570,7 @@ version 102 {
         // offset 0x2378, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x23a8, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x23d8, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2408, size 0x30
@@ -97586,7 +97586,7 @@ version 102 {
         // offset 0x24f8, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x2510, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2540, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2570, size 0x30
@@ -98927,7 +98927,7 @@ version 102 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -98935,7 +98935,7 @@ version 102 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -99457,7 +99457,7 @@ version 101 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -99465,7 +99465,7 @@ version 101 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -99895,7 +99895,7 @@ version 101 {
         // offset 0x2318, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2348, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2378, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x23a8, size 0x30
@@ -99911,7 +99911,7 @@ version 101 {
         // offset 0x2498, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x24b0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x24e0, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2510, size 0x30
@@ -101244,7 +101244,7 @@ version 101 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -101252,7 +101252,7 @@ version 101 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -101774,7 +101774,7 @@ version 100 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -101782,7 +101782,7 @@ version 100 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -102212,7 +102212,7 @@ version 100 {
         // offset 0x2318, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2348, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2378, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x23a8, size 0x30
@@ -102228,7 +102228,7 @@ version 100 {
         // offset 0x2498, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x24b0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x24e0, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2510, size 0x30
@@ -103532,7 +103532,7 @@ version 100 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -103540,7 +103540,7 @@ version 100 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -104062,7 +104062,7 @@ version 99 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -104070,7 +104070,7 @@ version 99 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -104500,7 +104500,7 @@ version 99 {
         // offset 0x2318, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2348, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2378, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x23a8, size 0x30
@@ -104516,7 +104516,7 @@ version 99 {
         // offset 0x2498, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x24b0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x24e0, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2510, size 0x30
@@ -105808,7 +105808,7 @@ version 99 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -105816,7 +105816,7 @@ version 99 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -106338,7 +106338,7 @@ version 98 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -106346,7 +106346,7 @@ version 98 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -106768,7 +106768,7 @@ version 98 {
         // offset 0x2258, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2288, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x22b8, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x22e8, size 0x30
@@ -106784,7 +106784,7 @@ version 98 {
         // offset 0x23d8, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x23f0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2420, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2450, size 0x30
@@ -108075,7 +108075,7 @@ version 98 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -108083,7 +108083,7 @@ version 98 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -108605,7 +108605,7 @@ version 97 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -108613,7 +108613,7 @@ version 97 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -109035,7 +109035,7 @@ version 97 {
         // offset 0x2258, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2288, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x22b8, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x22e8, size 0x30
@@ -109051,7 +109051,7 @@ version 97 {
         // offset 0x23d8, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x23f0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2420, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2450, size 0x30
@@ -110339,7 +110339,7 @@ version 97 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -110347,7 +110347,7 @@ version 97 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -110869,7 +110869,7 @@ version 96 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -110877,7 +110877,7 @@ version 96 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -111303,7 +111303,7 @@ version 96 {
         // offset 0x22b8, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x22e8, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2318, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2348, size 0x30
@@ -111319,7 +111319,7 @@ version 96 {
         // offset 0x2438, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x2450, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2480, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x24b0, size 0x30
@@ -111459,7 +111459,7 @@ version 96 {
         // offset 0x30c8, size 0x18
         hash_25508de9fa29a5d5 smg_mp40_for_diamond;
         // offset 0x30e0, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x3110, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x3140, size 0x30
@@ -112611,7 +112611,7 @@ version 96 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -112619,7 +112619,7 @@ version 96 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -113141,7 +113141,7 @@ version 95 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -113149,7 +113149,7 @@ version 95 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -113575,7 +113575,7 @@ version 95 {
         // offset 0x22b8, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x22e8, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2318, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2348, size 0x30
@@ -113591,7 +113591,7 @@ version 95 {
         // offset 0x2438, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x2450, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2480, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x24b0, size 0x30
@@ -113731,7 +113731,7 @@ version 95 {
         // offset 0x30c8, size 0x18
         hash_25508de9fa29a5d5 smg_mp40_for_diamond;
         // offset 0x30e0, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x3110, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x3140, size 0x30
@@ -114881,7 +114881,7 @@ version 95 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -114889,7 +114889,7 @@ version 95 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -115411,7 +115411,7 @@ version 94 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -115419,7 +115419,7 @@ version 94 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -115845,7 +115845,7 @@ version 94 {
         // offset 0x22b8, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x22e8, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2318, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2348, size 0x30
@@ -115861,7 +115861,7 @@ version 94 {
         // offset 0x2438, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x2450, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2480, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x24b0, size 0x30
@@ -116001,7 +116001,7 @@ version 94 {
         // offset 0x30c8, size 0x18
         hash_25508de9fa29a5d5 smg_mp40_for_diamond;
         // offset 0x30e0, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x3110, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x3140, size 0x30
@@ -117150,7 +117150,7 @@ version 94 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -117158,7 +117158,7 @@ version 94 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -117680,7 +117680,7 @@ version 93 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -117688,7 +117688,7 @@ version 93 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -118114,7 +118114,7 @@ version 93 {
         // offset 0x22b8, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x22e8, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2318, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2348, size 0x30
@@ -118130,7 +118130,7 @@ version 93 {
         // offset 0x2438, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x2450, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2480, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x24b0, size 0x30
@@ -118270,7 +118270,7 @@ version 93 {
         // offset 0x30c8, size 0x18
         hash_25508de9fa29a5d5 smg_mp40_for_diamond;
         // offset 0x30e0, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x3110, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x3140, size 0x30
@@ -119411,7 +119411,7 @@ version 93 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -119419,7 +119419,7 @@ version 93 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -119941,7 +119941,7 @@ version 92 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -119949,7 +119949,7 @@ version 92 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -120375,7 +120375,7 @@ version 92 {
         // offset 0x22b8, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x22e8, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2318, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2348, size 0x30
@@ -120391,7 +120391,7 @@ version 92 {
         // offset 0x2438, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x2450, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2480, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x24b0, size 0x30
@@ -120531,7 +120531,7 @@ version 92 {
         // offset 0x30c8, size 0x18
         hash_25508de9fa29a5d5 smg_mp40_for_diamond;
         // offset 0x30e0, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x3110, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x3140, size 0x30
@@ -121671,7 +121671,7 @@ version 92 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -121679,7 +121679,7 @@ version 92 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -122201,7 +122201,7 @@ version 91 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -122209,7 +122209,7 @@ version 91 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -122635,7 +122635,7 @@ version 91 {
         // offset 0x22b8, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x22e8, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2318, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2348, size 0x30
@@ -122651,7 +122651,7 @@ version 91 {
         // offset 0x2438, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x2450, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2480, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x24b0, size 0x30
@@ -122791,7 +122791,7 @@ version 91 {
         // offset 0x30c8, size 0x18
         hash_25508de9fa29a5d5 smg_mp40_for_diamond;
         // offset 0x30e0, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x3110, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x3140, size 0x30
@@ -123928,7 +123928,7 @@ version 91 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -123936,7 +123936,7 @@ version 91 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -124458,7 +124458,7 @@ version 90 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -124466,7 +124466,7 @@ version 90 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -124892,7 +124892,7 @@ version 90 {
         // offset 0x22b8, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x22e8, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2318, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2348, size 0x30
@@ -124908,7 +124908,7 @@ version 90 {
         // offset 0x2438, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x2450, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2480, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x24b0, size 0x30
@@ -125048,7 +125048,7 @@ version 90 {
         // offset 0x30c8, size 0x18
         hash_25508de9fa29a5d5 smg_mp40_for_diamond;
         // offset 0x30e0, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x3110, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x3140, size 0x30
@@ -126184,7 +126184,7 @@ version 90 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -126192,7 +126192,7 @@ version 90 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -126714,7 +126714,7 @@ version 89 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -126722,7 +126722,7 @@ version 89 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -127148,7 +127148,7 @@ version 89 {
         // offset 0x22b8, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x22e8, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2318, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2348, size 0x30
@@ -127164,7 +127164,7 @@ version 89 {
         // offset 0x2438, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x2450, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2480, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x24b0, size 0x30
@@ -127304,7 +127304,7 @@ version 89 {
         // offset 0x30c8, size 0x18
         hash_25508de9fa29a5d5 smg_mp40_for_diamond;
         // offset 0x30e0, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x3110, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x3140, size 0x30
@@ -128439,7 +128439,7 @@ version 89 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -128447,7 +128447,7 @@ version 89 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -128969,7 +128969,7 @@ version 88 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -128977,7 +128977,7 @@ version 88 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -129403,7 +129403,7 @@ version 88 {
         // offset 0x22b8, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x22e8, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2318, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2348, size 0x30
@@ -129419,7 +129419,7 @@ version 88 {
         // offset 0x2438, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x2450, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2480, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x24b0, size 0x30
@@ -129559,7 +129559,7 @@ version 88 {
         // offset 0x30c8, size 0x18
         hash_25508de9fa29a5d5 smg_mp40_for_diamond;
         // offset 0x30e0, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x3110, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x3140, size 0x30
@@ -130693,7 +130693,7 @@ version 88 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -130701,7 +130701,7 @@ version 88 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -131223,7 +131223,7 @@ version 87 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -131231,7 +131231,7 @@ version 87 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -131657,7 +131657,7 @@ version 87 {
         // offset 0x22b8, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x22e8, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2318, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2348, size 0x30
@@ -131673,7 +131673,7 @@ version 87 {
         // offset 0x2438, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x2450, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2480, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x24b0, size 0x30
@@ -131813,7 +131813,7 @@ version 87 {
         // offset 0x30c8, size 0x18
         hash_25508de9fa29a5d5 smg_mp40_for_diamond;
         // offset 0x30e0, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x3110, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x3140, size 0x30
@@ -132946,7 +132946,7 @@ version 87 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -132954,7 +132954,7 @@ version 87 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         cast2, // 0x0,
         cast3, // 0x1,
         cast1, // 0x2
@@ -133476,7 +133476,7 @@ version 86 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -133484,7 +133484,7 @@ version 86 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -133906,7 +133906,7 @@ version 86 {
         // offset 0x22b8, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x22e8, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2318, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2348, size 0x30
@@ -133922,7 +133922,7 @@ version 86 {
         // offset 0x2438, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x2450, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2480, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x24b0, size 0x30
@@ -134062,7 +134062,7 @@ version 86 {
         // offset 0x30c8, size 0x18
         hash_25508de9fa29a5d5 smg_mp40_for_diamond;
         // offset 0x30e0, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x3110, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x3140, size 0x30
@@ -135195,7 +135195,7 @@ version 86 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -135203,7 +135203,7 @@ version 86 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         mob, // 0x0,
         nine, // 0x1,
         titanic, // 0x2
@@ -135725,7 +135725,7 @@ version 85 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -135733,7 +135733,7 @@ version 85 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -136155,7 +136155,7 @@ version 85 {
         // offset 0x22b8, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x22e8, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2318, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2348, size 0x30
@@ -136171,7 +136171,7 @@ version 85 {
         // offset 0x2438, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x2450, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2480, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x24b0, size 0x30
@@ -136311,7 +136311,7 @@ version 85 {
         // offset 0x30c8, size 0x18
         hash_25508de9fa29a5d5 smg_mp40_for_diamond;
         // offset 0x30e0, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x3110, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x3140, size 0x30
@@ -137451,7 +137451,7 @@ version 85 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -137459,7 +137459,7 @@ version 85 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         mob, // 0x0,
         nine, // 0x1,
         titanic, // 0x2
@@ -137981,7 +137981,7 @@ version 84 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -137989,7 +137989,7 @@ version 84 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -138411,7 +138411,7 @@ version 84 {
         // offset 0x22b8, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x22e8, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2318, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2348, size 0x30
@@ -138427,7 +138427,7 @@ version 84 {
         // offset 0x2438, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x2450, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2480, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x24b0, size 0x30
@@ -138567,7 +138567,7 @@ version 84 {
         // offset 0x30c8, size 0x18
         hash_25508de9fa29a5d5 smg_mp40_for_diamond;
         // offset 0x30e0, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x3110, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x3140, size 0x30
@@ -139707,7 +139707,7 @@ version 84 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -139715,7 +139715,7 @@ version 84 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         mob, // 0x0,
         nine, // 0x1,
         titanic, // 0x2
@@ -140237,7 +140237,7 @@ version 83 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -140245,7 +140245,7 @@ version 83 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -140667,7 +140667,7 @@ version 83 {
         // offset 0x22b8, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x22e8, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2318, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2348, size 0x30
@@ -140683,7 +140683,7 @@ version 83 {
         // offset 0x2438, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x2450, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2480, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x24b0, size 0x30
@@ -140823,7 +140823,7 @@ version 83 {
         // offset 0x30c8, size 0x18
         hash_25508de9fa29a5d5 smg_mp40_for_diamond;
         // offset 0x30e0, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x3110, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x3140, size 0x30
@@ -141519,7 +141519,7 @@ version 83 {
         pistol_standard_t8_upgraded, // 0x9,
         ar_modular_t8_upgraded, // 0xa,
         ww_tricannon_t8_upgraded, // 0xb,
-        hash_f5adf40e8a647e1, // 0xc,
+        ww_trident_t8, // 0xc,
         smg_standard_t8_upgraded, // 0xd,
         ar_damage_t8, // 0xe,
         spknifeork, // 0xf,
@@ -141775,7 +141775,7 @@ version 83 {
         zm_bgb_now_you_see_me, // 0x6,
         zm_bgb_arsenal_accelerator, // 0x7,
         zm_bgb_sword_flay, // 0x8,
-        hash_f5adf40e8a647e1, // 0x9,
+        ww_trident_t8, // 0x9,
         zm_bgb_newtonian_negation, // 0xa,
         zm_bgb_wall_power, // 0xb,
         zm_bgb_extra_credit, // 0xc,
@@ -141963,7 +141963,7 @@ version 83 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -141971,7 +141971,7 @@ version 83 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         mob, // 0x0,
         nine, // 0x1,
         titanic, // 0x2
@@ -142493,7 +142493,7 @@ version 82 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -142501,7 +142501,7 @@ version 82 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -142919,7 +142919,7 @@ version 82 {
         // offset 0x2268, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2298, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x22c8, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x22f8, size 0x30
@@ -142935,7 +142935,7 @@ version 82 {
         // offset 0x23e8, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x2400, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2430, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2460, size 0x30
@@ -143073,7 +143073,7 @@ version 82 {
         // offset 0x3050, size 0x18
         hash_25508de9fa29a5d5 smg_mp40_for_diamond;
         // offset 0x3068, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x3098, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x30c8, size 0x30
@@ -143767,7 +143767,7 @@ version 82 {
         pistol_standard_t8_upgraded, // 0x9,
         ar_modular_t8_upgraded, // 0xa,
         ww_tricannon_t8_upgraded, // 0xb,
-        hash_f5adf40e8a647e1, // 0xc,
+        ww_trident_t8, // 0xc,
         smg_standard_t8_upgraded, // 0xd,
         ar_damage_t8, // 0xe,
         spknifeork, // 0xf,
@@ -144023,7 +144023,7 @@ version 82 {
         zm_bgb_now_you_see_me, // 0x6,
         zm_bgb_arsenal_accelerator, // 0x7,
         zm_bgb_sword_flay, // 0x8,
-        hash_f5adf40e8a647e1, // 0x9,
+        ww_trident_t8, // 0x9,
         zm_bgb_newtonian_negation, // 0xa,
         zm_bgb_wall_power, // 0xb,
         zm_bgb_extra_credit, // 0xc,
@@ -144211,7 +144211,7 @@ version 82 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -144219,7 +144219,7 @@ version 82 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         mob, // 0x0,
         nine, // 0x1,
         titanic, // 0x2
@@ -144741,7 +144741,7 @@ version 81 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -144749,7 +144749,7 @@ version 81 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -145165,7 +145165,7 @@ version 81 {
         // offset 0x2250, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2280, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x22b0, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x22e0, size 0x30
@@ -145181,7 +145181,7 @@ version 81 {
         // offset 0x23d0, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x23e8, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2418, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2448, size 0x30
@@ -145315,7 +145315,7 @@ version 81 {
         // offset 0x3008, size 0x18
         hash_25508de9fa29a5d5 smg_mp40_for_diamond;
         // offset 0x3020, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x3050, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x3080, size 0x30
@@ -145997,7 +145997,7 @@ version 81 {
         pistol_standard_t8_upgraded, // 0x9,
         ar_modular_t8_upgraded, // 0xa,
         ww_tricannon_t8_upgraded, // 0xb,
-        hash_f5adf40e8a647e1, // 0xc,
+        ww_trident_t8, // 0xc,
         smg_standard_t8_upgraded, // 0xd,
         ar_damage_t8, // 0xe,
         spknifeork, // 0xf,
@@ -146247,7 +146247,7 @@ version 81 {
         zm_bgb_now_you_see_me, // 0x6,
         zm_bgb_arsenal_accelerator, // 0x7,
         zm_bgb_sword_flay, // 0x8,
-        hash_f5adf40e8a647e1, // 0x9,
+        ww_trident_t8, // 0x9,
         zm_bgb_newtonian_negation, // 0xa,
         zm_bgb_wall_power, // 0xb,
         zm_bgb_extra_credit, // 0xc,
@@ -146435,7 +146435,7 @@ version 81 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -146443,7 +146443,7 @@ version 81 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         mob, // 0x0,
         nine, // 0x1,
         titanic, // 0x2
@@ -146965,7 +146965,7 @@ version 80 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -146973,7 +146973,7 @@ version 80 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -147389,7 +147389,7 @@ version 80 {
         // offset 0x2250, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2280, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x22b0, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x22e0, size 0x30
@@ -147405,7 +147405,7 @@ version 80 {
         // offset 0x23d0, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x23e8, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2418, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2448, size 0x30
@@ -147539,7 +147539,7 @@ version 80 {
         // offset 0x3008, size 0x18
         hash_25508de9fa29a5d5 smg_mp40_for_diamond;
         // offset 0x3020, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x3050, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x3080, size 0x30
@@ -148221,7 +148221,7 @@ version 80 {
         pistol_standard_t8_upgraded, // 0x9,
         ar_modular_t8_upgraded, // 0xa,
         ww_tricannon_t8_upgraded, // 0xb,
-        hash_f5adf40e8a647e1, // 0xc,
+        ww_trident_t8, // 0xc,
         smg_standard_t8_upgraded, // 0xd,
         ar_damage_t8, // 0xe,
         spknifeork, // 0xf,
@@ -148470,7 +148470,7 @@ version 80 {
         zm_bgb_now_you_see_me, // 0x6,
         zm_bgb_arsenal_accelerator, // 0x7,
         zm_bgb_sword_flay, // 0x8,
-        hash_f5adf40e8a647e1, // 0x9,
+        ww_trident_t8, // 0x9,
         zm_bgb_newtonian_negation, // 0xa,
         zm_bgb_wall_power, // 0xb,
         zm_bgb_extra_credit, // 0xc,
@@ -148658,7 +148658,7 @@ version 80 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -148666,7 +148666,7 @@ version 80 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         mob, // 0x0,
         nine, // 0x1,
         titanic, // 0x2
@@ -149188,7 +149188,7 @@ version 79 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -149196,7 +149196,7 @@ version 79 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -149612,7 +149612,7 @@ version 79 {
         // offset 0x2250, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2280, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x22b0, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x22e0, size 0x30
@@ -149628,7 +149628,7 @@ version 79 {
         // offset 0x23d0, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x23e8, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2418, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2448, size 0x30
@@ -149762,7 +149762,7 @@ version 79 {
         // offset 0x3008, size 0x18
         hash_25508de9fa29a5d5 smg_mp40_for_diamond;
         // offset 0x3020, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x3050, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x3080, size 0x30
@@ -150440,7 +150440,7 @@ version 79 {
         pistol_standard_t8_upgraded, // 0x9,
         ar_modular_t8_upgraded, // 0xa,
         ww_tricannon_t8_upgraded, // 0xb,
-        hash_f5adf40e8a647e1, // 0xc,
+        ww_trident_t8, // 0xc,
         smg_standard_t8_upgraded, // 0xd,
         ar_damage_t8, // 0xe,
         spknifeork, // 0xf,
@@ -150685,7 +150685,7 @@ version 79 {
         zm_bgb_now_you_see_me, // 0x6,
         zm_bgb_arsenal_accelerator, // 0x7,
         zm_bgb_sword_flay, // 0x8,
-        hash_f5adf40e8a647e1, // 0x9,
+        ww_trident_t8, // 0x9,
         zm_bgb_newtonian_negation, // 0xa,
         zm_bgb_wall_power, // 0xb,
         zm_bgb_extra_credit, // 0xc,
@@ -150873,7 +150873,7 @@ version 79 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -150881,7 +150881,7 @@ version 79 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         mob, // 0x0,
         nine, // 0x1,
         titanic, // 0x2
@@ -151403,7 +151403,7 @@ version 78 {
     // idx 25 members 2 size 0x8
     struct hash_2550e60e3a5fc33f {
         // offset 0x0, size 0x4
-        bool purchased[hash_4b0e09f11187d024];
+        bool purchased[factionrewardtype];
         // offset 0x4, size 0x4
         uint:1 __pad[4];
     };
@@ -151411,7 +151411,7 @@ version 78 {
     // idx 26 members 4 size 0x28
     struct faction_s {
         // offset 0x0, size 0x18
-        hash_2550e60e3a5fc33f rewards[hash_2b912aa49fb2e683];
+        hash_2550e60e3a5fc33f rewards[factionrewardcast];
         // offset 0x18, size 0x8
         uint:8 pactscompleted;
         // offset 0x20, size 0x1
@@ -151827,7 +151827,7 @@ version 78 {
         // offset 0x2250, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2280, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x22b0, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x22e0, size 0x30
@@ -151843,7 +151843,7 @@ version 78 {
         // offset 0x23d0, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x23e8, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2418, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2448, size 0x30
@@ -151977,7 +151977,7 @@ version 78 {
         // offset 0x3008, size 0x18
         hash_25508de9fa29a5d5 smg_mp40_for_diamond;
         // offset 0x3020, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x3050, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x3080, size 0x30
@@ -152655,7 +152655,7 @@ version 78 {
         pistol_standard_t8_upgraded, // 0x9,
         ar_modular_t8_upgraded, // 0xa,
         ww_tricannon_t8_upgraded, // 0xb,
-        hash_f5adf40e8a647e1, // 0xc,
+        ww_trident_t8, // 0xc,
         smg_standard_t8_upgraded, // 0xd,
         ar_damage_t8, // 0xe,
         spknifeork, // 0xf,
@@ -152900,7 +152900,7 @@ version 78 {
         zm_bgb_now_you_see_me, // 0x6,
         zm_bgb_arsenal_accelerator, // 0x7,
         zm_bgb_sword_flay, // 0x8,
-        hash_f5adf40e8a647e1, // 0x9,
+        ww_trident_t8, // 0x9,
         zm_bgb_newtonian_negation, // 0xa,
         zm_bgb_wall_power, // 0xb,
         zm_bgb_extra_credit, // 0xc,
@@ -153087,7 +153087,7 @@ version 78 {
     };
 
     // idx 16 members 4
-    enum hash_4b0e09f11187d024 {
+    enum factionrewardtype {
         outfit2, // 0x0,
         outfit1, // 0x1,
         warpaint, // 0x2,
@@ -153095,7 +153095,7 @@ version 78 {
     };
 
     // idx 17 members 3
-    enum hash_2b912aa49fb2e683 {
+    enum factionrewardcast {
         mob, // 0x0,
         nine, // 0x1,
         titanic, // 0x2
@@ -154057,7 +154057,7 @@ version 77 {
         // offset 0x2250, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2280, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x22b0, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x22e0, size 0x30
@@ -154073,7 +154073,7 @@ version 77 {
         // offset 0x23d0, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x23e8, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2418, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2448, size 0x30
@@ -154207,7 +154207,7 @@ version 77 {
         // offset 0x3008, size 0x18
         hash_25508de9fa29a5d5 smg_mp40_for_diamond;
         // offset 0x3020, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x3050, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x3080, size 0x30
@@ -154885,7 +154885,7 @@ version 77 {
         pistol_standard_t8_upgraded, // 0x9,
         ar_modular_t8_upgraded, // 0xa,
         ww_tricannon_t8_upgraded, // 0xb,
-        hash_f5adf40e8a647e1, // 0xc,
+        ww_trident_t8, // 0xc,
         smg_standard_t8_upgraded, // 0xd,
         ar_damage_t8, // 0xe,
         spknifeork, // 0xf,
@@ -155130,7 +155130,7 @@ version 77 {
         zm_bgb_now_you_see_me, // 0x6,
         zm_bgb_arsenal_accelerator, // 0x7,
         zm_bgb_sword_flay, // 0x8,
-        hash_f5adf40e8a647e1, // 0x9,
+        ww_trident_t8, // 0x9,
         zm_bgb_newtonian_negation, // 0xa,
         zm_bgb_wall_power, // 0xb,
         zm_bgb_extra_credit, // 0xc,
@@ -156266,7 +156266,7 @@ version 76 {
         // offset 0x2250, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2280, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x22b0, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x22e0, size 0x30
@@ -156282,7 +156282,7 @@ version 76 {
         // offset 0x23d0, size 0x18
         hash_25508de9fa29a5d5 ar_galil_for_diamond;
         // offset 0x23e8, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2418, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2448, size 0x30
@@ -156416,7 +156416,7 @@ version 76 {
         // offset 0x3008, size 0x18
         hash_25508de9fa29a5d5 smg_mp40_for_diamond;
         // offset 0x3020, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x3050, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x3080, size 0x30
@@ -158455,7 +158455,7 @@ version 75 {
         // offset 0x21c0, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x21f0, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2220, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2250, size 0x30
@@ -158469,7 +158469,7 @@ version 75 {
         // offset 0x2310, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x2340, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2370, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x23a0, size 0x30
@@ -158595,7 +158595,7 @@ version 75 {
         // offset 0x2ee8, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2f18, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2f48, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2f78, size 0x30
@@ -160620,7 +160620,7 @@ version 74 {
         // offset 0x21c0, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x21f0, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2220, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2250, size 0x30
@@ -160634,7 +160634,7 @@ version 74 {
         // offset 0x2310, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x2340, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2370, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x23a0, size 0x30
@@ -160760,7 +160760,7 @@ version 74 {
         // offset 0x2ee8, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2f18, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2f48, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2f78, size 0x30
@@ -162784,7 +162784,7 @@ version 73 {
         // offset 0x21c0, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x21f0, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2220, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2250, size 0x30
@@ -162798,7 +162798,7 @@ version 73 {
         // offset 0x2310, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x2340, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2370, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x23a0, size 0x30
@@ -162924,7 +162924,7 @@ version 73 {
         // offset 0x2ee8, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2f18, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2f48, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2f78, size 0x30
@@ -164927,7 +164927,7 @@ version 72 {
         // offset 0x21c0, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x21f0, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2220, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2250, size 0x30
@@ -164941,7 +164941,7 @@ version 72 {
         // offset 0x2310, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x2340, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2370, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x23a0, size 0x30
@@ -165067,7 +165067,7 @@ version 72 {
         // offset 0x2ee8, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2f18, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2f48, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2f78, size 0x30
@@ -167050,7 +167050,7 @@ version 71 {
         // offset 0x20e0, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2110, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2140, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2170, size 0x30
@@ -167064,7 +167064,7 @@ version 71 {
         // offset 0x2230, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x2260, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2290, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x22c0, size 0x30
@@ -167186,7 +167186,7 @@ version 71 {
         // offset 0x2dc0, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2df0, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2e20, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2e50, size 0x30
@@ -169153,7 +169153,7 @@ version 70 {
         // offset 0x2050, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2080, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x20b0, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x20e0, size 0x30
@@ -169167,7 +169167,7 @@ version 70 {
         // offset 0x21a0, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x21d0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2200, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2230, size 0x30
@@ -169289,7 +169289,7 @@ version 70 {
         // offset 0x2d30, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2d60, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2d90, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2dc0, size 0x30
@@ -171248,7 +171248,7 @@ version 69 {
         // offset 0x2050, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2080, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x20b0, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x20e0, size 0x30
@@ -171262,7 +171262,7 @@ version 69 {
         // offset 0x21a0, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x21d0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2200, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2230, size 0x30
@@ -171384,7 +171384,7 @@ version 69 {
         // offset 0x2d30, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2d60, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2d90, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2dc0, size 0x30
@@ -173342,7 +173342,7 @@ version 68 {
         // offset 0x2050, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2080, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x20b0, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x20e0, size 0x30
@@ -173356,7 +173356,7 @@ version 68 {
         // offset 0x21a0, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x21d0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2200, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2230, size 0x30
@@ -173478,7 +173478,7 @@ version 68 {
         // offset 0x2d30, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2d60, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2d90, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2dc0, size 0x30
@@ -175434,7 +175434,7 @@ version 67 {
         // offset 0x2050, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2080, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x20b0, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x20e0, size 0x30
@@ -175448,7 +175448,7 @@ version 67 {
         // offset 0x21a0, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x21d0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2200, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2230, size 0x30
@@ -175570,7 +175570,7 @@ version 67 {
         // offset 0x2d30, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2d60, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2d90, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2dc0, size 0x30
@@ -177524,7 +177524,7 @@ version 66 {
         // offset 0x2050, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2080, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x20b0, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x20e0, size 0x30
@@ -177538,7 +177538,7 @@ version 66 {
         // offset 0x21a0, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x21d0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2200, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2230, size 0x30
@@ -177660,7 +177660,7 @@ version 66 {
         // offset 0x2d30, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2d60, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2d90, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2dc0, size 0x30
@@ -179612,7 +179612,7 @@ version 65 {
         // offset 0x2050, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2080, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x20b0, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x20e0, size 0x30
@@ -179626,7 +179626,7 @@ version 65 {
         // offset 0x21a0, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x21d0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2200, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2230, size 0x30
@@ -179748,7 +179748,7 @@ version 65 {
         // offset 0x2d30, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2d60, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2d90, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2dc0, size 0x30
@@ -181700,7 +181700,7 @@ version 64 {
         // offset 0x2050, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2080, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x20b0, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x20e0, size 0x30
@@ -181714,7 +181714,7 @@ version 64 {
         // offset 0x21a0, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x21d0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2200, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2230, size 0x30
@@ -181836,7 +181836,7 @@ version 64 {
         // offset 0x2d30, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2d60, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2d90, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2dc0, size 0x30
@@ -183787,7 +183787,7 @@ version 63 {
         // offset 0x2050, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x2080, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x20b0, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x20e0, size 0x30
@@ -183801,7 +183801,7 @@ version 63 {
         // offset 0x21a0, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x21d0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2200, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2230, size 0x30
@@ -183923,7 +183923,7 @@ version 63 {
         // offset 0x2d30, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2d60, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2d90, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2dc0, size 0x30
@@ -185861,7 +185861,7 @@ version 62 {
         // offset 0x1fb0, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1fe0, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2010, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2040, size 0x30
@@ -185875,7 +185875,7 @@ version 62 {
         // offset 0x2100, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x2130, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2160, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2190, size 0x30
@@ -185997,7 +185997,7 @@ version 62 {
         // offset 0x2c68, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2c98, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2cc8, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2cf8, size 0x30
@@ -187935,7 +187935,7 @@ version 61 {
         // offset 0x1fb0, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1fe0, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2010, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2040, size 0x30
@@ -187949,7 +187949,7 @@ version 61 {
         // offset 0x2100, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x2130, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2160, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2190, size 0x30
@@ -188071,7 +188071,7 @@ version 61 {
         // offset 0x2c68, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2c98, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2cc8, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2cf8, size 0x30
@@ -190006,7 +190006,7 @@ version 60 {
         // offset 0x1fb0, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1fe0, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2010, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2040, size 0x30
@@ -190020,7 +190020,7 @@ version 60 {
         // offset 0x2100, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x2130, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2160, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2190, size 0x30
@@ -190142,7 +190142,7 @@ version 60 {
         // offset 0x2c68, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2c98, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2cc8, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2cf8, size 0x30
@@ -192052,7 +192052,7 @@ version 59 {
         // offset 0x1fb0, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1fe0, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2010, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2040, size 0x30
@@ -192066,7 +192066,7 @@ version 59 {
         // offset 0x2100, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x2130, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2160, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2190, size 0x30
@@ -192188,7 +192188,7 @@ version 59 {
         // offset 0x2c68, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2c98, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2cc8, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2cf8, size 0x30
@@ -194096,7 +194096,7 @@ version 58 {
         // offset 0x1fb0, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1fe0, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2010, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2040, size 0x30
@@ -194110,7 +194110,7 @@ version 58 {
         // offset 0x2100, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x2130, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2160, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2190, size 0x30
@@ -194232,7 +194232,7 @@ version 58 {
         // offset 0x2c68, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2c98, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2cc8, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2cf8, size 0x30
@@ -196128,7 +196128,7 @@ version 57 {
         // offset 0x1fb0, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1fe0, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2010, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2040, size 0x30
@@ -196142,7 +196142,7 @@ version 57 {
         // offset 0x2100, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x2130, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2160, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2190, size 0x30
@@ -196264,7 +196264,7 @@ version 57 {
         // offset 0x2c68, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2c98, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2cc8, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2cf8, size 0x30
@@ -198156,7 +198156,7 @@ version 56 {
         // offset 0x1f90, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1fc0, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1ff0, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2020, size 0x30
@@ -198170,7 +198170,7 @@ version 56 {
         // offset 0x20e0, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x2110, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2140, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2170, size 0x30
@@ -198292,7 +198292,7 @@ version 56 {
         // offset 0x2c48, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2c78, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2ca8, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2cd8, size 0x30
@@ -200180,7 +200180,7 @@ version 55 {
         // offset 0x1f90, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1fc0, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1ff0, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2020, size 0x30
@@ -200194,7 +200194,7 @@ version 55 {
         // offset 0x20e0, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x2110, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2140, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2170, size 0x30
@@ -200316,7 +200316,7 @@ version 55 {
         // offset 0x2c48, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2c78, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2ca8, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2cd8, size 0x30
@@ -202202,7 +202202,7 @@ version 54 {
         // offset 0x1f90, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1fc0, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1ff0, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2020, size 0x30
@@ -202216,7 +202216,7 @@ version 54 {
         // offset 0x20e0, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x2110, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2140, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2170, size 0x30
@@ -202338,7 +202338,7 @@ version 54 {
         // offset 0x2c48, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2c78, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2ca8, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2cd8, size 0x30
@@ -204204,7 +204204,7 @@ version 53 {
         // offset 0x1f90, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1fc0, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1ff0, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2020, size 0x30
@@ -204218,7 +204218,7 @@ version 53 {
         // offset 0x20e0, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x2110, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2140, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2170, size 0x30
@@ -204340,7 +204340,7 @@ version 53 {
         // offset 0x2c48, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2c78, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2ca8, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2cd8, size 0x30
@@ -206201,7 +206201,7 @@ version 52 {
         // offset 0x1fc0, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1ff0, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2020, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2050, size 0x30
@@ -206215,7 +206215,7 @@ version 52 {
         // offset 0x2110, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x2140, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2170, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x21a0, size 0x30
@@ -206335,7 +206335,7 @@ version 52 {
         // offset 0x2c48, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2c78, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2ca8, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2cd8, size 0x30
@@ -208196,7 +208196,7 @@ version 51 {
         // offset 0x1fc0, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1ff0, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2020, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2050, size 0x30
@@ -208210,7 +208210,7 @@ version 51 {
         // offset 0x2110, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x2140, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2170, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x21a0, size 0x30
@@ -208330,7 +208330,7 @@ version 51 {
         // offset 0x2c48, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2c78, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2ca8, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2cd8, size 0x30
@@ -210168,7 +210168,7 @@ version 50 {
         // offset 0x1fa0, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1fd0, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x2000, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2030, size 0x30
@@ -210182,7 +210182,7 @@ version 50 {
         // offset 0x20f0, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x2120, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2150, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2180, size 0x30
@@ -210300,7 +210300,7 @@ version 50 {
         // offset 0x2c08, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2c38, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2c68, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2c98, size 0x30
@@ -212138,7 +212138,7 @@ version 49 {
         // offset 0x1f98, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1fc8, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1ff8, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2028, size 0x30
@@ -212152,7 +212152,7 @@ version 49 {
         // offset 0x20e8, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x2118, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2148, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2178, size 0x30
@@ -212270,7 +212270,7 @@ version 49 {
         // offset 0x2c00, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2c30, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2c60, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2c90, size 0x30
@@ -214100,7 +214100,7 @@ version 48 {
         // offset 0x1f98, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1fc8, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1ff8, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2028, size 0x30
@@ -214114,7 +214114,7 @@ version 48 {
         // offset 0x20e8, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x2118, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2148, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2178, size 0x30
@@ -214232,7 +214232,7 @@ version 48 {
         // offset 0x2c00, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2c30, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2c60, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2c90, size 0x30
@@ -216062,7 +216062,7 @@ version 47 {
         // offset 0x1f98, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1fc8, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1ff8, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2028, size 0x30
@@ -216076,7 +216076,7 @@ version 47 {
         // offset 0x20e8, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x2118, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2148, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2178, size 0x30
@@ -216194,7 +216194,7 @@ version 47 {
         // offset 0x2c00, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2c30, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2c60, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2c90, size 0x30
@@ -218015,7 +218015,7 @@ version 46 {
         // offset 0x1f98, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1fc8, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1ff8, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2028, size 0x30
@@ -218029,7 +218029,7 @@ version 46 {
         // offset 0x20e8, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x2118, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2148, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2178, size 0x30
@@ -218147,7 +218147,7 @@ version 46 {
         // offset 0x2c00, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2c30, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2c60, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2c90, size 0x30
@@ -219968,7 +219968,7 @@ version 45 {
         // offset 0x1f98, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1fc8, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1ff8, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x2028, size 0x30
@@ -219982,7 +219982,7 @@ version 45 {
         // offset 0x20e8, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x2118, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x2148, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x2178, size 0x30
@@ -220100,7 +220100,7 @@ version 45 {
         // offset 0x2c00, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2c30, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2c60, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2c90, size 0x30
@@ -221895,7 +221895,7 @@ version 44 {
         // offset 0x1d58, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1d88, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1db8, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x1de8, size 0x30
@@ -221907,7 +221907,7 @@ version 44 {
         // offset 0x1e78, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x1ea8, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x1ed8, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x1f08, size 0x30
@@ -222019,7 +222019,7 @@ version 44 {
         // offset 0x2900, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2930, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2960, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2990, size 0x30
@@ -223804,7 +223804,7 @@ version 43 {
         // offset 0x1d28, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1d58, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1d88, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x1db8, size 0x30
@@ -223816,7 +223816,7 @@ version 43 {
         // offset 0x1e48, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x1e78, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x1ea8, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x1ed8, size 0x30
@@ -223928,7 +223928,7 @@ version 43 {
         // offset 0x28d0, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2900, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2930, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2960, size 0x30
@@ -225709,7 +225709,7 @@ version 42 {
         // offset 0x1d28, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1d58, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1d88, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x1db8, size 0x30
@@ -225721,7 +225721,7 @@ version 42 {
         // offset 0x1e48, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x1e78, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x1ea8, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x1ed8, size 0x30
@@ -225833,7 +225833,7 @@ version 42 {
         // offset 0x28d0, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2900, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2930, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2960, size 0x30
@@ -227604,7 +227604,7 @@ version 41 {
         // offset 0x1d28, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1d58, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1d88, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x1db8, size 0x30
@@ -227616,7 +227616,7 @@ version 41 {
         // offset 0x1e48, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x1e78, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x1ea8, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x1ed8, size 0x30
@@ -227728,7 +227728,7 @@ version 41 {
         // offset 0x28d0, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2900, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2930, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2960, size 0x30
@@ -229488,7 +229488,7 @@ version 40 {
         // offset 0x1d28, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1d58, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1d88, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x1db8, size 0x30
@@ -229500,7 +229500,7 @@ version 40 {
         // offset 0x1e48, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x1e78, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x1ea8, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x1ed8, size 0x30
@@ -229612,7 +229612,7 @@ version 40 {
         // offset 0x28d0, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2900, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2930, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2960, size 0x30
@@ -231369,7 +231369,7 @@ version 39 {
         // offset 0x1d28, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1d58, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1d88, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x1db8, size 0x30
@@ -231381,7 +231381,7 @@ version 39 {
         // offset 0x1e48, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x1e78, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x1ea8, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x1ed8, size 0x30
@@ -231493,7 +231493,7 @@ version 39 {
         // offset 0x28d0, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2900, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2930, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2960, size 0x30
@@ -233250,7 +233250,7 @@ version 38 {
         // offset 0x1d28, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1d58, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1d88, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x1db8, size 0x30
@@ -233262,7 +233262,7 @@ version 38 {
         // offset 0x1e48, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x1e78, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x1ea8, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x1ed8, size 0x30
@@ -233374,7 +233374,7 @@ version 38 {
         // offset 0x28d0, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2900, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2930, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2960, size 0x30
@@ -235127,7 +235127,7 @@ version 37 {
         // offset 0x1d28, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1d58, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1d88, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x1db8, size 0x30
@@ -235139,7 +235139,7 @@ version 37 {
         // offset 0x1e48, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x1e78, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x1ea8, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x1ed8, size 0x30
@@ -235251,7 +235251,7 @@ version 37 {
         // offset 0x28d0, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2900, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2930, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2960, size 0x30
@@ -236992,7 +236992,7 @@ version 36 {
         // offset 0x1d10, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1d40, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1d70, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x1da0, size 0x30
@@ -237004,7 +237004,7 @@ version 36 {
         // offset 0x1e30, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x1e60, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x1e90, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x1ec0, size 0x30
@@ -237116,7 +237116,7 @@ version 36 {
         // offset 0x28b8, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x28e8, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2918, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2948, size 0x30
@@ -238857,7 +238857,7 @@ version 35 {
         // offset 0x1d10, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1d40, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1d70, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x1da0, size 0x30
@@ -238869,7 +238869,7 @@ version 35 {
         // offset 0x1e30, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x1e60, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x1e90, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x1ec0, size 0x30
@@ -238981,7 +238981,7 @@ version 35 {
         // offset 0x28b8, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x28e8, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2918, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x2948, size 0x30
@@ -240704,7 +240704,7 @@ version 34 {
         // offset 0x1b90, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1bc0, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1bf0, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x1c20, size 0x30
@@ -240716,7 +240716,7 @@ version 34 {
         // offset 0x1cb0, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x1ce0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x1d10, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x1d40, size 0x30
@@ -240818,7 +240818,7 @@ version 34 {
         // offset 0x2648, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2678, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x26a8, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x26d8, size 0x30
@@ -242525,7 +242525,7 @@ version 33 {
         // offset 0x1b90, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1bc0, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1bf0, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x1c20, size 0x30
@@ -242537,7 +242537,7 @@ version 33 {
         // offset 0x1cb0, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x1ce0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x1d10, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x1d40, size 0x30
@@ -242639,7 +242639,7 @@ version 33 {
         // offset 0x2648, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2678, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x26a8, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x26d8, size 0x30
@@ -244322,7 +244322,7 @@ version 32 {
         // offset 0x1b90, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1bc0, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1bf0, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x1c20, size 0x30
@@ -244334,7 +244334,7 @@ version 32 {
         // offset 0x1cb0, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x1ce0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x1d10, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x1d40, size 0x30
@@ -244436,7 +244436,7 @@ version 32 {
         // offset 0x2648, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2678, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x26a8, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x26d8, size 0x30
@@ -246117,7 +246117,7 @@ version 31 {
         // offset 0x1b90, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1bc0, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1bf0, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x1c20, size 0x30
@@ -246129,7 +246129,7 @@ version 31 {
         // offset 0x1cb0, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x1ce0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x1d10, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x1d40, size 0x30
@@ -246231,7 +246231,7 @@ version 31 {
         // offset 0x2648, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2678, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x26a8, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x26d8, size 0x30
@@ -247912,7 +247912,7 @@ version 30 {
         // offset 0x1b90, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1bc0, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1bf0, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x1c20, size 0x30
@@ -247924,7 +247924,7 @@ version 30 {
         // offset 0x1cb0, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x1ce0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x1d10, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x1d40, size 0x30
@@ -248026,7 +248026,7 @@ version 30 {
         // offset 0x2648, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2678, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x26a8, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x26d8, size 0x30
@@ -249695,7 +249695,7 @@ version 29 {
         // offset 0x1b90, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1bc0, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1bf0, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x1c20, size 0x30
@@ -249707,7 +249707,7 @@ version 29 {
         // offset 0x1cb0, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x1ce0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x1d10, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x1d40, size 0x30
@@ -249809,7 +249809,7 @@ version 29 {
         // offset 0x2648, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2678, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x26a8, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x26d8, size 0x30
@@ -251474,7 +251474,7 @@ version 28 {
         // offset 0x1b90, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1bc0, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1bf0, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x1c20, size 0x30
@@ -251486,7 +251486,7 @@ version 28 {
         // offset 0x1cb0, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x1ce0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x1d10, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x1d40, size 0x30
@@ -251588,7 +251588,7 @@ version 28 {
         // offset 0x2648, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2678, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x26a8, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x26d8, size 0x30
@@ -253250,7 +253250,7 @@ version 27 {
         // offset 0x1b90, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1bc0, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1bf0, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x1c20, size 0x30
@@ -253262,7 +253262,7 @@ version 27 {
         // offset 0x1cb0, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x1ce0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x1d10, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x1d40, size 0x30
@@ -253364,7 +253364,7 @@ version 27 {
         // offset 0x2648, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2678, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x26a8, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x26d8, size 0x30
@@ -255024,7 +255024,7 @@ version 26 {
         // offset 0x1b90, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1bc0, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1bf0, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x1c20, size 0x30
@@ -255036,7 +255036,7 @@ version 26 {
         // offset 0x1cb0, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x1ce0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x1d10, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x1d40, size 0x30
@@ -255138,7 +255138,7 @@ version 26 {
         // offset 0x2648, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2678, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x26a8, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x26d8, size 0x30
@@ -256786,7 +256786,7 @@ version 25 {
         // offset 0x1b90, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1bc0, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1bf0, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x1c20, size 0x30
@@ -256798,7 +256798,7 @@ version 25 {
         // offset 0x1cb0, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x1ce0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x1d10, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x1d40, size 0x30
@@ -256898,7 +256898,7 @@ version 25 {
         // offset 0x2610, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2640, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2670, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x26a0, size 0x30
@@ -258546,7 +258546,7 @@ version 24 {
         // offset 0x1b90, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1bc0, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1bf0, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x1c20, size 0x30
@@ -258558,7 +258558,7 @@ version 24 {
         // offset 0x1cb0, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x1ce0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x1d10, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x1d40, size 0x30
@@ -258658,7 +258658,7 @@ version 24 {
         // offset 0x2610, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2640, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2670, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x26a0, size 0x30
@@ -260302,7 +260302,7 @@ version 23 {
         // offset 0x1b90, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1bc0, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1bf0, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x1c20, size 0x30
@@ -260314,7 +260314,7 @@ version 23 {
         // offset 0x1cb0, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x1ce0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x1d10, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x1d40, size 0x30
@@ -260414,7 +260414,7 @@ version 23 {
         // offset 0x2610, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2640, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2670, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x26a0, size 0x30
@@ -262055,7 +262055,7 @@ version 22 {
         // offset 0x1b90, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1bc0, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1bf0, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x1c20, size 0x30
@@ -262067,7 +262067,7 @@ version 22 {
         // offset 0x1cb0, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x1ce0, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x1d10, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x1d40, size 0x30
@@ -262167,7 +262167,7 @@ version 22 {
         // offset 0x2610, size 0x30
         hash_6c116eea1f7184ec frag_kills;
         // offset 0x2640, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2670, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x26a0, size 0x30
@@ -263781,7 +263781,7 @@ version 21 {
         // offset 0x1920, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1950, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1980, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x19b0, size 0x30
@@ -263793,7 +263793,7 @@ version 21 {
         // offset 0x1a40, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x1a70, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x1aa0, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x1ad0, size 0x30
@@ -263889,7 +263889,7 @@ version 21 {
         // offset 0x2340, size 0x30
         hash_6c116eea1f7184ec survivalist_buy_wallbuy;
         // offset 0x2370, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x23a0, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x23d0, size 0x30
@@ -265481,7 +265481,7 @@ version 20 {
         // offset 0x1920, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1950, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1980, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x19b0, size 0x30
@@ -265493,7 +265493,7 @@ version 20 {
         // offset 0x1a40, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x1a70, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x1aa0, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x1ad0, size 0x30
@@ -265589,7 +265589,7 @@ version 20 {
         // offset 0x2340, size 0x30
         hash_6c116eea1f7184ec survivalist_buy_wallbuy;
         // offset 0x2370, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x23a0, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x23d0, size 0x30
@@ -267181,7 +267181,7 @@ version 19 {
         // offset 0x1920, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1950, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1980, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x19b0, size 0x30
@@ -267193,7 +267193,7 @@ version 19 {
         // offset 0x1a40, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x1a70, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x1aa0, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x1ad0, size 0x30
@@ -267289,7 +267289,7 @@ version 19 {
         // offset 0x2340, size 0x30
         hash_6c116eea1f7184ec survivalist_buy_wallbuy;
         // offset 0x2370, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x23a0, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x23d0, size 0x30
@@ -268878,7 +268878,7 @@ version 18 {
         // offset 0x1920, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1950, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1980, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x19b0, size 0x30
@@ -268890,7 +268890,7 @@ version 18 {
         // offset 0x1a40, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x1a70, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x1aa0, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x1ad0, size 0x30
@@ -268986,7 +268986,7 @@ version 18 {
         // offset 0x2340, size 0x30
         hash_6c116eea1f7184ec survivalist_buy_wallbuy;
         // offset 0x2370, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x23a0, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x23d0, size 0x30
@@ -270563,7 +270563,7 @@ version 17 {
         // offset 0x1920, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1950, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1980, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x19b0, size 0x30
@@ -270575,7 +270575,7 @@ version 17 {
         // offset 0x1a40, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x1a70, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x1aa0, size 0x30
         hash_6c116eea1f7184ec cur_win_streak;
         // offset 0x1ad0, size 0x30
@@ -270671,7 +270671,7 @@ version 17 {
         // offset 0x2340, size 0x30
         hash_6c116eea1f7184ec survivalist_buy_wallbuy;
         // offset 0x2370, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x23a0, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x23d0, size 0x30
@@ -272238,7 +272238,7 @@ version 16 {
         // offset 0x1cb0, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1ce0, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1d10, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x1d40, size 0x30
@@ -272250,7 +272250,7 @@ version 16 {
         // offset 0x1dd0, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x1e00, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x1e30, size 0x30
         hash_6c116eea1f7184ec specialty_mod_widowswine_drank;
         // offset 0x1e60, size 0x30
@@ -272350,7 +272350,7 @@ version 16 {
         // offset 0x2730, size 0x30
         hash_6c116eea1f7184ec specialty_awareness_drank;
         // offset 0x2760, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2790, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x27c0, size 0x30
@@ -273943,7 +273943,7 @@ version 15 {
         // offset 0x1cb0, size 0x30
         hash_6c116eea1f7184ec zdogs_killed;
         // offset 0x1ce0, size 0x30
-        hash_6c116eea1f7184ec hash_31c3f50baa002a76;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_mg;
         // offset 0x1d10, size 0x30
         hash_6c116eea1f7184ec failed_revives;
         // offset 0x1d40, size 0x30
@@ -273955,7 +273955,7 @@ version 15 {
         // offset 0x1dd0, size 0x30
         hash_6c116eea1f7184ec zm_daily_challenge_ingame_time;
         // offset 0x1e00, size 0x30
-        hash_6c116eea1f7184ec hash_29e6ec48e9101f71;
+        hash_6c116eea1f7184ec zm_daily_kills_packed_pistol;
         // offset 0x1e30, size 0x30
         hash_6c116eea1f7184ec specialty_mod_widowswine_drank;
         // offset 0x1e60, size 0x30
@@ -274055,7 +274055,7 @@ version 15 {
         // offset 0x2730, size 0x30
         hash_6c116eea1f7184ec specialty_awareness_drank;
         // offset 0x2760, size 0x30
-        hash_6c116eea1f7184ec hash_5a2c6be15132de02;
+        hash_6c116eea1f7184ec bgb_tokens_gained_this_game;
         // offset 0x2790, size 0x30
         hash_6c116eea1f7184ec hash_60b6e9332c734ad8;
         // offset 0x27c0, size 0x30

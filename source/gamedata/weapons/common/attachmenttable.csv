@@ -104,9 +104,9 @@
 44,camo,weaponoption,&#hash_4b105b524a93b53d,camo_diamond,0,#menu_camo_diamond_pattern,&#hash_4b105b524a93b53d,&#,,0,0,,0,0,0,0,,,FALSE,,#,mstr,#,,,#camo_diamond
 45,camo,weaponoption,&#hash_2b3d791eb05ec296,camo_darkmatter,0,#menu_camo_darkmatter_pattern,&#hash_2b3d791eb05ec296,&#,,0,0,,0,0,0,0,,,FALSE,,#,mstr,#,,,#camo_darkmatter
 46,camo,weaponoption,&#hash_30f532e9051a3691,camo_active_dlc2_retro_vegas_neon_wrapper,0,#menu_camo_active_retro_vegas,&#hash_30f532e9051a3691,&#,,0,0,,0,0,0,0,,,FALSE,loot,#,active,#ar_stealth_t8,,,#camo_active_dlc2_retro_vegas_neon_wrapper
-47,camo,weaponoption,&#hash_2b0fae1c09a3d8a9,camo_active_dlc2_zombie_flick_wrapper,0,#menu_camo_active_zombie_flick,&#hash_2b0fae1c09a3d8a9,&#,,0,0,,0,0,0,0,,,FALSE,loot,#,active,#tr_longburst_t8,,,#camo_active_dlc2_zombie_flick_wrapper
-48,camo,weaponoption,&#hash_1c07c87a45375aaf,camo_active_dlc2_party_rock_wrapper,0,#menu_camo_active_party_rock_pattern,&#hash_1c07c87a45375aaf,&#,,0,0,,0,0,0,0,,,FALSE,loot,#,active,#smg_handling_t8,,,#camo_active_dlc2_party_rock_wrapper
-49,camo,weaponoption,&#hash_5dc620aa9640e528,camo_active_dlc2_apb_wrapper,0,#menu_camo_active_apb_pattern,&#hash_5dc620aa9640e528,&#,,0,0,,0,0,0,0,,,FALSE,loot,#,active,#ar_fastfire_t8,,,#camo_active_dlc2_apb_wrapper
+47,camo,weaponoption,&#menu/camo_loot_zombie_flick,camo_active_dlc2_zombie_flick_wrapper,0,#menu_camo_active_zombie_flick,&#menu/camo_loot_zombie_flick,&#,,0,0,,0,0,0,0,,,FALSE,loot,#,active,#tr_longburst_t8,,,#camo_active_dlc2_zombie_flick_wrapper
+48,camo,weaponoption,&#menu/camo_loot_party_rock,camo_active_dlc2_party_rock_wrapper,0,#menu_camo_active_party_rock_pattern,&#menu/camo_loot_party_rock,&#,,0,0,,0,0,0,0,,,FALSE,loot,#,active,#smg_handling_t8,,,#camo_active_dlc2_party_rock_wrapper
+49,camo,weaponoption,&#menu/camo_loot_apb,camo_active_dlc2_apb_wrapper,0,#menu_camo_active_apb_pattern,&#menu/camo_loot_apb,&#,,0,0,,0,0,0,0,,,FALSE,loot,#,active,#ar_fastfire_t8,,,#camo_active_dlc2_apb_wrapper
 50,camo,weaponoption,&#,camo_loot_placeholder_72,0,#hash_23110fdf868a130c,&#,&#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#camo_loot_placeholder_72
 51,camo,weaponoption,&#,camo_loot_placeholder_73,0,#hash_231110df868a14bf,&#,&#,,0,0,,0,0,0,0,,,FALSE,,#,,#,,,#camo_loot_placeholder_73
 52,camo,weaponoption,&#menu/camo_loot_cherryblossom,camo_dlc1_cherryblossom,0,#menu_camo_dlc1_cherryblossom,&#menu/camo_loot_cherryblossom,&#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc1_cherryblossom

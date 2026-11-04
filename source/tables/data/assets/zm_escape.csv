@@ -160,7 +160,7 @@ xanim,#vm_raygun_ads_base_down
 xanim,#hash_8f4f9a9f6490850
 xanim,#ai_zombie_base_walk_ad_v19_pain_chest_f
 xanim,d#pt_grenade_prone_throw
-xanim,#hash_923a7a2394d952d
+xanim,#p8_fxanim_zm_esc_crane_dock_rotate_anim
 xanim,#vm_minigun_first_raise
 xanim,#hash_956f3dc65edf006
 xanim,#hash_95be7883cd30a04
@@ -30551,7 +30551,7 @@ fx,#hash_eaadd6e34fc46ae
 fx,#hash_171b2a85c0387b63
 fx,d#tools/fx_null
 fx,#maps/zm_escape/fx8_magicbox_opened
-fx,#hash_2b008afec3e70add
+fx,#maps/zm_escape/fx8_magicbox_depart
 fx,#hash_3461d7daeace74a0
 lightdescription,#hash_554420665cff7acf
 fx,#hash_49bea30b5096b024
@@ -42427,7 +42427,7 @@ fx,#hash_b55269cf821e54d
 fx,d#weapon/fx_muz_md_4arc_mb
 fx,#zm_ai/fx8_cata_plasma_blast_tell_torso
 fx,#weapon/fx8_hero_flamethrower_begin_3p_uw
-fx,d#hash_c9cf0acc938a7f6
+fx,d#zombie/fx8_fire_limb_zmb
 fx,#hash_ce21486cbb74ba2
 fx,d#hash_d0af14e74a7df15
 fx,#hash_d1c8b0b55d24fba
@@ -42650,7 +42650,7 @@ fx,d#hash_311a865a91014b22
 fx,d#hash_317f3a24ff92b8ca
 fx,#zombie/fx_idgun_ug_hole_sm_zod_zmb
 fx,#zm_ai/fx8_cata_plasma_blast_c
-fx,#hash_31c4723879504cb7
+fx,#zombie/fx8_magicbox_lid_skull
 fx,#fog/fx8_fog_ground_wind_150x150
 fx,#hash_322b9e873fb5979b
 fx,#dirt/fx8_dust_fall_impact_sm
@@ -42776,7 +42776,7 @@ fx,#hash_4835bd332e8a78c7
 fx,d#impacts/fx_bul_impact_blood_body_fatal_uw
 fx,#hash_486a2837e1c151fd
 fx,#hash_48dc7f7636576b56
-fx,#hash_4948d849a833ddd5
+fx,#maps/zm_escape/fx8_shield_residue
 fx,#hash_49eb04386651401b
 fx,#hash_49f9647bd929c15e
 fx,d#hash_4a090d1dd60358a1
@@ -43187,7 +43187,7 @@ renderoverridebundle,#rob_zm_going_nuclear
 renderoverridebundle,#hash_6719b50eab1e08bd
 renderoverridebundle,#rob_key_charging
 renderoverridebundle,#hash_68ee9247aaae4517
-renderoverridebundle,#hash_6efc465a2da0373a
+renderoverridebundle,#rob_zm_viewarm_acid
 renderoverridebundle,d#rob_headshot
 renderoverridebundle,#rob_zm_eyes_red
 xanim,#p8_fxanim_zm_esc_power_panel_phouse_05_activate_anim
@@ -43244,7 +43244,7 @@ xanim,#p8_fxanim_zm_esc_power_panel_bldg64_02_on_anim
 xanim,#hash_2f3ac29559aa6e64
 xanim,#p8_fxanim_zm_esc_power_panel_bldg64_02_activate_anim
 xanim,#p8_fxanim_zm_esc_power_panel_phouse_03_activate_anim
-xanim,#hash_32b13c90c94b5fed
+xanim,#p8_fxanim_zm_esc_wardensattic_reveal_lights_anim
 xanim,#p8_fxanim_zm_esc_power_panel_phouse_05_on_anim
 xanim,d#vm_t8_swim_r_dw
 xanim,#p8_fxanim_zm_esc_power_panel_phouse_06_off_anim
@@ -43750,7 +43750,7 @@ fx,#hash_5c66c52dd6b28e36
 fx,#weapon/fx8_hero_flamethrower_end_3p
 fx,d#impacts/fx8_bul_impact_water_sm
 fx,d#impacts/fx_bul_impact_armor_head_nonfatal_exit
-fx,d#hash_5f376e9395e16666
+fx,d#zombie/fx8_magicbox_depart
 fx,d#hash_5f8c0dac5484812f
 fx,d#weapon/fx8_trail_grenade
 fx,d#impacts/fx8_bul_impact_robot_head_nonfatal_exit
@@ -44887,7 +44887,7 @@ xanim,#hash_24c48dec16c29fa7
 xanim,#hash_24c48eec16c2a15a
 xanim,#hash_24c48fec16c2a30d
 xanim,#hash_2a54f1e9f64cafc8
-xanim,#hash_2bf732b76b5383ba
+xanim,#p8_fxanim_zm_esc_crane_skeleton_arm_fall_anim
 xanim,#p8_fxanim_zm_esc_trap_fan_idle_anim
 xanim,#hash_2eb224dd10501a58
 xanim,#hash_2eb226dd10501dbe
@@ -44901,7 +44901,7 @@ xanim,#hash_3f3dad0dd55a3ebe
 xanim,#hash_3f3dae0dd55a4071
 xanim,#hash_3f3daf0dd55a4224
 xanim,#hash_3f3db00dd55a43d7
-xanim,#hash_3fbc33140c093c0d
+xanim,#p8_fxanim_zm_esc_crane_water_rotate_anim
 xanim,#p8_fxanim_zm_esc_pakasplat_start_anim
 xanim,#hash_44472d87b4976577
 xanim,#p7_fxanim_gp_wire_sparking_ground_01_anim

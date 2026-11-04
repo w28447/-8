@@ -3,7 +3,7 @@
     "hash_3eb32f0f72df0c50:hash_904b37bc": "impact_fx_table#hash_3eb32f0f72df0c50",
     "image": "loot04_ui_icon_blackmarket_reserves_death_fx_water",
     "name": "weapondeathfx_water",
-    "displayname": "localized17#hash_373b7a84e7ac2c2e",
+    "displayname": "localized17#menu/death_effects_water",
     "icon": "loot04_ui_icon_cac_death_fx_water",
     "bullet_water_exit": "impact_fx_table#bullet_water_exit",
     "previewimage": "image#loot04_ui_icon_cac_death_fx_water"

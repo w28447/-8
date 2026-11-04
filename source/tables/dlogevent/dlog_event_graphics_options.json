@@ -379,7 +379,7 @@
         },
         {
             "name": "#last_recommended_driver_nvidia",
-            "scrName": "#hash_12c17d14",
+            "scrName": "#last_recommended_driver_nvidia",
             "type": "INT32"
         },
         {

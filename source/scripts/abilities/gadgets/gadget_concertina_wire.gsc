@@ -104,7 +104,7 @@ function onplayerkilled( s_params )
     }
     
     weapon = s_params.weapon;
-    var_4fd6205f = isdefined( self.var_c6a21b50.owner ) ? self.var_c6a21b50.owner == s_params.eattacker : 0;
+    attackerisowner = isdefined( self.var_c6a21b50.owner ) ? self.var_c6a21b50.owner == s_params.eattacker : 0;
     
     if ( !isdefined( s_params.eattacker ) || !isplayer( s_params.eattacker ) )
     {
@@ -126,7 +126,7 @@ function onplayerkilled( s_params )
         killstreaks::processscoreevent( #"concertina_wire_job_support", self.var_c6a21b50.owner, self, level.concertinawiresettings.concertinawireweapon );
     }
     
-    if ( isdefined( level.playgadgetsuccess ) && var_4fd6205f )
+    if ( isdefined( level.playgadgetsuccess ) && attackerisowner )
     {
         relativepos = vectornormalize( self.origin - s_params.eattacker.origin );
         dir = anglestoforward( s_params.eattacker getplayerangles() );

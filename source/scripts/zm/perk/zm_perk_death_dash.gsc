@@ -1,5 +1,5 @@
 #using script_24c32478acf44108;
-#using script_6951ea86fdae9ae0;
+#using scripts/zm_common/trials/zm_trial_attack_during_movement.gsc;
 #using scripts\core_common\ai\systems\gib;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\clientfield_shared;
@@ -541,7 +541,7 @@ function private function_69153101()
         return false;
     }
     
-    if ( namespace_fcd611c3::is_active() )
+    if ( zm_trial_attack_during_movement::is_active() )
     {
         return false;
     }

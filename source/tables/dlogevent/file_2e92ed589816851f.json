@@ -127,7 +127,7 @@
         },
         {
             "name": "#rotationtime",
-            "scrName": "#hash_64da88ee",
+            "scrName": "#rotationtime",
             "type": "INT32"
         },
         {

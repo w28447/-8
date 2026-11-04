@@ -153,7 +153,7 @@ function private function_26ff990a( local_client_num )
 {
     max_players = 10;
     max_distance = 2000;
-    var_62cc2a1a = max_distance * max_distance;
+    max_distance_sq = max_distance * max_distance;
     camera_origin = getcamposbylocalclientnum( local_client_num );
     players = getplayers( local_client_num );
     players = arraysort( players, camera_origin );
@@ -182,7 +182,7 @@ function private function_26ff990a( local_client_num )
         
         distance_sq = distancesquared( camera_origin, player.origin );
         
-        if ( distance_sq > var_62cc2a1a )
+        if ( distance_sq > max_distance_sq )
         {
             return;
         }

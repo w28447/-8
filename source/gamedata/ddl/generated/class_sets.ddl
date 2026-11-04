@@ -14073,7 +14073,7 @@ version 40 {
     };
 
     // idx 16 members 1 size 0x8
-    struct hash_22abd41674c242a4 {
+    struct wzcharacteroutfit {
         // offset 0x0, size 0x8
         bool selectedcomponent[hash_5ab26f037efe82c];
     };
@@ -14087,7 +14087,7 @@ version 40 {
         // offset 0x108, size 0x148
         variant showcaseweapon;
         // offset 0x250, size 0x100
-        hash_22abd41674c242a4 hash_e5c77948998e49[32];
+        wzcharacteroutfit hash_e5c77948998e49[32];
     };
 
     // idx 18 members 4 size 0x58
@@ -14569,7 +14569,7 @@ version 39 {
     };
 
     // idx 16 members 1 size 0x8
-    struct hash_22abd41674c242a4 {
+    struct wzcharacteroutfit {
         // offset 0x0, size 0x8
         bool selectedcomponent[hash_5ab26f037efe82c];
     };
@@ -14583,7 +14583,7 @@ version 39 {
         // offset 0x108, size 0x148
         variant showcaseweapon;
         // offset 0x250, size 0x100
-        hash_22abd41674c242a4 hash_e5c77948998e49[32];
+        wzcharacteroutfit hash_e5c77948998e49[32];
     };
 
     // idx 18 members 4 size 0x58
@@ -15069,7 +15069,7 @@ version 38 {
     };
 
     // idx 17 members 1 size 0x8
-    struct hash_22abd41674c242a4 {
+    struct wzcharacteroutfit {
         // offset 0x0, size 0x8
         bool selectedcomponent[hash_5ab26f037efe82c];
     };
@@ -15083,7 +15083,7 @@ version 38 {
         // offset 0x808, size 0x148
         variant showcaseweapon;
         // offset 0x950, size 0x100
-        hash_22abd41674c242a4 hash_e5c77948998e49[32];
+        wzcharacteroutfit hash_e5c77948998e49[32];
     };
 
     // idx 19 members 4 size 0x58
@@ -15567,7 +15567,7 @@ version 37 {
     };
 
     // idx 17 members 1 size 0x8
-    struct hash_22abd41674c242a4 {
+    struct wzcharacteroutfit {
         // offset 0x0, size 0x8
         bool selectedcomponent[hash_5ab26f037efe82c];
     };
@@ -15581,7 +15581,7 @@ version 37 {
         // offset 0x808, size 0x148
         variant showcaseweapon;
         // offset 0x950, size 0x100
-        hash_22abd41674c242a4 hash_e5c77948998e49[32];
+        wzcharacteroutfit hash_e5c77948998e49[32];
     };
 
     // idx 19 members 4 size 0x58
@@ -16065,7 +16065,7 @@ version 36 {
     };
 
     // idx 17 members 1 size 0x8
-    struct hash_22abd41674c242a4 {
+    struct wzcharacteroutfit {
         // offset 0x0, size 0x8
         bool selectedcomponent[hash_5ab26f037efe82c];
     };
@@ -16079,7 +16079,7 @@ version 36 {
         // offset 0x808, size 0x148
         variant showcaseweapon;
         // offset 0x950, size 0x100
-        hash_22abd41674c242a4 hash_e5c77948998e49[32];
+        wzcharacteroutfit hash_e5c77948998e49[32];
     };
 
     // idx 19 members 4 size 0x58
@@ -16563,7 +16563,7 @@ version 35 {
     };
 
     // idx 17 members 1 size 0x8
-    struct hash_22abd41674c242a4 {
+    struct wzcharacteroutfit {
         // offset 0x0, size 0x8
         bool selectedcomponent[hash_5ab26f037efe82c];
     };
@@ -16577,7 +16577,7 @@ version 35 {
         // offset 0x808, size 0x148
         variant showcaseweapon;
         // offset 0x950, size 0x100
-        hash_22abd41674c242a4 hash_e5c77948998e49[32];
+        wzcharacteroutfit hash_e5c77948998e49[32];
     };
 
     // idx 19 members 4 size 0x58
@@ -17051,7 +17051,7 @@ version 34 {
     };
 
     // idx 17 members 1 size 0x8
-    struct hash_22abd41674c242a4 {
+    struct wzcharacteroutfit {
         // offset 0x0, size 0x8
         bool selectedcomponent[hash_5ab26f037efe82c];
     };
@@ -17065,7 +17065,7 @@ version 34 {
         // offset 0x808, size 0x148
         variant showcaseweapon;
         // offset 0x950, size 0x100
-        hash_22abd41674c242a4 hash_e5c77948998e49[32];
+        wzcharacteroutfit hash_e5c77948998e49[32];
     };
 
     // idx 19 members 4 size 0x58
@@ -17541,7 +17541,7 @@ version 33 {
     };
 
     // idx 17 members 1 size 0x8
-    struct hash_22abd41674c242a4 {
+    struct wzcharacteroutfit {
         // offset 0x0, size 0x8
         bool selectedcomponent[hash_5ab26f037efe82c];
     };
@@ -17555,7 +17555,7 @@ version 33 {
         // offset 0x808, size 0x148
         variant showcaseweapon;
         // offset 0x950, size 0x100
-        hash_22abd41674c242a4 hash_e5c77948998e49[32];
+        wzcharacteroutfit hash_e5c77948998e49[32];
     };
 
     // idx 19 members 4 size 0x58
@@ -18029,7 +18029,7 @@ version 32 {
     };
 
     // idx 17 members 1 size 0x8
-    struct hash_22abd41674c242a4 {
+    struct wzcharacteroutfit {
         // offset 0x0, size 0x8
         bool selectedcomponent[hash_5ab26f037efe82c];
     };
@@ -18043,7 +18043,7 @@ version 32 {
         // offset 0x808, size 0x148
         variant showcaseweapon;
         // offset 0x950, size 0x100
-        hash_22abd41674c242a4 hash_e5c77948998e49[32];
+        wzcharacteroutfit hash_e5c77948998e49[32];
     };
 
     // idx 19 members 4 size 0x58
@@ -18517,7 +18517,7 @@ version 31 {
     };
 
     // idx 17 members 2 size 0x8
-    struct hash_22abd41674c242a4 {
+    struct wzcharacteroutfit {
         // offset 0x0, size 0x7
         bool selectedcomponent[hash_5ab26f037efe82c];
         // offset 0x7, size 0x1
@@ -18533,7 +18533,7 @@ version 31 {
         // offset 0x708, size 0x148
         variant showcaseweapon;
         // offset 0x850, size 0x100
-        hash_22abd41674c242a4 hash_e5c77948998e49[32];
+        wzcharacteroutfit hash_e5c77948998e49[32];
     };
 
     // idx 19 members 4 size 0x58
@@ -19006,7 +19006,7 @@ version 30 {
     };
 
     // idx 17 members 2 size 0x8
-    struct hash_22abd41674c242a4 {
+    struct wzcharacteroutfit {
         // offset 0x0, size 0x7
         bool selectedcomponent[hash_5ab26f037efe82c];
         // offset 0x7, size 0x1
@@ -19022,7 +19022,7 @@ version 30 {
         // offset 0xe8, size 0x148
         variant showcaseweapon;
         // offset 0x230, size 0x20
-        hash_22abd41674c242a4 hash_e5c77948998e49[4];
+        wzcharacteroutfit hash_e5c77948998e49[4];
     };
 
     // idx 19 members 4 size 0x58
@@ -19495,7 +19495,7 @@ version 29 {
     };
 
     // idx 17 members 2 size 0x8
-    struct hash_22abd41674c242a4 {
+    struct wzcharacteroutfit {
         // offset 0x0, size 0x7
         bool selectedcomponent[hash_5ab26f037efe82c];
         // offset 0x7, size 0x1
@@ -19509,7 +19509,7 @@ version 29 {
         // offset 0x38, size 0x148
         variant showcaseweapon;
         // offset 0x180, size 0x8
-        hash_22abd41674c242a4 hash_e5c77948998e49[1];
+        wzcharacteroutfit hash_e5c77948998e49[1];
         // offset 0x188, size 0x1
         bool selectedoutfit;
         // offset 0x189, size 0x7

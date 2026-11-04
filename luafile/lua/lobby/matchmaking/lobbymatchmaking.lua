@@ -445,7 +445,7 @@ Lobby.Matchmaking.SetServerLocation = function ( f29_arg0, f29_arg1 )
 	else
 		servers = f29_local2.pingResults
 		Lobby.Matchmaking.ClearPingBandWeightsAndServerLocations()
-		pingCutoff = Dvar[0x39E15BDB813DCCB]:get()
+		pingCutoff = Dvar.lobbysearchdediunparkpinglimit:get()
 		if f29_arg0 == Enum.QueryID[0x5AED0351BD1CE62] then
 			resultsOK = false
 			Engine.PrintInfo( Enum[0x7A63DCD561B0FA8][0xC1DE3DC19B3B20D], "Looking to unpark a server in:\n" )
@@ -531,14 +531,14 @@ Lobby.Matchmaking.SetGeoWeightFlat = function ( f32_arg0 )
 	Dvar[0x6A0C9D1B5E5E5BB]:set( f32_arg0 )
 	Dvar[0xC6A5C1204B980DA]:set( f32_arg0 )
 	Dvar[0xB39CA390B7FC7D9]:set( f32_arg0 )
-	Dvar[0xC17DF3E855A4940]:set( f32_arg0 )
+	Dvar.lobbysearchgeo4weight:set( f32_arg0 )
 end
 
 Lobby.Matchmaking.SetGeoWeightTiered = function ( f33_arg0 )
 	Dvar[0x6A0C9D1B5E5E5BB]:set( f33_arg0 * 4 )
 	Dvar[0xC6A5C1204B980DA]:set( f33_arg0 * 3 )
 	Dvar[0xB39CA390B7FC7D9]:set( f33_arg0 * 2 )
-	Dvar[0xC17DF3E855A4940]:set( f33_arg0 )
+	Dvar.lobbysearchgeo4weight:set( f33_arg0 )
 end
 
 Lobby.Matchmaking.PingRange = function ( f34_arg0, f34_arg1 )
@@ -547,7 +547,7 @@ Lobby.Matchmaking.PingRange = function ( f34_arg0, f34_arg1 )
 end
 
 Lobby.Matchmaking.MinGeoMatch = function ( f35_arg0 )
-	Dvar[0xE01BF4D20878528]:set( f35_arg0 )
+	Dvar.lobbysearchgeomin:set( f35_arg0 )
 end
 
 Lobby.Matchmaking.GetConnection = function ( f36_arg0 )

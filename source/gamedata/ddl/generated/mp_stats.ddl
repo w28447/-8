@@ -149,7 +149,7 @@ version 129 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -551,7 +551,7 @@ version 129 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -559,7 +559,7 @@ version 129 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -673,7 +673,7 @@ version 129 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -938,7 +938,7 @@ version 128 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -1340,7 +1340,7 @@ version 128 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -1348,7 +1348,7 @@ version 128 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -1462,7 +1462,7 @@ version 128 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -1725,7 +1725,7 @@ version 127 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -2125,7 +2125,7 @@ version 127 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -2133,7 +2133,7 @@ version 127 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -2247,7 +2247,7 @@ version 127 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -2510,7 +2510,7 @@ version 126 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -2894,7 +2894,7 @@ version 126 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -2902,7 +2902,7 @@ version 126 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -3009,7 +3009,7 @@ version 126 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -3270,7 +3270,7 @@ version 125 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -3646,7 +3646,7 @@ version 125 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -3654,7 +3654,7 @@ version 125 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -3761,7 +3761,7 @@ version 125 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -4020,7 +4020,7 @@ version 124 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -4392,7 +4392,7 @@ version 124 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -4400,7 +4400,7 @@ version 124 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -4507,7 +4507,7 @@ version 124 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -4766,7 +4766,7 @@ version 123 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -5136,7 +5136,7 @@ version 123 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -5144,7 +5144,7 @@ version 123 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -5251,7 +5251,7 @@ version 123 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -5510,7 +5510,7 @@ version 122 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -5880,7 +5880,7 @@ version 122 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -5888,7 +5888,7 @@ version 122 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -5995,7 +5995,7 @@ version 122 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -6250,7 +6250,7 @@ version 121 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -6616,7 +6616,7 @@ version 121 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -6624,7 +6624,7 @@ version 121 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -6731,7 +6731,7 @@ version 121 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -6986,7 +6986,7 @@ version 120 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -7350,7 +7350,7 @@ version 120 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -7358,7 +7358,7 @@ version 120 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -7465,7 +7465,7 @@ version 120 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -7720,7 +7720,7 @@ version 119 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -8085,7 +8085,7 @@ version 119 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -8093,7 +8093,7 @@ version 119 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -8200,7 +8200,7 @@ version 119 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -8455,7 +8455,7 @@ version 118 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -8815,7 +8815,7 @@ version 118 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -8823,7 +8823,7 @@ version 118 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -8930,7 +8930,7 @@ version 118 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -9185,7 +9185,7 @@ version 117 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -9544,7 +9544,7 @@ version 117 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -9552,7 +9552,7 @@ version 117 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -9659,7 +9659,7 @@ version 117 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -9914,7 +9914,7 @@ version 116 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -10263,7 +10263,7 @@ version 116 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -10271,7 +10271,7 @@ version 116 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -10378,7 +10378,7 @@ version 116 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -10633,7 +10633,7 @@ version 115 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -10981,7 +10981,7 @@ version 115 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -10989,7 +10989,7 @@ version 115 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -11096,7 +11096,7 @@ version 115 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -11351,7 +11351,7 @@ version 114 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -11695,7 +11695,7 @@ version 114 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -11703,7 +11703,7 @@ version 114 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -11810,7 +11810,7 @@ version 114 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -12065,7 +12065,7 @@ version 113 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -12407,7 +12407,7 @@ version 113 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -12415,7 +12415,7 @@ version 113 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -12522,7 +12522,7 @@ version 113 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -12777,7 +12777,7 @@ version 112 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -13117,7 +13117,7 @@ version 112 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -13125,7 +13125,7 @@ version 112 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -13232,7 +13232,7 @@ version 112 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -13487,7 +13487,7 @@ version 111 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -13827,7 +13827,7 @@ version 111 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -13835,7 +13835,7 @@ version 111 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -13941,7 +13941,7 @@ version 111 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -14196,7 +14196,7 @@ version 110 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -14535,7 +14535,7 @@ version 110 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -14543,7 +14543,7 @@ version 110 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -14649,7 +14649,7 @@ version 110 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -14904,7 +14904,7 @@ version 109 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -15243,7 +15243,7 @@ version 109 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -15251,7 +15251,7 @@ version 109 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -15357,7 +15357,7 @@ version 109 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -15612,7 +15612,7 @@ version 108 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -15950,7 +15950,7 @@ version 108 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -15958,7 +15958,7 @@ version 108 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -16064,7 +16064,7 @@ version 108 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -16319,7 +16319,7 @@ version 107 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -16656,7 +16656,7 @@ version 107 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -16664,7 +16664,7 @@ version 107 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -16770,7 +16770,7 @@ version 107 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -17025,7 +17025,7 @@ version 106 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -17360,7 +17360,7 @@ version 106 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -17368,7 +17368,7 @@ version 106 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -17474,7 +17474,7 @@ version 106 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -17727,7 +17727,7 @@ version 105 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -18062,7 +18062,7 @@ version 105 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -18070,7 +18070,7 @@ version 105 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -18171,7 +18171,7 @@ version 105 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -18426,7 +18426,7 @@ version 104 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -18761,7 +18761,7 @@ version 104 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -18769,7 +18769,7 @@ version 104 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -18872,7 +18872,7 @@ version 104 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -19127,7 +19127,7 @@ version 103 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -19462,7 +19462,7 @@ version 103 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -19470,7 +19470,7 @@ version 103 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -19571,7 +19571,7 @@ version 103 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -19826,7 +19826,7 @@ version 102 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -20161,7 +20161,7 @@ version 102 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -20169,7 +20169,7 @@ version 102 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -20270,7 +20270,7 @@ version 102 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -20523,7 +20523,7 @@ version 101 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -20857,7 +20857,7 @@ version 101 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -20865,7 +20865,7 @@ version 101 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -20966,7 +20966,7 @@ version 101 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -21219,7 +21219,7 @@ version 100 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -21552,7 +21552,7 @@ version 100 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -21560,7 +21560,7 @@ version 100 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -21661,7 +21661,7 @@ version 100 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -21914,7 +21914,7 @@ version 99 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -22242,7 +22242,7 @@ version 99 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -22250,7 +22250,7 @@ version 99 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -22351,7 +22351,7 @@ version 99 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -22604,7 +22604,7 @@ version 98 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -22932,7 +22932,7 @@ version 98 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -22940,7 +22940,7 @@ version 98 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -23041,7 +23041,7 @@ version 98 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -23286,7 +23286,7 @@ version 97 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -23613,7 +23613,7 @@ version 97 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -23621,7 +23621,7 @@ version 97 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -23722,7 +23722,7 @@ version 97 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -23967,7 +23967,7 @@ version 96 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -24294,7 +24294,7 @@ version 96 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -24302,7 +24302,7 @@ version 96 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -24403,7 +24403,7 @@ version 96 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -24646,7 +24646,7 @@ version 95 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -24963,7 +24963,7 @@ version 95 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -24971,7 +24971,7 @@ version 95 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -25072,7 +25072,7 @@ version 95 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -25313,7 +25313,7 @@ version 94 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -25628,7 +25628,7 @@ version 94 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -25636,7 +25636,7 @@ version 94 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -25737,7 +25737,7 @@ version 94 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -25976,7 +25976,7 @@ version 93 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -26291,7 +26291,7 @@ version 93 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -26299,7 +26299,7 @@ version 93 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -26400,7 +26400,7 @@ version 93 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -26639,7 +26639,7 @@ version 92 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -26946,7 +26946,7 @@ version 92 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -26954,7 +26954,7 @@ version 92 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -27055,7 +27055,7 @@ version 92 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -27290,7 +27290,7 @@ version 91 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -27593,7 +27593,7 @@ version 91 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -27601,7 +27601,7 @@ version 91 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -27702,7 +27702,7 @@ version 91 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -27937,7 +27937,7 @@ version 90 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -28239,7 +28239,7 @@ version 90 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -28247,7 +28247,7 @@ version 90 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -28348,7 +28348,7 @@ version 90 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -28583,7 +28583,7 @@ version 89 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -28879,7 +28879,7 @@ version 89 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -28887,7 +28887,7 @@ version 89 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -28988,7 +28988,7 @@ version 89 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -29223,7 +29223,7 @@ version 88 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -29519,7 +29519,7 @@ version 88 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -29527,7 +29527,7 @@ version 88 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -29628,7 +29628,7 @@ version 88 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -29859,7 +29859,7 @@ version 87 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -30155,7 +30155,7 @@ version 87 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -30163,7 +30163,7 @@ version 87 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -30264,7 +30264,7 @@ version 87 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -30495,7 +30495,7 @@ version 86 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -30790,7 +30790,7 @@ version 86 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -30798,7 +30798,7 @@ version 86 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -30899,7 +30899,7 @@ version 86 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -31130,7 +31130,7 @@ version 85 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -31425,7 +31425,7 @@ version 85 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -31433,7 +31433,7 @@ version 85 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -31534,7 +31534,7 @@ version 85 {
     // offset 0x298, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x2b8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x2d8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x2f8, size 0x20
@@ -31763,7 +31763,7 @@ version 84 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -32050,7 +32050,7 @@ version 84 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -32058,7 +32058,7 @@ version 84 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -32150,7 +32150,7 @@ version 84 {
     // offset 0x1d8, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x1f8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x218, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x238, size 0x20
@@ -32379,7 +32379,7 @@ version 83 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -32666,7 +32666,7 @@ version 83 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -32674,7 +32674,7 @@ version 83 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -32766,7 +32766,7 @@ version 83 {
     // offset 0x1d8, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x1f8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x218, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x238, size 0x20
@@ -32991,7 +32991,7 @@ version 82 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -33278,7 +33278,7 @@ version 82 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -33286,7 +33286,7 @@ version 82 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -33378,7 +33378,7 @@ version 82 {
     // offset 0x1d8, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x1f8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x218, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x238, size 0x20
@@ -33603,7 +33603,7 @@ version 81 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -33890,7 +33890,7 @@ version 81 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -33898,7 +33898,7 @@ version 81 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -33989,7 +33989,7 @@ version 81 {
     // offset 0x1d8, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x1f8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x218, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x238, size 0x20
@@ -34214,7 +34214,7 @@ version 80 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -34501,7 +34501,7 @@ version 80 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -34509,7 +34509,7 @@ version 80 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -34599,7 +34599,7 @@ version 80 {
     // offset 0x1d8, size 0x20
     int hash_2cad871e3d814528;
     // offset 0x1f8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x218, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x238, size 0x20
@@ -34824,7 +34824,7 @@ version 79 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -35111,7 +35111,7 @@ version 79 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -35119,7 +35119,7 @@ version 79 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -35207,7 +35207,7 @@ version 79 {
     // offset 0x1b0, size 0x28
     string(5) clantag;
     // offset 0x1d8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x1f8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x218, size 0x20
@@ -35432,7 +35432,7 @@ version 78 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -35717,7 +35717,7 @@ version 78 {
         bonuscard_primary_gunfighter_2, // 0xf,
         bonuscard_primary_gunfighter_3, // 0x10,
         talent_dexterity, // 0x11,
-        hash_249e75e962ea5275, // 0x12,
+        gear_armor_hardcore, // 0x12,
         talent_resistance, // 0x13,
         gear_awareness, // 0x14,
         bonuscard_perk_1_gluttony, // 0x15,
@@ -35725,7 +35725,7 @@ version 78 {
         gear_equipmentcharge, // 0x17,
         bonuscard_secondary_gunfighter_2, // 0x18,
         bonuscard_secondary_gunfighter_3, // 0x19,
-        hash_39045b0020cc3e00, // 0x1a,
+        gear_armor_tier_three, // 0x1a,
         talent_scavenger, // 0x1b,
         talent_skulker, // 0x1c,
         bonuscard_perk_2_greed, // 0x1d,
@@ -35813,7 +35813,7 @@ version 78 {
     // offset 0x1b0, size 0x28
     string(5) clantag;
     // offset 0x1d8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x1f8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x218, size 0x20
@@ -35896,7 +35896,7 @@ version 77 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -35999,7 +35999,7 @@ version 77 {
     // offset 0x1b0, size 0x28
     string(5) clantag;
     // offset 0x1d8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x1f8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x218, size 0x20
@@ -36074,7 +36074,7 @@ version 76 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -36145,7 +36145,7 @@ version 76 {
     // offset 0x1b0, size 0x28
     string(5) clantag;
     // offset 0x1d8, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x1f8, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x218, size 0x20
@@ -36216,7 +36216,7 @@ version 75 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -36285,7 +36285,7 @@ version 75 {
     // offset 0x150, size 0x28
     string(5) clantag;
     // offset 0x178, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x198, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x1b8, size 0x20
@@ -36356,7 +36356,7 @@ version 74 {
         // offset 0x0, size 0x20
         int host_consecutive_success_count_from_go;
         // offset 0x20, size 0x20
-        int hash_5da867109e469462;
+        int host_disrupted_match_count_from_go;
         // offset 0x40, size 0x20
         int hash_5b755259ad280150;
         // offset 0x60, size 0x20
@@ -36904,7 +36904,7 @@ version 74 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -37430,7 +37430,7 @@ version 74 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -37713,7 +37713,7 @@ version 74 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -38095,7 +38095,7 @@ version 74 {
     // offset 0x240d0, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x24190, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x241b0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x241d0, size 0x20
@@ -38766,7 +38766,7 @@ version 73 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -39292,7 +39292,7 @@ version 73 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -39575,7 +39575,7 @@ version 73 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -39957,7 +39957,7 @@ version 73 {
     // offset 0x240d0, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x24190, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x241b0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x241d0, size 0x20
@@ -40620,7 +40620,7 @@ version 72 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -41146,7 +41146,7 @@ version 72 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -41429,7 +41429,7 @@ version 72 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -41811,7 +41811,7 @@ version 72 {
     // offset 0x240d0, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x24190, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x241b0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x241d0, size 0x20
@@ -42472,7 +42472,7 @@ version 71 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -42998,7 +42998,7 @@ version 71 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -43281,7 +43281,7 @@ version 71 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -43663,7 +43663,7 @@ version 71 {
     // offset 0x240d0, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x24190, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x241b0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x241d0, size 0x20
@@ -44324,7 +44324,7 @@ version 70 {
         stats_tempest_x2_multikill_summary, // 0x4c,
         kills_after_reload_fastreload, // 0x4d,
         stats_seeker_shock_mine_paralyzed_enemy, // 0x4e,
-        hash_a35eb7542985769, // 0x4f,
+        stats_lightning_strike_killjoy, // 0x4f,
         kill_flashed_enemy, // 0x50,
         medal_destroyed_combat_robot, // 0x51,
         medal_kill_ball_carrier, // 0x52,
@@ -44850,7 +44850,7 @@ version 70 {
         hash_4ccc35efbeabec11, // 0x25a,
         medal_annihilator_kill, // 0x25b,
         medal_destroyed_cover, // 0x25c,
-        hash_4db43fdd0b45e605, // 0x25d,
+        medal_end_enemy_using_radiation_field, // 0x25d,
         destroy_scorestreak_rapidfire_fmj, // 0x25e,
         medal_molotov_kill, // 0x25f,
         master_humiliation, // 0x260,
@@ -45133,7 +45133,7 @@ version 70 {
         stats_position_secure, // 0x375,
         hash_70c946465753e031, // 0x376,
         medal_cuav_killjoy, // 0x377,
-        hash_71c1da13637fd3fb, // 0x378,
+        melee_crowbar_for_diamond, // 0x378,
         stats_kill_enemy_one_bullet, // 0x379,
         medal_radiation_field_multikill_x2_summary, // 0x37a,
         hash_72752a9adfaa2b00, // 0x37b,
@@ -45509,7 +45509,7 @@ version 70 {
     // offset 0x21c10, size 0xc0
     short arenachallengeseasons[12];
     // offset 0x21cd0, size 0x20
-    int hash_5199b511aa25f017;
+    int extmsgversionviewed_cp;
     // offset 0x21cf0, size 0x20
     int extmsgversionviewed_mp;
     // offset 0x21d10, size 0x20

@@ -91,13 +91,13 @@
         },
         {
             "name": "#file_type",
-            "scrName": "#hash_52ed5216",
+            "scrName": "#file_type",
             "type": "STRING",
             "len": 16
         },
         {
             "name": "#file_id",
-            "scrName": "#hash_a7ca1593",
+            "scrName": "#file_id",
             "type": "UINT64"
         }
     ],

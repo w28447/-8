@@ -6,5 +6,5 @@
     "contractdescription": "localized17#menu/blackout_character",
     "white": "#white",
     "loot06_ui_icon_blackmarket_contracts_stuhlinger_tall": "image#loot06_ui_icon_blackmarket_contracts_stuhlinger_tall",
-    "hash_74d15b181fda49b9:hash_e08fc162": "localized17#hash_74d15b181fda49b9"
+    "menu/contract_stuhlinger_presunset_desc:hash_e08fc162": "localized17#menu/contract_stuhlinger_presunset_desc"
 }

@@ -81,7 +81,7 @@ Lobby.Debug.LobbyDebugVisEnable = function ()
 	elseif Engine.GetCurrentPlatform() == "durango" and not Lobby.Debug.EnableForPrimaryController( Lobby.Debug.gamertagDebugVisListDurango ) then
 		return 
 	end
-	Dvar[0x868D54ACE3910EB]:set( 1 )
+	Dvar.ui_lobbydebugvis:set( 1 )
 end
 
 Lobby.Debug.validateInfo = {
@@ -110,7 +110,7 @@ Lobby.Debug.LobbySQJEnable = function ()
 	elseif Engine.GetCurrentPlatform() == "durango" and not Lobby.Debug.EnableForPrimaryController( Lobby.Debug.lobbySQJListDurango ) then
 		return 
 	end
-	Dvar[0x102D263505BECD9]:set( 1 )
+	Dvar.ui_lobbydebugsessionsqj:set( 1 )
 end
 
 Lobby.Debug.LobbyValidate = function ()
@@ -186,7 +186,7 @@ Lobby.Debug.sessionSQJ = {
 	joinOrder = 0
 }
 Lobby.Debug.SessionSQJEnabled = function ()
-	if Dvar[0x102D263505BECD9]:get() == false then
+	if Dvar.ui_lobbydebugsessionsqj:get() == false then
 		return false
 	else
 		return true
@@ -352,7 +352,7 @@ Lobby.Debug.SessionSQJQoSResult = function ( f14_arg0 )
 end
 
 Lobby.Debug.SessionSQJLogBDEvent = function ( f15_arg0 )
-	if not Dvar[0x102D263505BECD9]:get() then
+	if not Dvar.ui_lobbydebugsessionsqj:get() then
 		return 
 	elseif not Lobby.Debug.SessionSQJEnabled() then
 		return 
@@ -742,7 +742,7 @@ Lobby.Debug.CreateDedicatedBotTestGameLobbyNONMatchmaking = function ( f42_arg0,
 		Dvar[0x1A227834B17E155]:set( 1000 )
 		Dvar[0x4832F85F8B2FA6A]:set( 1000 )
 		Dvar[0x405CFC2E0315533]:set( 1000 )
-		Dvar[0xA0A01C39967B404]:set( 1000 )
+		Dvar.lobbytimerstatusvotinginterval:set( 1000 )
 		Dvar[0x8A58F5C4D4B8CBE]:set( 1000 )
 		Dvar[0xAEDDAFEB3887F37]:set( 1000 )
 		Dvar[0xF28A3041BBCDF83]:set( 1000 )

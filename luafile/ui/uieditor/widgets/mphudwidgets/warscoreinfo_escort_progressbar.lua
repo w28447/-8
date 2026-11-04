@@ -58,7 +58,7 @@ CoD.WarScoreInfo_Escort_ProgressBar.new = function ( f3_arg0, f3_arg1, f3_arg2, 
 	DistanceLabel:subscribeToGlobalModel( f3_arg1, "WarData", "robotCurrentDistance", function ( model )
 		local f5_local0 = model:get()
 		if f5_local0 ~= nil then
-			DistanceLabel:setText( LocalizeIntoString( 0xA9AE1E6BC1CFEDC, UnitsToMeters( f5_local0 ) ) )
+			DistanceLabel:setText( LocalizeIntoString( "mpui/x_meters", UnitsToMeters( f5_local0 ) ) )
 		end
 	end )
 	self:addElement( DistanceLabel )

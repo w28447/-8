@@ -444,7 +444,7 @@ localizeentry,#hash_f991f56a803130b
 localizeentry,#hash_f992056a80314be
 localizeentry,#hash_f992556a8031d3d
 localizeentry,#hash_fb1ab58ba400777
-localizeentry,d#hash_fbcfc36f0c79d9a
+localizeentry,d#mpui/tank_commands
 localizeentry,#hash_fc630395d5d3cdb
 localizeentry,#hash_fc631395d5d3e8e
 localizeentry,#hash_fc632395d5d4041
@@ -801,7 +801,7 @@ localizeentry,#hash_1bfbbaa894c97b2a
 localizeentry,#hash_1bfbbba894c97cdd
 localizeentry,d#menu/triple_kill
 localizeentry,#hash_1c03edad9cf9a5c0
-localizeentry,d#hash_1c07c87a45375aaf
+localizeentry,d#menu/camo_loot_party_rock
 localizeentry,#hash_1c085e4db0b218f9
 localizeentry,#hash_1c0e77de508e7c46
 localizeentry,#hash_1c0e79de508e7fac
@@ -1175,7 +1175,7 @@ localizeentry,d#hash_2aa6fa1848766679
 localizeentry,#hash_2aaec62d66b79765
 localizeentry,#hash_2ab3facdfcb32911
 localizeentry,#hash_2ac155981743d633
-localizeentry,d#hash_2b0fae1c09a3d8a9
+localizeentry,d#menu/camo_loot_zombie_flick
 localizeentry,d#hash_2b27d20d2cfc1069
 localizeentry,d#hash_2b3d791eb05ec296
 localizeentry,d#mpui/camo_ardent
@@ -2516,7 +2516,7 @@ localizeentry,#hash_5dbbe75f3b1a5be3
 localizeentry,#hash_5dbbe85f3b1a5d96
 localizeentry,#hash_5dbbed5f3b1a6615
 localizeentry,#hash_5dc4c528a2e0c592
-localizeentry,d#hash_5dc620aa9640e528
+localizeentry,d#menu/camo_loot_apb
 localizeentry,#hash_5dd114ae3b95c9c0
 localizeentry,d#hash_5de28a4d70b730e1
 localizeentry,d#hash_5df50ce2dd193b5b

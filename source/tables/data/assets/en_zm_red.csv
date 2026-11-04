@@ -420,7 +420,7 @@ localizeentry,#hash_f493c1e30ef4d8d
 localizeentry,#zombie/item_meat
 localizeentry,d#hash_f60cd1936dfe2ae
 localizeentry,#hash_f6b74524b03eb08
-localizeentry,d#hash_fbcfc36f0c79d9a
+localizeentry,d#mpui/tank_commands
 localizeentry,#hash_fd4148fc7167f40
 localizeentry,#hash_fe1935fc943d973
 localizeentry,#hash_fe1965fc943de8c
@@ -798,7 +798,7 @@ localizeentry,#hash_1bd5d01372bae1cc
 localizeentry,#hash_1bd5d11372bae37f
 localizeentry,#hash_1bd5d21372bae532
 localizeentry,#hash_1bda4036c638cd3e
-localizeentry,d#hash_1c07c87a45375aaf
+localizeentry,d#menu/camo_loot_party_rock
 localizeentry,#hash_1c085e4db0b218f9
 localizeentry,#hash_1c0862069ec93b29
 localizeentry,#hash_1c0863069ec93cdc
@@ -1245,7 +1245,7 @@ localizeentry,#hash_2aff24f322d060ac
 localizeentry,#hash_2aff25f322d0625f
 localizeentry,#hash_2aff26f322d06412
 localizeentry,#hash_2b015bb71748b0ad
-localizeentry,d#hash_2b0fae1c09a3d8a9
+localizeentry,d#menu/camo_loot_zombie_flick
 localizeentry,d#hash_2b27d20d2cfc1069
 localizeentry,d#hash_2b3d791eb05ec296
 localizeentry,d#mpui/camo_ardent
@@ -2656,7 +2656,7 @@ localizeentry,#hash_5dae27401e6471f6
 localizeentry,#hash_5dae28401e6473a9
 localizeentry,#hash_5dae29401e64755c
 localizeentry,#hash_5db68b317048b0b2
-localizeentry,d#hash_5dc620aa9640e528
+localizeentry,d#menu/camo_loot_apb
 localizeentry,#hash_5dc6446df52b72c7
 localizeentry,#hash_5dcae3974b1787be
 localizeentry,#hash_5dcae5974b178b24

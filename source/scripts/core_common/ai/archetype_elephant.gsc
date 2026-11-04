@@ -356,7 +356,7 @@ function function_4b28fc8c( entity )
 {
     assert( isdefined( entity.ai.var_a05929e4 ) );
     launchpos = entity gettagorigin( "j_head" );
-    var_d82e1fd1 = entity gettagangles( "j_head" );
+    launchangle = entity gettagangles( "j_head" );
     
     /#
         recordsphere( launchpos, 3, ( 0, 0, 1 ), "<dev string:x41>" );
@@ -1039,11 +1039,11 @@ function private function_d8c752e0()
     
     if ( self.ai.phase == #"hash_266f53fb994e6120" )
     {
-        rider.ai.entryanim = #"hash_561cf85af113ff1e";
+        rider.ai.entryanim = #"ch_vign_zm_twrs_ent_hllpht_00_rider1";
     }
     else
     {
-        rider.ai.entryanim = #"hash_1447253275dbb643";
+        rider.ai.entryanim = #"ch_vign_zm_twrs_ent_hllpht_01_rider1";
     }
     
     rider thread function_2798bb2( self, rider );
@@ -1054,11 +1054,11 @@ function private function_d8c752e0()
     
     if ( self.ai.phase == #"hash_266f53fb994e6120" )
     {
-        rider.ai.entryanim = #"hash_561cf75af113fd6b";
+        rider.ai.entryanim = #"ch_vign_zm_twrs_ent_hllpht_00_rider2";
     }
     else
     {
-        rider.ai.entryanim = #"hash_1447263275dbb7f6";
+        rider.ai.entryanim = #"ch_vign_zm_twrs_ent_hllpht_01_rider2";
     }
     
     rider thread function_2798bb2( self, rider );
@@ -1069,13 +1069,13 @@ function private function_d8c752e0()
         rider.ai.var_758ed187 = #"ch_vign_tplt_inbtl_hllpht_evlve_2_stg_2_00_rider1";
         rider.ai.var_4f12fc77 = "tag_char_align_c";
         rider.instakill_func = &function_707d0196;
-        rider.ai.entryanim = #"hash_1447273275dbb9a9";
+        rider.ai.entryanim = #"ch_vign_zm_twrs_ent_hllpht_01_rider3";
         rider thread function_2798bb2( self, rider );
         rider = function_e5f2ff53( self, "tag_char_align_d", #"elephant_rider_back" );
         rider.ai.var_758ed187 = #"ch_vign_tplt_inbtl_hllpht_evlve_2_stg_2_00_rider2";
         rider.ai.var_4f12fc77 = "tag_char_align_d";
         rider.instakill_func = &function_707d0196;
-        rider.ai.entryanim = #"hash_1447283275dbbb5c";
+        rider.ai.entryanim = #"ch_vign_zm_twrs_ent_hllpht_01_rider4";
         rider thread function_2798bb2( self, rider );
     }
 }
@@ -1124,7 +1124,7 @@ function private function_4c731a08()
     
     for ( i = 0; i < level.players.size - 1 ; i++ )
     {
-        self.maxhealth += int( self ai::function_9139c839().minhealth * self ai::function_9139c839().var_854eebd );
+        self.maxhealth += int( self ai::function_9139c839().minhealth * self ai::function_9139c839().numplayerhealthscale );
     }
     
     self.health = self.maxhealth;
@@ -1758,7 +1758,7 @@ function private function_4d479d22( elephant )
     
     for ( i = 0; i < level.players.size - 1 ; i++ )
     {
-        elephant.maxhealth += int( elephant ai::function_9139c839().minhealth * elephant ai::function_9139c839().var_854eebd );
+        elephant.maxhealth += int( elephant ai::function_9139c839().minhealth * elephant ai::function_9139c839().numplayerhealthscale );
     }
     
     elephant.health = elephant.maxhealth;

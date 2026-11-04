@@ -126,7 +126,7 @@
         },
         {
             "name": "#datasize",
-            "scrName": "#hash_8c21822b",
+            "scrName": "#datasize",
             "type": "INT32"
         }
     ],

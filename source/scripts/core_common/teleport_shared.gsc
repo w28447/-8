@@ -10,7 +10,7 @@
 // Params 3
 // Checksum 0x7185f304, Offset: 0xe8
 // Size: 0x320
-function team( kvp, var_dad37549, var_b095575e = 0 )
+function team( kvp, var_dad37549, b_skip_flash = 0 )
 {
     level function_1d2a3300();
     var_bac46abd = self function_166effac( kvp, var_dad37549 );
@@ -32,7 +32,7 @@ function team( kvp, var_dad37549, var_b095575e = 0 )
         {
             if ( !( isdefined( s_teleport.b_used ) && s_teleport.b_used ) )
             {
-                e_player function_29305761( s_teleport, var_bac46abd.var_dad37549, var_b095575e );
+                e_player function_29305761( s_teleport, var_bac46abd.var_dad37549, b_skip_flash );
                 break;
             }
         }
@@ -66,7 +66,7 @@ function team( kvp, var_dad37549, var_b095575e = 0 )
 // Params 4
 // Checksum 0x8ada59ba, Offset: 0x410
 // Size: 0x178
-function player( e_player, kvp, var_dad37549, var_b095575e = 0 )
+function player( e_player, kvp, var_dad37549, b_skip_flash = 0 )
 {
     if ( !isalive( e_player ) )
     {
@@ -82,7 +82,7 @@ function player( e_player, kvp, var_dad37549, var_b095575e = 0 )
     {
         if ( s_teleport.( str_key ) === str_value && !( isdefined( s_teleport.b_used ) && s_teleport.b_used ) )
         {
-            e_player function_29305761( s_teleport, var_20212d26.var_dad37549, var_b095575e );
+            e_player function_29305761( s_teleport, var_20212d26.var_dad37549, b_skip_flash );
             return 1;
         }
     }
@@ -268,7 +268,7 @@ function private function_166effac( kvp, var_dad37549 )
 // Params 3, eflags: 0x4
 // Checksum 0x9df6f8d8, Offset: 0xc90
 // Size: 0x22e
-function private function_29305761( s_teleport, var_dad37549, var_b095575e = 0 )
+function private function_29305761( s_teleport, var_dad37549, b_skip_flash = 0 )
 {
     self endon( #"death" );
     
@@ -279,7 +279,7 @@ function private function_29305761( s_teleport, var_dad37549, var_b095575e = 0 )
     
     s_teleport.b_used = 1;
     
-    if ( !var_b095575e )
+    if ( !b_skip_flash )
     {
         self thread lui::screen_flash( 0, 0.3, 0.3 );
     }

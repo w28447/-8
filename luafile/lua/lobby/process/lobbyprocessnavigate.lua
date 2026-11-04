@@ -172,7 +172,7 @@ Lobby.ProcessNavigate.PressStart = function ( f7_arg0, f7_arg1 )
 		return 
 	end
 	local f7_local0 = Engine.CheckNetConnection()
-	if Engine[0xFA9C33583AA157]() == 1 or Dvar[0x97F5C84F6C328F5]:exists() and Dvar[0x97F5C84F6C328F5]:get() == 0 then
+	if Engine[0xFA9C33583AA157]() == 1 or Dvar.director_gate:exists() and Dvar.director_gate:get() == 0 then
 		LuaUtils.UI_ShowInfoMessageDialog( f7_arg0, Engine[0xF9F1239CFD921FE]( 0x226414A840AD597 ) )
 		return 
 	elseif not f7_local0 and (LuaUtils.OnlineOnlyDemo() or Engine[0xCB675CA7856DA25]()) then

@@ -29,7 +29,7 @@ LUI.createMenu.self_revive_visuals = function ( f1_arg0, f1_arg1 )
 	self.self_revive_progress_bar_fill = self_revive_progress_bar_fill
 	
 	local self_revive_progress_text = LUI.UIText.new( 0.5, 0.5, -218.5, 218.5, 0.5, 0.5, 15.5, 52.5 )
-	self_revive_progress_text:setText( Engine[0xF9F1239CFD921FE]( 0x923A71AA4A500E1 ) )
+	self_revive_progress_text:setText( Engine[0xF9F1239CFD921FE]( "zombie/self_revive_interact" ) )
 	self_revive_progress_text:setTTF( "ttmussels_regular" )
 	self_revive_progress_text:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	self_revive_progress_text:setAlignment( Enum.LUIAlignment[0x70510683C22104B] )

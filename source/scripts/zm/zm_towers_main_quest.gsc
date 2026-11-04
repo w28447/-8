@@ -5139,14 +5139,14 @@ function private function_faee09d2()
 // Params 1, eflags: 0x4
 // Checksum 0x392a1214, Offset: 0x16050
 // Size: 0x60c
-function private defend_spawn( var_4bf95f4c )
+function private defend_spawn( s_spawn_info )
 {
-    if ( level.players.size < var_4bf95f4c.minplayers )
+    if ( level.players.size < s_spawn_info.minplayers )
     {
         return;
     }
     
-    foreach ( n_lane in var_4bf95f4c.lanes )
+    foreach ( n_lane in s_spawn_info.lanes )
     {
         switch ( n_lane )
         {
@@ -5163,7 +5163,7 @@ function private defend_spawn( var_4bf95f4c )
                 return;
         }
         
-        for ( i = 0; i < var_4bf95f4c.quantity ; i++ )
+        for ( i = 0; i < s_spawn_info.quantity ; i++ )
         {
             while ( level.ai[ #"axis" ].size >= 24 )
             {
@@ -5173,7 +5173,7 @@ function private defend_spawn( var_4bf95f4c )
             
             s_random_spawn = array::random( var_97f729b );
             
-            switch ( var_4bf95f4c.archetype )
+            switch ( s_spawn_info.archetype )
             {
                 case #"normal":
                     for ( ai = undefined; !isdefined( ai ) ; ai = zombie_utility::spawn_zombie( level.zombie_spawners[ 0 ], "defend_trilane_fill", s_random_spawn, function_92d8f779() ) )
@@ -5729,7 +5729,7 @@ function boss_fight()
     e_elephant.takedamage = 1;
     e_elephant notify( #"entrace_done" );
     level thread function_4d682898();
-    level thread function_92e1954c();
+    level thread weakpoint_damage_watcher();
     level thread function_1a05e10c( #"boss_ranged_attack_2_start", #"m_quest", #"missile_warn" );
     level thread function_1a05e10c( #"boss_ranged_attack_2_launched", #"m_quest", #"missile_track" );
     level thread function_1a05e10c( #"towers_boss_charge", #"m_quest", #"charge_warn" );
@@ -6452,7 +6452,7 @@ function function_1a05e10c( str_notify, var_f13787ad, var_ca8a3a53 )
 // Params 0
 // Checksum 0x886c1032, Offset: 0x1aa38
 // Size: 0x72
-function function_92e1954c()
+function weakpoint_damage_watcher()
 {
     level endon( #"end_game", #"boss_battle_done" );
     

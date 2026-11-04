@@ -173,11 +173,11 @@ function electric_switch()
                     
                     if ( function_8b1a219a() )
                     {
-                        self sethintstring( #"hash_10cc78ab5ba5a7f2" );
+                        self sethintstring( #"zm_zodt8/artifact_mind_keyboard" );
                     }
                     else
                     {
-                        self sethintstring( #"hash_60e4802baafefe56" );
+                        self sethintstring( #"zm_zodt8/artifact_mind" );
                     }
                     
                     break;

@@ -2724,13 +2724,13 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 		f134_local30 = true
 	elseif f134_arg1 == "tiers_5" then
 		f134_local0 = "mpui/tiers"
-		f134_local1 = Engine[0xF9F1239CFD921FE]( 0x1705D753E6F1661, 5 )
+		f134_local1 = Engine[0xF9F1239CFD921FE]( "mpui/x_tiers_desc", 5 )
 		f134_local6 = "ui_icon_blackmarket_reserves_tier_x5_large_square"
 		f134_local4 = "ui_icon_blackmarket_reserves_tier_x5_preview"
 		f134_local30 = true
 	elseif f134_arg1 == "tiers_10" then
 		f134_local0 = "mpui/tiers"
-		f134_local1 = Engine[0xF9F1239CFD921FE]( 0x1705D753E6F1661, 10 )
+		f134_local1 = Engine[0xF9F1239CFD921FE]( "mpui/x_tiers_desc", 10 )
 		f134_local6 = "ui_icon_blackmarket_x10tiers_large"
 		f134_local4 = "ui_icon_blackmarket_x10tiers_large"
 		f134_local30 = true
@@ -2902,8 +2902,8 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 		f134_local29 = LuaEnum.LOOT_CAMERA_TYPE.CHARACTER
 	elseif f134_arg2 == "palette" or f134_arg2 == "outfit" then
 		f134_arg2 = "palette"
-		f134_local7 = 0x402A241E7027A9C
-		f134_local8 = 0xC71CAD2D5CA1139
+		f134_local7 = "mpui/bm_specialist_outfit"
+		f134_local8 = "mpui/shop_specialist_outfit"
 		local f134_local34 = CoD.BlackMarketUtility.GetOufitPresetRef( f134_arg0, f134_arg1, f134_arg5, f134_arg6 )
 		if f134_local34 then
 			f134_local0 = f134_local34.name
@@ -3028,7 +3028,7 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 				local f134_local36 = Engine[0xF9F1239CFD921FE]( f134_local35.displayNameRef )
 				f134_local14 = f134_local35.weaponInfo
 				if f134_local14.displayNameRef then
-					f134_local1 = Engine[0xF9F1239CFD921FE]( 0x869AF228464E2CC, f134_local14.displayNameRef )
+					f134_local1 = Engine[0xF9F1239CFD921FE]( "mpui/single_weapon_charm_desc", f134_local14.displayNameRef )
 					local f134_local37 = CoD.CACUtility.GetItemGroupDisplayNameFromRef( Engine.GetItemGroup( Engine[0x8FF94BB44442412]( f134_local14.ref, Enum.eModes.mode_multiplayer ), Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes.mode_multiplayer ) )
 					if f134_local37 then
 						f134_local2 = Engine[0xF9F1239CFD921FE]( f134_local37 )
@@ -3070,7 +3070,7 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 		if not CoD.BlackMarketUtility.GetCallingCardTitleFromImage( f134_arg1 ) then
 			f134_local0 = CoD.BlackMarketUtility.GetCallingCardTitleFromMasterImage( f134_arg1 )
 		end
-		f134_local1 = Engine[0xF9F1239CFD921FE]( 0xF54BEF14A6A8825 )
+		f134_local1 = Engine[0xF9F1239CFD921FE]( "menu/calling_card_set_desc" )
 		f134_arg1 = CoD.BlackMarketUtility.GetSafeReward( f134_arg1, f134_arg2 )
 		f134_local4 = f134_arg1
 		f134_local6 = f134_arg1
@@ -7448,7 +7448,7 @@ end
 
 CoD.BlackMarketUtility.GetHalloweenBannerText = function ( f347_arg0 )
 	if Engine[0xC53F8D38DF9042B]( Dvar[0xA7588CE8BBBC25D]:get() ) == "loot_contract_halloween" then
-		return 0xB81B691A5FAA21D
+		return "mpui/halloween_event"
 	else
 		return ""
 	end
@@ -7480,7 +7480,7 @@ CoD.BlackMarketUtility.GetSeasonTimerString = function ( f349_arg0, f349_arg1 )
 	elseif CoDShared.Loot.GetSeasonInfoParam( "loot_season_8", CoDShared.Loot.SEASON_INFO_NUMBER ) <= CoDShared.Loot.GetSeasonInfoParam( CoDShared.Loot.GetCurrentSeason(), CoDShared.Loot.SEASON_INFO_NUMBER ) then
 		return ""
 	elseif CoD.BlackMarketUtility.GetCurrentSeasonTier( f349_arg0 ) >= CoD.BlackMarketUtility.GetCurrentSeasonMaxTiers() then
-		return Engine[0xF9F1239CFD921FE]( 0x8ED6F54FD6EE676, f349_arg1 )
+		return Engine[0xF9F1239CFD921FE]( "mpui/next_season", f349_arg1 )
 	else
 		return Engine[0xF9F1239CFD921FE]( 0xC0CE2452CF87DB1, f349_arg1 )
 	end
@@ -7499,7 +7499,7 @@ CoD.BlackMarketUtility.GetSpecialDealConfirmationTitle = function ( f351_arg0 )
 	if f351_local0 and f351_local0 > 0 then
 		return 0x4789CA9E60FD91D
 	else
-		return 0x8CCB8B7EF76929B
+		return "menu/purchase_tiers_title"
 	end
 end
 
@@ -9343,7 +9343,7 @@ CoD.BlackMarketUtility.ReservesSpecialContractAppendCompletion = function ( f440
 	if f440_arg0.complete and f440_arg0.complete:get() then
 		return Engine[0xF9F1239CFD921FE]( "menu/special_contract_complete", f440_arg1 )
 	else
-		return Engine[0xF9F1239CFD921FE]( 0x47E99E2B20180F0, f440_arg1 )
+		return Engine[0xF9F1239CFD921FE]( "menu/special_contract_active", f440_arg1 )
 	end
 end
 

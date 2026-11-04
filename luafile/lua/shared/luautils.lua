@@ -1546,8 +1546,8 @@ f0_local0.ArenaModeAvailable = function ()
 end
 
 f0_local0.MatchmakingTest = function ()
-	if Dvar[0x4984E142BD2D354]:exists() and Dvar[0x4984E142BD2D354]:get() > 0 then
-		return Dvar[0x4984E142BD2D354]:get()
+	if Dvar.lobby_matchmakingtest:exists() and Dvar.lobby_matchmakingtest:get() > 0 then
+		return Dvar.lobby_matchmakingtest:get()
 	else
 		return 0
 	end

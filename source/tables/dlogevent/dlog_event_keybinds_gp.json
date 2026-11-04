@@ -116,7 +116,7 @@
         },
         {
             "name": "#togglebreath",
-            "scrName": "#hash_1c4528fe",
+            "scrName": "#togglebreath",
             "type": "STRING",
             "len": 24
         },
@@ -331,7 +331,7 @@
         },
         {
             "name": "#lowerstance",
-            "scrName": "#hash_e2cd998a",
+            "scrName": "#lowerstance",
             "type": "STRING",
             "len": 24
         },

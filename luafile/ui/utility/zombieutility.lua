@@ -14,10 +14,10 @@ CoD.ZombieUtility.MapToTrialsCSVPrefix = {
 CoD.ZombieUtility.MAX_CLIENTS_ZM = 4
 CoD.ZombieUtility.Rush = {
 	PositionStrings = {
-		0x2A73371AB809D14,
-		0x2A73671AB80A22D,
-		0x2A73571AB80A07A,
-		0x2A73071AB8097FB
+		"zmui/str_position_1",
+		"zmui/str_position_2",
+		"zmui/str_position_3",
+		"zmui/str_position_4"
 	}
 }
 CoD.ZombieUtility.SpecialZombiesImages = {

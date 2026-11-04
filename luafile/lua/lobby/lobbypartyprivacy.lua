@@ -155,7 +155,7 @@ Lobby.PartyPrivacy.OnGametypeSettingsChange = function ( f7_arg0 )
 end
 
 Lobby.PartyPrivacy.Pump = function ()
-	if Dvar[0xE52CB4B7B32961A]:get() == false or Dvar[0xFF3E7BFBD5CE85C]:get() == false then
+	if Dvar[0xE52CB4B7B32961A]:get() == false or Dvar.partyprivacypumpenabled:get() == false then
 		return 
 	elseif Lobby.PartyPrivacy.checkTime > Engine[0x9D33D652B9B0F3B]() then
 		return 

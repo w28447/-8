@@ -1,5 +1,5 @@
 #using script_24c32478acf44108;
-#using script_6951ea86fdae9ae0;
+#using scripts/zm_common/trials/zm_trial_attack_during_movement.gsc;
 #using scripts\core_common\ai\zombie_death;
 #using scripts\core_common\ai\zombie_utility;
 #using scripts\core_common\ai_shared;
@@ -1034,7 +1034,7 @@ function private function_1b33fb6d( var_155e1cdd )
         
         while ( zm_utility::is_player_valid( self ) && self attackbuttonpressed() && !self fragbuttonpressed() && !self adsbuttonpressed() && !self zm_utility::is_drinking() && !( isdefined( self.var_4154aa8f ) && self.var_4154aa8f ) )
         {
-            if ( self isweaponlocked( var_155e1cdd ) || namespace_fcd611c3::is_active() && !self namespace_fcd611c3::function_26f124d8() )
+            if ( self isweaponlocked( var_155e1cdd ) || zm_trial_attack_during_movement::is_active() && !self zm_trial_attack_during_movement::function_26f124d8() )
             {
                 break;
             }

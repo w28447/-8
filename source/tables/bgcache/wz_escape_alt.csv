@@ -7165,7 +7165,7 @@ string,#zmweapon/homunculus
 string,#weapon/flare_gun_veh_wz
 string,#hash_1bf992decba13b2b
 string,#hash_1c067a1967345eb9
-string,#hash_1c07c87a45375aaf
+string,#menu/camo_loot_party_rock
 string,#mpui/camo_integer
 string,#zmui/mms_desc
 string,#mpui/steadyaim2
@@ -7221,7 +7221,7 @@ string,#hash_2aa6fa1848766679
 string,#weapon/smg_fastfire_operator
 string,#weapon/ar_doublebarrel_t8
 string,#hash_2b0e1f9a3a18912b
-string,#hash_2b0fae1c09a3d8a9
+string,#menu/camo_loot_zombie_flick
 string,#hash_2b2096d421c8cd24
 string,#hash_2b27d20d2cfc1069
 string,#hash_2b3d791eb05ec296
@@ -7419,7 +7419,7 @@ string,#mpui/mixclip
 string,#mpui/mms_desc
 string,#weapon/lmg_heavy_t8
 string,#weapon/tomahawk_t8
-string,#hash_5dc620aa9640e528
+string,#menu/camo_loot_apb
 string,#hash_5e2c81adb5a5264a
 string,#hash_5e6231434add15a2
 string,#hash_5e6ae4119dda43e0

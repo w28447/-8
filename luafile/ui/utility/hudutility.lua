@@ -1887,7 +1887,7 @@ CoD.HUDUtility.InitLoadingMovie = function ( f130_arg0 )
 		return 
 	end
 	local f130_local0 = Engine.GetCurrentMap()
-	if LUI.DEV and not Dvar[0x4C70893D7EA01B]:get() and not IsSimulateCT() then
+	if LUI.DEV and not Dvar.ui_playlogomovie:get() and not IsSimulateCT() then
 		return 
 	elseif CoD.isZombie then
 		if Engine[0xA55C3ACD0D2BCF0]() or Engine.IsSplitscreen() or CoD.HUDUtility.IsGameTypeEqualToString( "ztutorial" ) then

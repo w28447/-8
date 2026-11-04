@@ -261,7 +261,7 @@ CoD.MPSpecialistHUBBindWheelInternal.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	PCtip = LUI.UIText.new( 0.5, 0.5, -350, 350, 0.5, 0.5, 399.5, 424.5 )
 	PCtip:setRGB( 0.96, 0.93, 0.84 )
 	PCtip:setAlpha( 0.7 )
-	PCtip:setText( Engine[0xF9F1239CFD921FE]( 0x8EECF8BBD6C55F9 ) )
+	PCtip:setText( Engine[0xF9F1239CFD921FE]( "menu/tag_tip_pc" ) )
 	PCtip:setTTF( "dinnext_regular" )
 	PCtip:setLetterSpacing( 2 )
 	PCtip:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

@@ -252,7 +252,7 @@ xanim,#hash_3c40821244d645b
 xanim,#pt_smart_cover_stand_raise
 xanim,#mm_bow_fem_prone_fire_cancel
 xanim,#hash_3d345779edc052a
-xanim,#hash_3d52f6faf02fd23
+xanim,#p8_fxanim_gp_vehicle_lb_heist_rope_retrieve_anim
 xanim,d#hash_3e0cb3eea3664c5
 xanim,#ai_robot_base_stn_exposed_reload_01
 xanim,#ai_robot_base_wallrun_jump_left_wall_out
@@ -36509,7 +36509,7 @@ fx,#killstreaks/fx_heli_exp_debri_trail
 fx,#hash_31fc87becac93d13
 fx,#hash_3259aa4abd8d4b2a
 fx,#weapon/fx8_hero_sig_lightning_death_dog
-fx,#hash_3283b765fe480df7
+fx,#ui/fx8_infil_marker_enmy_window
 fx,d#impacts/fx8_bul_impact_dirt_base_sm
 fx,#hash_32e4b681d6be4af7
 fx,d#impacts/fx8_bul_impact_dirt_base_lg
@@ -36727,7 +36727,7 @@ fx,#killstreaks/fx8_tankrobot_previs_valid_os
 fx,#weapon/fx8_equip_ied_impact
 fx,#light/fx_light_robot_set_base
 fx,#weapon/fx8_hero_sig_disrupt_seeker
-fx,#hash_5565c3fc2c7742fe
+fx,#ui/fx8_infil_marker_frnd_window
 fx,d#impacts/fx8_bul_impact_wz_concrete_base
 fx,d#impacts/fx8_knife_impact_bone
 fx,d#hash_55ab7d020e98fb0a
@@ -36765,7 +36765,7 @@ fx,#blood/fx_blood_drip_splash_decal_xsm
 fx,#hash_5b4ab63f54134f74
 fx,d#impacts/fx8_bul_impact_wz_dirt_base
 fx,#player/fx8_plyr_infect_change_flash_3p
-fx,#hash_5c2ae9f4f331d4b9
+fx,#ui/fx8_infil_marker_frnd
 fx,d#hash_5c73f4f5f3d2ac5e
 fx,d#hash_5c73fef5f3d2bd5c
 fx,#hash_5cb0c90513c2b71b
@@ -36945,7 +36945,7 @@ fx,#hash_7ca9096d01c56b48
 fx,#weapon/fx8_hero_sig_disrupt_sentry
 fx,#smoke/fx_trail_smk_robot_dyn_piece_sm
 fx,#killstreaks/fx8_mortar_jet_contrails
-fx,#hash_7d1b0f001ea88b82
+fx,#ui/fx8_infil_marker_enmy
 fx,#weapon/fx8_hero_sig_disrupt_hawk_wing
 fx,#hash_7e0e60be509de2c5
 fx,#ui/fx_koth_marker_blue_window
@@ -37121,7 +37121,7 @@ xanim,#ai_base_rifle_stn_exposed_rapsdeath_shrapnel_r
 xanim,#hash_48ece7e2dc297f80
 xanim,#pt_drone_hawk_pda_prone_idle
 xanim,#vm_virtual_tablet_idle
-xanim,#hash_4b6a7686ae8c1f16
+xanim,#p8_fxanim_gp_vehicle_hellstorm_missile_anim
 xanim,#pt_drone_hawk_pda_prone_idle_rh
 xanim,#vm_shocked_success_brawler
 xanim,#hash_4da6bc8f0e864d3f
@@ -39356,7 +39356,7 @@ scriptbundle,#weapondeathfx_blackhole
 scriptbundle,#weapondeathfx_money
 scriptbundle,#weapondeathfx_confetti
 xmodel,#veh_t8_mil_atv_recon
-fx,#hash_695b2e7e4b63a645
+fx,#weapon/fx8_equip_spwnbcn_exp
 aitype,#spawner_mp_swat_gunner_team1_male
 aitype,#spawner_mp_swat_gunner_team2_male
 aitype,#spawner_mp_swat_gunner_team2_female

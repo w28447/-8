@@ -352,17 +352,17 @@ function updatetextongamepadchange()
     }
     
     waittillframeend();
-    var_8671d17 = self is_player_gamepad_enabled();
+    lastgamepad = self is_player_gamepad_enabled();
     
     while ( true )
     {
-        var_4084aa7 = self is_player_gamepad_enabled();
+        nowgamepad = self is_player_gamepad_enabled();
         
-        if ( var_4084aa7 != var_8671d17 )
+        if ( nowgamepad != lastgamepad )
         {
-            var_8671d17 = var_4084aa7;
+            lastgamepad = nowgamepad;
             
-            if ( var_4084aa7 )
+            if ( nowgamepad )
             {
                 if ( !( isdefined( self.slopelocked ) && self.slopelocked ) )
                 {

@@ -151,7 +151,7 @@ string,#hash_98ed6fcdd53296f
 string,#warzone/button_finish
 string,#mp/host_ended_game
 string,#coop/revive_emergency_reserve_once
-string,#hash_ddc319addc8bcb2
+string,#mp/game_over_caps
 string,#mp/host_sucks
 string,#mp/defeat_caps
 string,#killstreak/emp_inbound

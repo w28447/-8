@@ -14,7 +14,7 @@ localizeentry,#hash_c1e3de7a22311
 localizeentry,#hash_f39885a31acb7
 localizeentry,#hash_f3a885a31ae6a
 localizeentry,#hash_f3b885a31b01d
-localizeentry,#hash_1406bde2951a81
+localizeentry,#zm_mansion/silver_bullets_craft
 localizeentry,#hash_164e4116cfce5c
 localizeentry,d#hash_17ca4cd9bf4005
 localizeentry,#hash_2333c767cdd329
@@ -24,7 +24,7 @@ localizeentry,#hash_29b11be0c4377e
 localizeentry,#hash_29b41be0c43c97
 localizeentry,#hash_3c6ac62c2e19df
 localizeentry,#hash_423834141b0403
-localizeentry,#hash_5093f1267cfa81
+localizeentry,#zm_mansion/silver_bullets_buy_keyboard
 localizeentry,#hash_53ece912992874
 localizeentry,#hash_53ede912992a27
 localizeentry,#hash_53eee912992bda
@@ -234,7 +234,7 @@ localizeentry,d#mpui/camo_active_take_it_personally
 localizeentry,#hash_4410eff87828239
 localizeentry,#hash_45c6d6568492c64
 localizeentry,#hash_45ef1c215df9e06
-localizeentry,#hash_4731c9534a6055b
+localizeentry,#zm_mansion/silver_bullets_have
 localizeentry,d#mpui/camo_flectarn
 localizeentry,#hash_48d314060058fea
 localizeentry,#hash_4908c00503e8c77
@@ -495,7 +495,7 @@ localizeentry,d#hash_9b9be1e62972305
 localizeentry,#hash_9bf83d562d537d0
 localizeentry,#hash_9bf84d562d53983
 localizeentry,#hash_9bf86d562d53ce9
-localizeentry,#hash_9c2f7742abf6acb
+localizeentry,#zm_mansion/silver_bullets_buy
 localizeentry,#hash_9c3e2ee4bc0664f
 localizeentry,#hash_9cdd9d5f15843b4
 localizeentry,#hash_9cddad5f1584567
@@ -760,7 +760,7 @@ localizeentry,#hash_fb4c662120404c8
 localizeentry,#hash_fb4c7621204067b
 localizeentry,#hash_fb4c962120409e1
 localizeentry,#hash_fb889a30d89fa68
-localizeentry,d#hash_fbcfc36f0c79d9a
+localizeentry,d#mpui/tank_commands
 localizeentry,#hash_fbf4cb5e1420e7f
 localizeentry,#hash_fc698faab2e9a15
 localizeentry,#hash_fcada6e42313c08
@@ -1347,7 +1347,7 @@ localizeentry,#hash_1be9aa371f0cb890
 localizeentry,#hash_1beb3006e9a9fba0
 localizeentry,#hash_1bf805d49b9b3a01
 localizeentry,d#menu/triple_kill
-localizeentry,d#hash_1c07c87a45375aaf
+localizeentry,d#menu/camo_loot_party_rock
 localizeentry,#hash_1c085e4db0b218f9
 localizeentry,#hash_1c1210bb96299b2c
 localizeentry,#hash_1c1211bb96299cdf
@@ -1981,7 +1981,7 @@ localizeentry,#hash_2aaf16c14ba25bd4
 localizeentry,#hash_2ab02cb4e7fa45ad
 localizeentry,#hash_2af2c955b227a438
 localizeentry,#hash_2afd4bbb6fe571fb
-localizeentry,d#hash_2b0fae1c09a3d8a9
+localizeentry,d#menu/camo_loot_zombie_flick
 localizeentry,#hash_2b19c9a3e37c977c
 localizeentry,#hash_2b2357a02d83b291
 localizeentry,d#hash_2b27d20d2cfc1069
@@ -4003,7 +4003,7 @@ localizeentry,#hash_55655c7fc267eaeb
 localizeentry,d#zmui/extrapellets_desc
 localizeentry,d#hash_556fbdaebf02d158
 localizeentry,#hash_557f5d54e4986f9e
-localizeentry,#hash_558dab41980bd79b
+localizeentry,#zm_mansion/silver_bullets_free
 localizeentry,#hash_558e2960d59a1f08
 localizeentry,#hash_558e2b60d59a226e
 localizeentry,#hash_558e2c60d59a2421
@@ -4447,7 +4447,7 @@ localizeentry,#hash_5db59d42b6f19c51
 localizeentry,#hash_5db59e42b6f19e04
 localizeentry,#hash_5db59f42b6f19fb7
 localizeentry,#hash_5db5a042b6f1a16a
-localizeentry,d#hash_5dc620aa9640e528
+localizeentry,d#menu/camo_loot_apb
 localizeentry,#hash_5dce889374f15d14
 localizeentry,d#hash_5de28a4d70b730e1
 localizeentry,#hash_5de2aa8056027fee
@@ -4586,7 +4586,7 @@ localizeentry,#hash_60de8324fe42f812
 localizeentry,#hash_60deee0f7ce19fa4
 localizeentry,#hash_60deef0f7ce1a157
 localizeentry,#hash_60def10f7ce1a4bd
-localizeentry,d#hash_60e4802baafefe56
+localizeentry,d#zm_zodt8/artifact_mind
 localizeentry,#hash_60f7952659026bea
 localizeentry,#hash_610dea1f84f24958
 localizeentry,#hash_610fd2c6cb1ac51f
@@ -5856,7 +5856,7 @@ localizeentry,#hash_7bb72ed0ca39ef50
 localizeentry,#hash_7bb730d0ca39f2b6
 localizeentry,#hash_7bb731d0ca39f469
 localizeentry,d#feature/gun_emblem
-localizeentry,#hash_7bc5748f7802e011
+localizeentry,#zm_mansion/silver_bullets_free_keyboard
 localizeentry,#hash_7bcccc4f3de9874b
 localizeentry,#hash_7bcccd4f3de988fe
 localizeentry,#hash_7bccce4f3de98ab1

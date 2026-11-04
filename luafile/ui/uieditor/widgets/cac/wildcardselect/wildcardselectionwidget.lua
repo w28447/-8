@@ -66,7 +66,7 @@ CoD.WildcardSelectionWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local Perk2 = LUI.UIText.new( 0, 0, 1296, 1612, 0, 0, 349, 367 )
 	Perk2:setRGB( 0.39, 0.39, 0.39 )
-	Perk2:setText( LocalizeToUpperString( 0xCBF3641AB9DBF81 ) )
+	Perk2:setText( LocalizeToUpperString( "mpui/perk_greed" ) )
 	Perk2:setTTF( "ttmussels_regular" )
 	Perk2:setLetterSpacing( 4 )
 	Perk2:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

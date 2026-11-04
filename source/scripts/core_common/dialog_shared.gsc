@@ -1901,7 +1901,7 @@ function game_end_vox( winner, tie )
                     player thread test_player_dialog( 0 );
                     player thread test_commander_dialog( spacing );
                     break;
-                case #"hash_3af5f0a904b3f8fa":
+                case #"other-commander":
                     player thread test_other_dialog( 0 );
                     player thread test_commander_dialog( spacing );
                     break;

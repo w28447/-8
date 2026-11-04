@@ -109,7 +109,7 @@
     "instakillweakpointdamagescale": 1,
     "damagescale": 0.1,
     "category": "#boss",
-    "hash_854eebd": 0.5,
+    "numplayerhealthscale": 0.5,
     "stunduration": 0,
     "animationspeed": 1
 }

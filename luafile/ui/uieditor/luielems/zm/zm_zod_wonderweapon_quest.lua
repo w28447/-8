@@ -28,7 +28,7 @@ LUI.createMenu.zm_zod_wonderweapon_quest = function ( f1_arg0, f1_arg1 )
 	
 	local CarryingPurity = LUI.UIText.new( 0, 0, 1349, 1657, 0, 0, 796.5, 833.5 )
 	CarryingPurity:setRGB( 0, 0.52, 0.82 )
-	CarryingPurity:setText( Engine[0xF9F1239CFD921FE]( 0xF028C52DDB2044D ) )
+	CarryingPurity:setText( Engine[0xF9F1239CFD921FE]( "zm_zodt8/concentrated_purity" ) )
 	CarryingPurity:setTTF( "default" )
 	CarryingPurity:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	CarryingPurity:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

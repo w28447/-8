@@ -38,7 +38,7 @@
                     "clientfield": "#hash_17f88a64d698025"
                 }
             ],
-            "hash_b048489f": 1
+            "list_components": 1
         },
         {
             "components": [
@@ -78,7 +78,7 @@
                     "clientfield": "#hash_4bd139d5a6e3ca6f"
                 }
             ],
-            "hash_b048489f": 1
+            "list_components": 1
         },
         {
             "components": [
@@ -118,7 +118,7 @@
                     "clientfield": "#hash_6afbd5b12dbdae9d"
                 }
             ],
-            "hash_b048489f": 1
+            "list_components": 1
         },
         {
             "components": [
@@ -158,7 +158,7 @@
                     "clientfield": "#hash_3814a46a4c2f1235"
                 }
             ],
-            "hash_b048489f": 1
+            "list_components": 1
         }
     ],
     "shieldpieces": [

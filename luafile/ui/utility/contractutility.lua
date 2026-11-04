@@ -127,7 +127,7 @@ CoD.ContractUtility.GetContractListModels = function ( f11_arg0, f11_arg1 )
 	if f11_local0.type == "outfit" then
 		f11_local15 = Engine[0xF9F1239CFD921FE]( "menu/title_theme", f11_local5 )
 		local f11_local19 = Engine[0xF9F1239CFD921FE]
-		local f11_local20 = 0xEE92514250F3100
+		local f11_local20 = "menu/contract_contents_desc"
 		local f11_local21 = f11_local3
 		local f11_local22 = Engine[0xF9F1239CFD921FE]
 		local f11_local23 = "menu/title_outfit"
@@ -145,7 +145,7 @@ CoD.ContractUtility.GetContractListModels = function ( f11_arg0, f11_arg1 )
 		f11_local7 = LuaEnum.LOOT_CAMERA_TYPE.CHARACTER
 	elseif f11_local0.type == "signature_weapon" then
 		local f11_local19 = Engine[0xF9F1239CFD921FE]
-		local f11_local20 = 0xEE92514250F3100
+		local f11_local20 = "menu/contract_contents_desc"
 		local f11_local21 = f11_local3
 		local f11_local22 = Engine[0xF9F1239CFD921FE]
 		local f11_local23 = "menu/x_weapon"
@@ -181,7 +181,7 @@ CoD.ContractUtility.GetContractListModels = function ( f11_arg0, f11_arg1 )
 			f11_local12 = f11_local14.ref
 		end
 		local f11_local24 = Engine[0xF9F1239CFD921FE]
-		local f11_local25 = 0xEE92514250F3100
+		local f11_local25 = "menu/contract_contents_desc"
 		local f11_local26 = f11_local3
 		local f11_local27 = Engine[0xF9F1239CFD921FE]
 		local f11_local28 = 0xEB9F7EA3A0EC1C1
@@ -208,7 +208,7 @@ CoD.ContractUtility.GetContractListModels = function ( f11_arg0, f11_arg1 )
 		end
 		f11_local15 = f11_local31 or Engine[0xF9F1239CFD921FE]( "mpui/bm_signature_weapon" )
 		local f11_local21 = Engine[0xF9F1239CFD921FE]
-		local f11_local22 = 0xEE92514250F3100
+		local f11_local22 = "menu/contract_contents_desc"
 		local f11_local23 = f11_local3
 		local f11_local24 = Engine[0xF9F1239CFD921FE]
 		local f11_local25 = 0xC130AF0934E5C11

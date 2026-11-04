@@ -2566,7 +2566,7 @@ function function_816f228f( e_who )
         case #"self_revives":
             foreach ( e_player in getplayers() )
             {
-                e_player zm_laststand::function_3a00302e();
+                e_player zm_laststand::increment_self_revive_count();
             }
             
             a_e_players = getplayers();

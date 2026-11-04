@@ -183,7 +183,7 @@ localizeentry,d#outfits/seraph_warrior
 localizeentry,d#heroes/enforcer_weapon_tips
 localizeentry,#hash_90a6f20b1d56111
 localizeentry,d#hash_9113879dca04c51
-localizeentry,#hash_918999ddf357263
+localizeentry,#warzone/swap_item
 localizeentry,d#menu/camo_loot_roadhouse
 localizeentry,d#hash_96084a4d9a6c554
 localizeentry,d#menu/camo_loot_trifecta
@@ -274,7 +274,7 @@ localizeentry,d#menu/camo_loot_circuitboard
 localizeentry,#hash_f306d1ac3bc9c73
 localizeentry,d#weapon/ar_accurate_t8
 localizeentry,#hash_f8bea24436ad636
-localizeentry,#hash_fbcfc36f0c79d9a
+localizeentry,#mpui/tank_commands
 localizeentry,#demo/director_mode
 localizeentry,#weapon/alarm_set
 localizeentry,d#heroes/buffassault
@@ -306,7 +306,7 @@ localizeentry,d#hash_10e74d3d7df0190c
 localizeentry,#mp/hold
 localizeentry,d#heroes/battery_weapon_tips
 localizeentry,#menu/waypoint_bomb
-localizeentry,#hash_1110b2d72e1f5652
+localizeentry,#mpui/shutdown_warning
 localizeentry,d#hash_111cf7b88d647093
 localizeentry,d#menu/mute_player
 localizeentry,d#hash_1130f26deefb81c4
@@ -517,7 +517,7 @@ localizeentry,#hash_1a2eee6d4bbfd6fd
 localizeentry,#menu/double_xp
 localizeentry,#hash_1a5485d603b5e1ee
 localizeentry,#menu/waypoint_away
-localizeentry,#hash_1a9ae1e6bc1cfedc
+localizeentry,#mpui/x_meters
 localizeentry,d#hash_1ae747bbe788bba3
 localizeentry,#hash_1aed0f38cbd8815a
 localizeentry,d#hash_1afeeaf3825c2324
@@ -541,7 +541,7 @@ localizeentry,#hash_1bf992decba13b2b
 localizeentry,d#menu/slayer_desc
 localizeentry,d#menu/triple_kill
 localizeentry,#hash_1c067a1967345eb9
-localizeentry,d#hash_1c07c87a45375aaf
+localizeentry,d#menu/camo_loot_party_rock
 localizeentry,d#hash_1c205aeb02d4f29e
 localizeentry,d#hash_1c61d4073c05a0a7
 localizeentry,#hash_1c6bb00d1953309e
@@ -804,7 +804,7 @@ localizeentry,d#hash_27ec863426c7f9ef
 localizeentry,d#wz/yuri
 localizeentry,d#hash_2824d005ed55cb12
 localizeentry,d#weapon/smg_accurate_t8_wz_desc
-localizeentry,#hash_284bab3e953057c5
+localizeentry,#menu/death_effects_money
 localizeentry,#hash_285431c36f266d33
 localizeentry,d#hash_2855e8fe94593c64
 localizeentry,d#hash_286ab9cd8a2e395c
@@ -861,7 +861,7 @@ localizeentry,d#weapon/ar_doublebarrel_t8
 localizeentry,d#hash_2af17aa72622530e
 localizeentry,#mpui/resistance_blind
 localizeentry,#hash_2b0e1f9a3a18912b
-localizeentry,d#hash_2b0fae1c09a3d8a9
+localizeentry,d#menu/camo_loot_zombie_flick
 localizeentry,d#hash_2b13337a845adb3b
 localizeentry,#hash_2b13aa9e715385af
 localizeentry,#menu/charm_skeleton_key
@@ -1118,7 +1118,7 @@ localizeentry,d#hash_3711e06035d8ba03
 localizeentry,d#hash_371486bc7b68667e
 localizeentry,d#hash_37167f604c666180
 localizeentry,d#hash_37235825812d46c6
-localizeentry,#hash_373b7a84e7ac2c2e
+localizeentry,#menu/death_effects_water
 localizeentry,d#hash_37502c0724396be2
 localizeentry,d#hash_376efe19fa8506dd
 localizeentry,#hash_37738499f67cb3ee
@@ -1674,7 +1674,7 @@ localizeentry,#menu/restricted_item
 localizeentry,d#hash_5329cec2eabe8884
 localizeentry,d#hash_533780d4270ca05d
 localizeentry,d#menu/confirm_caps
-localizeentry,#hash_534ad229607585b5
+localizeentry,#mpui/insertion_heli
 localizeentry,d#hash_534cb4bb5b735479
 localizeentry,#menu/charm_sniper_bullet
 localizeentry,d#cgame/killedby
@@ -1812,7 +1812,7 @@ localizeentry,d#hash_59b8455b75ca4f45
 localizeentry,#hash_59b8e8c585b73022
 localizeentry,d#weapon/smg_standard_t8
 localizeentry,d#weapon/freezegun_desc
-localizeentry,#hash_59fa842fea782ea2
+localizeentry,#menu/death_effects_ice
 localizeentry,d#mpui/grip2
 localizeentry,d#hash_5a0b7ffc250986ec
 localizeentry,d#wz/menendez_caps
@@ -1898,7 +1898,7 @@ localizeentry,#wz/transfer_primary
 localizeentry,#aar/echelon
 localizeentry,d#menu/hud_vehicle_steer
 localizeentry,d#weapon/tomahawk_t8
-localizeentry,d#hash_5dc620aa9640e528
+localizeentry,d#menu/camo_loot_apb
 localizeentry,d#hash_5dc6232f3cc85813
 localizeentry,#warzone/split
 localizeentry,#hash_5dd4de4914a2964b
@@ -2256,7 +2256,7 @@ localizeentry,d#mpui/stabilizer
 localizeentry,#hash_70203737a19f4e10
 localizeentry,d#hash_702ef2100139bf3f
 localizeentry,#hash_704d67800320a204
-localizeentry,#hash_706eea0f1a033965
+localizeentry,#menu/waypoint_deposit
 localizeentry,d#hash_707cd11f30f7d0d9
 localizeentry,d#mpui/reticle_default
 localizeentry,d#hash_7089cf18edf6c952

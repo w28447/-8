@@ -750,7 +750,7 @@ xanim,#ai_zombie_smash_react_getup_b
 xanim,#ai_zombie_smash_react_getup_c
 xanim,#ai_t8_zm_zombie_boardtear_aligned_m_2_grab
 xanim,#ai_zombie_base_crawl_jump_across_128
-xanim,#hash_3475f0b9b2ad7422
+xanim,#pb_zm_mansn_wm_fem_intro
 xanim,#hash_34869a83ed7c00c6
 xanim,#ai_zombie_base_walk_ad_v21_pain_chest_f_alt
 xanim,#ai_t8_zm_zod_catalyst_water_idle_01
@@ -1253,7 +1253,7 @@ xanim,#ai_zombie_base_run_ad_v11_pain_chest_f
 xanim,#hash_5491bf907f8516ac
 xanim,d#hash_549c400dc54bb270
 xanim,#vm_t8_mini_crossbow_gunbutt_swipe
-xanim,#hash_54f8a53a5930ed55
+xanim,#pb_zm_mansn_wm_intro
 xanim,#ai_t8_zm_mnsn_crmsn_nfrtu_dash_med_f_01
 xanim,#ai_t8_zombie_base_sprint_au_win_trav_r_v1
 xanim,#hash_5553ed369c64c024
@@ -54704,8 +54704,8 @@ fx,d#zm_ai/fx8_dog_lightning_spawn
 fx,d#zm_ai/fx8_dog_eye_glow
 fx,#zm_ai/fx8_blightfather_chaos_missle
 fx,#zm_weapons/fx8_www_drag_enemy_ember_arm_right
-fx,#hash_2543453edaf343d4
-fx,#hash_259b253edb3d834a
+fx,#zm_ai/fx8_cata_elec_knee_le
+fx,#zm_ai/fx8_cata_elec_knee_ri
 fx,#hash_259bb7806d596ed3
 fx,#hash_25b77f05ee8aa869
 fx,#hash_25d0beff620cb4c1
@@ -54718,8 +54718,8 @@ fx,#impacts/fx_bul_impact_blood_head_fatal_exit_uw
 fx,#hash_27751bdc20e9dd92
 fx,#hash_27bb8c5183609651
 fx,#hash_27f34d53afdfb517
-fx,#hash_28479dabebe445ee
-fx,#hash_28ad85abec3ad058
+fx,#zm_ai/fx8_cata_elec_hip_ri
+fx,#zm_ai/fx8_cata_elec_hip_le
 fx,#hash_28c629868adf79d6
 fx,#zombie/fx8_magicbox_opened_lid
 fx,#hash_28d3fce6e45f1b76
@@ -54767,7 +54767,7 @@ fx,d#hash_311a865a91014b22
 fx,#hash_312d3f1326396463
 fx,#zm_ai/fx8_cata_plasma_blast_c
 fx,#zm_weapons/fx8_www_shrink_globe_death_os
-fx,#hash_31c4723879504cb7
+fx,#zombie/fx8_magicbox_lid_skull
 fx,#hash_31d142c6e5adc4c7
 fx,#hash_31d36dbca458b0dd
 fx,#hash_320ecc68ff7c88f7
@@ -54938,9 +54938,9 @@ fx,#hash_4d2ab9370fa93c06
 fx,#hash_4d334fce6095f749
 fx,#hash_4d39505b7618fbe3
 fx,#hash_4d60f3a55f0af7b9
-fx,#hash_4d91ce766ebeda81
+fx,#zm_ai/fx8_cata_elec_shoulder_le
 fx,d#impacts/fx8_bul_impact_wz_base
-fx,#hash_4db3c6766edbb34f
+fx,#zm_ai/fx8_cata_elec_shoulder_ri
 fx,#hash_4dd8af04505ea45e
 fx,d#hash_4e3dc7da8f681079
 fx,d#hash_4e40eada8f6a81c9
@@ -55281,7 +55281,7 @@ renderoverridebundle,#rob_zm_mansion_clock
 renderoverridebundle,#hash_3d9f08ef1b60239e
 renderoverridebundle,#hash_4192ceb1c828492f
 renderoverridebundle,#hash_42273a05e6150ef0
-renderoverridebundle,#hash_429426f01ad84c8b
+renderoverridebundle,#rob_zm_hell_dust
 renderoverridebundle,#hash_51b6bba95848bab8
 renderoverridebundle,#rob_zm_viewarm_vomit
 renderoverridebundle,#hash_591c2c7461c7beed
@@ -55357,7 +55357,7 @@ xanim,#p8_fxanim_zm_man_pap_drawers_anim
 xanim,#hash_2cb4b6f66927831b
 xanim,#p8_fxanim_zm_man_greenhouse_planters_01_03_anim
 xanim,#hash_2e96d391143ce3b3
-xanim,#hash_30a3ae992c453f0c
+xanim,#ai_t8_zm_mnsn_nfrtu_attack_latch_01_succeed
 xanim,#p8_fxanim_zm_man_ooze_clump_01_anim
 xanim,#hash_324daff20aa02fdb
 xanim,#hash_346c76e841bb3677
@@ -56073,7 +56073,7 @@ fx,#zm_ai/fx8_cata_water_aura_head
 fx,#zm_ai/fx8_stoker_death_tell
 fx,#hash_5f247e5ee77f7108
 fx,d#impacts/fx_bul_impact_armor_head_nonfatal_exit
-fx,d#hash_5f376e9395e16666
+fx,d#zombie/fx8_magicbox_depart
 fx,d#hash_5f8c0dac5484812f
 fx,#zm_ai/fx8_bat_transform
 fx,#hash_5ffc4b3198dbd4dd

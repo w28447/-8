@@ -209,7 +209,7 @@ function FileshareCanOpenDetailsView( f22_arg0, f22_arg1 )
 end
 
 function isFileshareFeatureEnabled()
-	if Dvar[0x56FCD2DEBF35884] ~= nil and Dvar[0x56FCD2DEBF35884]:get() == true then
+	if Dvar.fileshare_enabled ~= nil and Dvar.fileshare_enabled:get() == true then
 		return true
 	else
 		return false

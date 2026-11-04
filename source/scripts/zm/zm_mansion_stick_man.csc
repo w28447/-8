@@ -327,6 +327,6 @@ function function_443d6ae( localclientnum )
 {
     self endon( #"death", #"stop_drag_fx" );
     wait 0.15;
-    self playrenderoverridebundle( #"hash_429426f01ad84c8b" );
+    self playrenderoverridebundle( #"rob_zm_hell_dust" );
 }
 

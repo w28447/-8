@@ -1,4 +1,4 @@
-#using script_6951ea86fdae9ae0;
+#using scripts/zm_common/trials/zm_trial_attack_during_movement.gsc;
 #using scripts\core_common\ai\zombie_utility;
 #using scripts\core_common\ai_shared;
 #using scripts\core_common\clientfield_shared;
@@ -359,7 +359,7 @@ function private function_2772480a()
         return false;
     }
     
-    if ( namespace_fcd611c3::is_active() && level.var_e91491fb !== #"slide" )
+    if ( zm_trial_attack_during_movement::is_active() && level.var_e91491fb !== #"slide" )
     {
         return false;
     }

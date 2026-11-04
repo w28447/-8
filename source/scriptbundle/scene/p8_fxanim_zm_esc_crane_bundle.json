@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_923a7a2394d952d",
+                            "anim": "anim#p8_fxanim_zm_esc_crane_dock_rotate_anim",
                             "entrytype": "anim"
                         },
                         {
@@ -38,7 +38,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_3fbc33140c093c0d",
+                            "anim": "anim#p8_fxanim_zm_esc_crane_water_rotate_anim",
                             "entrytype": "anim"
                         },
                         {
@@ -186,7 +186,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_2bf732b76b5383ba",
+                            "anim": "anim#p8_fxanim_zm_esc_crane_skeleton_arm_fall_anim",
                             "entrytype": "anim"
                         },
                         {

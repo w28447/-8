@@ -900,7 +900,7 @@ version 19 {
     // idx 2 members 2
     enum achievements_e {
         hash_f08aa26fabae647, // 0x0,
-        hash_5740a8698a4d0345, // 0x1
+        cp_distance_kill, // 0x1
     };
 
     // idx 3 members 2
@@ -2167,7 +2167,7 @@ version 18 {
     // idx 2 members 2
     enum achievements_e {
         hash_f08aa26fabae647, // 0x0,
-        hash_5740a8698a4d0345, // 0x1
+        cp_distance_kill, // 0x1
     };
 
     // idx 3 members 2
@@ -3433,7 +3433,7 @@ version 17 {
     // idx 2 members 2
     enum achievements_e {
         hash_f08aa26fabae647, // 0x0,
-        hash_5740a8698a4d0345, // 0x1
+        cp_distance_kill, // 0x1
     };
 
     // idx 3 members 2
@@ -4699,7 +4699,7 @@ version 16 {
     // idx 2 members 2
     enum achievements_e {
         hash_f08aa26fabae647, // 0x0,
-        hash_5740a8698a4d0345, // 0x1
+        cp_distance_kill, // 0x1
     };
 
     // idx 3 members 2

@@ -123,7 +123,7 @@ LUI.createMenu.FTUEZMInventoryMenu = function ( f1_arg0, f1_arg1 )
 	
 	local EquipmentInfo = CoD.FTUEDescriptionWidget.new( f1_local1, f1_arg0, 0.5, 0.5, 563, 864, 0, 0, 534, 593 )
 	EquipmentInfo.InventoryTitleLabel:setText( LocalizeToUpperString( "menu/equipment" ) )
-	EquipmentInfo.AmmoTextBox:setText( Engine[0xF9F1239CFD921FE]( 0xF090683CB4F3BF9 ) )
+	EquipmentInfo.AmmoTextBox:setText( Engine[0xF9F1239CFD921FE]( "menu/equipment_zm_desc" ) )
 	self:addElement( EquipmentInfo )
 	self.EquipmentInfo = EquipmentInfo
 	

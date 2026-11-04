@@ -445,7 +445,7 @@ localizeentry,#hash_f6382510c3866f1
 localizeentry,#hash_f6700510c3b72e2
 localizeentry,#hash_f68da47272de1e7
 localizeentry,#hash_f90cca21dd0dd02
-localizeentry,d#hash_fbcfc36f0c79d9a
+localizeentry,d#mpui/tank_commands
 localizeentry,#hash_ff2a0e9f0a780bc
 localizeentry,#hash_ffca9e9f0afe48c
 localizeentry,#hash_ffcaae9f0afe63f
@@ -785,7 +785,7 @@ localizeentry,d#hash_1bd01414ff19ee0a
 localizeentry,#zmweapon/ww_freezegun_t8
 localizeentry,d#menu/triple_kill
 localizeentry,#hash_1c0690a731d0319b
-localizeentry,d#hash_1c07c87a45375aaf
+localizeentry,d#menu/camo_loot_party_rock
 localizeentry,#hash_1c085e4db0b218f9
 localizeentry,#hash_1c08637b6703de50
 localizeentry,#hash_1c18b01251834721
@@ -1174,7 +1174,7 @@ localizeentry,#hash_2aeacba31b664f31
 localizeentry,#hash_2af35167b9c22337
 localizeentry,#hash_2af53ea31b6f671f
 localizeentry,d#hash_2afdbd8d1939e913
-localizeentry,d#hash_2b0fae1c09a3d8a9
+localizeentry,d#menu/camo_loot_zombie_flick
 localizeentry,#hash_2b13ff31f77bbc7b
 localizeentry,d#hash_2b27d20d2cfc1069
 localizeentry,#hash_2b2c177caa2b13d1
@@ -2597,7 +2597,7 @@ localizeentry,#hash_5da1d0f3b05fbe31
 localizeentry,#hash_5da2385be56da5b9
 localizeentry,#hash_5da54ef3b062ca22
 localizeentry,#zm_orange/location_bridge
-localizeentry,d#hash_5dc620aa9640e528
+localizeentry,d#menu/camo_loot_apb
 localizeentry,#hash_5dce23e41f2c5e82
 localizeentry,#hash_5dce24e41f2c6035
 localizeentry,#hash_5dce25e41f2c61e8

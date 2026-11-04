@@ -86,7 +86,7 @@
     "members": [
         {
             "name": "#object_id",
-            "scrName": "#hash_d4bf302a",
+            "scrName": "#object_id",
             "type": "UINT64"
         },
         {

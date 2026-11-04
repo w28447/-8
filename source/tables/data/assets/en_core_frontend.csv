@@ -409,7 +409,7 @@ localizeentry,d#mpui/damage2_desc
 localizeentry,d#hash_c41588026830fa7
 localizeentry,d#hash_c45fdef89add250
 localizeentry,d#menu/invite_players
-localizeentry,#hash_c52261c65f3ef0f
+localizeentry,#menu/max_players_reached
 localizeentry,#hash_c52f8f8d0d51561
 localizeentry,d#hash_c545762e42a3dbe
 localizeentry,#menu/emblem_layer_paste
@@ -421,7 +421,7 @@ localizeentry,#menu/archives
 localizeentry,d#hash_ca29a669ea5cbce
 localizeentry,d#menu/emblem_toggle_to_sticker
 localizeentry,d#hash_cbb09799fd32560
-localizeentry,#hash_cbf3641ab9dbf81
+localizeentry,#mpui/perk_greed
 localizeentry,#weapon/hero_hammer
 localizeentry,d#mpui/perk3
 localizeentry,d#mpui/perk2
@@ -619,7 +619,7 @@ localizeentry,d#hash_136345e001af6313
 localizeentry,#mpui/no_cost
 localizeentry,d#hash_137ef28b08b28233
 localizeentry,#hash_138324bf4626ce42
-localizeentry,#hash_1388a4d4a933e2cb
+localizeentry,#zmui/map_stats
 localizeentry,#hash_138fc7611e9cbec6
 localizeentry,d#codcaster/team2
 localizeentry,d#codcaster/team1
@@ -848,7 +848,7 @@ localizeentry,#hash_1bde361433aa7869
 localizeentry,d#mp/ctf_overtime_round_2_winner
 localizeentry,d#menu/slayer_desc
 localizeentry,d#menu/triple_kill
-localizeentry,d#hash_1c07c87a45375aaf
+localizeentry,d#menu/camo_loot_party_rock
 localizeentry,d#hash_1c095d2ff1ee2755
 localizeentry,d#hash_1c0ce2452cf87db1
 localizeentry,d#cpui/xp_bonus
@@ -1067,7 +1067,7 @@ localizeentry,d#heroes/marlton
 localizeentry,d#menu/black_market
 localizeentry,#director/lobby_settings
 localizeentry,d#menu/rewards
-localizeentry,d#hash_22c77500cca0703d
+localizeentry,d#zmui/richtofen_primis_trait
 localizeentry,d#menu/display_area_adjustment
 localizeentry,#hash_22d76a9580e69dd8
 localizeentry,#menu/move
@@ -1248,7 +1248,7 @@ localizeentry,d#wz/yuri
 localizeentry,d#hash_2824d005ed55cb12
 localizeentry,#menu/auto_add_friends
 localizeentry,#hash_283ef070079a176b
-localizeentry,#hash_284bab3e953057c5
+localizeentry,#menu/death_effects_money
 localizeentry,d#hash_2855e8fe94593c64
 localizeentry,d#zmui/ztutorial_desc
 localizeentry,d#hash_2867c4f06f5ecac5
@@ -1318,7 +1318,7 @@ localizeentry,#menu/store_redeem_code
 localizeentry,#hash_2adf79b83464f8b2
 localizeentry,d#hash_2af17aa72622530e
 localizeentry,d#hash_2b0802ad78ce7749
-localizeentry,d#hash_2b0fae1c09a3d8a9
+localizeentry,d#menu/camo_loot_zombie_flick
 localizeentry,d#hash_2b13337a845adb3b
 localizeentry,#menu/charm_skeleton_key
 localizeentry,d#hash_2b191296031bfbf3
@@ -1538,7 +1538,7 @@ localizeentry,#hash_3395b243b181947b
 localizeentry,d#mpui/conf_caps
 localizeentry,#menu/emblem_layer_property_scale
 localizeentry,#hash_339befde77b1050d
-localizeentry,d#hash_33b1332591b8841d
+localizeentry,d#zmui/takeo_primis_trait
 localizeentry,#hash_33b16f3d5baee9e4
 localizeentry,#hash_33b9e184fc8cdacd
 localizeentry,d#hash_33ba5b935d8a0407
@@ -1646,7 +1646,7 @@ localizeentry,d#hash_371486bc7b68667e
 localizeentry,d#hash_37167f604c666180
 localizeentry,d#mpui/hcconf
 localizeentry,#hash_3724cc862629833e
-localizeentry,#hash_373b7a84e7ac2c2e
+localizeentry,#menu/death_effects_water
 localizeentry,d#hash_37502c0724396be2
 localizeentry,d#hash_3752ef7539ccf2f5
 localizeentry,d#weapon/special_issue
@@ -1758,7 +1758,7 @@ localizeentry,#hash_3b385032248215aa
 localizeentry,d#hash_3b58cf470802aa10
 localizeentry,d#menu/muting
 localizeentry,d#heroes/enforcer
-localizeentry,d#hash_3b8d3200633693e0
+localizeentry,d#mpui/infect_hc_name
 localizeentry,d#objectives/infect
 localizeentry,#hash_3b98899150d5fb25
 localizeentry,d#hash_3ba7454f3fae4c4b
@@ -1909,7 +1909,7 @@ localizeentry,d#hash_402479bf0ab6d27a
 localizeentry,d#hash_40437c588294d952
 localizeentry,d#heroes/spectre_weapon_tips
 localizeentry,d#hash_40559059765cc25e
-localizeentry,#hash_40643a70b24a36f6
+localizeentry,#director/percent_installed
 localizeentry,d#hash_40823b0cb3d9abf2
 localizeentry,d#hash_408a1b3d366d1e96
 localizeentry,d#mpui/restrictions_caps
@@ -2021,7 +2021,7 @@ localizeentry,#hash_447950e1d81dd119
 localizeentry,d#hash_447a3e5055f27129
 localizeentry,d#arena/arena_league_play_rank
 localizeentry,#hash_447c91925d0a93e6
-localizeentry,#hash_447fec1c323b4f6b
+localizeentry,#menu/purchase_camo_desc
 localizeentry,d#hash_44916ff71f124343
 localizeentry,d#menu/arena_caps
 localizeentry,#hash_44b0eeff4d432726
@@ -2092,7 +2092,7 @@ localizeentry,#menu/theater_load_hint
 localizeentry,d#hash_4729851a370bbaaa
 localizeentry,#hash_473187eb50e7ce59
 localizeentry,#hash_47332da4fb8e2d60
-localizeentry,#hash_473fb71dd306c936
+localizeentry,#menu/purchase_tiers_desc
 localizeentry,d#hash_47535df020baeaa8
 localizeentry,d#hash_4755e10481d7be2d
 localizeentry,#codcaster/team2_logo
@@ -2169,7 +2169,7 @@ localizeentry,d#mpui/camo_heatstroke
 localizeentry,d#menu/lb_time_played
 localizeentry,#codcaster/team_logo_colon
 localizeentry,d#hash_4a5115be25660aba
-localizeentry,#hash_4a53b7ce50de4fbc
+localizeentry,#mpui/single_tier
 localizeentry,d#hash_4a584bc8c443f246
 localizeentry,d#hash_4a608d3fbb6904f9
 localizeentry,#hash_4a69f960f1cd39ee
@@ -2551,7 +2551,7 @@ localizeentry,#menu/permanently_unlocked
 localizeentry,#hash_5862e9bf360bcc1b
 localizeentry,d#hash_586b7de6fdd7ceb8
 localizeentry,#aar/efficiency
-localizeentry,d#hash_5881b0c27f12ecc9
+localizeentry,d#mpui/extclip_short
 localizeentry,d#hash_588ec49729368f9b
 localizeentry,#hash_5890976738b1d859
 localizeentry,#weapon/hero_chakram
@@ -2588,7 +2588,7 @@ localizeentry,#hash_59beba595bf6022d
 localizeentry,#menu/paintjob_options_caps
 localizeentry,#hash_59eb69eff3751aee
 localizeentry,#hash_59f938e573779723
-localizeentry,#hash_59fa842fea782ea2
+localizeentry,#menu/death_effects_ice
 localizeentry,d#mpui/grip2
 localizeentry,d#hash_5a0b7ffc250986ec
 localizeentry,d#mpui/bm_bribe_callingcard
@@ -2636,7 +2636,7 @@ localizeentry,d#hash_5b59099cb3805deb
 localizeentry,d#weapon/gadget_health_regen
 localizeentry,d#hash_5b602acdd5327618
 localizeentry,d#menu/lb_carries
-localizeentry,#hash_5b71c5e80ebfdd82
+localizeentry,#menu/party_leader_only
 localizeentry,d#mpui/camo_battle
 localizeentry,d#hash_5b952c14209f010d
 localizeentry,d#hash_5ba50917d8c93b16
@@ -2701,7 +2701,7 @@ localizeentry,#menu/emblem_change_color
 localizeentry,d#hash_5d986f1a4d6b83bd
 localizeentry,#hash_5daa91f7954a788a
 localizeentry,#aar/echelon
-localizeentry,d#hash_5dc620aa9640e528
+localizeentry,d#menu/camo_loot_apb
 localizeentry,d#hash_5dc6232f3cc85813
 localizeentry,d#hash_5dd2e8c69e00d8ff
 localizeentry,#hash_5dd4de4914a2964b
@@ -2740,7 +2740,7 @@ localizeentry,d#hash_5eed661a0489a4ff
 localizeentry,#menu/charm_lava_lamp
 localizeentry,d#mpui/aar_caps
 localizeentry,#hash_5ef90edfb180b9a2
-localizeentry,#hash_5f090683cb4f3bf9
+localizeentry,#menu/equipment_zm_desc
 localizeentry,d#hash_5f17105e484faba8
 localizeentry,d#outfits/ruin_warrior
 localizeentry,#hash_5f3f4754cd03fa1d
@@ -2998,7 +2998,7 @@ localizeentry,d#hash_67586fe0366d78c3
 localizeentry,d#hash_675870e0366d7a76
 localizeentry,d#hash_675c9b0c01b814fb
 localizeentry,#hash_677e29e95b5d6719
-localizeentry,d#hash_6782822603c5acfc
+localizeentry,d#mpui/acog_short
 localizeentry,#menu/join
 localizeentry,d#hash_67d14df1d6cbe990
 localizeentry,d#hash_67d8c3128b7db267
@@ -3040,7 +3040,7 @@ localizeentry,d#hash_68bba499ea6d3380
 localizeentry,d#hash_68c0a28c0b5208a0
 localizeentry,d#menu/classified
 localizeentry,#hash_68ca448e95519f61
-localizeentry,d#hash_68ccb8b7ef76929b
+localizeentry,d#menu/purchase_tiers_title
 localizeentry,#hash_68d387a1db76e850
 localizeentry,d#hash_68d643e5934f851a
 localizeentry,d#mp/round_draw_caps
@@ -3055,7 +3055,7 @@ localizeentry,d#hash_6912de50663d611c
 localizeentry,#hash_691a9232dcf3cfdb
 localizeentry,#hash_691da6c00b351359
 localizeentry,#hash_692219fe97aca8dc
-localizeentry,#hash_692255dd4a01a50b
+localizeentry,#menu/tier_boost_disclaimer
 localizeentry,#hash_69266d7d9b2162f1
 localizeentry,#hash_6936fcc81c9ee8d0
 localizeentry,#hash_693c562a64cbace8
@@ -3283,7 +3283,7 @@ localizeentry,d#hash_71077f3c2b4f6f3c
 localizeentry,d#hash_710c2584d47698d1
 localizeentry,d#hash_7111e17e298c3783
 localizeentry,#zmui/carbon_combo_desc
-localizeentry,d#hash_711dbe28b50de6b7
+localizeentry,d#mpui/steadyaim_short
 localizeentry,d#hash_711e01fdec193fa1
 localizeentry,d#menu/emblem_gradient_rotation
 localizeentry,d#mpui/deaths
@@ -3558,7 +3558,7 @@ localizeentry,d#hash_78d753143b405d88
 localizeentry,#menu/not_ready
 localizeentry,#menu/options
 localizeentry,#hash_78ea829a714a029a
-localizeentry,#hash_78eecf8bbd6c55f9
+localizeentry,#menu/tag_tip_pc
 localizeentry,d#menu/item_shop
 localizeentry,#hash_792805cbd53db001
 localizeentry,d#hash_7928655fdaef101c

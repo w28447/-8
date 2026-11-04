@@ -643,7 +643,7 @@ function destroyspawnbeacon( destroyedbyenemy )
 {
     self notify( #"end_damage_watcher" );
     self function_68a6ec15();
-    self.var_ab0875aa = 1;
+    self.isbeingdestroyed = 1;
     spawnbeacon = self;
     attacker = destroyedbyenemy ? self.var_846acfcf : self.owner;
     spawnbeacon dodamage( spawnbeacon.health + 10000, spawnbeacon.origin, attacker, undefined, undefined, "MOD_EXPLOSIVE" );
@@ -799,7 +799,7 @@ function destroyspawnbeacon( destroyedbyenemy )
     
     tag_base_forward = anglestoforward( tag_base_angles );
     tag_base_up = anglestoup( tag_base_angles );
-    playfx( #"hash_695b2e7e4b63a645", tag_base_origin, tag_base_forward, tag_base_up );
+    playfx( #"weapon/fx8_equip_spwnbcn_exp", tag_base_origin, tag_base_forward, tag_base_up );
     
     if ( !( isdefined( spawnbeacon.var_4fc7245b ) ? spawnbeacon.var_4fc7245b : 0 ) && ( isdefined( level.var_6cd68fbe ) ? level.var_6cd68fbe : 0 ) && isdefined( player ) )
     {

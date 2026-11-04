@@ -1715,9 +1715,9 @@ function function_3ea10d34( var_e8437733, str_level_endon )
 // Params 2
 // Checksum 0xad9ef4a6, Offset: 0x7470
 // Size: 0x82
-function spawn_robot( var_8b84b3ce, var_ce2b0d5 )
+function spawn_robot( v_spawn_loc, var_ce2b0d5 )
 {
-    robot = ct_ai::function_4c8f915a( var_8b84b3ce );
+    robot = ct_ai::function_4c8f915a( v_spawn_loc );
     ai_tank::function_9b13ebf( robot );
     robot.goalradius = 300;
     robot setgoal( var_ce2b0d5 );

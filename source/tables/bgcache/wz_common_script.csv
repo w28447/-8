@@ -163,7 +163,7 @@ string,#hash_b4161658ce1809f
 string,#mp/host_ended_game
 string,#coop/revive_emergency_reserve_once
 string,#wz/arav
-string,#hash_ddc319addc8bcb2
+string,#mp/game_over_caps
 string,#mp/host_sucks
 string,#mp/defeat_caps
 string,#killstreak/emp_inbound
@@ -405,7 +405,7 @@ client_fx,#_t7/killstreaks/fx_drgnfire_light_green_3p
 client_fx,#hash_50b25e352ba908d0
 client_fx,#wz/fx8_magicbox_marker_fl_red
 client_fx,#wz/fx8_zm_box_unlock
-client_fx,#hash_5f376e9395e16666
+client_fx,#zombie/fx8_magicbox_depart
 client_fx,#player/fx8_plyr_blood_drip_last_stand
 client_fx,#killstreaks/fx_sc_lights_grn
 client_fx,#smoke/fx8_column_md_red

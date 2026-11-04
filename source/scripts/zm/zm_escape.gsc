@@ -149,11 +149,11 @@ function event_handler[level_init] main( eventstruct )
     
     if ( zm_utility::is_standard() )
     {
-        var_6811b7e = struct::get_array( "perk_vapor_altar" );
+        a_s_perk_machines = struct::get_array( "perk_vapor_altar" );
         
-        foreach ( var_5baafbb2 in var_6811b7e )
+        foreach ( s_perk_machine in a_s_perk_machines )
         {
-            var_5baafbb2.var_21c535b = 2;
+            s_perk_machine.var_21c535b = 2;
         }
     }
     

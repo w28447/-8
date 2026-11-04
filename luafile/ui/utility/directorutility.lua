@@ -237,7 +237,7 @@ CoD.DirectorUtility.DirectorPartyListUpdateClientInfo = function ( f6_arg0, f6_a
 						f6_arg1.isMemberLeader = 0
 						f6_arg1.isOtherMember = 0
 					end
-					if 0 < Dvar[0x868D54ACE3910EB]:get() then
+					if 0 < Dvar.ui_lobbydebugvis:get() then
 						local f6_local8 = f6_arg1.skillRating
 						if f6_local8 > 10 then
 							f6_local8 = 10
@@ -4481,7 +4481,7 @@ CoD.DirectorUtility.InitPublicLobbyModels = function ( f230_arg0, f230_arg1, f23
 	f230_local1 = f230_local0:create( "matchmakingStartTime" )
 	f230_local1:set( 5 )
 	f230_local1 = f230_local0:create( "matchmakingIntermissionTime" )
-	f230_local1:set( Dvar[0xA0A01C39967B404]:get() / 1000 )
+	f230_local1:set( Dvar.lobbytimerstatusvotinginterval:get() / 1000 )
 	f230_local1 = f230_local0:create( "waitingAnimation" )
 	f230_local1:set( false )
 end

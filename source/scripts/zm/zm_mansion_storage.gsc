@@ -188,11 +188,11 @@ function function_ff726bbb( var_2afee46 = 1 )
     
     for ( i = 0; i < var_b4536237.size ; i++ )
     {
-        var_a0639b8c = var_b4536237[ i ];
+        n_season = var_b4536237[ i ];
         var_aaa36da6 = struct::get( _plyr_exterior_gunner_front[ i ], "targetname" );
-        e_book = util::spawn_model( var_d6a83f7c[ var_a0639b8c ], var_aaa36da6.origin, var_aaa36da6.angles );
+        e_book = util::spawn_model( var_d6a83f7c[ n_season ], var_aaa36da6.origin, var_aaa36da6.angles );
         e_book.targetname = var_aaa36da6.targetname;
-        e_book.var_a0639b8c = var_a0639b8c;
+        e_book.n_season = n_season;
         
         if ( var_2afee46 )
         {
@@ -254,7 +254,7 @@ function function_56c97aea()
         if ( isplayer( s_waitresult.activator ) )
         {
             e_book = self.stub.related_parent;
-            level.var_969e8ac2 notify( #"hash_59cef06ae393749f", { #var_f9ba056c:e_book.var_a0639b8c, #array_index:e_book.var_60f4d369, #var_537e3893:e_book.script_noteworthy, #activator:s_waitresult.activator } );
+            level.var_969e8ac2 notify( #"hash_59cef06ae393749f", { #var_f9ba056c:e_book.n_season, #array_index:e_book.var_60f4d369, #var_537e3893:e_book.script_noteworthy, #activator:s_waitresult.activator } );
         }
     }
 }

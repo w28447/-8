@@ -461,7 +461,7 @@ version 49 {
         // offset 0x946, size 0x1
         bool disablecontracts;
         // offset 0x947, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x948, size 0x1
         bool allowannouncer;
         // offset 0x949, size 0x1
@@ -1093,7 +1093,7 @@ version 48 {
         // offset 0x93f, size 0x1
         bool disablecontracts;
         // offset 0x940, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x941, size 0x1
         bool allowannouncer;
         // offset 0x942, size 0x1
@@ -1723,7 +1723,7 @@ version 47 {
         // offset 0x93f, size 0x1
         bool disablecontracts;
         // offset 0x940, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x941, size 0x1
         bool allowannouncer;
         // offset 0x942, size 0x1
@@ -2353,7 +2353,7 @@ version 46 {
         // offset 0x93f, size 0x1
         bool disablecontracts;
         // offset 0x940, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x941, size 0x1
         bool allowannouncer;
         // offset 0x942, size 0x1
@@ -2973,7 +2973,7 @@ version 45 {
         // offset 0x91f, size 0x1
         bool disablecontracts;
         // offset 0x920, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x921, size 0x1
         bool allowannouncer;
         // offset 0x922, size 0x1
@@ -3589,7 +3589,7 @@ version 44 {
         // offset 0x90f, size 0x1
         bool disablecontracts;
         // offset 0x910, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x911, size 0x1
         bool allowannouncer;
         // offset 0x912, size 0x1
@@ -4203,7 +4203,7 @@ version 43 {
         // offset 0x90e, size 0x1
         bool disablecontracts;
         // offset 0x90f, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x910, size 0x1
         bool allowannouncer;
         // offset 0x911, size 0x1
@@ -4813,7 +4813,7 @@ version 42 {
         // offset 0x905, size 0x1
         bool disablecontracts;
         // offset 0x906, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x907, size 0x1
         bool allowannouncer;
         // offset 0x908, size 0x1
@@ -5421,7 +5421,7 @@ version 41 {
         // offset 0x904, size 0x1
         bool disablecontracts;
         // offset 0x905, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x906, size 0x1
         bool allowannouncer;
         // offset 0x907, size 0x1
@@ -6027,7 +6027,7 @@ version 40 {
         // offset 0x903, size 0x1
         bool disablecontracts;
         // offset 0x904, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x905, size 0x1
         bool allowannouncer;
         // offset 0x906, size 0x1
@@ -6627,7 +6627,7 @@ version 39 {
         // offset 0x8f3, size 0x1
         bool disablecontracts;
         // offset 0x8f4, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x8f5, size 0x1
         bool allowannouncer;
         // offset 0x8f6, size 0x1
@@ -7225,7 +7225,7 @@ version 38 {
         // offset 0x8f2, size 0x1
         bool disablecontracts;
         // offset 0x8f3, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x8f4, size 0x1
         bool allowannouncer;
         // offset 0x8f5, size 0x1
@@ -7813,7 +7813,7 @@ version 37 {
         // offset 0x8ca, size 0x1
         bool disablecontracts;
         // offset 0x8cb, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x8cc, size 0x1
         bool allowannouncer;
         // offset 0x8cd, size 0x1
@@ -8399,7 +8399,7 @@ version 36 {
         // offset 0x8c9, size 0x1
         bool disablecontracts;
         // offset 0x8ca, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x8cb, size 0x1
         bool allowannouncer;
         // offset 0x8cc, size 0x1
@@ -8985,7 +8985,7 @@ version 35 {
         // offset 0x8c1, size 0x1
         bool disablecontracts;
         // offset 0x8c2, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x8c3, size 0x1
         bool allowannouncer;
         // offset 0x8c4, size 0x1
@@ -9567,7 +9567,7 @@ version 34 {
         // offset 0x8b9, size 0x1
         bool disablecontracts;
         // offset 0x8ba, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x8bb, size 0x1
         bool allowannouncer;
         // offset 0x8bc, size 0x1
@@ -10149,7 +10149,7 @@ version 33 {
         // offset 0x8b9, size 0x1
         bool disablecontracts;
         // offset 0x8ba, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x8bb, size 0x1
         bool allowannouncer;
         // offset 0x8bc, size 0x1
@@ -10729,7 +10729,7 @@ version 32 {
         // offset 0x8b1, size 0x1
         bool disablecontracts;
         // offset 0x8b2, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x8b3, size 0x1
         bool allowannouncer;
         // offset 0x8b4, size 0x1
@@ -11307,7 +11307,7 @@ version 31 {
         // offset 0x8b0, size 0x1
         bool disablecontracts;
         // offset 0x8b1, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x8b2, size 0x1
         bool allowannouncer;
         // offset 0x8b3, size 0x1
@@ -11885,7 +11885,7 @@ version 30 {
         // offset 0x8b0, size 0x1
         bool disablecontracts;
         // offset 0x8b1, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x8b2, size 0x1
         bool allowannouncer;
         // offset 0x8b3, size 0x1
@@ -12459,7 +12459,7 @@ version 29 {
         // offset 0x8b0, size 0x1
         bool disablecontracts;
         // offset 0x8b1, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x8b2, size 0x1
         bool allowannouncer;
         // offset 0x8b3, size 0x1
@@ -13025,7 +13025,7 @@ version 28 {
         // offset 0x888, size 0x1
         bool disablecontracts;
         // offset 0x889, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x88a, size 0x1
         bool allowannouncer;
         // offset 0x88b, size 0x1
@@ -13591,7 +13591,7 @@ version 27 {
         // offset 0x888, size 0x1
         bool disablecontracts;
         // offset 0x889, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x88a, size 0x1
         bool allowannouncer;
         // offset 0x88b, size 0x1
@@ -14151,7 +14151,7 @@ version 26 {
         // offset 0x87f, size 0x1
         bool disablecontracts;
         // offset 0x880, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x881, size 0x1
         bool allowannouncer;
         // offset 0x882, size 0x1
@@ -14709,7 +14709,7 @@ version 25 {
         // offset 0x87f, size 0x1
         bool disablecontracts;
         // offset 0x880, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x881, size 0x1
         bool allowannouncer;
         // offset 0x882, size 0x1
@@ -15267,7 +15267,7 @@ version 24 {
         // offset 0x87f, size 0x1
         bool disablecontracts;
         // offset 0x880, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x881, size 0x1
         bool allowannouncer;
         // offset 0x882, size 0x1
@@ -15821,7 +15821,7 @@ version 23 {
         // offset 0x877, size 0x1
         bool disablecontracts;
         // offset 0x878, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x879, size 0x1
         bool allowannouncer;
         // offset 0x87a, size 0x1
@@ -16371,7 +16371,7 @@ version 22 {
         // offset 0x867, size 0x1
         bool disablecontracts;
         // offset 0x868, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x869, size 0x1
         bool allowannouncer;
         // offset 0x86a, size 0x1
@@ -16921,7 +16921,7 @@ version 21 {
         // offset 0x7c7, size 0x1
         bool disablecontracts;
         // offset 0x7c8, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0x7c9, size 0x1
         bool allowannouncer;
         // offset 0x7ca, size 0x1

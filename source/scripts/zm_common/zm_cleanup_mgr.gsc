@@ -203,7 +203,7 @@ function do_cleanup_check( n_override_cleanup_dist )
         
         if ( n_dist_sq_min >= n_cleanup_dist_sq )
         {
-            self thread function_96f7787d();
+            self thread delete_zombie_noone_looking_wrapper();
         }
     }
 }
@@ -212,7 +212,7 @@ function do_cleanup_check( n_override_cleanup_dist )
 // Params 0, eflags: 0x4
 // Checksum 0x6a7dd8fa, Offset: 0x770
 // Size: 0x36
-function private function_96f7787d()
+function private delete_zombie_noone_looking_wrapper()
 {
     self.var_61c270 = 1;
     self delete_zombie_noone_looking();

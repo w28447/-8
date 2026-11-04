@@ -1364,7 +1364,7 @@ CoD.FileshareUtility.DownloadActionCallback = function ( f112_arg0 )
 end
 
 CoD.FileshareUtility.CanDownload = function ( f113_arg0 )
-	if Dvar[0x56FCD2DEBF35884] ~= nil and Dvar[0x56FCD2DEBF35884]:get() == false then
+	if Dvar.fileshare_enabled ~= nil and Dvar.fileshare_enabled:get() == false then
 		return false
 	end
 	local f113_local0 = CoD.FileshareUtility.GetSelectedItemProperty( "fileCategory" )

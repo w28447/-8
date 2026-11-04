@@ -106,7 +106,7 @@
         },
         {
             "name": "#altads_toggle",
-            "scrName": "#hash_17332b1a",
+            "scrName": "#altads_toggle",
             "type": "BOOL"
         },
         {
@@ -146,7 +146,7 @@
         },
         {
             "name": "#combataxe_toggle",
-            "scrName": "#hash_2c159f65",
+            "scrName": "#combataxe_toggle",
             "type": "BOOL"
         },
         {
@@ -191,7 +191,7 @@
         },
         {
             "name": "#hitmarkers_damage_type",
-            "scrName": "#hash_6c2bb38d",
+            "scrName": "#hitmarkers_damage_type",
             "type": "BOOL"
         },
         {
@@ -271,7 +271,7 @@
         },
         {
             "name": "#show_team_chat",
-            "scrName": "#hash_8c430058",
+            "scrName": "#show_team_chat",
             "type": "BOOL"
         },
         {

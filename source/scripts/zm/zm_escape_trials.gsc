@@ -1,4 +1,4 @@
-#using script_112484f657ccd8b7;
+#using scripts/zm_common/trials/zm_trial_regen_during_movement.gsc;
 #using scripts\zm_common\trials\zm_trial_damage_during_movement.gsc;
 #using script_30ba61ad5559c51d;
 #using script_67da0c3654a906b6;

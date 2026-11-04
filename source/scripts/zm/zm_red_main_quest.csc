@@ -539,7 +539,7 @@ function function_d02ccc7c( localclientnum, oldval, newval, bnewent, binitialsna
 // Size: 0x64
 function spear_fire_rumble( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    self playrumbleonentity( localclientnum, #"hash_230077451d7197c1" );
+    self playrumbleonentity( localclientnum, #"zm_red_spear_fire_rumble" );
 }
 
 // Namespace zm_red_main_quest/zm_red_main_quest

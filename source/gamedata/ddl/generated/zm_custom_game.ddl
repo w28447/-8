@@ -715,7 +715,7 @@ version 26 {
         // offset 0xbd9, size 0x1
         bool disablecontracts;
         // offset 0xbda, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0xbdb, size 0x1
         bool zmtalismanimpatient;
         // offset 0xbdc, size 0x1
@@ -1843,7 +1843,7 @@ version 25 {
         // offset 0xbd8, size 0x1
         bool disablecontracts;
         // offset 0xbd9, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0xbda, size 0x1
         bool zmtalismanimpatient;
         // offset 0xbdb, size 0x1
@@ -2971,7 +2971,7 @@ version 24 {
         // offset 0xbd1, size 0x1
         bool disablecontracts;
         // offset 0xbd2, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0xbd3, size 0x1
         bool zmtalismanimpatient;
         // offset 0xbd4, size 0x1
@@ -4099,7 +4099,7 @@ version 23 {
         // offset 0xbd1, size 0x1
         bool disablecontracts;
         // offset 0xbd2, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0xbd3, size 0x1
         bool zmtalismanimpatient;
         // offset 0xbd4, size 0x1
@@ -5223,7 +5223,7 @@ version 22 {
         // offset 0xbd0, size 0x1
         bool disablecontracts;
         // offset 0xbd1, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0xbd2, size 0x1
         bool zmtalismanimpatient;
         // offset 0xbd3, size 0x1
@@ -6341,7 +6341,7 @@ version 21 {
         // offset 0xbcf, size 0x1
         bool disablecontracts;
         // offset 0xbd0, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0xbd1, size 0x1
         bool zmtalismanimpatient;
         // offset 0xbd2, size 0x1
@@ -7457,7 +7457,7 @@ version 20 {
         // offset 0xbcf, size 0x1
         bool disablecontracts;
         // offset 0xbd0, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0xbd1, size 0x1
         bool zmtalismanimpatient;
         // offset 0xbd2, size 0x1
@@ -8571,7 +8571,7 @@ version 19 {
         // offset 0xbce, size 0x1
         bool disablecontracts;
         // offset 0xbcf, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0xbd0, size 0x1
         bool zmtalismanimpatient;
         // offset 0xbd1, size 0x1
@@ -9683,7 +9683,7 @@ version 18 {
         // offset 0xbc6, size 0x1
         bool disablecontracts;
         // offset 0xbc7, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0xbc8, size 0x1
         bool zmtalismanimpatient;
         // offset 0xbc9, size 0x1
@@ -10795,7 +10795,7 @@ version 17 {
         // offset 0xbc6, size 0x1
         bool disablecontracts;
         // offset 0xbc7, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0xbc8, size 0x1
         bool zmtalismanimpatient;
         // offset 0xbc9, size 0x1
@@ -11897,7 +11897,7 @@ version 16 {
         // offset 0xba6, size 0x1
         bool disablecontracts;
         // offset 0xba7, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0xba8, size 0x1
         bool zmtalismanimpatient;
         // offset 0xba9, size 0x1
@@ -12995,7 +12995,7 @@ version 15 {
         // offset 0xba4, size 0x1
         bool disablecontracts;
         // offset 0xba5, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0xba6, size 0x1
         bool zmtalismanimpatient;
         // offset 0xba7, size 0x1
@@ -14079,7 +14079,7 @@ version 14 {
         // offset 0xb94, size 0x1
         bool disablecontracts;
         // offset 0xb95, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0xb96, size 0x1
         bool zmtalismanimpatient;
         // offset 0xb97, size 0x1
@@ -15161,7 +15161,7 @@ version 13 {
         // offset 0xb93, size 0x1
         bool disablecontracts;
         // offset 0xb94, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0xb95, size 0x1
         bool zmtalismanimpatient;
         // offset 0xb96, size 0x1
@@ -16241,7 +16241,7 @@ version 12 {
         // offset 0xb92, size 0x1
         bool disablecontracts;
         // offset 0xb93, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0xb94, size 0x1
         bool zmtalismanimpatient;
         // offset 0xb95, size 0x1
@@ -17317,7 +17317,7 @@ version 11 {
         // offset 0xb89, size 0x1
         bool disablecontracts;
         // offset 0xb8a, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0xb8b, size 0x1
         bool zmtalismanimpatient;
         // offset 0xb8c, size 0x1
@@ -18385,7 +18385,7 @@ version 10 {
         // offset 0xb69, size 0x1
         bool disablecontracts;
         // offset 0xb6a, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0xb6b, size 0x1
         bool zmtalismanimpatient;
         // offset 0xb6c, size 0x1
@@ -19451,7 +19451,7 @@ version 9 {
         // offset 0xb68, size 0x1
         bool disablecontracts;
         // offset 0xb69, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0xb6a, size 0x1
         bool zmtalismanimpatient;
         // offset 0xb6b, size 0x1
@@ -20515,7 +20515,7 @@ version 8 {
         // offset 0xb67, size 0x1
         bool disablecontracts;
         // offset 0xb68, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0xb69, size 0x1
         bool zmtalismanimpatient;
         // offset 0xb6a, size 0x1
@@ -21579,7 +21579,7 @@ version 7 {
         // offset 0xb67, size 0x1
         bool disablecontracts;
         // offset 0xb68, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0xb69, size 0x1
         bool zmtalismanimpatient;
         // offset 0xb6a, size 0x1
@@ -22635,7 +22635,7 @@ version 6 {
         // offset 0xb66, size 0x1
         bool disablecontracts;
         // offset 0xb67, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0xb68, size 0x1
         bool zmtalismanimpatient;
         // offset 0xb69, size 0x1
@@ -23685,7 +23685,7 @@ version 5 {
         // offset 0xb56, size 0x1
         bool disablecontracts;
         // offset 0xb57, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0xb58, size 0x1
         bool zmtalismanimpatient;
         // offset 0xb59, size 0x1
@@ -24733,7 +24733,7 @@ version 4 {
         // offset 0xb55, size 0x1
         bool disablecontracts;
         // offset 0xb56, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0xb57, size 0x1
         bool zmtalismanimpatient;
         // offset 0xb58, size 0x1
@@ -25773,7 +25773,7 @@ version 3 {
         // offset 0xb2d, size 0x1
         bool disablecontracts;
         // offset 0xb2e, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0xb2f, size 0x1
         bool zmtalismanimpatient;
         // offset 0xb30, size 0x1
@@ -26811,7 +26811,7 @@ version 2 {
         // offset 0xb2c, size 0x1
         bool disablecontracts;
         // offset 0xb2d, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0xb2e, size 0x1
         bool zmtalismanimpatient;
         // offset 0xb2f, size 0x1
@@ -27847,7 +27847,7 @@ version 1 {
         // offset 0xb24, size 0x1
         bool disablecontracts;
         // offset 0xb25, size 0x1
-        bool hash_75d44b1542e3edf9;
+        bool drafthideenemyteam;
         // offset 0xb26, size 0x1
         bool zmtalismanimpatient;
         // offset 0xb27, size 0x1

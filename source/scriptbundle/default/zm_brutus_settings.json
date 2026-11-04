@@ -206,7 +206,7 @@
     "instakillweakpointdamagescale": 0.1,
     "damagescale": 0.1,
     "category": "#miniboss",
-    "hash_854eebd": 0.75,
+    "numplayerhealthscale": 0.75,
     "hash_d5427206": 10,
     "hash_e81712d": 64,
     "hash_1709a39": 200,

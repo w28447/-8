@@ -471,7 +471,7 @@ CoD.CACUtility.loadoutSlotInfo = {
 	{
 		index = 1,
 		loadoutSlot = "primary",
-		name = 0xB484D92443361D8,
+		name = "mpui/loadoutslot_primary",
 		loadoutSlotEnum = Enum[0xF0AA273B133F18C][0xE66EC3B0C2CF943]
 	},
 	{

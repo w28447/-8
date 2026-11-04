@@ -311,7 +311,7 @@ function function_252cf612( player )
         {
             if ( player function_ec89dca9() )
             {
-                self sethintstring( #"hash_4731c9534a6055b" );
+                self sethintstring( #"zm_mansion/silver_bullets_have" );
             }
             else if ( isdefined( self.stub.var_6646a22 ) && self.stub.var_6646a22 )
             {
@@ -327,12 +327,12 @@ function function_252cf612( player )
         }
         else if ( !player flag::get( #"hash_56504ef435e17076" ) )
         {
-            str_prompt = zm_utility::function_d6046228( #"hash_558dab41980bd79b", #"hash_7bc5748f7802e011" );
+            str_prompt = zm_utility::function_d6046228( #"zm_mansion/silver_bullets_free", #"zm_mansion/silver_bullets_free_keyboard" );
             self sethintstring( str_prompt );
         }
         else if ( isdefined( self.stub.var_6646a22 ) && self.stub.var_6646a22 )
         {
-            str_prompt = zm_utility::function_d6046228( #"hash_558dab41980bd79b", #"hash_7bc5748f7802e011" );
+            str_prompt = zm_utility::function_d6046228( #"zm_mansion/silver_bullets_free", #"zm_mansion/silver_bullets_free_keyboard" );
             self sethintstring( str_prompt );
         }
         else
@@ -341,7 +341,7 @@ function function_252cf612( player )
             
             if ( isdefined( n_cost ) )
             {
-                self sethintstring( #"hash_9c2f7742abf6acb", n_cost );
+                self sethintstring( #"zm_mansion/silver_bullets_buy", n_cost );
             }
             else
             {

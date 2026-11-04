@@ -27899,7 +27899,7 @@ rumble,#hash_112f9d14b803778e
 rumble,#hash_1b194e26c256036c
 rumble,#hash_1bdf9c4013e4d12f
 rumble,#hash_22cb25543ecfd0bf
-rumble,#hash_230077451d7197c1
+rumble,#zm_red_spear_fire_rumble
 rumble,#hash_2578b3deb6dd485a
 rumble,#zm_red_skylight_rumble
 rumble,#zm_red_eagle_impact_rumble
@@ -37705,8 +37705,8 @@ fx,d#hash_247c28b43c001b30
 fx,#hash_24a57a1c3eeb5811
 fx,#zm_ai/fx8_blightfather_chaos_missle
 fx,#hash_2530c3bf370a8590
-fx,#hash_2543453edaf343d4
-fx,#hash_259b253edb3d834a
+fx,#zm_ai/fx8_cata_elec_knee_le
+fx,#zm_ai/fx8_cata_elec_knee_ri
 fx,#hash_259bb7806d596ed3
 fx,#hash_25b77f05ee8aa869
 fx,d#hash_26b9a48b0870f36e
@@ -37720,9 +37720,9 @@ fx,d#hash_27663bcdd71584aa
 fx,#maps/zm_red/fx8_reward_brazier_fire_green
 fx,d#hash_278c744d7ef41186
 fx,#hash_2796bf56af615dcb
-fx,#hash_28479dabebe445ee
+fx,#zm_ai/fx8_cata_elec_hip_ri
 fx,#hash_288135cd6716a658
-fx,#hash_28ad85abec3ad058
+fx,#zm_ai/fx8_cata_elec_hip_le
 fx,#zombie/fx8_magicbox_opened_lid
 fx,#hash_28e306b2b1b0a110
 fx,#hash_28ed8ac683f8f9f8
@@ -37768,7 +37768,7 @@ fx,#hash_30ecfe6266cb98aa
 fx,#fire/fx8_spot_sm_int
 fx,d#hash_311a865a91014b22
 fx,#zm_ai/fx8_cata_plasma_blast_c
-fx,#hash_31c4723879504cb7
+fx,#zombie/fx8_magicbox_lid_skull
 fx,#hash_31d142c6e5adc4c7
 fx,#hash_31e7c5600f464e95
 fx,#hash_31edcbffb6d29116
@@ -37918,8 +37918,8 @@ fx,d#hash_4c2c19eb40416bcc
 fx,#hash_4cc40e13ee8dff61
 fx,#hash_4d39505b7618fbe3
 fx,#hash_4d3a1d032cf3640e
-fx,#hash_4d91ce766ebeda81
-fx,#hash_4db3c6766edbb34f
+fx,#zm_ai/fx8_cata_elec_shoulder_le
+fx,#zm_ai/fx8_cata_elec_shoulder_ri
 fx,#hash_4df6f1dbc41bc9c3
 fx,#hash_4eda687993814ddf
 fx,#hash_4ee71079fa3bd589
@@ -38212,7 +38212,7 @@ postfxbundle,#hash_57a7b1a801667009
 postfxbundle,#pstfx_zm_chaos_temp
 postfxbundle,#hash_5d1d9f246fa51331
 postfxbundle,#pstfx_fsblur
-postfxbundle,#hash_5e6d2d91ca059a03
+postfxbundle,#pstfx_zm_eye_vignette
 postfxbundle,#hash_61f8641fde4dd9ca
 postfxbundle,#hash_6422033e84a54e2d
 postfxbundle,#pstfx_gaussian_blur
@@ -38228,7 +38228,7 @@ renderoverridebundle,#rob_zm_red_cin_coals
 renderoverridebundle,#hash_3825112b12396723
 renderoverridebundle,#hash_3b5fcab59be4e41c
 renderoverridebundle,#hash_3f367278aca8a752
-renderoverridebundle,#hash_429426f01ad84c8b
+renderoverridebundle,#rob_zm_hell_dust
 renderoverridebundle,#hash_46a64e44ebfa3078
 renderoverridebundle,#hash_48aca9d341c98dca
 renderoverridebundle,#hash_49e717c029b47c98
@@ -38805,7 +38805,7 @@ fx,#hash_5e29b3e05d856bd4
 fx,#zm_ai/fx8_blightfather_weakspot_jaw_exp
 fx,#zm_ai/fx8_cata_water_aura_head
 fx,#hash_5f247e5ee77f7108
-fx,d#hash_5f376e9395e16666
+fx,d#zombie/fx8_magicbox_depart
 fx,#hash_5f7d8c231fbcf09e
 fx,#hash_5f9afb7b8e19321f
 fx,#hash_5fa4fd4a467eae02

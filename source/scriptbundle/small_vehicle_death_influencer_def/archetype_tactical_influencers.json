@@ -25,6 +25,6 @@
     "player_death": "player_death_influencer_def",
     "hash_dbcbc455": "robot_death_influencer_def",
     "hash_2f442ac8": "small_vehicle_death_influencer_def",
-    "hash_eac7faa1": "big_vehicle_death_influencer_def",
+    "siegebot_death": "big_vehicle_death_influencer_def",
     "hash_4a6ca56b": "human_death_influencer_def"
 }

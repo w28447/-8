@@ -2288,7 +2288,7 @@ xanim,#hash_3c40821244d645b
 xanim,#pt_smart_cover_stand_raise
 xanim,#mm_bow_fem_prone_fire_cancel
 xanim,#hash_3d345779edc052a
-xanim,#hash_3d52f6faf02fd23
+xanim,#p8_fxanim_gp_vehicle_lb_heist_rope_retrieve_anim
 xanim,#hash_3db8408cd43cccd
 xanim,#hash_3e0cb3eea3664c5
 xanim,#ai_robot_base_stn_exposed_reload_01
@@ -4693,7 +4693,7 @@ xanim,#vm_bow_launcher_swim_to_land
 xanim,#pb_melee_fem_draft_ch_select_3
 xanim,#vm_shocked_both_handpose_r
 xanim,#vm_shocked_both_handpose_l
-xanim,#hash_4b6a7686ae8c1f16
+xanim,#p8_fxanim_gp_vehicle_hellstorm_missile_anim
 xanim,#pt_supply_pod_prone_fire
 xanim,#vm_grapple_gun_putaway_generic_additive
 xanim,#ai_base_rifle_stn_run_n_gun_l_strafe
@@ -7518,7 +7518,7 @@ string,#mpui/suppressed_desc
 string,#hash_176dcb27e4a0b1f4
 string,#hash_17783814d047454c
 string,#menu/camo_loot_fullsuite
-string,#hash_17c6b0524e578976
+string,#mp/bounty_revived_player
 string,#mpui/no_attachment_desc
 string,#mp/change_class_next_spawn
 string,#menu/camo_loot_goosebumps
@@ -7548,7 +7548,7 @@ string,#hash_1b6372a0a5dc0fef
 string,#hash_1b703a1b2e465ca5
 string,#killstreak/overwatch_snipers
 string,#hash_1bf4eaaf5d2ecee1
-string,#hash_1c07c87a45375aaf
+string,#menu/camo_loot_party_rock
 string,#hash_1c41d4b9d00defa5
 string,#hash_1c4ac6e9a0d267e4
 string,#hash_1c76f35cdadb1a92
@@ -7674,7 +7674,7 @@ string,#hash_2a70c3cc571d4152
 string,#hash_2aa6fa1848766679
 string,#hash_2ad86251ac97279c
 string,#hash_2b0e1f9a3a18912b
-string,#hash_2b0fae1c09a3d8a9
+string,#menu/camo_loot_zombie_flick
 string,#hash_2b27d20d2cfc1069
 string,#hash_2b3d791eb05ec296
 string,#mpui/camo_ardent
@@ -8150,7 +8150,7 @@ string,#killstreak/planemortar_not_available
 string,#hash_5d87fe6d6b27a8b8
 string,#mpui/player_killed
 string,#hash_5d94c1a3e60a6741
-string,#hash_5dc620aa9640e528
+string,#menu/camo_loot_apb
 string,#hash_5dd4de4914a2964b
 string,#hash_5e2c81adb5a5264a
 string,#hash_5e4e9959d2d94c69
@@ -8737,7 +8737,7 @@ fx,#ui/fx_ctf_flag_base_team_yellow
 fx,#hash_2ef501c4cf7fe0d7
 fx,#_t7/killstreaks/fx_wh_contrail
 fx,#electric/fx_elec_sparks_burst_sm_omni_blue_os
-fx,#hash_3283b765fe480df7
+fx,#ui/fx8_infil_marker_enmy_window
 fx,#weapon/fx8_equip_light_os
 fx,#killstreaks/fx_uav_bunner
 fx,#hash_34f93fbd649bd359
@@ -8790,14 +8790,14 @@ fx,#light/fx_light_robot_set_lg_yellow
 fx,#electric/fx_ability_elec_surge_short_pamws
 fx,#light/fx_light_veh_wasp_under
 fx,#light/fx_light_robot_set_base
-fx,#hash_5565c3fc2c7742fe
+fx,#ui/fx8_infil_marker_frnd_window
 fx,#light/fx_light_robot_set_base_lg
 fx,#explosions/fx_exp_robot_stage3_evb
 fx,#weapon/fx_lightninggun_arc
 fx,#hash_5b7d9a05b1e0ff94
 fx,#explosions/fx_vexp_raps_death_core
 fx,#player/fx8_plyr_infect_change_flash_3p
-fx,#hash_5c2ae9f4f331d4b9
+fx,#ui/fx8_infil_marker_frnd
 fx,#killstreaks/fx_air_drop_marker_gold
 fx,#ui/fx8_ui_ct_plane_marker_team_b180
 fx,#ui/fx8_ui_ct_plane_marker_team_b128
@@ -8837,7 +8837,7 @@ fx,#electric/fx_ability_elec_surge_short_wasp
 fx,#destruct/fx_vdest_pamws_dmg_body_1
 fx,#destruct/fx_vdest_pamws_dmg_body_2
 fx,#killstreaks/fx_air_drop_marker_red
-fx,#hash_7d1b0f001ea88b82
+fx,#ui/fx8_infil_marker_enmy
 fx,#weapon/fx_hero_annhilatr_death_blood
 fx,#ui/fx_koth_marker_blue_window
 lui_menu_data,#huditems.armorpercent
@@ -28967,7 +28967,7 @@ client_fx,#weapon/fx8_shellejects_sniper
 client_fx,#hash_3232a2f54d4f0389
 client_fx,#hash_3259aa4abd8d4b2a
 client_fx,#hash_32768e5f2ffd176a
-client_fx,#hash_3283b765fe480df7
+client_fx,#ui/fx8_infil_marker_enmy_window
 client_fx,#impacts/fx8_bul_impact_money_head_fatal_exit
 client_fx,#hash_32e4b681d6be4af7
 client_fx,#hash_32ff70dd33133026
@@ -29217,7 +29217,7 @@ client_fx,#impacts/fx8_bul_impact_wood_xsm
 client_fx,#light/fx_light_robot_set_base
 client_fx,#weapon/fx8_hero_sig_disrupt_seeker
 client_fx,#impacts/fx8_bul_impact_water_xxlg
-client_fx,#hash_5565c3fc2c7742fe
+client_fx,#ui/fx8_infil_marker_frnd_window
 client_fx,#impacts/fx8_knife_impact_bone
 client_fx,#impacts/fx8_bul_impact_wood_xlg
 client_fx,#player/fx_plyr_flashback_demat
@@ -29261,7 +29261,7 @@ client_fx,#hash_5beb7e64b2d1a793
 client_fx,#impacts/fx8_bul_impact_money_limb_fatal
 client_fx,#impacts/fx_bul_impact_blood_body_nonfatal_zmb
 client_fx,#hash_5c07c3ccd80f262e
-client_fx,#hash_5c2ae9f4f331d4b9
+client_fx,#ui/fx8_infil_marker_frnd
 client_fx,#impacts/fx8_bul_impact_gravel_xlg
 client_fx,#impacts/fx8_bul_impact_gravel_xsm
 client_fx,#hash_5cd53390aecf909e
@@ -29497,7 +29497,7 @@ client_fx,#hash_7cb4e6e4ffb7bc9c
 client_fx,#weapon/fx8_hero_sig_disrupt_sentry
 client_fx,#hash_7d00d30738e267d2
 client_fx,#killstreaks/fx8_mortar_jet_contrails
-client_fx,#hash_7d1b0f001ea88b82
+client_fx,#ui/fx8_infil_marker_enmy
 client_fx,#weapon/fx8_hero_flamethrower_blocked
 client_fx,#weapon/fx8_hero_sig_disrupt_hawk_wing
 client_fx,#impacts/fx_bul_impact_blood_head_fatal_zmb

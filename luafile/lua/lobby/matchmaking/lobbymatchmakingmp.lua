@@ -110,7 +110,7 @@ Lobby.MatchmakingMP.SetupMatchmakingStage = function ( f6_arg0 )
 		Lobby.MatchmakingMP.DoListenSearch( f6_local0, f6_local2 )
 	end
 	Lobby.Matchmaking.SetTeamSize( Lobby.Matchmaking.GetNumSlotsNeededOnTeam( f6_local0 ) )
-	local f6_local4 = math.max( Dvar[0x8E0DBD8C71F9D10]:get(), Dvar[0x39E15BDB813DCCB]:get() )
+	local f6_local4 = math.max( Dvar[0x8E0DBD8C71F9D10]:get(), Dvar.lobbysearchdediunparkpinglimit:get() )
 	local f6_local3 = Engine[0x29A1F6E8893B96F]( Lobby.Matchmaking.DatacenterType.ANY )
 	if f6_local3.numResults > 0 then
 		f6_local4 = math.max( f6_local4, f6_local3.pingResults[1].ping )

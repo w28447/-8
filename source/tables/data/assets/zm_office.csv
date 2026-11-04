@@ -27786,7 +27786,7 @@ fx,d#hash_311a865a91014b22
 fx,d#hash_317f3a24ff92b8ca
 fx,#zombie/fx_idgun_ug_hole_sm_zod_zmb
 fx,#zm_ai/fx8_cata_plasma_blast_c
-fx,#hash_31c4723879504cb7
+fx,#zombie/fx8_magicbox_lid_skull
 fx,#hash_31d142c6e5adc4c7
 fx,d#impacts/fx8_bul_impact_dirt_base_sm
 fx,#dirt/fx8_dust_fall_impact_lg
@@ -28476,7 +28476,7 @@ fx,#hash_5c0af36dfa5098ca
 fx,#weapon/fx8_hero_flamethrower_end_3p
 fx,d#impacts/fx8_bul_impact_water_sm
 fx,d#impacts/fx_bul_impact_armor_head_nonfatal_exit
-fx,d#hash_5f376e9395e16666
+fx,d#zombie/fx8_magicbox_depart
 fx,#hash_5f7006e0019d0cdd
 fx,d#hash_5f8c0dac5484812f
 fx,d#weapon/fx8_trail_grenade

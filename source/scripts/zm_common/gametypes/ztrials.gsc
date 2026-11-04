@@ -1,5 +1,5 @@
 #using script_1496ada77dc2f2e2;
-#using script_6951ea86fdae9ae0;
+#using scripts/zm_common/trials/zm_trial_attack_during_movement.gsc;
 #using scripts\zm_common\trials\zm_trial_kill_enemies_for_health.gsc;
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\flag_shared;
@@ -133,7 +133,7 @@ function private function_8277ff43()
     self endon( #"disconnect" );
     level flag::wait_till( "start_zombie_round_logic" );
     waitframe( 1 );
-    self zm_laststand::function_3d685b5f( 0 );
+    self zm_laststand::set_self_revive_count( 0 );
 }
 
 // Namespace ztrials/ztrials

@@ -110,7 +110,7 @@ DataSources.SpecialEventCurrentStepInfo = {
 			local f5_local19 = CoD.SpecialEventUtility.GetCurrentSpecialEventTierInfo( f5_arg0 )
 			if f5_local19 then
 				local f5_local20 = f5_local19.tier
-				local f5_local21 = Engine[0xF9F1239CFD921FE]( 0xB428662D95FCC11, f5_local20, f5_local18 )
+				local f5_local21 = Engine[0xF9F1239CFD921FE]( "zmui/step_progress", f5_local20, f5_local18 )
 				local f5_local22 = f5_local19.name
 				local f5_local23 = CoD.ZombiesCallingsUtility.GetCallingTaskInfo( f5_local22 )
 				local f5_local24 = f5_local23[0xEA461D5E8A182EA]

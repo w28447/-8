@@ -116,7 +116,7 @@
         },
         {
             "name": "#symbol",
-            "scrName": "#hash_965b4453",
+            "scrName": "#symbol",
             "type": "UINT32"
         }
     ],

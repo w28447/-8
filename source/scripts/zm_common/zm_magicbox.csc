@@ -22,9 +22,9 @@ function __init__()
 {
     level._effect[ #"hash_2bba72fdcc5508b5" ] = #"zombie/fx8_magicbox_opened";
     level._effect[ #"chest_light_closed" ] = #"zombie/fx_weapon_box_closed_glow_zmb";
-    level._effect[ #"t8_leave_fx" ] = #"hash_5f376e9395e16666";
+    level._effect[ #"t8_leave_fx" ] = #"zombie/fx8_magicbox_depart";
     level._effect[ #"hash_246062f68a34e289" ] = #"hash_55cc904817de4a07";
-    level._effect[ #"hash_73c11d9bf55cbb6" ] = #"hash_31c4723879504cb7";
+    level._effect[ #"hash_73c11d9bf55cbb6" ] = #"zombie/fx8_magicbox_lid_skull";
     level._effect[ #"hash_5239f7431d4c72ca" ] = #"hash_3f4154d786124350";
     level._effect[ #"hash_b6e7f724af1ad5b" ] = #"zombie/fx8_magicbox_amb";
     level._effect[ #"fire_runner" ] = #"hash_409439bf8b3dd862";

@@ -578,7 +578,7 @@ function function_890b2784()
 function function_827486aa( destroyedbyenemy, var_7497ba51 = 1 )
 {
     self notify( #"end_damage_watcher" );
-    self.var_ab0875aa = 1;
+    self.isbeingdestroyed = 1;
     
     if ( isdefined( self.var_83d9bfb5 ) && self.var_83d9bfb5 )
     {
@@ -1212,7 +1212,7 @@ function oncancelplacement( supplypod )
 // Size: 0x4c
 function onshutdown( supplypod )
 {
-    if ( isdefined( supplypod.var_ab0875aa ) ? supplypod.var_ab0875aa : 0 )
+    if ( isdefined( supplypod.isbeingdestroyed ) ? supplypod.isbeingdestroyed : 0 )
     {
         return;
     }

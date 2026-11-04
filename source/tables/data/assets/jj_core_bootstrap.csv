@@ -67,7 +67,7 @@ localizeentry,#mpui/uber_desc
 localizeentry,#mpui/camo_active_rapid_kills
 localizeentry,#hash_1960a6223dd21d1a
 localizeentry,#mpui/barrelchoke
-localizeentry,#hash_1c07c87a45375aaf
+localizeentry,#menu/camo_loot_party_rock
 localizeentry,#mpui/camo_integer
 localizeentry,#zmui/mms_desc
 localizeentry,#mpui/steadyaim2
@@ -99,7 +99,7 @@ localizeentry,#mpui/holdbreath_desc
 localizeentry,#mpui/camo_active_kill_counter
 localizeentry,#hash_2a634db8501d93aa
 localizeentry,#hash_2aa6fa1848766679
-localizeentry,#hash_2b0fae1c09a3d8a9
+localizeentry,#menu/camo_loot_zombie_flick
 localizeentry,#hash_2b27d20d2cfc1069
 localizeentry,#hash_2b3d791eb05ec296
 localizeentry,#mpui/camo_ardent
@@ -226,7 +226,7 @@ localizeentry,#hash_5c28147c226eb600
 localizeentry,#heroes/default
 localizeentry,#mpui/mixclip
 localizeentry,#mpui/mms_desc
-localizeentry,#hash_5dc620aa9640e528
+localizeentry,#menu/camo_loot_apb
 localizeentry,#hash_5e2c81adb5a5264a
 localizeentry,#hash_5e6ae4119dda43e0
 localizeentry,#mpui/camo_contagious

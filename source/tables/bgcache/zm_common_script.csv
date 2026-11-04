@@ -65,7 +65,7 @@ string,#hash_8e65f1e90063e14
 string,#zombie/perk_quickrevive
 string,#hash_90ca7c41027482c
 string,#zmarcade/fasttravel_disabled
-string,#hash_980c4fda0ffe694
+string,#zombie/self_revive_progress
 string,#hash_9ad280f8b462963
 string,#hash_9ad290f8b462b16
 string,#hash_9ad2a0f8b462cc9
@@ -78,21 +78,21 @@ string,#hash_ad3c47f53414b85
 string,#zombie/grab_shield_spear_keyboard
 string,#hash_b877496afcd42c8
 string,#hash_c2b77be4cf5b142
-string,#hash_c417ed2daa58e2e
+string,#zombie/perk_bandolier_free
 string,#hash_c5eaf038e40129b
 string,#hash_cb6a56ab3b14604
 string,#mp/host_ended_game
 string,#zombie/perk_stronghold_keyboard
 string,#hash_cef88785ed00590
 string,#hash_d77fc2d11c6deb1
-string,#hash_ddc319addc8bcb2
+string,#mp/game_over_caps
 string,#hash_e0fa688fb248886
 string,#zombie/round
 string,#hash_f267d2561d974d7
 string,#hash_fe988f7e566ff4d
 string,#hash_fea06394ae21371
 string,#hash_10a895033b20c705
-string,#hash_10cc78ab5ba5a7f2
+string,#zm_zodt8/artifact_mind_keyboard
 string,#zombie/powerup_pap
 string,#hash_114f96a9d16cc6bb
 string,#hash_117f528808767024
@@ -221,7 +221,7 @@ string,#hash_3d34018a57f83b7c
 string,#zombie/magic_box_empty
 string,#hash_3d9d6e119fdd76ae
 string,#zombie/perk_bandolier
-string,#hash_3dc033ef1e67a5c0
+string,#zombie/need_power_sentinel_trial
 string,#zombie/button_buy_back_barrier_10_keyboard
 string,#zombie/perk_packapunch_damage_free
 string,#hash_3eb88d6b31198cf5
@@ -321,7 +321,7 @@ string,#menu_points
 string,#hash_59a88b78e8451d3a
 string,#zombie/powerup_minigun
 string,#hash_59d734dda39935cf
-string,#hash_5a22b2f466c37116
+string,#zombie/perk_stronghold_free
 string,#hash_5a8f2d9ee2cca12a
 string,#zombie/perk_packapunch_busy
 string,#hash_5ba076fa5c544ee8
@@ -336,7 +336,7 @@ string,#hash_5e3775e764e7e40e
 string,#hash_5e9a7fcb1d324935
 string,#hash_5ea4dddcfbca77ae
 string,#hash_5eaee5bec056161d
-string,#hash_5f8484b6614f4bb2
+string,#zombie/perk_deadshot_free
 string,#hash_5fc8f9fbce3e5074
 string,#hash_5fe68cae7ca4cdf5
 string,#hash_5fea2159d1a2a904
@@ -344,7 +344,7 @@ string,#hash_602a33d6118f86cd
 string,#hash_6030516a54121cd2
 string,#zombie/weaponcostonly_cfill
 string,#hash_60c4c04f5603c612
-string,#hash_60e4802baafefe56
+string,#zm_zodt8/artifact_mind
 string,#hash_60e5e8df8709ad64
 string,#zombie/perk_widowswine_keyboard
 string,#hash_61d85c966dd9e83f
@@ -491,7 +491,7 @@ fx,#zombie/fx_powerup_nuke_zmb
 fx,#zm_ai/fx8_elec_shock_os
 fx,#zombie/fx_blood_torso_explo_lg_zmb
 fx,#zombie/fx_spawn_dirt_body_dustfalling_zmb
-fx,#hash_c9cf0acc938a7f6
+fx,#zombie/fx8_fire_limb_zmb
 fx,#zombie/fx8_magicbox_marker
 fx,#zm_ai/fx8_elec_bolt
 fx,#zombie/fx_spawn_dirt_hand_burst_zmb
@@ -598,7 +598,7 @@ client_fx,#zombie/fx8_doorbuy_amb
 client_fx,#hash_3002526b7ff53cbf
 client_fx,#hash_3060d78224e9c44e
 client_fx,#zombie/fx_spawn_dirt_body_billowing_zmb
-client_fx,#hash_31c4723879504cb7
+client_fx,#zombie/fx8_magicbox_lid_skull
 client_fx,#zombie/fx8_power_debris_amb
 client_fx,#zm_ai/fx8_zombie_eye_glow_orange
 client_fx,#zombie/fx_powerup_on_caution_zmb
@@ -634,7 +634,7 @@ client_fx,#hash_57eb5602b41fa4db
 client_fx,#dlc1/castle/fx_castle_electric_cherry_trail
 client_fx,#zombie/fx_powerup_grab_red_zmb
 client_fx,#hash_5c054ea9b299c2f0
-client_fx,#hash_5f376e9395e16666
+client_fx,#zombie/fx8_magicbox_depart
 client_fx,#zombie/fx8_debrisbuy_amb
 client_fx,#zombie/fx_perk_mule_kick_zmb
 client_fx,#zm_weapons/fx8_aat_water_torso

@@ -2717,7 +2717,7 @@ function perk_vapor_altar_init()
             }
             
             unitrigger_stub.s_vapor_altar = s_spawn_pos;
-            unitrigger_stub.s_vapor_altar.var_2977c27 = "off";
+            unitrigger_stub.s_vapor_altar.str_current_state = "off";
             unitrigger_stub thread function_b2ac6ee7();
             unitrigger_stub thread function_8b413937( s_spawn_pos );
             level.var_76a7ad28[ level.var_76a7ad28.size ] = unitrigger_stub;
@@ -2871,7 +2871,7 @@ function function_b7f2c635( player )
     
     var_99442276 = 0;
     
-    if ( self.stub.s_vapor_altar.var_2977c27 == "off" )
+    if ( self.stub.s_vapor_altar.str_current_state == "off" )
     {
         self sethintstringforplayer( player, #"zombie/need_power" );
         return true;
@@ -2889,7 +2889,7 @@ function function_b7f2c635( player )
         return true;
     }
     
-    if ( self.stub.s_vapor_altar.var_2977c27 == "on" && isdefined( perk ) && !player hasperk( perk ) && self vending_trigger_can_player_use( player, 1 ) && !player has_perk_paused( perk ) && !player zm_utility::in_revive_trigger() && !zm_equipment::is_equipment_that_blocks_purchase( player getcurrentweapon() ) && !player zm_equipment::hacker_active() )
+    if ( self.stub.s_vapor_altar.str_current_state == "on" && isdefined( perk ) && !player hasperk( perk ) && self vending_trigger_can_player_use( player, 1 ) && !player has_perk_paused( perk ) && !player zm_utility::in_revive_trigger() && !zm_equipment::is_equipment_that_blocks_purchase( player getcurrentweapon() ) && !player zm_equipment::hacker_active() )
     {
         var_99442276 = 1;
     }
@@ -2971,7 +2971,7 @@ function function_f5da744e()
         waitresult = self waittill( #"trigger" );
         player = waitresult.activator;
         
-        if ( self.stub.s_vapor_altar.var_2977c27 != "on" )
+        if ( self.stub.s_vapor_altar.str_current_state != "on" )
         {
             continue;
         }
@@ -3118,7 +3118,7 @@ function function_9da4880b()
     {
         wait randomintrange( 90, 180 );
         
-        if ( self.stub.s_vapor_altar.var_2977c27 != "on" )
+        if ( self.stub.s_vapor_altar.str_current_state != "on" )
         {
             continue;
         }
@@ -3926,7 +3926,7 @@ function function_8b413937( s_vapor_altar )
         }
     }
     
-    s_vapor_altar.var_2977c27 = "on";
+    s_vapor_altar.str_current_state = "on";
     
     if ( isdefined( var_b6b0d4b0 ) )
     {
@@ -4080,7 +4080,7 @@ function function_e9df56d1()
     }
     
     self.mdl_altar scene::play( self.var_2839b015, self.var_31cb501c[ self.var_2a08e958 ], self.mdl_altar );
-    self.mdl_altar thread scene::play( self.var_2839b015, self.var_2977c27, self.mdl_altar );
+    self.mdl_altar thread scene::play( self.var_2839b015, self.str_current_state, self.mdl_altar );
     self.var_2a08e958++;
     
     if ( self.var_2a08e958 == self.var_31cb501c.size )
@@ -4112,7 +4112,7 @@ function function_efd2c9e6()
         e_player function_fb633f9d( n_slot, 7 );
     }
     
-    self.var_2977c27 = "disable";
+    self.str_current_state = "disable";
 }
 
 // Namespace zm_perks/zm_perks
@@ -4131,7 +4131,7 @@ function function_1e721859()
         self.mdl_altar thread scene::play( self.var_2839b015, "on", self.mdl_altar );
     }
     
-    self.var_2977c27 = "on";
+    self.str_current_state = "on";
     n_slot = self.script_int;
     a_players = util::get_active_players();
     
@@ -4162,7 +4162,7 @@ function function_adc671f5( n_slot )
     {
         if ( s_altar.script_int == n_slot )
         {
-            if ( s_altar.var_2977c27 == "on" )
+            if ( s_altar.str_current_state == "on" )
             {
                 return 1;
             }
@@ -4734,9 +4734,9 @@ function lost_perk_override( perk )
         return false;
     }
     
-    foreach ( var_a4dddafc in level.var_91ac8112 )
+    foreach ( func_lost_perk_override in level.var_91ac8112 )
     {
-        if ( self [[ var_a4dddafc ]]( perk ) )
+        if ( self [[ func_lost_perk_override ]]( perk ) )
         {
             return true;
         }

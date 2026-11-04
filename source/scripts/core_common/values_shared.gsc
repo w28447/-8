@@ -72,7 +72,7 @@ function __init__()
 // Params 5, eflags: 0x20 variadic
 // Checksum 0x5b2cf81, Offset: 0x8d8
 // Size: 0x15e
-function register( str_name, var_3509ed3e, call_on = "$self", func, ... )
+function register( str_name, default_set_value, call_on = "$self", func, ... )
 {
     if ( !isdefined( level.values ) )
     {
@@ -91,7 +91,7 @@ function register( str_name, var_3509ed3e, call_on = "$self", func, ... )
     s_value.str_name = str_name;
     s_value.call_on = call_on;
     s_value.func = func;
-    s_value.var_3509ed3e = var_3509ed3e;
+    s_value.default_set_value = default_set_value;
     s_value.a_args = vararg;
     level.values[ str_name ] = s_value;
 }
@@ -153,7 +153,7 @@ function set( str_id, str_name, value )
     {
         if ( !isdefined( value ) )
         {
-            value = level.values[ str_name ].var_3509ed3e;
+            value = level.values[ str_name ].default_set_value;
         }
         
         _push_value( str_id, str_name, value );

@@ -95795,7 +95795,7 @@ renderoverridebundle,#hash_3d86ee42819c40e4
 renderoverridebundle,#rob_wz_zombievision
 renderoverridebundle,#rob_sonar_set_enemyequip
 renderoverridebundle,#hash_4368c406e6a21060
-renderoverridebundle,#hash_44adc567f9f60d61
+renderoverridebundle,#rob_sonar_set_neutral_mp
 renderoverridebundle,#rob_sonar_set_friendlyequip_mp
 renderoverridebundle,#hash_46746dc44d331a8a
 renderoverridebundle,#hash_49f7b5c2f4d6f3a4
@@ -96714,7 +96714,7 @@ fx,#hash_5ebbec0143994e82
 fx,d#hash_5ecb415812805fdb
 fx,#weapon/fx8_hero_sig_disrupt_smartcover
 fx,d#impacts/fx_bul_impact_armor_head_nonfatal_exit
-fx,#hash_5f376e9395e16666
+fx,#zombie/fx8_magicbox_depart
 fx,#hash_5f781fbedc1cd7f3
 fx,#impacts/fx8_bul_impact_raven_limb_fatal_uw
 fx,d#hash_5f8c0dac5484812f
@@ -99650,7 +99650,7 @@ scriptbundlelist,#jumpkits
 playerroletemplate,d#prt_wz_trejo
 playerroletemplate,d#prt_wz_bruno_dlc0
 playerroletemplate,d#prt_wz_scarlett
-playerroletemplate,d#hash_8bb7d93747987a1
+playerroletemplate,d#prt_wz_stanton_dlc0
 playerroletemplate,d#prt_wz_brutus
 playerroletemplate,d#prt_none
 playerroletemplate,d#prt_wz_hudson_hawaiian

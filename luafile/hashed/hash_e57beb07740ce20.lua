@@ -35,7 +35,7 @@ CoD.Barracks_StatsOverview_WZ_Wins.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local TopFive = CoD.PlayerStatsDetailed.new( f1_arg0, f1_arg1, 0, 0, 0, 310, 0, 0, 44, 65 )
 	TopFive.StatHeaderText:setText( LocalizeToUpperString( "menu/top_5" ) )
 	TopFive.StatValue.__Stat_Value = function ()
-		TopFive.StatValue:setText( CoD.PlayerStatsUtility.GetWZGameModePlayerStorageStat( f1_arg1, f1_arg0, 0xE9A745460A10F80, 11235 ) )
+		TopFive.StatValue:setText( CoD.PlayerStatsUtility.GetWZGameModePlayerStorageStat( f1_arg1, f1_arg0, "top_5_placement_team", 11235 ) )
 	end
 	
 	TopFive.StatValue.__Stat_Value()
@@ -45,7 +45,7 @@ CoD.Barracks_StatsOverview_WZ_Wins.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local TopTen = CoD.PlayerStatsDetailed.new( f1_arg0, f1_arg1, 0, 0, 0, 310, 0, 0, 66, 87 )
 	TopTen.StatHeaderText:setText( LocalizeToUpperString( "menu/top_10" ) )
 	TopTen.StatValue.__Stat_Value = function ()
-		TopTen.StatValue:setText( CoD.PlayerStatsUtility.GetWZGameModePlayerStorageStat( f1_arg1, f1_arg0, 0xB8D2C77874A1C24, 11235 ) )
+		TopTen.StatValue:setText( CoD.PlayerStatsUtility.GetWZGameModePlayerStorageStat( f1_arg1, f1_arg0, "top_10_placement_team", 11235 ) )
 	end
 	
 	TopTen.StatValue.__Stat_Value()

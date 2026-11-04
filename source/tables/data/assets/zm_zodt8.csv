@@ -582,7 +582,7 @@ xanim,#hash_24a0a9f5044ba53e
 xanim,#ai_t8_zm_zombie_base_crawl_jump_down_128
 xanim,#ai_t8_zm_zombie_base_crawl_jump_down_160
 xanim,#ai_zombie_base_sprint_au_v22_pain_chest_f
-xanim,#hash_24f221de31f87832
+xanim,#p8_fxanim_zm_zod_boss_eye_pain_anim
 xanim,#hash_250de7e146f5b2e8
 xanim,#p8_fxanim_zm_zod_sent_trail3_grate_anim
 xanim,#hash_25240c48edab60f2
@@ -47807,10 +47807,10 @@ fx,#hash_246f9c3213808d08
 fx,#hash_24716e195b370a73
 fx,#hash_24fc9882ede4f23c
 fx,#zm_ai/fx8_blightfather_chaos_missle
-fx,#hash_2543453edaf343d4
+fx,#zm_ai/fx8_cata_elec_knee_le
 fx,#dirt/fx8_dust_linger_100x100
 fx,#hash_25844acbbd126cf7
-fx,#hash_259b253edb3d834a
+fx,#zm_ai/fx8_cata_elec_knee_ri
 fx,#hash_259bb7806d596ed3
 fx,#hash_25b77f05ee8aa869
 fx,d#explosions/fx_exp_grenade_water_surface_deep
@@ -47820,9 +47820,9 @@ fx,#zm_ai/fx8_cata_elec_elbow
 fx,#hash_26dbb52bec14dc3c
 fx,#impacts/fx_bul_impact_blood_head_fatal_exit_uw
 fx,#hash_27bd079aca44fb71
-fx,#hash_28479dabebe445ee
+fx,#zm_ai/fx8_cata_elec_hip_ri
 fx,#hash_2895d1ce82aaf4c0
-fx,#hash_28ad85abec3ad058
+fx,#zm_ai/fx8_cata_elec_hip_le
 fx,#hash_28b92cc776e22757
 fx,#zombie/fx8_magicbox_opened_lid
 fx,#hash_28ed8ac683f8f9f8
@@ -47866,7 +47866,7 @@ fx,#hash_313b0cef08293978
 fx,d#hash_317f3a24ff92b8ca
 fx,#zm_ai/fx8_cata_plasma_blast_c
 fx,#hash_31ac22956da3a590
-fx,#hash_31c4723879504cb7
+fx,#zombie/fx8_magicbox_lid_skull
 fx,#hash_31d142c6e5adc4c7
 fx,d#zombie/fx8_magicbox_opened_c
 fx,#hash_328b7257069e00e2
@@ -48021,10 +48021,10 @@ fx,d#impacts/fx_bul_impact_robot_body_nonfatal
 fx,#hash_4d39505b7618fbe3
 fx,#hash_4d3bcede2a5aaadb
 fx,#hash_4d7b9b72e10c3737
-fx,#hash_4d91ce766ebeda81
+fx,#zm_ai/fx8_cata_elec_shoulder_le
 fx,d#impacts/fx8_bul_impact_wz_base
 fx,#hash_4d98db4f0ced54db
-fx,#hash_4db3c6766edbb34f
+fx,#zm_ai/fx8_cata_elec_shoulder_ri
 fx,#hash_4dc9118effe6dc12
 fx,#hash_4dd8af04505ea45e
 fx,#hash_4dfb3808a472b884
@@ -48312,7 +48312,7 @@ postfxbundle,d#hash_11c95485336a7f45
 postfxbundle,#pstfx_zm_wormhole
 postfxbundle,#pstfx_zodt8_screenflash
 postfxbundle,#pstfx_zm_caustic_glob
-postfxbundle,#hash_50d5d465e2b9b355
+postfxbundle,#pstfx_sprite_rain_splash
 postfxbundle,#hash_5249b3ef8b2f1988
 postfxbundle,#pstfx_heat_distortion_zm
 postfxbundle,#hash_57a7b1a801667009
@@ -49072,7 +49072,7 @@ fx,#zm_ai/fx8_cata_water_aura_head
 fx,#zm_ai/fx8_stoker_death_tell
 fx,#hash_5f247e5ee77f7108
 fx,d#impacts/fx_bul_impact_armor_head_nonfatal_exit
-fx,d#hash_5f376e9395e16666
+fx,d#zombie/fx8_magicbox_depart
 fx,d#hash_5f8c0dac5484812f
 fx,#hash_5ffc4b3198dbd4dd
 fx,#hash_6009053e911b946a
@@ -50348,9 +50348,9 @@ character,#c_t8_zmb_1stclass_female1_nohat
 character,#c_t8_zmb_2ndclass_female1
 character,#c_t8_zmb_dlc0_zombie_female1_skin2
 character,#c_t8_zmb_crew_officer1
-character,#hash_7887f7fa61198709
+character,#c_t8_zmb_3rdclass_female2_nohat
 character,#c_t8_zmb_2ndclass_female2_nohat
-character,#hash_7befa3e8cd85887a
+character,#c_t8_zmb_3rdclass_female3_nohat
 character,#c_t8_zmb_1stclass_male1_skin3
 character,#c_t8_zmb_1stclass_male1_skin2
 character,#c_t8_zmb_2ndclass_female3_hat2

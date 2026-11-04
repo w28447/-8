@@ -2080,7 +2080,7 @@ xanim,#ai_t8_zm_zombie_boardtear_aligned_l_5_grab
 xanim,#ai_zombie_smash_react_b_forwardtoface
 xanim,#hash_3073d50714ee3a85
 xanim,#vm_t8_swim_in_dw
-xanim,#hash_30a3ae992c453f0c
+xanim,#ai_t8_zm_mnsn_nfrtu_attack_latch_01_succeed
 xanim,#ai_zombie_base_run_au_v20_pain_chest_f
 xanim,#ai_zombie_base_run_ad_v1_pain_chest_f_alt
 xanim,#ai_t8_zm_zombie_boardtear_aligned_r_4_grab
@@ -2148,7 +2148,7 @@ xanim,#ai_zombie_smash_react_getup_c
 xanim,#ai_t8_zm_zombie_boardtear_aligned_m_2_grab
 xanim,#hash_346c76e841bb3677
 xanim,#ai_zombie_base_crawl_jump_across_128
-xanim,#hash_3475f0b9b2ad7422
+xanim,#pb_zm_mansn_wm_fem_intro
 xanim,#hash_34869a83ed7c00c6
 xanim,#ai_zombie_base_walk_ad_v21_pain_chest_f_alt
 xanim,#ai_t8_zm_zod_catalyst_water_idle_01
@@ -2715,7 +2715,7 @@ xanim,#ai_zombie_base_run_ad_v11_pain_chest_f
 xanim,#hash_5491bf907f8516ac
 xanim,#hash_549c400dc54bb270
 xanim,#vm_t8_mini_crossbow_gunbutt_swipe
-xanim,#hash_54f8a53a5930ed55
+xanim,#pb_zm_mansn_wm_intro
 xanim,#ai_t8_zm_mnsn_crmsn_nfrtu_dash_med_f_01
 xanim,#ai_t8_zombie_base_sprint_au_win_trav_r_v1
 xanim,#hash_5553ed369c64c024
@@ -3805,8 +3805,8 @@ scriptbundle,#c_t8_zmb_3rdclass_male_gib_def
 scriptbundle,#activecamoinfo_t8_cyberpunk_wz
 scriptbundle,#activecamoinfo_t8_cyberpunk_zm
 material,#riotshield_zm_icon
-string,#hash_1406bde2951a81
-string,#hash_5093f1267cfa81
+string,#zm_mansion/silver_bullets_craft
+string,#zm_mansion/silver_bullets_buy_keyboard
 string,#mpui/stalker
 string,#hash_95c5021b448b56
 string,#mpui/extclip_desc
@@ -3823,7 +3823,7 @@ string,#menu/camo_loot_zombie_maitai
 string,#zmweapon/riotshield
 string,#hash_40c47b72c083914
 string,#mpui/camo_active_take_it_personally
-string,#hash_4731c9534a6055b
+string,#zm_mansion/silver_bullets_have
 string,#mpui/camo_flectarn
 string,#mpui/extclip2
 string,#hash_5be026b2781b8c9
@@ -3841,7 +3841,7 @@ string,#hash_888d5fd1e90d685
 string,#menu/camo_loot_roadhouse
 string,#hash_9374fbb3272c53f
 string,#menu/camo_loot_trifecta
-string,#hash_9c2f7742abf6acb
+string,#zm_mansion/silver_bullets_buy
 string,#hash_a3797801599641e
 string,#hash_aed57a705546ebb
 string,#zm_mansion/location_cemetery_graveyard
@@ -3917,7 +3917,7 @@ string,#hash_1b7e7af38a69fb33
 string,#zm_mansion/location_forest
 string,#hash_1b9c70b83fdee2f4
 string,#hash_1bc3fe888bfb0d6d
-string,#hash_1c07c87a45375aaf
+string,#menu/camo_loot_party_rock
 string,#hash_1c085e4db0b218f9
 string,#hash_1c45ec9f9414b664
 string,#mpui/camo_integer
@@ -3961,7 +3961,7 @@ string,#mpui/holdbreath_desc
 string,#mpui/camo_active_kill_counter
 string,#hash_2a634db8501d93aa
 string,#hash_2aa6fa1848766679
-string,#hash_2b0fae1c09a3d8a9
+string,#menu/camo_loot_zombie_flick
 string,#hash_2b19c9a3e37c977c
 string,#hash_2b2357a02d83b291
 string,#hash_2b27d20d2cfc1069
@@ -4132,7 +4132,7 @@ string,#menu/camo_loot_megalodon
 string,#hash_5538019ad6e6cdc7
 string,#zmui/extrapellets_desc
 string,#hash_556fbdaebf02d158
-string,#hash_558dab41980bd79b
+string,#zm_mansion/silver_bullets_free
 string,#zmui/high_caliber_desc
 string,#hash_560d002c6e40e5df
 string,#menu/camo_loot_vice
@@ -4158,7 +4158,7 @@ string,#mpui/mixclip
 string,#mpui/mms_desc
 string,#zm_mansion/location_cellar
 string,#hash_5d4b4dfdc53fd671
-string,#hash_5dc620aa9640e528
+string,#menu/camo_loot_apb
 string,#hash_5e2c81adb5a5264a
 string,#hash_5e6ae4119dda43e0
 string,#mpui/camo_contagious
@@ -4172,7 +4172,7 @@ string,#hash_6063cd6ae0f6ce28
 string,#hash_607993fb651c3014
 string,#mpui/camo_interpol
 string,#mpui/extbarrel2_desc
-string,#hash_60e4802baafefe56
+string,#zm_zodt8/artifact_mind
 string,#hash_60f7952659026bea
 string,#zmui/barrelchoke_desc
 string,#hash_61bd1f669b4c6a1c
@@ -4258,7 +4258,7 @@ string,#mpui/rangefinder_desc
 string,#zombie/craft_shield
 string,#hash_7b8a03d0c40ea097
 string,#feature/gun_emblem
-string,#hash_7bc5748f7802e011
+string,#zm_mansion/silver_bullets_free_keyboard
 string,#hash_7bf8bcf55e2bd26e
 string,#hash_7c69875677ff53fb
 string,#mpui/mms
@@ -4293,14 +4293,14 @@ fx,#hash_21ba4e14e47ce200
 fx,#zombie/fx8_wallbuy_amb_reverse
 fx,#hash_22aac55b4e3e4c42
 fx,#zm_ai/fx8_dog_lightning_spawn
-fx,#hash_2543453edaf343d4
-fx,#hash_259b253edb3d834a
+fx,#zm_ai/fx8_cata_elec_knee_le
+fx,#zm_ai/fx8_cata_elec_knee_ri
 fx,#impacts/fx_bul_impact_blood_head_fatal_exit
 fx,#hash_267219566a35fba8
 fx,#zm_ai/fx8_cata_water_aura
 fx,#zm_ai/fx8_cata_plasma_aura
-fx,#hash_28479dabebe445ee
-fx,#hash_28ad85abec3ad058
+fx,#zm_ai/fx8_cata_elec_hip_ri
+fx,#zm_ai/fx8_cata_elec_hip_le
 fx,#hash_311a865a91014b22
 fx,#explosions/fx8_exp_grenade_glass
 fx,#zm_ai/fx8_cata_cor_mouth
@@ -4311,8 +4311,8 @@ fx,#hash_43ce68cb4f9247fe
 fx,#zm_ai/fx8_stoker_dest_weak_point_dynent_arm
 fx,#zombie/fx8_wallbuy_reveal
 fx,#hash_4c24e997afad36e0
-fx,#hash_4d91ce766ebeda81
-fx,#hash_4db3c6766edbb34f
+fx,#zm_ai/fx8_cata_elec_shoulder_le
+fx,#zm_ai/fx8_cata_elec_shoulder_ri
 fx,#hash_4e3dc7da8f681079
 fx,#hash_4e40eada8f6a81c9
 fx,#hash_4e55cdda8f7cac8c
@@ -4326,7 +4326,7 @@ fx,#zm_ai/fx8_zombie_eye_glow_red
 fx,#hash_59422cff58693587
 fx,#zm_ai/fx8_blightfather_weakspot_jaw_exp
 fx,#zm_ai/fx8_cata_water_aura_head
-fx,#hash_5f376e9395e16666
+fx,#zombie/fx8_magicbox_depart
 fx,#hash_63074eb9d1a1e00c
 fx,#zm_ai/fx8_stoker_amb_torso
 fx,#zm_ai/fx8_stoker_dest_weak_point_exp_arm
@@ -11514,8 +11514,8 @@ client_fx,#impacts/fx8_bul_impact_robot_body_nonfatal_exit
 client_fx,#impacts/fx8_bul_impact_blood_limb_fatal_exit
 client_fx,#zm_ai/fx8_blightfather_chaos_missle
 client_fx,#zm_weapons/fx8_www_drag_enemy_ember_arm_right
-client_fx,#hash_2543453edaf343d4
-client_fx,#hash_259b253edb3d834a
+client_fx,#zm_ai/fx8_cata_elec_knee_le
+client_fx,#zm_ai/fx8_cata_elec_knee_ri
 client_fx,#fire/fx_fire_ai_human_arm_right_loop
 client_fx,#impacts/fx_bul_impact_blood_head_fatal_exit
 client_fx,#zm_ai/fx8_blightfather_vomit_statue_purchase
@@ -11530,8 +11530,8 @@ client_fx,#hash_278a1fb8502347aa
 client_fx,#impacts/fx8_bul_impact_water_xtreme
 client_fx,#hash_27c3041be4fa392e
 client_fx,#zm_ai/fx8_cata_plasma_aura
-client_fx,#hash_28479dabebe445ee
-client_fx,#hash_28ad85abec3ad058
+client_fx,#zm_ai/fx8_cata_elec_hip_ri
+client_fx,#zm_ai/fx8_cata_elec_hip_le
 client_fx,#hash_28c629868adf79d6
 client_fx,#impacts/fx8_bul_impact_robot_body_nonfatal
 client_fx,#hash_2949c26febe96072
@@ -11649,8 +11649,8 @@ client_fx,#impacts/fx_bul_impact_boss_head_fatal
 client_fx,#impacts/fx_bul_impact_robot_body_nonfatal
 client_fx,#hash_4d334fce6095f749
 client_fx,#impacts/fx_bul_impact_heavy_head_nonfatal
-client_fx,#hash_4d91ce766ebeda81
-client_fx,#hash_4db3c6766edbb34f
+client_fx,#zm_ai/fx8_cata_elec_shoulder_le
+client_fx,#zm_ai/fx8_cata_elec_shoulder_ri
 client_fx,#hash_4e3dc7da8f681079
 client_fx,#hash_4e40eada8f6a81c9
 client_fx,#hash_4e55cdda8f7cac8c

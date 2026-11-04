@@ -117,7 +117,7 @@
         },
         {
             "name": "#ourversion",
-            "scrName": "#hash_d91eb821",
+            "scrName": "#ourversion",
             "type": "INT32"
         },
         {

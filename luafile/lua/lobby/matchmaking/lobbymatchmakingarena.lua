@@ -139,8 +139,8 @@ Lobby.MatchmakingArena.GetArenaSkillRange = function ( f10_arg0 )
 		f10_local2 = Dvar[0x5A4B7E98B04250D]:get()
 	end
 	local f10_local3 = 1
-	if Dvar[0x4A22EC68E0798C5]:exists() then
-		f10_local3 = Dvar[0x4A22EC68E0798C5]:get()
+	if Dvar.arena_qosbrodenskillstep:exists() then
+		f10_local3 = Dvar.arena_qosbrodenskillstep:get()
 	end
 	local f10_local4 = 2
 	if Dvar[0x5215E81615C6A0F]:exists() then

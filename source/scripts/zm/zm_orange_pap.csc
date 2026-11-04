@@ -12,7 +12,7 @@ function init()
 {
     init_clientfields();
     level._effect[ #"fire_extinguisher_fx" ] = #"hash_7d36c353ea2640ad";
-    level._effect[ #"hash_74f5897234e8d579" ] = #"hash_59c49f21e6675534";
+    level._effect[ #"pap_rock_glow_fx" ] = #"hash_59c49f21e6675534";
 }
 
 // Namespace zm_orange_pap/zm_orange_pap
@@ -51,6 +51,6 @@ function function_f65638a4( localclientnum, oldval, newval, bnewent, binitialsna
 // Size: 0x74
 function function_50758ed4( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    util::playfxontag( localclientnum, level._effect[ #"hash_74f5897234e8d579" ], self, "tag_origin" );
+    util::playfxontag( localclientnum, level._effect[ #"pap_rock_glow_fx" ], self, "tag_origin" );
 }
 

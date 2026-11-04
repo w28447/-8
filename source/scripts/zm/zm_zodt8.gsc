@@ -301,7 +301,7 @@ function init_level_vars()
     
     level.open_chest_location = [];
     level.magic_box_zbarrier_state_func = &zm_magicbox::function_35c66b27;
-    level.var_d5bd7049 = #"hash_3dc033ef1e67a5c0";
+    level.var_d5bd7049 = #"zombie/need_power_sentinel_trial";
     a_s_boxes = struct::get_array( #"treasure_chest_use" );
     
     for ( i = 0; i < a_s_boxes.size ; i++ )
@@ -1523,7 +1523,7 @@ function function_32d2bdc8()
     
     if ( isinarray( var_1c65f0a, self.zone_name ) )
     {
-        a_models = array( #"c_t8_zmb_2ndclass_female1", #"c_t8_zmb_2ndclass_female1_nohat", #"c_t8_zmb_2ndclass_female2_hat2", #"c_t8_zmb_2ndclass_female2_hat3", #"c_t8_zmb_2ndclass_female2_nohat", #"c_t8_zmb_2ndclass_female3_hat2", #"c_t8_zmb_2ndclass_female3_hat3", #"c_t8_zmb_2ndclass_female3_nohat", #"c_t8_zmb_3rdclass_female1", #"hash_527359033a0fec16", #"c_t8_zmb_3rdclass_female2", #"hash_7887f7fa61198709", #"c_t8_zmb_3rdclass_female3", #"hash_7befa3e8cd85887a", #"c_t8_zmb_3rdclass_male1", #"c_t8_zmb_3rdclass_male2", #"c_t8_zmb_3rdclass_male3", #"c_t8_zmb_3rdclass_male3_skin2", #"c_t8_zmb_3rdclass_male3_skin3", #"c_t8_zmb_3rdclass_male4", #"c_t8_zmb_3rdclass_male4_skin2", #"c_t8_zmb_3rdclass_male4_skin3", #"c_t8_zmb_crew_sailor1_nohat", #"c_t8_zmb_crew_sailor1", #"c_t8_zmb_crew_sailor1_nohat" );
+        a_models = array( #"c_t8_zmb_2ndclass_female1", #"c_t8_zmb_2ndclass_female1_nohat", #"c_t8_zmb_2ndclass_female2_hat2", #"c_t8_zmb_2ndclass_female2_hat3", #"c_t8_zmb_2ndclass_female2_nohat", #"c_t8_zmb_2ndclass_female3_hat2", #"c_t8_zmb_2ndclass_female3_hat3", #"c_t8_zmb_2ndclass_female3_nohat", #"c_t8_zmb_3rdclass_female1", #"hash_527359033a0fec16", #"c_t8_zmb_3rdclass_female2", #"c_t8_zmb_3rdclass_female2_nohat", #"c_t8_zmb_3rdclass_female3", #"c_t8_zmb_3rdclass_female3_nohat", #"c_t8_zmb_3rdclass_male1", #"c_t8_zmb_3rdclass_male2", #"c_t8_zmb_3rdclass_male3", #"c_t8_zmb_3rdclass_male3_skin2", #"c_t8_zmb_3rdclass_male3_skin3", #"c_t8_zmb_3rdclass_male4", #"c_t8_zmb_3rdclass_male4_skin2", #"c_t8_zmb_3rdclass_male4_skin3", #"c_t8_zmb_crew_sailor1_nohat", #"c_t8_zmb_crew_sailor1", #"c_t8_zmb_crew_sailor1_nohat" );
     }
     else if ( isinarray( var_c9c43b66, self.zone_name ) )
     {

@@ -92,7 +92,7 @@ function hellstorm_deploy( localclientnum, oldval, newval, bnewent, binitialsnap
     if ( newval )
     {
         self useanimtree( "generic" );
-        self setanim( #"hash_4b6a7686ae8c1f16", 1 );
+        self setanim( #"p8_fxanim_gp_vehicle_hellstorm_missile_anim", 1 );
     }
 }
 

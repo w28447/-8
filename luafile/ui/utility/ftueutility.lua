@@ -268,7 +268,7 @@ CoD.FTUEUtility.FTUESequences.ZMGauntletPlaylistIntroduction = {
 				{
 					models = {
 						displayTitle = "",
-						displayText = 0x5DCD6630A166A67,
+						displayText = "menu/gauntlet_mode_desc",
 						image = "ui_menu_ftue_zm_gauntlet_mode"
 					}
 				}
@@ -289,7 +289,7 @@ CoD.FTUEUtility.FTUESequences.ZMTutorialPlaylistIntroduction = {
 				{
 					models = {
 						displayTitle = "",
-						displayText = 0x53C9892E9FF4223,
+						displayText = "menu/tutorial_mode_desc",
 						image = "ui_menu_ftue_zm_tutorial_mode"
 					}
 				}
@@ -310,7 +310,7 @@ CoD.FTUEUtility.FTUESequences.ZMCustomGameIntroduction = {
 				{
 					models = {
 						displayTitle = "",
-						displayText = 0x6B72E64033999B1,
+						displayText = "menu/custom_mutations_desc",
 						image = "ui_menu_ftue_zm_custom_mutations"
 					}
 				}

@@ -934,7 +934,7 @@ function private function_1a0c2b72( revivedplayer )
 {
     if ( isdefined( self ) && isalive( self ) && isdefined( revivedplayer ) )
     {
-        level thread popups::displayteammessagetoteam( #"hash_17c6b0524e578976", self, self.team, revivedplayer.entnum, undefined );
+        level thread popups::displayteammessagetoteam( #"mp/bounty_revived_player", self, self.team, revivedplayer.entnum, undefined );
     }
 }
 
@@ -970,9 +970,9 @@ function private function_4f2c425d()
         return;
     }
     
-    var_fe63ca41 = getteamplayersalive( self.team );
+    teammatesalive = getteamplayersalive( self.team );
     
-    if ( var_fe63ca41 <= 0 )
+    if ( teammatesalive <= 0 )
     {
         self.var_6bd898f7 = level.bagomoney.carrier getentitynumber();
         return;
@@ -1499,9 +1499,9 @@ function private function_b48e2739( helicopter )
     helicopter endon( #"hash_69d2c68fdf86b6d7", #"death" );
     helicopter.rope endon( #"death" );
     helicopter notify( #"hash_3478587618f28c8" );
-    helicopter.rope thread animation::play( #"hash_3d52f6faf02fd23", helicopter, "tag_origin_animate", 1, 0.2, 0.1, undefined, undefined, undefined, 0 );
+    helicopter.rope thread animation::play( #"p8_fxanim_gp_vehicle_lb_heist_rope_retrieve_anim", helicopter, "tag_origin_animate", 1, 0.2, 0.1, undefined, undefined, undefined, 0 );
     playfxontag( #"hash_24fa7e1844b116bb", helicopter.rope, "duffel_attach_jnt" );
-    var_314ff04b = getanimlength( #"hash_3d52f6faf02fd23" ) + 15;
+    var_314ff04b = getanimlength( #"p8_fxanim_gp_vehicle_lb_heist_rope_retrieve_anim" ) + 15;
     wait var_314ff04b;
     function_b09faaf8( helicopter );
 }

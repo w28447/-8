@@ -251,7 +251,7 @@ function private run_step( ee, step, var_5ea5c94d )
     
     ee.started = 1;
     step.started = 1;
-    level thread function_3f795dc3( ee, step, var_5ea5c94d );
+    level thread run_step_setup( ee, step, var_5ea5c94d );
     
     if ( !step.completed )
     {
@@ -371,7 +371,7 @@ function private run_step( ee, step, var_5ea5c94d )
 // Params 3, eflags: 0x4
 // Checksum 0x4b4345fc, Offset: 0x14c8
 // Size: 0xb6
-function private function_3f795dc3( ee, step, var_5ea5c94d )
+function private run_step_setup( ee, step, var_5ea5c94d )
 {
     level endon( #"game_ended" );
     step endoncallback( &function_df365859, #"end_early" );

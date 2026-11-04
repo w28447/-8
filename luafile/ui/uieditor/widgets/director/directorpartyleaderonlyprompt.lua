@@ -9,7 +9,7 @@ CoD.DirectorPartyLeaderOnlyPrompt.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local PartyLeaderOnlyPrompt = LUI.UIText.new( 0, 1, 0, 0, 0.5, 0.5, -9, 9 )
-	PartyLeaderOnlyPrompt:setText( Engine[0xF9F1239CFD921FE]( 0xB71C5E80EBFDD82 ) )
+	PartyLeaderOnlyPrompt:setText( Engine[0xF9F1239CFD921FE]( "menu/party_leader_only" ) )
 	PartyLeaderOnlyPrompt:setTTF( "ttmussels_regular" )
 	PartyLeaderOnlyPrompt:setLetterSpacing( 2 )
 	PartyLeaderOnlyPrompt:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

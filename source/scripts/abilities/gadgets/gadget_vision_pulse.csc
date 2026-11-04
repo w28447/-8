@@ -74,9 +74,9 @@ function on_player_spawned( local_client_num )
 function on_player_corpse( localclientnum, params )
 {
     self endon( #"death" );
-    var_1edcbdd3 = params.player.visionpulsereveal;
+    isrevealed = params.player.visionpulsereveal;
     
-    if ( isdefined( var_1edcbdd3 ) && var_1edcbdd3 )
+    if ( isdefined( isrevealed ) && isrevealed )
     {
         self.visionpulsereveal = 1;
         self.var_a768b7b6 = params.player.var_a768b7b6;

@@ -271,7 +271,7 @@ function _fire( lifeid, player, team, killstreak_id )
     
     veh clientfield::set( "hellstorm_deploy", 1 );
     veh useanimtree( "generic" );
-    veh setanim( #"hash_4b6a7686ae8c1f16", 1 );
+    veh setanim( #"p8_fxanim_gp_vehicle_hellstorm_missile_anim", 1 );
     
     if ( isdefined( level.var_5951cb24 ) )
     {
@@ -279,7 +279,7 @@ function _fire( lifeid, player, team, killstreak_id )
     }
     
     player playsoundtoplayer( #"veh_hellstorm_bay_doors", player );
-    animlen = getanimlength( #"hash_4b6a7686ae8c1f16" );
+    animlen = getanimlength( #"p8_fxanim_gp_vehicle_hellstorm_missile_anim" );
     wait animlen * 0.7;
     
     if ( !isdefined( player ) )
